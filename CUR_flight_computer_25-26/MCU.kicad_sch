@@ -1724,6 +1724,91 @@
 			(embedded_fonts no)
 		)
 	)
+	(wire
+		(pts
+			(xy 170.18 69.85) (xy 180.34 69.85)
+		)
+		(stroke
+			(width 0)
+			(type default)
+		)
+		(uuid "0234aa62-1c39-4156-aa77-f116e02b4122")
+	)
+	(wire
+		(pts
+			(xy 170.18 67.31) (xy 180.34 67.31)
+		)
+		(stroke
+			(width 0)
+			(type default)
+		)
+		(uuid "383a92fb-fe4f-43f7-8190-24edb181bace")
+	)
+	(wire
+		(pts
+			(xy 170.18 72.39) (xy 180.34 72.39)
+		)
+		(stroke
+			(width 0)
+			(type default)
+		)
+		(uuid "d4e3c6de-0f98-405e-a039-be3b87fbcd7b")
+	)
+	(hierarchical_label "SENSORS_MOSI"
+		(shape output)
+		(at 180.34 72.39 0)
+		(effects
+			(font
+				(size 1.27 1.27)
+			)
+			(justify left)
+		)
+		(uuid "615f53af-a870-423a-8332-42681dcbd30e")
+	)
+	(hierarchical_label "BARO_INT"
+		(shape input)
+		(at 203.2 34.29 0)
+		(effects
+			(font
+				(size 1.27 1.27)
+			)
+			(justify left)
+		)
+		(uuid "9e20d85c-cc16-4d65-abac-751fafd550ba")
+	)
+	(hierarchical_label "BARO_CS"
+		(shape output)
+		(at 203.2 31.75 0)
+		(effects
+			(font
+				(size 1.27 1.27)
+			)
+			(justify left)
+		)
+		(uuid "9fb5fac5-a6a4-42e6-b925-7fd8467631d5")
+	)
+	(hierarchical_label "SENSORS_SPC"
+		(shape output)
+		(at 180.34 67.31 0)
+		(effects
+			(font
+				(size 1.27 1.27)
+			)
+			(justify left)
+		)
+		(uuid "d03c9ba9-327e-4726-a358-d2b81c3142b8")
+	)
+	(hierarchical_label "SENSORS_MISO"
+		(shape input)
+		(at 180.34 69.85 0)
+		(effects
+			(font
+				(size 1.27 1.27)
+			)
+			(justify left)
+		)
+		(uuid "f593336e-fe53-41b0-b1b5-796be446daf0")
+	)
 	(symbol
 		(lib_id "MCU_ST_STM32H5:STM32H523RCTx")
 		(at 144.78 92.71 0)
@@ -1734,7 +1819,7 @@
 		(dnp no)
 		(fields_autoplaced yes)
 		(uuid "d3919e9c-9bb2-4c6b-a59f-41eb7ddbfce6")
-		(property "Reference" "U?"
+		(property "Reference" "U1"
 			(at 149.4633 138.43 0)
 			(effects
 				(font
@@ -1975,7 +2060,7 @@
 		(instances
 			(project ""
 				(path "/bf7761cc-1b32-4d86-809c-5f027005229b/3b725c3b-9650-41e6-95bf-9087cc38f098"
-					(reference "U?")
+					(reference "U1")
 					(unit 1)
 				)
 			)
