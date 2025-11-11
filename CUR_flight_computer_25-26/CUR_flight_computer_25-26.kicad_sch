@@ -5,6 +5,56 @@
 	(uuid "bf7761cc-1b32-4d86-809c-5f027005229b")
 	(paper "A4")
 	(lib_symbols)
+	(wire
+		(pts
+			(xy 93.98 82.55) (xy 114.3 82.55)
+		)
+		(stroke
+			(width 0)
+			(type default)
+		)
+		(uuid "6636a14c-5d38-4ed0-bb15-ddd330986402")
+	)
+	(wire
+		(pts
+			(xy 93.98 80.01) (xy 114.3 80.01)
+		)
+		(stroke
+			(width 0)
+			(type default)
+		)
+		(uuid "7761b895-5ee7-4903-a4bd-25cfd491b374")
+	)
+	(wire
+		(pts
+			(xy 93.98 66.04) (xy 114.3 66.04)
+		)
+		(stroke
+			(width 0)
+			(type default)
+		)
+		(uuid "8c791ad6-12e7-4ec8-bc78-8d31611d4f8a")
+	)
+	(wire
+		(pts
+			(xy 93.98 63.5) (xy 114.3 63.5)
+		)
+		(stroke
+			(width 0)
+			(type default)
+		)
+		(uuid "946a6d9a-67c6-4310-9220-99260d50237b")
+	)
+	(wire
+		(pts
+			(xy 93.98 60.96) (xy 114.3 60.96)
+		)
+		(stroke
+			(width 0)
+			(type default)
+		)
+		(uuid "b60b0ef1-4787-4daa-95c8-48c16b4ee34b")
+	)
 	(sheet
 		(at 69.85 97.79)
 		(size 24.13 34.925)
@@ -165,6 +215,56 @@
 				(justify left top)
 			)
 		)
+		(pin "SENSORS_MISO" input
+			(at 114.3 63.5 180)
+			(uuid "f85f8310-0ef1-4603-a623-9b3231ea86b8")
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(justify left)
+			)
+		)
+		(pin "SENSORS_MOSI" output
+			(at 114.3 60.96 180)
+			(uuid "41c2d414-74d5-470d-9dd7-8aba3235b5a3")
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(justify left)
+			)
+		)
+		(pin "SENSORS_SPC" output
+			(at 114.3 66.04 180)
+			(uuid "21453462-6a30-44a1-a42e-6275ce20f65e")
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(justify left)
+			)
+		)
+		(pin "BARO_INT" input
+			(at 114.3 80.01 180)
+			(uuid "247055f7-62ba-4be2-819c-657e1b12bdb4")
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(justify left)
+			)
+		)
+		(pin "BARO_CS" output
+			(at 114.3 82.55 180)
+			(uuid "32338ff2-72f3-4176-bc8b-4e9cb01276b8")
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(justify left)
+			)
+		)
 		(instances
 			(project "CUR_flight_computer_25-26"
 				(path "/bf7761cc-1b32-4d86-809c-5f027005229b"
@@ -289,6 +389,56 @@
 					(size 1.27 1.27)
 				)
 				(justify left top)
+			)
+		)
+		(pin "BARO_CS" input
+			(at 93.98 82.55 0)
+			(uuid "fca8e29b-294f-43c9-a61c-af52792d66ab")
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(justify right)
+			)
+		)
+		(pin "SENSOR_SPC" input
+			(at 93.98 66.04 0)
+			(uuid "3c29dde7-ba1d-46bf-962b-368976b23d3a")
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(justify right)
+			)
+		)
+		(pin "BARO_INT" output
+			(at 93.98 80.01 0)
+			(uuid "88b4144b-a5bd-469d-8ab5-d4d6e20739bd")
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(justify right)
+			)
+		)
+		(pin "SENSOR_MISO" output
+			(at 93.98 63.5 0)
+			(uuid "d7925820-f324-4b02-a0bd-0f7003a018a5")
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(justify right)
+			)
+		)
+		(pin "SENSOR_MOSI" input
+			(at 93.98 60.96 0)
+			(uuid "389488fa-82c3-4a90-a901-74f179c03fe7")
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(justify right)
 			)
 		)
 		(instances
