@@ -2,9 +2,579 @@
 	(version 20250114)
 	(generator "eeschema")
 	(generator_version "9.0")
-	(uuid bf7761cc-1b32-4d86-809c-5f027005229b)
+	(uuid "bf7761cc-1b32-4d86-809c-5f027005229b")
 	(paper "A4")
 	(lib_symbols)
+	(wire
+		(pts
+			(xy 93.98 82.55) (xy 114.3 82.55)
+		)
+		(stroke
+			(width 0)
+			(type default)
+		)
+		(uuid "6636a14c-5d38-4ed0-bb15-ddd330986402")
+	)
+	(wire
+		(pts
+			(xy 93.98 80.01) (xy 114.3 80.01)
+		)
+		(stroke
+			(width 0)
+			(type default)
+		)
+		(uuid "7761b895-5ee7-4903-a4bd-25cfd491b374")
+	)
+	(wire
+		(pts
+			(xy 93.98 66.04) (xy 114.3 66.04)
+		)
+		(stroke
+			(width 0)
+			(type default)
+		)
+		(uuid "8c791ad6-12e7-4ec8-bc78-8d31611d4f8a")
+	)
+	(wire
+		(pts
+			(xy 93.98 63.5) (xy 114.3 63.5)
+		)
+		(stroke
+			(width 0)
+			(type default)
+		)
+		(uuid "946a6d9a-67c6-4310-9220-99260d50237b")
+	)
+	(wire
+		(pts
+			(xy 93.98 60.96) (xy 114.3 60.96)
+		)
+		(stroke
+			(width 0)
+			(type default)
+		)
+		(uuid "b60b0ef1-4787-4daa-95c8-48c16b4ee34b")
+	)
+	(sheet
+		(at 69.85 97.79)
+		(size 24.13 34.925)
+		(exclude_from_sim no)
+		(in_bom yes)
+		(on_board yes)
+		(dnp no)
+		(fields_autoplaced yes)
+		(stroke
+			(width 0.1524)
+			(type solid)
+		)
+		(fill
+			(color 0 0 0 0.0000)
+		)
+		(uuid "0389a778-0ae1-4921-8e0e-3c33d2286cb8")
+		(property "Sheetname" "Debug"
+			(at 69.85 97.0784 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(justify left bottom)
+			)
+		)
+		(property "Sheetfile" "debug.kicad_sch"
+			(at 69.85 133.2996 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(justify left top)
+			)
+		)
+		(instances
+			(project "CUR_flight_computer_25-26"
+				(path "/bf7761cc-1b32-4d86-809c-5f027005229b"
+					(page "4")
+				)
+			)
+		)
+	)
+	(sheet
+		(at 182.88 59.69)
+		(size 32.385 20.32)
+		(exclude_from_sim no)
+		(in_bom yes)
+		(on_board yes)
+		(dnp no)
+		(fields_autoplaced yes)
+		(stroke
+			(width 0.1524)
+			(type solid)
+		)
+		(fill
+			(color 0 0 0 0.0000)
+		)
+		(uuid "16b7f3d3-745f-44d9-93a4-41f5bfd830cb")
+		(property "Sheetname" "Telemetry"
+			(at 182.88 58.9784 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(justify left bottom)
+			)
+		)
+		(property "Sheetfile" "telemetry.kicad_sch"
+			(at 182.88 80.5946 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(justify left top)
+			)
+		)
+		(instances
+			(project "CUR_flight_computer_25-26"
+				(path "/bf7761cc-1b32-4d86-809c-5f027005229b"
+					(page "5")
+				)
+			)
+		)
+	)
+	(sheet
+		(at 146.05 25.4)
+		(size 31.75 15.875)
+		(exclude_from_sim no)
+		(in_bom yes)
+		(on_board yes)
+		(dnp no)
+		(fields_autoplaced yes)
+		(stroke
+			(width 0.1524)
+			(type solid)
+		)
+		(fill
+			(color 0 0 0 0.0000)
+		)
+		(uuid "1df302fb-2dab-4194-ae63-c7585125533e")
+		(property "Sheetname" "Power"
+			(at 146.05 24.6884 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(justify left bottom)
+			)
+		)
+		(property "Sheetfile" "power.kicad_sch"
+			(at 146.05 41.8596 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(justify left top)
+			)
+		)
+		(instances
+			(project "CUR_flight_computer_25-26"
+				(path "/bf7761cc-1b32-4d86-809c-5f027005229b"
+					(page "6")
+				)
+			)
+		)
+	)
+	(sheet
+		(at 114.3 52.07)
+		(size 48.26 78.74)
+		(exclude_from_sim no)
+		(in_bom yes)
+		(on_board yes)
+		(dnp no)
+		(fields_autoplaced yes)
+		(stroke
+			(width 0.1524)
+			(type solid)
+		)
+		(fill
+			(color 0 0 0 0.0000)
+		)
+		(uuid "3b725c3b-9650-41e6-95bf-9087cc38f098")
+		(property "Sheetname" "MCU"
+			(at 114.3 51.3584 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(justify left bottom)
+			)
+		)
+		(property "Sheetfile" "MCU.kicad_sch"
+			(at 114.3 131.3946 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(justify left top)
+			)
+		)
+		(pin "SENSORS_MISO" input
+			(at 114.3 63.5 180)
+			(uuid "f85f8310-0ef1-4603-a623-9b3231ea86b8")
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(justify left)
+			)
+		)
+		(pin "SENSORS_MOSI" output
+			(at 114.3 60.96 180)
+			(uuid "41c2d414-74d5-470d-9dd7-8aba3235b5a3")
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(justify left)
+			)
+		)
+		(pin "SENSORS_SPC" output
+			(at 114.3 66.04 180)
+			(uuid "21453462-6a30-44a1-a42e-6275ce20f65e")
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(justify left)
+			)
+		)
+		(pin "BARO_INT" input
+			(at 114.3 80.01 180)
+			(uuid "247055f7-62ba-4be2-819c-657e1b12bdb4")
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(justify left)
+			)
+		)
+		(pin "BARO_CS" output
+			(at 114.3 82.55 180)
+			(uuid "32338ff2-72f3-4176-bc8b-4e9cb01276b8")
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(justify left)
+			)
+		)
+		(instances
+			(project "CUR_flight_computer_25-26"
+				(path "/bf7761cc-1b32-4d86-809c-5f027005229b"
+					(page "2")
+				)
+			)
+		)
+	)
+	(sheet
+		(at 95.25 139.065)
+		(size 32.385 19.685)
+		(exclude_from_sim no)
+		(in_bom yes)
+		(on_board yes)
+		(dnp no)
+		(fields_autoplaced yes)
+		(stroke
+			(width 0.1524)
+			(type solid)
+		)
+		(fill
+			(color 0 0 0 0.0000)
+		)
+		(uuid "5946e354-b9a7-4a8a-8580-991442920c21")
+		(property "Sheetname" "Peripherals"
+			(at 95.25 138.3534 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(justify left bottom)
+			)
+		)
+		(property "Sheetfile" "peripherals.kicad_sch"
+			(at 95.25 159.3346 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(justify left top)
+			)
+		)
+		(instances
+			(project "CUR_flight_computer_25-26"
+				(path "/bf7761cc-1b32-4d86-809c-5f027005229b"
+					(page "11")
+				)
+			)
+		)
+	)
+	(sheet
+		(at 182.245 85.725)
+		(size 31.75 16.51)
+		(exclude_from_sim no)
+		(in_bom yes)
+		(on_board yes)
+		(dnp no)
+		(fields_autoplaced yes)
+		(stroke
+			(width 0.1524)
+			(type solid)
+		)
+		(fill
+			(color 0 0 0 0.0000)
+		)
+		(uuid "6e71e7a3-1bcd-4797-b2e4-88d14bf1f853")
+		(property "Sheetname" "Flash"
+			(at 182.245 85.0134 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(justify left bottom)
+			)
+		)
+		(property "Sheetfile" "flash.kicad_sch"
+			(at 182.245 102.8196 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(justify left top)
+			)
+		)
+		(instances
+			(project "CUR_flight_computer_25-26"
+				(path "/bf7761cc-1b32-4d86-809c-5f027005229b"
+					(page "7")
+				)
+			)
+		)
+	)
+	(sheet
+		(at 69.85 52.705)
+		(size 24.13 34.925)
+		(exclude_from_sim no)
+		(in_bom yes)
+		(on_board yes)
+		(dnp no)
+		(fields_autoplaced yes)
+		(stroke
+			(width 0.1524)
+			(type solid)
+		)
+		(fill
+			(color 0 0 0 0.0000)
+		)
+		(uuid "9736895c-f0f7-444d-aab7-042381dec39a")
+		(property "Sheetname" "Sensors"
+			(at 69.85 51.9934 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(justify left bottom)
+			)
+		)
+		(property "Sheetfile" "sensors.kicad_sch"
+			(at 69.85 88.2146 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(justify left top)
+			)
+		)
+		(pin "BARO_CS" input
+			(at 93.98 82.55 0)
+			(uuid "fca8e29b-294f-43c9-a61c-af52792d66ab")
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(justify right)
+			)
+		)
+		(pin "SENSOR_SPC" input
+			(at 93.98 66.04 0)
+			(uuid "3c29dde7-ba1d-46bf-962b-368976b23d3a")
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(justify right)
+			)
+		)
+		(pin "BARO_INT" output
+			(at 93.98 80.01 0)
+			(uuid "88b4144b-a5bd-469d-8ab5-d4d6e20739bd")
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(justify right)
+			)
+		)
+		(pin "SENSOR_MISO" output
+			(at 93.98 63.5 0)
+			(uuid "d7925820-f324-4b02-a0bd-0f7003a018a5")
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(justify right)
+			)
+		)
+		(pin "SENSOR_MOSI" input
+			(at 93.98 60.96 0)
+			(uuid "389488fa-82c3-4a90-a901-74f179c03fe7")
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(justify right)
+			)
+		)
+		(instances
+			(project "CUR_flight_computer_25-26"
+				(path "/bf7761cc-1b32-4d86-809c-5f027005229b"
+					(page "3")
+				)
+			)
+		)
+	)
+	(sheet
+		(at 146.05 139.7)
+		(size 31.75 19.05)
+		(exclude_from_sim no)
+		(in_bom yes)
+		(on_board yes)
+		(dnp no)
+		(fields_autoplaced yes)
+		(stroke
+			(width 0.1524)
+			(type solid)
+		)
+		(fill
+			(color 0 0 0 0.0000)
+		)
+		(uuid "a6095a4d-1542-4c9d-ab0b-9ed076818c96")
+		(property "Sheetname" "Pyro"
+			(at 146.05 138.9884 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(justify left bottom)
+			)
+		)
+		(property "Sheetfile" "pyro.kicad_sch"
+			(at 146.05 159.3346 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(justify left top)
+			)
+		)
+		(instances
+			(project "CUR_flight_computer_25-26"
+				(path "/bf7761cc-1b32-4d86-809c-5f027005229b"
+					(page "9")
+				)
+			)
+		)
+	)
+	(sheet
+		(at 101.6 25.4)
+		(size 32.385 12.7)
+		(exclude_from_sim no)
+		(in_bom yes)
+		(on_board yes)
+		(dnp no)
+		(fields_autoplaced yes)
+		(stroke
+			(width 0.1524)
+			(type solid)
+		)
+		(fill
+			(color 0 0 0 0.0000)
+		)
+		(uuid "cf63387d-37b0-4f5e-affd-1b765436078d")
+		(property "Sheetname" "USB"
+			(at 101.6 24.6884 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(justify left bottom)
+			)
+		)
+		(property "Sheetfile" "usb.kicad_sch"
+			(at 101.6 38.6846 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(justify left top)
+			)
+		)
+		(instances
+			(project "CUR_flight_computer_25-26"
+				(path "/bf7761cc-1b32-4d86-809c-5f027005229b"
+					(page "10")
+				)
+			)
+		)
+	)
+	(sheet
+		(at 182.245 110.49)
+		(size 32.385 20.32)
+		(exclude_from_sim no)
+		(in_bom yes)
+		(on_board yes)
+		(dnp no)
+		(fields_autoplaced yes)
+		(stroke
+			(width 0.1524)
+			(type solid)
+		)
+		(fill
+			(color 0 0 0 0.0000)
+		)
+		(uuid "e838d24c-cb75-4a46-b88f-e4466a269629")
+		(property "Sheetname" "GPS"
+			(at 182.245 109.7784 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(justify left bottom)
+			)
+		)
+		(property "Sheetfile" "gps.kicad_sch"
+			(at 182.245 131.3946 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(justify left top)
+			)
+		)
+		(instances
+			(project "CUR_flight_computer_25-26"
+				(path "/bf7761cc-1b32-4d86-809c-5f027005229b"
+					(page "8")
+				)
+			)
+		)
+	)
 	(sheet_instances
 		(path "/"
 			(page "1")
