@@ -1,0 +1,3 @@
+[submodule "CUR_flight_computer_25-26/kicad-library"]
+	path = CUR_flight_computer_25-26/kicad-library
+	url = git@github.com:CU-Rocketry/kicad-library
