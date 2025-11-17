@@ -1,0 +1,5 @@
+(sym_lib_table
+  (version 7)
+  (lib (name "BUK9K25-40RAX")(type "KiCad")(uri "${KIPRJMOD}/kicad-library/symbols/BUK9K25-40RAX.kicad_sym")(options "")(descr ""))
+  (lib (name "ST_Sensor_IMU")(type "KiCad")(uri "${KIPRJMOD}/kicad-library/symbols/ST_Sensor_IMU.kicad_sym")(options "")(descr ""))
+)
