@@ -1314,10 +1314,10 @@
 			)
 		)
 		(pin "2"
-			(uuid "f5061e70-e8d5-4949-96cc-8875463a5627")
+			(uuid "f5061e70-e8d5-4949-96cc-8875463a5628")
 		)
 		(pin "1"
-			(uuid "3d8403f2-c027-4de4-b8ed-342362ce1021")
+			(uuid "3d8403f2-c027-4de4-b8ed-342362ce1022")
 		)
 		(instances
 			(project ""
@@ -1449,7 +1449,7 @@
 			)
 		)
 		(pin "1"
-			(uuid "97c1cb4f-13b4-4799-81dc-fdb2c0fb1907")
+			(uuid "97c1cb4f-13b4-4799-81dc-fdb2c0fb1908")
 		)
 		(instances
 			(project ""
