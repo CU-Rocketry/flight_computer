@@ -3,4 +3,6 @@
   (lib (name "BUK9K25-40RAX")(type "KiCad")(uri "${KIPRJMOD}/kicad-library/symbols/BUK9K25-40RAX.kicad_sym")(options "")(descr ""))
   (lib (name "ST_Sensor_IMU")(type "KiCad")(uri "${KIPRJMOD}/kicad-library/symbols/ST_Sensor_IMU.kicad_sym")(options "")(descr ""))
   (lib (name "BUxxSD5")(type "KiCad")(uri "${KIPRJMOD}/kicad-library/symbols/BUxxSD5.kicad_sym")(options "")(descr ""))
+  (lib (name "LM66200")(type "KiCad")(uri "${KIPRJMOD}/kicad-library/symbols/LM66200.kicad_sym")(options "")(descr ""))
+  (lib (name "DI_ZXCT180")(type "KiCad")(uri "${KIPRJMOD}/kicad-library/symbols/DI_ZXCT180.kicad_sym")(options "")(descr ""))
 )

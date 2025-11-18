@@ -3,4 +3,5 @@
   (lib (name "BUK9K25-40RAX")(type "KiCad")(uri "${KIPRJMOD}/kicad-library/footprints/BUK9K25-40RAX.pretty")(options "")(descr ""))
   (lib (name "ST_IIS2MDC")(type "KiCad")(uri "${KIPRJMOD}/kicad-library/footprints/ST_IIS2MDC.pretty")(options "")(descr ""))
   (lib (name "BUxxSD5")(type "KiCad")(uri "${KIPRJMOD}/kicad-library/footprints/BUxxSD5.pretty")(options "")(descr ""))
+  (lib (name "Connector_AMASS_XT")(type "KiCad")(uri "${KIPRJMOD}/kicad-library/footprints/Connector_AMASS_XT.pretty")(options "")(descr ""))
 )
