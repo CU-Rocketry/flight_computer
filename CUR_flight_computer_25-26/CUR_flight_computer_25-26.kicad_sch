@@ -7,26 +7,6 @@
 	(lib_symbols)
 	(wire
 		(pts
-			(xy 93.98 77.47) (xy 114.3 77.47)
-		)
-		(stroke
-			(width 0)
-			(type default)
-		)
-		(uuid "082a3b4d-5cc3-482f-97f4-3d440813f097")
-	)
-	(wire
-		(pts
-			(xy 93.98 69.85) (xy 114.3 69.85)
-		)
-		(stroke
-			(width 0)
-			(type default)
-		)
-		(uuid "22deada1-9040-4ac7-a0bb-cd466c9c8bb5")
-	)
-	(wire
-		(pts
 			(xy 93.98 82.55) (xy 114.3 82.55)
 		)
 		(stroke
@@ -74,26 +54,6 @@
 			(type default)
 		)
 		(uuid "b60b0ef1-4787-4daa-95c8-48c16b4ee34b")
-	)
-	(wire
-		(pts
-			(xy 93.98 74.93) (xy 114.3 74.93)
-		)
-		(stroke
-			(width 0)
-			(type default)
-		)
-		(uuid "b7fcc3a4-a8f9-4f43-b9dc-9b5f29b07d36")
-	)
-	(wire
-		(pts
-			(xy 93.98 72.39) (xy 114.3 72.39)
-		)
-		(stroke
-			(width 0)
-			(type default)
-		)
-		(uuid "e7ecbe22-e608-47d2-b73d-c3d1ad2e4c55")
 	)
 	(sheet
 		(at 69.85 97.79)
@@ -305,46 +265,6 @@
 				(justify left)
 			)
 		)
-		(pin "MAG_CLOCK" output
-			(at 114.3 77.47 180)
-			(uuid "7f70d15a-05c9-4d39-a3bb-dd179c569950")
-			(effects
-				(font
-					(size 1.27 1.27)
-				)
-				(justify left)
-			)
-		)
-		(pin "MAG_CS" output
-			(at 114.3 74.93 180)
-			(uuid "7357a033-c7fe-48d3-946e-0417c086a741")
-			(effects
-				(font
-					(size 1.27 1.27)
-				)
-				(justify left)
-			)
-		)
-		(pin "MAG_DATA" bidirectional
-			(at 114.3 72.39 180)
-			(uuid "f4d347c1-7253-4977-af5b-f4306ab67752")
-			(effects
-				(font
-					(size 1.27 1.27)
-				)
-				(justify left)
-			)
-		)
-		(pin "MAG_INT" input
-			(at 114.3 69.85 180)
-			(uuid "8e04ef35-b4a0-4d5a-9eed-e2d64afd1e78")
-			(effects
-				(font
-					(size 1.27 1.27)
-				)
-				(justify left)
-			)
-		)
 		(instances
 			(project "CUR_flight_computer_25-26"
 				(path "/bf7761cc-1b32-4d86-809c-5f027005229b"
@@ -514,46 +434,6 @@
 		(pin "SENSOR_MOSI" input
 			(at 93.98 60.96 0)
 			(uuid "389488fa-82c3-4a90-a901-74f179c03fe7")
-			(effects
-				(font
-					(size 1.27 1.27)
-				)
-				(justify right)
-			)
-		)
-		(pin "MAG CLOCK" input
-			(at 93.98 77.47 0)
-			(uuid "c9bdad1d-5afb-47ba-becb-27e2a4ac7fbd")
-			(effects
-				(font
-					(size 1.27 1.27)
-				)
-				(justify right)
-			)
-		)
-		(pin "MAG_CS" input
-			(at 93.98 74.93 0)
-			(uuid "5ef6ad7e-bdf0-4bf9-b00b-f05be3562136")
-			(effects
-				(font
-					(size 1.27 1.27)
-				)
-				(justify right)
-			)
-		)
-		(pin "MAG_DATA" bidirectional
-			(at 93.98 72.39 0)
-			(uuid "3aa36613-055f-486b-9892-7b09cb4e1496")
-			(effects
-				(font
-					(size 1.27 1.27)
-				)
-				(justify right)
-			)
-		)
-		(pin "MAG_INT" output
-			(at 93.98 69.85 0)
-			(uuid "2bd68e01-71f6-4ee6-a962-6d39036ba2bb")
 			(effects
 				(font
 					(size 1.27 1.27)

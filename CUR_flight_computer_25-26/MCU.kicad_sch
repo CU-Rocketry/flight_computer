@@ -3582,28 +3582,6 @@
 		)
 		(uuid "57c81c69-e554-4f04-8c47-5d94b24a1a5c")
 	)
-	(hierarchical_label "MAG_CLOCK"
-		(shape output)
-		(at 203.2 39.37 0)
-		(effects
-			(font
-				(size 1.27 1.27)
-			)
-			(justify left)
-		)
-		(uuid "8cd28304-bd49-48aa-a199-bf2c69e01a1a")
-	)
-	(hierarchical_label "MAG_DATA"
-		(shape bidirectional)
-		(at 203.2 36.83 0)
-		(effects
-			(font
-				(size 1.27 1.27)
-			)
-			(justify left)
-		)
-		(uuid "944a9a76-442d-4c93-8485-33f429acf93a")
-	)
 	(hierarchical_label "BARO_INT"
 		(shape input)
 		(at 203.2 34.29 0)
@@ -3625,28 +3603,6 @@
 			(justify left)
 		)
 		(uuid "9fb5fac5-a6a4-42e6-b925-7fd8467631d5")
-	)
-	(hierarchical_label "MAG_INT"
-		(shape input)
-		(at 203.2 44.45 0)
-		(effects
-			(font
-				(size 1.27 1.27)
-			)
-			(justify left)
-		)
-		(uuid "a3ad3f5f-ccf2-470f-ba15-5f380d264d44")
-	)
-	(hierarchical_label "MAG_CS"
-		(shape output)
-		(at 203.2 41.91 0)
-		(effects
-			(font
-				(size 1.27 1.27)
-			)
-			(justify left)
-		)
-		(uuid "dd035bd1-b82c-4c7e-9f8c-cf39fe0fa634")
 	)
 	(hierarchical_label "SENSORS_MOSI"
 		(shape output)
