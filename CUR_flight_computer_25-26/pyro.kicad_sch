@@ -495,22 +495,22 @@
 			)
 		)
 		(pin "4"
-			(uuid "8765b795-45fd-4ef1-837d-7b2483adc304")
+			(uuid "8765b795-45fd-4ef1-837d-7b2483adc305")
 		)
 		(pin "6"
-			(uuid "42d38af0-ac6e-4863-86b4-b9dffefd69ad")
+			(uuid "42d38af0-ac6e-4863-86b4-b9dffefd69ae")
 		)
 		(pin "1"
-			(uuid "d0ceec7f-9507-48e8-a6bc-0e8076dd44c7")
+			(uuid "d0ceec7f-9507-48e8-a6bc-0e8076dd44c8")
 		)
 		(pin "5"
-			(uuid "0d111f66-5a63-475f-8864-1ae8dbac6324")
+			(uuid "0d111f66-5a63-475f-8864-1ae8dbac6325")
 		)
 		(pin "3"
-			(uuid "bf234082-3e1e-436e-b387-d59fc76ffcd3")
+			(uuid "bf234082-3e1e-436e-b387-d59fc76ffcd4")
 		)
 		(pin "2"
-			(uuid "66d37e6f-9b20-41fc-a3be-032d277d14f3")
+			(uuid "66d37e6f-9b20-41fc-a3be-032d277d14f4")
 		)
 		(instances
 			(project ""
@@ -583,16 +583,16 @@
 			(uuid "5b279b79-8e6e-4c1c-acf1-5abffe18abec")
 		)
 		(pin "1"
-			(uuid "d0ceec7f-9507-48e8-a6bc-0e8076dd44c7")
+			(uuid "d0ceec7f-9507-48e8-a6bc-0e8076dd44c9")
 		)
 		(pin "5"
-			(uuid "0d111f66-5a63-475f-8864-1ae8dbac6324")
+			(uuid "0d111f66-5a63-475f-8864-1ae8dbac6326")
 		)
 		(pin "3"
 			(uuid "9d2226b1-1912-43f7-8498-4cfdf3f05512")
 		)
 		(pin "2"
-			(uuid "66d37e6f-9b20-41fc-a3be-032d277d14f3")
+			(uuid "66d37e6f-9b20-41fc-a3be-032d277d14f5")
 		)
 		(instances
 			(project "CUR_flight_computer_25-26"
@@ -659,10 +659,10 @@
 			)
 		)
 		(pin "4"
-			(uuid "8765b795-45fd-4ef1-837d-7b2483adc305")
+			(uuid "8765b795-45fd-4ef1-837d-7b2483adc306")
 		)
 		(pin "6"
-			(uuid "42d38af0-ac6e-4863-86b4-b9dffefd69ae")
+			(uuid "42d38af0-ac6e-4863-86b4-b9dffefd69af")
 		)
 		(pin "1"
 			(uuid "3b105496-9565-4f27-ab3a-41a11d058de4")
@@ -671,7 +671,7 @@
 			(uuid "965efc2b-568d-4376-a4d0-f23ebadf05c9")
 		)
 		(pin "3"
-			(uuid "bf234082-3e1e-436e-b387-d59fc76ffcd4")
+			(uuid "bf234082-3e1e-436e-b387-d59fc76ffcd5")
 		)
 		(pin "2"
 			(uuid "f17eae6f-8aa1-4358-91b1-2890b62ce171")
