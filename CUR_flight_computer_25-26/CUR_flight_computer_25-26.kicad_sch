@@ -7,6 +7,46 @@
 	(lib_symbols)
 	(wire
 		(pts
+			(xy 156.21 130.81) (xy 156.21 139.7)
+		)
+		(stroke
+			(width 0)
+			(type default)
+		)
+		(uuid "10a23df7-5f00-4be2-8378-e43116a96a0c")
+	)
+	(wire
+		(pts
+			(xy 148.59 130.81) (xy 148.59 139.7)
+		)
+		(stroke
+			(width 0)
+			(type default)
+		)
+		(uuid "3558d50d-a3a8-47c8-a697-b9a1c51cada9")
+	)
+	(wire
+		(pts
+			(xy 153.67 130.81) (xy 153.67 139.7)
+		)
+		(stroke
+			(width 0)
+			(type default)
+		)
+		(uuid "4e4454ad-5ea9-40e5-9b6d-5ef66779f6fd")
+	)
+	(wire
+		(pts
+			(xy 143.51 130.81) (xy 143.51 139.7)
+		)
+		(stroke
+			(width 0)
+			(type default)
+		)
+		(uuid "54ad78c3-671e-44ca-97ef-05fa6d190ade")
+	)
+	(wire
+		(pts
 			(xy 93.98 78.74) (xy 114.3 78.74)
 		)
 		(stroke
@@ -57,6 +97,36 @@
 	)
 	(wire
 		(pts
+			(xy 161.29 130.81) (xy 161.29 139.7)
+		)
+		(stroke
+			(width 0)
+			(type default)
+		)
+		(uuid "92d367e6-dec7-4110-b17b-d7245b8e8d95")
+	)
+	(wire
+		(pts
+			(xy 146.05 130.81) (xy 146.05 139.7)
+		)
+		(stroke
+			(width 0)
+			(type default)
+		)
+		(uuid "92e249a0-825a-4720-9b27-47048118f69d")
+	)
+	(wire
+		(pts
+			(xy 158.75 130.81) (xy 158.75 139.7)
+		)
+		(stroke
+			(width 0)
+			(type default)
+		)
+		(uuid "9416c15c-1087-42b4-bd8d-0526933a574e")
+	)
+	(wire
+		(pts
 			(xy 93.98 63.5) (xy 114.3 63.5)
 		)
 		(stroke
@@ -64,6 +134,16 @@
 			(type default)
 		)
 		(uuid "946a6d9a-67c6-4310-9220-99260d50237b")
+	)
+	(wire
+		(pts
+			(xy 140.97 130.81) (xy 140.97 139.7)
+		)
+		(stroke
+			(width 0)
+			(type default)
+		)
+		(uuid "98a8c4b8-654e-4644-b3ce-0dc5481ab2a6")
 	)
 	(wire
 		(pts
@@ -84,6 +164,16 @@
 			(type default)
 		)
 		(uuid "a8c19b1d-16bd-4932-a37e-607b5ce2ebb5")
+	)
+	(wire
+		(pts
+			(xy 151.13 130.81) (xy 151.13 139.7)
+		)
+		(stroke
+			(width 0)
+			(type default)
+		)
+		(uuid "a9f8abb0-63de-4790-95ed-79bc39857fdc")
 	)
 	(wire
 		(pts
@@ -114,6 +204,105 @@
 			(type default)
 		)
 		(uuid "e960f817-c2dc-4b31-89a6-a27b75d17958")
+	)
+	(hierarchical_label "PYRO_3"
+		(shape input)
+		(at 146.05 130.81 90)
+		(effects
+			(font
+				(size 1.27 1.27)
+			)
+			(justify left)
+		)
+		(uuid "2da65864-c7a3-4333-854d-814f142b64bb")
+	)
+	(hierarchical_label "SENSE_4"
+		(shape output)
+		(at 158.75 130.81 90)
+		(effects
+			(font
+				(size 1.27 1.27)
+			)
+			(justify left)
+		)
+		(uuid "3176b20f-5982-45bd-829e-bab39bc0733e")
+	)
+	(hierarchical_label "SENSE_1"
+		(shape output)
+		(at 151.13 130.81 90)
+		(effects
+			(font
+				(size 1.27 1.27)
+			)
+			(justify left)
+		)
+		(uuid "4d7b08a8-d580-46b0-a454-5cc9aab6cca3")
+	)
+	(hierarchical_label "PYRO_4"
+		(shape input)
+		(at 148.59 130.81 90)
+		(effects
+			(font
+				(size 1.27 1.27)
+			)
+			(justify left)
+		)
+		(uuid "628ad125-b532-44a8-85b9-cd8a14b5799a")
+	)
+	(hierarchical_label "PYRO_2"
+		(shape input)
+		(at 143.51 130.81 90)
+		(effects
+			(font
+				(size 1.27 1.27)
+			)
+			(justify left)
+		)
+		(uuid "64b49dfa-be7b-40e3-ad17-5b61d4071e4a")
+	)
+	(hierarchical_label "SENSE_3"
+		(shape output)
+		(at 156.21 130.81 90)
+		(effects
+			(font
+				(size 1.27 1.27)
+			)
+			(justify left)
+		)
+		(uuid "6b187cb4-0433-4f65-9542-c546aeeae3e8")
+	)
+	(hierarchical_label "PYRO_1"
+		(shape input)
+		(at 140.97 130.81 90)
+		(effects
+			(font
+				(size 1.27 1.27)
+			)
+			(justify left)
+		)
+		(uuid "aa76fe82-79f6-49de-b63b-ff2aa63d81cd")
+	)
+	(hierarchical_label "BATT_PYRO"
+		(shape input)
+		(at 161.29 130.81 90)
+		(effects
+			(font
+				(size 1.27 1.27)
+			)
+			(justify left)
+		)
+		(uuid "d37f990f-8a8d-44cc-9b20-2be5206cd0a8")
+	)
+	(hierarchical_label "SENSE_2"
+		(shape output)
+		(at 153.67 130.81 90)
+		(effects
+			(font
+				(size 1.27 1.27)
+			)
+			(justify left)
+		)
+		(uuid "ee40045e-613d-4547-a8bb-2a6004c7c0f7")
 	)
 	(sheet
 		(at 69.85 114.3)
@@ -630,7 +819,7 @@
 		)
 	)
 	(sheet
-		(at 146.05 139.7)
+		(at 139.7 139.7)
 		(size 31.75 19.05)
 		(exclude_from_sim no)
 		(in_bom yes)
@@ -646,7 +835,7 @@
 		)
 		(uuid "a6095a4d-1542-4c9d-ab0b-9ed076818c96")
 		(property "Sheetname" "Pyro"
-			(at 146.05 138.9884 0)
+			(at 139.7 138.9884 0)
 			(effects
 				(font
 					(size 1.27 1.27)
@@ -655,12 +844,102 @@
 			)
 		)
 		(property "Sheetfile" "pyro.kicad_sch"
-			(at 146.05 159.3346 0)
+			(at 139.7 159.3346 0)
 			(effects
 				(font
 					(size 1.27 1.27)
 				)
 				(justify left top)
+			)
+		)
+		(pin "PYRO_4" input
+			(at 148.59 139.7 90)
+			(uuid "8f09c0cb-c84e-45f1-9880-983131d84fe1")
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(justify right)
+			)
+		)
+		(pin "SENSE_4" output
+			(at 158.75 139.7 90)
+			(uuid "63a42588-4b88-471b-a536-f22c2e70f00c")
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(justify right)
+			)
+		)
+		(pin "BATT_PYRO" input
+			(at 161.29 139.7 90)
+			(uuid "b9cb001b-44e2-4579-ac19-e3226e730c68")
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(justify right)
+			)
+		)
+		(pin "PYRO_3" input
+			(at 146.05 139.7 90)
+			(uuid "fa188893-2752-4255-bebe-fada80ffea30")
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(justify right)
+			)
+		)
+		(pin "SENSE_3" output
+			(at 156.21 139.7 90)
+			(uuid "bdd2feed-e916-482c-ae30-4df42b90a5a8")
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(justify right)
+			)
+		)
+		(pin "PYRO_2" input
+			(at 143.51 139.7 90)
+			(uuid "ee6da134-0726-4496-bbfa-05ed5374e0b9")
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(justify right)
+			)
+		)
+		(pin "SENSE_2" output
+			(at 153.67 139.7 90)
+			(uuid "b68665ca-c8dd-4b0b-a33d-62f35a654258")
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(justify right)
+			)
+		)
+		(pin "PYRO_1" input
+			(at 140.97 139.7 90)
+			(uuid "c553cfec-efe7-41c4-a9c8-0693c5b042ed")
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(justify right)
+			)
+		)
+		(pin "SENSE_1" output
+			(at 151.13 139.7 90)
+			(uuid "8a337a87-9000-41c1-883a-85eb9a1f54a3")
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(justify right)
 			)
 		)
 		(instances
