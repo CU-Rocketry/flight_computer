@@ -4355,6 +4355,28 @@
 		)
 		(uuid "2a0d214d-1e17-473b-9ce1-9c4c89cfa9ec")
 	)
+	(hierarchical_label "FLASH_IO1"
+		(shape bidirectional)
+		(at 238.76 33.02 0)
+		(effects
+			(font
+				(size 1.27 1.27)
+			)
+			(justify left)
+		)
+		(uuid "2bc0e651-32bd-409c-b272-a4dd8114f1c3")
+	)
+	(hierarchical_label "FLASH_CS"
+		(shape output)
+		(at 226.06 33.02 0)
+		(effects
+			(font
+				(size 1.27 1.27)
+			)
+			(justify left)
+		)
+		(uuid "2bdc07d8-9fa6-4a82-be63-35e177813025")
+	)
 	(hierarchical_label "SENSORS_MISO"
 		(shape input)
 		(at 189.23 69.85 0)
@@ -4376,6 +4398,17 @@
 			(justify right)
 		)
 		(uuid "65021b11-5f2c-45a1-b0ec-f6fd6ad11321")
+	)
+	(hierarchical_label "FLASH_CLK"
+		(shape output)
+		(at 226.06 30.48 0)
+		(effects
+			(font
+				(size 1.27 1.27)
+			)
+			(justify left)
+		)
+		(uuid "94ea70e3-8c97-42ef-97a2-be990e4e0c22")
 	)
 	(hierarchical_label "BARO_INT"
 		(shape input)
@@ -4399,6 +4432,28 @@
 		)
 		(uuid "9fb5fac5-a6a4-42e6-b925-7fd8467631d5")
 	)
+	(hierarchical_label "FLASH_RESET"
+		(shape bidirectional)
+		(at 238.76 38.1 0)
+		(effects
+			(font
+				(size 1.27 1.27)
+			)
+			(justify left)
+		)
+		(uuid "a4d58e6c-41ac-4209-8e03-c0c54fa83204")
+	)
+	(hierarchical_label "FLASH_IO0"
+		(shape bidirectional)
+		(at 238.76 30.48 0)
+		(effects
+			(font
+				(size 1.27 1.27)
+			)
+			(justify left)
+		)
+		(uuid "b2db0fe9-5f29-4e94-8a4d-4d3a16370382")
+	)
 	(hierarchical_label "MAG_DATA"
 		(shape bidirectional)
 		(at 193.04 34.29 180)
@@ -4420,6 +4475,17 @@
 			(justify right)
 		)
 		(uuid "d38c065e-86d2-4e49-abb2-e99f8a542543")
+	)
+	(hierarchical_label "FLASH_IO2"
+		(shape bidirectional)
+		(at 238.76 35.56 0)
+		(effects
+			(font
+				(size 1.27 1.27)
+			)
+			(justify left)
+		)
+		(uuid "e310b7a3-fe99-4ee2-9936-6acc2216a57b")
 	)
 	(hierarchical_label "IMU_INT1"
 		(shape input)

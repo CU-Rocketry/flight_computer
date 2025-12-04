@@ -7,6 +7,36 @@
 	(lib_symbols)
 	(wire
 		(pts
+			(xy 162.56 100.33) (xy 184.15 100.33)
+		)
+		(stroke
+			(width 0)
+			(type default)
+		)
+		(uuid "1a59b4c9-dafa-48f6-a401-9383d2110a2b")
+	)
+	(wire
+		(pts
+			(xy 162.56 97.79) (xy 184.15 97.79)
+		)
+		(stroke
+			(width 0)
+			(type default)
+		)
+		(uuid "2eab5887-baf1-4d1a-bded-5878aaa0547e")
+	)
+	(wire
+		(pts
+			(xy 162.56 90.17) (xy 184.15 90.17)
+		)
+		(stroke
+			(width 0)
+			(type default)
+		)
+		(uuid "42429191-aae4-41dc-8892-04767373c34e")
+	)
+	(wire
+		(pts
 			(xy 93.98 78.74) (xy 114.3 78.74)
 		)
 		(stroke
@@ -14,6 +44,16 @@
 			(type default)
 		)
 		(uuid "5b4ddfa0-8b6c-4c60-b17a-1b44a6189a23")
+	)
+	(wire
+		(pts
+			(xy 162.56 95.25) (xy 184.15 95.25)
+		)
+		(stroke
+			(width 0)
+			(type default)
+		)
+		(uuid "6019d0dd-c33b-40dc-9472-cfe68f235eb7")
 	)
 	(wire
 		(pts
@@ -104,6 +144,26 @@
 			(type default)
 		)
 		(uuid "be9b124e-729a-490b-b8dd-dbd71e3d3bea")
+	)
+	(wire
+		(pts
+			(xy 162.56 87.63) (xy 184.15 87.63)
+		)
+		(stroke
+			(width 0)
+			(type default)
+		)
+		(uuid "c54221d2-933a-462d-8aba-31f4f26f4cc7")
+	)
+	(wire
+		(pts
+			(xy 162.56 92.71) (xy 184.15 92.71)
+		)
+		(stroke
+			(width 0)
+			(type default)
+		)
+		(uuid "d8ca179d-da6f-4d44-b328-2b1988e089c6")
 	)
 	(wire
 		(pts
@@ -385,6 +445,66 @@
 				(justify left)
 			)
 		)
+		(pin "FLASH_CLK" output
+			(at 162.56 87.63 0)
+			(uuid "f88b7a53-c966-42e7-912c-f81cb3cb7320")
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(justify right)
+			)
+		)
+		(pin "FLASH_CS" output
+			(at 162.56 90.17 0)
+			(uuid "2e685778-b8ba-4a81-8ba7-ef69b7d2282f")
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(justify right)
+			)
+		)
+		(pin "FLASH_IO0" bidirectional
+			(at 162.56 92.71 0)
+			(uuid "d516764b-54f5-4385-9528-72864ce3cbd9")
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(justify right)
+			)
+		)
+		(pin "FLASH_IO1" bidirectional
+			(at 162.56 95.25 0)
+			(uuid "b43fb133-6d2c-4ca0-830d-d4763551719d")
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(justify right)
+			)
+		)
+		(pin "FLASH_IO2" bidirectional
+			(at 162.56 97.79 0)
+			(uuid "922bc211-99f7-42f2-bd40-048b64f1d014")
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(justify right)
+			)
+		)
+		(pin "FLASH_RESET" bidirectional
+			(at 162.56 100.33 0)
+			(uuid "17f616f5-1d01-48a9-ad6a-2580f9b7ca99")
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(justify right)
+			)
+		)
 		(instances
 			(project "CUR_flight_computer_25-26"
 				(path "/bf7761cc-1b32-4d86-809c-5f027005229b"
@@ -436,7 +556,7 @@
 		)
 	)
 	(sheet
-		(at 182.245 85.725)
+		(at 184.15 85.725)
 		(size 31.75 16.51)
 		(exclude_from_sim no)
 		(in_bom yes)
@@ -452,7 +572,7 @@
 		)
 		(uuid "6e71e7a3-1bcd-4797-b2e4-88d14bf1f853")
 		(property "Sheetname" "Flash"
-			(at 182.245 85.0134 0)
+			(at 184.15 85.0134 0)
 			(effects
 				(font
 					(size 1.27 1.27)
@@ -461,12 +581,72 @@
 			)
 		)
 		(property "Sheetfile" "flash.kicad_sch"
-			(at 182.245 102.8196 0)
+			(at 184.15 102.8196 0)
 			(effects
 				(font
 					(size 1.27 1.27)
 				)
 				(justify left top)
+			)
+		)
+		(pin "FLASH RESET" bidirectional
+			(at 184.15 100.33 180)
+			(uuid "5b95d3be-42ae-4bec-99b0-a0dde22bc3cb")
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(justify left)
+			)
+		)
+		(pin "FLASH_CLK" input
+			(at 184.15 87.63 180)
+			(uuid "31efd64f-852e-4e90-8148-7fb644a31dc7")
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(justify left)
+			)
+		)
+		(pin "FLASH_CS" input
+			(at 184.15 90.17 180)
+			(uuid "f0f3b5cd-2818-4dc8-8400-d70b0351fdcb")
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(justify left)
+			)
+		)
+		(pin "FLASH_IO0" bidirectional
+			(at 184.15 92.71 180)
+			(uuid "67fdda4b-2252-4e62-ab45-e0bba0b319f9")
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(justify left)
+			)
+		)
+		(pin "FLASH_IO2" bidirectional
+			(at 184.15 97.79 180)
+			(uuid "4b6340cb-4b79-49c7-a02b-08b286dfb15f")
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(justify left)
+			)
+		)
+		(pin "FLASH_IO1" bidirectional
+			(at 184.15 95.25 180)
+			(uuid "4d157e10-0280-4047-a654-2eceffacfde3")
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(justify left)
 			)
 		)
 		(instances
