@@ -4399,6 +4399,17 @@
 		)
 		(uuid "9fb5fac5-a6a4-42e6-b925-7fd8467631d5")
 	)
+	(hierarchical_label "BUZZER"
+		(shape output)
+		(at 256.54 29.21 0)
+		(effects
+			(font
+				(size 1.27 1.27)
+			)
+			(justify left)
+		)
+		(uuid "be9aaa6e-593b-48b9-b5fd-e8e208cfefdc")
+	)
 	(hierarchical_label "MAG_DATA"
 		(shape bidirectional)
 		(at 193.04 34.29 180)

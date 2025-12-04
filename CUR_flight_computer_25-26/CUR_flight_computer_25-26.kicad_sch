@@ -27,6 +27,26 @@
 	)
 	(wire
 		(pts
+			(xy 114.3 123.19) (xy 107.95 123.19)
+		)
+		(stroke
+			(width 0)
+			(type default)
+		)
+		(uuid "67fae1b5-7125-43e9-8f3c-6e1a59f64900")
+	)
+	(wire
+		(pts
+			(xy 107.95 123.19) (xy 107.95 139.065)
+		)
+		(stroke
+			(width 0)
+			(type default)
+		)
+		(uuid "6cbbd782-1f9b-4fdc-a059-1f9a6b8125e5")
+	)
+	(wire
+		(pts
 			(xy 93.98 71.12) (xy 114.3 71.12)
 		)
 		(stroke
@@ -385,6 +405,16 @@
 				(justify left)
 			)
 		)
+		(pin "BUZZER" output
+			(at 114.3 123.19 180)
+			(uuid "8a12361d-21fe-483b-a1a1-8f14b9a19b8b")
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(justify left)
+			)
+		)
 		(instances
 			(project "CUR_flight_computer_25-26"
 				(path "/bf7761cc-1b32-4d86-809c-5f027005229b"
@@ -425,6 +455,16 @@
 					(size 1.27 1.27)
 				)
 				(justify left top)
+			)
+		)
+		(pin "BUZZER" input
+			(at 107.95 139.065 90)
+			(uuid "8aa0ae94-05fe-4741-9744-a2e7bc540e5d")
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(justify right)
 			)
 		)
 		(instances
