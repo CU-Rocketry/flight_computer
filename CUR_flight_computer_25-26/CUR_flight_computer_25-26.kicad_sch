@@ -7,6 +7,16 @@
 	(lib_symbols)
 	(wire
 		(pts
+			(xy 95.25 68.58) (xy 114.3 68.58)
+		)
+		(stroke
+			(width 0)
+			(type default)
+		)
+		(uuid "0efb8fda-b748-4c39-9916-01802215bdf1")
+	)
+	(wire
+		(pts
 			(xy 162.56 100.33) (xy 184.15 100.33)
 		)
 		(stroke
@@ -37,13 +47,13 @@
 	)
 	(wire
 		(pts
-			(xy 93.98 78.74) (xy 114.3 78.74)
+			(xy 93.98 66.04) (xy 114.3 66.04)
 		)
 		(stroke
 			(width 0)
 			(type default)
 		)
-		(uuid "5b4ddfa0-8b6c-4c60-b17a-1b44a6189a23")
+		(uuid "5d7927e0-478f-4507-b2c8-2a177f626495")
 	)
 	(wire
 		(pts
@@ -57,17 +67,7 @@
 	)
 	(wire
 		(pts
-			(xy 93.98 73.66) (xy 114.3 73.66)
-		)
-		(stroke
-			(width 0)
-			(type default)
-		)
-		(uuid "6636a14c-5d38-4ed0-bb15-ddd330986402")
-	)
-	(wire
-		(pts
-			(xy 93.98 80.01) (xy 114.3 80.01)
+			(xy 93.98 63.5) (xy 114.3 63.5)
 		)
 		(stroke
 			(width 0)
@@ -77,17 +77,7 @@
 	)
 	(wire
 		(pts
-			(xy 93.98 66.04) (xy 114.3 66.04)
-		)
-		(stroke
-			(width 0)
-			(type default)
-		)
-		(uuid "8c791ad6-12e7-4ec8-bc78-8d31611d4f8a")
-	)
-	(wire
-		(pts
-			(xy 93.98 63.5) (xy 114.3 63.5)
+			(xy 93.98 57.15) (xy 114.3 57.15)
 		)
 		(stroke
 			(width 0)
@@ -97,23 +87,33 @@
 	)
 	(wire
 		(pts
-			(xy 93.98 60.96) (xy 114.3 60.96)
+			(xy 93.98 59.69) (xy 114.3 59.69)
+		)
+		(stroke
+			(width 0)
+			(type default)
+		)
+		(uuid "acd31a84-4636-448a-94a4-0f056bb15162")
+	)
+	(wire
+		(pts
+			(xy 93.98 71.12) (xy 114.3 71.12)
+		)
+		(stroke
+			(width 0)
+			(type default)
+		)
+		(uuid "afbd7830-67e1-402e-80c6-b53156d96911")
+	)
+	(wire
+		(pts
+			(xy 93.98 54.61) (xy 114.3 54.61)
 		)
 		(stroke
 			(width 0)
 			(type default)
 		)
 		(uuid "b60b0ef1-4787-4daa-95c8-48c16b4ee34b")
-	)
-	(wire
-		(pts
-			(xy 93.98 90.17) (xy 114.3 90.17)
-		)
-		(stroke
-			(width 0)
-			(type default)
-		)
-		(uuid "be9b124e-729a-490b-b8dd-dbd71e3d3bea")
 	)
 	(wire
 		(pts
@@ -137,13 +137,13 @@
 	)
 	(wire
 		(pts
-			(xy 93.98 81.28) (xy 114.3 81.28)
+			(xy 114.3 78.74) (xy 95.25 78.74)
 		)
 		(stroke
 			(width 0)
 			(type default)
 		)
-		(uuid "e960f817-c2dc-4b31-89a6-a27b75d17958")
+		(uuid "dd8c75fc-56f4-4085-a058-fef99d166f6e")
 	)
 	(sheet
 		(at 69.85 97.79)
@@ -306,7 +306,7 @@
 			)
 		)
 		(pin "SENSORS_MISO" input
-			(at 114.3 63.5 180)
+			(at 114.3 57.15 180)
 			(uuid "f85f8310-0ef1-4603-a623-9b3231ea86b8")
 			(effects
 				(font
@@ -316,7 +316,7 @@
 			)
 		)
 		(pin "SENSORS_MOSI" output
-			(at 114.3 60.96 180)
+			(at 114.3 54.61 180)
 			(uuid "41c2d414-74d5-470d-9dd7-8aba3235b5a3")
 			(effects
 				(font
@@ -326,7 +326,7 @@
 			)
 		)
 		(pin "SENSORS_SPC" output
-			(at 114.3 66.04 180)
+			(at 114.3 59.69 180)
 			(uuid "21453462-6a30-44a1-a42e-6275ce20f65e")
 			(effects
 				(font
@@ -336,7 +336,7 @@
 			)
 		)
 		(pin "BARO_INT" input
-			(at 114.3 80.01 180)
+			(at 114.3 63.5 180)
 			(uuid "247055f7-62ba-4be2-819c-657e1b12bdb4")
 			(effects
 				(font
@@ -346,7 +346,7 @@
 			)
 		)
 		(pin "BARO_CS" output
-			(at 114.3 82.55 180)
+			(at 114.3 66.04 180)
 			(uuid "32338ff2-72f3-4176-bc8b-4e9cb01276b8")
 			(effects
 				(font
@@ -356,7 +356,7 @@
 			)
 		)
 		(pin "MAG_DATA" bidirectional
-			(at 114.3 78.74 180)
+			(at 114.3 68.58 180)
 			(uuid "4a755d3b-a6c6-4b1f-b3d6-ab853b9f5b28")
 			(effects
 				(font
@@ -366,7 +366,7 @@
 			)
 		)
 		(pin "MAG_CS" output
-			(at 114.3 83.82 180)
+			(at 114.3 73.66 180)
 			(uuid "cb778635-3b24-4063-8511-5fde042eefed")
 			(effects
 				(font
@@ -376,7 +376,7 @@
 			)
 		)
 		(pin "MAG CLOCK" output
-			(at 114.3 81.28 180)
+			(at 114.3 71.12 180)
 			(uuid "9d2664b3-c92a-4145-9cb8-45cb7cc95a0a")
 			(effects
 				(font
@@ -386,7 +386,7 @@
 			)
 		)
 		(pin "MAG_INT" input
-			(at 114.3 86.36 180)
+			(at 114.3 76.2 180)
 			(uuid "fe3ad136-cebd-41fe-b3e0-df7532689754")
 			(effects
 				(font
@@ -396,7 +396,7 @@
 			)
 		)
 		(pin "IMU_INT1" input
-			(at 114.3 90.17 180)
+			(at 114.3 78.74 180)
 			(uuid "045435db-63ea-419d-9b3a-6ebbf0e0bf6d")
 			(effects
 				(font
@@ -406,7 +406,7 @@
 			)
 		)
 		(pin "IMU_CS" output
-			(at 114.3 92.71 180)
+			(at 114.3 81.28 180)
 			(uuid "4f61ca16-defb-417e-b8d8-bd5e204dab89")
 			(effects
 				(font
@@ -628,8 +628,8 @@
 		)
 	)
 	(sheet
-		(at 69.85 52.705)
-		(size 24.13 34.925)
+		(at 69.85 45.085)
+		(size 24.13 38.735)
 		(exclude_from_sim no)
 		(in_bom yes)
 		(on_board yes)
@@ -644,7 +644,7 @@
 		)
 		(uuid "9736895c-f0f7-444d-aab7-042381dec39a")
 		(property "Sheetname" "Sensors"
-			(at 69.85 51.9934 0)
+			(at 69.85 44.3734 0)
 			(effects
 				(font
 					(size 1.27 1.27)
@@ -653,7 +653,7 @@
 			)
 		)
 		(property "Sheetfile" "sensors.kicad_sch"
-			(at 69.85 88.2146 0)
+			(at 69.85 84.4046 0)
 			(effects
 				(font
 					(size 1.27 1.27)
@@ -662,7 +662,7 @@
 			)
 		)
 		(pin "BARO_CS" input
-			(at 93.98 82.55 0)
+			(at 93.98 66.04 0)
 			(uuid "fca8e29b-294f-43c9-a61c-af52792d66ab")
 			(effects
 				(font
@@ -672,7 +672,7 @@
 			)
 		)
 		(pin "SENSOR_SPC" input
-			(at 93.98 66.04 0)
+			(at 93.98 59.69 0)
 			(uuid "3c29dde7-ba1d-46bf-962b-368976b23d3a")
 			(effects
 				(font
@@ -682,7 +682,7 @@
 			)
 		)
 		(pin "BARO_INT" output
-			(at 93.98 80.01 0)
+			(at 93.98 63.5 0)
 			(uuid "88b4144b-a5bd-469d-8ab5-d4d6e20739bd")
 			(effects
 				(font
@@ -692,7 +692,7 @@
 			)
 		)
 		(pin "SENSOR_MISO" output
-			(at 93.98 63.5 0)
+			(at 93.98 57.15 0)
 			(uuid "d7925820-f324-4b02-a0bd-0f7003a018a5")
 			(effects
 				(font
@@ -702,7 +702,7 @@
 			)
 		)
 		(pin "SENSOR_MOSI" input
-			(at 93.98 60.96 0)
+			(at 93.98 54.61 0)
 			(uuid "389488fa-82c3-4a90-a901-74f179c03fe7")
 			(effects
 				(font
