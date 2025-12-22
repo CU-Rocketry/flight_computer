@@ -48,42 +48,43 @@
 	(wire
 		(pts
 			(xy 93.98 78.74) (xy 114.3 78.74)
+			(xy 95.25 68.58) (xy 114.3 68.58)
 		)
 		(stroke
 			(width 0)
 			(type default)
 		)
-		(uuid "5b4ddfa0-8b6c-4c60-b17a-1b44a6189a23")
+		(uuid "0efb8fda-b748-4c39-9916-01802215bdf1")
 	)
 	(wire
 		(pts
-			(xy 93.98 73.66) (xy 114.3 73.66)
+			(xy 162.56 100.33) (xy 184.15 100.33)
 		)
 		(stroke
 			(width 0)
 			(type default)
 		)
-		(uuid "6636a14c-5d38-4ed0-bb15-ddd330986402")
+		(uuid "1a59b4c9-dafa-48f6-a401-9383d2110a2b")
 	)
 	(wire
 		(pts
-			(xy 93.98 71.12) (xy 114.3 71.12)
+			(xy 162.56 97.79) (xy 184.15 97.79)
 		)
 		(stroke
 			(width 0)
 			(type default)
 		)
-		(uuid "7761b895-5ee7-4903-a4bd-25cfd491b374")
+		(uuid "2eab5887-baf1-4d1a-bded-5878aaa0547e")
 	)
 	(wire
 		(pts
-			(xy 93.98 83.82) (xy 114.3 83.82)
+			(xy 162.56 90.17) (xy 184.15 90.17)
 		)
 		(stroke
 			(width 0)
 			(type default)
 		)
-		(uuid "78ead664-18e5-4d32-8f77-1b7c78e240ca")
+		(uuid "42429191-aae4-41dc-8892-04767373c34e")
 	)
 	(wire
 		(pts
@@ -93,7 +94,17 @@
 			(width 0)
 			(type default)
 		)
-		(uuid "8c791ad6-12e7-4ec8-bc78-8d31611d4f8a")
+		(uuid "5d7927e0-478f-4507-b2c8-2a177f626495")
+	)
+	(wire
+		(pts
+			(xy 162.56 95.25) (xy 184.15 95.25)
+		)
+		(stroke
+			(width 0)
+			(type default)
+		)
+		(uuid "6019d0dd-c33b-40dc-9472-cfe68f235eb7")
 	)
 	(wire
 		(pts
@@ -133,6 +144,16 @@
 			(width 0)
 			(type default)
 		)
+		(uuid "7761b895-5ee7-4903-a4bd-25cfd491b374")
+	)
+	(wire
+		(pts
+			(xy 93.98 57.15) (xy 114.3 57.15)
+		)
+		(stroke
+			(width 0)
+			(type default)
+		)
 		(uuid "946a6d9a-67c6-4310-9220-99260d50237b")
 	)
 	(wire
@@ -148,22 +169,23 @@
 	(wire
 		(pts
 			(xy 93.98 92.71) (xy 114.3 92.71)
+			(xy 93.98 59.69) (xy 114.3 59.69)
 		)
 		(stroke
 			(width 0)
 			(type default)
 		)
-		(uuid "9ad72ae4-25da-4391-9413-6bc07f7f389e")
+		(uuid "acd31a84-4636-448a-94a4-0f056bb15162")
 	)
 	(wire
 		(pts
-			(xy 93.98 86.36) (xy 114.3 86.36)
+			(xy 93.98 71.12) (xy 114.3 71.12)
 		)
 		(stroke
 			(width 0)
 			(type default)
 		)
-		(uuid "a8c19b1d-16bd-4932-a37e-607b5ce2ebb5")
+		(uuid "afbd7830-67e1-402e-80c6-b53156d96911")
 	)
 	(wire
 		(pts
@@ -178,6 +200,7 @@
 	(wire
 		(pts
 			(xy 93.98 60.96) (xy 114.3 60.96)
+			(xy 93.98 54.61) (xy 114.3 54.61)
 		)
 		(stroke
 			(width 0)
@@ -187,23 +210,33 @@
 	)
 	(wire
 		(pts
-			(xy 93.98 90.17) (xy 114.3 90.17)
+			(xy 162.56 87.63) (xy 184.15 87.63)
 		)
 		(stroke
 			(width 0)
 			(type default)
 		)
-		(uuid "be9b124e-729a-490b-b8dd-dbd71e3d3bea")
+		(uuid "c54221d2-933a-462d-8aba-31f4f26f4cc7")
 	)
 	(wire
 		(pts
-			(xy 93.98 81.28) (xy 114.3 81.28)
+			(xy 162.56 92.71) (xy 184.15 92.71)
 		)
 		(stroke
 			(width 0)
 			(type default)
 		)
-		(uuid "e960f817-c2dc-4b31-89a6-a27b75d17958")
+		(uuid "d8ca179d-da6f-4d44-b328-2b1988e089c6")
+	)
+	(wire
+		(pts
+			(xy 114.3 78.74) (xy 95.25 78.74)
+		)
+		(stroke
+			(width 0)
+			(type default)
+		)
+		(uuid "dd8c75fc-56f4-4085-a058-fef99d166f6e")
 	)
 	(hierarchical_label "PYRO_3"
 		(shape input)
@@ -305,8 +338,8 @@
 		(uuid "ee40045e-613d-4547-a8bb-2a6004c7c0f7")
 	)
 	(sheet
-		(at 69.85 114.3)
-		(size 24.13 18.415)
+		(at 69.85 97.79)
+		(size 24.13 34.925)
 		(exclude_from_sim no)
 		(in_bom yes)
 		(on_board yes)
@@ -321,7 +354,7 @@
 		)
 		(uuid "0389a778-0ae1-4921-8e0e-3c33d2286cb8")
 		(property "Sheetname" "Debug"
-			(at 69.85 113.5884 0)
+			(at 69.85 97.0784 0)
 			(effects
 				(font
 					(size 1.27 1.27)
@@ -465,7 +498,7 @@
 			)
 		)
 		(pin "SENSORS_MISO" input
-			(at 114.3 63.5 180)
+			(at 114.3 57.15 180)
 			(uuid "f85f8310-0ef1-4603-a623-9b3231ea86b8")
 			(effects
 				(font
@@ -475,7 +508,7 @@
 			)
 		)
 		(pin "SENSORS_MOSI" output
-			(at 114.3 60.96 180)
+			(at 114.3 54.61 180)
 			(uuid "41c2d414-74d5-470d-9dd7-8aba3235b5a3")
 			(effects
 				(font
@@ -485,7 +518,7 @@
 			)
 		)
 		(pin "SENSORS_SPC" output
-			(at 114.3 66.04 180)
+			(at 114.3 59.69 180)
 			(uuid "21453462-6a30-44a1-a42e-6275ce20f65e")
 			(effects
 				(font
@@ -495,7 +528,7 @@
 			)
 		)
 		(pin "BARO_INT" input
-			(at 114.3 71.12 180)
+			(at 114.3 63.5 180)
 			(uuid "247055f7-62ba-4be2-819c-657e1b12bdb4")
 			(effects
 				(font
@@ -505,7 +538,7 @@
 			)
 		)
 		(pin "BARO_CS" output
-			(at 114.3 73.66 180)
+			(at 114.3 66.04 180)
 			(uuid "32338ff2-72f3-4176-bc8b-4e9cb01276b8")
 			(effects
 				(font
@@ -515,7 +548,7 @@
 			)
 		)
 		(pin "MAG_DATA" bidirectional
-			(at 114.3 78.74 180)
+			(at 114.3 68.58 180)
 			(uuid "4a755d3b-a6c6-4b1f-b3d6-ab853b9f5b28")
 			(effects
 				(font
@@ -525,7 +558,7 @@
 			)
 		)
 		(pin "MAG_CS" output
-			(at 114.3 83.82 180)
+			(at 114.3 73.66 180)
 			(uuid "cb778635-3b24-4063-8511-5fde042eefed")
 			(effects
 				(font
@@ -535,7 +568,7 @@
 			)
 		)
 		(pin "MAG CLOCK" output
-			(at 114.3 81.28 180)
+			(at 114.3 71.12 180)
 			(uuid "9d2664b3-c92a-4145-9cb8-45cb7cc95a0a")
 			(effects
 				(font
@@ -545,7 +578,7 @@
 			)
 		)
 		(pin "MAG_INT" input
-			(at 114.3 86.36 180)
+			(at 114.3 76.2 180)
 			(uuid "fe3ad136-cebd-41fe-b3e0-df7532689754")
 			(effects
 				(font
@@ -555,7 +588,7 @@
 			)
 		)
 		(pin "IMU_INT1" input
-			(at 114.3 90.17 180)
+			(at 114.3 78.74 180)
 			(uuid "045435db-63ea-419d-9b3a-6ebbf0e0bf6d")
 			(effects
 				(font
@@ -565,13 +598,73 @@
 			)
 		)
 		(pin "IMU_CS" output
-			(at 114.3 92.71 180)
+			(at 114.3 81.28 180)
 			(uuid "4f61ca16-defb-417e-b8d8-bd5e204dab89")
 			(effects
 				(font
 					(size 1.27 1.27)
 				)
 				(justify left)
+			)
+		)
+		(pin "FLASH_CLK" output
+			(at 162.56 87.63 0)
+			(uuid "f88b7a53-c966-42e7-912c-f81cb3cb7320")
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(justify right)
+			)
+		)
+		(pin "FLASH_CS" output
+			(at 162.56 90.17 0)
+			(uuid "2e685778-b8ba-4a81-8ba7-ef69b7d2282f")
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(justify right)
+			)
+		)
+		(pin "FLASH_IO0" bidirectional
+			(at 162.56 92.71 0)
+			(uuid "d516764b-54f5-4385-9528-72864ce3cbd9")
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(justify right)
+			)
+		)
+		(pin "FLASH_IO1" bidirectional
+			(at 162.56 95.25 0)
+			(uuid "b43fb133-6d2c-4ca0-830d-d4763551719d")
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(justify right)
+			)
+		)
+		(pin "FLASH_IO2" bidirectional
+			(at 162.56 97.79 0)
+			(uuid "922bc211-99f7-42f2-bd40-048b64f1d014")
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(justify right)
+			)
+		)
+		(pin "FLASH_RESET" bidirectional
+			(at 162.56 100.33 0)
+			(uuid "17f616f5-1d01-48a9-ad6a-2580f9b7ca99")
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(justify right)
 			)
 		)
 		(instances
@@ -625,7 +718,7 @@
 		)
 	)
 	(sheet
-		(at 182.245 85.725)
+		(at 184.15 85.725)
 		(size 31.75 16.51)
 		(exclude_from_sim no)
 		(in_bom yes)
@@ -641,7 +734,7 @@
 		)
 		(uuid "6e71e7a3-1bcd-4797-b2e4-88d14bf1f853")
 		(property "Sheetname" "Flash"
-			(at 182.245 85.0134 0)
+			(at 184.15 85.0134 0)
 			(effects
 				(font
 					(size 1.27 1.27)
@@ -650,12 +743,72 @@
 			)
 		)
 		(property "Sheetfile" "flash.kicad_sch"
-			(at 182.245 102.8196 0)
+			(at 184.15 102.8196 0)
 			(effects
 				(font
 					(size 1.27 1.27)
 				)
 				(justify left top)
+			)
+		)
+		(pin "FLASH RESET" bidirectional
+			(at 184.15 100.33 180)
+			(uuid "5b95d3be-42ae-4bec-99b0-a0dde22bc3cb")
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(justify left)
+			)
+		)
+		(pin "FLASH_CLK" input
+			(at 184.15 87.63 180)
+			(uuid "31efd64f-852e-4e90-8148-7fb644a31dc7")
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(justify left)
+			)
+		)
+		(pin "FLASH_CS" input
+			(at 184.15 90.17 180)
+			(uuid "f0f3b5cd-2818-4dc8-8400-d70b0351fdcb")
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(justify left)
+			)
+		)
+		(pin "FLASH_IO0" bidirectional
+			(at 184.15 92.71 180)
+			(uuid "67fdda4b-2252-4e62-ab45-e0bba0b319f9")
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(justify left)
+			)
+		)
+		(pin "FLASH_IO2" bidirectional
+			(at 184.15 97.79 180)
+			(uuid "4b6340cb-4b79-49c7-a02b-08b286dfb15f")
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(justify left)
+			)
+		)
+		(pin "FLASH_IO1" bidirectional
+			(at 184.15 95.25 180)
+			(uuid "4d157e10-0280-4047-a654-2eceffacfde3")
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(justify left)
 			)
 		)
 		(instances
@@ -667,8 +820,8 @@
 		)
 	)
 	(sheet
-		(at 69.85 52.07)
-		(size 24.13 48.26)
+		(at 69.85 45.085)
+		(size 24.13 38.735)
 		(exclude_from_sim no)
 		(in_bom yes)
 		(on_board yes)
@@ -683,7 +836,7 @@
 		)
 		(uuid "9736895c-f0f7-444d-aab7-042381dec39a")
 		(property "Sheetname" "Sensors"
-			(at 69.85 51.3584 0)
+			(at 69.85 44.3734 0)
 			(effects
 				(font
 					(size 1.27 1.27)
@@ -692,7 +845,7 @@
 			)
 		)
 		(property "Sheetfile" "sensors.kicad_sch"
-			(at 69.85 100.9146 0)
+			(at 69.85 84.4046 0)
 			(effects
 				(font
 					(size 1.27 1.27)
@@ -701,7 +854,7 @@
 			)
 		)
 		(pin "BARO_CS" input
-			(at 93.98 73.66 0)
+			(at 93.98 66.04 0)
 			(uuid "fca8e29b-294f-43c9-a61c-af52792d66ab")
 			(effects
 				(font
@@ -711,7 +864,7 @@
 			)
 		)
 		(pin "SENSOR_SPC" input
-			(at 93.98 66.04 0)
+			(at 93.98 59.69 0)
 			(uuid "3c29dde7-ba1d-46bf-962b-368976b23d3a")
 			(effects
 				(font
@@ -721,7 +874,7 @@
 			)
 		)
 		(pin "BARO_INT" output
-			(at 93.98 71.12 0)
+			(at 93.98 63.5 0)
 			(uuid "88b4144b-a5bd-469d-8ab5-d4d6e20739bd")
 			(effects
 				(font
@@ -731,7 +884,7 @@
 			)
 		)
 		(pin "SENSOR_MISO" output
-			(at 93.98 63.5 0)
+			(at 93.98 57.15 0)
 			(uuid "d7925820-f324-4b02-a0bd-0f7003a018a5")
 			(effects
 				(font
@@ -741,68 +894,8 @@
 			)
 		)
 		(pin "SENSOR_MOSI" input
-			(at 93.98 60.96 0)
+			(at 93.98 54.61 0)
 			(uuid "389488fa-82c3-4a90-a901-74f179c03fe7")
-			(effects
-				(font
-					(size 1.27 1.27)
-				)
-				(justify right)
-			)
-		)
-		(pin "MAG_DATA" bidirectional
-			(at 93.98 78.74 0)
-			(uuid "eea88e28-f584-4670-881d-7292f8f31d7f")
-			(effects
-				(font
-					(size 1.27 1.27)
-				)
-				(justify right)
-			)
-		)
-		(pin "MAG CLOCK" input
-			(at 93.98 81.28 0)
-			(uuid "15d60d9c-5012-4c28-a082-c0e75a12ced2")
-			(effects
-				(font
-					(size 1.27 1.27)
-				)
-				(justify right)
-			)
-		)
-		(pin "MAG_CS" input
-			(at 93.98 83.82 0)
-			(uuid "1f6f6082-2039-41f6-b475-b11abd02780d")
-			(effects
-				(font
-					(size 1.27 1.27)
-				)
-				(justify right)
-			)
-		)
-		(pin "MAG_INT" output
-			(at 93.98 86.36 0)
-			(uuid "5be5cdae-b627-4102-a66c-4e0cffd787a0")
-			(effects
-				(font
-					(size 1.27 1.27)
-				)
-				(justify right)
-			)
-		)
-		(pin "IMU_INT1" output
-			(at 93.98 90.17 0)
-			(uuid "01cdcda4-49e7-45c2-860f-79d9190b3a54")
-			(effects
-				(font
-					(size 1.27 1.27)
-				)
-				(justify right)
-			)
-		)
-		(pin "IMU_CS" input
-			(at 93.98 92.71 0)
-			(uuid "6a88e734-6e0a-4276-b2b2-45b27ae6af6a")
 			(effects
 				(font
 					(size 1.27 1.27)
