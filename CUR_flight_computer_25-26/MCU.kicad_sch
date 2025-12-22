@@ -3648,15 +3648,16 @@
 		)
 		(uuid "9fb5fac5-a6a4-42e6-b925-7fd8467631d5")
 	)
-	(hierarchical_label "FLASH_RESET"
-		(shape bidirectional)
-		(at 238.76 38.1 0)
+	(hierarchical_label "BUZZER"
+		(shape output)
+		(at 256.54 29.21 0)
 		(effects
 			(font
 				(size 1.27 1.27)
 			)
 			(justify left)
 		)
+		(uuid "be9aaa6e-593b-48b9-b5fd-e8e208cfefdc")
 		(uuid "a4d58e6c-41ac-4209-8e03-c0c54fa83204")
 	)
 	(hierarchical_label "FLASH_IO0"
