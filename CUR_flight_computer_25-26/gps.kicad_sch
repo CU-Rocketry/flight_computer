@@ -959,13 +959,23 @@
 	)
 	(text "Funky ass RX/TX switcher"
 		(exclude_from_sim no)
-		(at 181.102 111.76 0)
+		(at 182.88 113.03 0)
 		(effects
 			(font
 				(size 1.27 1.27)
 			)
 		)
 		(uuid "79446a05-fb79-4958-876b-6e852e9154fd")
+	)
+	(text "connect safe boot to solderable pad"
+		(exclude_from_sim no)
+		(at 120.396 119.888 0)
+		(effects
+			(font
+				(size 1.27 1.27)
+			)
+		)
+		(uuid "c05a5510-2f76-44e9-8e78-5e24678496e1")
 	)
 	(junction
 		(at 149.86 92.71)
@@ -1009,13 +1019,23 @@
 	)
 	(wire
 		(pts
-			(xy 142.24 86.36) (xy 149.86 86.36)
+			(xy 134.62 86.36) (xy 149.86 86.36)
 		)
 		(stroke
 			(width 0)
 			(type default)
 		)
 		(uuid "165a9d1d-f9c1-4b4a-aad5-c2c84fd12f61")
+	)
+	(wire
+		(pts
+			(xy 134.62 92.71) (xy 134.62 95.25)
+		)
+		(stroke
+			(width 0)
+			(type default)
+		)
+		(uuid "440fffd8-8115-4e8c-a431-cf3f9a28f8c7")
 	)
 	(wire
 		(pts
@@ -1029,7 +1049,7 @@
 	)
 	(wire
 		(pts
-			(xy 142.24 87.63) (xy 142.24 86.36)
+			(xy 134.62 87.63) (xy 134.62 86.36)
 		)
 		(stroke
 			(width 0)
@@ -1280,7 +1300,7 @@
 	)
 	(symbol
 		(lib_id "power:GND")
-		(at 142.24 92.71 0)
+		(at 134.62 95.25 0)
 		(unit 1)
 		(exclude_from_sim no)
 		(in_bom yes)
@@ -1289,7 +1309,7 @@
 		(fields_autoplaced yes)
 		(uuid "5c5c310b-244c-4e22-b7f1-8ba1eb1c3836")
 		(property "Reference" "#PWR013"
-			(at 142.24 99.06 0)
+			(at 134.62 101.6 0)
 			(effects
 				(font
 					(size 1.27 1.27)
@@ -1298,7 +1318,7 @@
 			)
 		)
 		(property "Value" "GND"
-			(at 142.24 97.79 0)
+			(at 134.62 100.33 0)
 			(effects
 				(font
 					(size 1.27 1.27)
@@ -1306,7 +1326,7 @@
 			)
 		)
 		(property "Footprint" ""
-			(at 142.24 92.71 0)
+			(at 134.62 95.25 0)
 			(effects
 				(font
 					(size 1.27 1.27)
@@ -1315,7 +1335,7 @@
 			)
 		)
 		(property "Datasheet" ""
-			(at 142.24 92.71 0)
+			(at 134.62 95.25 0)
 			(effects
 				(font
 					(size 1.27 1.27)
@@ -1324,7 +1344,7 @@
 			)
 		)
 		(property "Description" "Power symbol creates a global label with name \"GND\" , ground"
-			(at 142.24 92.71 0)
+			(at 134.62 95.25 0)
 			(effects
 				(font
 					(size 1.27 1.27)
@@ -1479,7 +1499,7 @@
 	)
 	(symbol
 		(lib_id "Device:C_Small")
-		(at 142.24 90.17 0)
+		(at 134.62 90.17 0)
 		(unit 1)
 		(exclude_from_sim no)
 		(in_bom yes)
@@ -1488,7 +1508,7 @@
 		(fields_autoplaced yes)
 		(uuid "b21f28c9-e3af-4b17-b70e-2c64559fc9bd")
 		(property "Reference" "C13"
-			(at 144.78 88.9062 0)
+			(at 137.16 88.9062 0)
 			(effects
 				(font
 					(size 1.27 1.27)
@@ -1497,7 +1517,7 @@
 			)
 		)
 		(property "Value" "1u"
-			(at 144.78 91.4462 0)
+			(at 137.16 91.4462 0)
 			(effects
 				(font
 					(size 1.27 1.27)
@@ -1506,7 +1526,7 @@
 			)
 		)
 		(property "Footprint" ""
-			(at 142.24 90.17 0)
+			(at 134.62 90.17 0)
 			(effects
 				(font
 					(size 1.27 1.27)
@@ -1515,7 +1535,7 @@
 			)
 		)
 		(property "Datasheet" "~"
-			(at 142.24 90.17 0)
+			(at 134.62 90.17 0)
 			(effects
 				(font
 					(size 1.27 1.27)
@@ -1524,7 +1544,7 @@
 			)
 		)
 		(property "Description" "Unpolarized capacitor, small symbol"
-			(at 142.24 90.17 0)
+			(at 134.62 90.17 0)
 			(effects
 				(font
 					(size 1.27 1.27)
