@@ -1300,7 +1300,7 @@
 		)
 		(uuid "a624536a-cb9f-4813-9392-4823c6d99c8d")
 	)
-	(text "Pick capacitor values to PI match antenna"
+	(text "Pick capacitor values to PI match antenna\n- leave to test later"
 		(exclude_from_sim no)
 		(at 196.342 110.236 0)
 		(effects
@@ -1355,6 +1355,16 @@
 			(type default)
 		)
 		(uuid "00aac28d-fa8e-4b1e-84c8-87b9c8ce6e38")
+	)
+	(wire
+		(pts
+			(xy 134.62 78.74) (xy 134.62 80.01)
+		)
+		(stroke
+			(width 0)
+			(type default)
+		)
+		(uuid "0c3ad19c-cf4e-4536-b7a3-00be551d6ead")
 	)
 	(wire
 		(pts
@@ -1435,6 +1445,16 @@
 			(type default)
 		)
 		(uuid "61f2d299-76c5-4410-8a8c-eed53e1583f8")
+	)
+	(wire
+		(pts
+			(xy 204.47 91.44) (xy 204.47 95.25)
+		)
+		(stroke
+			(width 0)
+			(type default)
+		)
+		(uuid "7bddc701-24ba-4290-9a6e-affa2861b883")
 	)
 	(wire
 		(pts
@@ -1625,16 +1645,6 @@
 			(type default)
 		)
 		(uuid "edd95c58-aea7-4b64-a420-f6572ddc71de")
-	)
-	(wire
-		(pts
-			(xy 144.78 67.31) (xy 147.32 67.31)
-		)
-		(stroke
-			(width 0)
-			(type default)
-		)
-		(uuid "f1916374-79b4-45b2-b6cc-0871d4221008")
 	)
 	(wire
 		(pts
