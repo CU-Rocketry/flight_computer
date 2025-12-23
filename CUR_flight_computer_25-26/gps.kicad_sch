@@ -947,6 +947,16 @@
 			(embedded_fonts no)
 		)
 	)
+	(text "Leave as 0 for now\ncan be used for emi protection\n(R>20), ferrite beads, inductors\nbut may affect signal timing"
+		(exclude_from_sim no)
+		(at 179.578 92.964 0)
+		(effects
+			(font
+				(size 1.27 1.27)
+			)
+		)
+		(uuid "356aaeb2-220c-4a09-8645-b1d10f15546c")
+	)
 	(text "Funky ass RX/TX switcher"
 		(exclude_from_sim no)
 		(at 182.88 113.03 0)

@@ -3735,6 +3735,9 @@
 		)
 		(uuid "57c81c69-e554-4f04-8c47-5d94b24a1a5c")
 	)
+	(hierarchical_label "GPS_RX"
+		(shape input)
+		(at 212.09 129.54 0)
 	(hierarchical_label "I_SENSE_PYRO"
 		(shape input)
 		(at 257.81 43.18 0)
@@ -3744,6 +3747,11 @@
 			)
 			(justify left)
 		)
+		(uuid "785cd714-6352-43fd-9c63-511d66aef487")
+	)
+	(hierarchical_label "~{GPS_RESET}"
+		(shape output)
+		(at 209.55 134.62 180)
 		(uuid "5bc8489b-c50b-446d-b7db-7d805cf491e8")
 	)
 	(hierarchical_label "RF_TXEN"
@@ -3755,6 +3763,7 @@
 			)
 			(justify right)
 		)
+		(uuid "876ac814-017a-4788-878e-0943d17b2fe5")
 		(uuid "604266cc-c36e-4538-92b7-a19b2780f809")
 	)
 	(hierarchical_label "MAG_CS"
@@ -3889,6 +3898,9 @@
 		)
 		(uuid "9fb5fac5-a6a4-42e6-b925-7fd8467631d5")
 	)
+	(hierarchical_label "GPS_TP"
+		(shape input)
+		(at 209.55 129.54 180)
 	(hierarchical_label "BUZZER"
 		(shape output)
 		(at 256.54 29.21 0)
@@ -3964,6 +3976,11 @@
 			)
 			(justify right)
 		)
+		(uuid "a2ffe0ff-6b9d-40e5-8f31-6debebc80ec9")
+	)
+	(hierarchical_label "GPS_TX"
+		(shape output)
+		(at 212.09 127 0)
 		(uuid "d2cd3310-cb7a-42e2-86ab-f98fee4cd321")
 	)
 	(hierarchical_label "IMU_CS"
@@ -3973,6 +3990,13 @@
 			(font
 				(size 1.27 1.27)
 			)
+			(justify left)
+		)
+		(uuid "a421f932-33b3-4b3a-99ee-b58e3a94ce0d")
+	)
+	(hierarchical_label "GPS_EXINT"
+		(shape output)
+		(at 209.55 127 180)
 			(justify right)
 		)
 		(uuid "d38c065e-86d2-4e49-abb2-e99f8a542543")
@@ -4008,6 +4032,7 @@
 			)
 			(justify right)
 		)
+		(uuid "b79ec918-c061-43c8-a372-ec79b29b8859")
 		(uuid "e4baaaec-6739-4ac1-a496-a43267ce1c00")
 	)
 	(hierarchical_label "SENSORS_MOSI"
