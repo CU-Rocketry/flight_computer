@@ -1378,10 +1378,6 @@
 		(uuid "1fe87a6d-625d-4e5e-9438-cb2647844a91")
 	)
 	(no_connect
-		(at 165.1 78.74)
-		(uuid "263e1320-4106-4c3a-b067-11dcf85b432a")
-	)
-	(no_connect
 		(at 165.1 68.58)
 		(uuid "4abc0210-0de3-42d9-b7b0-f1de7608c751")
 	)
@@ -1478,6 +1474,16 @@
 			(type default)
 		)
 		(uuid "2bbde268-74cf-4f02-b7ac-5308d5e56c47")
+	)
+	(wire
+		(pts
+			(xy 165.1 78.74) (xy 172.72 78.74)
+		)
+		(stroke
+			(width 0)
+			(type default)
+		)
+		(uuid "2c59cf16-1ec0-4ef0-af85-4344712e632d")
 	)
 	(wire
 		(pts
@@ -2138,6 +2144,17 @@
 			(justify left)
 		)
 		(uuid "a5f8c646-499b-40a3-a047-5a1a58dc244d")
+	)
+	(hierarchical_label "IMU_INT2"
+		(shape output)
+		(at 172.72 78.74 0)
+		(effects
+			(font
+				(size 1.27 1.27)
+			)
+			(justify left)
+		)
+		(uuid "af0b3ee8-8443-40b5-b380-82acd5304f45")
 	)
 	(hierarchical_label "SENSOR_SPC"
 		(shape input)
