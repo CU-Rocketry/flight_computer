@@ -947,6 +947,16 @@
 			(embedded_fonts no)
 		)
 	)
+	(text "Leave as 0 for now\ncan be used for emi protection\n(R>20), ferrite beads, inductors\nbut may affect signal timing"
+		(exclude_from_sim no)
+		(at 179.578 92.964 0)
+		(effects
+			(font
+				(size 1.27 1.27)
+			)
+		)
+		(uuid "356aaeb2-220c-4a09-8645-b1d10f15546c")
+	)
 	(text "Funky ass RX/TX switcher"
 		(exclude_from_sim no)
 		(at 181.102 111.76 0)
@@ -1147,7 +1157,7 @@
 		)
 		(uuid "fc02ae23-a607-4bf7-9cee-275356af1eb5")
 	)
-	(hierarchical_label "~{GPS_RES}"
+	(hierarchical_label "~{GPS_RESET}"
 		(shape input)
 		(at 135.89 114.3 180)
 		(effects
