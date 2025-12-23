@@ -7,46 +7,6 @@
 	(lib_symbols)
 	(wire
 		(pts
-			(xy 156.21 130.81) (xy 156.21 139.7)
-		)
-		(stroke
-			(width 0)
-			(type default)
-		)
-		(uuid "10a23df7-5f00-4be2-8378-e43116a96a0c")
-	)
-	(wire
-		(pts
-			(xy 148.59 130.81) (xy 148.59 139.7)
-		)
-		(stroke
-			(width 0)
-			(type default)
-		)
-		(uuid "3558d50d-a3a8-47c8-a697-b9a1c51cada9")
-	)
-	(wire
-		(pts
-			(xy 153.67 130.81) (xy 153.67 139.7)
-		)
-		(stroke
-			(width 0)
-			(type default)
-		)
-		(uuid "4e4454ad-5ea9-40e5-9b6d-5ef66779f6fd")
-	)
-	(wire
-		(pts
-			(xy 143.51 130.81) (xy 143.51 139.7)
-		)
-		(stroke
-			(width 0)
-			(type default)
-		)
-		(uuid "54ad78c3-671e-44ca-97ef-05fa6d190ade")
-	)
-	(wire
-		(pts
 			(xy 93.98 78.74) (xy 114.3 78.74)
 		)
 		(stroke
@@ -54,6 +14,16 @@
 			(type default)
 		)
 		(uuid "0efb8fda-b748-4c39-9916-01802215bdf1")
+	)
+	(wire
+		(pts
+			(xy 156.21 130.81) (xy 156.21 139.7)
+		)
+		(stroke
+			(width 0)
+			(type default)
+		)
+		(uuid "10a23df7-5f00-4be2-8378-e43116a96a0c")
 	)
 	(wire
 		(pts
@@ -77,6 +47,16 @@
 	)
 	(wire
 		(pts
+			(xy 148.59 130.81) (xy 148.59 139.7)
+		)
+		(stroke
+			(width 0)
+			(type default)
+		)
+		(uuid "3558d50d-a3a8-47c8-a697-b9a1c51cada9")
+	)
+	(wire
+		(pts
 			(xy 162.56 90.17) (xy 184.15 90.17)
 		)
 		(stroke
@@ -84,6 +64,26 @@
 			(type default)
 		)
 		(uuid "42429191-aae4-41dc-8892-04767373c34e")
+	)
+	(wire
+		(pts
+			(xy 153.67 130.81) (xy 153.67 139.7)
+		)
+		(stroke
+			(width 0)
+			(type default)
+		)
+		(uuid "4e4454ad-5ea9-40e5-9b6d-5ef66779f6fd")
+	)
+	(wire
+		(pts
+			(xy 143.51 130.81) (xy 143.51 139.7)
+		)
+		(stroke
+			(width 0)
+			(type default)
+		)
+		(uuid "54ad78c3-671e-44ca-97ef-05fa6d190ade")
 	)
 	(wire
 		(pts
@@ -104,6 +104,16 @@
 			(type default)
 		)
 		(uuid "6019d0dd-c33b-40dc-9472-cfe68f235eb7")
+	)
+	(wire
+		(pts
+			(xy 93.98 63.5) (xy 114.3 63.5)
+		)
+		(stroke
+			(width 0)
+			(type default)
+		)
+		(uuid "7761b895-5ee7-4903-a4bd-25cfd491b374")
 	)
 	(wire
 		(pts
@@ -137,16 +147,6 @@
 	)
 	(wire
 		(pts
-			(xy 93.98 63.5) (xy 114.3 63.5)
-		)
-		(stroke
-			(width 0)
-			(type default)
-		)
-		(uuid "7761b895-5ee7-4903-a4bd-25cfd491b374")
-	)
-	(wire
-		(pts
 			(xy 93.98 57.15) (xy 114.3 57.15)
 		)
 		(stroke
@@ -167,8 +167,17 @@
 	)
 	(wire
 		(pts
+			(xy 151.13 130.81) (xy 151.13 139.7)
+		)
+		(stroke
+			(width 0)
+			(type default)
+		)
+		(uuid "a9f8abb0-63de-4790-95ed-79bc39857fdc")
+	)
+	(wire
+		(pts
 			(xy 93.98 92.71) (xy 114.3 92.71)
-			
 		)
 		(stroke
 			(width 0)
@@ -188,18 +197,7 @@
 	)
 	(wire
 		(pts
-			(xy 151.13 130.81) (xy 151.13 139.7)
-		)
-		(stroke
-			(width 0)
-			(type default)
-		)
-		(uuid "a9f8abb0-63de-4790-95ed-79bc39857fdc")
-	)
-	(wire
-		(pts
 			(xy 93.98 60.96) (xy 114.3 60.96)
-			
 		)
 		(stroke
 			(width 0)
@@ -226,16 +224,6 @@
 			(type default)
 		)
 		(uuid "d8ca179d-da6f-4d44-b328-2b1988e089c6")
-	)
-	(wire
-		(pts
-			(xy 114.3 78.74) (xy 95.25 78.74)
-		)
-		(stroke
-			(width 0)
-			(type default)
-		)
-		(uuid "dd8c75fc-56f4-4085-a058-fef99d166f6e")
 	)
 	(hierarchical_label "PYRO_3"
 		(shape input)
@@ -609,6 +597,12 @@
 		(pin "BUZZER" output
 			(at 114.3 123.19 180)
 			(uuid "8a12361d-21fe-483b-a1a1-8f14b9a19b8b")
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(justify left)
+			)
 		)
 		(pin "FLASH_CS" output
 			(at 162.56 90.17 0)

@@ -3657,7 +3657,6 @@
 			)
 			(justify left)
 		)
-		(uuid "be9aaa6e-593b-48b9-b5fd-e8e208cfefdc")
 		(uuid "a4d58e6c-41ac-4209-8e03-c0c54fa83204")
 	)
 	(hierarchical_label "FLASH_IO0"
