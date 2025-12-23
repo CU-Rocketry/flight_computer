@@ -2982,6 +2982,16 @@
 		)
 		(uuid "1570f0a9-8ae8-4e96-9186-0bc3c1575a0d")
 	)
+	(text "need to be adc\n"
+		(exclude_from_sim no)
+		(at 276.606 45.72 0)
+		(effects
+			(font
+				(size 1.27 1.27)
+			)
+		)
+		(uuid "74484a9c-8e0f-4f66-ab87-49eae0a6dc29")
+	)
 	(text "Pins that need to be hooked up\n"
 		(exclude_from_sim no)
 		(at 208.534 27.94 0)
@@ -3571,6 +3581,28 @@
 		)
 		(uuid "0fcd17fa-ce63-4fcd-a952-10bbb0ed8398")
 	)
+	(hierarchical_label "I_SENSE"
+		(shape input)
+		(at 257.81 45.72 0)
+		(effects
+			(font
+				(size 1.27 1.27)
+			)
+			(justify left)
+		)
+		(uuid "192172d7-6df6-45f6-a445-1b3cd7f3e9c9")
+	)
+	(hierarchical_label "PYRO_1"
+		(shape output)
+		(at 236.22 53.34 0)
+		(effects
+			(font
+				(size 1.27 1.27)
+			)
+			(justify left)
+		)
+		(uuid "2136c6a2-4cea-4e68-b904-3214c8d1bfc6")
+	)
 	(hierarchical_label "SENSORS_SPC"
 		(shape output)
 		(at 189.23 67.31 0)
@@ -3604,6 +3636,50 @@
 		)
 		(uuid "2bdc07d8-9fa6-4a82-be63-35e177813025")
 	)
+	(hierarchical_label "PYRO_BATT_SENSE"
+		(shape input)
+		(at 224.79 48.26 0)
+		(effects
+			(font
+				(size 1.27 1.27)
+			)
+			(justify left)
+		)
+		(uuid "30d70243-7b5d-4924-8717-bc10178b03b0")
+	)
+	(hierarchical_label "USB_D+"
+		(shape bidirectional)
+		(at 203.2 45.72 0)
+		(effects
+			(font
+				(size 1.27 1.27)
+			)
+			(justify left)
+		)
+		(uuid "3913598b-7f65-42fa-b9f7-0ac673de977f")
+	)
+	(hierarchical_label "LM660_ST"
+		(shape input)
+		(at 224.79 43.18 0)
+		(effects
+			(font
+				(size 1.27 1.27)
+			)
+			(justify left)
+		)
+		(uuid "42a53e36-6e7a-48ea-a006-de94b1de26d4")
+	)
+	(hierarchical_label "SENSE_2"
+		(shape input)
+		(at 236.22 55.88 0)
+		(effects
+			(font
+				(size 1.27 1.27)
+			)
+			(justify left)
+		)
+		(uuid "4567c1d6-dec3-40a1-8395-3c4363860cba")
+	)
 	(hierarchical_label "SENSORS_MISO"
 		(shape input)
 		(at 189.23 69.85 0)
@@ -3615,6 +3691,17 @@
 		)
 		(uuid "57c81c69-e554-4f04-8c47-5d94b24a1a5c")
 	)
+	(hierarchical_label "I_SENSE_PYRO"
+		(shape input)
+		(at 257.81 43.18 0)
+		(effects
+			(font
+				(size 1.27 1.27)
+			)
+			(justify left)
+		)
+		(uuid "5bc8489b-c50b-446d-b7db-7d805cf491e8")
+	)
 	(hierarchical_label "MAG_CS"
 		(shape output)
 		(at 193.04 36.83 180)
@@ -3625,6 +3712,72 @@
 			(justify right)
 		)
 		(uuid "65021b11-5f2c-45a1-b0ec-f6fd6ad11321")
+	)
+	(hierarchical_label "PYRO_4"
+		(shape output)
+		(at 224.79 60.96 0)
+		(effects
+			(font
+				(size 1.27 1.27)
+			)
+			(justify left)
+		)
+		(uuid "79839db8-670c-4a3d-bf29-6d2fa8143ce5")
+	)
+	(hierarchical_label "SENSE_4"
+		(shape input)
+		(at 236.22 60.96 0)
+		(effects
+			(font
+				(size 1.27 1.27)
+			)
+			(justify left)
+		)
+		(uuid "7c207c93-ac57-4e9c-8c41-808cc3118fe9")
+	)
+	(hierarchical_label "PYRO_3"
+		(shape output)
+		(at 245.11 58.42 180)
+		(effects
+			(font
+				(size 1.27 1.27)
+			)
+			(justify right)
+		)
+		(uuid "8542176d-8487-4297-938f-32dcd0fe50ce")
+	)
+	(hierarchical_label "SENSE_1"
+		(shape input)
+		(at 224.79 53.34 0)
+		(effects
+			(font
+				(size 1.27 1.27)
+			)
+			(justify left)
+		)
+		(uuid "86790c4f-cd1a-4eb7-9f06-6338653ee8b3")
+	)
+	(hierarchical_label "USB_D-"
+		(shape bidirectional)
+		(at 203.2 43.18 0)
+		(effects
+			(font
+				(size 1.27 1.27)
+			)
+			(justify left)
+		)
+		(uuid "8ba67aa0-3ec5-46ec-842d-3d5d99b51284")
+	)
+	(hierarchical_label "BATT_SENSE"
+		(shape input)
+		(at 224.79 45.72 0)
+		(effects
+			(font
+				(size 1.27 1.27)
+			)
+			(justify left)
+		)
+		(uuid "92a0fb92-8947-4e5e-a219-0e41e69dd632")
 	)
 	(hierarchical_label "FLASH_CLK"
 		(shape output)
@@ -3670,6 +3823,17 @@
 		)
 		(uuid "a4d58e6c-41ac-4209-8e03-c0c54fa83204")
 	)
+	(hierarchical_label "PYRO_2"
+		(shape output)
+		(at 224.79 55.88 0)
+		(effects
+			(font
+				(size 1.27 1.27)
+			)
+			(justify left)
+		)
+		(uuid "aa3d534f-3e0b-4086-ae25-ccd3cf1f0cf0")
+	)
 	(hierarchical_label "FLASH_IO0"
 		(shape bidirectional)
 		(at 238.76 30.48 0)
@@ -3680,6 +3844,17 @@
 			(justify left)
 		)
 		(uuid "b2db0fe9-5f29-4e94-8a4d-4d3a16370382")
+	)
+	(hierarchical_label "SENSE_3"
+		(shape input)
+		(at 224.79 58.42 0)
+		(effects
+			(font
+				(size 1.27 1.27)
+			)
+			(justify left)
+		)
+		(uuid "c1078944-ae2b-44ea-85b4-f7099fcc6555")
 	)
 	(hierarchical_label "MAG_DATA"
 		(shape bidirectional)

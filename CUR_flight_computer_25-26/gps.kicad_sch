@@ -957,6 +957,16 @@
 		)
 		(uuid "79446a05-fb79-4958-876b-6e852e9154fd")
 	)
+	(text "connect safe boot to solderable pad"
+		(exclude_from_sim no)
+		(at 120.396 119.888 0)
+		(effects
+			(font
+				(size 1.27 1.27)
+			)
+		)
+		(uuid "c05a5510-2f76-44e9-8e78-5e24678496e1")
+	)
 	(junction
 		(at 149.86 92.71)
 		(diameter 0)

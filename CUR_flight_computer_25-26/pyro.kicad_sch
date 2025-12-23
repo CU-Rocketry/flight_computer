@@ -1682,6 +1682,94 @@
 		)
 		(uuid "fce84a03-71c5-4095-89e6-80249b2d7659")
 	)
+	(global_label "BATT_PYRO"
+		(shape input)
+		(at 125.73 38.1 0)
+		(fields_autoplaced yes)
+		(effects
+			(font
+				(size 1.27 1.27)
+			)
+			(justify left)
+		)
+		(uuid "1107cf2d-a5e3-4bd7-8aeb-6966b87b0ee7")
+		(property "Intersheetrefs" "${INTERSHEET_REFS}"
+			(at 138.9357 38.1 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(justify left)
+				(hide yes)
+			)
+		)
+	)
+	(global_label "BATT_PYRO"
+		(shape input)
+		(at 125.73 82.55 0)
+		(fields_autoplaced yes)
+		(effects
+			(font
+				(size 1.27 1.27)
+			)
+			(justify left)
+		)
+		(uuid "82f51fdc-8a46-4b54-b67e-8283a0b0d425")
+		(property "Intersheetrefs" "${INTERSHEET_REFS}"
+			(at 138.9357 82.55 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(justify left)
+				(hide yes)
+			)
+		)
+	)
+	(global_label "BATT_PYRO"
+		(shape input)
+		(at 46.99 36.83 0)
+		(fields_autoplaced yes)
+		(effects
+			(font
+				(size 1.27 1.27)
+			)
+			(justify left)
+		)
+		(uuid "ed72b379-ac23-45cd-be41-a36639216b94")
+		(property "Intersheetrefs" "${INTERSHEET_REFS}"
+			(at 60.1957 36.83 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(justify left)
+				(hide yes)
+			)
+		)
+	)
+	(global_label "BATT_PYRO"
+		(shape input)
+		(at 46.99 81.28 0)
+		(fields_autoplaced yes)
+		(effects
+			(font
+				(size 1.27 1.27)
+			)
+			(justify left)
+		)
+		(uuid "eeab9f2e-9e38-4c09-b847-863c12a45feb")
+		(property "Intersheetrefs" "${INTERSHEET_REFS}"
+			(at 60.1957 81.28 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(justify left)
+				(hide yes)
+			)
+		)
+	)
 	(hierarchical_label "SENSE_4"
 		(shape output)
 		(at 158.75 101.6 0)
@@ -1715,28 +1803,6 @@
 		)
 		(uuid "25ac45b2-64be-44d2-badd-3561ee826014")
 	)
-	(hierarchical_label "BATT_PYRO"
-		(shape input)
-		(at 125.73 82.55 0)
-		(effects
-			(font
-				(size 1.27 1.27)
-			)
-			(justify left)
-		)
-		(uuid "283bd607-385a-4e73-aaf4-c9660e947fdf")
-	)
-	(hierarchical_label "BATT_PYRO"
-		(shape input)
-		(at 125.73 38.1 0)
-		(effects
-			(font
-				(size 1.27 1.27)
-			)
-			(justify left)
-		)
-		(uuid "442e33ce-db42-4d9f-9ff5-af60dc68d638")
-	)
 	(hierarchical_label "PYRO_1"
 		(shape input)
 		(at 33.02 57.15 180)
@@ -1758,28 +1824,6 @@
 			(justify right)
 		)
 		(uuid "5b395fde-7827-4f05-bbe6-2d34912c96e8")
-	)
-	(hierarchical_label "BATT_PYRO"
-		(shape input)
-		(at 46.99 81.28 0)
-		(effects
-			(font
-				(size 1.27 1.27)
-			)
-			(justify left)
-		)
-		(uuid "88feecb8-06d8-4bc5-9022-fc06de4d4d28")
-	)
-	(hierarchical_label "BATT_PYRO"
-		(shape input)
-		(at 46.99 36.83 0)
-		(effects
-			(font
-				(size 1.27 1.27)
-			)
-			(justify left)
-		)
-		(uuid "a94b39b3-443a-48ad-8694-5fee4d4d989c")
 	)
 	(hierarchical_label "SENSE_1"
 		(shape output)
