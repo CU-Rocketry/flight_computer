@@ -3570,6 +3570,17 @@
 		)
 		(uuid "fd9377c7-1721-47c8-a44f-f65277ae00fe")
 	)
+	(hierarchical_label "~{RF_RESET}"
+		(shape output)
+		(at 233.68 80.01 180)
+		(effects
+			(font
+				(size 1.27 1.27)
+			)
+			(justify right)
+		)
+		(uuid "0327fc19-2eb4-4944-b85b-d34bd89b834c")
+	)
 	(hierarchical_label "IMU_INT2"
 		(shape input)
 		(at 193.04 48.26 180)
@@ -3592,6 +3603,17 @@
 		)
 		(uuid "192172d7-6df6-45f6-a445-1b3cd7f3e9c9")
 	)
+	(hierarchical_label "RF_IO2"
+		(shape bidirectional)
+		(at 246.38 72.39 180)
+		(effects
+			(font
+				(size 1.27 1.27)
+			)
+			(justify right)
+		)
+		(uuid "1bf843dc-549f-4f20-a0db-6d9237dacda9")
+	)
 	(hierarchical_label "PYRO_1"
 		(shape output)
 		(at 236.22 53.34 0)
@@ -3602,6 +3624,17 @@
 			(justify left)
 		)
 		(uuid "2136c6a2-4cea-4e68-b904-3214c8d1bfc6")
+	)
+	(hierarchical_label "RF_MOSI"
+		(shape output)
+		(at 233.68 67.31 180)
+		(effects
+			(font
+				(size 1.27 1.27)
+			)
+			(justify right)
+		)
+		(uuid "29d0a7dd-32e5-45d9-a952-8d3483e1beed")
 	)
 	(hierarchical_label "SENSORS_SPC"
 		(shape output)
@@ -3680,6 +3713,17 @@
 		)
 		(uuid "4567c1d6-dec3-40a1-8395-3c4363860cba")
 	)
+	(hierarchical_label "RF_MISO"
+		(shape input)
+		(at 233.68 69.85 180)
+		(effects
+			(font
+				(size 1.27 1.27)
+			)
+			(justify right)
+		)
+		(uuid "4ad56aaa-8fc3-44fe-b862-e006afde15eb")
+	)
 	(hierarchical_label "SENSORS_MISO"
 		(shape input)
 		(at 189.23 69.85 0)
@@ -3702,6 +3746,17 @@
 		)
 		(uuid "5bc8489b-c50b-446d-b7db-7d805cf491e8")
 	)
+	(hierarchical_label "RF_TXEN"
+		(shape output)
+		(at 246.38 67.31 180)
+		(effects
+			(font
+				(size 1.27 1.27)
+			)
+			(justify right)
+		)
+		(uuid "604266cc-c36e-4538-92b7-a19b2780f809")
+	)
 	(hierarchical_label "MAG_CS"
 		(shape output)
 		(at 193.04 36.83 180)
@@ -3712,6 +3767,17 @@
 			(justify right)
 		)
 		(uuid "65021b11-5f2c-45a1-b0ec-f6fd6ad11321")
+	)
+	(hierarchical_label "RF_IO1"
+		(shape bidirectional)
+		(at 246.38 69.85 180)
+		(effects
+			(font
+				(size 1.27 1.27)
+			)
+			(justify right)
+		)
+		(uuid "65fed502-e943-4ca0-9f49-2b3c3374c2ab")
 	)
 	(hierarchical_label "PYRO_4"
 		(shape output)
@@ -3767,6 +3833,17 @@
 			(justify left)
 		)
 		(uuid "8ba67aa0-3ec5-46ec-842d-3d5d99b51284")
+	)
+	(hierarchical_label "RF_IO3"
+		(shape bidirectional)
+		(at 246.38 74.93 180)
+		(effects
+			(font
+				(size 1.27 1.27)
+			)
+			(justify right)
+		)
+		(uuid "8c5ed5ee-dd72-48ea-95d5-4d6b3e268f00")
 	)
 	(hierarchical_label "BATT_SENSE"
 		(shape input)
@@ -3845,6 +3922,17 @@
 		)
 		(uuid "b2db0fe9-5f29-4e94-8a4d-4d3a16370382")
 	)
+	(hierarchical_label "RF_SCK"
+		(shape output)
+		(at 233.68 72.39 180)
+		(effects
+			(font
+				(size 1.27 1.27)
+			)
+			(justify right)
+		)
+		(uuid "b7f4143e-f59e-4363-acc9-8f8b9ef14934")
+	)
 	(hierarchical_label "SENSE_3"
 		(shape input)
 		(at 224.79 58.42 0)
@@ -3855,6 +3943,17 @@
 			(justify left)
 		)
 		(uuid "c1078944-ae2b-44ea-85b4-f7099fcc6555")
+	)
+	(hierarchical_label "~{RF_NSS}"
+		(shape output)
+		(at 233.68 74.93 180)
+		(effects
+			(font
+				(size 1.27 1.27)
+			)
+			(justify right)
+		)
+		(uuid "d1fc3c69-b9e4-411f-823b-e507e67937e0")
 	)
 	(hierarchical_label "MAG_DATA"
 		(shape bidirectional)
@@ -3877,6 +3976,17 @@
 			(justify right)
 		)
 		(uuid "d38c065e-86d2-4e49-abb2-e99f8a542543")
+	)
+	(hierarchical_label "RF_RXEN"
+		(shape output)
+		(at 246.38 80.01 180)
+		(effects
+			(font
+				(size 1.27 1.27)
+			)
+			(justify right)
+		)
+		(uuid "dffabb11-0aca-46dc-96aa-53973cc88a73")
 	)
 	(hierarchical_label "FLASH_IO2"
 		(shape bidirectional)
@@ -3910,6 +4020,17 @@
 			(justify left)
 		)
 		(uuid "f5147af4-2603-4ca8-87c1-038d5cb4b970")
+	)
+	(hierarchical_label "RF_BUSY"
+		(shape input)
+		(at 246.38 77.47 180)
+		(effects
+			(font
+				(size 1.27 1.27)
+			)
+			(justify right)
+		)
+		(uuid "fd2b9d3d-5a3c-42ab-82af-131f36e8a2e8")
 	)
 	(symbol
 		(lib_id "Device:C_Small")
