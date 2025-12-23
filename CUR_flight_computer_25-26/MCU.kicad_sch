@@ -3691,6 +3691,17 @@
 		)
 		(uuid "3913598b-7f65-42fa-b9f7-0ac673de977f")
 	)
+	(hierarchical_label "LED_3_B"
+		(shape output)
+		(at 233.68 120.65 180)
+		(effects
+			(font
+				(size 1.27 1.27)
+			)
+			(justify right)
+		)
+		(uuid "396d0f4a-b1e0-4473-8eb6-cc33f9cbba69")
+	)
 	(hierarchical_label "LM660_ST"
 		(shape input)
 		(at 224.79 43.18 0)
@@ -3746,6 +3757,17 @@
 		)
 		(uuid "5bc8489b-c50b-446d-b7db-7d805cf491e8")
 	)
+	(hierarchical_label "LED_2_G"
+		(shape output)
+		(at 233.68 109.22 180)
+		(effects
+			(font
+				(size 1.27 1.27)
+			)
+			(justify right)
+		)
+		(uuid "5f6feae7-8133-48f8-a057-f7d6c20a6094")
+	)
 	(hierarchical_label "RF_TXEN"
 		(shape output)
 		(at 246.38 67.31 180)
@@ -3778,6 +3800,28 @@
 			(justify right)
 		)
 		(uuid "65fed502-e943-4ca0-9f49-2b3c3374c2ab")
+	)
+	(hierarchical_label "LED_1_R"
+		(shape output)
+		(at 233.68 97.79 180)
+		(effects
+			(font
+				(size 1.27 1.27)
+			)
+			(justify right)
+		)
+		(uuid "6f836714-d101-4baf-994e-97d5e0efcce2")
+	)
+	(hierarchical_label "LED_3_G"
+		(shape output)
+		(at 233.68 118.11 180)
+		(effects
+			(font
+				(size 1.27 1.27)
+			)
+			(justify right)
+		)
+		(uuid "756dd763-6c8d-4f59-bfb5-56f13aa7611e")
 	)
 	(hierarchical_label "PYRO_4"
 		(shape output)
@@ -3900,6 +3944,17 @@
 		)
 		(uuid "9fb5fac5-a6a4-42e6-b925-7fd8467631d5")
 	)
+	(hierarchical_label "LED_2_B"
+		(shape output)
+		(at 233.68 111.76 180)
+		(effects
+			(font
+				(size 1.27 1.27)
+			)
+			(justify right)
+		)
+		(uuid "a29bfe54-3c15-4000-818c-ccda9d39ba74")
+	)
 	(hierarchical_label "BUZZER"
 		(shape output)
 		(at 256.54 29.21 0)
@@ -3955,6 +4010,28 @@
 		)
 		(uuid "c1078944-ae2b-44ea-85b4-f7099fcc6555")
 	)
+	(hierarchical_label "LED_3_R"
+		(shape output)
+		(at 233.68 115.57 180)
+		(effects
+			(font
+				(size 1.27 1.27)
+			)
+			(justify right)
+		)
+		(uuid "c8c4b3dd-cb87-48c9-919e-80c7eb6e6b66")
+	)
+	(hierarchical_label "LED_1_G"
+		(shape output)
+		(at 233.68 100.33 180)
+		(effects
+			(font
+				(size 1.27 1.27)
+			)
+			(justify right)
+		)
+		(uuid "c8fdc8b3-53ab-4d5f-99af-2d53a9fdef5c")
+	)
 	(hierarchical_label "GPS_TX"
 		(shape output)
 		(at 237.49 85.09 0)
@@ -3976,6 +4053,17 @@
 			(justify right)
 		)
 		(uuid "d1fc3c69-b9e4-411f-823b-e507e67937e0")
+	)
+	(hierarchical_label "LED_1_B"
+		(shape output)
+		(at 233.68 102.87 180)
+		(effects
+			(font
+				(size 1.27 1.27)
+			)
+			(justify right)
+		)
+		(uuid "d210079e-2282-417b-b023-133dfd9e49a3")
 	)
 	(hierarchical_label "MAG_DATA"
 		(shape bidirectional)
@@ -4075,6 +4163,17 @@
 			(justify left)
 		)
 		(uuid "f5147af4-2603-4ca8-87c1-038d5cb4b970")
+	)
+	(hierarchical_label "LED_2_R"
+		(shape output)
+		(at 233.68 106.68 180)
+		(effects
+			(font
+				(size 1.27 1.27)
+			)
+			(justify right)
+		)
+		(uuid "fab039d5-4c67-47a4-bbcf-62e5a313ba31")
 	)
 	(hierarchical_label "RF_BUSY"
 		(shape input)
