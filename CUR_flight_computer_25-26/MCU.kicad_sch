@@ -3801,6 +3801,17 @@
 		)
 		(uuid "7c207c93-ac57-4e9c-8c41-808cc3118fe9")
 	)
+	(hierarchical_label "~{GPS_RESET}"
+		(shape output)
+		(at 233.68 91.44 180)
+		(effects
+			(font
+				(size 1.27 1.27)
+			)
+			(justify right)
+		)
+		(uuid "7fb12101-4de1-446f-be50-68e9a51b4b38")
+	)
 	(hierarchical_label "PYRO_3"
 		(shape output)
 		(at 245.11 58.42 180)
@@ -3944,6 +3955,17 @@
 		)
 		(uuid "c1078944-ae2b-44ea-85b4-f7099fcc6555")
 	)
+	(hierarchical_label "GPS_TX"
+		(shape output)
+		(at 237.49 85.09 0)
+		(effects
+			(font
+				(size 1.27 1.27)
+			)
+			(justify left)
+		)
+		(uuid "cde24c97-a360-4d35-ad37-9bc601ee0581")
+	)
 	(hierarchical_label "~{RF_NSS}"
 		(shape output)
 		(at 233.68 74.93 180)
@@ -3977,6 +3999,17 @@
 		)
 		(uuid "d38c065e-86d2-4e49-abb2-e99f8a542543")
 	)
+	(hierarchical_label "GPS_RX"
+		(shape input)
+		(at 237.49 87.63 0)
+		(effects
+			(font
+				(size 1.27 1.27)
+			)
+			(justify left)
+		)
+		(uuid "d60301b8-6657-45d5-b394-a310213654d0")
+	)
 	(hierarchical_label "RF_RXEN"
 		(shape output)
 		(at 246.38 80.01 180)
@@ -4009,6 +4042,28 @@
 			(justify right)
 		)
 		(uuid "e4baaaec-6739-4ac1-a496-a43267ce1c00")
+	)
+	(hierarchical_label "GPS_TP"
+		(shape input)
+		(at 233.68 87.63 180)
+		(effects
+			(font
+				(size 1.27 1.27)
+			)
+			(justify right)
+		)
+		(uuid "e6fa3919-84ae-44cb-b692-d08d68ddf049")
+	)
+	(hierarchical_label "GPS_EXINT"
+		(shape output)
+		(at 233.68 85.09 180)
+		(effects
+			(font
+				(size 1.27 1.27)
+			)
+			(justify right)
+		)
+		(uuid "e8e4a89a-41dc-4635-bec5-d98109f45e3c")
 	)
 	(hierarchical_label "SENSORS_MOSI"
 		(shape output)
