@@ -3560,6 +3560,17 @@
 		)
 		(uuid "fd9377c7-1721-47c8-a44f-f65277ae00fe")
 	)
+	(hierarchical_label "IMU_INT2"
+		(shape input)
+		(at 193.04 48.26 180)
+		(effects
+			(font
+				(size 1.27 1.27)
+			)
+			(justify right)
+		)
+		(uuid "0fcd17fa-ce63-4fcd-a952-10bbb0ed8398")
+	)
 	(hierarchical_label "SENSORS_SPC"
 		(shape output)
 		(at 189.23 67.31 0)
