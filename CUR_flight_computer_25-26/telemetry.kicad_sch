@@ -5,6 +5,119 @@
 	(uuid "8cbc335c-0dcd-4bfd-a627-e1535dedbf26")
 	(paper "A4")
 	(lib_symbols
+		(symbol "Device:Antenna"
+			(pin_numbers
+				(hide yes)
+			)
+			(pin_names
+				(offset 1.016)
+				(hide yes)
+			)
+			(exclude_from_sim no)
+			(in_bom yes)
+			(on_board yes)
+			(property "Reference" "AE"
+				(at -1.905 1.905 0)
+				(effects
+					(font
+						(size 1.27 1.27)
+					)
+					(justify right)
+				)
+			)
+			(property "Value" "Antenna"
+				(at -1.905 0 0)
+				(effects
+					(font
+						(size 1.27 1.27)
+					)
+					(justify right)
+				)
+			)
+			(property "Footprint" ""
+				(at 0 0 0)
+				(effects
+					(font
+						(size 1.27 1.27)
+					)
+					(hide yes)
+				)
+			)
+			(property "Datasheet" "~"
+				(at 0 0 0)
+				(effects
+					(font
+						(size 1.27 1.27)
+					)
+					(hide yes)
+				)
+			)
+			(property "Description" "Antenna"
+				(at 0 0 0)
+				(effects
+					(font
+						(size 1.27 1.27)
+					)
+					(hide yes)
+				)
+			)
+			(property "ki_keywords" "antenna"
+				(at 0 0 0)
+				(effects
+					(font
+						(size 1.27 1.27)
+					)
+					(hide yes)
+				)
+			)
+			(symbol "Antenna_0_1"
+				(polyline
+					(pts
+						(xy 0 2.54) (xy 0 -3.81)
+					)
+					(stroke
+						(width 0.254)
+						(type default)
+					)
+					(fill
+						(type none)
+					)
+				)
+				(polyline
+					(pts
+						(xy 1.27 2.54) (xy 0 -2.54) (xy -1.27 2.54)
+					)
+					(stroke
+						(width 0.254)
+						(type default)
+					)
+					(fill
+						(type none)
+					)
+				)
+			)
+			(symbol "Antenna_1_1"
+				(pin input line
+					(at 0 -5.08 90)
+					(length 2.54)
+					(name "A"
+						(effects
+							(font
+								(size 1.27 1.27)
+							)
+						)
+					)
+					(number "1"
+						(effects
+							(font
+								(size 1.27 1.27)
+							)
+						)
+					)
+				)
+			)
+			(embedded_fonts no)
+		)
 		(symbol "Device:C_Small"
 			(pin_numbers
 				(hide yes)
@@ -1177,6 +1290,16 @@
 			(embedded_fonts no)
 		)
 	)
+	(text "use df2s5m4sl from toshiba\n"
+		(exclude_from_sim no)
+		(at 129.032 57.912 0)
+		(effects
+			(font
+				(size 1.27 1.27)
+			)
+		)
+		(uuid "a624536a-cb9f-4813-9392-4823c6d99c8d")
+	)
 	(text "Pick capacitor values to PI match antenna"
 		(exclude_from_sim no)
 		(at 196.342 110.236 0)
@@ -1315,6 +1438,16 @@
 	)
 	(wire
 		(pts
+			(xy 144.78 67.31) (xy 147.32 67.31)
+		)
+		(stroke
+			(width 0)
+			(type default)
+		)
+		(uuid "7e125256-648b-4a10-8475-6b4bb9e9a2a0")
+	)
+	(wire
+		(pts
 			(xy 181.61 95.25) (xy 186.69 95.25)
 		)
 		(stroke
@@ -1322,16 +1455,6 @@
 			(type default)
 		)
 		(uuid "824842d8-d4e0-49d5-a42b-804723c358ef")
-	)
-	(wire
-		(pts
-			(xy 134.62 80.01) (xy 134.62 78.74)
-		)
-		(stroke
-			(width 0)
-			(type default)
-		)
-		(uuid "82529f17-66f3-4737-9461-b85ad8cd45ef")
 	)
 	(wire
 		(pts
@@ -1651,17 +1774,6 @@
 			(justify left)
 		)
 		(uuid "7dcedbfd-1cdb-4039-8007-8336dc14008c")
-	)
-	(hierarchical_label "RF_ANT"
-		(shape bidirectional)
-		(at 204.47 95.25 0)
-		(effects
-			(font
-				(size 1.27 1.27)
-			)
-			(justify left)
-		)
-		(uuid "b3bb10b1-a1a2-48a5-9863-d2134e3bfe5c")
 	)
 	(hierarchical_label "RF_MOSI"
 		(shape input)
@@ -2198,6 +2310,73 @@
 			(project ""
 				(path "/bf7761cc-1b32-4d86-809c-5f027005229b/16b7f3d3-745f-44d9-93a4-41f5bfd830cb"
 					(reference "#PWR035")
+					(unit 1)
+				)
+			)
+		)
+	)
+	(symbol
+		(lib_id "Device:Antenna")
+		(at 204.47 86.36 0)
+		(unit 1)
+		(exclude_from_sim no)
+		(in_bom yes)
+		(on_board yes)
+		(dnp no)
+		(fields_autoplaced yes)
+		(uuid "7acc2063-195a-462b-b17e-0e39e109c9ef")
+		(property "Reference" "AE1"
+			(at 207.01 85.7249 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(justify left)
+			)
+		)
+		(property "Value" "Antenna"
+			(at 207.01 88.2649 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(justify left)
+			)
+		)
+		(property "Footprint" ""
+			(at 204.47 86.36 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
+			)
+		)
+		(property "Datasheet" "~"
+			(at 204.47 86.36 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
+			)
+		)
+		(property "Description" "Antenna"
+			(at 204.47 86.36 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
+			)
+		)
+		(pin "1"
+			(uuid "59ae63be-1026-4266-abb9-4f6217aad269")
+		)
+		(instances
+			(project ""
+				(path "/bf7761cc-1b32-4d86-809c-5f027005229b/16b7f3d3-745f-44d9-93a4-41f5bfd830cb"
+					(reference "AE1")
 					(unit 1)
 				)
 			)
