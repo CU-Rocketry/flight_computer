@@ -548,7 +548,7 @@
 		)
 	)
 	(sheet
-		(at 39.37 50.8)
+		(at 36.83 52.07)
 		(size 24.13 30.48)
 		(exclude_from_sim no)
 		(in_bom yes)
@@ -564,7 +564,7 @@
 		)
 		(uuid "16b7f3d3-745f-44d9-93a4-41f5bfd830cb")
 		(property "Sheetname" "Telemetry"
-			(at 39.37 50.0884 0)
+			(at 36.83 51.3584 0)
 			(effects
 				(font
 					(size 1.27 1.27)
@@ -573,7 +573,7 @@
 			)
 		)
 		(property "Sheetfile" "telemetry.kicad_sch"
-			(at 39.37 81.8646 0)
+			(at 36.83 83.1346 0)
 			(effects
 				(font
 					(size 1.27 1.27)
@@ -582,7 +582,7 @@
 			)
 		)
 		(pin "~{RF_NSS}" input
-			(at 63.5 60.96 0)
+			(at 60.96 62.23 0)
 			(uuid "9ef6b5bf-2148-4928-b85c-26d019b29e39")
 			(effects
 				(font
@@ -592,7 +592,7 @@
 			)
 		)
 		(pin "RF_BUSY" output
-			(at 63.5 63.5 0)
+			(at 60.96 64.77 0)
 			(uuid "30650522-f632-4d20-998f-8d1665ddf1f5")
 			(effects
 				(font
@@ -602,7 +602,7 @@
 			)
 		)
 		(pin "RF_IO1" bidirectional
-			(at 63.5 66.04 0)
+			(at 60.96 67.31 0)
 			(uuid "5317f917-1ab3-40ec-97ec-45a43c8f3488")
 			(effects
 				(font
@@ -612,7 +612,7 @@
 			)
 		)
 		(pin "RF_MISO" output
-			(at 63.5 58.42 0)
+			(at 60.96 59.69 0)
 			(uuid "db53e799-12b1-40d6-8a7a-be947a2ff502")
 			(effects
 				(font
@@ -622,7 +622,7 @@
 			)
 		)
 		(pin "RF_SCK" input
-			(at 63.5 53.34 0)
+			(at 60.96 54.61 0)
 			(uuid "34cff398-00e7-4fd0-a188-f87b28af27b9")
 			(effects
 				(font
@@ -632,7 +632,7 @@
 			)
 		)
 		(pin "~{RF_RESET}" input
-			(at 63.5 73.66 0)
+			(at 60.96 74.93 0)
 			(uuid "50ebaf50-ab2b-4031-9e76-c7fcf4484880")
 			(effects
 				(font
@@ -642,7 +642,7 @@
 			)
 		)
 		(pin "RF_IO3" bidirectional
-			(at 63.5 71.12 0)
+			(at 60.96 72.39 0)
 			(uuid "6b9c4e2a-1219-40f1-b263-c524ddf591e0")
 			(effects
 				(font
@@ -652,7 +652,7 @@
 			)
 		)
 		(pin "RF_IO2" bidirectional
-			(at 63.5 68.58 0)
+			(at 60.96 69.85 0)
 			(uuid "d25583b6-8e96-4ce8-9ab3-d8af8f984919")
 			(effects
 				(font
@@ -662,7 +662,7 @@
 			)
 		)
 		(pin "RF_TXEN" input
-			(at 63.5 76.2 0)
+			(at 60.96 77.47 0)
 			(uuid "d0da9588-6a19-4da8-8f49-bbac2e54c905")
 			(effects
 				(font
@@ -672,7 +672,7 @@
 			)
 		)
 		(pin "RF_MOSI" input
-			(at 63.5 55.88 0)
+			(at 60.96 57.15 0)
 			(uuid "3ab2fbec-8c94-440d-9ae1-dde2d3ef640c")
 			(effects
 				(font
@@ -682,7 +682,7 @@
 			)
 		)
 		(pin "RF_RXEN" input
-			(at 63.5 78.74 0)
+			(at 60.96 80.01 0)
 			(uuid "a566ec6f-078d-4b59-87d9-81a9d2665b5b")
 			(effects
 				(font
@@ -1738,7 +1738,7 @@
 		)
 	)
 	(sheet
-		(at 39.37 87.63)
+		(at 36.83 88.9)
 		(size 24.13 38.1)
 		(exclude_from_sim no)
 		(in_bom yes)
@@ -1754,7 +1754,7 @@
 		)
 		(uuid "9736895c-f0f7-444d-aab7-042381dec39a")
 		(property "Sheetname" "Sensors"
-			(at 39.37 86.9184 0)
+			(at 36.83 88.1884 0)
 			(effects
 				(font
 					(size 1.27 1.27)
@@ -1763,7 +1763,7 @@
 			)
 		)
 		(property "Sheetfile" "sensors.kicad_sch"
-			(at 39.37 126.3146 0)
+			(at 36.83 127.5846 0)
 			(effects
 				(font
 					(size 1.27 1.27)
@@ -1772,7 +1772,7 @@
 			)
 		)
 		(pin "BARO_CS" input
-			(at 63.5 101.6 0)
+			(at 60.96 102.87 0)
 			(uuid "fca8e29b-294f-43c9-a61c-af52792d66ab")
 			(effects
 				(font
@@ -1782,7 +1782,7 @@
 			)
 		)
 		(pin "SENSOR_SPC" input
-			(at 63.5 95.25 0)
+			(at 60.96 96.52 0)
 			(uuid "3c29dde7-ba1d-46bf-962b-368976b23d3a")
 			(effects
 				(font
@@ -1792,7 +1792,7 @@
 			)
 		)
 		(pin "BARO_INT" output
-			(at 63.5 99.06 0)
+			(at 60.96 100.33 0)
 			(uuid "88b4144b-a5bd-469d-8ab5-d4d6e20739bd")
 			(effects
 				(font
@@ -1802,7 +1802,7 @@
 			)
 		)
 		(pin "SENSOR_MISO" output
-			(at 63.5 92.71 0)
+			(at 60.96 93.98 0)
 			(uuid "d7925820-f324-4b02-a0bd-0f7003a018a5")
 			(effects
 				(font
@@ -1812,7 +1812,7 @@
 			)
 		)
 		(pin "SENSOR_MOSI" input
-			(at 63.5 90.17 0)
+			(at 60.96 91.44 0)
 			(uuid "389488fa-82c3-4a90-a901-74f179c03fe7")
 			(effects
 				(font
@@ -1822,7 +1822,7 @@
 			)
 		)
 		(pin "MAG_INT" output
-			(at 63.5 113.03 0)
+			(at 60.96 114.3 0)
 			(uuid "02cf3aad-ff13-468c-af7d-178cc0b35e95")
 			(effects
 				(font
@@ -1832,7 +1832,7 @@
 			)
 		)
 		(pin "MAG_DATA" bidirectional
-			(at 63.5 105.41 0)
+			(at 60.96 106.68 0)
 			(uuid "8c06eb4d-943f-421a-b4c4-076396f59d23")
 			(effects
 				(font
@@ -1842,7 +1842,7 @@
 			)
 		)
 		(pin "MAG CLOCK" input
-			(at 63.5 107.95 0)
+			(at 60.96 109.22 0)
 			(uuid "6a90434a-4b7b-4324-8ffa-8145aa3ef9e6")
 			(effects
 				(font
@@ -1852,7 +1852,7 @@
 			)
 		)
 		(pin "IMU_CS" input
-			(at 63.5 118.11 0)
+			(at 60.96 119.38 0)
 			(uuid "da6d3b96-6ffb-4619-9d16-fa94e6c84999")
 			(effects
 				(font
@@ -1862,7 +1862,7 @@
 			)
 		)
 		(pin "IMU_INT1" output
-			(at 63.5 120.65 0)
+			(at 60.96 121.92 0)
 			(uuid "d52ef008-db56-47b3-8f8e-76c0b2777e95")
 			(effects
 				(font
@@ -1872,7 +1872,7 @@
 			)
 		)
 		(pin "MAG_CS" input
-			(at 63.5 110.49 0)
+			(at 60.96 111.76 0)
 			(uuid "d98e623e-7539-4859-966d-10a43d8f2c87")
 			(effects
 				(font
@@ -1882,7 +1882,7 @@
 			)
 		)
 		(pin "IMU_INT2" output
-			(at 63.5 123.19 0)
+			(at 60.96 124.46 0)
 			(uuid "11c74df4-4db0-4d33-891a-feb402db814c")
 			(effects
 				(font
