@@ -1166,7 +1166,7 @@
 	)
 	(text "meant to be 100\ncan replace from SMD\nsampler book if needed"
 		(exclude_from_sim no)
-		(at 134.366 69.85 0)
+		(at 136.144 70.612 0)
 		(effects
 			(font
 				(size 1.27 1.27)
