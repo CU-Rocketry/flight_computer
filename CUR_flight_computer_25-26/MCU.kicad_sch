@@ -3988,13 +3988,14 @@
 		)
 		(uuid "26d58739-709a-4e68-b06a-04bbd83257b9")
 	)
-	(text "(18pf - 5pf) x 2 = 26pf\n\n"
+	(text "(18pf - 5pf) x 2 = 26pf\n20kohm feedback resistor reccomended\n\n"
 		(exclude_from_sim no)
-		(at 52.07 143.764 0)
+		(at 40.132 144.526 0)
 		(effects
 			(font
 				(size 1.27 1.27)
 			)
+			(justify left)
 		)
 		(uuid "2bd8092b-3e81-456d-9ab6-78be54a8fb79")
 	)
@@ -4267,6 +4268,16 @@
 	)
 	(wire
 		(pts
+			(xy 53.34 154.94) (xy 55.88 154.94)
+		)
+		(stroke
+			(width 0)
+			(type default)
+		)
+		(uuid "05782151-7d5c-4e05-bb14-4a1f302b9cb2")
+	)
+	(wire
+		(pts
 			(xy 35.56 55.88) (xy 35.56 57.15)
 		)
 		(stroke
@@ -4507,7 +4518,7 @@
 	)
 	(wire
 		(pts
-			(xy 45.72 154.94) (xy 54.61 154.94)
+			(xy 45.72 154.94) (xy 48.26 154.94)
 		)
 		(stroke
 			(width 0)
@@ -4634,6 +4645,16 @@
 			(type default)
 		)
 		(uuid "535fa4b4-61c0-4225-af8a-f9b23a371691")
+	)
+	(wire
+		(pts
+			(xy 60.96 154.94) (xy 72.39 154.94)
+		)
+		(stroke
+			(width 0)
+			(type default)
+		)
+		(uuid "53c7ca01-a5f4-4f6f-b80f-1605f4a91428")
 	)
 	(wire
 		(pts
@@ -5426,7 +5447,7 @@
 		(uuid "2372460c-609d-4a3f-be8b-b944172ebc23")
 	)
 	(label "HSE_OUT"
-		(at 54.61 154.94 180)
+		(at 72.39 154.94 180)
 		(effects
 			(font
 				(size 1.27 1.27)
@@ -6721,6 +6742,73 @@
 			(project "CUR_flight_computer_25-26"
 				(path "/bf7761cc-1b32-4d86-809c-5f027005229b/3b725c3b-9650-41e6-95bf-9087cc38f098"
 					(reference "C11")
+					(unit 1)
+				)
+			)
+		)
+	)
+	(symbol
+		(lib_id "Device:R_Small_US")
+		(at 50.8 154.94 270)
+		(unit 1)
+		(exclude_from_sim no)
+		(in_bom yes)
+		(on_board yes)
+		(dnp no)
+		(uuid "433761d1-5d5a-4cb8-9fed-a99f71ab1459")
+		(property "Reference" "R36"
+			(at 50.8 148.59 90)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+			)
+		)
+		(property "Value" "10k"
+			(at 50.8 151.13 90)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+			)
+		)
+		(property "Footprint" ""
+			(at 50.8 154.94 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
+			)
+		)
+		(property "Datasheet" "~"
+			(at 50.8 154.94 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
+			)
+		)
+		(property "Description" "Resistor, small US symbol"
+			(at 50.8 154.94 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
+			)
+		)
+		(pin "1"
+			(uuid "c561dd69-a849-4cca-b3da-7559dd22e655")
+		)
+		(pin "2"
+			(uuid "dd3972ee-ca4b-4427-8633-bb2642859bb0")
+		)
+		(instances
+			(project "CUR_flight_computer_25-26"
+				(path "/bf7761cc-1b32-4d86-809c-5f027005229b/3b725c3b-9650-41e6-95bf-9087cc38f098"
+					(reference "R36")
 					(unit 1)
 				)
 			)
@@ -8311,6 +8399,73 @@
 			(project "CUR_flight_computer_25-26"
 				(path "/bf7761cc-1b32-4d86-809c-5f027005229b/3b725c3b-9650-41e6-95bf-9087cc38f098"
 					(reference "C30")
+					(unit 1)
+				)
+			)
+		)
+	)
+	(symbol
+		(lib_id "Device:R_Small_US")
+		(at 58.42 154.94 270)
+		(unit 1)
+		(exclude_from_sim no)
+		(in_bom yes)
+		(on_board yes)
+		(dnp no)
+		(uuid "8a918629-eb09-4f1b-bcac-450b8e705e0f")
+		(property "Reference" "R37"
+			(at 58.42 148.59 90)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+			)
+		)
+		(property "Value" "10k"
+			(at 58.42 151.13 90)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+			)
+		)
+		(property "Footprint" ""
+			(at 58.42 154.94 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
+			)
+		)
+		(property "Datasheet" "~"
+			(at 58.42 154.94 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
+			)
+		)
+		(property "Description" "Resistor, small US symbol"
+			(at 58.42 154.94 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
+			)
+		)
+		(pin "1"
+			(uuid "e8a8cacb-4d56-473a-a94d-d4c32c4ea6f7")
+		)
+		(pin "2"
+			(uuid "4b96ede9-9dce-421e-b080-9b20c5f8b33a")
+		)
+		(instances
+			(project "CUR_flight_computer_25-26"
+				(path "/bf7761cc-1b32-4d86-809c-5f027005229b/3b725c3b-9650-41e6-95bf-9087cc38f098"
+					(reference "R37")
 					(unit 1)
 				)
 			)
