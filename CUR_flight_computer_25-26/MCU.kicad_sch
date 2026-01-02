@@ -5572,6 +5572,17 @@
 		)
 		(uuid "2136c6a2-4cea-4e68-b904-3214c8d1bfc6")
 	)
+	(hierarchical_label "SD_DAT3"
+		(shape bidirectional)
+		(at 248.92 142.24 0)
+		(effects
+			(font
+				(size 1.27 1.27)
+			)
+			(justify left)
+		)
+		(uuid "2687663e-50a9-431d-b21e-f9a343f0ad99")
+	)
 	(hierarchical_label "RF_MOSI"
 		(shape output)
 		(at 241.3 107.95 180)
@@ -5682,6 +5693,17 @@
 		)
 		(uuid "4567c1d6-dec3-40a1-8395-3c4363860cba")
 	)
+	(hierarchical_label "SD_DAT0"
+		(shape bidirectional)
+		(at 248.92 154.94 0)
+		(effects
+			(font
+				(size 1.27 1.27)
+			)
+			(justify left)
+		)
+		(uuid "470d3760-2d82-4745-9f88-81e8a0ba2abc")
+	)
 	(hierarchical_label "RF_MISO"
 		(shape input)
 		(at 241.3 110.49 180)
@@ -5758,6 +5780,17 @@
 			(justify right)
 		)
 		(uuid "65fed502-e943-4ca0-9f49-2b3c3374c2ab")
+	)
+	(hierarchical_label "SD_DAT1"
+		(shape bidirectional)
+		(at 248.92 157.48 0)
+		(effects
+			(font
+				(size 1.27 1.27)
+			)
+			(justify left)
+		)
+		(uuid "775ef995-e2f7-479a-b14f-611230891c59")
 	)
 	(hierarchical_label "PYRO_4"
 		(shape output)
@@ -5912,6 +5945,17 @@
 			(justify right)
 		)
 		(uuid "978085f8-267c-4ea1-8fce-46204f9a0546")
+	)
+	(hierarchical_label "SD_CLK"
+		(shape output)
+		(at 248.92 149.86 0)
+		(effects
+			(font
+				(size 1.27 1.27)
+			)
+			(justify left)
+		)
+		(uuid "99eefe37-6562-4ec4-9bd0-811ad9510b1b")
 	)
 	(hierarchical_label "BARO_INT"
 		(shape input)
@@ -6177,6 +6221,17 @@
 		)
 		(uuid "e8e4a89a-41dc-4635-bec5-d98109f45e3c")
 	)
+	(hierarchical_label "SD_DAT2"
+		(shape bidirectional)
+		(at 248.92 139.7 0)
+		(effects
+			(font
+				(size 1.27 1.27)
+			)
+			(justify left)
+		)
+		(uuid "f1ca5dd3-17e2-4405-b38b-161596d2031d")
+	)
 	(hierarchical_label "SENSORS_MOSI"
 		(shape output)
 		(at 246.38 121.92 0)
@@ -6187,6 +6242,17 @@
 			(justify left)
 		)
 		(uuid "f5147af4-2603-4ca8-87c1-038d5cb4b970")
+	)
+	(hierarchical_label "SD_CMD"
+		(shape output)
+		(at 248.92 144.78 0)
+		(effects
+			(font
+				(size 1.27 1.27)
+			)
+			(justify left)
+		)
+		(uuid "fa325b23-6d42-4135-9bf5-f2b4e5816f3c")
 	)
 	(hierarchical_label "RF_BUSY"
 		(shape input)
