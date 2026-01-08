@@ -2046,7 +2046,7 @@
 	)
 	(wire
 		(pts
-			(xy 35.56 78.74) (xy 36.83 78.74)
+			(xy 29.21 78.74) (xy 36.83 78.74)
 		)
 		(stroke
 			(width 0)
@@ -2281,9 +2281,9 @@
 		)
 		(uuid "5e13ff36-dc17-4b59-adda-a4d3f6646eaa")
 	)
-	(hierarchical_label "FLASH RESET"
+	(hierarchical_label "FLASH_IO3"
 		(shape bidirectional)
-		(at 35.56 78.74 180)
+		(at 29.21 78.74 180)
 		(effects
 			(font
 				(size 1.27 1.27)
