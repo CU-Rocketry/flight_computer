@@ -4049,6 +4049,16 @@
 		)
 		(uuid "81ed69c4-fde9-4a35-9eba-067eccd0f44a")
 	)
+	(text "octospi\n"
+		(exclude_from_sim no)
+		(at 202.692 110.236 0)
+		(effects
+			(font
+				(size 1.27 1.27)
+			)
+		)
+		(uuid "9e92fb21-d450-49e2-8daa-e9a2b01fb824")
+	)
 	(text "HSE\n25MHz 18pf"
 		(exclude_from_sim no)
 		(at 18.288 137.922 0)
@@ -5605,7 +5615,7 @@
 	)
 	(hierarchical_label "RF_MOSI"
 		(shape output)
-		(at 232.41 123.19 180)
+		(at 232.41 121.92 180)
 		(effects
 			(font
 				(size 1.27 1.27)
@@ -5627,7 +5637,7 @@
 	)
 	(hierarchical_label "FLASH_IO1"
 		(shape bidirectional)
-		(at 238.76 33.02 0)
+		(at 210.82 116.84 0)
 		(effects
 			(font
 				(size 1.27 1.27)
@@ -5638,7 +5648,7 @@
 	)
 	(hierarchical_label "FLASH_CS"
 		(shape output)
-		(at 226.06 33.02 0)
+		(at 198.12 116.84 0)
 		(effects
 			(font
 				(size 1.27 1.27)
@@ -5726,7 +5736,7 @@
 	)
 	(hierarchical_label "RF_MISO"
 		(shape input)
-		(at 232.41 125.73 180)
+		(at 232.41 124.46 180)
 		(effects
 			(font
 				(size 1.27 1.27)
@@ -5869,7 +5879,7 @@
 	)
 	(hierarchical_label "~{GPS_RESET}"
 		(shape output)
-		(at 250.19 130.81 180)
+		(at 250.19 129.54 180)
 		(effects
 			(font
 				(size 1.27 1.27)
@@ -5957,7 +5967,7 @@
 	)
 	(hierarchical_label "FLASH_CLK"
 		(shape output)
-		(at 226.06 30.48 0)
+		(at 198.12 114.3 0)
 		(effects
 			(font
 				(size 1.27 1.27)
@@ -6076,9 +6086,20 @@
 		)
 		(uuid "ad66c5e4-8ae8-4c0e-8953-b6c4b14c792b")
 	)
+	(hierarchical_label "FLASH_IO3"
+		(shape bidirectional)
+		(at 210.82 111.76 0)
+		(effects
+			(font
+				(size 1.27 1.27)
+			)
+			(justify left)
+		)
+		(uuid "aea2b38a-846e-4195-9b3c-c194db316a6a")
+	)
 	(hierarchical_label "FLASH_IO0"
 		(shape bidirectional)
-		(at 238.76 30.48 0)
+		(at 210.82 114.3 0)
 		(effects
 			(font
 				(size 1.27 1.27)
@@ -6089,7 +6110,7 @@
 	)
 	(hierarchical_label "RF_SCK"
 		(shape output)
-		(at 232.41 128.27 180)
+		(at 232.41 127 180)
 		(effects
 			(font
 				(size 1.27 1.27)
@@ -6133,7 +6154,7 @@
 	)
 	(hierarchical_label "~{RF_NSS}"
 		(shape output)
-		(at 232.41 130.81 180)
+		(at 232.41 129.54 180)
 		(effects
 			(font
 				(size 1.27 1.27)
@@ -6210,7 +6231,7 @@
 	)
 	(hierarchical_label "FLASH_IO2"
 		(shape bidirectional)
-		(at 238.76 35.56 0)
+		(at 210.82 119.38 0)
 		(effects
 			(font
 				(size 1.27 1.27)
