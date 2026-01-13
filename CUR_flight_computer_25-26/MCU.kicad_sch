@@ -4019,7 +4019,7 @@
 		)
 		(uuid "74484a9c-8e0f-4f66-ab87-49eae0a6dc29")
 	)
-	(text "unsure if need\n"
+	(text "do not need"
 		(exclude_from_sim no)
 		(at 229.616 153.924 0)
 		(effects
@@ -4051,13 +4051,23 @@
 	)
 	(text "octospi\n"
 		(exclude_from_sim no)
-		(at 202.692 110.236 0)
+		(at 207.01 108.204 0)
 		(effects
 			(font
 				(size 1.27 1.27)
 			)
 		)
 		(uuid "9e92fb21-d450-49e2-8daa-e9a2b01fb824")
+	)
+	(text "spi\n2- sensors\n3- mag\n4- rf"
+		(exclude_from_sim no)
+		(at 207.518 99.06 0)
+		(effects
+			(font
+				(size 1.27 1.27)
+			)
+		)
+		(uuid "b547dc7b-7ce4-4401-ace9-623d92b83c61")
 	)
 	(text "HSE\n25MHz 18pf"
 		(exclude_from_sim no)
@@ -4518,16 +4528,6 @@
 	)
 	(wire
 		(pts
-			(xy 184.15 45.72) (xy 195.58 45.72)
-		)
-		(stroke
-			(width 0)
-			(type default)
-		)
-		(uuid "383a92fb-fe4f-43f7-8190-24edb181bace")
-	)
-	(wire
-		(pts
 			(xy 116.84 35.56) (xy 123.19 35.56)
 		)
 		(stroke
@@ -4928,16 +4928,6 @@
 	)
 	(wire
 		(pts
-			(xy 184.15 48.26) (xy 195.58 48.26)
-		)
-		(stroke
-			(width 0)
-			(type default)
-		)
-		(uuid "91ecb080-8718-4f11-a76f-411fc1b4a7af")
-	)
-	(wire
-		(pts
 			(xy 104.14 156.21) (xy 104.14 158.75)
 		)
 		(stroke
@@ -5238,16 +5228,6 @@
 	)
 	(wire
 		(pts
-			(xy 184.15 50.8) (xy 195.58 50.8)
-		)
-		(stroke
-			(width 0)
-			(type default)
-		)
-		(uuid "ca6574cc-f3b5-44bf-949c-dacc1d2eb41c")
-	)
-	(wire
-		(pts
 			(xy 158.75 19.05) (xy 158.75 21.59)
 		)
 		(stroke
@@ -5538,7 +5518,7 @@
 	)
 	(hierarchical_label "~{RF_RESET}"
 		(shape output)
-		(at 232.41 133.35 180)
+		(at 240.03 95.25 180)
 		(effects
 			(font
 				(size 1.27 1.27)
@@ -5549,7 +5529,7 @@
 	)
 	(hierarchical_label "IMU_INT2"
 		(shape input)
-		(at 199.39 139.7 0)
+		(at 257.81 100.33 0)
 		(effects
 			(font
 				(size 1.27 1.27)
@@ -5560,12 +5540,12 @@
 	)
 	(hierarchical_label "JCLK{slash}SWCLK"
 		(shape input)
-		(at 266.7 72.39 180)
+		(at 186.69 71.12 0)
 		(effects
 			(font
 				(size 1.27 1.27)
 			)
-			(justify right)
+			(justify left)
 		)
 		(uuid "11c0f2a7-a97f-41bb-8014-f45e5589eec0")
 	)
@@ -5582,7 +5562,7 @@
 	)
 	(hierarchical_label "RF_IO2"
 		(shape bidirectional)
-		(at 232.41 142.24 180)
+		(at 240.03 104.14 180)
 		(effects
 			(font
 				(size 1.27 1.27)
@@ -5593,7 +5573,7 @@
 	)
 	(hierarchical_label "PYRO_1"
 		(shape output)
-		(at 236.22 53.34 0)
+		(at 224.79 52.07 0)
 		(effects
 			(font
 				(size 1.27 1.27)
@@ -5604,7 +5584,7 @@
 	)
 	(hierarchical_label "SD_DAT3"
 		(shape bidirectional)
-		(at 270.51 130.81 0)
+		(at 186.69 147.32 0)
 		(effects
 			(font
 				(size 1.27 1.27)
@@ -5615,7 +5595,7 @@
 	)
 	(hierarchical_label "RF_MOSI"
 		(shape output)
-		(at 232.41 121.92 180)
+		(at 120.65 93.98 180)
 		(effects
 			(font
 				(size 1.27 1.27)
@@ -5626,7 +5606,7 @@
 	)
 	(hierarchical_label "SENSORS_SPC"
 		(shape output)
-		(at 199.39 127 0)
+		(at 186.69 109.22 0)
 		(effects
 			(font
 				(size 1.27 1.27)
@@ -5637,7 +5617,7 @@
 	)
 	(hierarchical_label "FLASH_IO1"
 		(shape bidirectional)
-		(at 210.82 116.84 0)
+		(at 184.15 78.74 0)
 		(effects
 			(font
 				(size 1.27 1.27)
@@ -5648,7 +5628,7 @@
 	)
 	(hierarchical_label "FLASH_CS"
 		(shape output)
-		(at 198.12 116.84 0)
+		(at 186.69 104.14 0)
 		(effects
 			(font
 				(size 1.27 1.27)
@@ -5659,7 +5639,7 @@
 	)
 	(hierarchical_label "LED_3_B"
 		(shape output)
-		(at 262.89 151.13 180)
+		(at 273.05 147.32 180)
 		(effects
 			(font
 				(size 1.27 1.27)
@@ -5681,7 +5661,7 @@
 	)
 	(hierarchical_label "USB_D+"
 		(shape bidirectional)
-		(at 270.51 119.38 0)
+		(at 184.15 66.04 0)
 		(effects
 			(font
 				(size 1.27 1.27)
@@ -5692,7 +5672,7 @@
 	)
 	(hierarchical_label "LED_1_G"
 		(shape output)
-		(at 262.89 130.81 180)
+		(at 273.05 127 180)
 		(effects
 			(font
 				(size 1.27 1.27)
@@ -5714,7 +5694,7 @@
 	)
 	(hierarchical_label "SENSE_2"
 		(shape input)
-		(at 236.22 55.88 0)
+		(at 224.79 54.61 0)
 		(effects
 			(font
 				(size 1.27 1.27)
@@ -5725,7 +5705,7 @@
 	)
 	(hierarchical_label "SD_DAT0"
 		(shape bidirectional)
-		(at 270.51 143.51 0)
+		(at 186.69 139.7 0)
 		(effects
 			(font
 				(size 1.27 1.27)
@@ -5736,7 +5716,7 @@
 	)
 	(hierarchical_label "RF_MISO"
 		(shape input)
-		(at 232.41 124.46 180)
+		(at 120.65 91.44 180)
 		(effects
 			(font
 				(size 1.27 1.27)
@@ -5747,18 +5727,18 @@
 	)
 	(hierarchical_label "JTDI"
 		(shape input)
-		(at 266.7 80.01 180)
+		(at 186.69 73.66 0)
 		(effects
 			(font
 				(size 1.27 1.27)
 			)
-			(justify right)
+			(justify left)
 		)
 		(uuid "526e7916-b160-43ea-ab22-d66cad4e0d36")
 	)
 	(hierarchical_label "SENSORS_MISO"
 		(shape input)
-		(at 199.39 129.54 0)
+		(at 186.69 111.76 0)
 		(effects
 			(font
 				(size 1.27 1.27)
@@ -5791,7 +5771,7 @@
 	)
 	(hierarchical_label "MAG_CS"
 		(shape output)
-		(at 199.39 156.21 0)
+		(at 186.69 99.06 0)
 		(effects
 			(font
 				(size 1.27 1.27)
@@ -5802,7 +5782,7 @@
 	)
 	(hierarchical_label "RF_IO1"
 		(shape bidirectional)
-		(at 232.41 139.7 180)
+		(at 240.03 101.6 180)
 		(effects
 			(font
 				(size 1.27 1.27)
@@ -5813,7 +5793,7 @@
 	)
 	(hierarchical_label "MAG CLOCK"
 		(shape output)
-		(at 199.39 151.13 0)
+		(at 186.69 101.6 0)
 		(effects
 			(font
 				(size 1.27 1.27)
@@ -5824,7 +5804,7 @@
 	)
 	(hierarchical_label "SD_DAT1"
 		(shape bidirectional)
-		(at 270.51 146.05 0)
+		(at 186.69 142.24 0)
 		(effects
 			(font
 				(size 1.27 1.27)
@@ -5835,7 +5815,7 @@
 	)
 	(hierarchical_label "PYRO_4"
 		(shape output)
-		(at 241.3 100.33 0)
+		(at 237.49 59.69 0)
 		(effects
 			(font
 				(size 1.27 1.27)
@@ -5846,7 +5826,7 @@
 	)
 	(hierarchical_label "LED_2_G"
 		(shape output)
-		(at 262.89 139.7 180)
+		(at 273.05 135.89 180)
 		(effects
 			(font
 				(size 1.27 1.27)
@@ -5857,7 +5837,7 @@
 	)
 	(hierarchical_label "SENSE_4"
 		(shape input)
-		(at 236.22 60.96 0)
+		(at 224.79 59.69 0)
 		(effects
 			(font
 				(size 1.27 1.27)
@@ -5868,7 +5848,7 @@
 	)
 	(hierarchical_label "LED_1_R"
 		(shape output)
-		(at 262.89 128.27 180)
+		(at 273.05 124.46 180)
 		(effects
 			(font
 				(size 1.27 1.27)
@@ -5879,7 +5859,7 @@
 	)
 	(hierarchical_label "~{GPS_RESET}"
 		(shape output)
-		(at 250.19 129.54 180)
+		(at 254 100.33 180)
 		(effects
 			(font
 				(size 1.27 1.27)
@@ -5890,7 +5870,7 @@
 	)
 	(hierarchical_label "PYRO_3"
 		(shape output)
-		(at 245.11 58.42 180)
+		(at 233.68 57.15 180)
 		(effects
 			(font
 				(size 1.27 1.27)
@@ -5901,7 +5881,7 @@
 	)
 	(hierarchical_label "SENSE_1"
 		(shape input)
-		(at 241.3 92.71 0)
+		(at 237.49 52.07 0)
 		(effects
 			(font
 				(size 1.27 1.27)
@@ -5912,7 +5892,7 @@
 	)
 	(hierarchical_label "LED_3_R"
 		(shape output)
-		(at 262.89 146.05 180)
+		(at 273.05 142.24 180)
 		(effects
 			(font
 				(size 1.27 1.27)
@@ -5923,7 +5903,7 @@
 	)
 	(hierarchical_label "LED_2_B"
 		(shape output)
-		(at 262.89 142.24 180)
+		(at 273.05 138.43 180)
 		(effects
 			(font
 				(size 1.27 1.27)
@@ -5934,7 +5914,7 @@
 	)
 	(hierarchical_label "USB_D-"
 		(shape bidirectional)
-		(at 270.51 116.84 0)
+		(at 184.15 63.5 0)
 		(effects
 			(font
 				(size 1.27 1.27)
@@ -5945,7 +5925,7 @@
 	)
 	(hierarchical_label "RF_IO3"
 		(shape bidirectional)
-		(at 232.41 144.78 180)
+		(at 240.03 106.68 180)
 		(effects
 			(font
 				(size 1.27 1.27)
@@ -5967,7 +5947,7 @@
 	)
 	(hierarchical_label "FLASH_CLK"
 		(shape output)
-		(at 198.12 114.3 0)
+		(at 184.15 83.82 0)
 		(effects
 			(font
 				(size 1.27 1.27)
@@ -5978,7 +5958,7 @@
 	)
 	(hierarchical_label "LED_1_B"
 		(shape output)
-		(at 262.89 133.35 180)
+		(at 273.05 129.54 180)
 		(effects
 			(font
 				(size 1.27 1.27)
@@ -5989,7 +5969,7 @@
 	)
 	(hierarchical_label "SD_CLK"
 		(shape output)
-		(at 270.51 138.43 0)
+		(at 186.69 149.86 0)
 		(effects
 			(font
 				(size 1.27 1.27)
@@ -6000,7 +5980,7 @@
 	)
 	(hierarchical_label "BARO_INT"
 		(shape input)
-		(at 199.39 146.05 0)
+		(at 257.81 106.68 0)
 		(effects
 			(font
 				(size 1.27 1.27)
@@ -6011,18 +5991,18 @@
 	)
 	(hierarchical_label "VCP_TX"
 		(shape output)
-		(at 266.7 86.36 180)
+		(at 185.42 93.98 0)
 		(effects
 			(font
 				(size 1.27 1.27)
 			)
-			(justify right)
+			(justify left)
 		)
 		(uuid "9ec28b85-f346-440f-9a09-11d37c5ba025")
 	)
 	(hierarchical_label "BARO_CS"
 		(shape output)
-		(at 199.39 143.51 0)
+		(at 257.81 104.14 0)
 		(effects
 			(font
 				(size 1.27 1.27)
@@ -6033,12 +6013,12 @@
 	)
 	(hierarchical_label "JTDO{slash}SWO"
 		(shape output)
-		(at 266.7 77.47 180)
+		(at 186.69 86.36 0)
 		(effects
 			(font
 				(size 1.27 1.27)
 			)
-			(justify right)
+			(justify left)
 		)
 		(uuid "a0a344a3-381b-4eb3-912b-d610505b21d3")
 	)
@@ -6055,7 +6035,7 @@
 	)
 	(hierarchical_label "PYRO_2"
 		(shape output)
-		(at 241.3 95.25 0)
+		(at 237.49 54.61 0)
 		(effects
 			(font
 				(size 1.27 1.27)
@@ -6066,7 +6046,7 @@
 	)
 	(hierarchical_label "MAG_INT"
 		(shape input)
-		(at 199.39 158.75 0)
+		(at 259.08 109.22 0)
 		(effects
 			(font
 				(size 1.27 1.27)
@@ -6077,18 +6057,18 @@
 	)
 	(hierarchical_label "JTMS/SWDIO"
 		(shape bidirectional)
-		(at 266.7 74.93 180)
+		(at 186.69 68.58 0)
 		(effects
 			(font
 				(size 1.27 1.27)
 			)
-			(justify right)
+			(justify left)
 		)
 		(uuid "ad66c5e4-8ae8-4c0e-8953-b6c4b14c792b")
 	)
 	(hierarchical_label "FLASH_IO3"
 		(shape bidirectional)
-		(at 210.82 111.76 0)
+		(at 184.15 50.8 0)
 		(effects
 			(font
 				(size 1.27 1.27)
@@ -6099,7 +6079,7 @@
 	)
 	(hierarchical_label "FLASH_IO0"
 		(shape bidirectional)
-		(at 210.82 114.3 0)
+		(at 184.15 81.28 0)
 		(effects
 			(font
 				(size 1.27 1.27)
@@ -6110,7 +6090,7 @@
 	)
 	(hierarchical_label "RF_SCK"
 		(shape output)
-		(at 232.41 127 180)
+		(at 120.65 88.9 180)
 		(effects
 			(font
 				(size 1.27 1.27)
@@ -6121,7 +6101,7 @@
 	)
 	(hierarchical_label "SENSE_3"
 		(shape input)
-		(at 241.3 97.79 0)
+		(at 237.49 57.15 0)
 		(effects
 			(font
 				(size 1.27 1.27)
@@ -6132,7 +6112,7 @@
 	)
 	(hierarchical_label "LED_2_R"
 		(shape output)
-		(at 262.89 137.16 180)
+		(at 273.05 133.35 180)
 		(effects
 			(font
 				(size 1.27 1.27)
@@ -6143,7 +6123,7 @@
 	)
 	(hierarchical_label "GPS_TX"
 		(shape output)
-		(at 250.19 133.35 180)
+		(at 120.65 132.08 180)
 		(effects
 			(font
 				(size 1.27 1.27)
@@ -6154,7 +6134,7 @@
 	)
 	(hierarchical_label "~{RF_NSS}"
 		(shape output)
-		(at 232.41 129.54 180)
+		(at 120.65 86.36 180)
 		(effects
 			(font
 				(size 1.27 1.27)
@@ -6165,18 +6145,18 @@
 	)
 	(hierarchical_label "MAG_DATA"
 		(shape bidirectional)
-		(at 199.39 153.67 0)
+		(at 120.65 116.84 180)
 		(effects
 			(font
 				(size 1.27 1.27)
 			)
-			(justify left)
+			(justify right)
 		)
 		(uuid "d2cd3310-cb7a-42e2-86ab-f98fee4cd321")
 	)
 	(hierarchical_label "IMU_CS"
 		(shape output)
-		(at 199.39 134.62 0)
+		(at 257.81 95.25 0)
 		(effects
 			(font
 				(size 1.27 1.27)
@@ -6187,18 +6167,18 @@
 	)
 	(hierarchical_label "VCP_RX"
 		(shape input)
-		(at 266.7 83.82 180)
+		(at 185.42 91.44 0)
 		(effects
 			(font
 				(size 1.27 1.27)
 			)
-			(justify right)
+			(justify left)
 		)
 		(uuid "d3cb5cb9-ec93-4934-b648-3ee832d003b9")
 	)
 	(hierarchical_label "GPS_RX"
 		(shape input)
-		(at 250.19 135.89 180)
+		(at 120.65 129.54 180)
 		(effects
 			(font
 				(size 1.27 1.27)
@@ -6209,12 +6189,12 @@
 	)
 	(hierarchical_label "~{RESET}"
 		(shape input)
-		(at 198.12 88.9 180)
+		(at 186.69 88.9 0)
 		(effects
 			(font
 				(size 1.27 1.27)
 			)
-			(justify right)
+			(justify left)
 		)
 		(uuid "dfae50d6-29db-4e08-b00d-614ca6c99464")
 	)
@@ -6231,7 +6211,7 @@
 	)
 	(hierarchical_label "FLASH_IO2"
 		(shape bidirectional)
-		(at 210.82 119.38 0)
+		(at 184.15 53.34 0)
 		(effects
 			(font
 				(size 1.27 1.27)
@@ -6242,7 +6222,7 @@
 	)
 	(hierarchical_label "IMU_INT1"
 		(shape input)
-		(at 199.39 137.16 0)
+		(at 257.81 97.79 0)
 		(effects
 			(font
 				(size 1.27 1.27)
@@ -6253,7 +6233,7 @@
 	)
 	(hierarchical_label "GPS_TP"
 		(shape input)
-		(at 250.19 127 180)
+		(at 254 97.79 180)
 		(effects
 			(font
 				(size 1.27 1.27)
@@ -6264,7 +6244,7 @@
 	)
 	(hierarchical_label "LED_3_G"
 		(shape output)
-		(at 262.89 148.59 180)
+		(at 273.05 144.78 180)
 		(effects
 			(font
 				(size 1.27 1.27)
@@ -6275,7 +6255,7 @@
 	)
 	(hierarchical_label "GPS_EXINT"
 		(shape output)
-		(at 250.19 124.46 180)
+		(at 254 95.25 180)
 		(effects
 			(font
 				(size 1.27 1.27)
@@ -6286,7 +6266,7 @@
 	)
 	(hierarchical_label "SD_DAT2"
 		(shape bidirectional)
-		(at 270.51 128.27 0)
+		(at 186.69 144.78 0)
 		(effects
 			(font
 				(size 1.27 1.27)
@@ -6297,7 +6277,7 @@
 	)
 	(hierarchical_label "SENSORS_MOSI"
 		(shape output)
-		(at 199.39 132.08 0)
+		(at 186.69 114.3 0)
 		(effects
 			(font
 				(size 1.27 1.27)
@@ -6308,7 +6288,7 @@
 	)
 	(hierarchical_label "SD_CMD"
 		(shape output)
-		(at 270.51 133.35 0)
+		(at 186.69 124.46 0)
 		(effects
 			(font
 				(size 1.27 1.27)
@@ -6319,7 +6299,7 @@
 	)
 	(hierarchical_label "RF_BUSY"
 		(shape input)
-		(at 232.41 148.59 180)
+		(at 240.03 110.49 180)
 		(effects
 			(font
 				(size 1.27 1.27)
