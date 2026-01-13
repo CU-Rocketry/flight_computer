@@ -957,9 +957,19 @@
 		)
 		(uuid "79446a05-fb79-4958-876b-6e852e9154fd")
 	)
+	(text "reset has internal pull up resistor\n"
+		(exclude_from_sim no)
+		(at 43.688 61.976 0)
+		(effects
+			(font
+				(size 1.27 1.27)
+			)
+		)
+		(uuid "be234048-cd96-463a-a362-6dd93d7b5471")
+	)
 	(text "connect safe boot to solderable pad"
 		(exclude_from_sim no)
-		(at 42.926 64.008 0)
+		(at 42.926 67.564 0)
 		(effects
 			(font
 				(size 1.27 1.27)
@@ -1079,16 +1089,6 @@
 	)
 	(wire
 		(pts
-			(xy 58.42 58.42) (xy 62.23 58.42)
-		)
-		(stroke
-			(width 0)
-			(type default)
-		)
-		(uuid "8735aeb7-0892-4b8a-9dae-9758730550a1")
-	)
-	(wire
-		(pts
 			(xy 58.42 53.34) (xy 62.23 53.34)
 		)
 		(stroke
@@ -1156,6 +1156,16 @@
 			(type default)
 		)
 		(uuid "f409b6c2-7bbe-4016-9122-fa678cbb0bd5")
+	)
+	(wire
+		(pts
+			(xy 58.42 58.42) (xy 62.23 58.42)
+		)
+		(stroke
+			(width 0)
+			(type default)
+		)
+		(uuid "f4eb63e3-0bea-4528-8321-ebe36a125ba8")
 	)
 	(wire
 		(pts

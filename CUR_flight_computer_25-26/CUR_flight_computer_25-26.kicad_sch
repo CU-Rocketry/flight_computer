@@ -43,7 +43,7 @@
 			(width 0)
 			(type default)
 		)
-		(uuid "1a59b4c9-dafa-48f6-a401-9383d2110a2b")
+		(uuid "1598b46b-513e-420c-860b-11fd357114c3")
 	)
 	(wire
 		(pts
@@ -915,16 +915,6 @@
 				(justify right)
 			)
 		)
-		(pin "FLASH_RESET" bidirectional
-			(at 162.56 95.25 0)
-			(uuid "17f616f5-1d01-48a9-ad6a-2580f9b7ca99")
-			(effects
-				(font
-					(size 1.27 1.27)
-				)
-				(justify right)
-			)
-		)
 		(pin "IMU_INT2" input
 			(at 81.28 124.46 180)
 			(uuid "93acb641-e775-4d40-a0e7-5a1d08ee8c50")
@@ -1475,6 +1465,66 @@
 				(justify right)
 			)
 		)
+		(pin "LCD_SCL" output
+			(at 88.9 139.7 270)
+			(uuid "64e07bbf-0943-42db-917d-68e73a4c653b")
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(justify left)
+			)
+		)
+		(pin "LCD_SDA" bidirectional
+			(at 91.44 139.7 270)
+			(uuid "07891a0d-c53e-4d91-ac73-4b8d92f10efb")
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(justify left)
+			)
+		)
+		(pin "BTN_1" output
+			(at 95.25 139.7 270)
+			(uuid "1b62950e-8a50-477c-a782-22e900e8455f")
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(justify left)
+			)
+		)
+		(pin "BTN_2" output
+			(at 97.79 139.7 270)
+			(uuid "33b9a09b-3ca8-47ed-add7-74c72e6f6f39")
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(justify left)
+			)
+		)
+		(pin "FLASH_IO3" bidirectional
+			(at 162.56 95.25 0)
+			(uuid "e7799f1e-c0f9-4401-9cbd-b8f95f2da8de")
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(justify right)
+			)
+		)
+		(pin "BTN_3" output
+			(at 100.33 139.7 270)
+			(uuid "8a070f1d-f11a-4505-aaf9-edf2380e62dc")
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(justify left)
+			)
+		)
 		(instances
 			(project "CUR_flight_computer_25-26"
 				(path "/bf7761cc-1b32-4d86-809c-5f027005229b"
@@ -1617,6 +1667,56 @@
 				(justify right)
 			)
 		)
+		(pin "BTN_2" output
+			(at 97.79 151.13 90)
+			(uuid "7406593b-72e7-49e3-8b87-037b7113816d")
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(justify right)
+			)
+		)
+		(pin "BTN_3" output
+			(at 100.33 151.13 90)
+			(uuid "ce757fcf-9691-42db-92ed-c6c503727dcc")
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(justify right)
+			)
+		)
+		(pin "BTN_1" output
+			(at 95.25 151.13 90)
+			(uuid "1ffb64aa-71c6-48f8-b6ce-99f71e1e7b07")
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(justify right)
+			)
+		)
+		(pin "LCD_SDA" bidirectional
+			(at 91.44 151.13 90)
+			(uuid "09da7001-6a77-4ec8-a10e-721deb915391")
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(justify right)
+			)
+		)
+		(pin "LCD_SCL" input
+			(at 88.9 151.13 90)
+			(uuid "2d319120-40bb-468b-b1da-696ca2b452d0")
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(justify right)
+			)
+		)
 		(instances
 			(project "CUR_flight_computer_25-26"
 				(path "/bf7761cc-1b32-4d86-809c-5f027005229b"
@@ -1626,8 +1726,8 @@
 		)
 	)
 	(sheet
-		(at 180.34 80.645)
-		(size 31.75 34.925)
+		(at 180.34 80.01)
+		(size 31.75 35.56)
 		(exclude_from_sim no)
 		(in_bom yes)
 		(on_board yes)
@@ -1642,7 +1742,7 @@
 		)
 		(uuid "6e71e7a3-1bcd-4797-b2e4-88d14bf1f853")
 		(property "Sheetname" "Memory"
-			(at 180.34 79.9334 0)
+			(at 180.34 79.2984 0)
 			(effects
 				(font
 					(size 1.27 1.27)
@@ -1657,16 +1757,6 @@
 					(size 1.27 1.27)
 				)
 				(justify left top)
-			)
-		)
-		(pin "FLASH RESET" bidirectional
-			(at 180.34 95.25 180)
-			(uuid "5b95d3be-42ae-4bec-99b0-a0dde22bc3cb")
-			(effects
-				(font
-					(size 1.27 1.27)
-				)
-				(justify left)
 			)
 		)
 		(pin "FLASH_CLK" input
@@ -1772,6 +1862,16 @@
 		(pin "SD_CLK" input
 			(at 180.34 111.76 180)
 			(uuid "aef47924-e2ac-46f6-96e5-7ef8a684205d")
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(justify left)
+			)
+		)
+		(pin "FLASH_IO3" bidirectional
+			(at 180.34 95.25 180)
+			(uuid "492db14e-3136-44fa-ba21-818ef576c69f")
 			(effects
 				(font
 					(size 1.27 1.27)
