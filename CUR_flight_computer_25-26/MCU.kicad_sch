@@ -5864,17 +5864,6 @@
 		)
 		(uuid "8ba67aa0-3ec5-46ec-842d-3d5d99b51284")
 	)
-	(hierarchical_label "RF_IO3"
-		(shape bidirectional)
-		(at 240.03 106.68 180)
-		(effects
-			(font
-				(size 1.27 1.27)
-			)
-			(justify right)
-		)
-		(uuid "8c5ed5ee-dd72-48ea-95d5-4d6b3e268f00")
-	)
 	(hierarchical_label "BATT_SENSE"
 		(shape input)
 		(at 186.69 127 0)

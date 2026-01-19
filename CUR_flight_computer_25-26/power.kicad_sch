@@ -1894,7 +1894,7 @@
 	)
 	(text "Indicator LEDs"
 		(exclude_from_sim no)
-		(at 87.63 121.412 0)
+		(at 78.486 116.586 0)
 		(effects
 			(font
 				(size 1.27 1.27)
@@ -2096,6 +2096,16 @@
 	)
 	(wire
 		(pts
+			(xy 90.17 128.27) (xy 90.17 124.46)
+		)
+		(stroke
+			(width 0)
+			(type default)
+		)
+		(uuid "26dcccda-30a7-4fae-9d18-a8c1f97933bd")
+	)
+	(wire
+		(pts
 			(xy 212.09 40.64) (xy 220.98 40.64)
 		)
 		(stroke
@@ -2176,13 +2186,23 @@
 	)
 	(wire
 		(pts
-			(xy 90.17 135.89) (xy 90.17 130.81)
+			(xy 90.17 135.89) (xy 90.17 133.35)
 		)
 		(stroke
 			(width 0)
 			(type default)
 		)
 		(uuid "50b512f1-4d9c-48f5-bea6-93de85dc8fab")
+	)
+	(wire
+		(pts
+			(xy 102.87 128.27) (xy 102.87 123.19)
+		)
+		(stroke
+			(width 0)
+			(type default)
+		)
+		(uuid "51728f61-3492-439a-a259-f1f01dd6cc9c")
 	)
 	(wire
 		(pts
@@ -2636,7 +2656,7 @@
 	)
 	(wire
 		(pts
-			(xy 102.87 135.89) (xy 102.87 130.81)
+			(xy 102.87 135.89) (xy 102.87 133.35)
 		)
 		(stroke
 			(width 0)
@@ -2940,7 +2960,7 @@
 	)
 	(global_label "BATT_PYRO"
 		(shape input)
-		(at 102.87 130.81 90)
+		(at 102.87 123.19 90)
 		(fields_autoplaced yes)
 		(effects
 			(font
@@ -2950,7 +2970,7 @@
 		)
 		(uuid "c10418ad-23e1-48af-b898-6c1460aad32f")
 		(property "Intersheetrefs" "${INTERSHEET_REFS}"
-			(at 102.87 117.6043 90)
+			(at 102.87 109.9843 90)
 			(effects
 				(font
 					(size 1.27 1.27)
@@ -5310,7 +5330,7 @@
 	)
 	(symbol
 		(lib_id "power:+3V3")
-		(at 90.17 130.81 0)
+		(at 90.17 124.46 0)
 		(unit 1)
 		(exclude_from_sim no)
 		(in_bom yes)
@@ -5319,7 +5339,7 @@
 		(fields_autoplaced yes)
 		(uuid "d0b7ecc8-d4f8-4581-944b-2760b1f946c0")
 		(property "Reference" "#PWR057"
-			(at 90.17 134.62 0)
+			(at 90.17 128.27 0)
 			(effects
 				(font
 					(size 1.27 1.27)
@@ -5328,7 +5348,7 @@
 			)
 		)
 		(property "Value" "+3V3"
-			(at 90.17 125.73 0)
+			(at 90.17 119.38 0)
 			(effects
 				(font
 					(size 1.27 1.27)
@@ -5336,7 +5356,7 @@
 			)
 		)
 		(property "Footprint" ""
-			(at 90.17 130.81 0)
+			(at 90.17 124.46 0)
 			(effects
 				(font
 					(size 1.27 1.27)
@@ -5345,7 +5365,7 @@
 			)
 		)
 		(property "Datasheet" ""
-			(at 90.17 130.81 0)
+			(at 90.17 124.46 0)
 			(effects
 				(font
 					(size 1.27 1.27)
@@ -5354,7 +5374,7 @@
 			)
 		)
 		(property "Description" "Power symbol creates a global label with name \"+3V3\""
-			(at 90.17 130.81 0)
+			(at 90.17 124.46 0)
 			(effects
 				(font
 					(size 1.27 1.27)
@@ -5507,6 +5527,77 @@
 		)
 	)
 	(symbol
+		(lib_id "Device:R_Small_US")
+		(at 102.87 130.81 0)
+		(mirror x)
+		(unit 1)
+		(exclude_from_sim no)
+		(in_bom yes)
+		(on_board yes)
+		(dnp no)
+		(fields_autoplaced yes)
+		(uuid "e27c2448-dad9-4129-9404-dee413f1b910")
+		(property "Reference" "R43"
+			(at 100.33 129.5399 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(justify right)
+			)
+		)
+		(property "Value" "150"
+			(at 100.33 132.0799 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(justify right)
+			)
+		)
+		(property "Footprint" ""
+			(at 102.87 130.81 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
+			)
+		)
+		(property "Datasheet" "~"
+			(at 102.87 130.81 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
+			)
+		)
+		(property "Description" "Resistor, small US symbol"
+			(at 102.87 130.81 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
+			)
+		)
+		(pin "1"
+			(uuid "e4b97d27-9fd5-4683-843b-30d150b40fcd")
+		)
+		(pin "2"
+			(uuid "3cc42e60-317a-41b8-a554-c4c6336ee9d8")
+		)
+		(instances
+			(project "CUR_flight_computer_25-26"
+				(path "/bf7761cc-1b32-4d86-809c-5f027005229b/1df302fb-2dab-4194-ae63-c7585125533e"
+					(reference "R43")
+					(unit 1)
+				)
+			)
+		)
+	)
+	(symbol
 		(lib_id "power:+3V3")
 		(at 80.01 59.69 0)
 		(unit 1)
@@ -5567,6 +5658,77 @@
 			(project ""
 				(path "/bf7761cc-1b32-4d86-809c-5f027005229b/1df302fb-2dab-4194-ae63-c7585125533e"
 					(reference "#PWR014")
+					(unit 1)
+				)
+			)
+		)
+	)
+	(symbol
+		(lib_id "Device:R_Small_US")
+		(at 90.17 130.81 0)
+		(mirror x)
+		(unit 1)
+		(exclude_from_sim no)
+		(in_bom yes)
+		(on_board yes)
+		(dnp no)
+		(fields_autoplaced yes)
+		(uuid "e643f982-05a1-4f8e-a97d-c23dc4884f85")
+		(property "Reference" "R7"
+			(at 87.63 129.5399 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(justify right)
+			)
+		)
+		(property "Value" "150"
+			(at 87.63 132.0799 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(justify right)
+			)
+		)
+		(property "Footprint" ""
+			(at 90.17 130.81 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
+			)
+		)
+		(property "Datasheet" "~"
+			(at 90.17 130.81 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
+			)
+		)
+		(property "Description" "Resistor, small US symbol"
+			(at 90.17 130.81 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
+			)
+		)
+		(pin "1"
+			(uuid "4af3a024-102a-4e23-958d-95348edd2ce4")
+		)
+		(pin "2"
+			(uuid "8b8d0caa-30a4-453d-b55c-d23cb54ca668")
+		)
+		(instances
+			(project "CUR_flight_computer_25-26"
+				(path "/bf7761cc-1b32-4d86-809c-5f027005229b/1df302fb-2dab-4194-ae63-c7585125533e"
+					(reference "R7")
 					(unit 1)
 				)
 			)
