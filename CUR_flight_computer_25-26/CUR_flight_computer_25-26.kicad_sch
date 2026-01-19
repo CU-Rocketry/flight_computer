@@ -571,16 +571,6 @@
 				(justify right)
 			)
 		)
-		(pin "RF_IO3" bidirectional
-			(at 60.96 72.39 0)
-			(uuid "6b9c4e2a-1219-40f1-b263-c524ddf591e0")
-			(effects
-				(font
-					(size 1.27 1.27)
-				)
-				(justify right)
-			)
-		)
 		(pin "RF_IO2" bidirectional
 			(at 60.96 69.85 0)
 			(uuid "d25583b6-8e96-4ce8-9ab3-d8af8f984919")
@@ -1088,16 +1078,6 @@
 		(pin "RF_BUSY" input
 			(at 81.28 64.77 180)
 			(uuid "fa538381-8b76-4952-b490-c61da6af6d86")
-			(effects
-				(font
-					(size 1.27 1.27)
-				)
-				(justify left)
-			)
-		)
-		(pin "RF_IO3" bidirectional
-			(at 81.28 72.39 180)
-			(uuid "1bb7bf9b-b831-4c6e-83fb-f997cbc9565a")
 			(effects
 				(font
 					(size 1.27 1.27)
