@@ -4009,16 +4009,6 @@
 		)
 		(uuid "35d92280-37fe-4c0c-82cd-7e60560971de")
 	)
-	(text "do not need"
-		(exclude_from_sim no)
-		(at 229.616 153.924 0)
-		(effects
-			(font
-				(size 1.27 1.27)
-			)
-		)
-		(uuid "767e5b5c-be66-4c04-b6bb-0f91f75d4a7c")
-	)
 	(text "Pins that need to be hooked up\n"
 		(exclude_from_sim no)
 		(at 247.65 23.114 0)
@@ -4197,12 +4187,6 @@
 		(diameter 0)
 		(color 0 0 0 0)
 		(uuid "65823404-e114-48ca-a534-3b724f7b457c")
-	)
-	(junction
-		(at 104.14 156.21)
-		(diameter 0)
-		(color 0 0 0 0)
-		(uuid "7212d52b-1e4c-499a-9dde-0e989f1f3b1b")
 	)
 	(junction
 		(at 67.31 57.15)
@@ -4395,16 +4379,6 @@
 			(type default)
 		)
 		(uuid "1cfe6702-e285-4345-b394-4a6665f85aa0")
-	)
-	(wire
-		(pts
-			(xy 96.52 156.21) (xy 104.14 156.21)
-		)
-		(stroke
-			(width 0)
-			(type default)
-		)
-		(uuid "1eefcff7-d260-4020-ac95-c7e210e5c5e6")
 	)
 	(wire
 		(pts
@@ -4918,16 +4892,6 @@
 	)
 	(wire
 		(pts
-			(xy 104.14 156.21) (xy 104.14 158.75)
-		)
-		(stroke
-			(width 0)
-			(type default)
-		)
-		(uuid "959b2093-0e5e-41b1-a409-aa98858bfecb")
-	)
-	(wire
-		(pts
 			(xy 74.93 119.38) (xy 81.28 119.38)
 		)
 		(stroke
@@ -5085,16 +5049,6 @@
 			(type default)
 		)
 		(uuid "aae46704-cca8-4610-8cf2-ba7af1a132bd")
-	)
-	(wire
-		(pts
-			(xy 104.14 156.21) (xy 110.49 156.21)
-		)
-		(stroke
-			(width 0)
-			(type default)
-		)
-		(uuid "ac15b232-59d3-4893-8257-5f72f2da7cbb")
 	)
 	(wire
 		(pts
@@ -7242,7 +7196,7 @@
 	)
 	(symbol
 		(lib_id "power:GND")
-		(at 104.14 158.75 0)
+		(at 96.52 156.21 0)
 		(unit 1)
 		(exclude_from_sim no)
 		(in_bom yes)
@@ -7251,7 +7205,7 @@
 		(fields_autoplaced yes)
 		(uuid "4ddfa5e5-ba9b-4961-b4e2-94e8e97ff8e7")
 		(property "Reference" "#PWR079"
-			(at 104.14 165.1 0)
+			(at 96.52 162.56 0)
 			(effects
 				(font
 					(size 1.27 1.27)
@@ -7260,7 +7214,7 @@
 			)
 		)
 		(property "Value" "GND"
-			(at 104.14 163.83 0)
+			(at 96.52 161.29 0)
 			(effects
 				(font
 					(size 1.27 1.27)
@@ -7268,7 +7222,7 @@
 			)
 		)
 		(property "Footprint" ""
-			(at 104.14 158.75 0)
+			(at 96.52 156.21 0)
 			(effects
 				(font
 					(size 1.27 1.27)
@@ -7277,7 +7231,7 @@
 			)
 		)
 		(property "Datasheet" ""
-			(at 104.14 158.75 0)
+			(at 96.52 156.21 0)
 			(effects
 				(font
 					(size 1.27 1.27)
@@ -7286,7 +7240,7 @@
 			)
 		)
 		(property "Description" "Power symbol creates a global label with name \"GND\" , ground"
-			(at 104.14 158.75 0)
+			(at 96.52 156.21 0)
 			(effects
 				(font
 					(size 1.27 1.27)
@@ -7439,6 +7393,72 @@
 			(project ""
 				(path "/bf7761cc-1b32-4d86-809c-5f027005229b/3b725c3b-9650-41e6-95bf-9087cc38f098"
 					(reference "FB1")
+					(unit 1)
+				)
+			)
+		)
+	)
+	(symbol
+		(lib_id "power:GND")
+		(at 110.49 156.21 0)
+		(unit 1)
+		(exclude_from_sim no)
+		(in_bom yes)
+		(on_board yes)
+		(dnp no)
+		(fields_autoplaced yes)
+		(uuid "58e98020-d00a-4dfa-a9bb-a6ae8775727d")
+		(property "Reference" "#PWR094"
+			(at 110.49 162.56 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
+			)
+		)
+		(property "Value" "GND"
+			(at 110.49 161.29 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+			)
+		)
+		(property "Footprint" ""
+			(at 110.49 156.21 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
+			)
+		)
+		(property "Datasheet" ""
+			(at 110.49 156.21 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
+			)
+		)
+		(property "Description" "Power symbol creates a global label with name \"GND\" , ground"
+			(at 110.49 156.21 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
+			)
+		)
+		(pin "1"
+			(uuid "7ed79d68-5eba-4ede-93ab-6aaadc17dfdc")
+		)
+		(instances
+			(project "CUR_flight_computer_25-26"
+				(path "/bf7761cc-1b32-4d86-809c-5f027005229b/3b725c3b-9650-41e6-95bf-9087cc38f098"
+					(reference "#PWR094")
 					(unit 1)
 				)
 			)
