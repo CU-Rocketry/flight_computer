@@ -2679,7 +2679,7 @@
 				(justify right)
 			)
 		)
-		(property "Footprint" ""
+		(property "Footprint" "Buzzer_SameSky:Buzzer_SameSky_CEM-1203_42"
 			(at 109.22 132.08 0)
 			(effects
 				(font
