@@ -2062,6 +2062,16 @@
 		)
 		(uuid "7490d53e-fdde-49e5-8137-7b583a89826c")
 	)
+	(text "PE1206FKM470R005Z\n- expensive ass resistor"
+		(exclude_from_sim no)
+		(at 171.45 49.53 0)
+		(effects
+			(font
+				(size 1.27 1.27)
+			)
+		)
+		(uuid "8a642e65-e1ba-4342-a893-fa00f947352d")
+	)
 	(text "check LDO and main rail power\n\ncheck if pyro battery connected\n"
 		(exclude_from_sim no)
 		(at 125.222 131.572 0)
@@ -2081,6 +2091,16 @@
 			)
 		)
 		(uuid "8eb2c8c0-ca8d-4195-a8ed-a53ab858eb19")
+	)
+	(text "PA2010FKE7W0R001Z\n- another expensive resistor\n"
+		(exclude_from_sim no)
+		(at 168.148 97.536 0)
+		(effects
+			(font
+				(size 1.27 1.27)
+			)
+		)
+		(uuid "de752682-3b58-42f5-bfb1-576e400f6dc9")
 	)
 	(text "Linear Regulator 3.3V"
 		(exclude_from_sim no)
@@ -3562,7 +3582,7 @@
 				(justify right)
 			)
 		)
-		(property "Footprint" ""
+		(property "Footprint" "Resistor_SMD:R_0603_1608Metric"
 			(at 133.35 40.64 0)
 			(effects
 				(font
@@ -3893,7 +3913,7 @@
 				)
 			)
 		)
-		(property "Footprint" ""
+		(property "Footprint" "TerminalBlock_Phoenix:TerminalBlock_Phoenix_PT-1,5-2-5.0-H_1x02_P5.00mm_Horizontal"
 			(at 40.64 135.89 0)
 			(effects
 				(font
@@ -4094,7 +4114,7 @@
 				(justify right)
 			)
 		)
-		(property "Footprint" ""
+		(property "Footprint" "Resistor_SMD:R_2010_5025Metric"
 			(at 185.42 90.17 0)
 			(effects
 				(font
@@ -4295,7 +4315,7 @@
 				(justify right)
 			)
 		)
-		(property "Footprint" ""
+		(property "Footprint" "LED_SMD:LED_0603_1608Metric"
 			(at 90.17 139.7 0)
 			(effects
 				(font
@@ -4440,7 +4460,7 @@
 				(justify left)
 			)
 		)
-		(property "Footprint" ""
+		(property "Footprint" "Capacitor_SMD:C_0603_1608Metric"
 			(at 72.39 64.77 0)
 			(effects
 				(font
@@ -4508,7 +4528,7 @@
 				)
 			)
 		)
-		(property "Footprint" ""
+		(property "Footprint" "TerminalBlock_Phoenix:TerminalBlock_Phoenix_PT-1,5-2-5.0-H_1x02_P5.00mm_Horizontal"
 			(at 40.64 166.37 0)
 			(effects
 				(font
@@ -4852,7 +4872,7 @@
 				(justify right)
 			)
 		)
-		(property "Footprint" ""
+		(property "Footprint" "Diode_SMD:D_0201_0603Metric"
 			(at 54.61 173.99 0)
 			(effects
 				(font
@@ -4922,7 +4942,7 @@
 				(justify right)
 			)
 		)
-		(property "Footprint" ""
+		(property "Footprint" "Diode_SMD:D_0201_0603Metric"
 			(at 49.53 173.99 0)
 			(effects
 				(font
@@ -5058,7 +5078,7 @@
 				(justify right)
 			)
 		)
-		(property "Footprint" ""
+		(property "Footprint" "LED_SMD:LED_0603_1608Metric"
 			(at 102.87 139.7 0)
 			(effects
 				(font
@@ -5414,7 +5434,7 @@
 				(justify right)
 			)
 		)
-		(property "Footprint" ""
+		(property "Footprint" "Diode_SMD:D_0201_0603Metric"
 			(at 54.61 143.51 0)
 			(effects
 				(font
@@ -5551,7 +5571,7 @@
 				(justify right)
 			)
 		)
-		(property "Footprint" ""
+		(property "Footprint" "Resistor_SMD:R_0603_1608Metric"
 			(at 104.14 50.8 0)
 			(effects
 				(font
@@ -5708,7 +5728,7 @@
 				(justify right)
 			)
 		)
-		(property "Footprint" ""
+		(property "Footprint" "Resistor_SMD:R_0603_1608Metric"
 			(at 104.14 40.64 0)
 			(effects
 				(font
@@ -5779,7 +5799,7 @@
 				(justify right)
 			)
 		)
-		(property "Footprint" ""
+		(property "Footprint" "Resistor_SMD:R_0603_1608Metric"
 			(at 83.82 99.06 0)
 			(effects
 				(font
@@ -5916,7 +5936,7 @@
 				(justify right)
 			)
 		)
-		(property "Footprint" ""
+		(property "Footprint" "Resistor_SMD:R_0603_1608Metric"
 			(at 43.18 105.41 0)
 			(effects
 				(font
@@ -5986,7 +6006,7 @@
 				(justify right)
 			)
 		)
-		(property "Footprint" ""
+		(property "Footprint" "Diode_SMD:D_0201_0603Metric"
 			(at 49.53 143.51 0)
 			(effects
 				(font
@@ -6055,7 +6075,7 @@
 				(justify right)
 			)
 		)
-		(property "Footprint" ""
+		(property "Footprint" "Resistor_SMD:R_1206_3216Metric"
 			(at 185.42 41.91 0)
 			(effects
 				(font
@@ -6126,7 +6146,7 @@
 				(justify right)
 			)
 		)
-		(property "Footprint" ""
+		(property "Footprint" "Resistor_SMD:R_0603_1608Metric"
 			(at 133.35 50.8 0)
 			(effects
 				(font
@@ -6196,7 +6216,7 @@
 				(justify right)
 			)
 		)
-		(property "Footprint" ""
+		(property "Footprint" "Diode_SMD:D_0201_0603Metric"
 			(at 80.01 40.64 0)
 			(effects
 				(font
@@ -6529,7 +6549,7 @@
 				(justify right)
 			)
 		)
-		(property "Footprint" ""
+		(property "Footprint" "Diode_SMD:D_0201_0603Metric"
 			(at 46.99 40.64 0)
 			(effects
 				(font
@@ -6731,7 +6751,7 @@
 				(justify right)
 			)
 		)
-		(property "Footprint" ""
+		(property "Footprint" "Resistor_SMD:R_0603_1608Metric"
 			(at 102.87 130.81 0)
 			(effects
 				(font
@@ -6868,7 +6888,7 @@
 				(justify right)
 			)
 		)
-		(property "Footprint" ""
+		(property "Footprint" "Resistor_SMD:R_0603_1608Metric"
 			(at 90.17 130.81 0)
 			(effects
 				(font
@@ -7150,7 +7170,7 @@
 				(justify left)
 			)
 		)
-		(property "Footprint" ""
+		(property "Footprint" "Capacitor_SMD:C_0603_1608Metric"
 			(at 34.29 64.77 0)
 			(effects
 				(font
