@@ -1841,16 +1841,6 @@
 	)
 	(wire
 		(pts
-			(xy 69.85 128.27) (xy 69.85 130.81)
-		)
-		(stroke
-			(width 0)
-			(type default)
-		)
-		(uuid "0609c9ef-6805-4ee5-ab11-cfadc6775d90")
-	)
-	(wire
-		(pts
 			(xy 149.86 127) (xy 149.86 129.54)
 		)
 		(stroke
@@ -1981,16 +1971,6 @@
 	)
 	(wire
 		(pts
-			(xy 59.69 114.3) (xy 59.69 110.49)
-		)
-		(stroke
-			(width 0)
-			(type default)
-		)
-		(uuid "386871f8-11a7-4e5c-b679-87b0d357cc21")
-	)
-	(wire
-		(pts
 			(xy 139.7 123.19) (xy 139.7 129.54)
 		)
 		(stroke
@@ -2068,26 +2048,6 @@
 			(type default)
 		)
 		(uuid "7064197c-c484-4987-b1e1-4e927ac330ea")
-	)
-	(wire
-		(pts
-			(xy 49.53 128.27) (xy 54.61 128.27)
-		)
-		(stroke
-			(width 0)
-			(type default)
-		)
-		(uuid "71e682ac-d89c-4897-a3de-db60e33582e4")
-	)
-	(wire
-		(pts
-			(xy 49.53 135.89) (xy 49.53 138.43)
-		)
-		(stroke
-			(width 0)
-			(type default)
-		)
-		(uuid "724e645a-e882-469c-bd09-1c525d38137f")
 	)
 	(wire
 		(pts
@@ -2181,26 +2141,6 @@
 	)
 	(wire
 		(pts
-			(xy 59.69 124.46) (xy 59.69 130.81)
-		)
-		(stroke
-			(width 0)
-			(type default)
-		)
-		(uuid "8a66c8a9-24ea-4e1c-8b89-f1253c41b3c4")
-	)
-	(wire
-		(pts
-			(xy 69.85 135.89) (xy 69.85 138.43)
-		)
-		(stroke
-			(width 0)
-			(type default)
-		)
-		(uuid "8cdddcc9-1206-45f6-a415-671da41d21fc")
-	)
-	(wire
-		(pts
 			(xy 93.98 127) (xy 93.98 123.19)
 		)
 		(stroke
@@ -2228,16 +2168,6 @@
 			(type default)
 		)
 		(uuid "91e7470d-201d-4119-b9b3-e40802c2f8b3")
-	)
-	(wire
-		(pts
-			(xy 49.53 130.81) (xy 49.53 128.27)
-		)
-		(stroke
-			(width 0)
-			(type default)
-		)
-		(uuid "928e7fc0-94d6-47ac-b3bd-a29751e84d27")
 	)
 	(wire
 		(pts
@@ -2291,16 +2221,6 @@
 	)
 	(wire
 		(pts
-			(xy 64.77 128.27) (xy 69.85 128.27)
-		)
-		(stroke
-			(width 0)
-			(type default)
-		)
-		(uuid "bdd67363-d733-4daa-8be6-1f7b29600385")
-	)
-	(wire
-		(pts
 			(xy 144.78 127) (xy 144.78 123.19)
 		)
 		(stroke
@@ -2351,26 +2271,6 @@
 	)
 	(wire
 		(pts
-			(xy 59.69 135.89) (xy 59.69 138.43)
-		)
-		(stroke
-			(width 0)
-			(type default)
-		)
-		(uuid "d71b9c66-5cfb-40b2-8be8-6cefa498077f")
-	)
-	(wire
-		(pts
-			(xy 64.77 128.27) (xy 64.77 124.46)
-		)
-		(stroke
-			(width 0)
-			(type default)
-		)
-		(uuid "dbba0fd5-20b2-408a-8bf1-2e2be3e364fd")
-	)
-	(wire
-		(pts
 			(xy 134.62 38.1) (xy 134.62 45.72)
 		)
 		(stroke
@@ -2388,16 +2288,6 @@
 			(type default)
 		)
 		(uuid "dc7b6b5f-cf97-496e-89ad-220bc33efc26")
-	)
-	(wire
-		(pts
-			(xy 54.61 128.27) (xy 54.61 124.46)
-		)
-		(stroke
-			(width 0)
-			(type default)
-		)
-		(uuid "e536a243-28e9-4554-b64f-b47f914b9f3d")
 	)
 	(wire
 		(pts
@@ -2450,17 +2340,6 @@
 			(justify right)
 		)
 		(uuid "2af3bac3-edbd-4d27-9336-1aeaf3a5c3e4")
-	)
-	(hierarchical_label "LED_3_G"
-		(shape input)
-		(at 59.69 138.43 270)
-		(effects
-			(font
-				(size 1.27 1.27)
-			)
-			(justify right)
-		)
-		(uuid "2d278e51-423a-462a-a4f1-48810d0322ef")
 	)
 	(hierarchical_label "BTN_3"
 		(shape output)
@@ -2516,28 +2395,6 @@
 			(justify right)
 		)
 		(uuid "6e2e02f9-2b35-4735-8de2-f55b5355f779")
-	)
-	(hierarchical_label "LED_3_B"
-		(shape input)
-		(at 69.85 138.43 270)
-		(effects
-			(font
-				(size 1.27 1.27)
-			)
-			(justify right)
-		)
-		(uuid "7b9e65cf-18d2-459a-aad3-9fa9ee652cbd")
-	)
-	(hierarchical_label "LED_3_R"
-		(shape input)
-		(at 49.53 138.43 270)
-		(effects
-			(font
-				(size 1.27 1.27)
-			)
-			(justify right)
-		)
-		(uuid "9ce33ee7-e600-484f-9a7b-dca9cda57c2a")
 	)
 	(hierarchical_label "LED_2_B"
 		(shape input)
@@ -3982,72 +3839,6 @@
 		)
 	)
 	(symbol
-		(lib_id "power:+3V3")
-		(at 59.69 110.49 0)
-		(unit 1)
-		(exclude_from_sim no)
-		(in_bom yes)
-		(on_board yes)
-		(dnp no)
-		(fields_autoplaced yes)
-		(uuid "92c751b4-4985-4397-98de-f96864ec64c9")
-		(property "Reference" "#PWR056"
-			(at 59.69 114.3 0)
-			(effects
-				(font
-					(size 1.27 1.27)
-				)
-				(hide yes)
-			)
-		)
-		(property "Value" "+3V3"
-			(at 59.69 106.045 0)
-			(effects
-				(font
-					(size 1.27 1.27)
-				)
-			)
-		)
-		(property "Footprint" ""
-			(at 59.69 110.49 0)
-			(effects
-				(font
-					(size 1.27 1.27)
-				)
-				(hide yes)
-			)
-		)
-		(property "Datasheet" ""
-			(at 59.69 110.49 0)
-			(effects
-				(font
-					(size 1.27 1.27)
-				)
-				(hide yes)
-			)
-		)
-		(property "Description" "Power symbol creates a global label with name \"+3V3\""
-			(at 59.69 110.49 0)
-			(effects
-				(font
-					(size 1.27 1.27)
-				)
-				(hide yes)
-			)
-		)
-		(pin "1"
-			(uuid "8d7f766d-ae8a-427a-8c1c-fb7bf9e15aaa")
-		)
-		(instances
-			(project "CUR_flight_computer_25-26"
-				(path "/bf7761cc-1b32-4d86-809c-5f027005229b/5946e354-b9a7-4a8a-8580-991442920c21"
-					(reference "#PWR056")
-					(unit 1)
-				)
-			)
-		)
-	)
-	(symbol
 		(lib_id "Device:R_Small_US")
 		(at 109.22 132.08 0)
 		(unit 1)
@@ -4111,152 +3902,6 @@
 			(project "CUR_flight_computer_25-26"
 				(path "/bf7761cc-1b32-4d86-809c-5f027005229b/5946e354-b9a7-4a8a-8580-991442920c21"
 					(reference "R27")
-					(unit 1)
-				)
-			)
-		)
-	)
-	(symbol
-		(lib_id "LED:CLV1L-FKB")
-		(at 59.69 119.38 90)
-		(unit 1)
-		(exclude_from_sim no)
-		(in_bom yes)
-		(on_board yes)
-		(dnp no)
-		(fields_autoplaced yes)
-		(uuid "94fa3d05-85c0-462e-b19f-d57bdd5c4536")
-		(property "Reference" "LED_3"
-			(at 69.215 118.1099 90)
-			(effects
-				(font
-					(size 1.27 1.27)
-				)
-				(justify right)
-			)
-		)
-		(property "Value" "CLV1L-FKB"
-			(at 69.215 120.6499 90)
-			(effects
-				(font
-					(size 1.27 1.27)
-				)
-				(justify right)
-			)
-		)
-		(property "Footprint" "LED_SMD:LED_Cree-PLCC4_3.2x2.8mm_CCW"
-			(at 60.96 119.38 0)
-			(effects
-				(font
-					(size 1.27 1.27)
-				)
-				(hide yes)
-			)
-		)
-		(property "Datasheet" "http://www.cree.com/led-components/media/documents/CLV1L-FKB-1238.pdf"
-			(at 60.96 119.38 0)
-			(effects
-				(font
-					(size 1.27 1.27)
-				)
-				(hide yes)
-			)
-		)
-		(property "Description" "Cree PLCC4 3 in 1 SMD LED"
-			(at 59.69 119.38 0)
-			(effects
-				(font
-					(size 1.27 1.27)
-				)
-				(hide yes)
-			)
-		)
-		(pin "2"
-			(uuid "602aabdf-a710-462a-9256-ce8101e2a068")
-		)
-		(pin "3"
-			(uuid "cadfa2b6-6fc5-4bfb-a417-e74be3c92e30")
-		)
-		(pin "4"
-			(uuid "a0f3f99b-3baf-47b8-afc9-92e3d35a070b")
-		)
-		(pin "1"
-			(uuid "262a7b26-7fba-459e-b2fe-9dec7ac60aa3")
-		)
-		(instances
-			(project "CUR_flight_computer_25-26"
-				(path "/bf7761cc-1b32-4d86-809c-5f027005229b/5946e354-b9a7-4a8a-8580-991442920c21"
-					(reference "LED_3")
-					(unit 1)
-				)
-			)
-		)
-	)
-	(symbol
-		(lib_id "Device:R_Small_US")
-		(at 69.85 133.35 0)
-		(mirror y)
-		(unit 1)
-		(exclude_from_sim no)
-		(in_bom yes)
-		(on_board yes)
-		(dnp no)
-		(uuid "a2cf8d59-3615-4d0c-b6e9-c2a7331a470e")
-		(property "Reference" "R26"
-			(at 64.516 130.556 90)
-			(effects
-				(font
-					(size 1.27 1.27)
-				)
-				(justify right)
-			)
-		)
-		(property "Value" "22"
-			(at 67.056 130.556 90)
-			(effects
-				(font
-					(size 1.27 1.27)
-				)
-				(justify right)
-			)
-		)
-		(property "Footprint" ""
-			(at 69.85 133.35 0)
-			(effects
-				(font
-					(size 1.27 1.27)
-				)
-				(hide yes)
-			)
-		)
-		(property "Datasheet" "~"
-			(at 69.85 133.35 0)
-			(effects
-				(font
-					(size 1.27 1.27)
-				)
-				(hide yes)
-			)
-		)
-		(property "Description" "Resistor, small US symbol"
-			(at 69.85 133.35 0)
-			(effects
-				(font
-					(size 1.27 1.27)
-				)
-				(hide yes)
-			)
-		)
-		(pin "1"
-			(uuid "1cdf162c-9053-4e61-aa42-e8feeb292a16")
-		)
-		(pin "2"
-			(uuid "bc51777e-bb0f-44f4-8257-3d82a5c23bb3")
-		)
-		(instances
-			(project "CUR_flight_computer_25-26"
-				(path "/bf7761cc-1b32-4d86-809c-5f027005229b/5946e354-b9a7-4a8a-8580-991442920c21"
-					(reference "R26")
 					(unit 1)
 				)
 			)
@@ -4415,144 +4060,6 @@
 			(project "CUR_flight_computer_25-26"
 				(path "/bf7761cc-1b32-4d86-809c-5f027005229b/5946e354-b9a7-4a8a-8580-991442920c21"
 					(reference "SW5")
-					(unit 1)
-				)
-			)
-		)
-	)
-	(symbol
-		(lib_id "Device:R_Small_US")
-		(at 49.53 133.35 0)
-		(unit 1)
-		(exclude_from_sim no)
-		(in_bom yes)
-		(on_board yes)
-		(dnp no)
-		(uuid "ac08c93d-593a-4b42-adbb-17b6212df729")
-		(property "Reference" "R24"
-			(at 44.196 130.81 90)
-			(effects
-				(font
-					(size 1.27 1.27)
-				)
-				(justify right)
-			)
-		)
-		(property "Value" "150"
-			(at 46.736 130.81 90)
-			(effects
-				(font
-					(size 1.27 1.27)
-				)
-				(justify right)
-			)
-		)
-		(property "Footprint" ""
-			(at 49.53 133.35 0)
-			(effects
-				(font
-					(size 1.27 1.27)
-				)
-				(hide yes)
-			)
-		)
-		(property "Datasheet" "~"
-			(at 49.53 133.35 0)
-			(effects
-				(font
-					(size 1.27 1.27)
-				)
-				(hide yes)
-			)
-		)
-		(property "Description" "Resistor, small US symbol"
-			(at 49.53 133.35 0)
-			(effects
-				(font
-					(size 1.27 1.27)
-				)
-				(hide yes)
-			)
-		)
-		(pin "1"
-			(uuid "0109efeb-d6da-4ce1-bc30-5d55e871afee")
-		)
-		(pin "2"
-			(uuid "39434d4e-c884-4c61-b6d7-9b22015ebc3f")
-		)
-		(instances
-			(project "CUR_flight_computer_25-26"
-				(path "/bf7761cc-1b32-4d86-809c-5f027005229b/5946e354-b9a7-4a8a-8580-991442920c21"
-					(reference "R24")
-					(unit 1)
-				)
-			)
-		)
-	)
-	(symbol
-		(lib_id "Device:R_Small_US")
-		(at 59.69 133.35 0)
-		(unit 1)
-		(exclude_from_sim no)
-		(in_bom yes)
-		(on_board yes)
-		(dnp no)
-		(uuid "ac387402-37c7-4101-a5dd-dfc0a7ec7657")
-		(property "Reference" "R25"
-			(at 54.102 130.556 90)
-			(effects
-				(font
-					(size 1.27 1.27)
-				)
-				(justify right)
-			)
-		)
-		(property "Value" "22"
-			(at 56.642 130.556 90)
-			(effects
-				(font
-					(size 1.27 1.27)
-				)
-				(justify right)
-			)
-		)
-		(property "Footprint" ""
-			(at 59.69 133.35 0)
-			(effects
-				(font
-					(size 1.27 1.27)
-				)
-				(hide yes)
-			)
-		)
-		(property "Datasheet" "~"
-			(at 59.69 133.35 0)
-			(effects
-				(font
-					(size 1.27 1.27)
-				)
-				(hide yes)
-			)
-		)
-		(property "Description" "Resistor, small US symbol"
-			(at 59.69 133.35 0)
-			(effects
-				(font
-					(size 1.27 1.27)
-				)
-				(hide yes)
-			)
-		)
-		(pin "1"
-			(uuid "fde76b4f-8454-4346-b127-e9c5db3845e1")
-		)
-		(pin "2"
-			(uuid "d2896465-2ce2-479d-b98c-af6188677da8")
-		)
-		(instances
-			(project "CUR_flight_computer_25-26"
-				(path "/bf7761cc-1b32-4d86-809c-5f027005229b/5946e354-b9a7-4a8a-8580-991442920c21"
-					(reference "R25")
 					(unit 1)
 				)
 			)
