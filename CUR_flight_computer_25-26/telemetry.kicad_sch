@@ -1521,6 +1521,12 @@
 		(uuid "1ca6c0ab-1972-4cce-9fed-550d1df9f797")
 	)
 	(junction
+		(at 27.94 71.12)
+		(diameter 0)
+		(color 0 0 0 0)
+		(uuid "42b95d31-1619-4875-b954-c7612152bdea")
+	)
+	(junction
 		(at 40.64 27.94)
 		(diameter 0)
 		(color 0 0 0 0)
@@ -1574,16 +1580,6 @@
 	)
 	(wire
 		(pts
-			(xy 30.48 71.12) (xy 34.29 71.12)
-		)
-		(stroke
-			(width 0)
-			(type default)
-		)
-		(uuid "1823ebbf-f876-4e9e-8d80-5e98e7b94835")
-	)
-	(wire
-		(pts
 			(xy 49.53 78.74) (xy 49.53 82.55)
 		)
 		(stroke
@@ -1604,6 +1600,36 @@
 	)
 	(wire
 		(pts
+			(xy 27.94 71.12) (xy 34.29 71.12)
+		)
+		(stroke
+			(width 0)
+			(type default)
+		)
+		(uuid "37c538c3-cac5-4bfa-87e0-b91969f35ec9")
+	)
+	(wire
+		(pts
+			(xy 22.86 71.12) (xy 27.94 71.12)
+		)
+		(stroke
+			(width 0)
+			(type default)
+		)
+		(uuid "4e060ece-444b-46ec-b55f-c46bfece5246")
+	)
+	(wire
+		(pts
+			(xy 27.94 73.66) (xy 27.94 71.12)
+		)
+		(stroke
+			(width 0)
+			(type default)
+		)
+		(uuid "5b426e94-e2b8-42c0-a442-958bb6d0a00c")
+	)
+	(wire
+		(pts
 			(xy 68.58 68.58) (xy 64.77 68.58)
 		)
 		(stroke
@@ -1614,6 +1640,16 @@
 	)
 	(wire
 		(pts
+			(xy 27.94 78.74) (xy 27.94 81.28)
+		)
+		(stroke
+			(width 0)
+			(type default)
+		)
+		(uuid "605b20cb-96bd-4d21-bc04-7a5c62a51482")
+	)
+	(wire
+		(pts
 			(xy 30.48 50.8) (xy 34.29 50.8)
 		)
 		(stroke
@@ -1621,6 +1657,16 @@
 			(type default)
 		)
 		(uuid "628d1a21-a202-4104-8ad0-cd99b8177ebb")
+	)
+	(wire
+		(pts
+			(xy 21.59 81.28) (xy 27.94 81.28)
+		)
+		(stroke
+			(width 0)
+			(type default)
+		)
+		(uuid "6308b63f-f116-4940-97ab-2b55ab1b4c8a")
 	)
 	(wire
 		(pts
@@ -1783,6 +1829,17 @@
 		)
 		(uuid "185e5397-3bf1-4b2d-8402-de6457288eca")
 	)
+	(hierarchical_label "RF_IO2"
+		(shape bidirectional)
+		(at 21.59 81.28 180)
+		(effects
+			(font
+				(size 1.27 1.27)
+			)
+			(justify right)
+		)
+		(uuid "24184092-8ddf-4d78-84a2-71a576885c8f")
+	)
 	(hierarchical_label "RF_BUSY"
 		(shape output)
 		(at 30.48 45.72 180)
@@ -1851,7 +1908,7 @@
 	)
 	(hierarchical_label "RF_TXEN"
 		(shape input)
-		(at 30.48 71.12 180)
+		(at 22.86 71.12 180)
 		(effects
 			(font
 				(size 1.27 1.27)
@@ -2209,6 +2266,75 @@
 			(project "CUR_flight_computer_25-26"
 				(path "/bf7761cc-1b32-4d86-809c-5f027005229b/16b7f3d3-745f-44d9-93a4-41f5bfd830cb"
 					(reference "#PWR096")
+					(unit 1)
+				)
+			)
+		)
+	)
+	(symbol
+		(lib_id "Device:R_Small_US")
+		(at 27.94 76.2 0)
+		(unit 1)
+		(exclude_from_sim no)
+		(in_bom yes)
+		(on_board yes)
+		(dnp no)
+		(uuid "89095fb6-0f69-4141-9ca3-0522f834076b")
+		(property "Reference" "R24"
+			(at 30.4529 74.9299 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(justify left)
+			)
+		)
+		(property "Value" "0"
+			(at 30.4529 78.7399 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(justify left)
+			)
+		)
+		(property "Footprint" ""
+			(at 27.94 76.2 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
+			)
+		)
+		(property "Datasheet" "~"
+			(at 27.94 76.2 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
+			)
+		)
+		(property "Description" "Resistor, small US symbol"
+			(at 27.94 76.2 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
+			)
+		)
+		(pin "1"
+			(uuid "266962db-84c2-4d59-a106-52d9a10154dd")
+		)
+		(pin "2"
+			(uuid "188cf239-f600-42e2-a783-34d05682c4cc")
+		)
+		(instances
+			(project "CUR_flight_computer_25-26"
+				(path "/bf7761cc-1b32-4d86-809c-5f027005229b/16b7f3d3-745f-44d9-93a4-41f5bfd830cb"
+					(reference "R24")
 					(unit 1)
 				)
 			)
