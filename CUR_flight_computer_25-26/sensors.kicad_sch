@@ -1582,6 +1582,16 @@
 			(embedded_fonts no)
 		)
 	)
+	(text "reccomends \"aluminum\" capacitor here"
+		(exclude_from_sim no)
+		(at 103.632 119.634 0)
+		(effects
+			(font
+				(size 1.27 1.27)
+			)
+		)
+		(uuid "90575d12-8004-4424-8c07-637c2abf0075")
+	)
 	(junction
 		(at 72.39 113.03)
 		(diameter 0)
