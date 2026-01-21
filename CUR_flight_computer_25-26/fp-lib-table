@@ -10,6 +10,6 @@
   (lib (name "MSD-4-A")(type "KiCad")(uri "${KIPRJMOD}/kicad-library/footprints/MSD-4-A.pretty")(options "")(descr ""))
   (lib (name "PTS815_SJM_250_SMTR_LFS")(type "KiCad")(uri "${KIPRJMOD}/kicad-library/footprints/PTS815_SJM_250_SMTR_LFS.pretty")(options "")(descr ""))
   (lib (name "SAMESKY_UJ20-C-H-G-SMT-P16-TR")(type "KiCad")(uri "${KIPRJMOD}/kicad-library/footprints/SAMESKY_UJ20-C-H-G-SMT-P16-TR.pretty")(options "")(descr ""))
-  (lib (name "Connector_Coxaial_RFSOLUTIONS_CON-SMA-EDGE-S")(type "KiCad")(uri "/Users/haileymeagher/Desktop/GitHub/kicad-library/footprints/Connector_Coxaial_RFSOLUTIONS_CON-SMA-EDGE-S.pretty")(options "")(descr ""))
+  (lib (name "Connector_Coxaial_RFSOLUTIONS_CON-SMA-EDGE-S")(type "KiCad")(uri "${KIPRJMOD}/kicad-library/footprints/Conn_Coaxial_RFSOLUTIONS_CON-SMA-EDGE-S")(options "")(descr ""))
   (lib (name "SW_SameSky")(type "KiCad")(uri "${KIPRJMOD}/kicad-library/footprints/SW_SameSky.pretty")(options "")(descr ""))
 )

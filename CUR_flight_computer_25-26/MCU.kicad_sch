@@ -8375,7 +8375,7 @@
 				)
 			)
 		)
-		(property "Footprint" ""
+		(property "Footprint" "SW_SameSky:SW_Samesky_SW_SLW-121456-3A-N-D"
 			(at 62.23 119.38 0)
 			(effects
 				(font
