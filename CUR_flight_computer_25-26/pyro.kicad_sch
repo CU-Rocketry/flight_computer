@@ -2059,87 +2059,6 @@
 		(uuid "f32d0076-d6f9-45fb-88d1-8217da2829e7")
 	)
 	(symbol
-		(lib_id "BUK9K25-40RAX:BUK9K25-40RAX")
-		(at 74.93 140.97 0)
-		(unit 2)
-		(exclude_from_sim no)
-		(in_bom yes)
-		(on_board yes)
-		(dnp no)
-		(uuid "0dfa6716-9e5b-4c07-9bcf-4f8cd79d6189")
-		(property "Reference" "U12"
-			(at 78.994 147.32 90)
-			(effects
-				(font
-					(size 1.27 1.27)
-				)
-				(justify left)
-			)
-		)
-		(property "Value" "BUK9K25-40RAX"
-			(at 81.534 147.32 90)
-			(effects
-				(font
-					(size 1.27 1.27)
-				)
-				(justify left)
-			)
-		)
-		(property "Footprint" "BUK9K25-40RAX:BUK9K2540RAX"
-			(at 74.93 140.97 0)
-			(effects
-				(font
-					(size 1.27 1.27)
-				)
-				(hide yes)
-			)
-		)
-		(property "Datasheet" "https://assets.nexperia.com/documents/data-sheet/BUK9K25-40RA.pdf"
-			(at 74.93 140.97 0)
-			(effects
-				(font
-					(size 1.27 1.27)
-				)
-				(hide yes)
-			)
-		)
-		(property "Description" "Nexperia USA Mosfet Array 40V 18.2A 2 N Channel NMOS"
-			(at 74.93 140.97 0)
-			(effects
-				(font
-					(size 1.27 1.27)
-				)
-				(hide yes)
-			)
-		)
-		(pin "4"
-			(uuid "8765b795-45fd-4ef1-837d-7b2483adc304")
-		)
-		(pin "6"
-			(uuid "42d38af0-ac6e-4863-86b4-b9dffefd69ad")
-		)
-		(pin "1"
-			(uuid "d0ceec7f-9507-48e8-a6bc-0e8076dd44c7")
-		)
-		(pin "5"
-			(uuid "0d111f66-5a63-475f-8864-1ae8dbac6324")
-		)
-		(pin "3"
-			(uuid "bf234082-3e1e-436e-b387-d59fc76ffcd3")
-		)
-		(pin "2"
-			(uuid "66d37e6f-9b20-41fc-a3be-032d277d14f3")
-		)
-		(instances
-			(project ""
-				(path "/bf7761cc-1b32-4d86-809c-5f027005229b/a6095a4d-1542-4c9d-ab0b-9ed076818c96"
-					(reference "U12")
-					(unit 2)
-				)
-			)
-		)
-	)
-	(symbol
 		(lib_id "power:GND")
 		(at 87.63 80.01 0)
 		(unit 1)
@@ -4411,15 +4330,15 @@
 	)
 	(symbol
 		(lib_id "BUK9K25-40RAX:BUK9K25-40RAX")
-		(at 151.13 71.12 0)
+		(at 74.93 140.97 0)
 		(unit 1)
 		(exclude_from_sim no)
 		(in_bom yes)
 		(on_board yes)
 		(dnp no)
-		(uuid "f12e06ad-a102-409f-82a6-4e6891c7639e")
+		(uuid "f03f911b-54de-4230-81a8-2849f405cd59")
 		(property "Reference" "U13"
-			(at 155.956 78.232 90)
+			(at 79.756 148.082 90)
 			(effects
 				(font
 					(size 1.27 1.27)
@@ -4428,7 +4347,88 @@
 			)
 		)
 		(property "Value" "BUK9K25-40RAX"
-			(at 158.496 78.232 90)
+			(at 82.296 148.082 90)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(justify left)
+			)
+		)
+		(property "Footprint" "BUK9K25-40RAX:BUK9K2540RAX"
+			(at 74.93 140.97 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
+			)
+		)
+		(property "Datasheet" "https://assets.nexperia.com/documents/data-sheet/BUK9K25-40RA.pdf"
+			(at 74.93 140.97 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
+			)
+		)
+		(property "Description" "Nexperia USA Mosfet Array 40V 18.2A 2 N Channel NMOS"
+			(at 74.93 140.97 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
+			)
+		)
+		(pin "4"
+			(uuid "8765b795-45fd-4ef1-837d-7b2483adc306")
+		)
+		(pin "6"
+			(uuid "42d38af0-ac6e-4863-86b4-b9dffefd69af")
+		)
+		(pin "1"
+			(uuid "e994927c-da9e-4473-8daa-da424c99c7e7")
+		)
+		(pin "5"
+			(uuid "b0fe4207-074d-4383-827a-f4e0e50fec0a")
+		)
+		(pin "3"
+			(uuid "bf234082-3e1e-436e-b387-d59fc76ffcd5")
+		)
+		(pin "2"
+			(uuid "1d5bd55d-7f5e-44a1-8b24-762ee3e2a46e")
+		)
+		(instances
+			(project "CUR_flight_computer_25-26"
+				(path "/bf7761cc-1b32-4d86-809c-5f027005229b/a6095a4d-1542-4c9d-ab0b-9ed076818c96"
+					(reference "U13")
+					(unit 1)
+				)
+			)
+		)
+	)
+	(symbol
+		(lib_id "BUK9K25-40RAX:BUK9K25-40RAX")
+		(at 151.13 71.12 0)
+		(unit 2)
+		(exclude_from_sim no)
+		(in_bom yes)
+		(on_board yes)
+		(dnp no)
+		(uuid "f0b09370-e816-43b3-8e17-b58ac796256b")
+		(property "Reference" "U12"
+			(at 155.194 77.47 90)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(justify left)
+			)
+		)
+		(property "Value" "BUK9K25-40RAX"
+			(at 157.734 77.47 90)
 			(effects
 				(font
 					(size 1.27 1.27)
@@ -4464,28 +4464,28 @@
 			)
 		)
 		(pin "4"
-			(uuid "8765b795-45fd-4ef1-837d-7b2483adc306")
+			(uuid "0a7011fd-8680-4c3a-b302-b988499860a4")
 		)
 		(pin "6"
-			(uuid "42d38af0-ac6e-4863-86b4-b9dffefd69af")
+			(uuid "d69b4412-94d6-497f-8a55-5a8493c0092e")
 		)
 		(pin "1"
-			(uuid "3b105496-9565-4f27-ab3a-41a11d058de4")
+			(uuid "d0ceec7f-9507-48e8-a6bc-0e8076dd44c7")
 		)
 		(pin "5"
-			(uuid "965efc2b-568d-4376-a4d0-f23ebadf05c9")
+			(uuid "0d111f66-5a63-475f-8864-1ae8dbac6324")
 		)
 		(pin "3"
-			(uuid "bf234082-3e1e-436e-b387-d59fc76ffcd5")
+			(uuid "9311240a-559d-4420-818c-64cc978eeaa8")
 		)
 		(pin "2"
-			(uuid "f17eae6f-8aa1-4358-91b1-2890b62ce171")
+			(uuid "66d37e6f-9b20-41fc-a3be-032d277d14f3")
 		)
 		(instances
 			(project "CUR_flight_computer_25-26"
 				(path "/bf7761cc-1b32-4d86-809c-5f027005229b/a6095a4d-1542-4c9d-ab0b-9ed076818c96"
-					(reference "U13")
-					(unit 1)
+					(reference "U12")
+					(unit 2)
 				)
 			)
 		)
