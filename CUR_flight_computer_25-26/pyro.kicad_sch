@@ -989,6 +989,12 @@
 		(uuid "627c4493-b136-4500-89e9-2c91aa40dea8")
 	)
 	(junction
+		(at 144.78 44.45)
+		(diameter 0)
+		(color 0 0 0 0)
+		(uuid "6764ee1e-af3f-431d-b6dc-6707c2e98e91")
+	)
+	(junction
 		(at 69.85 135.89)
 		(diameter 0)
 		(color 0 0 0 0)
@@ -999,6 +1005,12 @@
 		(diameter 0)
 		(color 0 0 0 0)
 		(uuid "82c1bb43-9ba9-473e-a962-a57e42480ab9")
+	)
+	(junction
+		(at 68.58 43.18)
+		(diameter 0)
+		(color 0 0 0 0)
+		(uuid "8aebc6de-9937-47d8-ab42-52068da4e313")
 	)
 	(junction
 		(at 74.93 81.28)
@@ -1025,6 +1037,12 @@
 		(uuid "c48e764e-2594-4c84-b3cd-a4a2b503f70b")
 	)
 	(junction
+		(at 69.85 110.49)
+		(diameter 0)
+		(color 0 0 0 0)
+		(uuid "d8baa461-c592-47ea-b386-028cd9d04cec")
+	)
+	(junction
 		(at 87.63 68.58)
 		(diameter 0)
 		(color 0 0 0 0)
@@ -1035,6 +1053,12 @@
 		(diameter 0)
 		(color 0 0 0 0)
 		(uuid "de0aa594-01cc-4af5-989b-6e0211f4247c")
+	)
+	(junction
+		(at 146.05 110.49)
+		(diameter 0)
+		(color 0 0 0 0)
+		(uuid "eb26f3a5-2998-409c-9755-2302de0e7236")
 	)
 	(junction
 		(at 74.93 152.4)
@@ -1064,7 +1088,7 @@
 	)
 	(wire
 		(pts
-			(xy 139.7 53.34) (xy 139.7 66.04)
+			(xy 139.7 46.99) (xy 139.7 66.04)
 		)
 		(stroke
 			(width 0)
@@ -1114,16 +1138,6 @@
 	)
 	(wire
 		(pts
-			(xy 140.97 119.38) (xy 147.32 119.38)
-		)
-		(stroke
-			(width 0)
-			(type default)
-		)
-		(uuid "0b966d90-a7e0-47f3-afc9-0b3f57841cc7")
-	)
-	(wire
-		(pts
 			(xy 146.05 59.69) (xy 163.83 59.69)
 		)
 		(stroke
@@ -1131,6 +1145,16 @@
 			(type default)
 		)
 		(uuid "11abb7dc-78e6-4072-b183-9cf6d9b115e8")
+	)
+	(wire
+		(pts
+			(xy 146.05 110.49) (xy 153.67 110.49)
+		)
+		(stroke
+			(width 0)
+			(type default)
+		)
+		(uuid "1a5522fd-e5d3-42fe-9ba5-ee1f5a60e032")
 	)
 	(wire
 		(pts
@@ -1184,7 +1208,7 @@
 	)
 	(wire
 		(pts
-			(xy 137.16 50.8) (xy 130.81 50.8)
+			(xy 130.81 44.45) (xy 144.78 44.45)
 		)
 		(stroke
 			(width 0)
@@ -1221,6 +1245,16 @@
 			(type default)
 		)
 		(uuid "2794681a-4996-4664-802b-aa5346cf42e9")
+	)
+	(wire
+		(pts
+			(xy 144.78 50.8) (xy 144.78 53.34)
+		)
+		(stroke
+			(width 0)
+			(type default)
+		)
+		(uuid "29d17b59-35b8-4c76-9138-119484a06725")
 	)
 	(wire
 		(pts
@@ -1274,7 +1308,7 @@
 	)
 	(wire
 		(pts
-			(xy 130.81 119.38) (xy 135.89 119.38)
+			(xy 132.08 110.49) (xy 146.05 110.49)
 		)
 		(stroke
 			(width 0)
@@ -1344,6 +1378,16 @@
 	)
 	(wire
 		(pts
+			(xy 146.05 116.84) (xy 146.05 119.38)
+		)
+		(stroke
+			(width 0)
+			(type default)
+		)
+		(uuid "48679fe9-841f-4325-a659-48b78a0c4a6f")
+	)
+	(wire
+		(pts
 			(xy 60.96 81.28) (xy 63.5 81.28)
 		)
 		(stroke
@@ -1354,13 +1398,33 @@
 	)
 	(wire
 		(pts
-			(xy 139.7 134.62) (xy 146.05 134.62)
+			(xy 69.85 116.84) (xy 69.85 119.38)
+		)
+		(stroke
+			(width 0)
+			(type default)
+		)
+		(uuid "4a924cda-8fc8-43a2-8203-25ee163ea205")
+	)
+	(wire
+		(pts
+			(xy 140.97 134.62) (xy 146.05 134.62)
 		)
 		(stroke
 			(width 0)
 			(type default)
 		)
 		(uuid "4b281c9c-20db-4ca1-a1f1-bec9909280e5")
+	)
+	(wire
+		(pts
+			(xy 144.78 44.45) (xy 144.78 45.72)
+		)
+		(stroke
+			(width 0)
+			(type default)
+		)
+		(uuid "4c269413-8ac8-45c6-8f4b-a197d13e14eb")
 	)
 	(wire
 		(pts
@@ -1411,16 +1475,6 @@
 			(type default)
 		)
 		(uuid "5ccf01b9-2fef-4d2b-97af-0627ee258bd7")
-	)
-	(wire
-		(pts
-			(xy 68.58 120.65) (xy 76.2 120.65)
-		)
-		(stroke
-			(width 0)
-			(type default)
-		)
-		(uuid "616783a0-9d8e-41d5-b862-a4f93078a08e")
 	)
 	(wire
 		(pts
@@ -1494,7 +1548,17 @@
 	)
 	(wire
 		(pts
-			(xy 63.5 135.89) (xy 69.85 135.89)
+			(xy 69.85 110.49) (xy 69.85 111.76)
+		)
+		(stroke
+			(width 0)
+			(type default)
+		)
+		(uuid "75293fad-1a91-4340-b62b-5b36f76d540c")
+	)
+	(wire
+		(pts
+			(xy 62.23 135.89) (xy 69.85 135.89)
 		)
 		(stroke
 			(width 0)
@@ -1524,13 +1588,23 @@
 	)
 	(wire
 		(pts
-			(xy 130.81 121.92) (xy 139.7 121.92)
+			(xy 132.08 113.03) (xy 140.97 113.03)
 		)
 		(stroke
 			(width 0)
 			(type default)
 		)
 		(uuid "7a43b745-a0ca-428e-a61e-82ac67072d90")
+	)
+	(wire
+		(pts
+			(xy 62.23 113.03) (xy 57.15 113.03)
+		)
+		(stroke
+			(width 0)
+			(type default)
+		)
+		(uuid "7de176cc-ed42-4bc9-ae1d-db0d6b58a4a0")
 	)
 	(wire
 		(pts
@@ -1554,17 +1628,7 @@
 	)
 	(wire
 		(pts
-			(xy 66.04 49.53) (xy 72.39 49.53)
-		)
-		(stroke
-			(width 0)
-			(type default)
-		)
-		(uuid "83821177-ac12-4e74-b002-82b4d5a138e2")
-	)
-	(wire
-		(pts
-			(xy 139.7 121.92) (xy 139.7 134.62)
+			(xy 140.97 113.03) (xy 140.97 134.62)
 		)
 		(stroke
 			(width 0)
@@ -1584,7 +1648,7 @@
 	)
 	(wire
 		(pts
-			(xy 63.5 123.19) (xy 63.5 135.89)
+			(xy 62.23 113.03) (xy 62.23 135.89)
 		)
 		(stroke
 			(width 0)
@@ -1601,6 +1665,16 @@
 			(type default)
 		)
 		(uuid "92771b93-7733-4f31-8528-6369c535e29c")
+	)
+	(wire
+		(pts
+			(xy 68.58 43.18) (xy 80.01 43.18)
+		)
+		(stroke
+			(width 0)
+			(type default)
+		)
+		(uuid "93f19ed2-2451-48aa-a17a-8f393ddd64ee")
 	)
 	(wire
 		(pts
@@ -1624,6 +1698,16 @@
 	)
 	(wire
 		(pts
+			(xy 69.85 110.49) (xy 76.2 110.49)
+		)
+		(stroke
+			(width 0)
+			(type default)
+		)
+		(uuid "9fbdee96-6266-46ab-bf4b-0ca4bc3b3a4b")
+	)
+	(wire
+		(pts
 			(xy 68.58 152.4) (xy 74.93 152.4)
 		)
 		(stroke
@@ -1644,6 +1728,16 @@
 	)
 	(wire
 		(pts
+			(xy 68.58 52.07) (xy 68.58 49.53)
+		)
+		(stroke
+			(width 0)
+			(type default)
+		)
+		(uuid "a876cc5d-cb24-42bc-bbed-07404a3f2ce6")
+	)
+	(wire
+		(pts
 			(xy 137.16 151.13) (xy 139.7 151.13)
 		)
 		(stroke
@@ -1654,6 +1748,16 @@
 	)
 	(wire
 		(pts
+			(xy 68.58 44.45) (xy 68.58 43.18)
+		)
+		(stroke
+			(width 0)
+			(type default)
+		)
+		(uuid "abc16ca0-628f-4282-b0a5-e030399e7da5")
+	)
+	(wire
+		(pts
 			(xy 44.45 140.97) (xy 48.26 140.97)
 		)
 		(stroke
@@ -1661,16 +1765,6 @@
 			(type default)
 		)
 		(uuid "b14b8b0d-3d95-410c-9f78-ad0e48ce38b2")
-	)
-	(wire
-		(pts
-			(xy 54.61 123.19) (xy 63.5 123.19)
-		)
-		(stroke
-			(width 0)
-			(type default)
-		)
-		(uuid "b983edb6-18eb-47d9-aa33-dd8a3e1549f9")
 	)
 	(wire
 		(pts
@@ -1714,7 +1808,7 @@
 	)
 	(wire
 		(pts
-			(xy 63.5 52.07) (xy 63.5 64.77)
+			(xy 63.5 45.72) (xy 63.5 64.77)
 		)
 		(stroke
 			(width 0)
@@ -1774,7 +1868,7 @@
 	)
 	(wire
 		(pts
-			(xy 54.61 120.65) (xy 63.5 120.65)
+			(xy 57.15 110.49) (xy 69.85 110.49)
 		)
 		(stroke
 			(width 0)
@@ -1804,7 +1898,7 @@
 	)
 	(wire
 		(pts
-			(xy 130.81 53.34) (xy 139.7 53.34)
+			(xy 130.81 46.99) (xy 139.7 46.99)
 		)
 		(stroke
 			(width 0)
@@ -1834,7 +1928,7 @@
 	)
 	(wire
 		(pts
-			(xy 54.61 52.07) (xy 63.5 52.07)
+			(xy 54.61 45.72) (xy 63.5 45.72)
 		)
 		(stroke
 			(width 0)
@@ -1844,23 +1938,13 @@
 	)
 	(wire
 		(pts
-			(xy 54.61 49.53) (xy 60.96 49.53)
+			(xy 54.61 43.18) (xy 68.58 43.18)
 		)
 		(stroke
 			(width 0)
 			(type default)
 		)
 		(uuid "f96a883f-4658-4e5a-941e-ebe241608a69")
-	)
-	(wire
-		(pts
-			(xy 142.24 50.8) (xy 149.86 50.8)
-		)
-		(stroke
-			(width 0)
-			(type default)
-		)
-		(uuid "fbe42da7-98b2-494a-b619-1d2efa69f16f")
 	)
 	(wire
 		(pts
@@ -1882,9 +1966,29 @@
 		)
 		(uuid "fce84a03-71c5-4095-89e6-80249b2d7659")
 	)
+	(wire
+		(pts
+			(xy 144.78 44.45) (xy 149.86 44.45)
+		)
+		(stroke
+			(width 0)
+			(type default)
+		)
+		(uuid "fd8d08cc-bb69-4455-8e8a-e149db8dfcb8")
+	)
+	(wire
+		(pts
+			(xy 146.05 110.49) (xy 146.05 111.76)
+		)
+		(stroke
+			(width 0)
+			(type default)
+		)
+		(uuid "fe32d233-73ad-48d1-8fdb-44dcdd03596d")
+	)
 	(global_label "BATT_PYRO"
 		(shape input)
-		(at 149.86 50.8 0)
+		(at 149.86 44.45 0)
 		(fields_autoplaced yes)
 		(effects
 			(font
@@ -1894,7 +1998,7 @@
 		)
 		(uuid "1107cf2d-a5e3-4bd7-8aeb-6966b87b0ee7")
 		(property "Intersheetrefs" "${INTERSHEET_REFS}"
-			(at 163.0657 50.8 0)
+			(at 163.0657 44.45 0)
 			(effects
 				(font
 					(size 1.27 1.27)
@@ -1906,7 +2010,7 @@
 	)
 	(global_label "BATT_PYRO"
 		(shape input)
-		(at 147.32 119.38 0)
+		(at 153.67 110.49 0)
 		(fields_autoplaced yes)
 		(effects
 			(font
@@ -1916,7 +2020,7 @@
 		)
 		(uuid "82f51fdc-8a46-4b54-b67e-8283a0b0d425")
 		(property "Intersheetrefs" "${INTERSHEET_REFS}"
-			(at 160.5257 119.38 0)
+			(at 166.8757 110.49 0)
 			(effects
 				(font
 					(size 1.27 1.27)
@@ -1928,7 +2032,7 @@
 	)
 	(global_label "BATT_PYRO"
 		(shape input)
-		(at 72.39 49.53 0)
+		(at 80.01 43.18 0)
 		(fields_autoplaced yes)
 		(effects
 			(font
@@ -1938,7 +2042,7 @@
 		)
 		(uuid "ed72b379-ac23-45cd-be41-a36639216b94")
 		(property "Intersheetrefs" "${INTERSHEET_REFS}"
-			(at 85.5957 49.53 0)
+			(at 93.2157 43.18 0)
 			(effects
 				(font
 					(size 1.27 1.27)
@@ -1950,7 +2054,7 @@
 	)
 	(global_label "BATT_PYRO"
 		(shape input)
-		(at 76.2 120.65 0)
+		(at 76.2 110.49 0)
 		(fields_autoplaced yes)
 		(effects
 			(font
@@ -1960,7 +2064,7 @@
 		)
 		(uuid "eeab9f2e-9e38-4c09-b847-863c12a45feb")
 		(property "Intersheetrefs" "${INTERSHEET_REFS}"
-			(at 89.4057 120.65 0)
+			(at 89.4057 110.49 0)
 			(effects
 				(font
 					(size 1.27 1.27)
@@ -2125,6 +2229,76 @@
 		)
 	)
 	(symbol
+		(lib_id "Device:D_TVS_Small")
+		(at 146.05 114.3 90)
+		(unit 1)
+		(exclude_from_sim no)
+		(in_bom yes)
+		(on_board yes)
+		(dnp no)
+		(fields_autoplaced yes)
+		(uuid "1bb63708-c319-4f93-8857-eca892cc1083")
+		(property "Reference" "D15"
+			(at 148.59 113.0299 90)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(justify right)
+			)
+		)
+		(property "Value" "ESDZV5HS-1BF4"
+			(at 148.59 115.5699 90)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(justify right)
+			)
+		)
+		(property "Footprint" "Diode_SMD:D_0201_0603Metric"
+			(at 146.05 114.3 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
+			)
+		)
+		(property "Datasheet" "~"
+			(at 146.05 114.3 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
+			)
+		)
+		(property "Description" "Bidirectional transient-voltage-suppression diode, small symbol"
+			(at 146.05 114.3 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
+			)
+		)
+		(pin "1"
+			(uuid "13bf112d-f1b3-4c88-bd4e-45a980d480db")
+		)
+		(pin "2"
+			(uuid "3f0659f2-92d0-44a6-9376-5cff104c9495")
+		)
+		(instances
+			(project "CUR_flight_computer_25-26"
+				(path "/bf7761cc-1b32-4d86-809c-5f027005229b/a6095a4d-1542-4c9d-ab0b-9ed076818c96"
+					(reference "D15")
+					(unit 1)
+				)
+			)
+		)
+	)
+	(symbol
 		(lib_id "Device:R_Small_US")
 		(at 66.04 81.28 90)
 		(unit 1)
@@ -2194,7 +2368,7 @@
 	)
 	(symbol
 		(lib_id "Connector:Screw_Terminal_01x02")
-		(at 49.53 123.19 180)
+		(at 52.07 113.03 180)
 		(unit 1)
 		(exclude_from_sim no)
 		(in_bom yes)
@@ -2203,7 +2377,7 @@
 		(fields_autoplaced yes)
 		(uuid "2c36b8e2-3207-4be9-807c-5deedd6b50e2")
 		(property "Reference" "J9"
-			(at 49.53 114.3 0)
+			(at 52.07 104.14 0)
 			(effects
 				(font
 					(size 1.27 1.27)
@@ -2211,7 +2385,7 @@
 			)
 		)
 		(property "Value" "PYRO"
-			(at 49.53 116.84 0)
+			(at 52.07 106.68 0)
 			(effects
 				(font
 					(size 1.27 1.27)
@@ -2219,7 +2393,7 @@
 			)
 		)
 		(property "Footprint" "TerminalBlock_Phoenix:TerminalBlock_Phoenix_PT-1,5-2-5.0-H_1x02_P5.00mm_Horizontal"
-			(at 49.53 123.19 0)
+			(at 52.07 113.03 0)
 			(effects
 				(font
 					(size 1.27 1.27)
@@ -2228,7 +2402,7 @@
 			)
 		)
 		(property "Datasheet" "~"
-			(at 49.53 123.19 0)
+			(at 52.07 113.03 0)
 			(effects
 				(font
 					(size 1.27 1.27)
@@ -2237,7 +2411,7 @@
 			)
 		)
 		(property "Description" "Generic screw terminal, single row, 01x02, script generated (kicad-library-utils/schlib/autogen/connector/)"
-			(at 49.53 123.19 0)
+			(at 52.07 113.03 0)
 			(effects
 				(font
 					(size 1.27 1.27)
@@ -2255,6 +2429,72 @@
 			(project "CUR_flight_computer_25-26"
 				(path "/bf7761cc-1b32-4d86-809c-5f027005229b/a6095a4d-1542-4c9d-ab0b-9ed076818c96"
 					(reference "J9")
+					(unit 1)
+				)
+			)
+		)
+	)
+	(symbol
+		(lib_id "power:GND")
+		(at 144.78 53.34 0)
+		(unit 1)
+		(exclude_from_sim no)
+		(in_bom yes)
+		(on_board yes)
+		(dnp no)
+		(fields_autoplaced yes)
+		(uuid "301d98a3-e49c-4a7a-8357-796427a47b21")
+		(property "Reference" "#PWR0115"
+			(at 144.78 59.69 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
+			)
+		)
+		(property "Value" "GND"
+			(at 144.78 58.42 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+			)
+		)
+		(property "Footprint" ""
+			(at 144.78 53.34 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
+			)
+		)
+		(property "Datasheet" ""
+			(at 144.78 53.34 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
+			)
+		)
+		(property "Description" "Power symbol creates a global label with name \"GND\" , ground"
+			(at 144.78 53.34 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
+			)
+		)
+		(pin "1"
+			(uuid "dc695fa9-64ee-45f8-a8a6-6d32d63abc7c")
+		)
+		(instances
+			(project "CUR_flight_computer_25-26"
+				(path "/bf7761cc-1b32-4d86-809c-5f027005229b/a6095a4d-1542-4c9d-ab0b-9ed076818c96"
+					(reference "#PWR0115")
 					(unit 1)
 				)
 			)
@@ -2397,33 +2637,17 @@
 		)
 	)
 	(symbol
-		(lib_id "Device:D_TVS_Small")
-		(at 139.7 50.8 0)
+		(lib_id "power:GND")
+		(at 68.58 52.07 0)
 		(unit 1)
 		(exclude_from_sim no)
 		(in_bom yes)
 		(on_board yes)
 		(dnp no)
 		(fields_autoplaced yes)
-		(uuid "3bfebaa3-f77e-4d01-9aa6-319abee88e86")
-		(property "Reference" "D16"
-			(at 139.7 44.45 0)
-			(effects
-				(font
-					(size 1.27 1.27)
-				)
-			)
-		)
-		(property "Value" "ESDZV5HS-1BF4"
-			(at 139.7 46.99 0)
-			(effects
-				(font
-					(size 1.27 1.27)
-				)
-			)
-		)
-		(property "Footprint" "Diode_SMD:D_0201_0603Metric"
-			(at 139.7 50.8 0)
+		(uuid "3bac2608-be4a-4804-8167-c1cbe8a0ad80")
+		(property "Reference" "#PWR0114"
+			(at 68.58 58.42 0)
 			(effects
 				(font
 					(size 1.27 1.27)
@@ -2431,8 +2655,16 @@
 				(hide yes)
 			)
 		)
-		(property "Datasheet" "~"
-			(at 139.7 50.8 0)
+		(property "Value" "GND"
+			(at 68.58 57.15 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+			)
+		)
+		(property "Footprint" ""
+			(at 68.58 52.07 0)
 			(effects
 				(font
 					(size 1.27 1.27)
@@ -2440,8 +2672,17 @@
 				(hide yes)
 			)
 		)
-		(property "Description" "Bidirectional transient-voltage-suppression diode, small symbol"
-			(at 139.7 50.8 0)
+		(property "Datasheet" ""
+			(at 68.58 52.07 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
+			)
+		)
+		(property "Description" "Power symbol creates a global label with name \"GND\" , ground"
+			(at 68.58 52.07 0)
 			(effects
 				(font
 					(size 1.27 1.27)
@@ -2450,10 +2691,77 @@
 			)
 		)
 		(pin "1"
-			(uuid "c4ab737e-1888-431d-8d82-80fff275f5ec")
+			(uuid "07a9dc7f-2770-4460-ba08-85b9d24d8000")
+		)
+		(instances
+			(project "CUR_flight_computer_25-26"
+				(path "/bf7761cc-1b32-4d86-809c-5f027005229b/a6095a4d-1542-4c9d-ab0b-9ed076818c96"
+					(reference "#PWR0114")
+					(unit 1)
+				)
+			)
+		)
+	)
+	(symbol
+		(lib_id "Device:D_TVS_Small")
+		(at 144.78 48.26 90)
+		(unit 1)
+		(exclude_from_sim no)
+		(in_bom yes)
+		(on_board yes)
+		(dnp no)
+		(fields_autoplaced yes)
+		(uuid "43b06af0-940a-4165-9a78-4e043cfb5abb")
+		(property "Reference" "D16"
+			(at 147.32 46.9899 90)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(justify right)
+			)
+		)
+		(property "Value" "ESDZV5HS-1BF4"
+			(at 147.32 49.5299 90)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(justify right)
+			)
+		)
+		(property "Footprint" "Diode_SMD:D_0201_0603Metric"
+			(at 144.78 48.26 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
+			)
+		)
+		(property "Datasheet" "~"
+			(at 144.78 48.26 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
+			)
+		)
+		(property "Description" "Bidirectional transient-voltage-suppression diode, small symbol"
+			(at 144.78 48.26 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
+			)
+		)
+		(pin "1"
+			(uuid "5b000f93-eb2b-4e78-9439-6e72121ccf8a")
 		)
 		(pin "2"
-			(uuid "ef7ba4e4-9845-43e5-a222-439f520a1b66")
+			(uuid "0001585d-168b-470d-afb3-2617f464d8ba")
 		)
 		(instances
 			(project "CUR_flight_computer_25-26"
@@ -3108,32 +3416,34 @@
 	)
 	(symbol
 		(lib_id "Device:D_TVS_Small")
-		(at 63.5 49.53 0)
+		(at 69.85 114.3 90)
 		(unit 1)
 		(exclude_from_sim no)
 		(in_bom yes)
 		(on_board yes)
 		(dnp no)
 		(fields_autoplaced yes)
-		(uuid "79d9f0f0-4044-4f06-8046-9dfeea5bcac9")
-		(property "Reference" "D13"
-			(at 63.5 43.18 0)
+		(uuid "70520127-91d6-40d0-a131-2b87f4be8197")
+		(property "Reference" "D14"
+			(at 72.39 113.0299 90)
 			(effects
 				(font
 					(size 1.27 1.27)
 				)
+				(justify right)
 			)
 		)
 		(property "Value" "ESDZV5HS-1BF4"
-			(at 63.5 45.72 0)
+			(at 72.39 115.5699 90)
 			(effects
 				(font
 					(size 1.27 1.27)
 				)
+				(justify right)
 			)
 		)
 		(property "Footprint" "Diode_SMD:D_0201_0603Metric"
-			(at 63.5 49.53 0)
+			(at 69.85 114.3 0)
 			(effects
 				(font
 					(size 1.27 1.27)
@@ -3142,7 +3452,7 @@
 			)
 		)
 		(property "Datasheet" "~"
-			(at 63.5 49.53 0)
+			(at 69.85 114.3 0)
 			(effects
 				(font
 					(size 1.27 1.27)
@@ -3151,7 +3461,143 @@
 			)
 		)
 		(property "Description" "Bidirectional transient-voltage-suppression diode, small symbol"
-			(at 63.5 49.53 0)
+			(at 69.85 114.3 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
+			)
+		)
+		(pin "1"
+			(uuid "6a40a6e8-674d-42bc-8127-5b8c4f90b63e")
+		)
+		(pin "2"
+			(uuid "3c105c66-75a0-4cca-85b3-ff9d79863593")
+		)
+		(instances
+			(project "CUR_flight_computer_25-26"
+				(path "/bf7761cc-1b32-4d86-809c-5f027005229b/a6095a4d-1542-4c9d-ab0b-9ed076818c96"
+					(reference "D14")
+					(unit 1)
+				)
+			)
+		)
+	)
+	(symbol
+		(lib_id "power:GND")
+		(at 69.85 119.38 0)
+		(unit 1)
+		(exclude_from_sim no)
+		(in_bom yes)
+		(on_board yes)
+		(dnp no)
+		(fields_autoplaced yes)
+		(uuid "73cb867d-7729-402c-a4ec-1a4f9d74c0f7")
+		(property "Reference" "#PWR0117"
+			(at 69.85 125.73 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
+			)
+		)
+		(property "Value" "GND"
+			(at 69.85 124.46 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+			)
+		)
+		(property "Footprint" ""
+			(at 69.85 119.38 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
+			)
+		)
+		(property "Datasheet" ""
+			(at 69.85 119.38 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
+			)
+		)
+		(property "Description" "Power symbol creates a global label with name \"GND\" , ground"
+			(at 69.85 119.38 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
+			)
+		)
+		(pin "1"
+			(uuid "1f3d8d8e-6939-415d-aa2a-f1af2026b61b")
+		)
+		(instances
+			(project "CUR_flight_computer_25-26"
+				(path "/bf7761cc-1b32-4d86-809c-5f027005229b/a6095a4d-1542-4c9d-ab0b-9ed076818c96"
+					(reference "#PWR0117")
+					(unit 1)
+				)
+			)
+		)
+	)
+	(symbol
+		(lib_id "Device:D_TVS_Small")
+		(at 68.58 46.99 90)
+		(unit 1)
+		(exclude_from_sim no)
+		(in_bom yes)
+		(on_board yes)
+		(dnp no)
+		(fields_autoplaced yes)
+		(uuid "79d9f0f0-4044-4f06-8046-9dfeea5bcac9")
+		(property "Reference" "D13"
+			(at 71.12 45.7199 90)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(justify right)
+			)
+		)
+		(property "Value" "ESDZV5HS-1BF4"
+			(at 71.12 48.2599 90)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(justify right)
+			)
+		)
+		(property "Footprint" "Diode_SMD:D_0201_0603Metric"
+			(at 68.58 46.99 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
+			)
+		)
+		(property "Datasheet" "~"
+			(at 68.58 46.99 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
+			)
+		)
+		(property "Description" "Bidirectional transient-voltage-suppression diode, small symbol"
+			(at 68.58 46.99 0)
 			(effects
 				(font
 					(size 1.27 1.27)
@@ -3166,7 +3612,7 @@
 			(uuid "868537cd-837c-4dc0-8065-975e83d76b26")
 		)
 		(instances
-			(project ""
+			(project "CUR_flight_computer_25-26"
 				(path "/bf7761cc-1b32-4d86-809c-5f027005229b/a6095a4d-1542-4c9d-ab0b-9ed076818c96"
 					(reference "D13")
 					(unit 1)
@@ -3446,7 +3892,7 @@
 	)
 	(symbol
 		(lib_id "Connector:Screw_Terminal_01x02")
-		(at 49.53 52.07 180)
+		(at 49.53 45.72 180)
 		(unit 1)
 		(exclude_from_sim no)
 		(in_bom yes)
@@ -3455,7 +3901,7 @@
 		(fields_autoplaced yes)
 		(uuid "8b44d8c2-470d-4c67-9a8a-d31075330fe0")
 		(property "Reference" "J8"
-			(at 49.53 43.18 0)
+			(at 49.53 36.83 0)
 			(effects
 				(font
 					(size 1.27 1.27)
@@ -3463,7 +3909,7 @@
 			)
 		)
 		(property "Value" "PYRO"
-			(at 49.53 45.72 0)
+			(at 49.53 39.37 0)
 			(effects
 				(font
 					(size 1.27 1.27)
@@ -3471,7 +3917,7 @@
 			)
 		)
 		(property "Footprint" "TerminalBlock_Phoenix:TerminalBlock_Phoenix_PT-1,5-2-5.0-H_1x02_P5.00mm_Horizontal"
-			(at 49.53 52.07 0)
+			(at 49.53 45.72 0)
 			(effects
 				(font
 					(size 1.27 1.27)
@@ -3480,7 +3926,7 @@
 			)
 		)
 		(property "Datasheet" "~"
-			(at 49.53 52.07 0)
+			(at 49.53 45.72 0)
 			(effects
 				(font
 					(size 1.27 1.27)
@@ -3489,7 +3935,7 @@
 			)
 		)
 		(property "Description" "Generic screw terminal, single row, 01x02, script generated (kicad-library-utils/schlib/autogen/connector/)"
-			(at 49.53 52.07 0)
+			(at 49.53 45.72 0)
 			(effects
 				(font
 					(size 1.27 1.27)
@@ -3507,74 +3953,6 @@
 			(project ""
 				(path "/bf7761cc-1b32-4d86-809c-5f027005229b/a6095a4d-1542-4c9d-ab0b-9ed076818c96"
 					(reference "J8")
-					(unit 1)
-				)
-			)
-		)
-	)
-	(symbol
-		(lib_id "Device:D_TVS_Small")
-		(at 138.43 119.38 0)
-		(unit 1)
-		(exclude_from_sim no)
-		(in_bom yes)
-		(on_board yes)
-		(dnp no)
-		(fields_autoplaced yes)
-		(uuid "93d39e6b-80d9-408a-86bb-3c4c4e932839")
-		(property "Reference" "D15"
-			(at 138.43 113.03 0)
-			(effects
-				(font
-					(size 1.27 1.27)
-				)
-			)
-		)
-		(property "Value" "ESDZV5HS-1BF4"
-			(at 138.43 115.57 0)
-			(effects
-				(font
-					(size 1.27 1.27)
-				)
-			)
-		)
-		(property "Footprint" "Diode_SMD:D_0201_0603Metric"
-			(at 138.43 119.38 0)
-			(effects
-				(font
-					(size 1.27 1.27)
-				)
-				(hide yes)
-			)
-		)
-		(property "Datasheet" "~"
-			(at 138.43 119.38 0)
-			(effects
-				(font
-					(size 1.27 1.27)
-				)
-				(hide yes)
-			)
-		)
-		(property "Description" "Bidirectional transient-voltage-suppression diode, small symbol"
-			(at 138.43 119.38 0)
-			(effects
-				(font
-					(size 1.27 1.27)
-				)
-				(hide yes)
-			)
-		)
-		(pin "1"
-			(uuid "57f49854-9d54-4c4c-8140-667f9ccea69f")
-		)
-		(pin "2"
-			(uuid "ae9d50ac-a8dd-4a77-805a-0e21236bfd1b")
-		)
-		(instances
-			(project "CUR_flight_computer_25-26"
-				(path "/bf7761cc-1b32-4d86-809c-5f027005229b/a6095a4d-1542-4c9d-ab0b-9ed076818c96"
-					(reference "D15")
 					(unit 1)
 				)
 			)
@@ -3650,7 +4028,7 @@
 	)
 	(symbol
 		(lib_id "Connector:Screw_Terminal_01x02")
-		(at 125.73 121.92 180)
+		(at 127 113.03 180)
 		(unit 1)
 		(exclude_from_sim no)
 		(in_bom yes)
@@ -3659,7 +4037,7 @@
 		(fields_autoplaced yes)
 		(uuid "95462233-0240-4b38-be12-9563647d9f0f")
 		(property "Reference" "J11"
-			(at 125.73 113.03 0)
+			(at 127 104.14 0)
 			(effects
 				(font
 					(size 1.27 1.27)
@@ -3667,7 +4045,7 @@
 			)
 		)
 		(property "Value" "PYRO"
-			(at 125.73 115.57 0)
+			(at 127 106.68 0)
 			(effects
 				(font
 					(size 1.27 1.27)
@@ -3675,7 +4053,7 @@
 			)
 		)
 		(property "Footprint" "TerminalBlock_Phoenix:TerminalBlock_Phoenix_PT-1,5-2-5.0-H_1x02_P5.00mm_Horizontal"
-			(at 125.73 121.92 0)
+			(at 127 113.03 0)
 			(effects
 				(font
 					(size 1.27 1.27)
@@ -3684,7 +4062,7 @@
 			)
 		)
 		(property "Datasheet" "~"
-			(at 125.73 121.92 0)
+			(at 127 113.03 0)
 			(effects
 				(font
 					(size 1.27 1.27)
@@ -3693,7 +4071,7 @@
 			)
 		)
 		(property "Description" "Generic screw terminal, single row, 01x02, script generated (kicad-library-utils/schlib/autogen/connector/)"
-			(at 125.73 121.92 0)
+			(at 127 113.03 0)
 			(effects
 				(font
 					(size 1.27 1.27)
@@ -3711,6 +4089,72 @@
 			(project "CUR_flight_computer_25-26"
 				(path "/bf7761cc-1b32-4d86-809c-5f027005229b/a6095a4d-1542-4c9d-ab0b-9ed076818c96"
 					(reference "J11")
+					(unit 1)
+				)
+			)
+		)
+	)
+	(symbol
+		(lib_id "power:GND")
+		(at 146.05 119.38 0)
+		(unit 1)
+		(exclude_from_sim no)
+		(in_bom yes)
+		(on_board yes)
+		(dnp no)
+		(fields_autoplaced yes)
+		(uuid "a1046b24-0579-4494-bd81-8ab473b3cf26")
+		(property "Reference" "#PWR0116"
+			(at 146.05 125.73 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
+			)
+		)
+		(property "Value" "GND"
+			(at 146.05 124.46 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+			)
+		)
+		(property "Footprint" ""
+			(at 146.05 119.38 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
+			)
+		)
+		(property "Datasheet" ""
+			(at 146.05 119.38 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
+			)
+		)
+		(property "Description" "Power symbol creates a global label with name \"GND\" , ground"
+			(at 146.05 119.38 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
+			)
+		)
+		(pin "1"
+			(uuid "89fee78a-1e42-4b2f-a19d-e1af1b70b8d0")
+		)
+		(instances
+			(project "CUR_flight_computer_25-26"
+				(path "/bf7761cc-1b32-4d86-809c-5f027005229b/a6095a4d-1542-4c9d-ab0b-9ed076818c96"
+					(reference "#PWR0116")
 					(unit 1)
 				)
 			)
@@ -3847,74 +4291,6 @@
 			(project "CUR_flight_computer_25-26"
 				(path "/bf7761cc-1b32-4d86-809c-5f027005229b/a6095a4d-1542-4c9d-ab0b-9ed076818c96"
 					(reference "R42")
-					(unit 1)
-				)
-			)
-		)
-	)
-	(symbol
-		(lib_id "Device:D_TVS_Small")
-		(at 66.04 120.65 0)
-		(unit 1)
-		(exclude_from_sim no)
-		(in_bom yes)
-		(on_board yes)
-		(dnp no)
-		(fields_autoplaced yes)
-		(uuid "a9c9f68b-b3a4-45c5-afe8-e778a5d1221e")
-		(property "Reference" "D14"
-			(at 66.04 114.3 0)
-			(effects
-				(font
-					(size 1.27 1.27)
-				)
-			)
-		)
-		(property "Value" "ESDZV5HS-1BF4"
-			(at 66.04 116.84 0)
-			(effects
-				(font
-					(size 1.27 1.27)
-				)
-			)
-		)
-		(property "Footprint" "Diode_SMD:D_0201_0603Metric"
-			(at 66.04 120.65 0)
-			(effects
-				(font
-					(size 1.27 1.27)
-				)
-				(hide yes)
-			)
-		)
-		(property "Datasheet" "~"
-			(at 66.04 120.65 0)
-			(effects
-				(font
-					(size 1.27 1.27)
-				)
-				(hide yes)
-			)
-		)
-		(property "Description" "Bidirectional transient-voltage-suppression diode, small symbol"
-			(at 66.04 120.65 0)
-			(effects
-				(font
-					(size 1.27 1.27)
-				)
-				(hide yes)
-			)
-		)
-		(pin "1"
-			(uuid "f6f3a8b3-8178-415b-878e-3a6e3a038607")
-		)
-		(pin "2"
-			(uuid "67f33677-e588-421c-b8c0-e4055df7dd97")
-		)
-		(instances
-			(project "CUR_flight_computer_25-26"
-				(path "/bf7761cc-1b32-4d86-809c-5f027005229b/a6095a4d-1542-4c9d-ab0b-9ed076818c96"
-					(reference "D14")
 					(unit 1)
 				)
 			)
@@ -4124,7 +4500,7 @@
 	)
 	(symbol
 		(lib_id "Connector:Screw_Terminal_01x02")
-		(at 125.73 53.34 180)
+		(at 125.73 46.99 180)
 		(unit 1)
 		(exclude_from_sim no)
 		(in_bom yes)
@@ -4133,7 +4509,7 @@
 		(fields_autoplaced yes)
 		(uuid "de1610db-f77e-4176-a4b1-00e469634d6b")
 		(property "Reference" "J10"
-			(at 125.73 44.45 0)
+			(at 125.73 38.1 0)
 			(effects
 				(font
 					(size 1.27 1.27)
@@ -4141,7 +4517,7 @@
 			)
 		)
 		(property "Value" "PYRO"
-			(at 125.73 46.99 0)
+			(at 125.73 40.64 0)
 			(effects
 				(font
 					(size 1.27 1.27)
@@ -4149,7 +4525,7 @@
 			)
 		)
 		(property "Footprint" "TerminalBlock_Phoenix:TerminalBlock_Phoenix_PT-1,5-2-5.0-H_1x02_P5.00mm_Horizontal"
-			(at 125.73 53.34 0)
+			(at 125.73 46.99 0)
 			(effects
 				(font
 					(size 1.27 1.27)
@@ -4158,7 +4534,7 @@
 			)
 		)
 		(property "Datasheet" "~"
-			(at 125.73 53.34 0)
+			(at 125.73 46.99 0)
 			(effects
 				(font
 					(size 1.27 1.27)
@@ -4167,7 +4543,7 @@
 			)
 		)
 		(property "Description" "Generic screw terminal, single row, 01x02, script generated (kicad-library-utils/schlib/autogen/connector/)"
-			(at 125.73 53.34 0)
+			(at 125.73 46.99 0)
 			(effects
 				(font
 					(size 1.27 1.27)
