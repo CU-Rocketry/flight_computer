@@ -6,4 +6,5 @@
   (lib (name "LM66200")(type "KiCad")(uri "${KIPRJMOD}/kicad-library/symbols/LM66200.kicad_sym")(options "")(descr ""))
   (lib (name "DI_ZXCT180")(type "KiCad")(uri "${KIPRJMOD}/kicad-library/symbols/DI_ZXCT180.kicad_sym")(options "")(descr ""))
   (lib (name "EBYTE_LoRa")(type "KiCad")(uri "${KIPRJMOD}/kicad-library/symbols/EBYTE_LoRa.kicad_sym")(options "")(descr ""))
+  (lib (name "Samtec_FTSH-107-01-X-DV-K-TR")(type "KiCad")(uri "${KIPRJMOD}/kicad-library/symbols/Samtec_FTSH-107-01-X-DV-K-TR.kicad_sym")(options "")(descr ""))
 )
