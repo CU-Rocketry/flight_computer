@@ -3935,7 +3935,7 @@
 				)
 			)
 		)
-		(property "Footprint" "TerminalBlock_Phoenix:TerminalBlock_Phoenix_PT-1,5-2-5.0-H_1x02_P5.00mm_Horizontal"
+		(property "Footprint" "Terminal_SAMESKY_TB0011-350-02GR:SAMESKY_TB0011-350-02GR"
 			(at 40.64 135.89 0)
 			(effects
 				(font
@@ -4550,7 +4550,7 @@
 				)
 			)
 		)
-		(property "Footprint" "TerminalBlock_Phoenix:TerminalBlock_Phoenix_PT-1,5-2-5.0-H_1x02_P5.00mm_Horizontal"
+		(property "Footprint" "Terminal_SAMESKY_TB0011-350-02GR:SAMESKY_TB0011-350-02GR"
 			(at 40.64 166.37 0)
 			(effects
 				(font

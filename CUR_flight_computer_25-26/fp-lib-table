@@ -14,4 +14,5 @@
   (lib (name "SW_SameSky")(type "KiCad")(uri "${KIPRJMOD}/kicad-library/footprints/SW_SameSky.pretty")(options "")(descr ""))
   (lib (name "SAMESKY_UJ20-C-H-G-SMT-5-P16-TR")(type "KiCad")(uri "${KIPRJMOD}/kicad-library/footprints/SAMESKY_UJ20-C-H-G-SMT-5-P16-TR.pretty")(options "")(descr ""))
   (lib (name "SAMESKY_UP20-C-F-G-FL-1-P12-TR")(type "KiCad")(uri "${KIPRJMOD}/kicad-library/footprints/SAMESKY_UP20-C-F-G-FL-1-P12-TR.pretty")(options "")(descr ""))
+  (lib (name "Terminal_SAMESKY_TB0011-350-02GR")(type "KiCad")(uri "${KIPRJMOD}/kicad-library/footprints/Terminal_SAMESKY_TB0011-350-02GR")(options "")(descr ""))
 )
