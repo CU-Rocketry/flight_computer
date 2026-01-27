@@ -1958,7 +1958,7 @@
 				)
 			)
 		)
-		(property "Footprint" "SAMESKY_UJ20-C-H-G-SMT-P16-TR:SAMESKY_UJ20-C-H-G-SMT-P16-TR"
+		(property "Footprint" "SAMESKY_UJ20-C-H-G-SMT-5-P16-TR:SAMESKY_UJ20-C-H-G-SMT-5-P16-TR"
 			(at 41.91 54.61 0)
 			(effects
 				(font
