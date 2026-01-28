@@ -716,6 +716,121 @@
 			)
 		)
 	)
+	(footprint "TestPoint_KOASpeer:TestPoint_Chip_RCUCTE_0603"
+		(layer "F.Cu")
+		(uuid "09849f8c-b3ea-4a74-966e-263fa4b20cfb")
+		(at 75.6 47.8)
+		(descr "Test Point Chip 0603 (1.6mmx0.8mm) RCU RC")
+		(tags "Test Point Chip 0603 (1.6mmx0.8mm) RCU RC")
+		(property "Reference" "TP40"
+			(at 0 -2 0)
+			(unlocked yes)
+			(layer "F.SilkS")
+			(uuid "fe821352-61ab-489f-bd2b-e98bfefe8a42")
+			(effects
+				(font
+					(size 1 1)
+					(thickness 0.15)
+				)
+			)
+		)
+		(property "Value" "TestPoint"
+			(at 0 -1 0)
+			(unlocked yes)
+			(layer "F.Fab")
+			(uuid "5b031b4d-905c-42a2-95b1-90998a07f5c3")
+			(effects
+				(font
+					(size 0.5 0.5)
+					(thickness 0.075)
+				)
+			)
+		)
+		(property "Datasheet" "~"
+			(at 0 0 0)
+			(unlocked yes)
+			(layer "F.Fab")
+			(hide yes)
+			(uuid "95af5e11-59ad-4ffa-8789-a25878f66406")
+			(effects
+				(font
+					(size 1 1)
+					(thickness 0.15)
+				)
+			)
+		)
+		(property "Description" "test point"
+			(at 0 0 0)
+			(unlocked yes)
+			(layer "F.Fab")
+			(hide yes)
+			(uuid "de302286-89c6-4f7d-b545-fffbfbacf41a")
+			(effects
+				(font
+					(size 1 1)
+					(thickness 0.15)
+				)
+			)
+		)
+		(property ki_fp_filters "Pin* Test*")
+		(path "/1df302fb-2dab-4194-ae63-c7585125533e/367910df-a8a4-488a-b487-7c8fd6676d14")
+		(sheetname "/Power/")
+		(sheetfile "power.kicad_sch")
+		(attr smd)
+		(fp_rect
+			(start -1.25 -0.75)
+			(end 1.25 0.75)
+			(stroke
+				(width 0.05)
+				(type default)
+			)
+			(fill no)
+			(layer "F.CrtYd")
+			(uuid "9e85407f-b310-4070-a486-caffd8b0f0d8")
+		)
+		(fp_text user "${REFERENCE}"
+			(at 0 -2 0)
+			(unlocked yes)
+			(layer "F.Fab")
+			(uuid "f6fd1145-4256-4350-ab62-9d853a81888b")
+			(effects
+				(font
+					(size 1 1)
+					(thickness 0.15)
+				)
+			)
+		)
+		(pad "1" smd roundrect
+			(at 0 0)
+			(size 2 1)
+			(layers "F.Cu" "F.Mask" "F.Paste")
+			(roundrect_rratio 0.15)
+			(net 1 "GND")
+			(pinfunction "1")
+			(pintype "passive")
+			(thermal_bridge_angle 45)
+			(uuid "3bc594cd-9df1-44c2-ae0a-9c9367b875a4")
+		)
+		(embedded_fonts no)
+		(embedded_files
+			(file
+				(name "TestPoint_KOASpeer_RCUCTE.step")
+				(type model)
+				(checksum "2AF83E4609FED5DE82404D774C0715F6")
+			)
+		)
+		(model "kicad-embed://TestPoint_KOASpeer_RCUCTE.step"
+			(offset
+				(xyz -0.75 -0.8 0.25)
+			)
+			(scale
+				(xyz 1 1 1)
+			)
+			(rotate
+				(xyz -0 -0 -0)
+			)
+		)
+	)
 	(footprint "Resistor_SMD:R_0603_1608Metric"
 		(layer "F.Cu")
 		(uuid "0b6a246b-8585-46ae-9de0-6602b8dfbb21")
@@ -1117,7 +1232,7 @@
 	(footprint "Resistor_SMD:R_0603_1608Metric"
 		(layer "F.Cu")
 		(uuid "12938c8d-a17a-44f3-ba97-f41cf1059a1b")
-		(at 69.425 99.43 -90)
+		(at 69 99.5 -90)
 		(descr "Resistor SMD 0603 (1608 Metric), square (rectangular) end terminal, IPC-7351 nominal, (Body size source: IPC-SM-782 page 72, https://www.pcb-3d.com/wordpress/wp-content/uploads/ipc-sm-782a_amendment_1_and_2.pdf), generated with kicad-footprint-generator")
 		(tags "resistor")
 		(property "Reference" "R48"
@@ -2171,7 +2286,7 @@
 	(footprint "Buzzer_SameSky:Buzzer_SameSky_CEM-1203_42"
 		(layer "F.Cu")
 		(uuid "1f5d2ea6-003f-4b9a-9347-de6ca054d63f")
-		(at 73.25 109.75 135)
+		(at 74 109.25 135)
 		(descr "Magnetic Buzzer Transducer 3V rated 3-5V operating voltage 95 dB")
 		(property "Reference" "R50"
 			(at 1.983342 -0.991659 45)
@@ -2515,6 +2630,121 @@
 			)
 			(rotate
 				(xyz 0 0 0)
+			)
+		)
+	)
+	(footprint "TestPoint_KOASpeer:TestPoint_Chip_RCUCTE_0603"
+		(layer "F.Cu")
+		(uuid "21869063-c81f-48d7-b1b6-5c6a33964b16")
+		(at 78.2 102.8)
+		(descr "Test Point Chip 0603 (1.6mmx0.8mm) RCU RC")
+		(tags "Test Point Chip 0603 (1.6mmx0.8mm) RCU RC")
+		(property "Reference" "TP34"
+			(at 0 -2 0)
+			(unlocked yes)
+			(layer "F.SilkS")
+			(uuid "d1160bdb-055e-4707-9fb2-098d90e69e09")
+			(effects
+				(font
+					(size 1 1)
+					(thickness 0.15)
+				)
+			)
+		)
+		(property "Value" "TestPoint_Small"
+			(at 0 -1 0)
+			(unlocked yes)
+			(layer "F.Fab")
+			(uuid "d48bdf8f-5fe0-4617-a9a6-040bb739d1b7")
+			(effects
+				(font
+					(size 0.5 0.5)
+					(thickness 0.075)
+				)
+			)
+		)
+		(property "Datasheet" "~"
+			(at 0 0 0)
+			(unlocked yes)
+			(layer "F.Fab")
+			(hide yes)
+			(uuid "a18ec74e-3ff0-40ac-810d-b39270dac8cf")
+			(effects
+				(font
+					(size 1 1)
+					(thickness 0.15)
+				)
+			)
+		)
+		(property "Description" "test point"
+			(at 0 0 0)
+			(unlocked yes)
+			(layer "F.Fab")
+			(hide yes)
+			(uuid "6547e58b-ee11-422f-a3a7-4aa02b4f0de6")
+			(effects
+				(font
+					(size 1 1)
+					(thickness 0.15)
+				)
+			)
+		)
+		(property ki_fp_filters "Pin* Test*")
+		(path "/e838d24c-cb75-4a46-b88f-e4466a269629/cff63bc9-e61b-4526-9b90-c0ae48c9d85b")
+		(sheetname "/GPS/")
+		(sheetfile "gps.kicad_sch")
+		(attr smd)
+		(fp_rect
+			(start -1.25 -0.75)
+			(end 1.25 0.75)
+			(stroke
+				(width 0.05)
+				(type default)
+			)
+			(fill no)
+			(layer "F.CrtYd")
+			(uuid "2a083999-1d17-4b86-955a-7d46b8b9688e")
+		)
+		(fp_text user "${REFERENCE}"
+			(at 0 -2 0)
+			(unlocked yes)
+			(layer "F.Fab")
+			(uuid "5dc41dd8-6cf3-4b22-872b-4bcc21916668")
+			(effects
+				(font
+					(size 1 1)
+					(thickness 0.15)
+				)
+			)
+		)
+		(pad "1" smd roundrect
+			(at 0 0)
+			(size 2 1)
+			(layers "F.Cu" "F.Mask" "F.Paste")
+			(roundrect_rratio 0.15)
+			(net 116 "/GPS/~{GPS_RESET}")
+			(pinfunction "1")
+			(pintype "passive")
+			(thermal_bridge_angle 45)
+			(uuid "f242421c-7ba7-4a5d-8a62-7c63a434ec93")
+		)
+		(embedded_fonts no)
+		(embedded_files
+			(file
+				(name "TestPoint_KOASpeer_RCUCTE.step")
+				(type model)
+				(checksum "2AF83E4609FED5DE82404D774C0715F6")
+			)
+		)
+		(model "kicad-embed://TestPoint_KOASpeer_RCUCTE.step"
+			(offset
+				(xyz -0.75 -0.8 0.25)
+			)
+			(scale
+				(xyz 1 1 1)
+			)
+			(rotate
+				(xyz -0 -0 -0)
 			)
 		)
 	)
@@ -2988,6 +3218,121 @@
 			)
 			(rotate
 				(xyz 0 0 0)
+			)
+		)
+	)
+	(footprint "TestPoint_KOASpeer:TestPoint_Chip_RCUCTE_0603"
+		(layer "F.Cu")
+		(uuid "24219f83-bbaf-4a03-8f3d-f96752779a7c")
+		(at 74.6 55.2)
+		(descr "Test Point Chip 0603 (1.6mmx0.8mm) RCU RC")
+		(tags "Test Point Chip 0603 (1.6mmx0.8mm) RCU RC")
+		(property "Reference" "TP37"
+			(at 0 -2 0)
+			(unlocked yes)
+			(layer "F.SilkS")
+			(uuid "e0828b21-6f8e-4490-be85-16e96ef90de1")
+			(effects
+				(font
+					(size 1 1)
+					(thickness 0.15)
+				)
+			)
+		)
+		(property "Value" "TestPoint"
+			(at 0 -1 0)
+			(unlocked yes)
+			(layer "F.Fab")
+			(uuid "7bae1283-7cd9-473f-a295-4cbf5c91044a")
+			(effects
+				(font
+					(size 0.5 0.5)
+					(thickness 0.075)
+				)
+			)
+		)
+		(property "Datasheet" "~"
+			(at 0 0 0)
+			(unlocked yes)
+			(layer "F.Fab")
+			(hide yes)
+			(uuid "4d3bd94d-c584-4d9c-8f11-b7cef4e1021b")
+			(effects
+				(font
+					(size 1 1)
+					(thickness 0.15)
+				)
+			)
+		)
+		(property "Description" "test point"
+			(at 0 0 0)
+			(unlocked yes)
+			(layer "F.Fab")
+			(hide yes)
+			(uuid "77bb9319-2032-4fe7-b4cb-fcd0bd41dd7c")
+			(effects
+				(font
+					(size 1 1)
+					(thickness 0.15)
+				)
+			)
+		)
+		(property ki_fp_filters "Pin* Test*")
+		(path "/1df302fb-2dab-4194-ae63-c7585125533e/485d73be-5d0f-4008-8aec-7a5940d1856c")
+		(sheetname "/Power/")
+		(sheetfile "power.kicad_sch")
+		(attr smd)
+		(fp_rect
+			(start -1.25 -0.75)
+			(end 1.25 0.75)
+			(stroke
+				(width 0.05)
+				(type default)
+			)
+			(fill no)
+			(layer "F.CrtYd")
+			(uuid "5443c24a-7485-4404-a14e-bd7f633b75f7")
+		)
+		(fp_text user "${REFERENCE}"
+			(at 0 -2 0)
+			(unlocked yes)
+			(layer "F.Fab")
+			(uuid "60e0f4cf-099f-4a6a-88f7-fa7f74436d8c")
+			(effects
+				(font
+					(size 1 1)
+					(thickness 0.15)
+				)
+			)
+		)
+		(pad "1" smd roundrect
+			(at 0 0)
+			(size 2 1)
+			(layers "F.Cu" "F.Mask" "F.Paste")
+			(roundrect_rratio 0.15)
+			(net 8 "+3V3")
+			(pinfunction "1")
+			(pintype "passive")
+			(thermal_bridge_angle 45)
+			(uuid "faca40d8-da38-4008-bafa-0bedad81177f")
+		)
+		(embedded_fonts no)
+		(embedded_files
+			(file
+				(name "TestPoint_KOASpeer_RCUCTE.step")
+				(type model)
+				(checksum "2AF83E4609FED5DE82404D774C0715F6")
+			)
+		)
+		(model "kicad-embed://TestPoint_KOASpeer_RCUCTE.step"
+			(offset
+				(xyz -0.75 -0.8 0.25)
+			)
+			(scale
+				(xyz 1 1 1)
+			)
+			(rotate
+				(xyz -0 -0 -0)
 			)
 		)
 	)
@@ -6626,6 +6971,121 @@
 			)
 		)
 	)
+	(footprint "TestPoint_KOASpeer:TestPoint_Chip_RCUCTE_0603"
+		(layer "F.Cu")
+		(uuid "518d2412-a856-4f14-935a-b64ee454d2ea")
+		(at 78.2 47.8)
+		(descr "Test Point Chip 0603 (1.6mmx0.8mm) RCU RC")
+		(tags "Test Point Chip 0603 (1.6mmx0.8mm) RCU RC")
+		(property "Reference" "TP38"
+			(at 0 -2 0)
+			(unlocked yes)
+			(layer "F.SilkS")
+			(uuid "d1314c3f-45e3-4895-be05-b6f67d45874b")
+			(effects
+				(font
+					(size 1 1)
+					(thickness 0.15)
+				)
+			)
+		)
+		(property "Value" "TestPoint"
+			(at 0 -1 0)
+			(unlocked yes)
+			(layer "F.Fab")
+			(uuid "8cbd22a4-543c-4ae1-a506-a7c91d3b46c3")
+			(effects
+				(font
+					(size 0.5 0.5)
+					(thickness 0.075)
+				)
+			)
+		)
+		(property "Datasheet" "~"
+			(at 0 0 0)
+			(unlocked yes)
+			(layer "F.Fab")
+			(hide yes)
+			(uuid "482af7e1-a2ff-492f-a596-1b55258fe098")
+			(effects
+				(font
+					(size 1 1)
+					(thickness 0.15)
+				)
+			)
+		)
+		(property "Description" "test point"
+			(at 0 0 0)
+			(unlocked yes)
+			(layer "F.Fab")
+			(hide yes)
+			(uuid "584e0ef9-9e64-45c6-8b9a-8e839cfa1a5c")
+			(effects
+				(font
+					(size 1 1)
+					(thickness 0.15)
+				)
+			)
+		)
+		(property ki_fp_filters "Pin* Test*")
+		(path "/1df302fb-2dab-4194-ae63-c7585125533e/0ad945b7-4fef-485d-9d3b-320ba46dfd1f")
+		(sheetname "/Power/")
+		(sheetfile "power.kicad_sch")
+		(attr smd)
+		(fp_rect
+			(start -1.25 -0.75)
+			(end 1.25 0.75)
+			(stroke
+				(width 0.05)
+				(type default)
+			)
+			(fill no)
+			(layer "F.CrtYd")
+			(uuid "f3b117db-23ef-4bb9-933b-b027e02eb2f6")
+		)
+		(fp_text user "${REFERENCE}"
+			(at 0 -2 0)
+			(unlocked yes)
+			(layer "F.Fab")
+			(uuid "ef73e60d-01cf-4d4a-a65d-82afbd017dd2")
+			(effects
+				(font
+					(size 1 1)
+					(thickness 0.15)
+				)
+			)
+		)
+		(pad "1" smd roundrect
+			(at 0 0)
+			(size 2 1)
+			(layers "F.Cu" "F.Mask" "F.Paste")
+			(roundrect_rratio 0.15)
+			(net 33 "BATT_PYRO")
+			(pinfunction "1")
+			(pintype "passive")
+			(thermal_bridge_angle 45)
+			(uuid "2304af55-1517-42ce-9c43-7eac6bb58050")
+		)
+		(embedded_fonts no)
+		(embedded_files
+			(file
+				(name "TestPoint_KOASpeer_RCUCTE.step")
+				(type model)
+				(checksum "2AF83E4609FED5DE82404D774C0715F6")
+			)
+		)
+		(model "kicad-embed://TestPoint_KOASpeer_RCUCTE.step"
+			(offset
+				(xyz -0.75 -0.8 0.25)
+			)
+			(scale
+				(xyz 1 1 1)
+			)
+			(rotate
+				(xyz -0 -0 -0)
+			)
+		)
+	)
 	(footprint "Package_TO_SOT_SMD:SOT-23-5"
 		(layer "F.Cu")
 		(uuid "53bf75d8-641d-4776-9d57-c1d8908267a0")
@@ -7465,6 +7925,121 @@
 			)
 		)
 	)
+	(footprint "TestPoint_KOASpeer:TestPoint_Chip_RCUCTE_0603"
+		(layer "F.Cu")
+		(uuid "5c1c19c2-e8c5-45c2-8079-8be735d94ae9")
+		(at 74 95)
+		(descr "Test Point Chip 0603 (1.6mmx0.8mm) RCU RC")
+		(tags "Test Point Chip 0603 (1.6mmx0.8mm) RCU RC")
+		(property "Reference" "TP36"
+			(at 0 -2 0)
+			(unlocked yes)
+			(layer "F.SilkS")
+			(uuid "8ee6bec9-d071-4d8f-83b3-8a92225141a7")
+			(effects
+				(font
+					(size 1 1)
+					(thickness 0.15)
+				)
+			)
+		)
+		(property "Value" "TestPoint_Small"
+			(at 0 -1 0)
+			(unlocked yes)
+			(layer "F.Fab")
+			(uuid "39914ee0-0c0d-422c-b7e5-faf34c29347d")
+			(effects
+				(font
+					(size 0.5 0.5)
+					(thickness 0.075)
+				)
+			)
+		)
+		(property "Datasheet" "~"
+			(at 0 0 0)
+			(unlocked yes)
+			(layer "F.Fab")
+			(hide yes)
+			(uuid "a71f8311-6917-476f-ab94-e5fe44aa4ed6")
+			(effects
+				(font
+					(size 1 1)
+					(thickness 0.15)
+				)
+			)
+		)
+		(property "Description" "test point"
+			(at 0 0 0)
+			(unlocked yes)
+			(layer "F.Fab")
+			(hide yes)
+			(uuid "e9ac494d-7798-4516-b203-81d6ddd5553c")
+			(effects
+				(font
+					(size 1 1)
+					(thickness 0.15)
+				)
+			)
+		)
+		(property ki_fp_filters "Pin* Test*")
+		(path "/e838d24c-cb75-4a46-b88f-e4466a269629/765307d1-2a1a-4635-822d-2f63ac70e410")
+		(sheetname "/GPS/")
+		(sheetfile "gps.kicad_sch")
+		(attr smd)
+		(fp_rect
+			(start -1.25 -0.75)
+			(end 1.25 0.75)
+			(stroke
+				(width 0.05)
+				(type default)
+			)
+			(fill no)
+			(layer "F.CrtYd")
+			(uuid "c5498e69-f38a-4bfd-8955-e3de5664879b")
+		)
+		(fp_text user "${REFERENCE}"
+			(at 0 -2 0)
+			(unlocked yes)
+			(layer "F.Fab")
+			(uuid "2fd55aaf-7c1a-4181-85c0-a8479f5370d1")
+			(effects
+				(font
+					(size 1 1)
+					(thickness 0.15)
+				)
+			)
+		)
+		(pad "1" smd roundrect
+			(at 0 0)
+			(size 2 1)
+			(layers "F.Cu" "F.Mask" "F.Paste")
+			(roundrect_rratio 0.15)
+			(net 87 "Net-(U11-TXD)")
+			(pinfunction "1")
+			(pintype "passive")
+			(thermal_bridge_angle 45)
+			(uuid "608482dc-d7f6-4394-b1bd-f706305598e7")
+		)
+		(embedded_fonts no)
+		(embedded_files
+			(file
+				(name "TestPoint_KOASpeer_RCUCTE.step")
+				(type model)
+				(checksum "2AF83E4609FED5DE82404D774C0715F6")
+			)
+		)
+		(model "kicad-embed://TestPoint_KOASpeer_RCUCTE.step"
+			(offset
+				(xyz -0.75 -0.8 0.25)
+			)
+			(scale
+				(xyz 1 1 1)
+			)
+			(rotate
+				(xyz -0 -0 -0)
+			)
+		)
+	)
 	(footprint "BUK9K25-40RAX:BUK9K2540RAX"
 		(layer "F.Cu")
 		(uuid "5db18dbc-6232-4168-90ac-5188f456f5ac")
@@ -8268,6 +8843,121 @@
 			)
 		)
 	)
+	(footprint "TestPoint_KOASpeer:TestPoint_Chip_RCUCTE_0603"
+		(layer "F.Cu")
+		(uuid "6bd86c75-aa6d-4f6e-8dc1-4eaabb67952b")
+		(at 71.8 55.2)
+		(descr "Test Point Chip 0603 (1.6mmx0.8mm) RCU RC")
+		(tags "Test Point Chip 0603 (1.6mmx0.8mm) RCU RC")
+		(property "Reference" "TP39"
+			(at 0 -2 0)
+			(unlocked yes)
+			(layer "F.SilkS")
+			(uuid "62e99cc2-01d1-4da9-9a5a-3631ab17c224")
+			(effects
+				(font
+					(size 1 1)
+					(thickness 0.15)
+				)
+			)
+		)
+		(property "Value" "TestPoint"
+			(at 0 -1 0)
+			(unlocked yes)
+			(layer "F.Fab")
+			(uuid "39c6d3ee-a88c-4512-90ec-c0d19a7e21c1")
+			(effects
+				(font
+					(size 0.5 0.5)
+					(thickness 0.075)
+				)
+			)
+		)
+		(property "Datasheet" "~"
+			(at 0 0 0)
+			(unlocked yes)
+			(layer "F.Fab")
+			(hide yes)
+			(uuid "2bd60167-0cb6-4522-a793-b883d7c2024f")
+			(effects
+				(font
+					(size 1 1)
+					(thickness 0.15)
+				)
+			)
+		)
+		(property "Description" "test point"
+			(at 0 0 0)
+			(unlocked yes)
+			(layer "F.Fab")
+			(hide yes)
+			(uuid "ced63c18-b7ed-45ba-9fc3-a3ffafabaea9")
+			(effects
+				(font
+					(size 1 1)
+					(thickness 0.15)
+				)
+			)
+		)
+		(property ki_fp_filters "Pin* Test*")
+		(path "/1df302fb-2dab-4194-ae63-c7585125533e/693eaeb3-6667-4e21-adba-a608f805c724")
+		(sheetname "/Power/")
+		(sheetfile "power.kicad_sch")
+		(attr smd)
+		(fp_rect
+			(start -1.25 -0.75)
+			(end 1.25 0.75)
+			(stroke
+				(width 0.05)
+				(type default)
+			)
+			(fill no)
+			(layer "F.CrtYd")
+			(uuid "dbd05398-f7ab-499f-bdea-ad65e3682c8f")
+		)
+		(fp_text user "${REFERENCE}"
+			(at 0 -2 0)
+			(unlocked yes)
+			(layer "F.Fab")
+			(uuid "e84d1711-a091-41e1-aa03-ec7d60ed76ec")
+			(effects
+				(font
+					(size 1 1)
+					(thickness 0.15)
+				)
+			)
+		)
+		(pad "1" smd roundrect
+			(at 0 0)
+			(size 2 1)
+			(layers "F.Cu" "F.Mask" "F.Paste")
+			(roundrect_rratio 0.15)
+			(net 1 "GND")
+			(pinfunction "1")
+			(pintype "passive")
+			(thermal_bridge_angle 45)
+			(uuid "5b71ee6e-2c60-4dc4-8516-0cd1319543a9")
+		)
+		(embedded_fonts no)
+		(embedded_files
+			(file
+				(name "TestPoint_KOASpeer_RCUCTE.step")
+				(type model)
+				(checksum "2AF83E4609FED5DE82404D774C0715F6")
+			)
+		)
+		(model "kicad-embed://TestPoint_KOASpeer_RCUCTE.step"
+			(offset
+				(xyz -0.75 -0.8 0.25)
+			)
+			(scale
+				(xyz 1 1 1)
+			)
+			(rotate
+				(xyz -0 -0 -0)
+			)
+		)
+	)
 	(footprint "Terminal_SAMESKY_TB0011-350-02GR:SAMESKY_TB0011-350-02GR"
 		(layer "F.Cu")
 		(uuid "6dec6e58-3c53-441e-9afd-0b341fa77f6d")
@@ -8491,36 +9181,37 @@
 		)
 		(embedded_fonts no)
 	)
-	(footprint "Resistor_SMD:R_0603_1608Metric"
+	(footprint "NTR4003NT1G:SOT96P237X111-3N"
 		(layer "F.Cu")
 		(uuid "6e1e0631-ea96-4b00-a4d3-80987a60a825")
-		(at 102.5 100.75 90)
-		(descr "Resistor SMD 0603 (1608 Metric), square (rectangular) end terminal, IPC-7351 nominal, (Body size source: IPC-SM-782 page 72, https://www.pcb-3d.com/wordpress/wp-content/uploads/ipc-sm-782a_amendment_1_and_2.pdf), generated with kicad-footprint-generator")
-		(tags "resistor")
+		(at 65 99.25 180)
+		(descr "SOT-23 (TO-236) CASE 318-08 ISSUE AR")
+		(tags "Transistor")
 		(property "Reference" "Q1"
-			(at 0 -1.43 90)
+			(at -3.5 0 0)
 			(layer "F.SilkS")
 			(uuid "a79727df-f9e4-41db-8012-f60113d06d05")
 			(effects
 				(font
-					(size 1 1)
-					(thickness 0.15)
+					(size 1.27 1.27)
+					(thickness 0.254)
 				)
 			)
 		)
 		(property "Value" "NTR4003N"
-			(at 0 1.43 90)
-			(layer "F.Fab")
+			(at 0 0 0)
+			(layer "F.SilkS")
+			(hide yes)
 			(uuid "8caf04e1-0225-474a-b92c-60366f2cde0a")
 			(effects
 				(font
-					(size 1 1)
-					(thickness 0.15)
+					(size 1.27 1.27)
+					(thickness 0.254)
 				)
 			)
 		)
 		(property "Datasheet" "~"
-			(at 0 0 90)
+			(at 0 0 0)
 			(layer "F.Fab")
 			(hide yes)
 			(uuid "1b6d06c7-e4a6-4850-8455-6d704828c690")
@@ -8532,7 +9223,7 @@
 			)
 		)
 		(property "Description" "N-MOSFET transistor, gate/source/drain"
-			(at 0 0 90)
+			(at 0 0 0)
 			(layer "F.Fab")
 			(hide yes)
 			(uuid "53280b6f-a8b4-4a88-8ed1-d018929caa27")
@@ -8544,11 +9235,11 @@
 			)
 		)
 		(property "Sim.Library" "kicad-library-sigmondkukla\\spice\\NTR4003N.LIB"
-			(at 0 0 90)
+			(at 0 0 180)
 			(unlocked yes)
 			(layer "F.Fab")
 			(hide yes)
-			(uuid "00a8714c-56f4-43b7-85e1-d05cdfc9c151")
+			(uuid "da2b25fa-a4c9-4706-a2f6-83f067ed7eaa")
 			(effects
 				(font
 					(size 1 1)
@@ -8557,11 +9248,11 @@
 			)
 		)
 		(property "Sim.Name" "ntr4003n"
-			(at 0 0 90)
+			(at 0 0 180)
 			(unlocked yes)
 			(layer "F.Fab")
 			(hide yes)
-			(uuid "5983ab48-09c0-47e7-9de3-0d8496dcca0e")
+			(uuid "c07b4b78-6676-4943-997e-cb7842892a0e")
 			(effects
 				(font
 					(size 1 1)
@@ -8570,11 +9261,11 @@
 			)
 		)
 		(property "Sim.Device" "SUBCKT"
-			(at 0 0 90)
+			(at 0 0 180)
 			(unlocked yes)
 			(layer "F.Fab")
 			(hide yes)
-			(uuid "12955612-0a29-435a-bef0-296bec2520f4")
+			(uuid "9811d74d-a1ed-463d-a51f-b2bdc175f0e0")
 			(effects
 				(font
 					(size 1 1)
@@ -8583,11 +9274,11 @@
 			)
 		)
 		(property "Sim.Pins" "1=2 2=3 3=1"
-			(at 0 0 90)
+			(at 0 0 180)
 			(unlocked yes)
 			(layer "F.Fab")
 			(hide yes)
-			(uuid "b0c03521-ae8f-474c-a49f-7b69e9286134")
+			(uuid "60c5263f-e4ff-4e3e-a969-a52d61c6e8c0")
 			(effects
 				(font
 					(size 1 1)
@@ -8596,11 +9287,11 @@
 			)
 		)
 		(property "MPN" "NTR4003N"
-			(at 0 0 90)
+			(at 0 0 180)
 			(unlocked yes)
 			(layer "F.Fab")
 			(hide yes)
-			(uuid "46404029-85d8-495b-9ce3-8b6fffe92add")
+			(uuid "06ce29dc-11a2-44d4-a312-125720afdd98")
 			(effects
 				(font
 					(size 1 1)
@@ -8613,138 +9304,185 @@
 		(sheetfile "peripherals.kicad_sch")
 		(attr smd)
 		(fp_line
-			(start -0.237258 -0.5225)
-			(end 0.237258 -0.5225)
+			(start 0.075 1.46)
+			(end -0.075 1.46)
 			(stroke
-				(width 0.12)
+				(width 0.2)
 				(type solid)
 			)
 			(layer "F.SilkS")
-			(uuid "b608aab5-1d4d-4a34-8b7f-1a47b8df61a6")
+			(uuid "60c2e929-e0a4-4751-a192-8b2efb26c09a")
 		)
 		(fp_line
-			(start -0.237258 0.5225)
-			(end 0.237258 0.5225)
+			(start 0.075 -1.46)
+			(end 0.075 1.46)
 			(stroke
-				(width 0.12)
+				(width 0.2)
 				(type solid)
 			)
 			(layer "F.SilkS")
-			(uuid "9516dcd3-7ec8-4c1e-baa8-78184e588c06")
+			(uuid "fd2df576-4f4f-446e-9cde-f2c2dd5efa90")
 		)
 		(fp_line
-			(start 1.48 -0.73)
-			(end 1.48 0.73)
+			(start -0.075 1.46)
+			(end -0.075 -1.46)
+			(stroke
+				(width 0.2)
+				(type solid)
+			)
+			(layer "F.SilkS")
+			(uuid "0b63501e-f943-42a6-bd10-a94d873392b4")
+		)
+		(fp_line
+			(start -0.075 -1.46)
+			(end 0.075 -1.46)
+			(stroke
+				(width 0.2)
+				(type solid)
+			)
+			(layer "F.SilkS")
+			(uuid "1e6dfc2f-6b4c-4bac-bebc-894cac1f24b6")
+		)
+		(fp_line
+			(start -1.675 -1.505)
+			(end -0.425 -1.505)
+			(stroke
+				(width 0.2)
+				(type solid)
+			)
+			(layer "F.SilkS")
+			(uuid "285ff509-53ad-41cb-ad90-ca07f087ef85")
+		)
+		(fp_line
+			(start 1.925 1.77)
+			(end -1.925 1.77)
 			(stroke
 				(width 0.05)
 				(type solid)
 			)
 			(layer "F.CrtYd")
-			(uuid "be431e9f-6d98-4b46-b23c-9257e8eb6377")
+			(uuid "f06a7f27-3274-450f-b7b2-61274853d40e")
 		)
 		(fp_line
-			(start -1.48 -0.73)
-			(end 1.48 -0.73)
+			(start 1.925 -1.77)
+			(end 1.925 1.77)
 			(stroke
 				(width 0.05)
 				(type solid)
 			)
 			(layer "F.CrtYd")
-			(uuid "7cedb397-a4c2-4adb-9f0e-1908a66b3e5b")
+			(uuid "a03aae33-5a59-41de-876c-3f5bbf69f4b6")
 		)
 		(fp_line
-			(start 1.48 0.73)
-			(end -1.48 0.73)
+			(start -1.925 1.77)
+			(end -1.925 -1.77)
 			(stroke
 				(width 0.05)
 				(type solid)
 			)
 			(layer "F.CrtYd")
-			(uuid "53d3660c-fbee-4204-ab86-d1d5c6d19b9b")
+			(uuid "421e0c81-a344-489f-b008-8b9bd671aafd")
 		)
 		(fp_line
-			(start -1.48 0.73)
-			(end -1.48 -0.73)
+			(start -1.925 -1.77)
+			(end 1.925 -1.77)
 			(stroke
 				(width 0.05)
 				(type solid)
 			)
 			(layer "F.CrtYd")
-			(uuid "7ebffad8-0fa0-4a24-9471-fa1f1f3109ad")
+			(uuid "83f716c2-578b-4cd9-9e4d-f6455f6256f2")
 		)
 		(fp_line
-			(start 0.8 -0.4125)
-			(end 0.8 0.4125)
+			(start 0.65 1.46)
+			(end -0.65 1.46)
 			(stroke
 				(width 0.1)
 				(type solid)
 			)
 			(layer "F.Fab")
-			(uuid "3dcc3ea8-0e49-4597-b1e7-3420ccd33a20")
+			(uuid "7f6514c0-acb6-40c4-ac8f-2823e80376a2")
 		)
 		(fp_line
-			(start -0.8 -0.4125)
-			(end 0.8 -0.4125)
+			(start 0.65 -1.46)
+			(end 0.65 1.46)
 			(stroke
 				(width 0.1)
 				(type solid)
 			)
 			(layer "F.Fab")
-			(uuid "9f92a7dd-0631-4a73-a7f4-565034b0cd89")
+			(uuid "5a3f30bb-c2e7-46f7-bdb9-d43684627379")
 		)
 		(fp_line
-			(start 0.8 0.4125)
-			(end -0.8 0.4125)
+			(start -0.65 1.46)
+			(end -0.65 -1.46)
 			(stroke
 				(width 0.1)
 				(type solid)
 			)
 			(layer "F.Fab")
-			(uuid "8db752cd-9ce6-4002-b35f-8741cf8388e6")
+			(uuid "16a30acb-805e-4510-bc59-e35c138cda44")
 		)
 		(fp_line
-			(start -0.8 0.4125)
-			(end -0.8 -0.4125)
+			(start -0.65 -0.505)
+			(end 0.305 -1.46)
 			(stroke
 				(width 0.1)
 				(type solid)
 			)
 			(layer "F.Fab")
-			(uuid "a51bc1f3-a83b-47bb-9d35-f6f783def4b7")
+			(uuid "6089321b-58d5-49e8-bffb-a04bc4d7423a")
+		)
+		(fp_line
+			(start -0.65 -1.46)
+			(end 0.65 -1.46)
+			(stroke
+				(width 0.1)
+				(type solid)
+			)
+			(layer "F.Fab")
+			(uuid "66a1b224-0f4f-4c2f-8818-294fbe768616")
 		)
 		(fp_text user "${REFERENCE}"
-			(at 0 0 90)
+			(at 0 0 0)
 			(layer "F.Fab")
 			(uuid "4bc91dd1-d391-4188-bfa2-d8e4ab49cce2")
 			(effects
 				(font
-					(size 0.4 0.4)
-					(thickness 0.06)
+					(size 1.27 1.27)
+					(thickness 0.254)
 				)
 			)
 		)
-		(pad "1" smd roundrect
-			(at -0.825 0 90)
-			(size 0.8 0.95)
+		(pad "1" smd rect
+			(at -1.05 -0.955 270)
+			(size 0.6 1.25)
 			(layers "F.Cu" "F.Mask" "F.Paste")
-			(roundrect_rratio 0.25)
 			(net 59 "Net-(Q1-G)")
 			(pinfunction "G")
 			(pintype "input")
 			(uuid "f988054f-606b-4beb-bc9e-4e8a84d98dc4")
 		)
-		(pad "2" smd roundrect
-			(at 0.825 0 90)
-			(size 0.8 0.95)
+		(pad "2" smd rect
+			(at -1.05 0.955 270)
+			(size 0.6 1.25)
 			(layers "F.Cu" "F.Mask" "F.Paste")
-			(roundrect_rratio 0.25)
 			(net 1 "GND")
 			(pinfunction "S")
 			(pintype "passive")
 			(uuid "234f065c-298d-4180-890c-4835aead8704")
 		)
+		(pad "3" smd rect
+			(at 1.05 0 270)
+			(size 0.6 1.25)
+			(layers "F.Cu" "F.Mask" "F.Paste")
+			(net 35 "Net-(D17-A)")
+			(pinfunction "D")
+			(pintype "passive")
+			(uuid "1a65c2f3-9904-471b-ab84-cda69c66ea04")
+		)
 		(embedded_fonts no)
-		(model "${KICAD9_3DMODEL_DIR}/Resistor_SMD.3dshapes/R_0603_1608Metric.wrl"
+		(model "D:/Github/kicad-library/3d_models/NTR4003NT1G.stp"
 			(offset
 				(xyz 0 0 0)
 			)
@@ -8759,7 +9497,7 @@
 	(footprint "Resistor_SMD:R_0603_1608Metric"
 		(layer "F.Cu")
 		(uuid "6f623bac-d11d-4b1c-878c-9fe2a91559a7")
-		(at 74 94.43 180)
+		(at 74 93.4 180)
 		(descr "Resistor SMD 0603 (1608 Metric), square (rectangular) end terminal, IPC-7351 nominal, (Body size source: IPC-SM-782 page 72, https://www.pcb-3d.com/wordpress/wp-content/uploads/ipc-sm-782a_amendment_1_and_2.pdf), generated with kicad-footprint-generator")
 		(tags "resistor")
 		(property "Reference" "R29"
@@ -8952,6 +9690,121 @@
 			)
 			(rotate
 				(xyz 0 0 0)
+			)
+		)
+	)
+	(footprint "TestPoint_KOASpeer:TestPoint_Chip_RCUCTE_0603"
+		(layer "F.Cu")
+		(uuid "71f13891-4d1a-4e65-8dd7-fd0c7038359f")
+		(at 82.8 84.6 90)
+		(descr "Test Point Chip 0603 (1.6mmx0.8mm) RCU RC")
+		(tags "Test Point Chip 0603 (1.6mmx0.8mm) RCU RC")
+		(property "Reference" "TP33"
+			(at 0 -2 90)
+			(unlocked yes)
+			(layer "F.SilkS")
+			(uuid "94c15bb0-20b5-4a6c-9134-78c4e2345d71")
+			(effects
+				(font
+					(size 1 1)
+					(thickness 0.15)
+				)
+			)
+		)
+		(property "Value" "TestPoint_Small"
+			(at 0 -1 90)
+			(unlocked yes)
+			(layer "F.Fab")
+			(uuid "70a74b0a-e436-4b32-936f-3297a9566539")
+			(effects
+				(font
+					(size 0.5 0.5)
+					(thickness 0.075)
+				)
+			)
+		)
+		(property "Datasheet" "~"
+			(at 0 0 90)
+			(unlocked yes)
+			(layer "F.Fab")
+			(hide yes)
+			(uuid "7e3290e9-b706-4d8c-bfb8-d7fb0d7d60cb")
+			(effects
+				(font
+					(size 1 1)
+					(thickness 0.15)
+				)
+			)
+		)
+		(property "Description" "test point"
+			(at 0 0 90)
+			(unlocked yes)
+			(layer "F.Fab")
+			(hide yes)
+			(uuid "002aa5f1-95ca-4099-891e-7d9fb720b8aa")
+			(effects
+				(font
+					(size 1 1)
+					(thickness 0.15)
+				)
+			)
+		)
+		(property ki_fp_filters "Pin* Test*")
+		(path "/e838d24c-cb75-4a46-b88f-e4466a269629/e6d6548b-3559-4e1b-a182-19888bc8c4d8")
+		(sheetname "/GPS/")
+		(sheetfile "gps.kicad_sch")
+		(attr smd)
+		(fp_rect
+			(start -1.25 -0.75)
+			(end 1.25 0.75)
+			(stroke
+				(width 0.05)
+				(type default)
+			)
+			(fill no)
+			(layer "F.CrtYd")
+			(uuid "fa283bef-738d-460f-877c-776c7777dea5")
+		)
+		(fp_text user "${REFERENCE}"
+			(at 0 -2 90)
+			(unlocked yes)
+			(layer "F.Fab")
+			(uuid "be36e454-d60b-4c5d-a7e4-280ad2184b04")
+			(effects
+				(font
+					(size 1 1)
+					(thickness 0.15)
+				)
+			)
+		)
+		(pad "1" smd roundrect
+			(at 0 0 90)
+			(size 2 1)
+			(layers "F.Cu" "F.Mask" "F.Paste")
+			(roundrect_rratio 0.15)
+			(net 111 "/GPS/GPS_TP")
+			(pinfunction "1")
+			(pintype "passive")
+			(thermal_bridge_angle 45)
+			(uuid "868cdbb7-c1c1-424f-8422-97abc1342c10")
+		)
+		(embedded_fonts no)
+		(embedded_files
+			(file
+				(name "TestPoint_KOASpeer_RCUCTE.step")
+				(type model)
+				(checksum "2AF83E4609FED5DE82404D774C0715F6")
+			)
+		)
+		(model "kicad-embed://TestPoint_KOASpeer_RCUCTE.step"
+			(offset
+				(xyz -0.75 -0.8 0.25)
+			)
+			(scale
+				(xyz 1 1 1)
+			)
+			(rotate
+				(xyz -0 -0 -0)
 			)
 		)
 	)
@@ -9157,7 +10010,7 @@
 	(footprint "Resistor_SMD:R_0603_1608Metric"
 		(layer "F.Cu")
 		(uuid "77f36c43-83e8-43ca-aeb2-aba3f049aa1d")
-		(at 73.5971 47.2548 -90)
+		(at 73.2 47.2548 -90)
 		(descr "Resistor SMD 0603 (1608 Metric), square (rectangular) end terminal, IPC-7351 nominal, (Body size source: IPC-SM-782 page 72, https://www.pcb-3d.com/wordpress/wp-content/uploads/ipc-sm-782a_amendment_1_and_2.pdf), generated with kicad-footprint-generator")
 		(tags "resistor")
 		(property "Reference" "R46"
@@ -11244,6 +12097,121 @@
 			)
 		)
 	)
+	(footprint "TestPoint_KOASpeer:TestPoint_Chip_RCUCTE_0603"
+		(layer "F.Cu")
+		(uuid "8a56d4a2-f6f1-41a9-8a8e-42375bc547d2")
+		(at 74 98.4)
+		(descr "Test Point Chip 0603 (1.6mmx0.8mm) RCU RC")
+		(tags "Test Point Chip 0603 (1.6mmx0.8mm) RCU RC")
+		(property "Reference" "TP35"
+			(at 0 -2 0)
+			(unlocked yes)
+			(layer "F.SilkS")
+			(uuid "78e9f0fe-78bc-4fd2-8c33-2965d0511419")
+			(effects
+				(font
+					(size 1 1)
+					(thickness 0.15)
+				)
+			)
+		)
+		(property "Value" "TestPoint_Small"
+			(at 0 -1 0)
+			(unlocked yes)
+			(layer "F.Fab")
+			(uuid "c07426c8-4c57-45ac-ac53-ef8bc9fd52be")
+			(effects
+				(font
+					(size 0.5 0.5)
+					(thickness 0.075)
+				)
+			)
+		)
+		(property "Datasheet" "~"
+			(at 0 0 0)
+			(unlocked yes)
+			(layer "F.Fab")
+			(hide yes)
+			(uuid "49b0ee8b-0ac5-4c6e-a2a6-12198c5bd95f")
+			(effects
+				(font
+					(size 1 1)
+					(thickness 0.15)
+				)
+			)
+		)
+		(property "Description" "test point"
+			(at 0 0 0)
+			(unlocked yes)
+			(layer "F.Fab")
+			(hide yes)
+			(uuid "1ae30afa-94f7-4ab6-840c-4365e7903daa")
+			(effects
+				(font
+					(size 1 1)
+					(thickness 0.15)
+				)
+			)
+		)
+		(property ki_fp_filters "Pin* Test*")
+		(path "/e838d24c-cb75-4a46-b88f-e4466a269629/2214e780-d208-45d0-b209-bf7fdba6f227")
+		(sheetname "/GPS/")
+		(sheetfile "gps.kicad_sch")
+		(attr smd)
+		(fp_rect
+			(start -1.25 -0.75)
+			(end 1.25 0.75)
+			(stroke
+				(width 0.05)
+				(type default)
+			)
+			(fill no)
+			(layer "F.CrtYd")
+			(uuid "55453c98-3e5d-4e54-916e-cba9daefb25e")
+		)
+		(fp_text user "${REFERENCE}"
+			(at 0 -2 0)
+			(unlocked yes)
+			(layer "F.Fab")
+			(uuid "03750ddc-09bf-4dfd-a252-ad343bd0cb43")
+			(effects
+				(font
+					(size 1 1)
+					(thickness 0.15)
+				)
+			)
+		)
+		(pad "1" smd roundrect
+			(at 0 0)
+			(size 2 1)
+			(layers "F.Cu" "F.Mask" "F.Paste")
+			(roundrect_rratio 0.15)
+			(net 84 "Net-(U11-RXD)")
+			(pinfunction "1")
+			(pintype "passive")
+			(thermal_bridge_angle 45)
+			(uuid "18174ca5-90b9-45f2-96d1-94b2fedcc076")
+		)
+		(embedded_fonts no)
+		(embedded_files
+			(file
+				(name "TestPoint_KOASpeer_RCUCTE.step")
+				(type model)
+				(checksum "2AF83E4609FED5DE82404D774C0715F6")
+			)
+		)
+		(model "kicad-embed://TestPoint_KOASpeer_RCUCTE.step"
+			(offset
+				(xyz -0.75 -0.8 0.25)
+			)
+			(scale
+				(xyz 1 1 1)
+			)
+			(rotate
+				(xyz -0 -0 -0)
+			)
+		)
+	)
 	(footprint "MSD-4-A:CUI_MSD-4-A"
 		(layer "F.Cu")
 		(uuid "8d345b7c-1c1c-42d9-9e74-7ae062f1d111")
@@ -12673,7 +13641,7 @@
 	(footprint "Connector_PinHeader_2.54mm:PinHeader_1x02_P2.54mm_Vertical"
 		(layer "F.Cu")
 		(uuid "90afa626-3523-4235-801a-e7103893fc46")
-		(at 81.25 84 -90)
+		(at 79.94 84 -90)
 		(descr "Through hole straight pin header, 1x02, 2.54mm pitch, single row")
 		(tags "Through hole pin header THT 1x02 2.54mm single row")
 		(property "Reference" "J7"
@@ -14865,6 +15833,121 @@
 			)
 		)
 	)
+	(footprint "TestPoint_KOASpeer:TestPoint_Chip_RCUCTE_0603"
+		(layer "F.Cu")
+		(uuid "a935a7d5-0357-4b50-8035-6414bf4d9581")
+		(at 88 103.4)
+		(descr "Test Point Chip 0603 (1.6mmx0.8mm) RCU RC")
+		(tags "Test Point Chip 0603 (1.6mmx0.8mm) RCU RC")
+		(property "Reference" "TP32"
+			(at 0 -2 0)
+			(unlocked yes)
+			(layer "F.SilkS")
+			(uuid "5a0c1f7f-84ac-4a41-af87-d6467faad7e0")
+			(effects
+				(font
+					(size 1 1)
+					(thickness 0.15)
+				)
+			)
+		)
+		(property "Value" "TestPoint_Small"
+			(at 0 -1 0)
+			(unlocked yes)
+			(layer "F.Fab")
+			(uuid "6e6d6717-b50d-41b5-a6e1-b13e899d4e40")
+			(effects
+				(font
+					(size 0.5 0.5)
+					(thickness 0.075)
+				)
+			)
+		)
+		(property "Datasheet" "~"
+			(at 0 0 0)
+			(unlocked yes)
+			(layer "F.Fab")
+			(hide yes)
+			(uuid "f713ffdf-43de-43cf-8fb5-c53652038665")
+			(effects
+				(font
+					(size 1 1)
+					(thickness 0.15)
+				)
+			)
+		)
+		(property "Description" "test point"
+			(at 0 0 0)
+			(unlocked yes)
+			(layer "F.Fab")
+			(hide yes)
+			(uuid "9c4cbcd7-6e7e-4d8a-bb8d-9451a6c772e8")
+			(effects
+				(font
+					(size 1 1)
+					(thickness 0.15)
+				)
+			)
+		)
+		(property ki_fp_filters "Pin* Test*")
+		(path "/e838d24c-cb75-4a46-b88f-e4466a269629/cc02f94c-9c8d-49cc-985d-d1dff6b1a88e")
+		(sheetname "/GPS/")
+		(sheetfile "gps.kicad_sch")
+		(attr smd)
+		(fp_rect
+			(start -1.25 -0.75)
+			(end 1.25 0.75)
+			(stroke
+				(width 0.05)
+				(type default)
+			)
+			(fill no)
+			(layer "F.CrtYd")
+			(uuid "d58d482f-ccac-4ddc-9722-46e0675e9a7b")
+		)
+		(fp_text user "${REFERENCE}"
+			(at 0 -2 0)
+			(unlocked yes)
+			(layer "F.Fab")
+			(uuid "c946f601-5cf2-4f3c-87e3-b352b1a3ae6b")
+			(effects
+				(font
+					(size 1 1)
+					(thickness 0.15)
+				)
+			)
+		)
+		(pad "1" smd roundrect
+			(at 0 0)
+			(size 2 1)
+			(layers "F.Cu" "F.Mask" "F.Paste")
+			(roundrect_rratio 0.15)
+			(net 128 "/GPS/GPS_EXINT")
+			(pinfunction "1")
+			(pintype "passive")
+			(thermal_bridge_angle 45)
+			(uuid "696e338b-fb0a-4b96-a0cf-378494e6761b")
+		)
+		(embedded_fonts no)
+		(embedded_files
+			(file
+				(name "TestPoint_KOASpeer_RCUCTE.step")
+				(type model)
+				(checksum "2AF83E4609FED5DE82404D774C0715F6")
+			)
+		)
+		(model "kicad-embed://TestPoint_KOASpeer_RCUCTE.step"
+			(offset
+				(xyz -0.75 -0.8 0.25)
+			)
+			(scale
+				(xyz 1 1 1)
+			)
+			(rotate
+				(xyz -0 -0 -0)
+			)
+		)
+	)
 	(footprint "LED_SMD:LED_Cree-PLCC4_3.2x2.8mm_CCW"
 		(layer "F.Cu")
 		(uuid "ae123e65-21b7-4f3c-8422-5d097594f5f3")
@@ -16594,7 +17677,7 @@
 	(footprint "SW_SameSky:SW_Samesky_SW_SLW-121456-3A-N-D"
 		(layer "F.Cu")
 		(uuid "b64887e0-048e-4aaa-9fe0-d8059e85dfa8")
-		(at 59.5 113.5)
+		(at 60.25 113.5)
 		(property "Reference" "SW2"
 			(at -2.575 -4.135 0)
 			(layer "F.SilkS")
@@ -24174,6 +25257,246 @@
 			)
 		)
 	)
+	(footprint "TestPoint_KOASpeer:TestPoint_Chip_RCUCTE_0603"
+		(layer "B.Cu")
+		(uuid "0bdf41a5-04e9-41b4-ae9b-0ab75f7cf50f")
+		(at 32.75 75.8 180)
+		(descr "Test Point Chip 0603 (1.6mmx0.8mm) RCU RC")
+		(tags "Test Point Chip 0603 (1.6mmx0.8mm) RCU RC")
+		(property "Reference" "TP6"
+			(at 0 2 0)
+			(unlocked yes)
+			(layer "B.SilkS")
+			(uuid "7403ed9a-843b-4559-936e-b6ffc52ee904")
+			(effects
+				(font
+					(size 1 1)
+					(thickness 0.15)
+				)
+				(justify mirror)
+			)
+		)
+		(property "Value" "TestPoint_Small"
+			(at 0 1 0)
+			(unlocked yes)
+			(layer "B.Fab")
+			(uuid "44633b4f-1e11-41ec-a37a-8920166b3f1d")
+			(effects
+				(font
+					(size 0.5 0.5)
+					(thickness 0.075)
+				)
+				(justify mirror)
+			)
+		)
+		(property "Datasheet" "~"
+			(at 0 0 0)
+			(unlocked yes)
+			(layer "B.Fab")
+			(hide yes)
+			(uuid "e129ffa3-ebd4-4189-a02f-518168803a15")
+			(effects
+				(font
+					(size 1 1)
+					(thickness 0.15)
+				)
+				(justify mirror)
+			)
+		)
+		(property "Description" "test point"
+			(at 0 0 0)
+			(unlocked yes)
+			(layer "B.Fab")
+			(hide yes)
+			(uuid "375b3cb3-b816-4e5f-af5c-865dc1c92249")
+			(effects
+				(font
+					(size 1 1)
+					(thickness 0.15)
+				)
+				(justify mirror)
+			)
+		)
+		(property ki_fp_filters "Pin* Test*")
+		(path "/9736895c-f0f7-444d-aab7-042381dec39a/1ff450d6-7b9f-4e4f-a1c0-0b71b03f8e82")
+		(sheetname "/Sensors/")
+		(sheetfile "sensors.kicad_sch")
+		(attr smd)
+		(fp_rect
+			(start -1.25 0.75)
+			(end 1.25 -0.75)
+			(stroke
+				(width 0.05)
+				(type default)
+			)
+			(fill no)
+			(layer "B.CrtYd")
+			(uuid "915a3f95-48fc-4acc-99d2-a2a761344ce0")
+		)
+		(fp_text user "${REFERENCE}"
+			(at 0 2 0)
+			(unlocked yes)
+			(layer "B.Fab")
+			(uuid "c3097ab9-9750-471f-a5ae-84fe8f3b0dd1")
+			(effects
+				(font
+					(size 1 1)
+					(thickness 0.15)
+				)
+				(justify mirror)
+			)
+		)
+		(pad "1" smd roundrect
+			(at 0 0 180)
+			(size 2 1)
+			(layers "B.Cu" "B.Mask" "B.Paste")
+			(roundrect_rratio 0.15)
+			(net 64 "/MCU/IMU_CS")
+			(pinfunction "1")
+			(pintype "passive")
+			(thermal_bridge_angle 45)
+			(uuid "908748f9-a573-4682-9634-2aeea393ea4f")
+		)
+		(embedded_fonts no)
+		(embedded_files
+			(file
+				(name "TestPoint_KOASpeer_RCUCTE.step")
+				(type model)
+				(checksum "2AF83E4609FED5DE82404D774C0715F6")
+			)
+		)
+		(model "kicad-embed://TestPoint_KOASpeer_RCUCTE.step"
+			(offset
+				(xyz -0.75 -0.8 0.25)
+			)
+			(scale
+				(xyz 1 1 1)
+			)
+			(rotate
+				(xyz -0 -0 -0)
+			)
+		)
+	)
+	(footprint "TestPoint_KOASpeer:TestPoint_Chip_RCUCTE_0603"
+		(layer "B.Cu")
+		(uuid "0c6ce34c-e4cc-40d6-b13b-d148e47a2af5")
+		(at 20.1 73.25 180)
+		(descr "Test Point Chip 0603 (1.6mmx0.8mm) RCU RC")
+		(tags "Test Point Chip 0603 (1.6mmx0.8mm) RCU RC")
+		(property "Reference" "TP20"
+			(at 0 2 0)
+			(unlocked yes)
+			(layer "B.SilkS")
+			(uuid "02a72467-9c12-459e-b88c-b6536a321e1f")
+			(effects
+				(font
+					(size 1 1)
+					(thickness 0.15)
+				)
+				(justify mirror)
+			)
+		)
+		(property "Value" "TestPoint_Small"
+			(at 0 1 0)
+			(unlocked yes)
+			(layer "B.Fab")
+			(uuid "dc6b7841-403a-44c7-bb6b-6a1b97213b13")
+			(effects
+				(font
+					(size 0.5 0.5)
+					(thickness 0.075)
+				)
+				(justify mirror)
+			)
+		)
+		(property "Datasheet" "~"
+			(at 0 0 0)
+			(unlocked yes)
+			(layer "B.Fab")
+			(hide yes)
+			(uuid "bbfc2325-d30a-4897-bdbe-f00cab3aaf10")
+			(effects
+				(font
+					(size 1 1)
+					(thickness 0.15)
+				)
+				(justify mirror)
+			)
+		)
+		(property "Description" "test point"
+			(at 0 0 0)
+			(unlocked yes)
+			(layer "B.Fab")
+			(hide yes)
+			(uuid "d3289473-665e-4d9c-9c06-4ec4493967b6")
+			(effects
+				(font
+					(size 1 1)
+					(thickness 0.15)
+				)
+				(justify mirror)
+			)
+		)
+		(property ki_fp_filters "Pin* Test*")
+		(path "/6e71e7a3-1bcd-4797-b2e4-88d14bf1f853/11457670-ca42-4b5a-b8a2-0a868a469b3d")
+		(sheetname "/Memory/")
+		(sheetfile "flash.kicad_sch")
+		(attr smd)
+		(fp_rect
+			(start -1.25 0.75)
+			(end 1.25 -0.75)
+			(stroke
+				(width 0.05)
+				(type default)
+			)
+			(fill no)
+			(layer "B.CrtYd")
+			(uuid "314d72d3-d341-436e-a5ec-1cfd37bf04ba")
+		)
+		(fp_text user "${REFERENCE}"
+			(at 0 2 0)
+			(unlocked yes)
+			(layer "B.Fab")
+			(uuid "e0f3a861-a664-4f54-ac94-df03c2a18556")
+			(effects
+				(font
+					(size 1 1)
+					(thickness 0.15)
+				)
+				(justify mirror)
+			)
+		)
+		(pad "1" smd roundrect
+			(at 0 0 180)
+			(size 2 1)
+			(layers "B.Cu" "B.Mask" "B.Paste")
+			(roundrect_rratio 0.15)
+			(net 83 "/MCU/FLASH_IO3")
+			(pinfunction "1")
+			(pintype "passive")
+			(thermal_bridge_angle 45)
+			(uuid "93521468-91f8-4372-a67c-e06f9dbacfac")
+		)
+		(embedded_fonts no)
+		(embedded_files
+			(file
+				(name "TestPoint_KOASpeer_RCUCTE.step")
+				(type model)
+				(checksum "2AF83E4609FED5DE82404D774C0715F6")
+			)
+		)
+		(model "kicad-embed://TestPoint_KOASpeer_RCUCTE.step"
+			(offset
+				(xyz -0.75 -0.8 0.25)
+			)
+			(scale
+				(xyz 1 1 1)
+			)
+			(rotate
+				(xyz -0 -0 -0)
+			)
+		)
+	)
 	(footprint "Inductor_SMD:L_0603_1608Metric"
 		(layer "B.Cu")
 		(uuid "0c71b77d-bb18-4c19-9bb9-85ce31913424")
@@ -24375,6 +25698,367 @@
 			)
 			(rotate
 				(xyz 0 0 0)
+			)
+		)
+	)
+	(footprint "TestPoint_KOASpeer:TestPoint_Chip_RCUCTE_0603"
+		(layer "B.Cu")
+		(uuid "0f6e5726-c5f4-4da1-8de5-9b3069390363")
+		(at 18.80627 90.2 135)
+		(descr "Test Point Chip 0603 (1.6mmx0.8mm) RCU RC")
+		(tags "Test Point Chip 0603 (1.6mmx0.8mm) RCU RC")
+		(property "Reference" "TP31"
+			(at 0 2.000001 315)
+			(unlocked yes)
+			(layer "B.SilkS")
+			(uuid "4390ec52-802a-4577-8dc8-b1299f47ec7f")
+			(effects
+				(font
+					(size 1 1)
+					(thickness 0.15)
+				)
+				(justify mirror)
+			)
+		)
+		(property "Value" "TestPoint_Small"
+			(at 0 1 315)
+			(unlocked yes)
+			(layer "B.Fab")
+			(uuid "254cbd21-1bac-4eb1-8b3c-eee482386573")
+			(effects
+				(font
+					(size 0.5 0.5)
+					(thickness 0.075)
+				)
+				(justify mirror)
+			)
+		)
+		(property "Datasheet" "~"
+			(at 0 0 315)
+			(unlocked yes)
+			(layer "B.Fab")
+			(hide yes)
+			(uuid "8efa00bb-3ad8-47f5-a1fd-7c013292ff73")
+			(effects
+				(font
+					(size 1 1)
+					(thickness 0.15)
+				)
+				(justify mirror)
+			)
+		)
+		(property "Description" "test point"
+			(at 0 0 315)
+			(unlocked yes)
+			(layer "B.Fab")
+			(hide yes)
+			(uuid "68685e02-f427-487c-9961-00a59bf6fba0")
+			(effects
+				(font
+					(size 1 1)
+					(thickness 0.15)
+				)
+				(justify mirror)
+			)
+		)
+		(property ki_fp_filters "Pin* Test*")
+		(path "/16b7f3d3-745f-44d9-93a4-41f5bfd830cb/a1e1a438-1b9b-465e-b135-9a192adef802")
+		(sheetname "/Telemetry/")
+		(sheetfile "telemetry.kicad_sch")
+		(attr smd)
+		(fp_poly
+			(pts
+				(xy -1.25 0.750001) (xy 1.25 0.750001) (xy 1.25 -0.750001) (xy -1.25 -0.750001)
+			)
+			(stroke
+				(width 0.05)
+				(type default)
+			)
+			(fill no)
+			(layer "B.CrtYd")
+			(uuid "05d6b595-9397-4d71-901a-d9d88cd078a2")
+		)
+		(fp_text user "${REFERENCE}"
+			(at 0 2.000001 315)
+			(unlocked yes)
+			(layer "B.Fab")
+			(uuid "88c308fa-cd61-4eb7-a156-4a1e53b981ed")
+			(effects
+				(font
+					(size 1 1)
+					(thickness 0.15)
+				)
+				(justify mirror)
+			)
+		)
+		(pad "1" smd roundrect
+			(at 0 0 135)
+			(size 2 1)
+			(layers "B.Cu" "B.Mask" "B.Paste")
+			(roundrect_rratio 0.15)
+			(net 66 "/MCU/RF_IO2")
+			(pinfunction "1")
+			(pintype "passive")
+			(thermal_bridge_angle 45)
+			(uuid "6f149168-3a99-4fea-886c-e9c885906f62")
+		)
+		(embedded_fonts no)
+		(embedded_files
+			(file
+				(name "TestPoint_KOASpeer_RCUCTE.step")
+				(type model)
+				(checksum "2AF83E4609FED5DE82404D774C0715F6")
+			)
+		)
+		(model "kicad-embed://TestPoint_KOASpeer_RCUCTE.step"
+			(offset
+				(xyz -0.75 -0.8 0.25)
+			)
+			(scale
+				(xyz 1 1 1)
+			)
+			(rotate
+				(xyz -0 -0 -0)
+			)
+		)
+	)
+	(footprint "TestPoint_KOASpeer:TestPoint_Chip_RCUCTE_0603"
+		(layer "B.Cu")
+		(uuid "1a75afdc-2fe2-4c5d-8a3d-10034f10ad92")
+		(at 29.2 65.6 180)
+		(descr "Test Point Chip 0603 (1.6mmx0.8mm) RCU RC")
+		(tags "Test Point Chip 0603 (1.6mmx0.8mm) RCU RC")
+		(property "Reference" "TP8"
+			(at 0 2 0)
+			(unlocked yes)
+			(layer "B.SilkS")
+			(uuid "4e8f3686-8e59-49d9-b23d-2ba62a9c236c")
+			(effects
+				(font
+					(size 1 1)
+					(thickness 0.15)
+				)
+				(justify mirror)
+			)
+		)
+		(property "Value" "TestPoint_Small"
+			(at 0 1 0)
+			(unlocked yes)
+			(layer "B.Fab")
+			(uuid "0f6179a5-a82e-4f44-8856-27fadd6e5da6")
+			(effects
+				(font
+					(size 0.5 0.5)
+					(thickness 0.075)
+				)
+				(justify mirror)
+			)
+		)
+		(property "Datasheet" "~"
+			(at 0 0 0)
+			(unlocked yes)
+			(layer "B.Fab")
+			(hide yes)
+			(uuid "2a590329-9833-407d-ba3b-fc1e8cd45677")
+			(effects
+				(font
+					(size 1 1)
+					(thickness 0.15)
+				)
+				(justify mirror)
+			)
+		)
+		(property "Description" "test point"
+			(at 0 0 0)
+			(unlocked yes)
+			(layer "B.Fab")
+			(hide yes)
+			(uuid "2685cbb6-96ef-4457-9877-af2b45e11b4c")
+			(effects
+				(font
+					(size 1 1)
+					(thickness 0.15)
+				)
+				(justify mirror)
+			)
+		)
+		(property ki_fp_filters "Pin* Test*")
+		(path "/9736895c-f0f7-444d-aab7-042381dec39a/b06430f6-fc82-45cc-9dfe-bc6e5f43a334")
+		(sheetname "/Sensors/")
+		(sheetfile "sensors.kicad_sch")
+		(attr smd)
+		(fp_rect
+			(start -1.25 0.75)
+			(end 1.25 -0.75)
+			(stroke
+				(width 0.05)
+				(type default)
+			)
+			(fill no)
+			(layer "B.CrtYd")
+			(uuid "0ad3ddd8-257e-45ce-b4d4-8c4c3a9930bd")
+		)
+		(fp_text user "${REFERENCE}"
+			(at 0 2 0)
+			(unlocked yes)
+			(layer "B.Fab")
+			(uuid "4d4bc149-c950-4802-a337-47e19fa9bf29")
+			(effects
+				(font
+					(size 1 1)
+					(thickness 0.15)
+				)
+				(justify mirror)
+			)
+		)
+		(pad "1" smd roundrect
+			(at 0 0 180)
+			(size 2 1)
+			(layers "B.Cu" "B.Mask" "B.Paste")
+			(roundrect_rratio 0.15)
+			(net 130 "/Sensors/MOSI")
+			(pinfunction "1")
+			(pintype "passive")
+			(thermal_bridge_angle 45)
+			(uuid "0d414b93-c235-4f4f-91d3-9a2b0269ccf9")
+		)
+		(embedded_fonts no)
+		(embedded_files
+			(file
+				(name "TestPoint_KOASpeer_RCUCTE.step")
+				(type model)
+				(checksum "2AF83E4609FED5DE82404D774C0715F6")
+			)
+		)
+		(model "kicad-embed://TestPoint_KOASpeer_RCUCTE.step"
+			(offset
+				(xyz -0.75 -0.8 0.25)
+			)
+			(scale
+				(xyz 1 1 1)
+			)
+			(rotate
+				(xyz -0 -0 -0)
+			)
+		)
+	)
+	(footprint "TestPoint_KOASpeer:TestPoint_Chip_RCUCTE_0603"
+		(layer "B.Cu")
+		(uuid "1f90c3d0-41b4-4def-bcc4-79dec21d6be3")
+		(at 24.10627 85.45 180)
+		(descr "Test Point Chip 0603 (1.6mmx0.8mm) RCU RC")
+		(tags "Test Point Chip 0603 (1.6mmx0.8mm) RCU RC")
+		(property "Reference" "TP24"
+			(at 0 2 0)
+			(unlocked yes)
+			(layer "B.SilkS")
+			(uuid "22dbe167-5197-47a3-a264-bcb0e27b0b54")
+			(effects
+				(font
+					(size 1 1)
+					(thickness 0.15)
+				)
+				(justify mirror)
+			)
+		)
+		(property "Value" "TestPoint_Small"
+			(at 0 1 0)
+			(unlocked yes)
+			(layer "B.Fab")
+			(uuid "e898d178-8c1e-4db6-9d18-f8d2170efa18")
+			(effects
+				(font
+					(size 0.5 0.5)
+					(thickness 0.075)
+				)
+				(justify mirror)
+			)
+		)
+		(property "Datasheet" "~"
+			(at 0 0 0)
+			(unlocked yes)
+			(layer "B.Fab")
+			(hide yes)
+			(uuid "13737c08-c2fe-434e-96f8-e675b0b6ba32")
+			(effects
+				(font
+					(size 1 1)
+					(thickness 0.15)
+				)
+				(justify mirror)
+			)
+		)
+		(property "Description" "test point"
+			(at 0 0 0)
+			(unlocked yes)
+			(layer "B.Fab")
+			(hide yes)
+			(uuid "e37ac838-2b14-4dbb-b73b-bbbbc18aa683")
+			(effects
+				(font
+					(size 1 1)
+					(thickness 0.15)
+				)
+				(justify mirror)
+			)
+		)
+		(property ki_fp_filters "Pin* Test*")
+		(path "/16b7f3d3-745f-44d9-93a4-41f5bfd830cb/c8c59a09-d5b1-4c31-82c5-a7b23eaa5eec")
+		(sheetname "/Telemetry/")
+		(sheetfile "telemetry.kicad_sch")
+		(attr smd)
+		(fp_rect
+			(start -1.25 0.75)
+			(end 1.25 -0.75)
+			(stroke
+				(width 0.05)
+				(type default)
+			)
+			(fill no)
+			(layer "B.CrtYd")
+			(uuid "c3f3ff7a-8f60-4f23-9434-58a0a540e393")
+		)
+		(fp_text user "${REFERENCE}"
+			(at 0 2 0)
+			(unlocked yes)
+			(layer "B.Fab")
+			(uuid "a5920acc-5d9f-44fc-9b68-a987f2b9eb67")
+			(effects
+				(font
+					(size 1 1)
+					(thickness 0.15)
+				)
+				(justify mirror)
+			)
+		)
+		(pad "1" smd roundrect
+			(at 0 0 180)
+			(size 2 1)
+			(layers "B.Cu" "B.Mask" "B.Paste")
+			(roundrect_rratio 0.15)
+			(net 117 "/MCU/RF_MISO")
+			(pinfunction "1")
+			(pintype "passive")
+			(thermal_bridge_angle 45)
+			(uuid "82d29a67-dd2e-4c77-af10-e1dfec8d85ea")
+		)
+		(embedded_fonts no)
+		(embedded_files
+			(file
+				(name "TestPoint_KOASpeer_RCUCTE.step")
+				(type model)
+				(checksum "2AF83E4609FED5DE82404D774C0715F6")
+			)
+		)
+		(model "kicad-embed://TestPoint_KOASpeer_RCUCTE.step"
+			(offset
+				(xyz -0.75 -0.8 0.25)
+			)
+			(scale
+				(xyz 1 1 1)
+			)
+			(rotate
+				(xyz -0 -0 -0)
 			)
 		)
 	)
@@ -25281,6 +26965,126 @@
 			)
 		)
 	)
+	(footprint "TestPoint_KOASpeer:TestPoint_Chip_RCUCTE_0603"
+		(layer "B.Cu")
+		(uuid "2e1230a7-f5a6-4a33-aa15-8fb4f50c9a48")
+		(at 20.1 70.7 180)
+		(descr "Test Point Chip 0603 (1.6mmx0.8mm) RCU RC")
+		(tags "Test Point Chip 0603 (1.6mmx0.8mm) RCU RC")
+		(property "Reference" "TP19"
+			(at 0 2 0)
+			(unlocked yes)
+			(layer "B.SilkS")
+			(uuid "c099a1d7-730a-47d6-babd-8e9952157c67")
+			(effects
+				(font
+					(size 1 1)
+					(thickness 0.15)
+				)
+				(justify mirror)
+			)
+		)
+		(property "Value" "TestPoint_Small"
+			(at 0 1 0)
+			(unlocked yes)
+			(layer "B.Fab")
+			(uuid "024c7a8c-d9f4-42e2-906f-2166ced7229c")
+			(effects
+				(font
+					(size 0.5 0.5)
+					(thickness 0.075)
+				)
+				(justify mirror)
+			)
+		)
+		(property "Datasheet" "~"
+			(at 0 0 0)
+			(unlocked yes)
+			(layer "B.Fab")
+			(hide yes)
+			(uuid "ebf454d7-1217-46a2-a3fe-bfbe4d18e003")
+			(effects
+				(font
+					(size 1 1)
+					(thickness 0.15)
+				)
+				(justify mirror)
+			)
+		)
+		(property "Description" "test point"
+			(at 0 0 0)
+			(unlocked yes)
+			(layer "B.Fab")
+			(hide yes)
+			(uuid "212355da-9355-424e-8e28-1e7a8de7b466")
+			(effects
+				(font
+					(size 1 1)
+					(thickness 0.15)
+				)
+				(justify mirror)
+			)
+		)
+		(property ki_fp_filters "Pin* Test*")
+		(path "/6e71e7a3-1bcd-4797-b2e4-88d14bf1f853/2ae794cc-93d2-4b1b-9b65-806667f7b223")
+		(sheetname "/Memory/")
+		(sheetfile "flash.kicad_sch")
+		(attr smd)
+		(fp_rect
+			(start -1.25 0.75)
+			(end 1.25 -0.75)
+			(stroke
+				(width 0.05)
+				(type default)
+			)
+			(fill no)
+			(layer "B.CrtYd")
+			(uuid "acc1c83d-b3f5-4023-acd5-6f9fdfe9d2f3")
+		)
+		(fp_text user "${REFERENCE}"
+			(at 0 2 0)
+			(unlocked yes)
+			(layer "B.Fab")
+			(uuid "15ba6280-a355-475a-8202-59355686d3f8")
+			(effects
+				(font
+					(size 1 1)
+					(thickness 0.15)
+				)
+				(justify mirror)
+			)
+		)
+		(pad "1" smd roundrect
+			(at 0 0 180)
+			(size 2 1)
+			(layers "B.Cu" "B.Mask" "B.Paste")
+			(roundrect_rratio 0.15)
+			(net 80 "/MCU/FLASH_IO2")
+			(pinfunction "1")
+			(pintype "passive")
+			(thermal_bridge_angle 45)
+			(uuid "9207a71c-9b68-45b7-be65-a262c81a0dc7")
+		)
+		(embedded_fonts no)
+		(embedded_files
+			(file
+				(name "TestPoint_KOASpeer_RCUCTE.step")
+				(type model)
+				(checksum "2AF83E4609FED5DE82404D774C0715F6")
+			)
+		)
+		(model "kicad-embed://TestPoint_KOASpeer_RCUCTE.step"
+			(offset
+				(xyz -0.75 -0.8 0.25)
+			)
+			(scale
+				(xyz 1 1 1)
+			)
+			(rotate
+				(xyz -0 -0 -0)
+			)
+		)
+	)
 	(footprint "Capacitor_SMD:C_0603_1608Metric"
 		(layer "B.Cu")
 		(uuid "3069394e-f7ff-4e17-adbd-d6d3a96d98f6")
@@ -25485,6 +27289,126 @@
 			)
 		)
 	)
+	(footprint "TestPoint_KOASpeer:TestPoint_Chip_RCUCTE_0603"
+		(layer "B.Cu")
+		(uuid "3163ffed-ca51-431a-a56e-9fb4380715ac")
+		(at 25.65 65.6 180)
+		(descr "Test Point Chip 0603 (1.6mmx0.8mm) RCU RC")
+		(tags "Test Point Chip 0603 (1.6mmx0.8mm) RCU RC")
+		(property "Reference" "TP14"
+			(at 0 2 0)
+			(unlocked yes)
+			(layer "B.SilkS")
+			(uuid "e08b0e40-7b94-484b-ba4c-67e55021735e")
+			(effects
+				(font
+					(size 1 1)
+					(thickness 0.15)
+				)
+				(justify mirror)
+			)
+		)
+		(property "Value" "TestPoint_Small"
+			(at 0 1 0)
+			(unlocked yes)
+			(layer "B.Fab")
+			(uuid "c2d8a442-9171-4235-af52-d1a9535c7df6")
+			(effects
+				(font
+					(size 0.5 0.5)
+					(thickness 0.075)
+				)
+				(justify mirror)
+			)
+		)
+		(property "Datasheet" "~"
+			(at 0 0 0)
+			(unlocked yes)
+			(layer "B.Fab")
+			(hide yes)
+			(uuid "6c28ad05-176c-443b-bcd5-87a1b79ec9dd")
+			(effects
+				(font
+					(size 1 1)
+					(thickness 0.15)
+				)
+				(justify mirror)
+			)
+		)
+		(property "Description" "test point"
+			(at 0 0 0)
+			(unlocked yes)
+			(layer "B.Fab")
+			(hide yes)
+			(uuid "f4265908-f08b-4e5c-99b3-088d3fd0a35d")
+			(effects
+				(font
+					(size 1 1)
+					(thickness 0.15)
+				)
+				(justify mirror)
+			)
+		)
+		(property ki_fp_filters "Pin* Test*")
+		(path "/9736895c-f0f7-444d-aab7-042381dec39a/f875890b-0d0f-4ddd-83ea-99e993e06bd3")
+		(sheetname "/Sensors/")
+		(sheetfile "sensors.kicad_sch")
+		(attr smd)
+		(fp_rect
+			(start -1.25 0.75)
+			(end 1.25 -0.75)
+			(stroke
+				(width 0.05)
+				(type default)
+			)
+			(fill no)
+			(layer "B.CrtYd")
+			(uuid "97d299ee-f5b2-45c7-8d31-baeb21415c9c")
+		)
+		(fp_text user "${REFERENCE}"
+			(at 0 2 0)
+			(unlocked yes)
+			(layer "B.Fab")
+			(uuid "0df9d212-a085-4071-83ab-442316036358")
+			(effects
+				(font
+					(size 1 1)
+					(thickness 0.15)
+				)
+				(justify mirror)
+			)
+		)
+		(pad "1" smd roundrect
+			(at 0 0 180)
+			(size 2 1)
+			(layers "B.Cu" "B.Mask" "B.Paste")
+			(roundrect_rratio 0.15)
+			(net 62 "/MCU/MAG_CS")
+			(pinfunction "1")
+			(pintype "passive")
+			(thermal_bridge_angle 45)
+			(uuid "2358f88e-eb4f-42c9-976d-eebf0944e13c")
+		)
+		(embedded_fonts no)
+		(embedded_files
+			(file
+				(name "TestPoint_KOASpeer_RCUCTE.step")
+				(type model)
+				(checksum "2AF83E4609FED5DE82404D774C0715F6")
+			)
+		)
+		(model "kicad-embed://TestPoint_KOASpeer_RCUCTE.step"
+			(offset
+				(xyz -0.75 -0.8 0.25)
+			)
+			(scale
+				(xyz 1 1 1)
+			)
+			(rotate
+				(xyz -0 -0 -0)
+			)
+		)
+	)
 	(footprint "Capacitor_SMD:C_0603_1608Metric"
 		(layer "B.Cu")
 		(uuid "337ea278-77fa-4184-95b6-c6902fac098e")
@@ -25686,6 +27610,246 @@
 			)
 			(rotate
 				(xyz 0 0 0)
+			)
+		)
+	)
+	(footprint "TestPoint_KOASpeer:TestPoint_Chip_RCUCTE_0603"
+		(layer "B.Cu")
+		(uuid "35a2bfc5-9508-4d68-885e-9d2944a2fb83")
+		(at 32.75 73.25 180)
+		(descr "Test Point Chip 0603 (1.6mmx0.8mm) RCU RC")
+		(tags "Test Point Chip 0603 (1.6mmx0.8mm) RCU RC")
+		(property "Reference" "TP5"
+			(at 0 2 0)
+			(unlocked yes)
+			(layer "B.SilkS")
+			(uuid "136ef9f7-b4f7-42ca-bf2f-f6c2777ce414")
+			(effects
+				(font
+					(size 1 1)
+					(thickness 0.15)
+				)
+				(justify mirror)
+			)
+		)
+		(property "Value" "TestPoint_Small"
+			(at 0 1 0)
+			(unlocked yes)
+			(layer "B.Fab")
+			(uuid "6d283fc5-ef30-4924-b61a-10e7212f55ac")
+			(effects
+				(font
+					(size 0.5 0.5)
+					(thickness 0.075)
+				)
+				(justify mirror)
+			)
+		)
+		(property "Datasheet" "~"
+			(at 0 0 0)
+			(unlocked yes)
+			(layer "B.Fab")
+			(hide yes)
+			(uuid "5e792c09-7903-45ce-9be6-bfdf20beeb29")
+			(effects
+				(font
+					(size 1 1)
+					(thickness 0.15)
+				)
+				(justify mirror)
+			)
+		)
+		(property "Description" "test point"
+			(at 0 0 0)
+			(unlocked yes)
+			(layer "B.Fab")
+			(hide yes)
+			(uuid "94585b27-ea4a-4094-adab-c9903bfd9271")
+			(effects
+				(font
+					(size 1 1)
+					(thickness 0.15)
+				)
+				(justify mirror)
+			)
+		)
+		(property ki_fp_filters "Pin* Test*")
+		(path "/9736895c-f0f7-444d-aab7-042381dec39a/629cd2c1-c3ae-4fd2-95a6-249c7361971f")
+		(sheetname "/Sensors/")
+		(sheetfile "sensors.kicad_sch")
+		(attr smd)
+		(fp_rect
+			(start -1.25 0.75)
+			(end 1.25 -0.75)
+			(stroke
+				(width 0.05)
+				(type default)
+			)
+			(fill no)
+			(layer "B.CrtYd")
+			(uuid "0b8693a2-034b-4b4e-9c6e-b3263a4ee770")
+		)
+		(fp_text user "${REFERENCE}"
+			(at 0 2 0)
+			(unlocked yes)
+			(layer "B.Fab")
+			(uuid "66caf925-b34f-4f8e-b561-61419e8a2739")
+			(effects
+				(font
+					(size 1 1)
+					(thickness 0.15)
+				)
+				(justify mirror)
+			)
+		)
+		(pad "1" smd roundrect
+			(at 0 0 180)
+			(size 2 1)
+			(layers "B.Cu" "B.Mask" "B.Paste")
+			(roundrect_rratio 0.15)
+			(net 121 "/MCU/BARO_INT")
+			(pinfunction "1")
+			(pintype "passive")
+			(thermal_bridge_angle 45)
+			(uuid "9b5531cf-e9c5-4408-b572-de431e92c5ce")
+		)
+		(embedded_fonts no)
+		(embedded_files
+			(file
+				(name "TestPoint_KOASpeer_RCUCTE.step")
+				(type model)
+				(checksum "2AF83E4609FED5DE82404D774C0715F6")
+			)
+		)
+		(model "kicad-embed://TestPoint_KOASpeer_RCUCTE.step"
+			(offset
+				(xyz -0.75 -0.8 0.25)
+			)
+			(scale
+				(xyz 1 1 1)
+			)
+			(rotate
+				(xyz -0 -0 -0)
+			)
+		)
+	)
+	(footprint "TestPoint_KOASpeer:TestPoint_Chip_RCUCTE_0603"
+		(layer "B.Cu")
+		(uuid "36a15abd-6237-438b-b148-1115772ce4a8")
+		(at 29.2 63.05 180)
+		(descr "Test Point Chip 0603 (1.6mmx0.8mm) RCU RC")
+		(tags "Test Point Chip 0603 (1.6mmx0.8mm) RCU RC")
+		(property "Reference" "TP7"
+			(at 0 2 0)
+			(unlocked yes)
+			(layer "B.SilkS")
+			(uuid "0f656772-a248-46f7-b665-4cabb9290fb4")
+			(effects
+				(font
+					(size 1 1)
+					(thickness 0.15)
+				)
+				(justify mirror)
+			)
+		)
+		(property "Value" "TestPoint_Small"
+			(at 0 1 0)
+			(unlocked yes)
+			(layer "B.Fab")
+			(uuid "747f9d1c-dbe0-4991-af02-b8bea135b9c2")
+			(effects
+				(font
+					(size 0.5 0.5)
+					(thickness 0.075)
+				)
+				(justify mirror)
+			)
+		)
+		(property "Datasheet" "~"
+			(at 0 0 0)
+			(unlocked yes)
+			(layer "B.Fab")
+			(hide yes)
+			(uuid "775bb131-3def-45c1-8f31-d93f407d7471")
+			(effects
+				(font
+					(size 1 1)
+					(thickness 0.15)
+				)
+				(justify mirror)
+			)
+		)
+		(property "Description" "test point"
+			(at 0 0 0)
+			(unlocked yes)
+			(layer "B.Fab")
+			(hide yes)
+			(uuid "570a9e1e-b262-43d4-9903-8593820c53a4")
+			(effects
+				(font
+					(size 1 1)
+					(thickness 0.15)
+				)
+				(justify mirror)
+			)
+		)
+		(property ki_fp_filters "Pin* Test*")
+		(path "/9736895c-f0f7-444d-aab7-042381dec39a/877b31fc-9e8f-4b48-86c5-47f6d97a6d08")
+		(sheetname "/Sensors/")
+		(sheetfile "sensors.kicad_sch")
+		(attr smd)
+		(fp_rect
+			(start -1.25 0.75)
+			(end 1.25 -0.75)
+			(stroke
+				(width 0.05)
+				(type default)
+			)
+			(fill no)
+			(layer "B.CrtYd")
+			(uuid "9dde4fa8-c3ef-451a-966f-bc53bd024226")
+		)
+		(fp_text user "${REFERENCE}"
+			(at 0 2 0)
+			(unlocked yes)
+			(layer "B.Fab")
+			(uuid "d910276c-3f71-4186-b79d-a09d0868986d")
+			(effects
+				(font
+					(size 1 1)
+					(thickness 0.15)
+				)
+				(justify mirror)
+			)
+		)
+		(pad "1" smd roundrect
+			(at 0 0 180)
+			(size 2 1)
+			(layers "B.Cu" "B.Mask" "B.Paste")
+			(roundrect_rratio 0.15)
+			(net 124 "/Sensors/MISO")
+			(pinfunction "1")
+			(pintype "passive")
+			(thermal_bridge_angle 45)
+			(uuid "0777f82a-04c2-4d7f-9539-4ab24c2365d7")
+		)
+		(embedded_fonts no)
+		(embedded_files
+			(file
+				(name "TestPoint_KOASpeer_RCUCTE.step")
+				(type model)
+				(checksum "2AF83E4609FED5DE82404D774C0715F6")
+			)
+		)
+		(model "kicad-embed://TestPoint_KOASpeer_RCUCTE.step"
+			(offset
+				(xyz -0.75 -0.8 0.25)
+			)
+			(scale
+				(xyz 1 1 1)
+			)
+			(rotate
+				(xyz -0 -0 -0)
 			)
 		)
 	)
@@ -26097,6 +28261,366 @@
 			)
 		)
 	)
+	(footprint "TestPoint_KOASpeer:TestPoint_Chip_RCUCTE_0603"
+		(layer "B.Cu")
+		(uuid "3c83b1be-8ade-4d3b-8623-dca6d0b1e7b6")
+		(at 20.55627 82.9 180)
+		(descr "Test Point Chip 0603 (1.6mmx0.8mm) RCU RC")
+		(tags "Test Point Chip 0603 (1.6mmx0.8mm) RCU RC")
+		(property "Reference" "TP28"
+			(at 0 2 0)
+			(unlocked yes)
+			(layer "B.SilkS")
+			(uuid "67792a41-0d86-453b-b4e8-6208485725b7")
+			(effects
+				(font
+					(size 1 1)
+					(thickness 0.15)
+				)
+				(justify mirror)
+			)
+		)
+		(property "Value" "TestPoint_Small"
+			(at 0 1 0)
+			(unlocked yes)
+			(layer "B.Fab")
+			(uuid "9f87625c-a72c-4dbd-b1f4-6c296f6e5d45")
+			(effects
+				(font
+					(size 0.5 0.5)
+					(thickness 0.075)
+				)
+				(justify mirror)
+			)
+		)
+		(property "Datasheet" "~"
+			(at 0 0 0)
+			(unlocked yes)
+			(layer "B.Fab")
+			(hide yes)
+			(uuid "09ad942f-7815-4557-89f5-417689c354f6")
+			(effects
+				(font
+					(size 1 1)
+					(thickness 0.15)
+				)
+				(justify mirror)
+			)
+		)
+		(property "Description" "test point"
+			(at 0 0 0)
+			(unlocked yes)
+			(layer "B.Fab")
+			(hide yes)
+			(uuid "54498dea-7dfd-4fd3-abf8-bbd119082121")
+			(effects
+				(font
+					(size 1 1)
+					(thickness 0.15)
+				)
+				(justify mirror)
+			)
+		)
+		(property ki_fp_filters "Pin* Test*")
+		(path "/16b7f3d3-745f-44d9-93a4-41f5bfd830cb/8ec6fd76-f814-450b-9240-056b332f230a")
+		(sheetname "/Telemetry/")
+		(sheetfile "telemetry.kicad_sch")
+		(attr smd)
+		(fp_rect
+			(start -1.25 0.75)
+			(end 1.25 -0.75)
+			(stroke
+				(width 0.05)
+				(type default)
+			)
+			(fill no)
+			(layer "B.CrtYd")
+			(uuid "a236421d-73ec-4a8f-98c6-c85a5cc6e444")
+		)
+		(fp_text user "${REFERENCE}"
+			(at 0 2 0)
+			(unlocked yes)
+			(layer "B.Fab")
+			(uuid "4eaeb2e6-5c5e-4d53-b2ac-33b291a1b756")
+			(effects
+				(font
+					(size 1 1)
+					(thickness 0.15)
+				)
+				(justify mirror)
+			)
+		)
+		(pad "1" smd roundrect
+			(at 0 0 180)
+			(size 2 1)
+			(layers "B.Cu" "B.Mask" "B.Paste")
+			(roundrect_rratio 0.15)
+			(net 115 "/MCU/RF_RXEN")
+			(pinfunction "1")
+			(pintype "passive")
+			(thermal_bridge_angle 45)
+			(uuid "e0f520cb-6797-4624-a04b-7e7c76a7c6e3")
+		)
+		(embedded_fonts no)
+		(embedded_files
+			(file
+				(name "TestPoint_KOASpeer_RCUCTE.step")
+				(type model)
+				(checksum "2AF83E4609FED5DE82404D774C0715F6")
+			)
+		)
+		(model "kicad-embed://TestPoint_KOASpeer_RCUCTE.step"
+			(offset
+				(xyz -0.75 -0.8 0.25)
+			)
+			(scale
+				(xyz 1 1 1)
+			)
+			(rotate
+				(xyz -0 -0 -0)
+			)
+		)
+	)
+	(footprint "TestPoint_KOASpeer:TestPoint_Chip_RCUCTE_0603"
+		(layer "B.Cu")
+		(uuid "3c950d11-74eb-4bac-bc2d-8d6be600d67c")
+		(at 20.55627 85.45 180)
+		(descr "Test Point Chip 0603 (1.6mmx0.8mm) RCU RC")
+		(tags "Test Point Chip 0603 (1.6mmx0.8mm) RCU RC")
+		(property "Reference" "TP29"
+			(at 0 2 0)
+			(unlocked yes)
+			(layer "B.SilkS")
+			(uuid "07c8c4c6-67d8-4f74-93da-487a9f1d56f0")
+			(effects
+				(font
+					(size 1 1)
+					(thickness 0.15)
+				)
+				(justify mirror)
+			)
+		)
+		(property "Value" "TestPoint_Small"
+			(at 0 1 0)
+			(unlocked yes)
+			(layer "B.Fab")
+			(uuid "d9e08538-6876-4b07-a753-ba0eb151649c")
+			(effects
+				(font
+					(size 0.5 0.5)
+					(thickness 0.075)
+				)
+				(justify mirror)
+			)
+		)
+		(property "Datasheet" "~"
+			(at 0 0 0)
+			(unlocked yes)
+			(layer "B.Fab")
+			(hide yes)
+			(uuid "945928f5-7344-4cc2-990e-f9aeec19bde2")
+			(effects
+				(font
+					(size 1 1)
+					(thickness 0.15)
+				)
+				(justify mirror)
+			)
+		)
+		(property "Description" "test point"
+			(at 0 0 0)
+			(unlocked yes)
+			(layer "B.Fab")
+			(hide yes)
+			(uuid "696ef84c-8fe5-4d70-9e2c-4e683ef4f5ad")
+			(effects
+				(font
+					(size 1 1)
+					(thickness 0.15)
+				)
+				(justify mirror)
+			)
+		)
+		(property ki_fp_filters "Pin* Test*")
+		(path "/16b7f3d3-745f-44d9-93a4-41f5bfd830cb/25250d79-f8e1-4ce5-9569-583dc3de9ba6")
+		(sheetname "/Telemetry/")
+		(sheetfile "telemetry.kicad_sch")
+		(attr smd)
+		(fp_rect
+			(start -1.25 0.75)
+			(end 1.25 -0.75)
+			(stroke
+				(width 0.05)
+				(type default)
+			)
+			(fill no)
+			(layer "B.CrtYd")
+			(uuid "c16e4f16-ae4e-45d4-88c2-b8af715999f4")
+		)
+		(fp_text user "${REFERENCE}"
+			(at 0 2 0)
+			(unlocked yes)
+			(layer "B.Fab")
+			(uuid "ffd7cc59-f110-4ac5-84ac-eb8f5ba8d1d9")
+			(effects
+				(font
+					(size 1 1)
+					(thickness 0.15)
+				)
+				(justify mirror)
+			)
+		)
+		(pad "1" smd roundrect
+			(at 0 0 180)
+			(size 2 1)
+			(layers "B.Cu" "B.Mask" "B.Paste")
+			(roundrect_rratio 0.15)
+			(net 67 "/MCU/RF_TXEN")
+			(pinfunction "1")
+			(pintype "passive")
+			(thermal_bridge_angle 45)
+			(uuid "79e928e5-2f85-4b43-a3b0-c722f977ee13")
+		)
+		(embedded_fonts no)
+		(embedded_files
+			(file
+				(name "TestPoint_KOASpeer_RCUCTE.step")
+				(type model)
+				(checksum "2AF83E4609FED5DE82404D774C0715F6")
+			)
+		)
+		(model "kicad-embed://TestPoint_KOASpeer_RCUCTE.step"
+			(offset
+				(xyz -0.75 -0.8 0.25)
+			)
+			(scale
+				(xyz 1 1 1)
+			)
+			(rotate
+				(xyz -0 -0 -0)
+			)
+		)
+	)
+	(footprint "TestPoint_KOASpeer:TestPoint_Chip_RCUCTE_0603"
+		(layer "B.Cu")
+		(uuid "3f3586ff-df67-48c1-9d14-ed83f8438131")
+		(at 20.55627 80.35 180)
+		(descr "Test Point Chip 0603 (1.6mmx0.8mm) RCU RC")
+		(tags "Test Point Chip 0603 (1.6mmx0.8mm) RCU RC")
+		(property "Reference" "TP27"
+			(at 0 2 0)
+			(unlocked yes)
+			(layer "B.SilkS")
+			(uuid "64d61fd7-8dc5-462e-80cc-7c1371361b73")
+			(effects
+				(font
+					(size 1 1)
+					(thickness 0.15)
+				)
+				(justify mirror)
+			)
+		)
+		(property "Value" "TestPoint_Small"
+			(at 0 1 0)
+			(unlocked yes)
+			(layer "B.Fab")
+			(uuid "393b3f1e-52a0-4f61-9a68-ecc0c6c3a927")
+			(effects
+				(font
+					(size 0.5 0.5)
+					(thickness 0.075)
+				)
+				(justify mirror)
+			)
+		)
+		(property "Datasheet" "~"
+			(at 0 0 0)
+			(unlocked yes)
+			(layer "B.Fab")
+			(hide yes)
+			(uuid "9e24bc2a-499f-4ab4-8fd1-c5c73297675f")
+			(effects
+				(font
+					(size 1 1)
+					(thickness 0.15)
+				)
+				(justify mirror)
+			)
+		)
+		(property "Description" "test point"
+			(at 0 0 0)
+			(unlocked yes)
+			(layer "B.Fab")
+			(hide yes)
+			(uuid "af7f2ad5-2d72-46f9-b66d-acf18c2f46e1")
+			(effects
+				(font
+					(size 1 1)
+					(thickness 0.15)
+				)
+				(justify mirror)
+			)
+		)
+		(property ki_fp_filters "Pin* Test*")
+		(path "/16b7f3d3-745f-44d9-93a4-41f5bfd830cb/f1f0ba98-b99b-4802-9c52-7fd6695e8680")
+		(sheetname "/Telemetry/")
+		(sheetfile "telemetry.kicad_sch")
+		(attr smd)
+		(fp_rect
+			(start -1.25 0.75)
+			(end 1.25 -0.75)
+			(stroke
+				(width 0.05)
+				(type default)
+			)
+			(fill no)
+			(layer "B.CrtYd")
+			(uuid "e18b167c-2f1b-49a4-afbb-5e38ce54ebcd")
+		)
+		(fp_text user "${REFERENCE}"
+			(at 0 2 0)
+			(unlocked yes)
+			(layer "B.Fab")
+			(uuid "b160a011-f3f4-4872-bd14-b0a3852c8018")
+			(effects
+				(font
+					(size 1 1)
+					(thickness 0.15)
+				)
+				(justify mirror)
+			)
+		)
+		(pad "1" smd roundrect
+			(at 0 0 180)
+			(size 2 1)
+			(layers "B.Cu" "B.Mask" "B.Paste")
+			(roundrect_rratio 0.15)
+			(net 65 "/MCU/~{RF_NSS}")
+			(pinfunction "1")
+			(pintype "passive")
+			(thermal_bridge_angle 45)
+			(uuid "e84f5371-15bd-4bfd-af35-d33b4d6d60d2")
+		)
+		(embedded_fonts no)
+		(embedded_files
+			(file
+				(name "TestPoint_KOASpeer_RCUCTE.step")
+				(type model)
+				(checksum "2AF83E4609FED5DE82404D774C0715F6")
+			)
+		)
+		(model "kicad-embed://TestPoint_KOASpeer_RCUCTE.step"
+			(offset
+				(xyz -0.75 -0.8 0.25)
+			)
+			(scale
+				(xyz 1 1 1)
+			)
+			(rotate
+				(xyz -0 -0 -0)
+			)
+		)
+	)
 	(footprint "Resistor_SMD:R_0603_1608Metric"
 		(layer "B.Cu")
 		(uuid "40cffc0a-4a5e-415c-8932-a43e348f11ca")
@@ -26298,6 +28822,126 @@
 			)
 			(rotate
 				(xyz 0 0 0)
+			)
+		)
+	)
+	(footprint "TestPoint_KOASpeer:TestPoint_Chip_RCUCTE_0603"
+		(layer "B.Cu")
+		(uuid "429c0ab5-e016-4945-b583-4a1a98302b67")
+		(at 29.2 75.8 180)
+		(descr "Test Point Chip 0603 (1.6mmx0.8mm) RCU RC")
+		(tags "Test Point Chip 0603 (1.6mmx0.8mm) RCU RC")
+		(property "Reference" "TP12"
+			(at 0 2 0)
+			(unlocked yes)
+			(layer "B.SilkS")
+			(uuid "3ef2dd1a-c670-4c18-9d6c-7577c025a5d1")
+			(effects
+				(font
+					(size 1 1)
+					(thickness 0.15)
+				)
+				(justify mirror)
+			)
+		)
+		(property "Value" "TestPoint_Small"
+			(at 0 1 0)
+			(unlocked yes)
+			(layer "B.Fab")
+			(uuid "5c696ffb-25c2-49ee-b311-b8772a1afe33")
+			(effects
+				(font
+					(size 0.5 0.5)
+					(thickness 0.075)
+				)
+				(justify mirror)
+			)
+		)
+		(property "Datasheet" "~"
+			(at 0 0 0)
+			(unlocked yes)
+			(layer "B.Fab")
+			(hide yes)
+			(uuid "2b256327-6d51-4745-b0d9-a6eef6863f98")
+			(effects
+				(font
+					(size 1 1)
+					(thickness 0.15)
+				)
+				(justify mirror)
+			)
+		)
+		(property "Description" "test point"
+			(at 0 0 0)
+			(unlocked yes)
+			(layer "B.Fab")
+			(hide yes)
+			(uuid "cf0bb0d2-2851-4e11-ad2e-f506d86a2d38")
+			(effects
+				(font
+					(size 1 1)
+					(thickness 0.15)
+				)
+				(justify mirror)
+			)
+		)
+		(property ki_fp_filters "Pin* Test*")
+		(path "/9736895c-f0f7-444d-aab7-042381dec39a/a2ccd98e-a2f5-426b-ba46-4fc8d1c6b06d")
+		(sheetname "/Sensors/")
+		(sheetfile "sensors.kicad_sch")
+		(attr smd)
+		(fp_rect
+			(start -1.25 0.75)
+			(end 1.25 -0.75)
+			(stroke
+				(width 0.05)
+				(type default)
+			)
+			(fill no)
+			(layer "B.CrtYd")
+			(uuid "6fe51573-05e5-47af-b1ae-b0340777945b")
+		)
+		(fp_text user "${REFERENCE}"
+			(at 0 2 0)
+			(unlocked yes)
+			(layer "B.Fab")
+			(uuid "70a29d21-113d-4e53-8cc4-e12a15b1145e")
+			(effects
+				(font
+					(size 1 1)
+					(thickness 0.15)
+				)
+				(justify mirror)
+			)
+		)
+		(pad "1" smd roundrect
+			(at 0 0 180)
+			(size 2 1)
+			(layers "B.Cu" "B.Mask" "B.Paste")
+			(roundrect_rratio 0.15)
+			(net 135 "/MCU/MAG CLOCK")
+			(pinfunction "1")
+			(pintype "passive")
+			(thermal_bridge_angle 45)
+			(uuid "e4617ea4-1ef2-4a72-8d52-a77c3cee9085")
+		)
+		(embedded_fonts no)
+		(embedded_files
+			(file
+				(name "TestPoint_KOASpeer_RCUCTE.step")
+				(type model)
+				(checksum "2AF83E4609FED5DE82404D774C0715F6")
+			)
+		)
+		(model "kicad-embed://TestPoint_KOASpeer_RCUCTE.step"
+			(offset
+				(xyz -0.75 -0.8 0.25)
+			)
+			(scale
+				(xyz 1 1 1)
+			)
+			(rotate
+				(xyz -0 -0 -0)
 			)
 		)
 	)
@@ -26709,6 +29353,126 @@
 			)
 		)
 	)
+	(footprint "TestPoint_KOASpeer:TestPoint_Chip_RCUCTE_0603"
+		(layer "B.Cu")
+		(uuid "4d29ea77-c5e3-4223-9070-091a8c580e06")
+		(at 24.10627 82.9 180)
+		(descr "Test Point Chip 0603 (1.6mmx0.8mm) RCU RC")
+		(tags "Test Point Chip 0603 (1.6mmx0.8mm) RCU RC")
+		(property "Reference" "TP23"
+			(at 0 2 0)
+			(unlocked yes)
+			(layer "B.SilkS")
+			(uuid "fd152426-f20e-47aa-8a28-ec09122b900b")
+			(effects
+				(font
+					(size 1 1)
+					(thickness 0.15)
+				)
+				(justify mirror)
+			)
+		)
+		(property "Value" "TestPoint_Small"
+			(at 0 1 0)
+			(unlocked yes)
+			(layer "B.Fab")
+			(uuid "f85faab4-270c-4f3e-84c4-b4a0eeb355f6")
+			(effects
+				(font
+					(size 0.5 0.5)
+					(thickness 0.075)
+				)
+				(justify mirror)
+			)
+		)
+		(property "Datasheet" "~"
+			(at 0 0 0)
+			(unlocked yes)
+			(layer "B.Fab")
+			(hide yes)
+			(uuid "9f2ae3a6-e510-4418-90d9-80de142dc014")
+			(effects
+				(font
+					(size 1 1)
+					(thickness 0.15)
+				)
+				(justify mirror)
+			)
+		)
+		(property "Description" "test point"
+			(at 0 0 0)
+			(unlocked yes)
+			(layer "B.Fab")
+			(hide yes)
+			(uuid "7975f226-e25d-4f90-aad5-18b26e19e76d")
+			(effects
+				(font
+					(size 1 1)
+					(thickness 0.15)
+				)
+				(justify mirror)
+			)
+		)
+		(property ki_fp_filters "Pin* Test*")
+		(path "/16b7f3d3-745f-44d9-93a4-41f5bfd830cb/0eae4092-189a-4b44-8e39-8b2c96bdff16")
+		(sheetname "/Telemetry/")
+		(sheetfile "telemetry.kicad_sch")
+		(attr smd)
+		(fp_rect
+			(start -1.25 0.75)
+			(end 1.25 -0.75)
+			(stroke
+				(width 0.05)
+				(type default)
+			)
+			(fill no)
+			(layer "B.CrtYd")
+			(uuid "641ac93a-3fe6-4a86-b657-9252ed6be742")
+		)
+		(fp_text user "${REFERENCE}"
+			(at 0 2 0)
+			(unlocked yes)
+			(layer "B.Fab")
+			(uuid "05512221-ea25-4917-b153-3b68a4319204")
+			(effects
+				(font
+					(size 1 1)
+					(thickness 0.15)
+				)
+				(justify mirror)
+			)
+		)
+		(pad "1" smd roundrect
+			(at 0 0 180)
+			(size 2 1)
+			(layers "B.Cu" "B.Mask" "B.Paste")
+			(roundrect_rratio 0.15)
+			(net 122 "/MCU/~{RF_RESET}")
+			(pinfunction "1")
+			(pintype "passive")
+			(thermal_bridge_angle 45)
+			(uuid "b11e35e1-f64a-4c00-966c-3d869928166e")
+		)
+		(embedded_fonts no)
+		(embedded_files
+			(file
+				(name "TestPoint_KOASpeer_RCUCTE.step")
+				(type model)
+				(checksum "2AF83E4609FED5DE82404D774C0715F6")
+			)
+		)
+		(model "kicad-embed://TestPoint_KOASpeer_RCUCTE.step"
+			(offset
+				(xyz -0.75 -0.8 0.25)
+			)
+			(scale
+				(xyz 1 1 1)
+			)
+			(rotate
+				(xyz -0 -0 -0)
+			)
+		)
+	)
 	(footprint "Resistor_SMD:R_0603_1608Metric"
 		(layer "B.Cu")
 		(uuid "4e205d2a-9182-4146-866f-a52df0111aea")
@@ -26910,6 +29674,126 @@
 			)
 			(rotate
 				(xyz 0 0 0)
+			)
+		)
+	)
+	(footprint "TestPoint_KOASpeer:TestPoint_Chip_RCUCTE_0603"
+		(layer "B.Cu")
+		(uuid "539bfaac-75a5-4240-a0b3-8f493df2f287")
+		(at 24.10627 90.55 180)
+		(descr "Test Point Chip 0603 (1.6mmx0.8mm) RCU RC")
+		(tags "Test Point Chip 0603 (1.6mmx0.8mm) RCU RC")
+		(property "Reference" "TP26"
+			(at 0 2 0)
+			(unlocked yes)
+			(layer "B.SilkS")
+			(uuid "f04a63b2-d474-480a-b77f-3534a7830735")
+			(effects
+				(font
+					(size 1 1)
+					(thickness 0.15)
+				)
+				(justify mirror)
+			)
+		)
+		(property "Value" "TestPoint_Small"
+			(at 0 1 0)
+			(unlocked yes)
+			(layer "B.Fab")
+			(uuid "072a94bf-f4e4-4eba-bbdf-e01c6b3d1605")
+			(effects
+				(font
+					(size 0.5 0.5)
+					(thickness 0.075)
+				)
+				(justify mirror)
+			)
+		)
+		(property "Datasheet" "~"
+			(at 0 0 0)
+			(unlocked yes)
+			(layer "B.Fab")
+			(hide yes)
+			(uuid "57d537c0-fc28-4fbf-b060-3ba45ff13c0a")
+			(effects
+				(font
+					(size 1 1)
+					(thickness 0.15)
+				)
+				(justify mirror)
+			)
+		)
+		(property "Description" "test point"
+			(at 0 0 0)
+			(unlocked yes)
+			(layer "B.Fab")
+			(hide yes)
+			(uuid "e56fb63b-0fec-46c0-bb1f-8f2c64dc3676")
+			(effects
+				(font
+					(size 1 1)
+					(thickness 0.15)
+				)
+				(justify mirror)
+			)
+		)
+		(property ki_fp_filters "Pin* Test*")
+		(path "/16b7f3d3-745f-44d9-93a4-41f5bfd830cb/1a17bd5d-0c2d-4257-9f0a-138e0da8d3ae")
+		(sheetname "/Telemetry/")
+		(sheetfile "telemetry.kicad_sch")
+		(attr smd)
+		(fp_rect
+			(start -1.25 0.75)
+			(end 1.25 -0.75)
+			(stroke
+				(width 0.05)
+				(type default)
+			)
+			(fill no)
+			(layer "B.CrtYd")
+			(uuid "24287469-2059-4768-b4c3-c37cce3df140")
+		)
+		(fp_text user "${REFERENCE}"
+			(at 0 2 0)
+			(unlocked yes)
+			(layer "B.Fab")
+			(uuid "866a9053-e76f-4525-8510-2a628b04dfc5")
+			(effects
+				(font
+					(size 1 1)
+					(thickness 0.15)
+				)
+				(justify mirror)
+			)
+		)
+		(pad "1" smd roundrect
+			(at 0 0 180)
+			(size 2 1)
+			(layers "B.Cu" "B.Mask" "B.Paste")
+			(roundrect_rratio 0.15)
+			(net 129 "/MCU/RF_SCK")
+			(pinfunction "1")
+			(pintype "passive")
+			(thermal_bridge_angle 45)
+			(uuid "2919ac68-229d-4134-b14f-d9e97e5abdc5")
+		)
+		(embedded_fonts no)
+		(embedded_files
+			(file
+				(name "TestPoint_KOASpeer_RCUCTE.step")
+				(type model)
+				(checksum "2AF83E4609FED5DE82404D774C0715F6")
+			)
+		)
+		(model "kicad-embed://TestPoint_KOASpeer_RCUCTE.step"
+			(offset
+				(xyz -0.75 -0.8 0.25)
+			)
+			(scale
+				(xyz 1 1 1)
+			)
+			(rotate
+				(xyz -0 -0 -0)
 			)
 		)
 	)
@@ -27117,6 +30001,126 @@
 			)
 		)
 	)
+	(footprint "TestPoint_KOASpeer:TestPoint_Chip_RCUCTE_0603"
+		(layer "B.Cu")
+		(uuid "54f2a16f-c89d-4d29-925a-ff675cdcca78")
+		(at 20.1 68.15 180)
+		(descr "Test Point Chip 0603 (1.6mmx0.8mm) RCU RC")
+		(tags "Test Point Chip 0603 (1.6mmx0.8mm) RCU RC")
+		(property "Reference" "TP18"
+			(at 0 2 0)
+			(unlocked yes)
+			(layer "B.SilkS")
+			(uuid "ce4dbfe1-f436-418c-a76d-78e518ad09ea")
+			(effects
+				(font
+					(size 1 1)
+					(thickness 0.15)
+				)
+				(justify mirror)
+			)
+		)
+		(property "Value" "TestPoint_Small"
+			(at 0 1 0)
+			(unlocked yes)
+			(layer "B.Fab")
+			(uuid "aacd899b-96dc-4cc1-a758-7c886ba5873d")
+			(effects
+				(font
+					(size 0.5 0.5)
+					(thickness 0.075)
+				)
+				(justify mirror)
+			)
+		)
+		(property "Datasheet" "~"
+			(at 0 0 0)
+			(unlocked yes)
+			(layer "B.Fab")
+			(hide yes)
+			(uuid "4941c8dc-8dde-46e9-9e4c-5446c8ca0b96")
+			(effects
+				(font
+					(size 1 1)
+					(thickness 0.15)
+				)
+				(justify mirror)
+			)
+		)
+		(property "Description" "test point"
+			(at 0 0 0)
+			(unlocked yes)
+			(layer "B.Fab")
+			(hide yes)
+			(uuid "171ea425-e462-4359-a0bc-dd4ba2075e61")
+			(effects
+				(font
+					(size 1 1)
+					(thickness 0.15)
+				)
+				(justify mirror)
+			)
+		)
+		(property ki_fp_filters "Pin* Test*")
+		(path "/6e71e7a3-1bcd-4797-b2e4-88d14bf1f853/c6e1d0b9-4048-42d0-bf42-2902ed5e4fc9")
+		(sheetname "/Memory/")
+		(sheetfile "flash.kicad_sch")
+		(attr smd)
+		(fp_rect
+			(start -1.25 0.75)
+			(end 1.25 -0.75)
+			(stroke
+				(width 0.05)
+				(type default)
+			)
+			(fill no)
+			(layer "B.CrtYd")
+			(uuid "9e148220-0b96-46ae-82e8-21acd0963a2c")
+		)
+		(fp_text user "${REFERENCE}"
+			(at 0 2 0)
+			(unlocked yes)
+			(layer "B.Fab")
+			(uuid "ed06757c-7fda-4d37-be46-f0c0e493d79f")
+			(effects
+				(font
+					(size 1 1)
+					(thickness 0.15)
+				)
+				(justify mirror)
+			)
+		)
+		(pad "1" smd roundrect
+			(at 0 0 180)
+			(size 2 1)
+			(layers "B.Cu" "B.Mask" "B.Paste")
+			(roundrect_rratio 0.15)
+			(net 79 "/MCU/FLASH_IO1")
+			(pinfunction "1")
+			(pintype "passive")
+			(thermal_bridge_angle 45)
+			(uuid "ace44856-5dbd-4290-8339-eeb11b580dca")
+		)
+		(embedded_fonts no)
+		(embedded_files
+			(file
+				(name "TestPoint_KOASpeer_RCUCTE.step")
+				(type model)
+				(checksum "2AF83E4609FED5DE82404D774C0715F6")
+			)
+		)
+		(model "kicad-embed://TestPoint_KOASpeer_RCUCTE.step"
+			(offset
+				(xyz -0.75 -0.8 0.25)
+			)
+			(scale
+				(xyz 1 1 1)
+			)
+			(rotate
+				(xyz -0 -0 -0)
+			)
+		)
+	)
 	(footprint "Capacitor_SMD:C_0603_1608Metric"
 		(layer "B.Cu")
 		(uuid "5a74a1a6-9766-470d-9bf3-86dadeb3427d")
@@ -27318,6 +30322,126 @@
 			)
 			(rotate
 				(xyz 0 0 0)
+			)
+		)
+	)
+	(footprint "TestPoint_KOASpeer:TestPoint_Chip_RCUCTE_0603"
+		(layer "B.Cu")
+		(uuid "5ea45e40-3802-4e59-abc0-692d81c3f6ea")
+		(at 25.65 68.15 180)
+		(descr "Test Point Chip 0603 (1.6mmx0.8mm) RCU RC")
+		(tags "Test Point Chip 0603 (1.6mmx0.8mm) RCU RC")
+		(property "Reference" "TP15"
+			(at 0 2 0)
+			(unlocked yes)
+			(layer "B.SilkS")
+			(uuid "2aaf4728-ee68-4af5-ab2e-390b45313081")
+			(effects
+				(font
+					(size 1 1)
+					(thickness 0.15)
+				)
+				(justify mirror)
+			)
+		)
+		(property "Value" "TestPoint_Small"
+			(at 0 1 0)
+			(unlocked yes)
+			(layer "B.Fab")
+			(uuid "36dbb342-5847-4a40-864b-0cf59b971efa")
+			(effects
+				(font
+					(size 0.5 0.5)
+					(thickness 0.075)
+				)
+				(justify mirror)
+			)
+		)
+		(property "Datasheet" "~"
+			(at 0 0 0)
+			(unlocked yes)
+			(layer "B.Fab")
+			(hide yes)
+			(uuid "33e68db7-d318-44c2-9afb-64ffd70000ae")
+			(effects
+				(font
+					(size 1 1)
+					(thickness 0.15)
+				)
+				(justify mirror)
+			)
+		)
+		(property "Description" "test point"
+			(at 0 0 0)
+			(unlocked yes)
+			(layer "B.Fab")
+			(hide yes)
+			(uuid "d1f1a51b-5684-494d-a413-a76db64a3bcf")
+			(effects
+				(font
+					(size 1 1)
+					(thickness 0.15)
+				)
+				(justify mirror)
+			)
+		)
+		(property ki_fp_filters "Pin* Test*")
+		(path "/9736895c-f0f7-444d-aab7-042381dec39a/66f8c7d8-8340-451b-be8b-9269d91c03f3")
+		(sheetname "/Sensors/")
+		(sheetfile "sensors.kicad_sch")
+		(attr smd)
+		(fp_rect
+			(start -1.25 0.75)
+			(end 1.25 -0.75)
+			(stroke
+				(width 0.05)
+				(type default)
+			)
+			(fill no)
+			(layer "B.CrtYd")
+			(uuid "7c219dfd-268d-4f7a-a276-5a7dd947d1ef")
+		)
+		(fp_text user "${REFERENCE}"
+			(at 0 2 0)
+			(unlocked yes)
+			(layer "B.Fab")
+			(uuid "0e7ad71a-e3e7-4148-8add-652a036b7e62")
+			(effects
+				(font
+					(size 1 1)
+					(thickness 0.15)
+				)
+				(justify mirror)
+			)
+		)
+		(pad "1" smd roundrect
+			(at 0 0 180)
+			(size 2 1)
+			(layers "B.Cu" "B.Mask" "B.Paste")
+			(roundrect_rratio 0.15)
+			(net 118 "/MCU/MAG_INT")
+			(pinfunction "1")
+			(pintype "passive")
+			(thermal_bridge_angle 45)
+			(uuid "60aa8782-d4a2-4a54-8e27-fad90e2656ee")
+		)
+		(embedded_fonts no)
+		(embedded_files
+			(file
+				(name "TestPoint_KOASpeer_RCUCTE.step")
+				(type model)
+				(checksum "2AF83E4609FED5DE82404D774C0715F6")
+			)
+		)
+		(model "kicad-embed://TestPoint_KOASpeer_RCUCTE.step"
+			(offset
+				(xyz -0.75 -0.8 0.25)
+			)
+			(scale
+				(xyz 1 1 1)
+			)
+			(rotate
+				(xyz -0 -0 -0)
 			)
 		)
 	)
@@ -27843,6 +30967,366 @@
 			)
 		)
 	)
+	(footprint "TestPoint_KOASpeer:TestPoint_Chip_RCUCTE_0603"
+		(layer "B.Cu")
+		(uuid "62ae8ede-766d-43b9-ad85-d80335a995e5")
+		(at 32.75 70.7 180)
+		(descr "Test Point Chip 0603 (1.6mmx0.8mm) RCU RC")
+		(tags "Test Point Chip 0603 (1.6mmx0.8mm) RCU RC")
+		(property "Reference" "TP4"
+			(at 0 2 0)
+			(unlocked yes)
+			(layer "B.SilkS")
+			(uuid "a8cc8fdf-b224-4e58-b0cd-cb1ff40ad31c")
+			(effects
+				(font
+					(size 1 1)
+					(thickness 0.15)
+				)
+				(justify mirror)
+			)
+		)
+		(property "Value" "TestPoint_Small"
+			(at 0 1 0)
+			(unlocked yes)
+			(layer "B.Fab")
+			(uuid "ba12adde-4d11-4e7b-adf6-80785de584ac")
+			(effects
+				(font
+					(size 0.5 0.5)
+					(thickness 0.075)
+				)
+				(justify mirror)
+			)
+		)
+		(property "Datasheet" "~"
+			(at 0 0 0)
+			(unlocked yes)
+			(layer "B.Fab")
+			(hide yes)
+			(uuid "3534abc6-0a46-4130-8cdd-8ef8f4bf9e99")
+			(effects
+				(font
+					(size 1 1)
+					(thickness 0.15)
+				)
+				(justify mirror)
+			)
+		)
+		(property "Description" "test point"
+			(at 0 0 0)
+			(unlocked yes)
+			(layer "B.Fab")
+			(hide yes)
+			(uuid "62f97267-9aad-433f-ba33-ade28c0a312a")
+			(effects
+				(font
+					(size 1 1)
+					(thickness 0.15)
+				)
+				(justify mirror)
+			)
+		)
+		(property ki_fp_filters "Pin* Test*")
+		(path "/9736895c-f0f7-444d-aab7-042381dec39a/edba17a2-f032-4d9e-9227-1929f7e5ab14")
+		(sheetname "/Sensors/")
+		(sheetfile "sensors.kicad_sch")
+		(attr smd)
+		(fp_rect
+			(start -1.25 0.75)
+			(end 1.25 -0.75)
+			(stroke
+				(width 0.05)
+				(type default)
+			)
+			(fill no)
+			(layer "B.CrtYd")
+			(uuid "9786d8a9-60c0-4778-9b66-c4943cfc7284")
+		)
+		(fp_text user "${REFERENCE}"
+			(at 0 2 0)
+			(unlocked yes)
+			(layer "B.Fab")
+			(uuid "3d84fa5f-58db-41f8-a2a5-fe1876cb2cb0")
+			(effects
+				(font
+					(size 1 1)
+					(thickness 0.15)
+				)
+				(justify mirror)
+			)
+		)
+		(pad "1" smd roundrect
+			(at 0 0 180)
+			(size 2 1)
+			(layers "B.Cu" "B.Mask" "B.Paste")
+			(roundrect_rratio 0.15)
+			(net 63 "/MCU/BARO_CS")
+			(pinfunction "1")
+			(pintype "passive")
+			(thermal_bridge_angle 45)
+			(uuid "ffb29af3-d400-4fff-bac8-56ea1b977cac")
+		)
+		(embedded_fonts no)
+		(embedded_files
+			(file
+				(name "TestPoint_KOASpeer_RCUCTE.step")
+				(type model)
+				(checksum "2AF83E4609FED5DE82404D774C0715F6")
+			)
+		)
+		(model "kicad-embed://TestPoint_KOASpeer_RCUCTE.step"
+			(offset
+				(xyz -0.75 -0.8 0.25)
+			)
+			(scale
+				(xyz 1 1 1)
+			)
+			(rotate
+				(xyz -0 -0 -0)
+			)
+		)
+	)
+	(footprint "TestPoint_KOASpeer:TestPoint_Chip_RCUCTE_0603"
+		(layer "B.Cu")
+		(uuid "64b7e3b6-eee7-4137-bcb7-e9f421381fca")
+		(at 25.65 63.05 180)
+		(descr "Test Point Chip 0603 (1.6mmx0.8mm) RCU RC")
+		(tags "Test Point Chip 0603 (1.6mmx0.8mm) RCU RC")
+		(property "Reference" "TP13"
+			(at 0 2 0)
+			(unlocked yes)
+			(layer "B.SilkS")
+			(uuid "457ec823-d3ce-4dbe-8e92-fbe1194deb39")
+			(effects
+				(font
+					(size 1 1)
+					(thickness 0.15)
+				)
+				(justify mirror)
+			)
+		)
+		(property "Value" "TestPoint_Small"
+			(at 0 1 0)
+			(unlocked yes)
+			(layer "B.Fab")
+			(uuid "93010b66-32ae-48e1-a331-7f23f9eb5d7b")
+			(effects
+				(font
+					(size 0.5 0.5)
+					(thickness 0.075)
+				)
+				(justify mirror)
+			)
+		)
+		(property "Datasheet" "~"
+			(at 0 0 0)
+			(unlocked yes)
+			(layer "B.Fab")
+			(hide yes)
+			(uuid "a0f955a0-1d6e-4444-8fec-6d2f6ac3c5a5")
+			(effects
+				(font
+					(size 1 1)
+					(thickness 0.15)
+				)
+				(justify mirror)
+			)
+		)
+		(property "Description" "test point"
+			(at 0 0 0)
+			(unlocked yes)
+			(layer "B.Fab")
+			(hide yes)
+			(uuid "e874cdc3-2d61-4238-808d-b009cdc5a78c")
+			(effects
+				(font
+					(size 1 1)
+					(thickness 0.15)
+				)
+				(justify mirror)
+			)
+		)
+		(property ki_fp_filters "Pin* Test*")
+		(path "/9736895c-f0f7-444d-aab7-042381dec39a/b89987f4-ba77-4bff-a9fc-04dea77817a4")
+		(sheetname "/Sensors/")
+		(sheetfile "sensors.kicad_sch")
+		(attr smd)
+		(fp_rect
+			(start -1.25 0.75)
+			(end 1.25 -0.75)
+			(stroke
+				(width 0.05)
+				(type default)
+			)
+			(fill no)
+			(layer "B.CrtYd")
+			(uuid "f23537a8-089c-401b-8062-9e91d11ee827")
+		)
+		(fp_text user "${REFERENCE}"
+			(at 0 2 0)
+			(unlocked yes)
+			(layer "B.Fab")
+			(uuid "b48e24c3-38ac-4b07-aa38-313cb6bf0d49")
+			(effects
+				(font
+					(size 1 1)
+					(thickness 0.15)
+				)
+				(justify mirror)
+			)
+		)
+		(pad "1" smd roundrect
+			(at 0 0 180)
+			(size 2 1)
+			(layers "B.Cu" "B.Mask" "B.Paste")
+			(roundrect_rratio 0.15)
+			(net 134 "/MCU/MAG_DATA")
+			(pinfunction "1")
+			(pintype "passive")
+			(thermal_bridge_angle 45)
+			(uuid "e2f03a93-c3bb-4e4f-ab0c-213dc1d5fea1")
+		)
+		(embedded_fonts no)
+		(embedded_files
+			(file
+				(name "TestPoint_KOASpeer_RCUCTE.step")
+				(type model)
+				(checksum "2AF83E4609FED5DE82404D774C0715F6")
+			)
+		)
+		(model "kicad-embed://TestPoint_KOASpeer_RCUCTE.step"
+			(offset
+				(xyz -0.75 -0.8 0.25)
+			)
+			(scale
+				(xyz 1 1 1)
+			)
+			(rotate
+				(xyz -0 -0 -0)
+			)
+		)
+	)
+	(footprint "TestPoint_KOASpeer:TestPoint_Chip_RCUCTE_0603"
+		(layer "B.Cu")
+		(uuid "668b5d77-e855-447d-a9ee-259631d6bffb")
+		(at 32.75 65.6 180)
+		(descr "Test Point Chip 0603 (1.6mmx0.8mm) RCU RC")
+		(tags "Test Point Chip 0603 (1.6mmx0.8mm) RCU RC")
+		(property "Reference" "TP2"
+			(at 0 2 0)
+			(unlocked yes)
+			(layer "B.SilkS")
+			(uuid "03047f6e-9983-4fdb-82b2-87770c4ce71f")
+			(effects
+				(font
+					(size 1 1)
+					(thickness 0.15)
+				)
+				(justify mirror)
+			)
+		)
+		(property "Value" "TestPoint_Small"
+			(at 0 1 0)
+			(unlocked yes)
+			(layer "B.Fab")
+			(uuid "c10f3ccc-2936-4760-b781-ce9285301264")
+			(effects
+				(font
+					(size 0.5 0.5)
+					(thickness 0.075)
+				)
+				(justify mirror)
+			)
+		)
+		(property "Datasheet" "~"
+			(at 0 0 0)
+			(unlocked yes)
+			(layer "B.Fab")
+			(hide yes)
+			(uuid "98d36fdf-ed90-45df-b6bb-50d30fa16ef4")
+			(effects
+				(font
+					(size 1 1)
+					(thickness 0.15)
+				)
+				(justify mirror)
+			)
+		)
+		(property "Description" "test point"
+			(at 0 0 0)
+			(unlocked yes)
+			(layer "B.Fab")
+			(hide yes)
+			(uuid "22275c3e-568d-4695-adad-a094d418f13d")
+			(effects
+				(font
+					(size 1 1)
+					(thickness 0.15)
+				)
+				(justify mirror)
+			)
+		)
+		(property ki_fp_filters "Pin* Test*")
+		(path "/9736895c-f0f7-444d-aab7-042381dec39a/52a6a6f5-9161-4aeb-8886-55c6b485aca6")
+		(sheetname "/Sensors/")
+		(sheetfile "sensors.kicad_sch")
+		(attr smd)
+		(fp_rect
+			(start -1.25 0.75)
+			(end 1.25 -0.75)
+			(stroke
+				(width 0.05)
+				(type default)
+			)
+			(fill no)
+			(layer "B.CrtYd")
+			(uuid "b22f8c4d-95bc-4930-98ad-2b1801084a85")
+		)
+		(fp_text user "${REFERENCE}"
+			(at 0 2 0)
+			(unlocked yes)
+			(layer "B.Fab")
+			(uuid "8d163447-192c-4657-9f1a-3475a7ab9f65")
+			(effects
+				(font
+					(size 1 1)
+					(thickness 0.15)
+				)
+				(justify mirror)
+			)
+		)
+		(pad "1" smd roundrect
+			(at 0 0 180)
+			(size 2 1)
+			(layers "B.Cu" "B.Mask" "B.Paste")
+			(roundrect_rratio 0.15)
+			(net 124 "/Sensors/MISO")
+			(pinfunction "1")
+			(pintype "passive")
+			(thermal_bridge_angle 45)
+			(uuid "2612ba0a-56b3-4c20-9204-e3ad5f9363ec")
+		)
+		(embedded_fonts no)
+		(embedded_files
+			(file
+				(name "TestPoint_KOASpeer_RCUCTE.step")
+				(type model)
+				(checksum "2AF83E4609FED5DE82404D774C0715F6")
+			)
+		)
+		(model "kicad-embed://TestPoint_KOASpeer_RCUCTE.step"
+			(offset
+				(xyz -0.75 -0.8 0.25)
+			)
+			(scale
+				(xyz 1 1 1)
+			)
+			(rotate
+				(xyz -0 -0 -0)
+			)
+		)
+	)
 	(footprint "Capacitor_SMD:C_0603_1608Metric"
 		(layer "B.Cu")
 		(uuid "6d24e1d1-f31c-496c-964d-0a99e1fc12a5")
@@ -27862,7 +31346,7 @@
 			)
 		)
 		(property "Value" "220n"
-			(at 3.25 -4.68 90)
+			(at -0.05 0 90)
 			(layer "B.Fab")
 			(uuid "e68f2923-ec54-46e1-bbef-615dc721c711")
 			(effects
@@ -28248,6 +31732,246 @@
 			)
 			(rotate
 				(xyz 0 0 0)
+			)
+		)
+	)
+	(footprint "TestPoint_KOASpeer:TestPoint_Chip_RCUCTE_0603"
+		(layer "B.Cu")
+		(uuid "78668b83-051d-482f-9416-869e4567dee1")
+		(at 20.1 65.6 180)
+		(descr "Test Point Chip 0603 (1.6mmx0.8mm) RCU RC")
+		(tags "Test Point Chip 0603 (1.6mmx0.8mm) RCU RC")
+		(property "Reference" "TP17"
+			(at 0 2 0)
+			(unlocked yes)
+			(layer "B.SilkS")
+			(uuid "68341161-35ff-47de-98d5-a2d207ed87b9")
+			(effects
+				(font
+					(size 1 1)
+					(thickness 0.15)
+				)
+				(justify mirror)
+			)
+		)
+		(property "Value" "TestPoint_Small"
+			(at 0 1 0)
+			(unlocked yes)
+			(layer "B.Fab")
+			(uuid "e29e09c6-5f2d-4685-866f-5691d6637af4")
+			(effects
+				(font
+					(size 0.5 0.5)
+					(thickness 0.075)
+				)
+				(justify mirror)
+			)
+		)
+		(property "Datasheet" "~"
+			(at 0 0 0)
+			(unlocked yes)
+			(layer "B.Fab")
+			(hide yes)
+			(uuid "7200cd1a-8126-4104-8826-a40a6eb9dde2")
+			(effects
+				(font
+					(size 1 1)
+					(thickness 0.15)
+				)
+				(justify mirror)
+			)
+		)
+		(property "Description" "test point"
+			(at 0 0 0)
+			(unlocked yes)
+			(layer "B.Fab")
+			(hide yes)
+			(uuid "40204c2f-eabe-4c62-8e6e-7b87c966ec5d")
+			(effects
+				(font
+					(size 1 1)
+					(thickness 0.15)
+				)
+				(justify mirror)
+			)
+		)
+		(property ki_fp_filters "Pin* Test*")
+		(path "/6e71e7a3-1bcd-4797-b2e4-88d14bf1f853/c4f17b04-1b56-4800-985b-37cab17eca02")
+		(sheetname "/Memory/")
+		(sheetfile "flash.kicad_sch")
+		(attr smd)
+		(fp_rect
+			(start -1.25 0.75)
+			(end 1.25 -0.75)
+			(stroke
+				(width 0.05)
+				(type default)
+			)
+			(fill no)
+			(layer "B.CrtYd")
+			(uuid "2f61f07a-f24d-44cc-a187-6c7040981d5b")
+		)
+		(fp_text user "${REFERENCE}"
+			(at 0 2 0)
+			(unlocked yes)
+			(layer "B.Fab")
+			(uuid "558bf30f-88d6-4c65-b1f5-679002c1b069")
+			(effects
+				(font
+					(size 1 1)
+					(thickness 0.15)
+				)
+				(justify mirror)
+			)
+		)
+		(pad "1" smd roundrect
+			(at 0 0 180)
+			(size 2 1)
+			(layers "B.Cu" "B.Mask" "B.Paste")
+			(roundrect_rratio 0.15)
+			(net 77 "/MCU/FLASH_IO0")
+			(pinfunction "1")
+			(pintype "passive")
+			(thermal_bridge_angle 45)
+			(uuid "ecd27683-44c5-4e5e-ada7-0000506a99ff")
+		)
+		(embedded_fonts no)
+		(embedded_files
+			(file
+				(name "TestPoint_KOASpeer_RCUCTE.step")
+				(type model)
+				(checksum "2AF83E4609FED5DE82404D774C0715F6")
+			)
+		)
+		(model "kicad-embed://TestPoint_KOASpeer_RCUCTE.step"
+			(offset
+				(xyz -0.75 -0.8 0.25)
+			)
+			(scale
+				(xyz 1 1 1)
+			)
+			(rotate
+				(xyz -0 -0 -0)
+			)
+		)
+	)
+	(footprint "TestPoint_KOASpeer:TestPoint_Chip_RCUCTE_0603"
+		(layer "B.Cu")
+		(uuid "7b410a26-b3b2-44b4-971c-4ab297c24afb")
+		(at 24.10627 80.35 180)
+		(descr "Test Point Chip 0603 (1.6mmx0.8mm) RCU RC")
+		(tags "Test Point Chip 0603 (1.6mmx0.8mm) RCU RC")
+		(property "Reference" "TP22"
+			(at 0 2 0)
+			(unlocked yes)
+			(layer "B.SilkS")
+			(uuid "792e59ee-bcf0-4849-9a60-dbe02c5ed7f1")
+			(effects
+				(font
+					(size 1 1)
+					(thickness 0.15)
+				)
+				(justify mirror)
+			)
+		)
+		(property "Value" "TestPoint_Small"
+			(at 0 1 0)
+			(unlocked yes)
+			(layer "B.Fab")
+			(uuid "1412c61d-b80e-493a-be00-c990e28a9b02")
+			(effects
+				(font
+					(size 0.5 0.5)
+					(thickness 0.075)
+				)
+				(justify mirror)
+			)
+		)
+		(property "Datasheet" "~"
+			(at 0 0 0)
+			(unlocked yes)
+			(layer "B.Fab")
+			(hide yes)
+			(uuid "8a877eab-d9d5-429c-9fcf-3ea4b7b3be7f")
+			(effects
+				(font
+					(size 1 1)
+					(thickness 0.15)
+				)
+				(justify mirror)
+			)
+		)
+		(property "Description" "test point"
+			(at 0 0 0)
+			(unlocked yes)
+			(layer "B.Fab")
+			(hide yes)
+			(uuid "1dbb267f-0926-4875-a36f-05a30b0f0b0e")
+			(effects
+				(font
+					(size 1 1)
+					(thickness 0.15)
+				)
+				(justify mirror)
+			)
+		)
+		(property ki_fp_filters "Pin* Test*")
+		(path "/16b7f3d3-745f-44d9-93a4-41f5bfd830cb/235ae212-c662-4a5c-acfb-24234f8844e6")
+		(sheetname "/Telemetry/")
+		(sheetfile "telemetry.kicad_sch")
+		(attr smd)
+		(fp_rect
+			(start -1.25 0.75)
+			(end 1.25 -0.75)
+			(stroke
+				(width 0.05)
+				(type default)
+			)
+			(fill no)
+			(layer "B.CrtYd")
+			(uuid "8ab9e4d9-9108-4f59-9315-3529a875c0fc")
+		)
+		(fp_text user "${REFERENCE}"
+			(at 0 2 0)
+			(unlocked yes)
+			(layer "B.Fab")
+			(uuid "676cc7f3-619d-4c9d-8a31-b25781bb117d")
+			(effects
+				(font
+					(size 1 1)
+					(thickness 0.15)
+				)
+				(justify mirror)
+			)
+		)
+		(pad "1" smd roundrect
+			(at 0 0 180)
+			(size 2 1)
+			(layers "B.Cu" "B.Mask" "B.Paste")
+			(roundrect_rratio 0.15)
+			(net 127 "/MCU/RF_BUSY")
+			(pinfunction "1")
+			(pintype "passive")
+			(thermal_bridge_angle 45)
+			(uuid "2fe7ed27-528c-406b-9e13-b05086755159")
+		)
+		(embedded_fonts no)
+		(embedded_files
+			(file
+				(name "TestPoint_KOASpeer_RCUCTE.step")
+				(type model)
+				(checksum "2AF83E4609FED5DE82404D774C0715F6")
+			)
+		)
+		(model "kicad-embed://TestPoint_KOASpeer_RCUCTE.step"
+			(offset
+				(xyz -0.75 -0.8 0.25)
+			)
+			(scale
+				(xyz 1 1 1)
+			)
+			(rotate
+				(xyz -0 -0 -0)
 			)
 		)
 	)
@@ -30597,10 +34321,130 @@
 			)
 		)
 	)
+	(footprint "TestPoint_KOASpeer:TestPoint_Chip_RCUCTE_0603"
+		(layer "B.Cu")
+		(uuid "90229f02-e5ca-4830-a545-5aaaf8983f73")
+		(at 24.10627 88 180)
+		(descr "Test Point Chip 0603 (1.6mmx0.8mm) RCU RC")
+		(tags "Test Point Chip 0603 (1.6mmx0.8mm) RCU RC")
+		(property "Reference" "TP25"
+			(at 0 2 0)
+			(unlocked yes)
+			(layer "B.SilkS")
+			(uuid "5eb3a765-9f44-4849-93d9-0f4fb892d7d6")
+			(effects
+				(font
+					(size 1 1)
+					(thickness 0.15)
+				)
+				(justify mirror)
+			)
+		)
+		(property "Value" "TestPoint_Small"
+			(at 0 1 0)
+			(unlocked yes)
+			(layer "B.Fab")
+			(uuid "1ae68850-f82b-4826-9314-99f5eb6097d3")
+			(effects
+				(font
+					(size 0.5 0.5)
+					(thickness 0.075)
+				)
+				(justify mirror)
+			)
+		)
+		(property "Datasheet" "~"
+			(at 0 0 0)
+			(unlocked yes)
+			(layer "B.Fab")
+			(hide yes)
+			(uuid "c800a28f-4203-4dcc-b35e-9dde9dfb0f9d")
+			(effects
+				(font
+					(size 1 1)
+					(thickness 0.15)
+				)
+				(justify mirror)
+			)
+		)
+		(property "Description" "test point"
+			(at 0 0 0)
+			(unlocked yes)
+			(layer "B.Fab")
+			(hide yes)
+			(uuid "d51055c4-5d90-48db-8aa0-8b5971b674fb")
+			(effects
+				(font
+					(size 1 1)
+					(thickness 0.15)
+				)
+				(justify mirror)
+			)
+		)
+		(property ki_fp_filters "Pin* Test*")
+		(path "/16b7f3d3-745f-44d9-93a4-41f5bfd830cb/ca2aaa6c-ee19-4963-886c-655f10b5bc67")
+		(sheetname "/Telemetry/")
+		(sheetfile "telemetry.kicad_sch")
+		(attr smd)
+		(fp_rect
+			(start -1.25 0.75)
+			(end 1.25 -0.75)
+			(stroke
+				(width 0.05)
+				(type default)
+			)
+			(fill no)
+			(layer "B.CrtYd")
+			(uuid "babef0a1-2b60-4079-a45b-c9c50982e68e")
+		)
+		(fp_text user "${REFERENCE}"
+			(at 0 2 0)
+			(unlocked yes)
+			(layer "B.Fab")
+			(uuid "ead56811-e3ae-4ef2-8401-fc91ae1ebd63")
+			(effects
+				(font
+					(size 1 1)
+					(thickness 0.15)
+				)
+				(justify mirror)
+			)
+		)
+		(pad "1" smd roundrect
+			(at 0 0 180)
+			(size 2 1)
+			(layers "B.Cu" "B.Mask" "B.Paste")
+			(roundrect_rratio 0.15)
+			(net 133 "/MCU/RF_MOSI")
+			(pinfunction "1")
+			(pintype "passive")
+			(thermal_bridge_angle 45)
+			(uuid "34d37482-94d7-4a69-add3-6ce84b6e92a5")
+		)
+		(embedded_fonts no)
+		(embedded_files
+			(file
+				(name "TestPoint_KOASpeer_RCUCTE.step")
+				(type model)
+				(checksum "2AF83E4609FED5DE82404D774C0715F6")
+			)
+		)
+		(model "kicad-embed://TestPoint_KOASpeer_RCUCTE.step"
+			(offset
+				(xyz -0.75 -0.8 0.25)
+			)
+			(scale
+				(xyz 1 1 1)
+			)
+			(rotate
+				(xyz -0 -0 -0)
+			)
+		)
+	)
 	(footprint "Package_SO:SOIC-8_5.3x5.3mm_P1.27mm"
 		(layer "B.Cu")
 		(uuid "929e00cc-a51c-44f7-958d-7019d4aa8fd3")
-		(at 71.4 85.385758 -45)
+		(at 72.8 84.4 -45)
 		(descr "SOIC, 8 Pin (JEITA/EIAJ 08-001-BBA and Atmel/Microchip, 208 mils width, https://www.jeita.or.jp/japanese/standard/book/ED-7311-19/#target/page_no=21, https://ww1.microchip.com/downloads/en/DeviceDoc/20005045C.pdf#page=23, https://ww1.microchip.com/downloads/en/DeviceDoc/doc2535.pdf#page=162), generated with kicad-footprint-generator ipc_gullwing_generator.py")
 		(tags "SOIC SO P-SOP SOP SOP-8 SO SO-8 8S2 S2AE/F K04-056 CASE-751BE SO8W 8-Pin-SOIC PSA W8-2 W8-4 W8MS-1")
 		(property "Reference" "U10"
@@ -31121,6 +34965,126 @@
 			)
 		)
 	)
+	(footprint "TestPoint_KOASpeer:TestPoint_Chip_RCUCTE_0603"
+		(layer "B.Cu")
+		(uuid "9a86a117-dca9-4725-9292-2363b49e344f")
+		(at 29.2 73.25 180)
+		(descr "Test Point Chip 0603 (1.6mmx0.8mm) RCU RC")
+		(tags "Test Point Chip 0603 (1.6mmx0.8mm) RCU RC")
+		(property "Reference" "TP11"
+			(at 0 2 0)
+			(unlocked yes)
+			(layer "B.SilkS")
+			(uuid "10c15e54-78a7-40f1-8371-f744b1c06f26")
+			(effects
+				(font
+					(size 1 1)
+					(thickness 0.15)
+				)
+				(justify mirror)
+			)
+		)
+		(property "Value" "TestPoint_Small"
+			(at 0 1 0)
+			(unlocked yes)
+			(layer "B.Fab")
+			(uuid "670672fc-2fdc-4568-8948-8905a42f82c7")
+			(effects
+				(font
+					(size 0.5 0.5)
+					(thickness 0.075)
+				)
+				(justify mirror)
+			)
+		)
+		(property "Datasheet" "~"
+			(at 0 0 0)
+			(unlocked yes)
+			(layer "B.Fab")
+			(hide yes)
+			(uuid "5e03f2cc-542c-4ad6-a581-8927a9565db3")
+			(effects
+				(font
+					(size 1 1)
+					(thickness 0.15)
+				)
+				(justify mirror)
+			)
+		)
+		(property "Description" "test point"
+			(at 0 0 0)
+			(unlocked yes)
+			(layer "B.Fab")
+			(hide yes)
+			(uuid "9f86a71e-d114-4721-a528-222019b7d130")
+			(effects
+				(font
+					(size 1 1)
+					(thickness 0.15)
+				)
+				(justify mirror)
+			)
+		)
+		(property ki_fp_filters "Pin* Test*")
+		(path "/9736895c-f0f7-444d-aab7-042381dec39a/7ba8d926-b289-4a29-b5fd-0e78ff992157")
+		(sheetname "/Sensors/")
+		(sheetfile "sensors.kicad_sch")
+		(attr smd)
+		(fp_rect
+			(start -1.25 0.75)
+			(end 1.25 -0.75)
+			(stroke
+				(width 0.05)
+				(type default)
+			)
+			(fill no)
+			(layer "B.CrtYd")
+			(uuid "14291da9-d720-4a8a-8777-ea07e074f0eb")
+		)
+		(fp_text user "${REFERENCE}"
+			(at 0 2 0)
+			(unlocked yes)
+			(layer "B.Fab")
+			(uuid "30c88f9b-e378-4b6e-85c0-271730f88899")
+			(effects
+				(font
+					(size 1 1)
+					(thickness 0.15)
+				)
+				(justify mirror)
+			)
+		)
+		(pad "1" smd roundrect
+			(at 0 0 180)
+			(size 2 1)
+			(layers "B.Cu" "B.Mask" "B.Paste")
+			(roundrect_rratio 0.15)
+			(net 112 "/MCU/IMU_INT2")
+			(pinfunction "1")
+			(pintype "passive")
+			(thermal_bridge_angle 45)
+			(uuid "9b4c5d09-b053-486c-87f2-b47298038679")
+		)
+		(embedded_fonts no)
+		(embedded_files
+			(file
+				(name "TestPoint_KOASpeer_RCUCTE.step")
+				(type model)
+				(checksum "2AF83E4609FED5DE82404D774C0715F6")
+			)
+		)
+		(model "kicad-embed://TestPoint_KOASpeer_RCUCTE.step"
+			(offset
+				(xyz -0.75 -0.8 0.25)
+			)
+			(scale
+				(xyz 1 1 1)
+			)
+			(rotate
+				(xyz -0 -0 -0)
+			)
+		)
+	)
 	(footprint "Capacitor_SMD:C_0603_1608Metric"
 		(layer "B.Cu")
 		(uuid "9b7985ff-824e-449a-a5e4-db4983736a6f")
@@ -31529,6 +35493,246 @@
 			)
 		)
 	)
+	(footprint "TestPoint_KOASpeer:TestPoint_Chip_RCUCTE_0603"
+		(layer "B.Cu")
+		(uuid "a5f23b0a-b301-4cd2-8338-22725e6290b6")
+		(at 32.75 68.15 180)
+		(descr "Test Point Chip 0603 (1.6mmx0.8mm) RCU RC")
+		(tags "Test Point Chip 0603 (1.6mmx0.8mm) RCU RC")
+		(property "Reference" "TP3"
+			(at 0 2 0)
+			(unlocked yes)
+			(layer "B.SilkS")
+			(uuid "464043bf-5d17-47eb-af5d-05feddda1d86")
+			(effects
+				(font
+					(size 1 1)
+					(thickness 0.15)
+				)
+				(justify mirror)
+			)
+		)
+		(property "Value" "TestPoint_Small"
+			(at 0 1 0)
+			(unlocked yes)
+			(layer "B.Fab")
+			(uuid "f9699ab6-5f3f-4ee4-9160-a481b870397f")
+			(effects
+				(font
+					(size 0.5 0.5)
+					(thickness 0.075)
+				)
+				(justify mirror)
+			)
+		)
+		(property "Datasheet" "~"
+			(at 0 0 0)
+			(unlocked yes)
+			(layer "B.Fab")
+			(hide yes)
+			(uuid "80301756-6975-43e8-b5e8-7e17f407e73f")
+			(effects
+				(font
+					(size 1 1)
+					(thickness 0.15)
+				)
+				(justify mirror)
+			)
+		)
+		(property "Description" "test point"
+			(at 0 0 0)
+			(unlocked yes)
+			(layer "B.Fab")
+			(hide yes)
+			(uuid "420173b1-9f20-4502-933f-94fb7ed3201b")
+			(effects
+				(font
+					(size 1 1)
+					(thickness 0.15)
+				)
+				(justify mirror)
+			)
+		)
+		(property ki_fp_filters "Pin* Test*")
+		(path "/9736895c-f0f7-444d-aab7-042381dec39a/1c195f19-f577-4aca-83af-2cd3190986a0")
+		(sheetname "/Sensors/")
+		(sheetfile "sensors.kicad_sch")
+		(attr smd)
+		(fp_rect
+			(start -1.25 0.75)
+			(end 1.25 -0.75)
+			(stroke
+				(width 0.05)
+				(type default)
+			)
+			(fill no)
+			(layer "B.CrtYd")
+			(uuid "40a60dda-2dd5-4aa0-9db3-6a92b2e4fd47")
+		)
+		(fp_text user "${REFERENCE}"
+			(at 0 2 0)
+			(unlocked yes)
+			(layer "B.Fab")
+			(uuid "16479381-ab2c-41c8-87f7-d759c55829de")
+			(effects
+				(font
+					(size 1 1)
+					(thickness 0.15)
+				)
+				(justify mirror)
+			)
+		)
+		(pad "1" smd roundrect
+			(at 0 0 180)
+			(size 2 1)
+			(layers "B.Cu" "B.Mask" "B.Paste")
+			(roundrect_rratio 0.15)
+			(net 132 "/Sensors/SPC")
+			(pinfunction "1")
+			(pintype "passive")
+			(thermal_bridge_angle 45)
+			(uuid "c32505ef-2d3a-4b17-8569-6aa12b3f0d7f")
+		)
+		(embedded_fonts no)
+		(embedded_files
+			(file
+				(name "TestPoint_KOASpeer_RCUCTE.step")
+				(type model)
+				(checksum "2AF83E4609FED5DE82404D774C0715F6")
+			)
+		)
+		(model "kicad-embed://TestPoint_KOASpeer_RCUCTE.step"
+			(offset
+				(xyz -0.75 -0.8 0.25)
+			)
+			(scale
+				(xyz 1 1 1)
+			)
+			(rotate
+				(xyz -0 -0 -0)
+			)
+		)
+	)
+	(footprint "TestPoint_KOASpeer:TestPoint_Chip_RCUCTE_0603"
+		(layer "B.Cu")
+		(uuid "a753f5c4-c9b2-4e2c-b8fe-111c3d1d8b45")
+		(at 20.55627 88 180)
+		(descr "Test Point Chip 0603 (1.6mmx0.8mm) RCU RC")
+		(tags "Test Point Chip 0603 (1.6mmx0.8mm) RCU RC")
+		(property "Reference" "TP30"
+			(at 0 2 0)
+			(unlocked yes)
+			(layer "B.SilkS")
+			(uuid "e17082e0-9413-4d78-aaa6-4f424278f8af")
+			(effects
+				(font
+					(size 1 1)
+					(thickness 0.15)
+				)
+				(justify mirror)
+			)
+		)
+		(property "Value" "TestPoint_Small"
+			(at 0 1 0)
+			(unlocked yes)
+			(layer "B.Fab")
+			(uuid "2e9ba2b6-bda5-4929-8558-6911a2fc088d")
+			(effects
+				(font
+					(size 0.5 0.5)
+					(thickness 0.075)
+				)
+				(justify mirror)
+			)
+		)
+		(property "Datasheet" "~"
+			(at 0 0 0)
+			(unlocked yes)
+			(layer "B.Fab")
+			(hide yes)
+			(uuid "5b45dd67-c02c-4e56-b057-8cb6cbf20431")
+			(effects
+				(font
+					(size 1 1)
+					(thickness 0.15)
+				)
+				(justify mirror)
+			)
+		)
+		(property "Description" "test point"
+			(at 0 0 0)
+			(unlocked yes)
+			(layer "B.Fab")
+			(hide yes)
+			(uuid "65e5271f-c1d3-4d14-98da-77adfb1f34a6")
+			(effects
+				(font
+					(size 1 1)
+					(thickness 0.15)
+				)
+				(justify mirror)
+			)
+		)
+		(property ki_fp_filters "Pin* Test*")
+		(path "/16b7f3d3-745f-44d9-93a4-41f5bfd830cb/e9f4dc92-af33-4bd2-a976-21da1cd341d3")
+		(sheetname "/Telemetry/")
+		(sheetfile "telemetry.kicad_sch")
+		(attr smd)
+		(fp_rect
+			(start -1.25 0.75)
+			(end 1.25 -0.75)
+			(stroke
+				(width 0.05)
+				(type default)
+			)
+			(fill no)
+			(layer "B.CrtYd")
+			(uuid "ae3aaa67-7734-4739-a0cc-c4b8f897482e")
+		)
+		(fp_text user "${REFERENCE}"
+			(at 0 2 0)
+			(unlocked yes)
+			(layer "B.Fab")
+			(uuid "bbae88be-54c9-4566-b003-28eaf6233022")
+			(effects
+				(font
+					(size 1 1)
+					(thickness 0.15)
+				)
+				(justify mirror)
+			)
+		)
+		(pad "1" smd roundrect
+			(at 0 0 180)
+			(size 2 1)
+			(layers "B.Cu" "B.Mask" "B.Paste")
+			(roundrect_rratio 0.15)
+			(net 126 "/MCU/RF_IO1")
+			(pinfunction "1")
+			(pintype "passive")
+			(thermal_bridge_angle 45)
+			(uuid "d413433a-4cd8-43e3-80e1-23cf17313263")
+		)
+		(embedded_fonts no)
+		(embedded_files
+			(file
+				(name "TestPoint_KOASpeer_RCUCTE.step")
+				(type model)
+				(checksum "2AF83E4609FED5DE82404D774C0715F6")
+			)
+		)
+		(model "kicad-embed://TestPoint_KOASpeer_RCUCTE.step"
+			(offset
+				(xyz -0.75 -0.8 0.25)
+			)
+			(scale
+				(xyz 1 1 1)
+			)
+			(rotate
+				(xyz -0 -0 -0)
+			)
+		)
+	)
 	(footprint "Package_LGA:LGA-14_3x2.5mm_P0.5mm_LayoutBorder3x4y"
 		(layer "B.Cu")
 		(uuid "acc67165-ee49-42ba-bdff-42ad74819752")
@@ -31856,6 +36060,126 @@
 			)
 			(rotate
 				(xyz 0 0 0)
+			)
+		)
+	)
+	(footprint "TestPoint_KOASpeer:TestPoint_Chip_RCUCTE_0603"
+		(layer "B.Cu")
+		(uuid "ae8a453b-cfd0-4cde-9d6e-f4ba9f83be1b")
+		(at 29.2 68.15 180)
+		(descr "Test Point Chip 0603 (1.6mmx0.8mm) RCU RC")
+		(tags "Test Point Chip 0603 (1.6mmx0.8mm) RCU RC")
+		(property "Reference" "TP9"
+			(at 0 2 0)
+			(unlocked yes)
+			(layer "B.SilkS")
+			(uuid "b0b33cdd-9cf2-4bb9-99c2-2b6fe675c76e")
+			(effects
+				(font
+					(size 1 1)
+					(thickness 0.15)
+				)
+				(justify mirror)
+			)
+		)
+		(property "Value" "TestPoint_Small"
+			(at 0 1 0)
+			(unlocked yes)
+			(layer "B.Fab")
+			(uuid "7503d0ee-40dd-41e7-a586-d0a70403d3b7")
+			(effects
+				(font
+					(size 0.5 0.5)
+					(thickness 0.075)
+				)
+				(justify mirror)
+			)
+		)
+		(property "Datasheet" "~"
+			(at 0 0 0)
+			(unlocked yes)
+			(layer "B.Fab")
+			(hide yes)
+			(uuid "d00755c0-8fed-4903-869c-a0eb66e4b527")
+			(effects
+				(font
+					(size 1 1)
+					(thickness 0.15)
+				)
+				(justify mirror)
+			)
+		)
+		(property "Description" "test point"
+			(at 0 0 0)
+			(unlocked yes)
+			(layer "B.Fab")
+			(hide yes)
+			(uuid "c600dfdc-5596-4634-844f-2322a797e560")
+			(effects
+				(font
+					(size 1 1)
+					(thickness 0.15)
+				)
+				(justify mirror)
+			)
+		)
+		(property ki_fp_filters "Pin* Test*")
+		(path "/9736895c-f0f7-444d-aab7-042381dec39a/8bda339d-604b-4496-9de3-d5b6e70eef93")
+		(sheetname "/Sensors/")
+		(sheetfile "sensors.kicad_sch")
+		(attr smd)
+		(fp_rect
+			(start -1.25 0.75)
+			(end 1.25 -0.75)
+			(stroke
+				(width 0.05)
+				(type default)
+			)
+			(fill no)
+			(layer "B.CrtYd")
+			(uuid "a6a360f5-890a-41fa-9881-e03fe19d768a")
+		)
+		(fp_text user "${REFERENCE}"
+			(at 0 2 0)
+			(unlocked yes)
+			(layer "B.Fab")
+			(uuid "dee6ff0f-bb3f-48ac-8dbf-8727673065ca")
+			(effects
+				(font
+					(size 1 1)
+					(thickness 0.15)
+				)
+				(justify mirror)
+			)
+		)
+		(pad "1" smd roundrect
+			(at 0 0 180)
+			(size 2 1)
+			(layers "B.Cu" "B.Mask" "B.Paste")
+			(roundrect_rratio 0.15)
+			(net 132 "/Sensors/SPC")
+			(pinfunction "1")
+			(pintype "passive")
+			(thermal_bridge_angle 45)
+			(uuid "7859b06b-55f5-43d7-ac53-70a94bb2e522")
+		)
+		(embedded_fonts no)
+		(embedded_files
+			(file
+				(name "TestPoint_KOASpeer_RCUCTE.step")
+				(type model)
+				(checksum "2AF83E4609FED5DE82404D774C0715F6")
+			)
+		)
+		(model "kicad-embed://TestPoint_KOASpeer_RCUCTE.step"
+			(offset
+				(xyz -0.75 -0.8 0.25)
+			)
+			(scale
+				(xyz 1 1 1)
+			)
+			(rotate
+				(xyz -0 -0 -0)
 			)
 		)
 	)
@@ -34959,6 +39283,126 @@
 			)
 		)
 	)
+	(footprint "TestPoint_KOASpeer:TestPoint_Chip_RCUCTE_0603"
+		(layer "B.Cu")
+		(uuid "dd01350e-5e1d-4cae-918d-45f2528e1f8e")
+		(at 32.75 63.05 180)
+		(descr "Test Point Chip 0603 (1.6mmx0.8mm) RCU RC")
+		(tags "Test Point Chip 0603 (1.6mmx0.8mm) RCU RC")
+		(property "Reference" "TP1"
+			(at 0 2 0)
+			(unlocked yes)
+			(layer "B.SilkS")
+			(uuid "1c705558-4fe8-4f3b-ab47-a3704d07d864")
+			(effects
+				(font
+					(size 1 1)
+					(thickness 0.15)
+				)
+				(justify mirror)
+			)
+		)
+		(property "Value" "TestPoint_Small"
+			(at 0 1 0)
+			(unlocked yes)
+			(layer "B.Fab")
+			(uuid "f407b993-f78a-440c-9220-6eb3f0863301")
+			(effects
+				(font
+					(size 0.5 0.5)
+					(thickness 0.075)
+				)
+				(justify mirror)
+			)
+		)
+		(property "Datasheet" "~"
+			(at 0 0 0)
+			(unlocked yes)
+			(layer "B.Fab")
+			(hide yes)
+			(uuid "e960c52e-7b13-4b38-88cf-17b4608caec4")
+			(effects
+				(font
+					(size 1 1)
+					(thickness 0.15)
+				)
+				(justify mirror)
+			)
+		)
+		(property "Description" "test point"
+			(at 0 0 0)
+			(unlocked yes)
+			(layer "B.Fab")
+			(hide yes)
+			(uuid "b7810282-328a-411c-973f-1badd8cb385d")
+			(effects
+				(font
+					(size 1 1)
+					(thickness 0.15)
+				)
+				(justify mirror)
+			)
+		)
+		(property ki_fp_filters "Pin* Test*")
+		(path "/9736895c-f0f7-444d-aab7-042381dec39a/355ce851-d6fb-460b-ae99-06e6cf467289")
+		(sheetname "/Sensors/")
+		(sheetfile "sensors.kicad_sch")
+		(attr smd)
+		(fp_rect
+			(start -1.25 0.75)
+			(end 1.25 -0.75)
+			(stroke
+				(width 0.05)
+				(type default)
+			)
+			(fill no)
+			(layer "B.CrtYd")
+			(uuid "7eb0af06-924b-4217-9494-7e6d7e07aa00")
+		)
+		(fp_text user "${REFERENCE}"
+			(at 0 2 0)
+			(unlocked yes)
+			(layer "B.Fab")
+			(uuid "89cbb322-19b8-46e4-8e26-da776fde54c8")
+			(effects
+				(font
+					(size 1 1)
+					(thickness 0.15)
+				)
+				(justify mirror)
+			)
+		)
+		(pad "1" smd roundrect
+			(at 0 0 180)
+			(size 2 1)
+			(layers "B.Cu" "B.Mask" "B.Paste")
+			(roundrect_rratio 0.15)
+			(net 130 "/Sensors/MOSI")
+			(pinfunction "1")
+			(pintype "passive")
+			(thermal_bridge_angle 45)
+			(uuid "4ae540eb-6bcc-4cf5-a7c4-fc5c5bdbcd53")
+		)
+		(embedded_fonts no)
+		(embedded_files
+			(file
+				(name "TestPoint_KOASpeer_RCUCTE.step")
+				(type model)
+				(checksum "2AF83E4609FED5DE82404D774C0715F6")
+			)
+		)
+		(model "kicad-embed://TestPoint_KOASpeer_RCUCTE.step"
+			(offset
+				(xyz -0.75 -0.8 0.25)
+			)
+			(scale
+				(xyz 1 1 1)
+			)
+			(rotate
+				(xyz -0 -0 -0)
+			)
+		)
+	)
 	(footprint "Capacitor_SMD:C_0603_1608Metric"
 		(layer "B.Cu")
 		(uuid "e4b57ba7-b434-41d1-9c27-052811297dd3")
@@ -35160,6 +39604,126 @@
 			)
 			(rotate
 				(xyz 0 0 0)
+			)
+		)
+	)
+	(footprint "TestPoint_KOASpeer:TestPoint_Chip_RCUCTE_0603"
+		(layer "B.Cu")
+		(uuid "e86660fb-6cdb-4d63-9317-625695940ec3")
+		(at 20.1 63.05 180)
+		(descr "Test Point Chip 0603 (1.6mmx0.8mm) RCU RC")
+		(tags "Test Point Chip 0603 (1.6mmx0.8mm) RCU RC")
+		(property "Reference" "TP16"
+			(at 0 2 0)
+			(unlocked yes)
+			(layer "B.SilkS")
+			(uuid "59579af0-a72c-4d12-8c9d-d051473bc4b8")
+			(effects
+				(font
+					(size 1 1)
+					(thickness 0.15)
+				)
+				(justify mirror)
+			)
+		)
+		(property "Value" "TestPoint_Small"
+			(at 0 1 0)
+			(unlocked yes)
+			(layer "B.Fab")
+			(uuid "28247fdc-65b0-4c2e-90bd-3dc127d12ed9")
+			(effects
+				(font
+					(size 0.5 0.5)
+					(thickness 0.075)
+				)
+				(justify mirror)
+			)
+		)
+		(property "Datasheet" "~"
+			(at 0 0 0)
+			(unlocked yes)
+			(layer "B.Fab")
+			(hide yes)
+			(uuid "4236bf13-5125-4577-9c3b-a355fdfbd6ce")
+			(effects
+				(font
+					(size 1 1)
+					(thickness 0.15)
+				)
+				(justify mirror)
+			)
+		)
+		(property "Description" "test point"
+			(at 0 0 0)
+			(unlocked yes)
+			(layer "B.Fab")
+			(hide yes)
+			(uuid "67122b5c-cd43-4ade-b84c-95e4a61b9ade")
+			(effects
+				(font
+					(size 1 1)
+					(thickness 0.15)
+				)
+				(justify mirror)
+			)
+		)
+		(property ki_fp_filters "Pin* Test*")
+		(path "/6e71e7a3-1bcd-4797-b2e4-88d14bf1f853/18bb7233-23e1-4565-963c-772681d27930")
+		(sheetname "/Memory/")
+		(sheetfile "flash.kicad_sch")
+		(attr smd)
+		(fp_rect
+			(start -1.25 0.75)
+			(end 1.25 -0.75)
+			(stroke
+				(width 0.05)
+				(type default)
+			)
+			(fill no)
+			(layer "B.CrtYd")
+			(uuid "c40b1c09-1bbe-4af4-a3c9-f188d62c83f3")
+		)
+		(fp_text user "${REFERENCE}"
+			(at 0 2 0)
+			(unlocked yes)
+			(layer "B.Fab")
+			(uuid "184634e7-957e-48a4-ab7c-995f3b3dc6f0")
+			(effects
+				(font
+					(size 1 1)
+					(thickness 0.15)
+				)
+				(justify mirror)
+			)
+		)
+		(pad "1" smd roundrect
+			(at 0 0 180)
+			(size 2 1)
+			(layers "B.Cu" "B.Mask" "B.Paste")
+			(roundrect_rratio 0.15)
+			(net 75 "/MCU/FLASH_CLK")
+			(pinfunction "1")
+			(pintype "passive")
+			(thermal_bridge_angle 45)
+			(uuid "1faea718-a2c9-4efa-9d17-8e5a5d30a13a")
+		)
+		(embedded_fonts no)
+		(embedded_files
+			(file
+				(name "TestPoint_KOASpeer_RCUCTE.step")
+				(type model)
+				(checksum "2AF83E4609FED5DE82404D774C0715F6")
+			)
+		)
+		(model "kicad-embed://TestPoint_KOASpeer_RCUCTE.step"
+			(offset
+				(xyz -0.75 -0.8 0.25)
+			)
+			(scale
+				(xyz 1 1 1)
+			)
+			(rotate
+				(xyz -0 -0 -0)
 			)
 		)
 	)
@@ -35775,6 +40339,126 @@
 			)
 		)
 	)
+	(footprint "TestPoint_KOASpeer:TestPoint_Chip_RCUCTE_0603"
+		(layer "B.Cu")
+		(uuid "f2fe83c4-e7ec-42a5-a1aa-d2bfc3f57a0b")
+		(at 29.2 70.7 180)
+		(descr "Test Point Chip 0603 (1.6mmx0.8mm) RCU RC")
+		(tags "Test Point Chip 0603 (1.6mmx0.8mm) RCU RC")
+		(property "Reference" "TP10"
+			(at 0 2 0)
+			(unlocked yes)
+			(layer "B.SilkS")
+			(uuid "5a2a4f5f-29e2-4b62-8e47-7366c6ccfbef")
+			(effects
+				(font
+					(size 1 1)
+					(thickness 0.15)
+				)
+				(justify mirror)
+			)
+		)
+		(property "Value" "TestPoint_Small"
+			(at 0 1 0)
+			(unlocked yes)
+			(layer "B.Fab")
+			(uuid "f98dfa57-f0fd-4aff-8b6f-b593d5feb8f7")
+			(effects
+				(font
+					(size 0.5 0.5)
+					(thickness 0.075)
+				)
+				(justify mirror)
+			)
+		)
+		(property "Datasheet" "~"
+			(at 0 0 0)
+			(unlocked yes)
+			(layer "B.Fab")
+			(hide yes)
+			(uuid "a1c5fe7a-4750-45b0-a3a6-da45a6603b39")
+			(effects
+				(font
+					(size 1 1)
+					(thickness 0.15)
+				)
+				(justify mirror)
+			)
+		)
+		(property "Description" "test point"
+			(at 0 0 0)
+			(unlocked yes)
+			(layer "B.Fab")
+			(hide yes)
+			(uuid "63fc7bec-bf0f-46cb-95de-f47c72a4d767")
+			(effects
+				(font
+					(size 1 1)
+					(thickness 0.15)
+				)
+				(justify mirror)
+			)
+		)
+		(property ki_fp_filters "Pin* Test*")
+		(path "/9736895c-f0f7-444d-aab7-042381dec39a/cc404b96-686a-4e6c-a3bc-718213fe759a")
+		(sheetname "/Sensors/")
+		(sheetfile "sensors.kicad_sch")
+		(attr smd)
+		(fp_rect
+			(start -1.25 0.75)
+			(end 1.25 -0.75)
+			(stroke
+				(width 0.05)
+				(type default)
+			)
+			(fill no)
+			(layer "B.CrtYd")
+			(uuid "acd033b1-2edc-4a3d-8f89-556abe719229")
+		)
+		(fp_text user "${REFERENCE}"
+			(at 0 2 0)
+			(unlocked yes)
+			(layer "B.Fab")
+			(uuid "fa8bb983-0fad-4a84-aefc-18bf49b3632f")
+			(effects
+				(font
+					(size 1 1)
+					(thickness 0.15)
+				)
+				(justify mirror)
+			)
+		)
+		(pad "1" smd roundrect
+			(at 0 0 180)
+			(size 2 1)
+			(layers "B.Cu" "B.Mask" "B.Paste")
+			(roundrect_rratio 0.15)
+			(net 113 "/MCU/IMU_INT1")
+			(pinfunction "1")
+			(pintype "passive")
+			(thermal_bridge_angle 45)
+			(uuid "21a53b65-9fa4-440e-88af-071a1cee69ad")
+		)
+		(embedded_fonts no)
+		(embedded_files
+			(file
+				(name "TestPoint_KOASpeer_RCUCTE.step")
+				(type model)
+				(checksum "2AF83E4609FED5DE82404D774C0715F6")
+			)
+		)
+		(model "kicad-embed://TestPoint_KOASpeer_RCUCTE.step"
+			(offset
+				(xyz -0.75 -0.8 0.25)
+			)
+			(scale
+				(xyz 1 1 1)
+			)
+			(rotate
+				(xyz -0 -0 -0)
+			)
+		)
+	)
 	(footprint "Capacitor_SMD:C_0603_1608Metric"
 		(layer "B.Cu")
 		(uuid "f3c412b1-c106-40f7-8002-c209f45cd0f7")
@@ -35976,6 +40660,126 @@
 			)
 			(rotate
 				(xyz 0 0 0)
+			)
+		)
+	)
+	(footprint "TestPoint_KOASpeer:TestPoint_Chip_RCUCTE_0603"
+		(layer "B.Cu")
+		(uuid "fc4d37af-dfae-4835-9fec-bb5fa3b0e750")
+		(at 20.1 75.8 180)
+		(descr "Test Point Chip 0603 (1.6mmx0.8mm) RCU RC")
+		(tags "Test Point Chip 0603 (1.6mmx0.8mm) RCU RC")
+		(property "Reference" "TP21"
+			(at 0 2 0)
+			(unlocked yes)
+			(layer "B.SilkS")
+			(uuid "23acafb3-c4d2-47f9-873b-8738fb9d9273")
+			(effects
+				(font
+					(size 1 1)
+					(thickness 0.15)
+				)
+				(justify mirror)
+			)
+		)
+		(property "Value" "TestPoint_Small"
+			(at 0 1 0)
+			(unlocked yes)
+			(layer "B.Fab")
+			(uuid "f82670e0-c73d-4898-a381-e555ee62c230")
+			(effects
+				(font
+					(size 0.5 0.5)
+					(thickness 0.075)
+				)
+				(justify mirror)
+			)
+		)
+		(property "Datasheet" "~"
+			(at 0 0 0)
+			(unlocked yes)
+			(layer "B.Fab")
+			(hide yes)
+			(uuid "74f2c11a-ba96-43f8-a5b0-8f6c3172219d")
+			(effects
+				(font
+					(size 1 1)
+					(thickness 0.15)
+				)
+				(justify mirror)
+			)
+		)
+		(property "Description" "test point"
+			(at 0 0 0)
+			(unlocked yes)
+			(layer "B.Fab")
+			(hide yes)
+			(uuid "933993d4-0831-4e0c-be58-89f2cb6586aa")
+			(effects
+				(font
+					(size 1 1)
+					(thickness 0.15)
+				)
+				(justify mirror)
+			)
+		)
+		(property ki_fp_filters "Pin* Test*")
+		(path "/6e71e7a3-1bcd-4797-b2e4-88d14bf1f853/8dd18f2b-78aa-4ceb-8b89-5fa0dddfe98c")
+		(sheetname "/Memory/")
+		(sheetfile "flash.kicad_sch")
+		(attr smd)
+		(fp_rect
+			(start -1.25 0.75)
+			(end 1.25 -0.75)
+			(stroke
+				(width 0.05)
+				(type default)
+			)
+			(fill no)
+			(layer "B.CrtYd")
+			(uuid "c7f82f10-2327-4752-a730-48c7e464e8aa")
+		)
+		(fp_text user "${REFERENCE}"
+			(at 0 2 0)
+			(unlocked yes)
+			(layer "B.Fab")
+			(uuid "4ad18204-ef42-4cd7-ae46-1da3ed2e7820")
+			(effects
+				(font
+					(size 1 1)
+					(thickness 0.15)
+				)
+				(justify mirror)
+			)
+		)
+		(pad "1" smd roundrect
+			(at 0 0 180)
+			(size 2 1)
+			(layers "B.Cu" "B.Mask" "B.Paste")
+			(roundrect_rratio 0.15)
+			(net 73 "/MCU/FLASH_CS")
+			(pinfunction "1")
+			(pintype "passive")
+			(thermal_bridge_angle 45)
+			(uuid "823656f0-f62c-4b80-92b5-176f6f670377")
+		)
+		(embedded_fonts no)
+		(embedded_files
+			(file
+				(name "TestPoint_KOASpeer_RCUCTE.step")
+				(type model)
+				(checksum "2AF83E4609FED5DE82404D774C0715F6")
+			)
+		)
+		(model "kicad-embed://TestPoint_KOASpeer_RCUCTE.step"
+			(offset
+				(xyz -0.75 -0.8 0.25)
+			)
+			(scale
+				(xyz 1 1 1)
+			)
+			(rotate
+				(xyz -0 -0 -0)
 			)
 		)
 	)
@@ -39982,6 +44786,129 @@
 				VkbuUhp7JyNGUO8rUP8GNpUQvpMp7Q==|
 			)
 			(checksum "6C539A5BD06C60DE5F29B901A99F0E48")
+		)
+		(file
+			(name "TestPoint_KOASpeer_RCUCTE.step")
+			(type model)
+			(data |KLUv/WCwoL3PANpW9TEw0GiITLEBkAFlMmvXrUU3EP+p2iC1DWo8F5Q/fAJDESm5cnNlimZ81uYF
+				vpjjBH4viAOcAuAC5ahMSwUjeR5AMM13WS5dJ3kt17RSDSlvt5hWimj0PZ5tok0RzfKwDI1kZrhV
+				uYVaSvj6XlbqYdnvqvJchItnlXdVduujUrul1ykd3cnedZKqkX4fXdpkW7SRnotuE9nCgeZ1WYt8
+				ql1LVcO8nWnTvGiGZ3U22jJbpdUy1ZNdcyv1tJBUX5dZPiyz61WpixSt1lKrNKmOS2lKWKin0yQf
+				yfCo6tREv9FikdpKVN/NVMzSxYQC+SaeMdewkHAPV594t+ezq/PSrd62adu1ZizbzMzMzGjJcPVV
+				VVVYWEi4uiCkJDzCBSIh4epXNfG8V9ta2tVU1WsqKupZTUtPSff633n83Te11+mbpZrPTEzSS6dl
+				5Z5yUfGoTzxERES8S7z/7uzq8nRW3/g0+mzfzWXymq/2xLOZ2ertieeqW1VRLV2fSLd5DhsdHZ0+
+				8byqwIrWCztUKpTMw2DhgTwT8c42q6Kl3FX9MxHvbLMqUsJd1T8T8c42q6LT7ao+MA/HFxocVBDI
+				WB6Mg0rmkUQWQH5ptCsT2paSv6n4S6Pd3WflSrIt0z8zF09DhOIAQVy0ByJIIMBoTCiVS2aBUlkw
+				aYgwQM6h4EQMD2ZCSQBzgZgu4/BYEMgsPJKGyIOFCMSsFg5lbCIkGhgOhsVyYTQcJg0ulMch0uAC
+				KQW1u3AocC0aDgaj8VgyEUzDc3ksDhnJxIJ5GCoPgwwlIpk0RBpIHgYI1SKCiSxInstCw6OA0QBF
+				KUphxZUpFKQoBQMUDQwmDyaYCkMF4yDCaDQUEYangeTCmHh40KPscdWAIgEcCQc2EBrOAgkTERoO
+				RpGAiU0EiQ4DEYhNZ+KBicwCEQ8dTcTDAg+MepA1oLA8DhXK8+BhTHA2DWQ4EhMTGwgSnAkbzgTN
+				Ah4iNAtwJDgSCOgwoCESAJKCmgAUBVCGQVOoUkCjCRCazkRmA/HQYTwYiQOJJcPZbCZcIhUCZDoR
+				DxIOnYkNZgOhiXgYIg0DUMCoARhDQkbTidhAbCRMgHhwKGAwGooIiYfOhAcOhIlNhEZDZYJxmFgk
+				l2ch81AmCxAkQJAgAAoFEBIQHp0Jm87EwwEHHGgoHhAiJgrHhAQJCYzC4YGQ4CigOECBIAFnM0FC
+				wqaBzYIC5qJYIOIh4kHTiZCAoNhwNA50FJCYUDxwAEWETUfD2URsGCgOCIDlWYg8DRAkGECZgslU
+				CpXLJOazy7eAfOY1tdVu39JOQxvt7DPbNrPNyi4jm2zNW2pW8+vmrDRjofnqzK4jW9lcZWaqIy+V
+				WYnMp1uQZKQtH2nZ9LJRlouwTHRX3nVZ18rfKudSGXfJt/Yq2fbk2iTTmrw4ILPwYBqeiaUCWb38
+				VZ2VV0vc1ErnESpl7uni3mSrot30tqWJiUSkuLo/3DXSG42sv2GR88Yi4wlrcXpfVLOvR+SFY9f+
+				r2k9T1WXjqf73bzLzWvq3eY+fbWUmb9aXEw7/O1l3a3XSVe3XHvvlXleW0r1Yu3iXUurmD4ea6GY
+				6AVHu4p4rh/6qmq01Kth2TS1kIxIuKeoe2q1ONW79Zemh3l3l6Z4SL8r9Z2tnQ2TtM5sn0lX36/J
+				KvXqLf1/a/35tF0ej37h7+e6u29n+XYzlpWv6HUj09F3zc9VM828baFpVbU4OhPPqArNtrR3Zkpo
+				ZTdZUqFtIZnWUaXZ66bcLNOiYqUVf2V0TFdRWhHVAqvQR7WFXtJdkNLZFnb6LgotyTazBxYHkgz9
+				R77p0oiyCJHIi8PdPV29710uHW76tuwl26bVltGSrWapXl2tUpdQT6dI1qJdmH5LvaSre1S99S/N
+				7/H/He/79np9k/7cdGpWPhczFTEPLwmdeZZ3lXaUdItqxfTxnGhGJB+qGc8MzQrJCLcwDZOKQ8YA
+				D8Zydam3zl8604nnPLX0maWdLevMLOksd9V4m9GlsQ7pQbl4KBLLRAKxqdSMpGUjJRvp7nX/fe7R
+				bH9We5vpza4vMz2Z6VevtS9NrLvy79/K8lWWpzL84hV/fNIi5RHeTXQ32iJTIvtu6uL3cu2jf4te
+				sttubdLiqqnWleqpR71TW41uuqVJ6s296v9f3njSvK+vdqwbvTbpqfnnZT4oS0rWwlOSKeGRiXQv
+				STevl4tr/9GuPvNSUZ14pqWLd3/e6LPXf3abmnh1z0wf3aWzbm1ZuVYrHtH3odGcNixcQ+v90M53
+				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|
+			)
+			(checksum "2AF83E4609FED5DE82404D774C0715F6")
 		)
 	)
 )
