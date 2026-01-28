@@ -1629,12 +1629,6 @@
 		(uuid "77c1755c-dc6d-43f8-ba22-d451f5257a9a")
 	)
 	(junction
-		(at 152.4 73.66)
-		(diameter 0)
-		(color 0 0 0 0)
-		(uuid "78000818-9bf7-4ac1-87b1-2a8a0999852a")
-	)
-	(junction
 		(at 49.53 139.7)
 		(diameter 0)
 		(color 0 0 0 0)
@@ -1683,12 +1677,6 @@
 		(uuid "a0b5f7e8-3449-47f5-882d-22a66a858b59")
 	)
 	(junction
-		(at 152.4 71.12)
-		(diameter 0)
-		(color 0 0 0 0)
-		(uuid "bd9bb0c5-fa37-4c47-9c63-40bd7aaa90d7")
-	)
-	(junction
 		(at 196.85 50.8)
 		(diameter 0)
 		(color 0 0 0 0)
@@ -1729,12 +1717,6 @@
 		(diameter 0)
 		(color 0 0 0 0)
 		(uuid "e9bd2c34-9c7a-4617-a5e9-997dc093bfd8")
-	)
-	(junction
-		(at 152.4 76.2)
-		(diameter 0)
-		(color 0 0 0 0)
-		(uuid "fd6d0a1c-763f-4e98-9d00-a9de2ff71bc2")
 	)
 	(no_connect
 		(at 180.34 81.28)
@@ -1810,13 +1792,13 @@
 	)
 	(wire
 		(pts
-			(xy 152.4 71.12) (xy 158.75 71.12)
+			(xy 140.97 76.2) (xy 158.75 76.2)
 		)
 		(stroke
 			(width 0)
 			(type default)
 		)
-		(uuid "203c1a74-9938-4983-85b3-0bfa1e85e1c4")
+		(uuid "1f665621-e5df-4f7a-a7c9-db0f24116278")
 	)
 	(wire
 		(pts
@@ -1897,16 +1879,6 @@
 			(type default)
 		)
 		(uuid "3ee40174-e885-47d6-80ff-21e506677ff8")
-	)
-	(wire
-		(pts
-			(xy 140.97 73.66) (xy 152.4 73.66)
-		)
-		(stroke
-			(width 0)
-			(type default)
-		)
-		(uuid "3f724f6b-94b2-475c-b868-f00b0f9c8268")
 	)
 	(wire
 		(pts
@@ -2040,16 +2012,6 @@
 	)
 	(wire
 		(pts
-			(xy 140.97 71.12) (xy 152.4 71.12)
-		)
-		(stroke
-			(width 0)
-			(type default)
-		)
-		(uuid "690054a3-92e2-4cd5-adeb-694007a58b33")
-	)
-	(wire
-		(pts
 			(xy 199.39 50.8) (xy 199.39 48.26)
 		)
 		(stroke
@@ -2057,16 +2019,6 @@
 			(type default)
 		)
 		(uuid "697ce6ed-4a9d-4fcb-acc1-f0d51caee339")
-	)
-	(wire
-		(pts
-			(xy 140.97 76.2) (xy 152.4 76.2)
-		)
-		(stroke
-			(width 0)
-			(type default)
-		)
-		(uuid "6b6c90ca-2844-4107-aa5e-f94b58e7d294")
 	)
 	(wire
 		(pts
@@ -2170,6 +2122,16 @@
 	)
 	(wire
 		(pts
+			(xy 140.97 71.12) (xy 158.75 71.12)
+		)
+		(stroke
+			(width 0)
+			(type default)
+		)
+		(uuid "9030f786-4f4b-4a01-aaaa-2fcc34ce3ef1")
+	)
+	(wire
+		(pts
 			(xy 66.04 124.46) (xy 66.04 129.54)
 		)
 		(stroke
@@ -2237,6 +2199,16 @@
 			(type default)
 		)
 		(uuid "a7467d15-1c65-4899-8aa5-b9c62f4964b4")
+	)
+	(wire
+		(pts
+			(xy 140.97 73.66) (xy 158.75 73.66)
+		)
+		(stroke
+			(width 0)
+			(type default)
+		)
+		(uuid "a9246bbf-8c11-4f10-ae85-1de62f75fdfc")
 	)
 	(wire
 		(pts
@@ -2357,16 +2329,6 @@
 			(type default)
 		)
 		(uuid "bfd719e3-9a49-447a-bc4c-fb336387f6d5")
-	)
-	(wire
-		(pts
-			(xy 152.4 73.66) (xy 158.75 73.66)
-		)
-		(stroke
-			(width 0)
-			(type default)
-		)
-		(uuid "c3b59cd0-f13c-434d-96da-d96da04ec524")
 	)
 	(wire
 		(pts
@@ -2497,16 +2459,6 @@
 			(type default)
 		)
 		(uuid "f681a08c-1cd6-4207-a4b5-ea7b74bef1f6")
-	)
-	(wire
-		(pts
-			(xy 152.4 76.2) (xy 158.75 76.2)
-		)
-		(stroke
-			(width 0)
-			(type default)
-		)
-		(uuid "f8043078-4115-48e0-bf69-4dc1d63b8742")
 	)
 	(wire
 		(pts
@@ -4490,144 +4442,6 @@
 		)
 	)
 	(symbol
-		(lib_id "Connector:TestPoint_Small")
-		(at 152.4 71.12 0)
-		(mirror y)
-		(unit 1)
-		(exclude_from_sim no)
-		(in_bom yes)
-		(on_board yes)
-		(dnp no)
-		(fields_autoplaced yes)
-		(uuid "877b31fc-9e8f-4b48-86c5-47f6d97a6d08")
-		(property "Reference" "TP7"
-			(at 151.13 69.8499 0)
-			(effects
-				(font
-					(size 1.27 1.27)
-				)
-				(justify left)
-			)
-		)
-		(property "Value" "TestPoint_Small"
-			(at 151.13 72.3899 0)
-			(effects
-				(font
-					(size 1.27 1.27)
-				)
-				(justify left)
-				(hide yes)
-			)
-		)
-		(property "Footprint" "TestPoint_KOASpeer:TestPoint_Chip_RCUCTE_0603"
-			(at 147.32 71.12 0)
-			(effects
-				(font
-					(size 1.27 1.27)
-				)
-				(hide yes)
-			)
-		)
-		(property "Datasheet" "~"
-			(at 147.32 71.12 0)
-			(effects
-				(font
-					(size 1.27 1.27)
-				)
-				(hide yes)
-			)
-		)
-		(property "Description" "test point"
-			(at 152.4 71.12 0)
-			(effects
-				(font
-					(size 1.27 1.27)
-				)
-				(hide yes)
-			)
-		)
-		(pin "1"
-			(uuid "90669cc3-85b0-4f55-bf02-12cf30b3d69a")
-		)
-		(instances
-			(project "CUR_flight_computer_25-26"
-				(path "/bf7761cc-1b32-4d86-809c-5f027005229b/9736895c-f0f7-444d-aab7-042381dec39a"
-					(reference "TP7")
-					(unit 1)
-				)
-			)
-		)
-	)
-	(symbol
-		(lib_id "Connector:TestPoint_Small")
-		(at 152.4 76.2 0)
-		(mirror y)
-		(unit 1)
-		(exclude_from_sim no)
-		(in_bom yes)
-		(on_board yes)
-		(dnp no)
-		(fields_autoplaced yes)
-		(uuid "8bda339d-604b-4496-9de3-d5b6e70eef93")
-		(property "Reference" "TP9"
-			(at 151.13 74.9299 0)
-			(effects
-				(font
-					(size 1.27 1.27)
-				)
-				(justify left)
-			)
-		)
-		(property "Value" "TestPoint_Small"
-			(at 151.13 77.4699 0)
-			(effects
-				(font
-					(size 1.27 1.27)
-				)
-				(justify left)
-				(hide yes)
-			)
-		)
-		(property "Footprint" "TestPoint_KOASpeer:TestPoint_Chip_RCUCTE_0603"
-			(at 147.32 76.2 0)
-			(effects
-				(font
-					(size 1.27 1.27)
-				)
-				(hide yes)
-			)
-		)
-		(property "Datasheet" "~"
-			(at 147.32 76.2 0)
-			(effects
-				(font
-					(size 1.27 1.27)
-				)
-				(hide yes)
-			)
-		)
-		(property "Description" "test point"
-			(at 152.4 76.2 0)
-			(effects
-				(font
-					(size 1.27 1.27)
-				)
-				(hide yes)
-			)
-		)
-		(pin "1"
-			(uuid "94816eb0-9e8e-4a6e-93fc-4ccc33273168")
-		)
-		(instances
-			(project "CUR_flight_computer_25-26"
-				(path "/bf7761cc-1b32-4d86-809c-5f027005229b/9736895c-f0f7-444d-aab7-042381dec39a"
-					(reference "TP9")
-					(unit 1)
-				)
-			)
-		)
-	)
-	(symbol
 		(lib_id "power:+3V3")
 		(at 87.63 104.14 0)
 		(unit 1)
@@ -5162,75 +4976,6 @@
 			(project "CUR_flight_computer_25-26"
 				(path "/bf7761cc-1b32-4d86-809c-5f027005229b/9736895c-f0f7-444d-aab7-042381dec39a"
 					(reference "C23")
-					(unit 1)
-				)
-			)
-		)
-	)
-	(symbol
-		(lib_id "Connector:TestPoint_Small")
-		(at 152.4 73.66 0)
-		(mirror y)
-		(unit 1)
-		(exclude_from_sim no)
-		(in_bom yes)
-		(on_board yes)
-		(dnp no)
-		(fields_autoplaced yes)
-		(uuid "b06430f6-fc82-45cc-9dfe-bc6e5f43a334")
-		(property "Reference" "TP8"
-			(at 151.13 72.3899 0)
-			(effects
-				(font
-					(size 1.27 1.27)
-				)
-				(justify left)
-			)
-		)
-		(property "Value" "TestPoint_Small"
-			(at 151.13 74.9299 0)
-			(effects
-				(font
-					(size 1.27 1.27)
-				)
-				(justify left)
-				(hide yes)
-			)
-		)
-		(property "Footprint" "TestPoint_KOASpeer:TestPoint_Chip_RCUCTE_0603"
-			(at 147.32 73.66 0)
-			(effects
-				(font
-					(size 1.27 1.27)
-				)
-				(hide yes)
-			)
-		)
-		(property "Datasheet" "~"
-			(at 147.32 73.66 0)
-			(effects
-				(font
-					(size 1.27 1.27)
-				)
-				(hide yes)
-			)
-		)
-		(property "Description" "test point"
-			(at 152.4 73.66 0)
-			(effects
-				(font
-					(size 1.27 1.27)
-				)
-				(hide yes)
-			)
-		)
-		(pin "1"
-			(uuid "1a449e18-918b-4fa3-ac44-3a43628d2078")
-		)
-		(instances
-			(project "CUR_flight_computer_25-26"
-				(path "/bf7761cc-1b32-4d86-809c-5f027005229b/9736895c-f0f7-444d-aab7-042381dec39a"
-					(reference "TP8")
 					(unit 1)
 				)
 			)
