@@ -1030,6 +1030,107 @@
 			)
 		)
 	)
+	(footprint "MountingHole:MountingHole_3mm"
+		(layer "F.Cu")
+		(uuid "0bb61fbe-d18b-499d-b6c7-0646e1b80b9b")
+		(at 49.5 114.7)
+		(descr "Mounting Hole 3mm, no annular")
+		(tags "mounting hole 3mm no annular")
+		(property "Reference" "H1"
+			(at 0 -4 0)
+			(layer "F.SilkS")
+			(uuid "99fae7c2-75ff-482f-b5a8-1791154417da")
+			(effects
+				(font
+					(size 1 1)
+					(thickness 0.15)
+				)
+			)
+		)
+		(property "Value" "MountingHole"
+			(at 0 4 0)
+			(layer "F.Fab")
+			(uuid "3fa85ccf-3957-4ee0-8113-90407dec6e59")
+			(effects
+				(font
+					(size 1 1)
+					(thickness 0.15)
+				)
+			)
+		)
+		(property "Datasheet" ""
+			(at 0 0 0)
+			(unlocked yes)
+			(layer "F.Fab")
+			(hide yes)
+			(uuid "094e3dff-3175-4a1e-a45d-047ba89698f6")
+			(effects
+				(font
+					(size 1.27 1.27)
+					(thickness 0.15)
+				)
+			)
+		)
+		(property "Description" "Mounting Hole without connection"
+			(at 0 0 0)
+			(unlocked yes)
+			(layer "F.Fab")
+			(hide yes)
+			(uuid "153a3afd-5401-417e-9ec9-ffb271f48880")
+			(effects
+				(font
+					(size 1.27 1.27)
+					(thickness 0.15)
+				)
+			)
+		)
+		(property ki_fp_filters "MountingHole*")
+		(path "/3b725c3b-9650-41e6-95bf-9087cc38f098/4a9abc26-98f1-464a-9ff8-9bd6582e94d3")
+		(sheetname "/MCU/")
+		(sheetfile "MCU.kicad_sch")
+		(attr exclude_from_pos_files exclude_from_bom)
+		(fp_circle
+			(center 0 0)
+			(end 3 0)
+			(stroke
+				(width 0.15)
+				(type solid)
+			)
+			(fill no)
+			(layer "Cmts.User")
+			(uuid "528ec896-9d02-4ec7-8219-e7cb80bcabf6")
+		)
+		(fp_circle
+			(center 0 0)
+			(end 3.25 0)
+			(stroke
+				(width 0.05)
+				(type solid)
+			)
+			(fill no)
+			(layer "F.CrtYd")
+			(uuid "ef2592db-4848-41f4-816d-9d68a6e176d1")
+		)
+		(fp_text user "${REFERENCE}"
+			(at 0 0 0)
+			(layer "F.Fab")
+			(uuid "a7ae24b7-a424-400c-8279-c5e56de1f1e5")
+			(effects
+				(font
+					(size 1 1)
+					(thickness 0.15)
+				)
+			)
+		)
+		(pad "" np_thru_hole circle
+			(at 0 0)
+			(size 3 3)
+			(drill 3)
+			(layers "*.Cu" "*.Mask")
+			(uuid "5e657e48-4020-4e38-a640-099ff8fd4a58")
+		)
+		(embedded_fonts no)
+	)
 	(footprint "Resistor_SMD:R_0603_1608Metric"
 		(layer "F.Cu")
 		(uuid "108b1b5f-2415-49f5-9edb-4bd562d1cb67")
@@ -1595,6 +1696,107 @@
 				(xyz 0 0 0)
 			)
 		)
+	)
+	(footprint "MountingHole:MountingHole_3mm"
+		(layer "F.Cu")
+		(uuid "15d4f3b7-7d86-4731-9651-0aa515140e4a")
+		(at 86.8 114.7)
+		(descr "Mounting Hole 3mm, no annular")
+		(tags "mounting hole 3mm no annular")
+		(property "Reference" "H2"
+			(at 0 -4 0)
+			(layer "F.SilkS")
+			(uuid "3971b6ff-f552-4fa6-a4f4-fc06fb94686f")
+			(effects
+				(font
+					(size 1 1)
+					(thickness 0.15)
+				)
+			)
+		)
+		(property "Value" "MountingHole"
+			(at 0 4 0)
+			(layer "F.Fab")
+			(uuid "6c1f0d1d-c77c-403b-9307-49a1620aec06")
+			(effects
+				(font
+					(size 1 1)
+					(thickness 0.15)
+				)
+			)
+		)
+		(property "Datasheet" ""
+			(at 0 0 0)
+			(unlocked yes)
+			(layer "F.Fab")
+			(hide yes)
+			(uuid "fecb712f-07c4-49e7-8195-8b0e5f287dc2")
+			(effects
+				(font
+					(size 1.27 1.27)
+					(thickness 0.15)
+				)
+			)
+		)
+		(property "Description" "Mounting Hole without connection"
+			(at 0 0 0)
+			(unlocked yes)
+			(layer "F.Fab")
+			(hide yes)
+			(uuid "6900183f-1a1f-4e5c-b7e9-66c36f3bbff6")
+			(effects
+				(font
+					(size 1.27 1.27)
+					(thickness 0.15)
+				)
+			)
+		)
+		(property ki_fp_filters "MountingHole*")
+		(path "/3b725c3b-9650-41e6-95bf-9087cc38f098/c80134b2-d1e0-4634-8bc4-3aae3c2e9d74")
+		(sheetname "/MCU/")
+		(sheetfile "MCU.kicad_sch")
+		(attr exclude_from_pos_files exclude_from_bom)
+		(fp_circle
+			(center 0 0)
+			(end 3 0)
+			(stroke
+				(width 0.15)
+				(type solid)
+			)
+			(fill no)
+			(layer "Cmts.User")
+			(uuid "49ae18dd-c0a8-423b-94d3-0696b7f547bd")
+		)
+		(fp_circle
+			(center 0 0)
+			(end 3.25 0)
+			(stroke
+				(width 0.05)
+				(type solid)
+			)
+			(fill no)
+			(layer "F.CrtYd")
+			(uuid "60293c39-ed59-48b3-bbf3-5a590282ccd8")
+		)
+		(fp_text user "${REFERENCE}"
+			(at 0 0 0)
+			(layer "F.Fab")
+			(uuid "f3c4be42-64ed-48b7-bfe9-6e987dbc139a")
+			(effects
+				(font
+					(size 1 1)
+					(thickness 0.15)
+				)
+			)
+		)
+		(pad "" np_thru_hole circle
+			(at 0 0)
+			(size 3 3)
+			(drill 3)
+			(layers "*.Cu" "*.Mask")
+			(uuid "e26c7eb9-001e-4840-879f-cd7d440e933f")
+		)
+		(embedded_fonts no)
 	)
 	(footprint "LED_SMD:LED_Cree-PLCC4_3.2x2.8mm_CCW"
 		(layer "F.Cu")
@@ -9727,6 +9929,107 @@
 			)
 		)
 	)
+	(footprint "MountingHole:MountingHole_3mm"
+		(layer "F.Cu")
+		(uuid "70fb4222-a128-4563-bbfb-72a514e826a3")
+		(at 49.3 40.1)
+		(descr "Mounting Hole 3mm, no annular")
+		(tags "mounting hole 3mm no annular")
+		(property "Reference" "H4"
+			(at 0 -4 0)
+			(layer "F.SilkS")
+			(uuid "0b46eeec-9d20-45a5-9b9a-69000aab07a6")
+			(effects
+				(font
+					(size 1 1)
+					(thickness 0.15)
+				)
+			)
+		)
+		(property "Value" "MountingHole"
+			(at 0 4 0)
+			(layer "F.Fab")
+			(uuid "e95bee90-31dc-479d-b59f-9009375a786c")
+			(effects
+				(font
+					(size 1 1)
+					(thickness 0.15)
+				)
+			)
+		)
+		(property "Datasheet" ""
+			(at 0 0 0)
+			(unlocked yes)
+			(layer "F.Fab")
+			(hide yes)
+			(uuid "6452f3a3-96c1-489b-bc28-7a1bbe0a8728")
+			(effects
+				(font
+					(size 1.27 1.27)
+					(thickness 0.15)
+				)
+			)
+		)
+		(property "Description" "Mounting Hole without connection"
+			(at 0 0 0)
+			(unlocked yes)
+			(layer "F.Fab")
+			(hide yes)
+			(uuid "61475c8c-303b-4c89-9292-68cd0281645d")
+			(effects
+				(font
+					(size 1.27 1.27)
+					(thickness 0.15)
+				)
+			)
+		)
+		(property ki_fp_filters "MountingHole*")
+		(path "/3b725c3b-9650-41e6-95bf-9087cc38f098/0eab04ff-eb09-4aeb-8c2d-23032bc37af8")
+		(sheetname "/MCU/")
+		(sheetfile "MCU.kicad_sch")
+		(attr exclude_from_pos_files exclude_from_bom)
+		(fp_circle
+			(center 0 0)
+			(end 3 0)
+			(stroke
+				(width 0.15)
+				(type solid)
+			)
+			(fill no)
+			(layer "Cmts.User")
+			(uuid "cc8df40c-178f-40a3-8d69-d8c6273ab5c1")
+		)
+		(fp_circle
+			(center 0 0)
+			(end 3.25 0)
+			(stroke
+				(width 0.05)
+				(type solid)
+			)
+			(fill no)
+			(layer "F.CrtYd")
+			(uuid "ea73dfe1-923e-4f53-9c14-68125a967eae")
+		)
+		(fp_text user "${REFERENCE}"
+			(at 0 0 0)
+			(layer "F.Fab")
+			(uuid "03f46f93-7fad-47a1-91cb-76aa4dcd3101")
+			(effects
+				(font
+					(size 1 1)
+					(thickness 0.15)
+				)
+			)
+		)
+		(pad "" np_thru_hole circle
+			(at 0 0)
+			(size 3 3)
+			(drill 3)
+			(layers "*.Cu" "*.Mask")
+			(uuid "3a26ff16-b61e-4efa-951a-52404307a706")
+		)
+		(embedded_fonts no)
+	)
 	(footprint "TestPoint_KOASpeer:TestPoint_Chip_RCUCTE_0603"
 		(layer "F.Cu")
 		(uuid "71f13891-4d1a-4e65-8dd7-fd0c7038359f")
@@ -10243,7 +10546,7 @@
 	(footprint "Terminal_SAMESKY_TB0011-350-02GR:SAMESKY_TB0011-350-02GR"
 		(layer "F.Cu")
 		(uuid "7b998255-7517-45d5-8fd0-357b190b1ea2")
-		(at 50.7 74.6 -90)
+		(at 49.7 74.5 -90)
 		(property "Reference" "J11"
 			(at -0.325 -5.885 270)
 			(layer "F.SilkS")
@@ -15852,7 +16155,7 @@
 	(footprint "Terminal_SAMESKY_TB0011-350-02GR:SAMESKY_TB0011-350-02GR"
 		(layer "F.Cu")
 		(uuid "affb0b69-db5c-4f24-927d-6e1f348a897a")
-		(at 50.7 60.6 -90)
+		(at 49.7 60.5 -90)
 		(property "Reference" "J2"
 			(at -0.325 -5.885 270)
 			(layer "F.SilkS")
@@ -19625,6 +19928,107 @@
 			)
 		)
 	)
+	(footprint "MountingHole:MountingHole_3mm"
+		(layer "F.Cu")
+		(uuid "c2278d40-fecc-4db5-8d70-03b3c2e66340")
+		(at 86.7 40)
+		(descr "Mounting Hole 3mm, no annular")
+		(tags "mounting hole 3mm no annular")
+		(property "Reference" "H3"
+			(at 0 -4 0)
+			(layer "F.SilkS")
+			(uuid "3999e46d-d3b9-4e5b-8858-fb3a635ee138")
+			(effects
+				(font
+					(size 1 1)
+					(thickness 0.15)
+				)
+			)
+		)
+		(property "Value" "MountingHole"
+			(at 0 4 0)
+			(layer "F.Fab")
+			(uuid "290d9546-b797-4ff9-810e-ed29f9a74566")
+			(effects
+				(font
+					(size 1 1)
+					(thickness 0.15)
+				)
+			)
+		)
+		(property "Datasheet" ""
+			(at 0 0 0)
+			(unlocked yes)
+			(layer "F.Fab")
+			(hide yes)
+			(uuid "1d681342-f330-472c-94e0-e295ddacd99e")
+			(effects
+				(font
+					(size 1.27 1.27)
+					(thickness 0.15)
+				)
+			)
+		)
+		(property "Description" "Mounting Hole without connection"
+			(at 0 0 0)
+			(unlocked yes)
+			(layer "F.Fab")
+			(hide yes)
+			(uuid "7df59f6e-ae8c-4093-8e6c-3ac5505f16f8")
+			(effects
+				(font
+					(size 1.27 1.27)
+					(thickness 0.15)
+				)
+			)
+		)
+		(property ki_fp_filters "MountingHole*")
+		(path "/3b725c3b-9650-41e6-95bf-9087cc38f098/47874032-3f8c-4fe7-89ad-44950979139f")
+		(sheetname "/MCU/")
+		(sheetfile "MCU.kicad_sch")
+		(attr exclude_from_pos_files exclude_from_bom)
+		(fp_circle
+			(center 0 0)
+			(end 3 0)
+			(stroke
+				(width 0.15)
+				(type solid)
+			)
+			(fill no)
+			(layer "Cmts.User")
+			(uuid "99075017-26e8-4f65-8de1-8b62f3e59cde")
+		)
+		(fp_circle
+			(center 0 0)
+			(end 3.25 0)
+			(stroke
+				(width 0.05)
+				(type solid)
+			)
+			(fill no)
+			(layer "F.CrtYd")
+			(uuid "f796aac2-4bb7-440f-8fbc-8ff13f4bd6ec")
+		)
+		(fp_text user "${REFERENCE}"
+			(at 0 0 0)
+			(layer "F.Fab")
+			(uuid "f407387f-c82f-4264-a693-3379742db54e")
+			(effects
+				(font
+					(size 1 1)
+					(thickness 0.15)
+				)
+			)
+		)
+		(pad "" np_thru_hole circle
+			(at 0 0)
+			(size 3 3)
+			(drill 3)
+			(layers "*.Cu" "*.Mask")
+			(uuid "700a0151-c017-4b9c-8ca0-43b9961b4f1e")
+		)
+		(embedded_fonts no)
+	)
 	(footprint "Resistor_SMD:R_0603_1608Metric"
 		(layer "F.Cu")
 		(uuid "c365dfe1-26f4-43fa-985f-18ecd7539c02")
@@ -22854,7 +23258,7 @@
 	(footprint "Terminal_SAMESKY_TB0011-350-02GR:SAMESKY_TB0011-350-02GR"
 		(layer "F.Cu")
 		(uuid "ec56567a-27cc-44f3-95c3-bcb7727249ab")
-		(at 50.7 67.6 -90)
+		(at 49.7 67.5 -90)
 		(property "Reference" "J9"
 			(at -0.325 -5.885 270)
 			(layer "F.SilkS")
@@ -40750,7 +41154,7 @@
 	)
 	(gr_rect
 		(start 44.45 35.5)
-		(end 91.5 117.7)
+		(end 91.5 118.7)
 		(stroke
 			(width 0.05)
 			(type default)
