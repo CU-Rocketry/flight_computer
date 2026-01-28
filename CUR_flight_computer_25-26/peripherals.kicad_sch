@@ -4093,7 +4093,7 @@
 				(justify left)
 			)
 		)
-		(property "Footprint" "Resistor_SMD:R_0603_1608Metric"
+		(property "Footprint" "NTR4003NT1G:SOT96P237X111-3N"
 			(at 53.34 58.42 0)
 			(effects
 				(font
