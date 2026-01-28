@@ -17,4 +17,5 @@
   (lib (name "Terminal_SAMESKY_TB0011-350-02GR")(type "KiCad")(uri "${KIPRJMOD}/kicad-library/footprints/Terminal_SAMESKY_TB0011-350-02GR")(options "")(descr ""))
   (lib (name "Connector_SAMTEC_FTSH-107-01-X-DV-K-TR")(type "KiCad")(uri "${KIPRJMOD}/kicad-library/footprints/Connector_SAMTEC_FTSH-107-01-X-DV-K-TR.pretty")(options "")(descr ""))
   (lib (name "NTR4003NT1G")(type "KiCad")(uri "${KIPRJMOD}/kicad-library/footprints/NTR4003NT1G.pretty")(options "")(descr ""))
+  (lib (name "TestPoint_KOASpeer")(type "KiCad")(uri "${KIPRJMOD}/kicad-library/footprints/TestPoint_KOASpeer.pretty")(options "")(descr ""))
 )
