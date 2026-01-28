@@ -16,4 +16,5 @@
   (lib (name "SAMESKY_UP20-C-F-G-FL-1-P12-TR")(type "KiCad")(uri "${KIPRJMOD}/kicad-library/footprints/SAMESKY_UP20-C-F-G-FL-1-P12-TR.pretty")(options "")(descr ""))
   (lib (name "Terminal_SAMESKY_TB0011-350-02GR")(type "KiCad")(uri "${KIPRJMOD}/kicad-library/footprints/Terminal_SAMESKY_TB0011-350-02GR")(options "")(descr ""))
   (lib (name "Connector_SAMTEC_FTSH-107-01-X-DV-K-TR")(type "KiCad")(uri "${KIPRJMOD}/kicad-library/footprints/Connector_SAMTEC_FTSH-107-01-X-DV-K-TR.pretty")(options "")(descr ""))
+  (lib (name "NTR4003NT1G")(type "KiCad")(uri "${KIPRJMOD}/kicad-library/footprints/NTR4003NT1G.pretty")(options "")(descr ""))
 )
