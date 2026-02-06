@@ -6639,6 +6639,17 @@
 		)
 		(uuid "99eefe37-6562-4ec4-9bd0-811ad9510b1b")
 	)
+	(hierarchical_label "RF_IO3"
+		(shape bidirectional)
+		(at 101.6 96.52 180)
+		(effects
+			(font
+				(size 1.27 1.27)
+			)
+			(justify right)
+		)
+		(uuid "9dd82df8-7b9e-468e-b36c-dcd43c626827")
+	)
 	(hierarchical_label "BARO_INT"
 		(shape input)
 		(at 119.38 134.62 180)

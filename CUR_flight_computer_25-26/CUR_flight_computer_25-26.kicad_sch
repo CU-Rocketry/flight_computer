@@ -467,7 +467,7 @@
 	)
 	(wire
 		(pts
-			(xy 60.96 74.93) (xy 81.28 74.93)
+			(xy 60.96 76.2) (xy 81.28 76.2)
 		)
 		(stroke
 			(width 0)
@@ -497,13 +497,23 @@
 	)
 	(wire
 		(pts
-			(xy 60.96 80.01) (xy 81.28 80.01)
+			(xy 60.96 81.28) (xy 81.28 81.28)
 		)
 		(stroke
 			(width 0)
 			(type default)
 		)
 		(uuid "9bd81b74-5c80-42d1-a8a7-7648b0b618fa")
+	)
+	(wire
+		(pts
+			(xy 60.96 72.39) (xy 81.28 72.39)
+		)
+		(stroke
+			(width 0)
+			(type default)
+		)
+		(uuid "a8606071-4750-4345-aaae-808386074d69")
 	)
 	(wire
 		(pts
@@ -527,7 +537,7 @@
 	)
 	(wire
 		(pts
-			(xy 60.96 77.47) (xy 81.28 77.47)
+			(xy 60.96 78.74) (xy 81.28 78.74)
 		)
 		(stroke
 			(width 0)
@@ -849,7 +859,7 @@
 	)
 	(sheet
 		(at 36.83 52.07)
-		(size 24.13 30.48)
+		(size 24.13 31.75)
 		(exclude_from_sim no)
 		(in_bom yes)
 		(on_board yes)
@@ -873,7 +883,7 @@
 			)
 		)
 		(property "Sheetfile" "telemetry.kicad_sch"
-			(at 36.83 83.1346 0)
+			(at 36.83 84.4046 0)
 			(effects
 				(font
 					(size 1.27 1.27)
@@ -932,7 +942,7 @@
 			)
 		)
 		(pin "~{RF_RESET}" input
-			(at 60.96 74.93 0)
+			(at 60.96 76.2 0)
 			(uuid "50ebaf50-ab2b-4031-9e76-c7fcf4484880")
 			(effects
 				(font
@@ -952,7 +962,7 @@
 			)
 		)
 		(pin "RF_TXEN" input
-			(at 60.96 77.47 0)
+			(at 60.96 78.74 0)
 			(uuid "d0da9588-6a19-4da8-8f49-bbac2e54c905")
 			(effects
 				(font
@@ -972,8 +982,18 @@
 			)
 		)
 		(pin "RF_RXEN" input
-			(at 60.96 80.01 0)
+			(at 60.96 81.28 0)
 			(uuid "a566ec6f-078d-4b59-87d9-81a9d2665b5b")
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(justify right)
+			)
+		)
+		(pin "RF_IO3" bidirectional
+			(at 60.96 72.39 0)
+			(uuid "24b509ff-325f-444a-981a-cf59958b71ed")
 			(effects
 				(font
 					(size 1.27 1.27)
@@ -1456,7 +1476,7 @@
 			)
 		)
 		(pin "~{RF_RESET}" output
-			(at 81.28 74.93 180)
+			(at 81.28 76.2 180)
 			(uuid "c6ed4b73-fe08-4c9e-a1e0-4db385f8da60")
 			(effects
 				(font
@@ -1476,7 +1496,7 @@
 			)
 		)
 		(pin "RF_RXEN" output
-			(at 81.28 80.01 180)
+			(at 81.28 81.28 180)
 			(uuid "fd093390-c5b4-4249-95b9-05fdd682543d")
 			(effects
 				(font
@@ -1526,7 +1546,7 @@
 			)
 		)
 		(pin "RF_TXEN" output
-			(at 81.28 77.47 180)
+			(at 81.28 78.74 180)
 			(uuid "1445ae17-eb7d-4aeb-b543-71b29e884710")
 			(effects
 				(font
@@ -1838,6 +1858,16 @@
 		(pin "BTN_3" output
 			(at 100.33 139.7 270)
 			(uuid "8a070f1d-f11a-4505-aaf9-edf2380e62dc")
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(justify left)
+			)
+		)
+		(pin "RF_IO3" bidirectional
+			(at 81.28 72.39 180)
+			(uuid "4218fb32-ba82-4586-a517-62c1c50739f6")
 			(effects
 				(font
 					(size 1.27 1.27)
