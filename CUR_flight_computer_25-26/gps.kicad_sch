@@ -5,6 +5,276 @@
 	(uuid "8cbc335c-0dcd-4bfd-a627-e1535dedbf26")
 	(paper "A4")
 	(lib_symbols
+		(symbol "Connector:Conn_01x02_Pin"
+			(pin_names
+				(offset 1.016)
+				(hide yes)
+			)
+			(exclude_from_sim no)
+			(in_bom yes)
+			(on_board yes)
+			(property "Reference" "J"
+				(at 0 2.54 0)
+				(effects
+					(font
+						(size 1.27 1.27)
+					)
+				)
+			)
+			(property "Value" "Conn_01x02_Pin"
+				(at 0 -5.08 0)
+				(effects
+					(font
+						(size 1.27 1.27)
+					)
+				)
+			)
+			(property "Footprint" ""
+				(at 0 0 0)
+				(effects
+					(font
+						(size 1.27 1.27)
+					)
+					(hide yes)
+				)
+			)
+			(property "Datasheet" "~"
+				(at 0 0 0)
+				(effects
+					(font
+						(size 1.27 1.27)
+					)
+					(hide yes)
+				)
+			)
+			(property "Description" "Generic connector, single row, 01x02, script generated"
+				(at 0 0 0)
+				(effects
+					(font
+						(size 1.27 1.27)
+					)
+					(hide yes)
+				)
+			)
+			(property "ki_locked" ""
+				(at 0 0 0)
+				(effects
+					(font
+						(size 1.27 1.27)
+					)
+				)
+			)
+			(property "ki_keywords" "connector"
+				(at 0 0 0)
+				(effects
+					(font
+						(size 1.27 1.27)
+					)
+					(hide yes)
+				)
+			)
+			(property "ki_fp_filters" "Connector*:*_1x??_*"
+				(at 0 0 0)
+				(effects
+					(font
+						(size 1.27 1.27)
+					)
+					(hide yes)
+				)
+			)
+			(symbol "Conn_01x02_Pin_1_1"
+				(rectangle
+					(start 0.8636 0.127)
+					(end 0 -0.127)
+					(stroke
+						(width 0.1524)
+						(type default)
+					)
+					(fill
+						(type outline)
+					)
+				)
+				(rectangle
+					(start 0.8636 -2.413)
+					(end 0 -2.667)
+					(stroke
+						(width 0.1524)
+						(type default)
+					)
+					(fill
+						(type outline)
+					)
+				)
+				(polyline
+					(pts
+						(xy 1.27 0) (xy 0.8636 0)
+					)
+					(stroke
+						(width 0.1524)
+						(type default)
+					)
+					(fill
+						(type none)
+					)
+				)
+				(polyline
+					(pts
+						(xy 1.27 -2.54) (xy 0.8636 -2.54)
+					)
+					(stroke
+						(width 0.1524)
+						(type default)
+					)
+					(fill
+						(type none)
+					)
+				)
+				(pin passive line
+					(at 5.08 0 180)
+					(length 3.81)
+					(name "Pin_1"
+						(effects
+							(font
+								(size 1.27 1.27)
+							)
+						)
+					)
+					(number "1"
+						(effects
+							(font
+								(size 1.27 1.27)
+							)
+						)
+					)
+				)
+				(pin passive line
+					(at 5.08 -2.54 180)
+					(length 3.81)
+					(name "Pin_2"
+						(effects
+							(font
+								(size 1.27 1.27)
+							)
+						)
+					)
+					(number "2"
+						(effects
+							(font
+								(size 1.27 1.27)
+							)
+						)
+					)
+				)
+			)
+			(embedded_fonts no)
+		)
+		(symbol "Connector:TestPoint_Small"
+			(pin_numbers
+				(hide yes)
+			)
+			(pin_names
+				(offset 0.762)
+				(hide yes)
+			)
+			(exclude_from_sim no)
+			(in_bom yes)
+			(on_board yes)
+			(property "Reference" "TP"
+				(at 0 3.81 0)
+				(effects
+					(font
+						(size 1.27 1.27)
+					)
+				)
+			)
+			(property "Value" "TestPoint_Small"
+				(at 0 2.032 0)
+				(effects
+					(font
+						(size 1.27 1.27)
+					)
+				)
+			)
+			(property "Footprint" ""
+				(at 5.08 0 0)
+				(effects
+					(font
+						(size 1.27 1.27)
+					)
+					(hide yes)
+				)
+			)
+			(property "Datasheet" "~"
+				(at 5.08 0 0)
+				(effects
+					(font
+						(size 1.27 1.27)
+					)
+					(hide yes)
+				)
+			)
+			(property "Description" "test point"
+				(at 0 0 0)
+				(effects
+					(font
+						(size 1.27 1.27)
+					)
+					(hide yes)
+				)
+			)
+			(property "ki_keywords" "test point tp"
+				(at 0 0 0)
+				(effects
+					(font
+						(size 1.27 1.27)
+					)
+					(hide yes)
+				)
+			)
+			(property "ki_fp_filters" "Pin* Test*"
+				(at 0 0 0)
+				(effects
+					(font
+						(size 1.27 1.27)
+					)
+					(hide yes)
+				)
+			)
+			(symbol "TestPoint_Small_0_1"
+				(circle
+					(center 0 0)
+					(radius 0.508)
+					(stroke
+						(width 0)
+						(type default)
+					)
+					(fill
+						(type none)
+					)
+				)
+			)
+			(symbol "TestPoint_Small_1_1"
+				(pin passive line
+					(at 0 0 90)
+					(length 0)
+					(name "1"
+						(effects
+							(font
+								(size 1.27 1.27)
+							)
+						)
+					)
+					(number "1"
+						(effects
+							(font
+								(size 1.27 1.27)
+							)
+						)
+					)
+				)
+			)
+			(embedded_fonts no)
+		)
 		(symbol "Device:C_Small"
 			(pin_numbers
 				(hide yes)
@@ -145,7 +415,7 @@
 			)
 			(embedded_fonts no)
 		)
-		(symbol "Device:R_Small"
+		(symbol "Device:R_Small_US"
 			(pin_numbers
 				(hide yes)
 			)
@@ -157,19 +427,21 @@
 			(in_bom yes)
 			(on_board yes)
 			(property "Reference" "R"
-				(at 0 0 90)
-				(effects
-					(font
-						(size 1.016 1.016)
-					)
-				)
-			)
-			(property "Value" "R_Small"
-				(at 1.778 0 90)
+				(at 0.762 0.508 0)
 				(effects
 					(font
 						(size 1.27 1.27)
 					)
+					(justify left)
+				)
+			)
+			(property "Value" "R_Small_US"
+				(at 0.762 -1.016 0)
+				(effects
+					(font
+						(size 1.27 1.27)
+					)
+					(justify left)
 				)
 			)
 			(property "Footprint" ""
@@ -190,7 +462,7 @@
 					(hide yes)
 				)
 			)
-			(property "Description" "Resistor, small symbol"
+			(property "Description" "Resistor, small US symbol"
 				(at 0 0 0)
 				(effects
 					(font
@@ -199,7 +471,7 @@
 					(hide yes)
 				)
 			)
-			(property "ki_keywords" "R resistor"
+			(property "ki_keywords" "r resistor"
 				(at 0 0 0)
 				(effects
 					(font
@@ -217,23 +489,34 @@
 					(hide yes)
 				)
 			)
-			(symbol "R_Small_0_1"
-				(rectangle
-					(start -0.762 1.778)
-					(end 0.762 -1.778)
+			(symbol "R_Small_US_1_1"
+				(polyline
+					(pts
+						(xy 0 1.524) (xy 1.016 1.143) (xy 0 0.762) (xy -1.016 0.381) (xy 0 0)
+					)
 					(stroke
-						(width 0.2032)
+						(width 0)
 						(type default)
 					)
 					(fill
 						(type none)
 					)
 				)
-			)
-			(symbol "R_Small_1_1"
+				(polyline
+					(pts
+						(xy 0 0) (xy 1.016 -0.381) (xy 0 -0.762) (xy -1.016 -1.143) (xy 0 -1.524)
+					)
+					(stroke
+						(width 0)
+						(type default)
+					)
+					(fill
+						(type none)
+					)
+				)
 				(pin passive line
 					(at 0 2.54 270)
-					(length 0.762)
+					(length 1.016)
 					(name "~"
 						(effects
 							(font
@@ -251,7 +534,7 @@
 				)
 				(pin passive line
 					(at 0 -2.54 90)
-					(length 0.762)
+					(length 1.016)
 					(name "~"
 						(effects
 							(font
@@ -947,9 +1230,19 @@
 			(embedded_fonts no)
 		)
 	)
+	(text "external reprogramming header\n"
+		(exclude_from_sim no)
+		(at 105.41 62.23 0)
+		(effects
+			(font
+				(size 1.27 1.27)
+			)
+		)
+		(uuid "765d8d1d-f28a-4fe5-99c6-1e764bc98b12")
+	)
 	(text "Funky ass RX/TX switcher"
 		(exclude_from_sim no)
-		(at 105.41 57.15 0)
+		(at 134.366 49.022 0)
 		(effects
 			(font
 				(size 1.27 1.27)
@@ -984,10 +1277,34 @@
 		(uuid "0a1df093-7ee1-469e-8c82-78a67a5232b7")
 	)
 	(junction
+		(at 54.61 53.34)
+		(diameter 0)
+		(color 0 0 0 0)
+		(uuid "44543c70-69b9-41c1-84eb-1b9e6e02980b")
+	)
+	(junction
 		(at 74.93 36.83)
 		(diameter 0)
 		(color 0 0 0 0)
 		(uuid "4d63e78a-c76c-4395-8cf4-7e2287fbc01e")
+	)
+	(junction
+		(at 91.44 50.8)
+		(diameter 0)
+		(color 0 0 0 0)
+		(uuid "57914813-a8ff-4aa3-9a62-3991cbc96098")
+	)
+	(junction
+		(at 54.61 58.42)
+		(diameter 0)
+		(color 0 0 0 0)
+		(uuid "5ede9933-a7a6-427a-8527-8b484904a3b1")
+	)
+	(junction
+		(at 91.44 48.26)
+		(diameter 0)
+		(color 0 0 0 0)
+		(uuid "717c3964-616c-4e91-85c1-d8c42b5fa4d6")
 	)
 	(junction
 		(at 72.39 30.48)
@@ -995,21 +1312,19 @@
 		(color 0 0 0 0)
 		(uuid "8d94fc9f-5335-4a72-a8d8-0c29def43e63")
 	)
-	(no_connect
-		(at 87.63 55.88)
-		(uuid "301f4e63-e267-42e1-a984-3cff694071de")
+	(junction
+		(at 54.61 50.8)
+		(diameter 0)
+		(color 0 0 0 0)
+		(uuid "96f10e75-e8d2-43f4-99ef-bc6d72935159")
 	)
 	(no_connect
 		(at 62.23 55.88)
 		(uuid "73e3cd2b-ba86-4e8c-b721-8fe852e42d93")
 	)
-	(no_connect
-		(at 87.63 58.42)
-		(uuid "99bbcaca-d7d7-4ed8-b58b-e8c80828f7ca")
-	)
 	(wire
 		(pts
-			(xy 87.63 48.26) (xy 90.17 48.26)
+			(xy 87.63 48.26) (xy 91.44 48.26)
 		)
 		(stroke
 			(width 0)
@@ -1029,6 +1344,36 @@
 	)
 	(wire
 		(pts
+			(xy 54.61 50.8) (xy 62.23 50.8)
+		)
+		(stroke
+			(width 0)
+			(type default)
+		)
+		(uuid "1875faca-2cf2-4816-b064-39e8948c7868")
+	)
+	(wire
+		(pts
+			(xy 96.52 55.88) (xy 87.63 55.88)
+		)
+		(stroke
+			(width 0)
+			(type default)
+		)
+		(uuid "25fec94b-aabb-4c19-ac69-2794dd0dac86")
+	)
+	(wire
+		(pts
+			(xy 54.61 58.42) (xy 62.23 58.42)
+		)
+		(stroke
+			(width 0)
+			(type default)
+		)
+		(uuid "2aed1867-9d22-4814-b438-a32c29b6c4f0")
+	)
+	(wire
+		(pts
 			(xy 57.15 36.83) (xy 57.15 39.37)
 		)
 		(stroke
@@ -1039,13 +1384,23 @@
 	)
 	(wire
 		(pts
-			(xy 87.63 50.8) (xy 90.17 50.8)
+			(xy 87.63 50.8) (xy 91.44 50.8)
 		)
 		(stroke
 			(width 0)
 			(type default)
 		)
 		(uuid "45c88baa-01f0-4c3e-9dd3-98eca370e126")
+	)
+	(wire
+		(pts
+			(xy 96.52 58.42) (xy 87.63 58.42)
+		)
+		(stroke
+			(width 0)
+			(type default)
+		)
+		(uuid "50fdafd1-63c3-4aad-9273-219a8ddcff83")
 	)
 	(wire
 		(pts
@@ -1059,13 +1414,23 @@
 	)
 	(wire
 		(pts
-			(xy 95.25 48.26) (xy 100.33 48.26)
+			(xy 104.14 48.26) (xy 109.22 48.26)
 		)
 		(stroke
 			(width 0)
 			(type default)
 		)
 		(uuid "66994179-8d37-4532-894a-4eeba1c904b4")
+	)
+	(wire
+		(pts
+			(xy 54.61 53.34) (xy 62.23 53.34)
+		)
+		(stroke
+			(width 0)
+			(type default)
+		)
+		(uuid "6e5a9414-3679-4573-bc4b-669afaf60c86")
 	)
 	(wire
 		(pts
@@ -1079,7 +1444,7 @@
 	)
 	(wire
 		(pts
-			(xy 58.42 50.8) (xy 62.23 50.8)
+			(xy 45.72 50.8) (xy 54.61 50.8)
 		)
 		(stroke
 			(width 0)
@@ -1089,7 +1454,7 @@
 	)
 	(wire
 		(pts
-			(xy 58.42 53.34) (xy 62.23 53.34)
+			(xy 45.72 53.34) (xy 54.61 53.34)
 		)
 		(stroke
 			(width 0)
@@ -1109,13 +1474,23 @@
 	)
 	(wire
 		(pts
-			(xy 95.25 50.8) (xy 100.33 50.8)
+			(xy 104.14 50.8) (xy 109.22 50.8)
 		)
 		(stroke
 			(width 0)
 			(type default)
 		)
 		(uuid "984a7b24-aabb-46df-a40c-01c31f44049d")
+	)
+	(wire
+		(pts
+			(xy 91.44 50.8) (xy 99.06 50.8)
+		)
+		(stroke
+			(width 0)
+			(type default)
+		)
+		(uuid "a81b6ee4-b4eb-412c-9dc1-2342d9e233a9")
 	)
 	(wire
 		(pts
@@ -1159,13 +1534,23 @@
 	)
 	(wire
 		(pts
-			(xy 58.42 58.42) (xy 62.23 58.42)
+			(xy 45.72 58.42) (xy 54.61 58.42)
 		)
 		(stroke
 			(width 0)
 			(type default)
 		)
 		(uuid "f4eb63e3-0bea-4528-8321-ebe36a125ba8")
+	)
+	(wire
+		(pts
+			(xy 91.44 48.26) (xy 99.06 48.26)
+		)
+		(stroke
+			(width 0)
+			(type default)
+		)
+		(uuid "f9b151aa-45f5-4cdf-8234-d49a50681512")
 	)
 	(wire
 		(pts
@@ -1179,7 +1564,7 @@
 	)
 	(hierarchical_label "~{GPS_RESET}"
 		(shape input)
-		(at 58.42 58.42 180)
+		(at 45.72 58.42 180)
 		(effects
 			(font
 				(size 1.27 1.27)
@@ -1190,7 +1575,7 @@
 	)
 	(hierarchical_label "GPS_TX"
 		(shape input)
-		(at 100.33 48.26 0)
+		(at 109.22 48.26 0)
 		(effects
 			(font
 				(size 1.27 1.27)
@@ -1201,7 +1586,7 @@
 	)
 	(hierarchical_label "GPS_EXINT"
 		(shape input)
-		(at 58.42 50.8 180)
+		(at 45.72 50.8 180)
 		(effects
 			(font
 				(size 1.27 1.27)
@@ -1212,7 +1597,7 @@
 	)
 	(hierarchical_label "GPS_TP"
 		(shape output)
-		(at 58.42 53.34 180)
+		(at 45.72 53.34 180)
 		(effects
 			(font
 				(size 1.27 1.27)
@@ -1223,7 +1608,7 @@
 	)
 	(hierarchical_label "GPS_RX"
 		(shape output)
-		(at 100.33 50.8 0)
+		(at 109.22 50.8 0)
 		(effects
 			(font
 				(size 1.27 1.27)
@@ -1231,6 +1616,74 @@
 			(justify left)
 		)
 		(uuid "f7a4375a-54db-4ba7-9735-08e6048b76e1")
+	)
+	(symbol
+		(lib_id "Connector:TestPoint_Small")
+		(at 91.44 48.26 0)
+		(unit 1)
+		(exclude_from_sim no)
+		(in_bom yes)
+		(on_board yes)
+		(dnp no)
+		(fields_autoplaced yes)
+		(uuid "2214e780-d208-45d0-b209-bf7fdba6f227")
+		(property "Reference" "TP35"
+			(at 92.71 46.9899 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(justify left)
+			)
+		)
+		(property "Value" "TestPoint_Small"
+			(at 92.71 49.5299 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(justify left)
+				(hide yes)
+			)
+		)
+		(property "Footprint" "TestPoint_KOASpeer:TestPoint_Chip_RCUCTE_0603"
+			(at 96.52 48.26 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
+			)
+		)
+		(property "Datasheet" "~"
+			(at 96.52 48.26 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
+			)
+		)
+		(property "Description" "test point"
+			(at 91.44 48.26 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
+			)
+		)
+		(pin "1"
+			(uuid "6faf0b32-42a6-4db0-99ea-d3a7620e1191")
+		)
+		(instances
+			(project "CUR_flight_computer_25-26"
+				(path "/bf7761cc-1b32-4d86-809c-5f027005229b/e838d24c-cb75-4a46-b88f-e4466a269629"
+					(reference "TP35")
+					(unit 1)
+				)
+			)
+		)
 	)
 	(symbol
 		(lib_id "power:+3V3")
@@ -1242,7 +1695,7 @@
 		(dnp no)
 		(fields_autoplaced yes)
 		(uuid "48ab673d-85f9-49ef-b265-c369bae60edf")
-		(property "Reference" "#PWR012"
+		(property "Reference" "#PWR089"
 			(at 72.39 31.75 0)
 			(effects
 				(font
@@ -1292,7 +1745,7 @@
 		(instances
 			(project ""
 				(path "/bf7761cc-1b32-4d86-809c-5f027005229b/e838d24c-cb75-4a46-b88f-e4466a269629"
-					(reference "#PWR012")
+					(reference "#PWR089")
 					(unit 1)
 				)
 			)
@@ -1308,7 +1761,7 @@
 		(dnp no)
 		(fields_autoplaced yes)
 		(uuid "5c5c310b-244c-4e22-b7f1-8ba1eb1c3836")
-		(property "Reference" "#PWR013"
+		(property "Reference" "#PWR088"
 			(at 57.15 45.72 0)
 			(effects
 				(font
@@ -1358,39 +1811,43 @@
 		(instances
 			(project ""
 				(path "/bf7761cc-1b32-4d86-809c-5f027005229b/e838d24c-cb75-4a46-b88f-e4466a269629"
-					(reference "#PWR013")
+					(reference "#PWR088")
 					(unit 1)
 				)
 			)
 		)
 	)
 	(symbol
-		(lib_id "Device:R_Small")
-		(at 92.71 48.26 90)
+		(lib_id "Connector:TestPoint_Small")
+		(at 91.44 50.8 0)
 		(unit 1)
 		(exclude_from_sim no)
 		(in_bom yes)
 		(on_board yes)
 		(dnp no)
-		(uuid "5d20ba50-f905-4c23-88d6-51ce7f8f536b")
-		(property "Reference" "R1"
-			(at 92.71 43.942 90)
-			(effects
-				(font
-					(size 1.016 1.016)
-				)
-			)
-		)
-		(property "Value" "0"
-			(at 92.71 45.72 90)
+		(fields_autoplaced yes)
+		(uuid "765307d1-2a1a-4635-822d-2f63ac70e410")
+		(property "Reference" "TP36"
+			(at 92.71 49.5299 0)
 			(effects
 				(font
 					(size 1.27 1.27)
 				)
+				(justify left)
 			)
 		)
-		(property "Footprint" ""
-			(at 92.71 48.26 0)
+		(property "Value" "TestPoint_Small"
+			(at 92.71 52.0699 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(justify left)
+				(hide yes)
+			)
+		)
+		(property "Footprint" "TestPoint_KOASpeer:TestPoint_Chip_RCUCTE_0603"
+			(at 96.52 50.8 0)
 			(effects
 				(font
 					(size 1.27 1.27)
@@ -1399,7 +1856,7 @@
 			)
 		)
 		(property "Datasheet" "~"
-			(at 92.71 48.26 0)
+			(at 96.52 50.8 0)
 			(effects
 				(font
 					(size 1.27 1.27)
@@ -1407,8 +1864,8 @@
 				(hide yes)
 			)
 		)
-		(property "Description" "Resistor, small symbol"
-			(at 92.71 48.26 0)
+		(property "Description" "test point"
+			(at 91.44 50.8 0)
 			(effects
 				(font
 					(size 1.27 1.27)
@@ -1417,15 +1874,83 @@
 			)
 		)
 		(pin "1"
-			(uuid "1d82aaf4-3f56-4dfc-a1d0-e10ddf05c8c5")
+			(uuid "134a925d-5d5f-45eb-852e-a1acd14e17b6")
+		)
+		(instances
+			(project "CUR_flight_computer_25-26"
+				(path "/bf7761cc-1b32-4d86-809c-5f027005229b/e838d24c-cb75-4a46-b88f-e4466a269629"
+					(reference "TP36")
+					(unit 1)
+				)
+			)
+		)
+	)
+	(symbol
+		(lib_id "Connector:Conn_01x02_Pin")
+		(at 101.6 55.88 0)
+		(mirror y)
+		(unit 1)
+		(exclude_from_sim no)
+		(in_bom yes)
+		(on_board yes)
+		(dnp no)
+		(fields_autoplaced yes)
+		(uuid "7ae641ac-747e-4e14-8663-0861247cb2af")
+		(property "Reference" "J7"
+			(at 102.87 55.8799 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(justify right)
+			)
+		)
+		(property "Value" "Conn_01x02_Pin"
+			(at 102.87 58.4199 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(justify right)
+			)
+		)
+		(property "Footprint" "Connector_PinHeader_2.54mm:PinHeader_1x02_P2.54mm_Vertical"
+			(at 101.6 55.88 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
+			)
+		)
+		(property "Datasheet" "~"
+			(at 101.6 55.88 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
+			)
+		)
+		(property "Description" "Generic connector, single row, 01x02, script generated"
+			(at 101.6 55.88 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
+			)
+		)
+		(pin "1"
+			(uuid "a8e3874d-322a-41b1-bb49-d27de3fd6d67")
 		)
 		(pin "2"
-			(uuid "4299af0c-4236-4764-a0c2-34298330957c")
+			(uuid "1e835fda-62d5-48dc-b339-03ef49b339bb")
 		)
 		(instances
 			(project ""
 				(path "/bf7761cc-1b32-4d86-809c-5f027005229b/e838d24c-cb75-4a46-b88f-e4466a269629"
-					(reference "R1")
+					(reference "J7")
 					(unit 1)
 				)
 			)
@@ -1441,7 +1966,7 @@
 		(dnp no)
 		(fields_autoplaced yes)
 		(uuid "86c82c60-8d7e-4fb2-a458-ea30de51d48f")
-		(property "Reference" "#PWR014"
+		(property "Reference" "#PWR090"
 			(at 74.93 72.39 0)
 			(effects
 				(font
@@ -1491,7 +2016,143 @@
 		(instances
 			(project ""
 				(path "/bf7761cc-1b32-4d86-809c-5f027005229b/e838d24c-cb75-4a46-b88f-e4466a269629"
-					(reference "#PWR014")
+					(reference "#PWR090")
+					(unit 1)
+				)
+			)
+		)
+	)
+	(symbol
+		(lib_id "Device:R_Small_US")
+		(at 101.6 50.8 90)
+		(mirror x)
+		(unit 1)
+		(exclude_from_sim no)
+		(in_bom yes)
+		(on_board yes)
+		(dnp no)
+		(uuid "a4f99d87-ab1b-45b4-bfc2-69e846bfafdd")
+		(property "Reference" "R29"
+			(at 104.648 52.832 90)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+			)
+		)
+		(property "Value" "0"
+			(at 101.6 52.832 90)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+			)
+		)
+		(property "Footprint" "Resistor_SMD:R_0603_1608Metric"
+			(at 101.6 50.8 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
+			)
+		)
+		(property "Datasheet" "~"
+			(at 101.6 50.8 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
+			)
+		)
+		(property "Description" "Resistor, small US symbol"
+			(at 101.6 50.8 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
+			)
+		)
+		(pin "1"
+			(uuid "9daa78cd-af99-4865-be25-a458ea994ea6")
+		)
+		(pin "2"
+			(uuid "8d52a6e4-14ce-4f11-800e-2586c56745dd")
+		)
+		(instances
+			(project "CUR_flight_computer_25-26"
+				(path "/bf7761cc-1b32-4d86-809c-5f027005229b/e838d24c-cb75-4a46-b88f-e4466a269629"
+					(reference "R29")
+					(unit 1)
+				)
+			)
+		)
+	)
+	(symbol
+		(lib_id "Device:R_Small_US")
+		(at 101.6 48.26 90)
+		(unit 1)
+		(exclude_from_sim no)
+		(in_bom yes)
+		(on_board yes)
+		(dnp no)
+		(fields_autoplaced yes)
+		(uuid "a612c4cf-9d3d-490d-acc0-d639353aa673")
+		(property "Reference" "R28"
+			(at 101.6 41.91 90)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+			)
+		)
+		(property "Value" "0"
+			(at 101.6 44.45 90)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+			)
+		)
+		(property "Footprint" "Resistor_SMD:R_0603_1608Metric"
+			(at 101.6 48.26 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
+			)
+		)
+		(property "Datasheet" "~"
+			(at 101.6 48.26 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
+			)
+		)
+		(property "Description" "Resistor, small US symbol"
+			(at 101.6 48.26 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
+			)
+		)
+		(pin "1"
+			(uuid "2a014c4a-aa27-44df-ad78-4d68c3e42ec8")
+		)
+		(pin "2"
+			(uuid "f6d5d054-f22e-4f6b-a754-f7f3cbeafa13")
+		)
+		(instances
+			(project ""
+				(path "/bf7761cc-1b32-4d86-809c-5f027005229b/e838d24c-cb75-4a46-b88f-e4466a269629"
+					(reference "R28")
 					(unit 1)
 				)
 			)
@@ -1507,7 +2168,7 @@
 		(dnp no)
 		(fields_autoplaced yes)
 		(uuid "b21f28c9-e3af-4b17-b70e-2c64559fc9bd")
-		(property "Reference" "C13"
+		(property "Reference" "C33"
 			(at 59.69 33.0262 0)
 			(effects
 				(font
@@ -1525,7 +2186,7 @@
 				(justify left)
 			)
 		)
-		(property "Footprint" ""
+		(property "Footprint" "Capacitor_SMD:C_0603_1608Metric"
 			(at 57.15 34.29 0)
 			(effects
 				(font
@@ -1561,74 +2222,7 @@
 		(instances
 			(project ""
 				(path "/bf7761cc-1b32-4d86-809c-5f027005229b/e838d24c-cb75-4a46-b88f-e4466a269629"
-					(reference "C13")
-					(unit 1)
-				)
-			)
-		)
-	)
-	(symbol
-		(lib_id "Device:R_Small")
-		(at 92.71 50.8 90)
-		(unit 1)
-		(exclude_from_sim no)
-		(in_bom yes)
-		(on_board yes)
-		(dnp no)
-		(uuid "ba80adb5-1645-45d3-b6f1-758b476e542b")
-		(property "Reference" "R2"
-			(at 92.71 52.578 90)
-			(effects
-				(font
-					(size 1.016 1.016)
-				)
-			)
-		)
-		(property "Value" "0"
-			(at 92.71 54.102 90)
-			(effects
-				(font
-					(size 1.27 1.27)
-				)
-			)
-		)
-		(property "Footprint" ""
-			(at 92.71 50.8 0)
-			(effects
-				(font
-					(size 1.27 1.27)
-				)
-				(hide yes)
-			)
-		)
-		(property "Datasheet" "~"
-			(at 92.71 50.8 0)
-			(effects
-				(font
-					(size 1.27 1.27)
-				)
-				(hide yes)
-			)
-		)
-		(property "Description" "Resistor, small symbol"
-			(at 92.71 50.8 0)
-			(effects
-				(font
-					(size 1.27 1.27)
-				)
-				(hide yes)
-			)
-		)
-		(pin "2"
-			(uuid "a6435320-65bb-404e-88b3-056704d814e0")
-		)
-		(pin "1"
-			(uuid "a4359dd0-1e58-4adf-a351-e9bd1f143bab")
-		)
-		(instances
-			(project ""
-				(path "/bf7761cc-1b32-4d86-809c-5f027005229b/e838d24c-cb75-4a46-b88f-e4466a269629"
-					(reference "R2")
+					(reference "C33")
 					(unit 1)
 				)
 			)
@@ -1644,7 +2238,7 @@
 		(dnp no)
 		(fields_autoplaced yes)
 		(uuid "c8cbdd98-0fb3-4099-b080-0034c5b19c72")
-		(property "Reference" "U1"
+		(property "Reference" "U11"
 			(at 77.0733 66.04 0)
 			(effects
 				(font
@@ -1752,7 +2346,214 @@
 		(instances
 			(project ""
 				(path "/bf7761cc-1b32-4d86-809c-5f027005229b/e838d24c-cb75-4a46-b88f-e4466a269629"
-					(reference "U1")
+					(reference "U11")
+					(unit 1)
+				)
+			)
+		)
+	)
+	(symbol
+		(lib_id "Connector:TestPoint_Small")
+		(at 54.61 50.8 0)
+		(mirror y)
+		(unit 1)
+		(exclude_from_sim no)
+		(in_bom yes)
+		(on_board yes)
+		(dnp no)
+		(fields_autoplaced yes)
+		(uuid "cc02f94c-9c8d-49cc-985d-d1dff6b1a88e")
+		(property "Reference" "TP32"
+			(at 53.34 49.5299 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(justify left)
+			)
+		)
+		(property "Value" "TestPoint_Small"
+			(at 53.34 52.0699 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(justify left)
+				(hide yes)
+			)
+		)
+		(property "Footprint" "TestPoint_KOASpeer:TestPoint_Chip_RCUCTE_0603"
+			(at 49.53 50.8 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
+			)
+		)
+		(property "Datasheet" "~"
+			(at 49.53 50.8 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
+			)
+		)
+		(property "Description" "test point"
+			(at 54.61 50.8 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
+			)
+		)
+		(pin "1"
+			(uuid "8362f480-924b-447a-89ec-9e540691fd56")
+		)
+		(instances
+			(project "CUR_flight_computer_25-26"
+				(path "/bf7761cc-1b32-4d86-809c-5f027005229b/e838d24c-cb75-4a46-b88f-e4466a269629"
+					(reference "TP32")
+					(unit 1)
+				)
+			)
+		)
+	)
+	(symbol
+		(lib_id "Connector:TestPoint_Small")
+		(at 54.61 58.42 0)
+		(mirror y)
+		(unit 1)
+		(exclude_from_sim no)
+		(in_bom yes)
+		(on_board yes)
+		(dnp no)
+		(fields_autoplaced yes)
+		(uuid "cff63bc9-e61b-4526-9b90-c0ae48c9d85b")
+		(property "Reference" "TP34"
+			(at 53.34 57.1499 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(justify left)
+			)
+		)
+		(property "Value" "TestPoint_Small"
+			(at 53.34 59.6899 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(justify left)
+				(hide yes)
+			)
+		)
+		(property "Footprint" "TestPoint_KOASpeer:TestPoint_Chip_RCUCTE_0603"
+			(at 49.53 58.42 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
+			)
+		)
+		(property "Datasheet" "~"
+			(at 49.53 58.42 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
+			)
+		)
+		(property "Description" "test point"
+			(at 54.61 58.42 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
+			)
+		)
+		(pin "1"
+			(uuid "2acbf92a-cd32-4d66-8636-e3c2226dab2f")
+		)
+		(instances
+			(project "CUR_flight_computer_25-26"
+				(path "/bf7761cc-1b32-4d86-809c-5f027005229b/e838d24c-cb75-4a46-b88f-e4466a269629"
+					(reference "TP34")
+					(unit 1)
+				)
+			)
+		)
+	)
+	(symbol
+		(lib_id "Connector:TestPoint_Small")
+		(at 54.61 53.34 0)
+		(mirror y)
+		(unit 1)
+		(exclude_from_sim no)
+		(in_bom yes)
+		(on_board yes)
+		(dnp no)
+		(fields_autoplaced yes)
+		(uuid "e6d6548b-3559-4e1b-a182-19888bc8c4d8")
+		(property "Reference" "TP33"
+			(at 53.34 52.0699 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(justify left)
+			)
+		)
+		(property "Value" "TestPoint_Small"
+			(at 53.34 54.6099 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(justify left)
+				(hide yes)
+			)
+		)
+		(property "Footprint" "TestPoint_KOASpeer:TestPoint_Chip_RCUCTE_0603"
+			(at 49.53 53.34 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
+			)
+		)
+		(property "Datasheet" "~"
+			(at 49.53 53.34 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
+			)
+		)
+		(property "Description" "test point"
+			(at 54.61 53.34 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
+			)
+		)
+		(pin "1"
+			(uuid "2bbe35b0-2417-45de-aa8f-644e30d7a891")
+		)
+		(instances
+			(project "CUR_flight_computer_25-26"
+				(path "/bf7761cc-1b32-4d86-809c-5f027005229b/e838d24c-cb75-4a46-b88f-e4466a269629"
+					(reference "TP33")
 					(unit 1)
 				)
 			)
