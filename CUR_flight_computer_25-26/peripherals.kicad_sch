@@ -12,25 +12,25 @@
 			(exclude_from_sim no)
 			(in_bom yes)
 			(on_board yes)
-			(property "Reference" "BZ"
-				(at -1.27 6.35 0)
+			(property "Reference" "BZ1"
+				(at 3.81 1.2701 0)
 				(effects
 					(font
 						(size 1.27 1.27)
 					)
-					(justify left bottom)
+					(justify left)
 				)
 			)
 			(property "Value" "CMT-7525-03"
-				(at -1.27 -8.255 0)
+				(at 3.81 -1.2699 0)
 				(effects
 					(font
 						(size 1.27 1.27)
 					)
-					(justify left bottom)
+					(justify left)
 				)
 			)
-			(property "Footprint" "CMT-7525-03-SMT-TR:XDCR_CMT-7525-03-SMT-TR"
+			(property "Footprint" "Buzzer_SameSky:XDCR_CMT-7525-03-SMT-TR"
 				(at 0 0 0)
 				(effects
 					(font
@@ -249,24 +249,6 @@
 						(justify left bottom)
 					)
 				)
-				(pin passive line
-					(at -2.54 -5.08 90)
-					(length 2.54)
-					(name "~"
-						(effects
-							(font
-								(size 1.016 1.016)
-							)
-						)
-					)
-					(number "N"
-						(effects
-							(font
-								(size 1.016 1.016)
-							)
-						)
-					)
-				)
 			)
 			(symbol "CMT-7525-03-SMT-TR_1_0"
 				(pin passive line
@@ -279,7 +261,25 @@
 							)
 						)
 					)
-					(number "P"
+					(number "1"
+						(effects
+							(font
+								(size 1.016 1.016)
+							)
+						)
+					)
+				)
+				(pin passive line
+					(at -2.54 -5.08 90)
+					(length 2.54)
+					(name ""
+						(effects
+							(font
+								(size 1.016 1.016)
+							)
+						)
+					)
+					(number "2"
 						(effects
 							(font
 								(size 1.016 1.016)
@@ -4548,10 +4548,10 @@
 				(hide yes)
 			)
 		)
-		(pin "N"
+		(pin "2"
 			(uuid "1fd10e5d-4f5f-4b7e-8d5f-18b9b412c0fa")
 		)
-		(pin "P"
+		(pin "1"
 			(uuid "c89cc331-e7cc-4ec0-87f6-12b78ce57e94")
 		)
 		(instances
