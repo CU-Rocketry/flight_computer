@@ -5419,7 +5419,7 @@
 				(justify right)
 			)
 		)
-		(property "Footprint" "Diode_SMD:D_0201_0603Metric"
+		(property "Footprint" "ESDA7P120:TVS_ESDA7P120-1U1M"
 			(at 54.61 173.99 0)
 			(effects
 				(font
@@ -5489,7 +5489,7 @@
 				(justify right)
 			)
 		)
-		(property "Footprint" "Diode_SMD:D_0201_0603Metric"
+		(property "Footprint" "ESDA7P120:TVS_ESDA7P120-1U1M"
 			(at 49.53 173.99 0)
 			(effects
 				(font
@@ -5982,7 +5982,7 @@
 				(justify right)
 			)
 		)
-		(property "Footprint" "Diode_SMD:D_0201_0603Metric"
+		(property "Footprint" "ESDA7P120:TVS_ESDA7P120-1U1M"
 			(at 54.61 143.51 0)
 			(effects
 				(font
@@ -6554,7 +6554,7 @@
 				(justify right)
 			)
 		)
-		(property "Footprint" "Diode_SMD:D_0201_0603Metric"
+		(property "Footprint" "ESDA7P120:TVS_ESDA7P120-1U1M"
 			(at 49.53 143.51 0)
 			(effects
 				(font
@@ -6764,7 +6764,7 @@
 				(justify right)
 			)
 		)
-		(property "Footprint" "Diode_SMD:D_0201_0603Metric"
+		(property "Footprint" "ESDA7P120:TVS_ESDA7P120-1U1M"
 			(at 80.01 40.64 0)
 			(effects
 				(font
@@ -7163,7 +7163,7 @@
 				(justify right)
 			)
 		)
-		(property "Footprint" "Diode_SMD:D_0201_0603Metric"
+		(property "Footprint" "ESDA7P120:TVS_ESDA7P120-1U1M"
 			(at 46.99 40.64 0)
 			(effects
 				(font
