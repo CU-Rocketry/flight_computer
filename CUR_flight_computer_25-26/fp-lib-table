@@ -18,4 +18,5 @@
   (lib (name "Connector_SAMTEC_FTSH-107-01-X-DV-K-TR")(type "KiCad")(uri "${KIPRJMOD}/kicad-library/footprints/Connector_SAMTEC_FTSH-107-01-X-DV-K-TR.pretty")(options "")(descr ""))
   (lib (name "NTR4003NT1G")(type "KiCad")(uri "${KIPRJMOD}/kicad-library/footprints/NTR4003NT1G.pretty")(options "")(descr ""))
   (lib (name "TestPoint_KOASpeer")(type "KiCad")(uri "${KIPRJMOD}/kicad-library/footprints/TestPoint_KOASpeer.pretty")(options "")(descr ""))
+  (lib (name "ESDA7P120")(type "KiCad")(uri "${KIPRJMOD}/kicad-library/footprints/ESDA7P120.pretty")(options "")(descr ""))
 )
