@@ -2163,6 +2163,87 @@
 		(uuid "f32d0076-d6f9-45fb-88d1-8217da2829e7")
 	)
 	(symbol
+		(lib_id "BUK9K25-40RAX:BUK9K25-40RAX")
+		(at 151.13 139.7 0)
+		(unit 1)
+		(exclude_from_sim no)
+		(in_bom yes)
+		(on_board yes)
+		(dnp no)
+		(uuid "0519e822-0a0f-46d2-8fb6-53393f21d9bd")
+		(property "Reference" "U13"
+			(at 155.956 146.812 90)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(justify left)
+			)
+		)
+		(property "Value" "BUK9K25-40RAX"
+			(at 158.496 146.812 90)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(justify left)
+			)
+		)
+		(property "Footprint" "BUK9K25-40RAX:BUK9K2540RAX"
+			(at 151.13 139.7 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
+			)
+		)
+		(property "Datasheet" "https://assets.nexperia.com/documents/data-sheet/BUK9K25-40RA.pdf"
+			(at 151.13 139.7 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
+			)
+		)
+		(property "Description" "Nexperia USA Mosfet Array 40V 18.2A 2 N Channel NMOS"
+			(at 151.13 139.7 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
+			)
+		)
+		(pin "4"
+			(uuid "8765b795-45fd-4ef1-837d-7b2483adc306")
+		)
+		(pin "6"
+			(uuid "42d38af0-ac6e-4863-86b4-b9dffefd69af")
+		)
+		(pin "1"
+			(uuid "67040aef-fbd4-41fd-be08-a1a65df85500")
+		)
+		(pin "5"
+			(uuid "d556684f-1a95-4094-a43c-f437d631e695")
+		)
+		(pin "3"
+			(uuid "bf234082-3e1e-436e-b387-d59fc76ffcd5")
+		)
+		(pin "2"
+			(uuid "3de7855c-ead9-4fb1-8cee-fb0ad4379d5c")
+		)
+		(instances
+			(project "CUR_flight_computer_25-26"
+				(path "/bf7761cc-1b32-4d86-809c-5f027005229b/a6095a4d-1542-4c9d-ab0b-9ed076818c96"
+					(reference "U13")
+					(unit 1)
+				)
+			)
+		)
+	)
+	(symbol
 		(lib_id "power:GND")
 		(at 87.63 80.01 0)
 		(unit 1)
@@ -2571,6 +2652,87 @@
 		)
 	)
 	(symbol
+		(lib_id "BUK9K25-40RAX:BUK9K25-40RAX")
+		(at 74.93 140.97 0)
+		(unit 2)
+		(exclude_from_sim no)
+		(in_bom yes)
+		(on_board yes)
+		(dnp no)
+		(uuid "381c1213-9bf4-4028-9bc4-c1b5077693d4")
+		(property "Reference" "U13"
+			(at 77.47 147.574 90)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(justify left)
+			)
+		)
+		(property "Value" "BUK9K25-40RAX"
+			(at 80.01 147.574 90)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(justify left)
+			)
+		)
+		(property "Footprint" "BUK9K25-40RAX:BUK9K2540RAX"
+			(at 74.93 140.97 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
+			)
+		)
+		(property "Datasheet" "https://assets.nexperia.com/documents/data-sheet/BUK9K25-40RA.pdf"
+			(at 74.93 140.97 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
+			)
+		)
+		(property "Description" "Nexperia USA Mosfet Array 40V 18.2A 2 N Channel NMOS"
+			(at 74.93 140.97 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
+			)
+		)
+		(pin "4"
+			(uuid "b19ae1eb-18af-417e-9fdb-4dbcdc78c599")
+		)
+		(pin "6"
+			(uuid "b015f029-6ed9-4733-9ba2-85d046fe714d")
+		)
+		(pin "1"
+			(uuid "d0ceec7f-9507-48e8-a6bc-0e8076dd44c9")
+		)
+		(pin "5"
+			(uuid "0d111f66-5a63-475f-8864-1ae8dbac6326")
+		)
+		(pin "3"
+			(uuid "e9b0eb4b-fdd8-452c-8a79-f24a25b7275d")
+		)
+		(pin "2"
+			(uuid "66d37e6f-9b20-41fc-a3be-032d277d14f5")
+		)
+		(instances
+			(project "CUR_flight_computer_25-26"
+				(path "/bf7761cc-1b32-4d86-809c-5f027005229b/a6095a4d-1542-4c9d-ab0b-9ed076818c96"
+					(reference "U13")
+					(unit 2)
+				)
+			)
+		)
+	)
+	(symbol
 		(lib_id "power:GND")
 		(at 163.83 149.86 0)
 		(unit 1)
@@ -2849,87 +3011,6 @@
 				(path "/bf7761cc-1b32-4d86-809c-5f027005229b/a6095a4d-1542-4c9d-ab0b-9ed076818c96"
 					(reference "U12")
 					(unit 1)
-				)
-			)
-		)
-	)
-	(symbol
-		(lib_id "BUK9K25-40RAX:BUK9K25-40RAX")
-		(at 151.13 139.7 0)
-		(unit 2)
-		(exclude_from_sim no)
-		(in_bom yes)
-		(on_board yes)
-		(dnp no)
-		(uuid "47baeb00-a683-457d-91cf-ec2115326fc2")
-		(property "Reference" "U13"
-			(at 153.67 146.304 90)
-			(effects
-				(font
-					(size 1.27 1.27)
-				)
-				(justify left)
-			)
-		)
-		(property "Value" "BUK9K25-40RAX"
-			(at 156.21 146.304 90)
-			(effects
-				(font
-					(size 1.27 1.27)
-				)
-				(justify left)
-			)
-		)
-		(property "Footprint" "BUK9K25-40RAX:BUK9K2540RAX"
-			(at 151.13 139.7 0)
-			(effects
-				(font
-					(size 1.27 1.27)
-				)
-				(hide yes)
-			)
-		)
-		(property "Datasheet" "https://assets.nexperia.com/documents/data-sheet/BUK9K25-40RA.pdf"
-			(at 151.13 139.7 0)
-			(effects
-				(font
-					(size 1.27 1.27)
-				)
-				(hide yes)
-			)
-		)
-		(property "Description" "Nexperia USA Mosfet Array 40V 18.2A 2 N Channel NMOS"
-			(at 151.13 139.7 0)
-			(effects
-				(font
-					(size 1.27 1.27)
-				)
-				(hide yes)
-			)
-		)
-		(pin "4"
-			(uuid "19c3b182-54b0-4db1-ad1a-4fae54a22f78")
-		)
-		(pin "6"
-			(uuid "5b279b79-8e6e-4c1c-acf1-5abffe18abec")
-		)
-		(pin "1"
-			(uuid "d0ceec7f-9507-48e8-a6bc-0e8076dd44c9")
-		)
-		(pin "5"
-			(uuid "0d111f66-5a63-475f-8864-1ae8dbac6326")
-		)
-		(pin "3"
-			(uuid "9d2226b1-1912-43f7-8498-4cfdf3f05512")
-		)
-		(pin "2"
-			(uuid "66d37e6f-9b20-41fc-a3be-032d277d14f5")
-		)
-		(instances
-			(project "CUR_flight_computer_25-26"
-				(path "/bf7761cc-1b32-4d86-809c-5f027005229b/a6095a4d-1542-4c9d-ab0b-9ed076818c96"
-					(reference "U13")
-					(unit 2)
 				)
 			)
 		)
@@ -4699,87 +4780,6 @@
 			(project "CUR_flight_computer_25-26"
 				(path "/bf7761cc-1b32-4d86-809c-5f027005229b/a6095a4d-1542-4c9d-ab0b-9ed076818c96"
 					(reference "R31")
-					(unit 1)
-				)
-			)
-		)
-	)
-	(symbol
-		(lib_id "BUK9K25-40RAX:BUK9K25-40RAX")
-		(at 74.93 140.97 0)
-		(unit 1)
-		(exclude_from_sim no)
-		(in_bom yes)
-		(on_board yes)
-		(dnp no)
-		(uuid "f03f911b-54de-4230-81a8-2849f405cd59")
-		(property "Reference" "U13"
-			(at 79.756 148.082 90)
-			(effects
-				(font
-					(size 1.27 1.27)
-				)
-				(justify left)
-			)
-		)
-		(property "Value" "BUK9K25-40RAX"
-			(at 82.296 148.082 90)
-			(effects
-				(font
-					(size 1.27 1.27)
-				)
-				(justify left)
-			)
-		)
-		(property "Footprint" "BUK9K25-40RAX:BUK9K2540RAX"
-			(at 74.93 140.97 0)
-			(effects
-				(font
-					(size 1.27 1.27)
-				)
-				(hide yes)
-			)
-		)
-		(property "Datasheet" "https://assets.nexperia.com/documents/data-sheet/BUK9K25-40RA.pdf"
-			(at 74.93 140.97 0)
-			(effects
-				(font
-					(size 1.27 1.27)
-				)
-				(hide yes)
-			)
-		)
-		(property "Description" "Nexperia USA Mosfet Array 40V 18.2A 2 N Channel NMOS"
-			(at 74.93 140.97 0)
-			(effects
-				(font
-					(size 1.27 1.27)
-				)
-				(hide yes)
-			)
-		)
-		(pin "4"
-			(uuid "8765b795-45fd-4ef1-837d-7b2483adc306")
-		)
-		(pin "6"
-			(uuid "42d38af0-ac6e-4863-86b4-b9dffefd69af")
-		)
-		(pin "1"
-			(uuid "e994927c-da9e-4473-8daa-da424c99c7e7")
-		)
-		(pin "5"
-			(uuid "b0fe4207-074d-4383-827a-f4e0e50fec0a")
-		)
-		(pin "3"
-			(uuid "bf234082-3e1e-436e-b387-d59fc76ffcd5")
-		)
-		(pin "2"
-			(uuid "1d5bd55d-7f5e-44a1-8b24-762ee3e2a46e")
-		)
-		(instances
-			(project "CUR_flight_computer_25-26"
-				(path "/bf7761cc-1b32-4d86-809c-5f027005229b/a6095a4d-1542-4c9d-ab0b-9ed076818c96"
-					(reference "U13")
 					(unit 1)
 				)
 			)
