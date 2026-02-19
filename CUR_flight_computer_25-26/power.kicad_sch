@@ -3417,6 +3417,16 @@
 		)
 		(uuid "36c8804d-a2b6-4032-9ec5-8228b89a93ce")
 	)
+	(label "BATT_MEAS"
+		(at 57.15 135.89 0)
+		(effects
+			(font
+				(size 1.27 1.27)
+			)
+			(justify left bottom)
+		)
+		(uuid "5fefb517-8fb3-4995-99be-b4d05e2d91ad")
+	)
 	(label "PYRO_BATT_MEAS"
 		(at 133.35 33.02 90)
 		(effects
@@ -3436,16 +3446,6 @@
 			(justify left bottom)
 		)
 		(uuid "84e30d97-cc39-4e39-9e3b-122da8d1f59a")
-	)
-	(label "BATT_SWITCH"
-		(at 57.15 133.35 0)
-		(effects
-			(font
-				(size 1.27 1.27)
-			)
-			(justify left bottom)
-		)
-		(uuid "8c20ae66-9907-4f88-b3eb-bbca324f8c95")
 	)
 	(label "LDO_IN"
 		(at 73.66 96.52 0)
@@ -3467,15 +3467,15 @@
 		)
 		(uuid "b364818b-1c5c-436e-8a5b-a40b0f12bdca")
 	)
-	(label "BATT_MEAS"
-		(at 57.15 135.89 0)
+	(label "BATT_SWITCH"
+		(at 57.15 133.35 0)
 		(effects
 			(font
 				(size 1.27 1.27)
 			)
 			(justify left bottom)
 		)
-		(uuid "bab26fd7-4818-427e-a3aa-dce2433bc009")
+		(uuid "f4e7bdb1-a6c5-406f-ba04-6d7ece8d9d0d")
 	)
 	(global_label "BATT_PYRO"
 		(shape input)
@@ -5821,8 +5821,7 @@
 	)
 	(symbol
 		(lib_id "Connector:Conn_01x02_Pin")
-		(at 72.39 31.75 90)
-		(mirror x)
+		(at 74.93 31.75 270)
 		(unit 1)
 		(exclude_from_sim no)
 		(in_bom yes)
@@ -5830,7 +5829,7 @@
 		(dnp no)
 		(uuid "81017ffd-10d5-4c8e-98df-f29124fa6a0c")
 		(property "Reference" "J5"
-			(at 76.2 31.1149 90)
+			(at 71.12 31.1149 90)
 			(effects
 				(font
 					(size 1.27 1.27)
@@ -5839,7 +5838,7 @@
 			)
 		)
 		(property "Value" "XT30PW-M"
-			(at 68.072 28.194 90)
+			(at 79.248 28.194 90)
 			(effects
 				(font
 					(size 1.27 1.27)
@@ -5848,7 +5847,7 @@
 			)
 		)
 		(property "Footprint" "Connector_AMASS:AMASS_XT30U-M_1x02_P5.0mm_Vertical"
-			(at 72.39 31.75 0)
+			(at 74.93 31.75 0)
 			(effects
 				(font
 					(size 1.27 1.27)
@@ -5857,7 +5856,7 @@
 			)
 		)
 		(property "Datasheet" "~"
-			(at 72.39 31.75 0)
+			(at 74.93 31.75 0)
 			(effects
 				(font
 					(size 1.27 1.27)
@@ -5866,7 +5865,7 @@
 			)
 		)
 		(property "Description" "Generic connector, single row, 01x02, script generated"
-			(at 72.39 31.75 0)
+			(at 74.93 31.75 0)
 			(effects
 				(font
 					(size 1.27 1.27)
@@ -7689,8 +7688,7 @@
 	)
 	(symbol
 		(lib_id "Connector:Conn_01x02_Pin")
-		(at 39.37 31.75 90)
-		(mirror x)
+		(at 41.91 31.75 270)
 		(unit 1)
 		(exclude_from_sim no)
 		(in_bom yes)
@@ -7698,7 +7696,7 @@
 		(dnp no)
 		(uuid "eeb8a816-d626-47ac-93b2-872002473b46")
 		(property "Reference" "J4"
-			(at 43.18 31.1149 90)
+			(at 38.1 31.1149 90)
 			(effects
 				(font
 					(size 1.27 1.27)
@@ -7707,7 +7705,7 @@
 			)
 		)
 		(property "Value" "XT30PW-M"
-			(at 35.052 28.194 90)
+			(at 46.228 28.194 90)
 			(effects
 				(font
 					(size 1.27 1.27)
@@ -7716,7 +7714,7 @@
 			)
 		)
 		(property "Footprint" "Connector_AMASS:AMASS_XT30U-M_1x02_P5.0mm_Vertical"
-			(at 39.37 31.75 0)
+			(at 41.91 31.75 0)
 			(effects
 				(font
 					(size 1.27 1.27)
@@ -7725,7 +7723,7 @@
 			)
 		)
 		(property "Datasheet" "~"
-			(at 39.37 31.75 0)
+			(at 41.91 31.75 0)
 			(effects
 				(font
 					(size 1.27 1.27)
@@ -7734,7 +7732,7 @@
 			)
 		)
 		(property "Description" "Generic connector, single row, 01x02, script generated"
-			(at 39.37 31.75 0)
+			(at 41.91 31.75 0)
 			(effects
 				(font
 					(size 1.27 1.27)
