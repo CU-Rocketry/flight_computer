@@ -5299,6 +5299,16 @@
 	)
 	(wire
 		(pts
+			(xy 184.15 129.54) (xy 189.23 129.54)
+		)
+		(stroke
+			(width 0)
+			(type default)
+		)
+		(uuid "899a000b-a4f4-4c98-a963-fec90b4443bc")
+	)
+	(wire
+		(pts
 			(xy 24.13 33.02) (xy 34.29 33.02)
 		)
 		(stroke
@@ -6210,17 +6220,6 @@
 		)
 		(uuid "09db696e-4023-4ace-a86d-f9fad9401372")
 	)
-	(hierarchical_label "IMU_INT2"
-		(shape input)
-		(at 119.38 127 180)
-		(effects
-			(font
-				(size 1.27 1.27)
-			)
-			(justify right)
-		)
-		(uuid "0fcd17fa-ce63-4fcd-a952-10bbb0ed8398")
-	)
 	(hierarchical_label "JCLK{slash}SWCLK"
 		(shape input)
 		(at 189.23 71.12 0)
@@ -6231,6 +6230,17 @@
 			(justify left)
 		)
 		(uuid "11c0f2a7-a97f-41bb-8014-f45e5589eec0")
+	)
+	(hierarchical_label "RF_TXEN"
+		(shape output)
+		(at 119.38 78.74 180)
+		(effects
+			(font
+				(size 1.27 1.27)
+			)
+			(justify right)
+		)
+		(uuid "14dac98f-7501-4b40-9ae5-e122047c5d54")
 	)
 	(hierarchical_label "I_SENSE"
 		(shape input)
@@ -6243,17 +6253,6 @@
 		)
 		(uuid "192172d7-6df6-45f6-a445-1b3cd7f3e9c9")
 	)
-	(hierarchical_label "RF_IO2"
-		(shape bidirectional)
-		(at 119.38 81.28 180)
-		(effects
-			(font
-				(size 1.27 1.27)
-			)
-			(justify right)
-		)
-		(uuid "1bf843dc-549f-4f20-a0db-6d9237dacda9")
-	)
 	(hierarchical_label "BTN_2"
 		(shape output)
 		(at 119.38 111.76 180)
@@ -6264,6 +6263,28 @@
 			(justify right)
 		)
 		(uuid "1c990403-18b3-476f-bfdf-8b4e377f6803")
+	)
+	(hierarchical_label "RF_IO3"
+		(shape bidirectional)
+		(at 189.23 129.54 0)
+		(effects
+			(font
+				(size 1.27 1.27)
+			)
+			(justify left)
+		)
+		(uuid "1ca9afc3-f0ef-448c-a16b-ff05d9ff7c53")
+	)
+	(hierarchical_label "RF_IO1"
+		(shape bidirectional)
+		(at 119.38 76.2 180)
+		(effects
+			(font
+				(size 1.27 1.27)
+			)
+			(justify right)
+		)
+		(uuid "1cc2bd67-0c38-463a-bf66-ba5cd656bda1")
 	)
 	(hierarchical_label "PYRO_1"
 		(shape output)
@@ -6441,17 +6462,6 @@
 		)
 		(uuid "5bc8489b-c50b-446d-b7db-7d805cf491e8")
 	)
-	(hierarchical_label "RF_TXEN"
-		(shape output)
-		(at 189.23 132.08 0)
-		(effects
-			(font
-				(size 1.27 1.27)
-			)
-			(justify left)
-		)
-		(uuid "604266cc-c36e-4538-92b7-a19b2780f809")
-	)
 	(hierarchical_label "MAG_CS"
 		(shape output)
 		(at 189.23 45.72 0)
@@ -6463,8 +6473,8 @@
 		)
 		(uuid "65021b11-5f2c-45a1-b0ec-f6fd6ad11321")
 	)
-	(hierarchical_label "RF_IO1"
-		(shape bidirectional)
+	(hierarchical_label "RF_BUSY"
+		(shape input)
 		(at 119.38 96.52 180)
 		(effects
 			(font
@@ -6472,7 +6482,7 @@
 			)
 			(justify right)
 		)
-		(uuid "65fed502-e943-4ca0-9f49-2b3c3374c2ab")
+		(uuid "6c8f0bfe-8b89-4185-8134-a64b6794ebef")
 	)
 	(hierarchical_label "MAG CLOCK"
 		(shape output)
@@ -6550,6 +6560,17 @@
 			(justify right)
 		)
 		(uuid "7fb12101-4de1-446f-be50-68e9a51b4b38")
+	)
+	(hierarchical_label "IMU_INT2"
+		(shape input)
+		(at 119.38 124.46 180)
+		(effects
+			(font
+				(size 1.27 1.27)
+			)
+			(justify right)
+		)
+		(uuid "83b77f2e-af2d-494c-99fa-2d81d6d4ca31")
 	)
 	(hierarchical_label "PYRO_3"
 		(shape output)
@@ -6638,17 +6659,6 @@
 			(justify left)
 		)
 		(uuid "99eefe37-6562-4ec4-9bd0-811ad9510b1b")
-	)
-	(hierarchical_label "RF_IO3"
-		(shape bidirectional)
-		(at 101.6 96.52 180)
-		(effects
-			(font
-				(size 1.27 1.27)
-			)
-			(justify right)
-		)
-		(uuid "9dd82df8-7b9e-468e-b36c-dcd43c626827")
 	)
 	(hierarchical_label "BARO_INT"
 		(shape input)
@@ -6771,6 +6781,17 @@
 		)
 		(uuid "b7f4143e-f59e-4363-acc9-8f8b9ef14934")
 	)
+	(hierarchical_label "IMU_INT1"
+		(shape input)
+		(at 119.38 127 180)
+		(effects
+			(font
+				(size 1.27 1.27)
+			)
+			(justify right)
+		)
+		(uuid "be53c093-d792-4fc2-9f0f-199c5815913e")
+	)
 	(hierarchical_label "SENSE_3"
 		(shape input)
 		(at 189.23 152.4 0)
@@ -6803,6 +6824,17 @@
 			(justify right)
 		)
 		(uuid "cde24c97-a360-4d35-ad37-9bc601ee0581")
+	)
+	(hierarchical_label "RF_RXEN"
+		(shape output)
+		(at 119.38 81.28 180)
+		(effects
+			(font
+				(size 1.27 1.27)
+			)
+			(justify right)
+		)
+		(uuid "cde2972e-1f34-4c7e-9602-9ba0df78d141")
 	)
 	(hierarchical_label "~{RF_NSS}"
 		(shape output)
@@ -6881,17 +6913,6 @@
 		)
 		(uuid "dfae50d6-29db-4e08-b00d-614ca6c99464")
 	)
-	(hierarchical_label "RF_RXEN"
-		(shape output)
-		(at 119.38 76.2 180)
-		(effects
-			(font
-				(size 1.27 1.27)
-			)
-			(justify right)
-		)
-		(uuid "dffabb11-0aca-46dc-96aa-53973cc88a73")
-	)
 	(hierarchical_label "FLASH_IO2"
 		(shape bidirectional)
 		(at 186.69 53.34 0)
@@ -6902,17 +6923,6 @@
 			(justify left)
 		)
 		(uuid "e310b7a3-fe99-4ee2-9936-6acc2216a57b")
-	)
-	(hierarchical_label "IMU_INT1"
-		(shape input)
-		(at 119.38 124.46 180)
-		(effects
-			(font
-				(size 1.27 1.27)
-			)
-			(justify right)
-		)
-		(uuid "e4baaaec-6739-4ac1-a496-a43267ce1c00")
 	)
 	(hierarchical_label "GPS_TP"
 		(shape input)
@@ -6980,16 +6990,16 @@
 		)
 		(uuid "fa82b268-dc3f-4163-b021-178a9d2009d7")
 	)
-	(hierarchical_label "RF_BUSY"
-		(shape input)
-		(at 119.38 78.74 180)
+	(hierarchical_label "RF_IO2"
+		(shape bidirectional)
+		(at 189.23 132.08 0)
 		(effects
 			(font
 				(size 1.27 1.27)
 			)
-			(justify right)
+			(justify left)
 		)
-		(uuid "fd2b9d3d-5a3c-42ab-82af-131f36e8a2e8")
+		(uuid "ff2b83c5-4322-410c-bacb-6b244a98d432")
 	)
 	(symbol
 		(lib_id "Device:C_Small")
