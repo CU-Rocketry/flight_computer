@@ -2441,14 +2441,14 @@
 	)
 	(hierarchical_label "SD_DAT0"
 		(shape bidirectional)
-		(at 105.41 144.78 90)
+		(at 107.95 144.78 90)
 		(effects
 			(font
 				(size 1.27 1.27)
 			)
 			(justify left)
 		)
-		(uuid "17a52103-e4bc-40cc-a0c0-d253c8cb0d3d")
+		(uuid "29d6b8e7-99e5-43b2-91eb-cdb1c50bde77")
 	)
 	(hierarchical_label "FLASH_CLK"
 		(shape input)
@@ -2472,6 +2472,17 @@
 		)
 		(uuid "4827c15f-39d7-4849-ba07-48f2f77adacf")
 	)
+	(hierarchical_label "SD_CMD"
+		(shape input)
+		(at 83.82 144.78 90)
+		(effects
+			(font
+				(size 1.27 1.27)
+			)
+			(justify left)
+		)
+		(uuid "49b5659b-c6f9-40fd-9444-53b5933e38d8")
+	)
 	(hierarchical_label "FLASH_IO0"
 		(shape bidirectional)
 		(at 35.56 62.23 180)
@@ -2494,7 +2505,7 @@
 		)
 		(uuid "7e03c778-d063-4417-aed1-a0b48bea1e1b")
 	)
-	(hierarchical_label "SD_CMD"
+	(hierarchical_label "SD_CLK"
 		(shape input)
 		(at 81.28 144.78 90)
 		(effects
@@ -2503,7 +2514,7 @@
 			)
 			(justify left)
 		)
-		(uuid "8e287b7e-5d72-4968-9820-bee9af33422c")
+		(uuid "8b6a2ea2-8b82-4bf3-bd43-0a319f0dff4c")
 	)
 	(hierarchical_label "FLASH_IO1"
 		(shape bidirectional)
@@ -2527,17 +2538,6 @@
 		)
 		(uuid "aae0dca5-9419-4257-a874-db8914730d3e")
 	)
-	(hierarchical_label "SD_DAT1"
-		(shape bidirectional)
-		(at 107.95 144.78 90)
-		(effects
-			(font
-				(size 1.27 1.27)
-			)
-			(justify left)
-		)
-		(uuid "c3a09270-4110-44b3-aef2-593128ea6594")
-	)
 	(hierarchical_label "SD_DAT3"
 		(shape bidirectional)
 		(at 78.74 115.57 0)
@@ -2548,6 +2548,17 @@
 			(justify left)
 		)
 		(uuid "c70ee13a-6084-44c2-9306-7081fd81ffab")
+	)
+	(hierarchical_label "SD_DAT1"
+		(shape bidirectional)
+		(at 105.41 144.78 90)
+		(effects
+			(font
+				(size 1.27 1.27)
+			)
+			(justify left)
+		)
+		(uuid "c90a3840-1f1f-49a3-b7e7-67998ebeea04")
 	)
 	(hierarchical_label "FLASH_IO2"
 		(shape bidirectional)
@@ -2581,17 +2592,6 @@
 			(justify left)
 		)
 		(uuid "d5f55ce9-e323-4651-acc7-8c37474ff77a")
-	)
-	(hierarchical_label "SD_CLK"
-		(shape input)
-		(at 83.82 144.78 90)
-		(effects
-			(font
-				(size 1.27 1.27)
-			)
-			(justify left)
-		)
-		(uuid "e4105ee9-7231-4c7a-9eb9-bb7c7266f606")
 	)
 	(hierarchical_label "FLASH_CS"
 		(shape input)
