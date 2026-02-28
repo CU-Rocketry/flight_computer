@@ -1278,6 +1278,16 @@
 	)
 	(wire
 		(pts
+			(xy 57.15 113.03) (xy 62.23 113.03)
+		)
+		(stroke
+			(width 0)
+			(type default)
+		)
+		(uuid "2b607713-69b0-4453-bcb1-47a9f3369611")
+	)
+	(wire
+		(pts
 			(xy 60.96 69.85) (xy 68.58 69.85)
 		)
 		(stroke
@@ -1335,6 +1345,16 @@
 			(type default)
 		)
 		(uuid "3ec92b74-33d6-4ba4-bfa0-0c0fa17be694")
+	)
+	(wire
+		(pts
+			(xy 132.08 113.03) (xy 140.97 113.03)
+		)
+		(stroke
+			(width 0)
+			(type default)
+		)
+		(uuid "449c8086-3115-49f9-850e-5464541cc476")
 	)
 	(wire
 		(pts
@@ -1585,26 +1605,6 @@
 			(type default)
 		)
 		(uuid "78a99794-2450-4321-8ee8-0e062e9c06b0")
-	)
-	(wire
-		(pts
-			(xy 132.08 113.03) (xy 140.97 113.03)
-		)
-		(stroke
-			(width 0)
-			(type default)
-		)
-		(uuid "7a43b745-a0ca-428e-a61e-82ac67072d90")
-	)
-	(wire
-		(pts
-			(xy 62.23 113.03) (xy 57.15 113.03)
-		)
-		(stroke
-			(width 0)
-			(type default)
-		)
-		(uuid "7de176cc-ed42-4bc9-ae1d-db0d6b58a4a0")
 	)
 	(wire
 		(pts
@@ -2449,16 +2449,16 @@
 	)
 	(symbol
 		(lib_id "Connector:Screw_Terminal_01x02")
-		(at 52.07 113.03 180)
+		(at 52.07 110.49 0)
+		(mirror y)
 		(unit 1)
 		(exclude_from_sim no)
 		(in_bom yes)
 		(on_board yes)
 		(dnp no)
-		(fields_autoplaced yes)
 		(uuid "2c36b8e2-3207-4be9-807c-5deedd6b50e2")
 		(property "Reference" "J9"
-			(at 52.07 104.14 0)
+			(at 52.07 119.38 0)
 			(effects
 				(font
 					(size 1.27 1.27)
@@ -2466,7 +2466,7 @@
 			)
 		)
 		(property "Value" "PYRO"
-			(at 52.07 106.68 0)
+			(at 52.07 116.84 0)
 			(effects
 				(font
 					(size 1.27 1.27)
@@ -2474,7 +2474,7 @@
 			)
 		)
 		(property "Footprint" "Terminal_SAMESKY_TB0011-350-02GR:SAMESKY_TB0011-350-02GR"
-			(at 52.07 113.03 0)
+			(at 52.07 110.49 0)
 			(effects
 				(font
 					(size 1.27 1.27)
@@ -2483,7 +2483,7 @@
 			)
 		)
 		(property "Datasheet" "~"
-			(at 52.07 113.03 0)
+			(at 52.07 110.49 0)
 			(effects
 				(font
 					(size 1.27 1.27)
@@ -2492,7 +2492,7 @@
 			)
 		)
 		(property "Description" "Generic screw terminal, single row, 01x02, script generated (kicad-library-utils/schlib/autogen/connector/)"
-			(at 52.07 113.03 0)
+			(at 52.07 110.49 0)
 			(effects
 				(font
 					(size 1.27 1.27)
@@ -4109,16 +4109,16 @@
 	)
 	(symbol
 		(lib_id "Connector:Screw_Terminal_01x02")
-		(at 127 113.03 180)
+		(at 127 110.49 0)
+		(mirror y)
 		(unit 1)
 		(exclude_from_sim no)
 		(in_bom yes)
 		(on_board yes)
 		(dnp no)
-		(fields_autoplaced yes)
 		(uuid "95462233-0240-4b38-be12-9563647d9f0f")
 		(property "Reference" "J11"
-			(at 127 104.14 0)
+			(at 127 119.38 0)
 			(effects
 				(font
 					(size 1.27 1.27)
@@ -4126,7 +4126,7 @@
 			)
 		)
 		(property "Value" "PYRO"
-			(at 127 106.68 0)
+			(at 127 116.84 0)
 			(effects
 				(font
 					(size 1.27 1.27)
@@ -4134,7 +4134,7 @@
 			)
 		)
 		(property "Footprint" "Terminal_SAMESKY_TB0011-350-02GR:SAMESKY_TB0011-350-02GR"
-			(at 127 113.03 0)
+			(at 127 110.49 0)
 			(effects
 				(font
 					(size 1.27 1.27)
@@ -4143,7 +4143,7 @@
 			)
 		)
 		(property "Datasheet" "~"
-			(at 127 113.03 0)
+			(at 127 110.49 0)
 			(effects
 				(font
 					(size 1.27 1.27)
@@ -4152,7 +4152,7 @@
 			)
 		)
 		(property "Description" "Generic screw terminal, single row, 01x02, script generated (kicad-library-utils/schlib/autogen/connector/)"
-			(at 127 113.03 0)
+			(at 127 110.49 0)
 			(effects
 				(font
 					(size 1.27 1.27)
