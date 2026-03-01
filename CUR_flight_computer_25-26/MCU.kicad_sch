@@ -6220,17 +6220,6 @@
 		)
 		(uuid "09db696e-4023-4ace-a86d-f9fad9401372")
 	)
-	(hierarchical_label "PYRO_3"
-		(shape output)
-		(at 119.38 66.04 180)
-		(effects
-			(font
-				(size 1.27 1.27)
-			)
-			(justify right)
-		)
-		(uuid "0a222009-e381-4186-9936-d4649fa838df")
-	)
 	(hierarchical_label "JCLK{slash}SWCLK"
 		(shape input)
 		(at 189.23 71.12 0)
@@ -6363,6 +6352,28 @@
 		)
 		(uuid "30d70243-7b5d-4924-8717-bc10178b03b0")
 	)
+	(hierarchical_label "SENSE_4"
+		(shape input)
+		(at 119.38 66.04 180)
+		(effects
+			(font
+				(size 1.27 1.27)
+			)
+			(justify right)
+		)
+		(uuid "38107ca7-e89d-4350-8972-bbf946d22c20")
+	)
+	(hierarchical_label "PYRO_4"
+		(shape output)
+		(at 119.38 71.12 180)
+		(effects
+			(font
+				(size 1.27 1.27)
+			)
+			(justify right)
+		)
+		(uuid "38b7b688-e154-493e-8466-ab87dac2f8dd")
+	)
 	(hierarchical_label "USB_D+"
 		(shape bidirectional)
 		(at 186.69 66.04 0)
@@ -6440,6 +6451,17 @@
 		)
 		(uuid "526e7916-b160-43ea-ab22-d66cad4e0d36")
 	)
+	(hierarchical_label "SENSE_3"
+		(shape input)
+		(at 119.38 63.5 180)
+		(effects
+			(font
+				(size 1.27 1.27)
+			)
+			(justify right)
+		)
+		(uuid "538209a9-3bb0-49e5-82ea-82c30fc8a620")
+	)
 	(hierarchical_label "SENSORS_MISO"
 		(shape input)
 		(at 189.23 111.76 0)
@@ -6461,17 +6483,6 @@
 			(justify left)
 		)
 		(uuid "5bc8489b-c50b-446d-b7db-7d805cf491e8")
-	)
-	(hierarchical_label "PYRO_4"
-		(shape output)
-		(at 119.38 63.5 180)
-		(effects
-			(font
-				(size 1.27 1.27)
-			)
-			(justify right)
-		)
-		(uuid "64b6238f-e990-4f25-9754-68a3847b6259")
 	)
 	(hierarchical_label "MAG_CS"
 		(shape output)
@@ -6616,17 +6627,6 @@
 		)
 		(uuid "978085f8-267c-4ea1-8fce-46204f9a0546")
 	)
-	(hierarchical_label "SENSE_4"
-		(shape input)
-		(at 119.38 71.12 180)
-		(effects
-			(font
-				(size 1.27 1.27)
-			)
-			(justify right)
-		)
-		(uuid "993aaf2e-ded4-4996-8941-058303ca9148")
-	)
 	(hierarchical_label "SD_CLK"
 		(shape output)
 		(at 189.23 149.86 0)
@@ -6692,6 +6692,17 @@
 			(justify left)
 		)
 		(uuid "a0a344a3-381b-4eb3-912b-d610505b21d3")
+	)
+	(hierarchical_label "PYRO_3"
+		(shape output)
+		(at 119.38 68.58 180)
+		(effects
+			(font
+				(size 1.27 1.27)
+			)
+			(justify right)
+		)
+		(uuid "a1d8207a-111d-4263-bdd1-6defef73d480")
 	)
 	(hierarchical_label "BUZZER"
 		(shape output)
@@ -6978,17 +6989,6 @@
 			(justify left)
 		)
 		(uuid "fdc6fd85-ac01-4588-8e71-01706351e412")
-	)
-	(hierarchical_label "SENSE_3"
-		(shape input)
-		(at 119.38 68.58 180)
-		(effects
-			(font
-				(size 1.27 1.27)
-			)
-			(justify right)
-		)
-		(uuid "fe9442ef-2bd3-4e03-8968-ba13643eca44")
 	)
 	(hierarchical_label "RF_IO2"
 		(shape bidirectional)
