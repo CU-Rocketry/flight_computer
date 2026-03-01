@@ -6220,6 +6220,17 @@
 		)
 		(uuid "09db696e-4023-4ace-a86d-f9fad9401372")
 	)
+	(hierarchical_label "PYRO_3"
+		(shape output)
+		(at 119.38 66.04 180)
+		(effects
+			(font
+				(size 1.27 1.27)
+			)
+			(justify right)
+		)
+		(uuid "0a222009-e381-4186-9936-d4649fa838df")
+	)
 	(hierarchical_label "JCLK{slash}SWCLK"
 		(shape input)
 		(at 189.23 71.12 0)
@@ -6285,17 +6296,6 @@
 			(justify right)
 		)
 		(uuid "1cc2bd67-0c38-463a-bf66-ba5cd656bda1")
-	)
-	(hierarchical_label "PYRO_1"
-		(shape output)
-		(at 119.38 63.5 180)
-		(effects
-			(font
-				(size 1.27 1.27)
-			)
-			(justify right)
-		)
-		(uuid "2136c6a2-4cea-4e68-b904-3214c8d1bfc6")
 	)
 	(hierarchical_label "SD_DAT3"
 		(shape bidirectional)
@@ -6396,17 +6396,6 @@
 		)
 		(uuid "42a53e36-6e7a-48ea-a006-de94b1de26d4")
 	)
-	(hierarchical_label "SENSE_2"
-		(shape input)
-		(at 119.38 71.12 180)
-		(effects
-			(font
-				(size 1.27 1.27)
-			)
-			(justify right)
-		)
-		(uuid "4567c1d6-dec3-40a1-8395-3c4363860cba")
-	)
 	(hierarchical_label "SD_DAT0"
 		(shape bidirectional)
 		(at 189.23 139.7 0)
@@ -6417,6 +6406,17 @@
 			(justify left)
 		)
 		(uuid "470d3760-2d82-4745-9f88-81e8a0ba2abc")
+	)
+	(hierarchical_label "SENSE_1"
+		(shape input)
+		(at 189.23 157.48 0)
+		(effects
+			(font
+				(size 1.27 1.27)
+			)
+			(justify left)
+		)
+		(uuid "4acedbe8-86bc-4c20-8e55-4830fffa423f")
 	)
 	(hierarchical_label "RF_MISO"
 		(shape input)
@@ -6462,6 +6462,17 @@
 		)
 		(uuid "5bc8489b-c50b-446d-b7db-7d805cf491e8")
 	)
+	(hierarchical_label "PYRO_4"
+		(shape output)
+		(at 119.38 63.5 180)
+		(effects
+			(font
+				(size 1.27 1.27)
+			)
+			(justify right)
+		)
+		(uuid "64b6238f-e990-4f25-9754-68a3847b6259")
+	)
 	(hierarchical_label "MAG_CS"
 		(shape output)
 		(at 189.23 45.72 0)
@@ -6506,17 +6517,6 @@
 		)
 		(uuid "775ef995-e2f7-479a-b14f-611230891c59")
 	)
-	(hierarchical_label "PYRO_4"
-		(shape output)
-		(at 189.23 154.94 0)
-		(effects
-			(font
-				(size 1.27 1.27)
-			)
-			(justify left)
-		)
-		(uuid "79839db8-670c-4a3d-bf29-6d2fa8143ce5")
-	)
 	(hierarchical_label "LED_2_G"
 		(shape output)
 		(at 189.23 38.1 0)
@@ -6527,17 +6527,6 @@
 			(justify left)
 		)
 		(uuid "7c0fe9b1-2069-4a5b-b54f-839a0d477861")
-	)
-	(hierarchical_label "SENSE_4"
-		(shape input)
-		(at 189.23 157.48 0)
-		(effects
-			(font
-				(size 1.27 1.27)
-			)
-			(justify left)
-		)
-		(uuid "7c207c93-ac57-4e9c-8c41-808cc3118fe9")
 	)
 	(hierarchical_label "LED_1_R"
 		(shape output)
@@ -6571,28 +6560,6 @@
 			(justify right)
 		)
 		(uuid "83b77f2e-af2d-494c-99fa-2d81d6d4ca31")
-	)
-	(hierarchical_label "PYRO_3"
-		(shape output)
-		(at 119.38 73.66 180)
-		(effects
-			(font
-				(size 1.27 1.27)
-			)
-			(justify right)
-		)
-		(uuid "8542176d-8487-4297-938f-32dcd0fe50ce")
-	)
-	(hierarchical_label "SENSE_1"
-		(shape input)
-		(at 119.38 66.04 180)
-		(effects
-			(font
-				(size 1.27 1.27)
-			)
-			(justify right)
-		)
-		(uuid "86790c4f-cd1a-4eb7-9f06-6338653ee8b3")
 	)
 	(hierarchical_label "LED_2_B"
 		(shape output)
@@ -6649,6 +6616,17 @@
 		)
 		(uuid "978085f8-267c-4ea1-8fce-46204f9a0546")
 	)
+	(hierarchical_label "SENSE_4"
+		(shape input)
+		(at 119.38 71.12 180)
+		(effects
+			(font
+				(size 1.27 1.27)
+			)
+			(justify right)
+		)
+		(uuid "993aaf2e-ded4-4996-8941-058303ca9148")
+	)
 	(hierarchical_label "SD_CLK"
 		(shape output)
 		(at 189.23 149.86 0)
@@ -6693,6 +6671,17 @@
 		)
 		(uuid "9fb5fac5-a6a4-42e6-b925-7fd8467631d5")
 	)
+	(hierarchical_label "SENSE_2"
+		(shape input)
+		(at 119.38 73.66 180)
+		(effects
+			(font
+				(size 1.27 1.27)
+			)
+			(justify right)
+		)
+		(uuid "a00b3416-4453-4c54-97f9-9c1df50b2c6e")
+	)
 	(hierarchical_label "JTDO{slash}SWO"
 		(shape output)
 		(at 189.23 86.36 0)
@@ -6714,17 +6703,6 @@
 			(justify left)
 		)
 		(uuid "a4d58e6c-41ac-4209-8e03-c0c54fa83204")
-	)
-	(hierarchical_label "PYRO_2"
-		(shape output)
-		(at 119.38 68.58 180)
-		(effects
-			(font
-				(size 1.27 1.27)
-			)
-			(justify right)
-		)
-		(uuid "aa3d534f-3e0b-4086-ae25-ccd3cf1f0cf0")
 	)
 	(hierarchical_label "MAG_INT"
 		(shape input)
@@ -6792,17 +6770,6 @@
 		)
 		(uuid "be53c093-d792-4fc2-9f0f-199c5815913e")
 	)
-	(hierarchical_label "SENSE_3"
-		(shape input)
-		(at 189.23 152.4 0)
-		(effects
-			(font
-				(size 1.27 1.27)
-			)
-			(justify left)
-		)
-		(uuid "c1078944-ae2b-44ea-85b4-f7099fcc6555")
-	)
 	(hierarchical_label "LED_2_R"
 		(shape output)
 		(at 189.23 35.56 0)
@@ -6813,6 +6780,17 @@
 			(justify left)
 		)
 		(uuid "cb81d82d-9a33-48f2-a0b2-50895ef963e4")
+	)
+	(hierarchical_label "PYRO_2"
+		(shape output)
+		(at 189.23 152.4 0)
+		(effects
+			(font
+				(size 1.27 1.27)
+			)
+			(justify left)
+		)
+		(uuid "cd1f32a0-37ce-4fb8-bf81-f6e416c2605d")
 	)
 	(hierarchical_label "GPS_TX"
 		(shape output)
@@ -6989,6 +6967,28 @@
 			(justify right)
 		)
 		(uuid "fa82b268-dc3f-4163-b021-178a9d2009d7")
+	)
+	(hierarchical_label "PYRO_1"
+		(shape output)
+		(at 189.23 154.94 0)
+		(effects
+			(font
+				(size 1.27 1.27)
+			)
+			(justify left)
+		)
+		(uuid "fdc6fd85-ac01-4588-8e71-01706351e412")
+	)
+	(hierarchical_label "SENSE_3"
+		(shape input)
+		(at 119.38 68.58 180)
+		(effects
+			(font
+				(size 1.27 1.27)
+			)
+			(justify right)
+		)
+		(uuid "fe9442ef-2bd3-4e03-8968-ba13643eca44")
 	)
 	(hierarchical_label "RF_IO2"
 		(shape bidirectional)
