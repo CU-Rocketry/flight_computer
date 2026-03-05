@@ -2010,7 +2010,7 @@
 	)
 	(wire
 		(pts
-			(xy 261.62 63.5) (xy 261.62 67.31)
+			(xy 261.62 41.91) (xy 261.62 45.72)
 		)
 		(stroke
 			(width 0)
@@ -2030,7 +2030,7 @@
 	)
 	(wire
 		(pts
-			(xy 247.65 63.5) (xy 261.62 63.5)
+			(xy 247.65 41.91) (xy 261.62 41.91)
 		)
 		(stroke
 			(width 0)
@@ -2070,16 +2070,6 @@
 	)
 	(wire
 		(pts
-			(xy 247.65 41.91) (xy 260.35 41.91)
-		)
-		(stroke
-			(width 0)
-			(type default)
-		)
-		(uuid "3c77c043-c74f-4089-b6df-16fc28a174cf")
-	)
-	(wire
-		(pts
 			(xy 83.82 93.98) (xy 83.82 96.52)
 		)
 		(stroke
@@ -2100,7 +2090,7 @@
 	)
 	(wire
 		(pts
-			(xy 45.72 135.89) (xy 63.5 135.89)
+			(xy 45.72 133.35) (xy 63.5 133.35)
 		)
 		(stroke
 			(width 0)
@@ -2300,7 +2290,7 @@
 	)
 	(wire
 		(pts
-			(xy 45.72 133.35) (xy 63.5 133.35)
+			(xy 45.72 135.89) (xy 63.5 135.89)
 		)
 		(stroke
 			(width 0)
@@ -2330,7 +2320,7 @@
 	)
 	(wire
 		(pts
-			(xy 45.72 163.83) (xy 63.5 163.83)
+			(xy 45.72 166.37) (xy 63.5 166.37)
 		)
 		(stroke
 			(width 0)
@@ -2380,16 +2370,6 @@
 	)
 	(wire
 		(pts
-			(xy 247.65 50.8) (xy 261.62 50.8)
-		)
-		(stroke
-			(width 0)
-			(type default)
-		)
-		(uuid "a040572b-c4a1-49b2-9cf0-0f054e92b1f2")
-	)
-	(wire
-		(pts
 			(xy 260.35 30.48) (xy 260.35 33.02)
 		)
 		(stroke
@@ -2420,7 +2400,7 @@
 	)
 	(wire
 		(pts
-			(xy 45.72 166.37) (xy 63.5 166.37)
+			(xy 45.72 163.83) (xy 63.5 163.83)
 		)
 		(stroke
 			(width 0)
@@ -2718,16 +2698,6 @@
 		)
 		(uuid "fc01c1d4-2153-4a4a-abd0-ccc3eead1500")
 	)
-	(wire
-		(pts
-			(xy 261.62 50.8) (xy 261.62 54.61)
-		)
-		(stroke
-			(width 0)
-			(type default)
-		)
-		(uuid "fc0cac6b-acb1-4179-a80e-92a6a3b1a17e")
-	)
 	(label "BATT_MEAS"
 		(at 104.14 33.02 90)
 		(effects
@@ -2739,7 +2709,7 @@
 		(uuid "035cffda-cf3b-4d5d-b456-297aff97c983")
 	)
 	(label "PYRO_BATT_MEAS"
-		(at 63.5 166.37 180)
+		(at 63.5 163.83 180)
 		(effects
 			(font
 				(size 1.27 1.27)
@@ -2759,7 +2729,7 @@
 		(uuid "22038778-aabd-480f-8c67-7566b325f470")
 	)
 	(label "PYRO_BATT_SWITCH"
-		(at 63.5 163.83 180)
+		(at 63.5 166.37 180)
 		(effects
 			(font
 				(size 1.27 1.27)
@@ -2779,7 +2749,7 @@
 		(uuid "36c8804d-a2b6-4032-9ec5-8228b89a93ce")
 	)
 	(label "BATT_MEAS"
-		(at 63.5 133.35 180)
+		(at 63.5 135.89 180)
 		(effects
 			(font
 				(size 1.27 1.27)
@@ -2839,7 +2809,7 @@
 		(uuid "eea50af6-04d3-445c-b6d3-2065735c1215")
 	)
 	(label "BATT_SWITCH"
-		(at 63.5 135.89 180)
+		(at 63.5 133.35 180)
 		(effects
 			(font
 				(size 1.27 1.27)
@@ -2866,28 +2836,6 @@
 					(size 1.27 1.27)
 				)
 				(justify right)
-				(hide yes)
-			)
-		)
-	)
-	(global_label "BATT_PYRO"
-		(shape input)
-		(at 260.35 41.91 0)
-		(fields_autoplaced yes)
-		(effects
-			(font
-				(size 1.27 1.27)
-			)
-			(justify left)
-		)
-		(uuid "ecaa36f1-dc9d-487c-947e-ab4ba4c19ed4")
-		(property "Intersheetrefs" "${INTERSHEET_REFS}"
-			(at 273.5557 41.91 0)
-			(effects
-				(font
-					(size 1.27 1.27)
-				)
-				(justify left)
 				(hide yes)
 			)
 		)
@@ -2946,71 +2894,6 @@
 			(justify left)
 		)
 		(uuid "e69dbeaa-cb97-46c1-a960-eb59b9ea8e63")
-	)
-	(symbol
-		(lib_id "Connector:TestPoint")
-		(at 247.65 41.91 90)
-		(unit 1)
-		(exclude_from_sim no)
-		(in_bom yes)
-		(on_board yes)
-		(dnp no)
-		(fields_autoplaced yes)
-		(uuid "0ad945b7-4fef-485d-9d3b-320ba46dfd1f")
-		(property "Reference" "TP38"
-			(at 244.348 36.83 90)
-			(effects
-				(font
-					(size 1.27 1.27)
-				)
-			)
-		)
-		(property "Value" "TestPoint"
-			(at 244.348 39.37 90)
-			(effects
-				(font
-					(size 1.27 1.27)
-				)
-			)
-		)
-		(property "Footprint" "TestPoint_KOASpeer:TestPoint_Chip_RCUCTE_0603"
-			(at 247.65 36.83 0)
-			(effects
-				(font
-					(size 1.27 1.27)
-				)
-				(hide yes)
-			)
-		)
-		(property "Datasheet" "~"
-			(at 247.65 36.83 0)
-			(effects
-				(font
-					(size 1.27 1.27)
-				)
-				(hide yes)
-			)
-		)
-		(property "Description" "test point"
-			(at 247.65 41.91 0)
-			(effects
-				(font
-					(size 1.27 1.27)
-				)
-				(hide yes)
-			)
-		)
-		(pin "1"
-			(uuid "f9bc8760-6e90-45c2-b2db-3e349991f953")
-		)
-		(instances
-			(project "CUR_flight_computer_25-26"
-				(path "/bf7761cc-1b32-4d86-809c-5f027005229b/1df302fb-2dab-4194-ae63-c7585125533e"
-					(reference "TP38")
-					(unit 1)
-				)
-			)
-		)
 	)
 	(symbol
 		(lib_id "power:GND")
@@ -3483,7 +3366,7 @@
 	)
 	(symbol
 		(lib_id "Connector:TestPoint")
-		(at 247.65 63.5 90)
+		(at 247.65 41.91 90)
 		(unit 1)
 		(exclude_from_sim no)
 		(in_bom yes)
@@ -3492,15 +3375,16 @@
 		(fields_autoplaced yes)
 		(uuid "367910df-a8a4-488a-b487-7c8fd6676d14")
 		(property "Reference" "TP40"
-			(at 244.348 58.42 90)
+			(at 244.348 36.83 90)
 			(effects
 				(font
 					(size 1.27 1.27)
 				)
+				(hide yes)
 			)
 		)
 		(property "Value" "TestPoint"
-			(at 244.348 60.96 90)
+			(at 244.348 39.37 90)
 			(effects
 				(font
 					(size 1.27 1.27)
@@ -3508,7 +3392,7 @@
 			)
 		)
 		(property "Footprint" "TestPoint_KOASpeer:TestPoint_Chip_RCUCTE_0603"
-			(at 247.65 58.42 0)
+			(at 247.65 36.83 0)
 			(effects
 				(font
 					(size 1.27 1.27)
@@ -3517,7 +3401,7 @@
 			)
 		)
 		(property "Datasheet" "~"
-			(at 247.65 58.42 0)
+			(at 247.65 36.83 0)
 			(effects
 				(font
 					(size 1.27 1.27)
@@ -3526,7 +3410,7 @@
 			)
 		)
 		(property "Description" "test point"
-			(at 247.65 63.5 0)
+			(at 247.65 41.91 0)
 			(effects
 				(font
 					(size 1.27 1.27)
@@ -4143,71 +4027,6 @@
 			(project "CUR_flight_computer_25-26"
 				(path "/bf7761cc-1b32-4d86-809c-5f027005229b/1df302fb-2dab-4194-ae63-c7585125533e"
 					(reference "#PWR074")
-					(unit 1)
-				)
-			)
-		)
-	)
-	(symbol
-		(lib_id "Connector:TestPoint")
-		(at 247.65 50.8 90)
-		(unit 1)
-		(exclude_from_sim no)
-		(in_bom yes)
-		(on_board yes)
-		(dnp no)
-		(fields_autoplaced yes)
-		(uuid "693eaeb3-6667-4e21-adba-a608f805c724")
-		(property "Reference" "TP39"
-			(at 244.348 45.72 90)
-			(effects
-				(font
-					(size 1.27 1.27)
-				)
-			)
-		)
-		(property "Value" "TestPoint"
-			(at 244.348 48.26 90)
-			(effects
-				(font
-					(size 1.27 1.27)
-				)
-			)
-		)
-		(property "Footprint" "TestPoint_KOASpeer:TestPoint_Chip_RCUCTE_0603"
-			(at 247.65 45.72 0)
-			(effects
-				(font
-					(size 1.27 1.27)
-				)
-				(hide yes)
-			)
-		)
-		(property "Datasheet" "~"
-			(at 247.65 45.72 0)
-			(effects
-				(font
-					(size 1.27 1.27)
-				)
-				(hide yes)
-			)
-		)
-		(property "Description" "test point"
-			(at 247.65 50.8 0)
-			(effects
-				(font
-					(size 1.27 1.27)
-				)
-				(hide yes)
-			)
-		)
-		(pin "1"
-			(uuid "20ed84f7-005f-4c94-9dfb-a202321d854d")
-		)
-		(instances
-			(project "CUR_flight_computer_25-26"
-				(path "/bf7761cc-1b32-4d86-809c-5f027005229b/1df302fb-2dab-4194-ae63-c7585125533e"
-					(reference "TP39")
 					(unit 1)
 				)
 			)
@@ -5355,72 +5174,6 @@
 	)
 	(symbol
 		(lib_id "power:GND")
-		(at 261.62 54.61 0)
-		(mirror y)
-		(unit 1)
-		(exclude_from_sim no)
-		(in_bom yes)
-		(on_board yes)
-		(dnp no)
-		(uuid "d2d46203-1c8b-409d-8199-06ead370e57d")
-		(property "Reference" "#PWR0123"
-			(at 261.62 60.96 0)
-			(effects
-				(font
-					(size 1.27 1.27)
-				)
-				(hide yes)
-			)
-		)
-		(property "Value" "GND"
-			(at 261.62 59.69 0)
-			(effects
-				(font
-					(size 1.27 1.27)
-				)
-			)
-		)
-		(property "Footprint" ""
-			(at 261.62 54.61 0)
-			(effects
-				(font
-					(size 1.27 1.27)
-				)
-				(hide yes)
-			)
-		)
-		(property "Datasheet" ""
-			(at 261.62 54.61 0)
-			(effects
-				(font
-					(size 1.27 1.27)
-				)
-				(hide yes)
-			)
-		)
-		(property "Description" "Power symbol creates a global label with name \"GND\" , ground"
-			(at 261.62 54.61 0)
-			(effects
-				(font
-					(size 1.27 1.27)
-				)
-				(hide yes)
-			)
-		)
-		(pin "1"
-			(uuid "83d72c72-b300-4fc0-a610-436ec37988a9")
-		)
-		(instances
-			(project "CUR_flight_computer_25-26"
-				(path "/bf7761cc-1b32-4d86-809c-5f027005229b/1df302fb-2dab-4194-ae63-c7585125533e"
-					(reference "#PWR0123")
-					(unit 1)
-				)
-			)
-		)
-	)
-	(symbol
-		(lib_id "power:GND")
 		(at 72.39 69.85 0)
 		(unit 1)
 		(exclude_from_sim no)
@@ -5824,7 +5577,7 @@
 	)
 	(symbol
 		(lib_id "power:GND")
-		(at 261.62 67.31 0)
+		(at 261.62 45.72 0)
 		(mirror y)
 		(unit 1)
 		(exclude_from_sim no)
@@ -5833,7 +5586,7 @@
 		(dnp no)
 		(uuid "fe4df6e7-e7b4-4fca-88f2-4b7b9bebfa53")
 		(property "Reference" "#PWR0124"
-			(at 261.62 73.66 0)
+			(at 261.62 52.07 0)
 			(effects
 				(font
 					(size 1.27 1.27)
@@ -5842,7 +5595,7 @@
 			)
 		)
 		(property "Value" "GND"
-			(at 261.62 72.39 0)
+			(at 261.62 50.8 0)
 			(effects
 				(font
 					(size 1.27 1.27)
@@ -5850,7 +5603,7 @@
 			)
 		)
 		(property "Footprint" ""
-			(at 261.62 67.31 0)
+			(at 261.62 45.72 0)
 			(effects
 				(font
 					(size 1.27 1.27)
@@ -5859,7 +5612,7 @@
 			)
 		)
 		(property "Datasheet" ""
-			(at 261.62 67.31 0)
+			(at 261.62 45.72 0)
 			(effects
 				(font
 					(size 1.27 1.27)
@@ -5868,7 +5621,7 @@
 			)
 		)
 		(property "Description" "Power symbol creates a global label with name \"GND\" , ground"
-			(at 261.62 67.31 0)
+			(at 261.62 45.72 0)
 			(effects
 				(font
 					(size 1.27 1.27)
