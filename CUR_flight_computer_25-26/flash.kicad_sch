@@ -1703,8 +1703,8 @@
 		(uuid "fe5f76bb-b4e5-44cb-bf0b-4b29476f486e")
 	)
 	(no_connect
-		(at 110.49 147.32)
-		(uuid "d9b692b1-1ec4-4321-84ad-37a38f2cb179")
+		(at 81.28 147.32)
+		(uuid "9c2570d7-e4b3-4f4e-8d39-7014e927177b")
 	)
 	(wire
 		(pts
@@ -1998,7 +1998,7 @@
 	)
 	(wire
 		(pts
-			(xy 81.28 147.32) (xy 81.28 144.78)
+			(xy 110.49 147.32) (xy 110.49 144.78)
 		)
 		(stroke
 			(width 0)
@@ -2419,7 +2419,7 @@
 	)
 	(hierarchical_label "SD_DAT3"
 		(shape bidirectional)
-		(at 78.74 144.78 90)
+		(at 76.2 144.78 90)
 		(effects
 			(font
 				(size 1.27 1.27)
@@ -2507,7 +2507,7 @@
 	)
 	(hierarchical_label "SD_CLK"
 		(shape input)
-		(at 81.28 144.78 90)
+		(at 110.49 144.78 90)
 		(effects
 			(font
 				(size 1.27 1.27)
@@ -2573,7 +2573,7 @@
 	)
 	(hierarchical_label "SD_DAT2"
 		(shape bidirectional)
-		(at 76.2 144.78 90)
+		(at 78.74 144.78 90)
 		(effects
 			(font
 				(size 1.27 1.27)
