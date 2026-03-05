@@ -631,7 +631,7 @@
 			)
 			(embedded_fonts no)
 		)
-		(symbol "DI_ZXCT180:ZXCT180A4"
+		(symbol "DI_ZXCT180:ZXCT180B4"
 			(exclude_from_sim no)
 			(in_bom yes)
 			(on_board yes)
@@ -643,7 +643,7 @@
 					)
 				)
 			)
-			(property "Value" "ZXCT180A4W5"
+			(property "Value" "ZXCT180B4W5"
 				(at -12.954 -13.716 0)
 				(effects
 					(font
@@ -669,7 +669,7 @@
 					(hide yes)
 				)
 			)
-			(property "Description" "Current Shunt Monitor 200V/V Out 1"
+			(property "Description" "Current Shunt Monitor 200V/V Out 4"
 				(at 0 0 0)
 				(effects
 					(font
@@ -678,7 +678,7 @@
 					(hide yes)
 				)
 			)
-			(property "ki_keywords" "Diodes Incorporated Current Shunt Monitor 200V/V Out 1 26V 2.7V-5.5V"
+			(property "ki_keywords" "Diodes Incorporated Current Shunt Monitor 200V/V Out 4 26V 2.7V-5.5V"
 				(at 0 0 0)
 				(effects
 					(font
@@ -687,7 +687,7 @@
 					(hide yes)
 				)
 			)
-			(symbol "ZXCT180A4_0_0"
+			(symbol "ZXCT180B4_0_0"
 				(pin input line
 					(at -8.89 -2.54 0)
 					(length 2.54)
@@ -698,7 +698,7 @@
 							)
 						)
 					)
-					(number "3"
+					(number "1"
 						(effects
 							(font
 								(size 1.27 1.27)
@@ -716,7 +716,7 @@
 							)
 						)
 					)
-					(number "4"
+					(number "3"
 						(effects
 							(font
 								(size 1.27 1.27)
@@ -770,7 +770,7 @@
 							)
 						)
 					)
-					(number "1"
+					(number "4"
 						(effects
 							(font
 								(size 1.27 1.27)
@@ -779,7 +779,7 @@
 					)
 				)
 			)
-			(symbol "ZXCT180A4_1_1"
+			(symbol "ZXCT180B4_1_1"
 				(rectangle
 					(start -6.35 0)
 					(end 6.35 -10.16)
@@ -917,189 +917,6 @@
 					(at 0 -2.54 90)
 					(length 2.032)
 					(name "~"
-						(effects
-							(font
-								(size 1.27 1.27)
-							)
-						)
-					)
-					(number "2"
-						(effects
-							(font
-								(size 1.27 1.27)
-							)
-						)
-					)
-				)
-			)
-			(embedded_fonts no)
-		)
-		(symbol "Device:LED"
-			(pin_numbers
-				(hide yes)
-			)
-			(pin_names
-				(offset 1.016)
-				(hide yes)
-			)
-			(exclude_from_sim no)
-			(in_bom yes)
-			(on_board yes)
-			(property "Reference" "D"
-				(at 0 2.54 0)
-				(effects
-					(font
-						(size 1.27 1.27)
-					)
-				)
-			)
-			(property "Value" "LED"
-				(at 0 -2.54 0)
-				(effects
-					(font
-						(size 1.27 1.27)
-					)
-				)
-			)
-			(property "Footprint" ""
-				(at 0 0 0)
-				(effects
-					(font
-						(size 1.27 1.27)
-					)
-					(hide yes)
-				)
-			)
-			(property "Datasheet" "~"
-				(at 0 0 0)
-				(effects
-					(font
-						(size 1.27 1.27)
-					)
-					(hide yes)
-				)
-			)
-			(property "Description" "Light emitting diode"
-				(at 0 0 0)
-				(effects
-					(font
-						(size 1.27 1.27)
-					)
-					(hide yes)
-				)
-			)
-			(property "Sim.Pins" "1=K 2=A"
-				(at 0 0 0)
-				(effects
-					(font
-						(size 1.27 1.27)
-					)
-					(hide yes)
-				)
-			)
-			(property "ki_keywords" "LED diode"
-				(at 0 0 0)
-				(effects
-					(font
-						(size 1.27 1.27)
-					)
-					(hide yes)
-				)
-			)
-			(property "ki_fp_filters" "LED* LED_SMD:* LED_THT:*"
-				(at 0 0 0)
-				(effects
-					(font
-						(size 1.27 1.27)
-					)
-					(hide yes)
-				)
-			)
-			(symbol "LED_0_1"
-				(polyline
-					(pts
-						(xy -3.048 -0.762) (xy -4.572 -2.286) (xy -3.81 -2.286) (xy -4.572 -2.286) (xy -4.572 -1.524)
-					)
-					(stroke
-						(width 0)
-						(type default)
-					)
-					(fill
-						(type none)
-					)
-				)
-				(polyline
-					(pts
-						(xy -1.778 -0.762) (xy -3.302 -2.286) (xy -2.54 -2.286) (xy -3.302 -2.286) (xy -3.302 -1.524)
-					)
-					(stroke
-						(width 0)
-						(type default)
-					)
-					(fill
-						(type none)
-					)
-				)
-				(polyline
-					(pts
-						(xy -1.27 0) (xy 1.27 0)
-					)
-					(stroke
-						(width 0)
-						(type default)
-					)
-					(fill
-						(type none)
-					)
-				)
-				(polyline
-					(pts
-						(xy -1.27 -1.27) (xy -1.27 1.27)
-					)
-					(stroke
-						(width 0.254)
-						(type default)
-					)
-					(fill
-						(type none)
-					)
-				)
-				(polyline
-					(pts
-						(xy 1.27 -1.27) (xy 1.27 1.27) (xy -1.27 0) (xy 1.27 -1.27)
-					)
-					(stroke
-						(width 0.254)
-						(type default)
-					)
-					(fill
-						(type none)
-					)
-				)
-			)
-			(symbol "LED_1_1"
-				(pin passive line
-					(at -3.81 0 0)
-					(length 2.54)
-					(name "K"
-						(effects
-							(font
-								(size 1.27 1.27)
-							)
-						)
-					)
-					(number "1"
-						(effects
-							(font
-								(size 1.27 1.27)
-							)
-						)
-					)
-				)
-				(pin passive line
-					(at 3.81 0 180)
-					(length 2.54)
-					(name "A"
 						(effects
 							(font
 								(size 1.27 1.27)
@@ -1999,16 +1816,6 @@
 		)
 		(uuid "4b45a543-e1dc-4382-a7a8-54e945701589")
 	)
-	(text "Indicator LEDs"
-		(exclude_from_sim no)
-		(at 78.486 116.586 0)
-		(effects
-			(font
-				(size 1.27 1.27)
-			)
-		)
-		(uuid "6a184ccf-683c-43aa-af43-f99925f74204")
-	)
 	(text "VBUS - USB Voltage in\nBATT+ - main battery\nBATT_PYRO - pyro battery\n"
 		(exclude_from_sim no)
 		(at 28.702 19.304 0)
@@ -2019,7 +1826,7 @@
 		)
 		(uuid "7490d53e-fdde-49e5-8137-7b583a89826c")
 	)
-	(text "PE1206FKM470R005Z\n- expensive ass resistor"
+	(text "1mOhm 1W"
 		(exclude_from_sim no)
 		(at 171.45 49.53 0)
 		(effects
@@ -2028,16 +1835,6 @@
 			)
 		)
 		(uuid "8a642e65-e1ba-4342-a893-fa00f947352d")
-	)
-	(text "check LDO and main rail power\n\ncheck if pyro battery connected\n"
-		(exclude_from_sim no)
-		(at 125.222 131.572 0)
-		(effects
-			(font
-				(size 1.27 1.27)
-			)
-		)
-		(uuid "8d012499-ff24-44bb-abce-b5a7b91d19fc")
 	)
 	(text "Switching IC \n\nwill switch to usb power if plugged in"
 		(exclude_from_sim no)
@@ -2253,16 +2050,6 @@
 	)
 	(wire
 		(pts
-			(xy 90.17 128.27) (xy 90.17 124.46)
-		)
-		(stroke
-			(width 0)
-			(type default)
-		)
-		(uuid "26dcccda-30a7-4fae-9d18-a8c1f97933bd")
-	)
-	(wire
-		(pts
 			(xy 212.09 40.64) (xy 220.98 40.64)
 		)
 		(stroke
@@ -2313,7 +2100,7 @@
 	)
 	(wire
 		(pts
-			(xy 45.72 133.35) (xy 63.5 133.35)
+			(xy 45.72 135.89) (xy 63.5 135.89)
 		)
 		(stroke
 			(width 0)
@@ -2330,26 +2117,6 @@
 			(type default)
 		)
 		(uuid "4eb38211-a101-4946-96b2-d4983cbb69a0")
-	)
-	(wire
-		(pts
-			(xy 90.17 135.89) (xy 90.17 133.35)
-		)
-		(stroke
-			(width 0)
-			(type default)
-		)
-		(uuid "50b512f1-4d9c-48f5-bea6-93de85dc8fab")
-	)
-	(wire
-		(pts
-			(xy 102.87 128.27) (xy 102.87 123.19)
-		)
-		(stroke
-			(width 0)
-			(type default)
-		)
-		(uuid "51728f61-3492-439a-a259-f1f01dd6cc9c")
 	)
 	(wire
 		(pts
@@ -2483,16 +2250,6 @@
 	)
 	(wire
 		(pts
-			(xy 90.17 143.51) (xy 90.17 148.59)
-		)
-		(stroke
-			(width 0)
-			(type default)
-		)
-		(uuid "78786259-24ed-4a1e-8e69-94c69f00ab37")
-	)
-	(wire
-		(pts
 			(xy 203.2 80.01) (xy 203.2 83.82)
 		)
 		(stroke
@@ -2543,7 +2300,7 @@
 	)
 	(wire
 		(pts
-			(xy 45.72 135.89) (xy 63.5 135.89)
+			(xy 45.72 133.35) (xy 63.5 133.35)
 		)
 		(stroke
 			(width 0)
@@ -2833,16 +2590,6 @@
 	)
 	(wire
 		(pts
-			(xy 102.87 135.89) (xy 102.87 133.35)
-		)
-		(stroke
-			(width 0)
-			(type default)
-		)
-		(uuid "dd27f9a7-1196-4a53-aff3-565788f8fff8")
-	)
-	(wire
-		(pts
 			(xy 203.2 99.06) (xy 203.2 101.6)
 		)
 		(stroke
@@ -2870,16 +2617,6 @@
 			(type default)
 		)
 		(uuid "e191edd9-8bcc-4015-96ee-03cbc113803d")
-	)
-	(wire
-		(pts
-			(xy 102.87 143.51) (xy 102.87 148.59)
-		)
-		(stroke
-			(width 0)
-			(type default)
-		)
-		(uuid "e1def5d4-e6e2-4929-aa36-874b293057d9")
 	)
 	(wire
 		(pts
@@ -3042,7 +2779,7 @@
 		(uuid "36c8804d-a2b6-4032-9ec5-8228b89a93ce")
 	)
 	(label "BATT_MEAS"
-		(at 63.5 135.89 180)
+		(at 63.5 133.35 180)
 		(effects
 			(font
 				(size 1.27 1.27)
@@ -3102,7 +2839,7 @@
 		(uuid "eea50af6-04d3-445c-b6d3-2065735c1215")
 	)
 	(label "BATT_SWITCH"
-		(at 63.5 133.35 180)
+		(at 63.5 135.89 180)
 		(effects
 			(font
 				(size 1.27 1.27)
@@ -3129,28 +2866,6 @@
 					(size 1.27 1.27)
 				)
 				(justify right)
-				(hide yes)
-			)
-		)
-	)
-	(global_label "BATT_PYRO"
-		(shape input)
-		(at 102.87 123.19 90)
-		(fields_autoplaced yes)
-		(effects
-			(font
-				(size 1.27 1.27)
-			)
-			(justify left)
-		)
-		(uuid "c10418ad-23e1-48af-b898-6c1460aad32f")
-		(property "Intersheetrefs" "${INTERSHEET_REFS}"
-			(at 102.87 109.9843 90)
-			(effects
-				(font
-					(size 1.27 1.27)
-				)
-				(justify left)
 				(hide yes)
 			)
 		)
@@ -3633,72 +3348,6 @@
 		)
 	)
 	(symbol
-		(lib_id "power:GND")
-		(at 102.87 148.59 0)
-		(unit 1)
-		(exclude_from_sim no)
-		(in_bom yes)
-		(on_board yes)
-		(dnp no)
-		(fields_autoplaced yes)
-		(uuid "26cb0f8b-70c8-481b-b8d7-6f546078abe0")
-		(property "Reference" "#PWR069"
-			(at 102.87 154.94 0)
-			(effects
-				(font
-					(size 1.27 1.27)
-				)
-				(hide yes)
-			)
-		)
-		(property "Value" "GND"
-			(at 102.87 153.67 0)
-			(effects
-				(font
-					(size 1.27 1.27)
-				)
-			)
-		)
-		(property "Footprint" ""
-			(at 102.87 148.59 0)
-			(effects
-				(font
-					(size 1.27 1.27)
-				)
-				(hide yes)
-			)
-		)
-		(property "Datasheet" ""
-			(at 102.87 148.59 0)
-			(effects
-				(font
-					(size 1.27 1.27)
-				)
-				(hide yes)
-			)
-		)
-		(property "Description" "Power symbol creates a global label with name \"GND\" , ground"
-			(at 102.87 148.59 0)
-			(effects
-				(font
-					(size 1.27 1.27)
-				)
-				(hide yes)
-			)
-		)
-		(pin "1"
-			(uuid "83161a43-fbd0-4677-a758-f9ca63d40e2b")
-		)
-		(instances
-			(project "CUR_flight_computer_25-26"
-				(path "/bf7761cc-1b32-4d86-809c-5f027005229b/1df302fb-2dab-4194-ae63-c7585125533e"
-					(reference "#PWR069")
-					(unit 1)
-				)
-			)
-		)
-	)
-	(symbol
 		(lib_id "Connector:Screw_Terminal_01x02")
 		(at 40.64 135.89 180)
 		(unit 1)
@@ -3971,7 +3620,7 @@
 		(in_bom yes)
 		(on_board yes)
 		(dnp no)
-		(uuid "3db300dd-d2cc-4b47-8d14-b02222226d18")
+		(uuid "38a323a7-f9a6-4f84-ad02-74b2439ef2a0")
 		(property "Reference" "R19"
 			(at 182.88 88.8999 0)
 			(effects
@@ -3981,7 +3630,7 @@
 				(justify right)
 			)
 		)
-		(property "Value" "1mOhm 1W"
+		(property "Value" "CSSH0805FT1L00"
 			(at 182.88 91.4399 0)
 			(effects
 				(font
@@ -3990,7 +3639,7 @@
 				(justify right)
 			)
 		)
-		(property "Footprint" "Resistor_SMD:R_2010_5025Metric"
+		(property "Footprint" "Resistor_SMD:R_0805_2012Metric"
 			(at 185.42 90.17 0)
 			(effects
 				(font
@@ -4018,10 +3667,10 @@
 			)
 		)
 		(pin "2"
-			(uuid "f5dd2b16-ac7f-4751-8424-916835069a93")
+			(uuid "74410af8-335d-49a3-8467-677c217daf21")
 		)
 		(pin "1"
-			(uuid "e7e7100f-a0b3-41dd-8b27-514cc5079ed8")
+			(uuid "adbc9fad-7b56-48f5-bf66-90f8ff5db793")
 		)
 		(instances
 			(project "CUR_flight_computer_25-26"
@@ -4093,85 +3742,6 @@
 			(project "CUR_flight_computer_25-26"
 				(path "/bf7761cc-1b32-4d86-809c-5f027005229b/1df302fb-2dab-4194-ae63-c7585125533e"
 					(reference "#PWR066")
-					(unit 1)
-				)
-			)
-		)
-	)
-	(symbol
-		(lib_id "Device:LED")
-		(at 90.17 139.7 90)
-		(unit 1)
-		(exclude_from_sim no)
-		(in_bom yes)
-		(on_board yes)
-		(dnp no)
-		(fields_autoplaced yes)
-		(uuid "40c23c13-5e4b-4feb-a31b-e837d65fc753")
-		(property "Reference" "D9"
-			(at 93.98 140.0174 90)
-			(effects
-				(font
-					(size 1.27 1.27)
-				)
-				(justify right)
-			)
-		)
-		(property "Value" "LED"
-			(at 93.98 142.5574 90)
-			(effects
-				(font
-					(size 1.27 1.27)
-				)
-				(justify right)
-			)
-		)
-		(property "Footprint" "LED_SMD:LED_0603_1608Metric"
-			(at 90.17 139.7 0)
-			(effects
-				(font
-					(size 1.27 1.27)
-				)
-				(hide yes)
-			)
-		)
-		(property "Datasheet" "~"
-			(at 90.17 139.7 0)
-			(effects
-				(font
-					(size 1.27 1.27)
-				)
-				(hide yes)
-			)
-		)
-		(property "Description" "Light emitting diode"
-			(at 90.17 139.7 0)
-			(effects
-				(font
-					(size 1.27 1.27)
-				)
-				(hide yes)
-			)
-		)
-		(property "Sim.Pins" "1=K 2=A"
-			(at 90.17 139.7 0)
-			(effects
-				(font
-					(size 1.27 1.27)
-				)
-				(hide yes)
-			)
-		)
-		(pin "1"
-			(uuid "dc6fcc97-4a78-485f-b483-a05025acd406")
-		)
-		(pin "2"
-			(uuid "1b70ea26-fcf2-4b10-984e-b88bed56b2b8")
-		)
-		(instances
-			(project ""
-				(path "/bf7761cc-1b32-4d86-809c-5f027005229b/1df302fb-2dab-4194-ae63-c7585125533e"
-					(reference "D9")
 					(unit 1)
 				)
 			)
@@ -4513,83 +4083,6 @@
 		)
 	)
 	(symbol
-		(lib_id "DI_ZXCT180:ZXCT180A4")
-		(at 203.2 86.36 0)
-		(unit 1)
-		(exclude_from_sim no)
-		(in_bom yes)
-		(on_board yes)
-		(dnp no)
-		(fields_autoplaced yes)
-		(uuid "5b45af60-86e4-48ad-a0b0-63d49a8a28d3")
-		(property "Reference" "U9"
-			(at 217.17 82.4798 0)
-			(effects
-				(font
-					(size 1.27 1.27)
-				)
-			)
-		)
-		(property "Value" "ZXCT180A4W5"
-			(at 217.17 85.0198 0)
-			(effects
-				(font
-					(size 1.27 1.27)
-				)
-			)
-		)
-		(property "Footprint" "Package_TO_SOT_SMD:SOT-23-5"
-			(at 203.2 86.36 0)
-			(effects
-				(font
-					(size 1.27 1.27)
-				)
-				(hide yes)
-			)
-		)
-		(property "Datasheet" "https://www.diodes.com/datasheet/download/ZXCT180.pdf"
-			(at 203.2 86.36 0)
-			(effects
-				(font
-					(size 1.27 1.27)
-				)
-				(hide yes)
-			)
-		)
-		(property "Description" "Current Shunt Monitor 200V/V Out 1"
-			(at 203.2 86.36 0)
-			(effects
-				(font
-					(size 1.27 1.27)
-				)
-				(hide yes)
-			)
-		)
-		(pin "5"
-			(uuid "6ddad251-4e5b-4251-acf0-64c56d8b0012")
-		)
-		(pin "3"
-			(uuid "226361a3-cf6e-4464-be0e-2bd39f8ff02f")
-		)
-		(pin "4"
-			(uuid "1a4fe49d-498d-4f2b-9d6c-816856a74336")
-		)
-		(pin "2"
-			(uuid "bff8a5de-6cf3-4e74-aa8c-57e1aab405f2")
-		)
-		(pin "1"
-			(uuid "4397d3c0-c992-4e92-b1eb-7baeee33f764")
-		)
-		(instances
-			(project "CUR_flight_computer_25-26"
-				(path "/bf7761cc-1b32-4d86-809c-5f027005229b/1df302fb-2dab-4194-ae63-c7585125533e"
-					(reference "U9")
-					(unit 1)
-				)
-			)
-		)
-	)
-	(symbol
 		(lib_id "power:GND")
 		(at 203.2 53.34 0)
 		(mirror y)
@@ -4781,85 +4274,6 @@
 			(project ""
 				(path "/bf7761cc-1b32-4d86-809c-5f027005229b/1df302fb-2dab-4194-ae63-c7585125533e"
 					(reference "#PWR050")
-					(unit 1)
-				)
-			)
-		)
-	)
-	(symbol
-		(lib_id "Device:LED")
-		(at 102.87 139.7 90)
-		(unit 1)
-		(exclude_from_sim no)
-		(in_bom yes)
-		(on_board yes)
-		(dnp no)
-		(fields_autoplaced yes)
-		(uuid "7d634a66-1c9a-410d-944a-753ac0b65259")
-		(property "Reference" "D10"
-			(at 106.68 140.0174 90)
-			(effects
-				(font
-					(size 1.27 1.27)
-				)
-				(justify right)
-			)
-		)
-		(property "Value" "LED"
-			(at 106.68 142.5574 90)
-			(effects
-				(font
-					(size 1.27 1.27)
-				)
-				(justify right)
-			)
-		)
-		(property "Footprint" "LED_SMD:LED_0603_1608Metric"
-			(at 102.87 139.7 0)
-			(effects
-				(font
-					(size 1.27 1.27)
-				)
-				(hide yes)
-			)
-		)
-		(property "Datasheet" "~"
-			(at 102.87 139.7 0)
-			(effects
-				(font
-					(size 1.27 1.27)
-				)
-				(hide yes)
-			)
-		)
-		(property "Description" "Light emitting diode"
-			(at 102.87 139.7 0)
-			(effects
-				(font
-					(size 1.27 1.27)
-				)
-				(hide yes)
-			)
-		)
-		(property "Sim.Pins" "1=K 2=A"
-			(at 102.87 139.7 0)
-			(effects
-				(font
-					(size 1.27 1.27)
-				)
-				(hide yes)
-			)
-		)
-		(pin "1"
-			(uuid "4ad1f3f4-c4a0-42a1-b9fc-d9107b598620")
-		)
-		(pin "2"
-			(uuid "d7eea6b5-8778-428d-9c30-4d3198adf3b2")
-		)
-		(instances
-			(project "CUR_flight_computer_25-26"
-				(path "/bf7761cc-1b32-4d86-809c-5f027005229b/1df302fb-2dab-4194-ae63-c7585125533e"
-					(reference "D10")
 					(unit 1)
 				)
 			)
@@ -5204,6 +4618,83 @@
 			(project "CUR_flight_computer_25-26"
 				(path "/bf7761cc-1b32-4d86-809c-5f027005229b/1df302fb-2dab-4194-ae63-c7585125533e"
 					(reference "#PWR060")
+					(unit 1)
+				)
+			)
+		)
+	)
+	(symbol
+		(lib_id "DI_ZXCT180:ZXCT180B4")
+		(at 203.2 86.36 0)
+		(unit 1)
+		(exclude_from_sim no)
+		(in_bom yes)
+		(on_board yes)
+		(dnp no)
+		(fields_autoplaced yes)
+		(uuid "8d12b939-d25e-4745-a777-20f3b998af5f")
+		(property "Reference" "U16"
+			(at 217.17 82.4798 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+			)
+		)
+		(property "Value" "ZXCT180B4W5"
+			(at 217.17 85.0198 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+			)
+		)
+		(property "Footprint" "Package_TO_SOT_SMD:SOT-23-5"
+			(at 203.2 86.36 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
+			)
+		)
+		(property "Datasheet" "https://www.diodes.com/datasheet/download/ZXCT180.pdf"
+			(at 203.2 86.36 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
+			)
+		)
+		(property "Description" "Current Shunt Monitor 200V/V Out 4"
+			(at 203.2 86.36 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
+			)
+		)
+		(pin "4"
+			(uuid "308c10ca-2c54-40f4-81f8-1f138fabdc3a")
+		)
+		(pin "3"
+			(uuid "a52c78f0-7535-4dff-9be0-1c64cc49d734")
+		)
+		(pin "1"
+			(uuid "77827193-cbd7-4a69-9bb4-c158ea6cfa49")
+		)
+		(pin "5"
+			(uuid "2c0495b6-8935-439f-ae24-2d1709727f1c")
+		)
+		(pin "2"
+			(uuid "9b599868-c867-4b28-b1a2-38d4cda83bd9")
+		)
+		(instances
+			(project "CUR_flight_computer_25-26"
+				(path "/bf7761cc-1b32-4d86-809c-5f027005229b/1df302fb-2dab-4194-ae63-c7585125533e"
+					(reference "U16")
 					(unit 1)
 				)
 			)
@@ -5663,7 +5154,7 @@
 				(justify right)
 			)
 		)
-		(property "Value" "5mOhm 1W"
+		(property "Value" "CSSH0805FT1L00"
 			(at 182.88 43.1799 0)
 			(effects
 				(font
@@ -5672,7 +5163,7 @@
 				(justify right)
 			)
 		)
-		(property "Footprint" "Resistor_SMD:R_1206_3216Metric"
+		(property "Footprint" "Resistor_SMD:R_0805_2012Metric"
 			(at 185.42 41.91 0)
 			(effects
 				(font
@@ -5786,17 +5277,33 @@
 		)
 	)
 	(symbol
-		(lib_id "power:GND")
-		(at 90.17 148.59 0)
+		(lib_id "DI_ZXCT180:ZXCT180B4")
+		(at 203.2 38.1 0)
 		(unit 1)
 		(exclude_from_sim no)
 		(in_bom yes)
 		(on_board yes)
 		(dnp no)
 		(fields_autoplaced yes)
-		(uuid "b8dbe3cc-1d29-47fd-980d-9ebae83e0288")
-		(property "Reference" "#PWR068"
-			(at 90.17 154.94 0)
+		(uuid "aebd2004-33ed-44d1-8688-b9f31542bd00")
+		(property "Reference" "U15"
+			(at 217.17 34.2198 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+			)
+		)
+		(property "Value" "ZXCT180B4W5"
+			(at 217.17 36.7598 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+			)
+		)
+		(property "Footprint" "Package_TO_SOT_SMD:SOT-23-5"
+			(at 203.2 38.1 0)
 			(effects
 				(font
 					(size 1.27 1.27)
@@ -5804,16 +5311,8 @@
 				(hide yes)
 			)
 		)
-		(property "Value" "GND"
-			(at 90.17 153.67 0)
-			(effects
-				(font
-					(size 1.27 1.27)
-				)
-			)
-		)
-		(property "Footprint" ""
-			(at 90.17 148.59 0)
+		(property "Datasheet" "https://www.diodes.com/datasheet/download/ZXCT180.pdf"
+			(at 203.2 38.1 0)
 			(effects
 				(font
 					(size 1.27 1.27)
@@ -5821,8 +5320,8 @@
 				(hide yes)
 			)
 		)
-		(property "Datasheet" ""
-			(at 90.17 148.59 0)
+		(property "Description" "Current Shunt Monitor 200V/V Out 4"
+			(at 203.2 38.1 0)
 			(effects
 				(font
 					(size 1.27 1.27)
@@ -5830,88 +5329,25 @@
 				(hide yes)
 			)
 		)
-		(property "Description" "Power symbol creates a global label with name \"GND\" , ground"
-			(at 90.17 148.59 0)
-			(effects
-				(font
-					(size 1.27 1.27)
-				)
-				(hide yes)
-			)
+		(pin "4"
+			(uuid "78101c45-c041-4e14-81f9-d3f047823493")
+		)
+		(pin "3"
+			(uuid "e2f5db89-fa0b-48a8-8cd5-d154a33e1c5f")
 		)
 		(pin "1"
-			(uuid "b891d04a-66c0-4d6d-974a-ae2e73dd68f2")
+			(uuid "bb29e67d-98dd-42cd-adf9-574311bb3931")
+		)
+		(pin "5"
+			(uuid "42588b86-17a3-4407-b479-b9a52a7794a9")
+		)
+		(pin "2"
+			(uuid "4e7426a9-4493-4f66-9b49-0979d979acbe")
 		)
 		(instances
 			(project ""
 				(path "/bf7761cc-1b32-4d86-809c-5f027005229b/1df302fb-2dab-4194-ae63-c7585125533e"
-					(reference "#PWR068")
-					(unit 1)
-				)
-			)
-		)
-	)
-	(symbol
-		(lib_id "power:+3V3")
-		(at 90.17 124.46 0)
-		(unit 1)
-		(exclude_from_sim no)
-		(in_bom yes)
-		(on_board yes)
-		(dnp no)
-		(fields_autoplaced yes)
-		(uuid "d0b7ecc8-d4f8-4581-944b-2760b1f946c0")
-		(property "Reference" "#PWR067"
-			(at 90.17 128.27 0)
-			(effects
-				(font
-					(size 1.27 1.27)
-				)
-				(hide yes)
-			)
-		)
-		(property "Value" "+3V3"
-			(at 90.17 119.38 0)
-			(effects
-				(font
-					(size 1.27 1.27)
-				)
-			)
-		)
-		(property "Footprint" ""
-			(at 90.17 124.46 0)
-			(effects
-				(font
-					(size 1.27 1.27)
-				)
-				(hide yes)
-			)
-		)
-		(property "Datasheet" ""
-			(at 90.17 124.46 0)
-			(effects
-				(font
-					(size 1.27 1.27)
-				)
-				(hide yes)
-			)
-		)
-		(property "Description" "Power symbol creates a global label with name \"+3V3\""
-			(at 90.17 124.46 0)
-			(effects
-				(font
-					(size 1.27 1.27)
-				)
-				(hide yes)
-			)
-		)
-		(pin "1"
-			(uuid "2d3b4c4c-21b9-4fa5-8ff6-63e477df9424")
-		)
-		(instances
-			(project "CUR_flight_computer_25-26"
-				(path "/bf7761cc-1b32-4d86-809c-5f027005229b/1df302fb-2dab-4194-ae63-c7585125533e"
-					(reference "#PWR067")
+					(reference "U15")
 					(unit 1)
 				)
 			)
@@ -6116,77 +5552,6 @@
 		)
 	)
 	(symbol
-		(lib_id "Device:R_Small_US")
-		(at 102.87 130.81 0)
-		(mirror x)
-		(unit 1)
-		(exclude_from_sim no)
-		(in_bom yes)
-		(on_board yes)
-		(dnp no)
-		(fields_autoplaced yes)
-		(uuid "e27c2448-dad9-4129-9404-dee413f1b910")
-		(property "Reference" "R13"
-			(at 100.33 129.5399 0)
-			(effects
-				(font
-					(size 1.27 1.27)
-				)
-				(justify right)
-			)
-		)
-		(property "Value" "150"
-			(at 100.33 132.0799 0)
-			(effects
-				(font
-					(size 1.27 1.27)
-				)
-				(justify right)
-			)
-		)
-		(property "Footprint" "Resistor_SMD:R_0603_1608Metric"
-			(at 102.87 130.81 0)
-			(effects
-				(font
-					(size 1.27 1.27)
-				)
-				(hide yes)
-			)
-		)
-		(property "Datasheet" "~"
-			(at 102.87 130.81 0)
-			(effects
-				(font
-					(size 1.27 1.27)
-				)
-				(hide yes)
-			)
-		)
-		(property "Description" "Resistor, small US symbol"
-			(at 102.87 130.81 0)
-			(effects
-				(font
-					(size 1.27 1.27)
-				)
-				(hide yes)
-			)
-		)
-		(pin "1"
-			(uuid "e4b97d27-9fd5-4683-843b-30d150b40fcd")
-		)
-		(pin "2"
-			(uuid "3cc42e60-317a-41b8-a554-c4c6336ee9d8")
-		)
-		(instances
-			(project "CUR_flight_computer_25-26"
-				(path "/bf7761cc-1b32-4d86-809c-5f027005229b/1df302fb-2dab-4194-ae63-c7585125533e"
-					(reference "R13")
-					(unit 1)
-				)
-			)
-		)
-	)
-	(symbol
 		(lib_id "power:+3V3")
 		(at 80.01 59.69 0)
 		(unit 1)
@@ -6253,77 +5618,6 @@
 		)
 	)
 	(symbol
-		(lib_id "Device:R_Small_US")
-		(at 90.17 130.81 0)
-		(mirror x)
-		(unit 1)
-		(exclude_from_sim no)
-		(in_bom yes)
-		(on_board yes)
-		(dnp no)
-		(fields_autoplaced yes)
-		(uuid "e643f982-05a1-4f8e-a97d-c23dc4884f85")
-		(property "Reference" "R12"
-			(at 87.63 129.5399 0)
-			(effects
-				(font
-					(size 1.27 1.27)
-				)
-				(justify right)
-			)
-		)
-		(property "Value" "150"
-			(at 87.63 132.0799 0)
-			(effects
-				(font
-					(size 1.27 1.27)
-				)
-				(justify right)
-			)
-		)
-		(property "Footprint" "Resistor_SMD:R_0603_1608Metric"
-			(at 90.17 130.81 0)
-			(effects
-				(font
-					(size 1.27 1.27)
-				)
-				(hide yes)
-			)
-		)
-		(property "Datasheet" "~"
-			(at 90.17 130.81 0)
-			(effects
-				(font
-					(size 1.27 1.27)
-				)
-				(hide yes)
-			)
-		)
-		(property "Description" "Resistor, small US symbol"
-			(at 90.17 130.81 0)
-			(effects
-				(font
-					(size 1.27 1.27)
-				)
-				(hide yes)
-			)
-		)
-		(pin "1"
-			(uuid "4af3a024-102a-4e23-958d-95348edd2ce4")
-		)
-		(pin "2"
-			(uuid "8b8d0caa-30a4-453d-b55c-d23cb54ca668")
-		)
-		(instances
-			(project "CUR_flight_computer_25-26"
-				(path "/bf7761cc-1b32-4d86-809c-5f027005229b/1df302fb-2dab-4194-ae63-c7585125533e"
-					(reference "R12")
-					(unit 1)
-				)
-			)
-		)
-	)
-	(symbol
 		(lib_id "power:VBUS")
 		(at 40.64 93.98 0)
 		(unit 1)
@@ -6384,83 +5678,6 @@
 			(project ""
 				(path "/bf7761cc-1b32-4d86-809c-5f027005229b/1df302fb-2dab-4194-ae63-c7585125533e"
 					(reference "#PWR052")
-					(unit 1)
-				)
-			)
-		)
-	)
-	(symbol
-		(lib_id "DI_ZXCT180:ZXCT180A4")
-		(at 203.2 38.1 0)
-		(unit 1)
-		(exclude_from_sim no)
-		(in_bom yes)
-		(on_board yes)
-		(dnp no)
-		(fields_autoplaced yes)
-		(uuid "e9dbf4e9-17c4-4bdd-a6d0-68c68769eede")
-		(property "Reference" "U8"
-			(at 217.17 34.2198 0)
-			(effects
-				(font
-					(size 1.27 1.27)
-				)
-			)
-		)
-		(property "Value" "ZXCT180A4W5"
-			(at 217.17 36.7598 0)
-			(effects
-				(font
-					(size 1.27 1.27)
-				)
-			)
-		)
-		(property "Footprint" "Package_TO_SOT_SMD:SOT-23-5"
-			(at 203.2 38.1 0)
-			(effects
-				(font
-					(size 1.27 1.27)
-				)
-				(hide yes)
-			)
-		)
-		(property "Datasheet" "https://www.diodes.com/datasheet/download/ZXCT180.pdf"
-			(at 203.2 38.1 0)
-			(effects
-				(font
-					(size 1.27 1.27)
-				)
-				(hide yes)
-			)
-		)
-		(property "Description" "Current Shunt Monitor 200V/V Out 1"
-			(at 203.2 38.1 0)
-			(effects
-				(font
-					(size 1.27 1.27)
-				)
-				(hide yes)
-			)
-		)
-		(pin "5"
-			(uuid "8fbe39ea-4cac-47d6-9288-a272f9c332d1")
-		)
-		(pin "3"
-			(uuid "4529626a-83a6-47b8-b4ed-b272fdb1915f")
-		)
-		(pin "4"
-			(uuid "810ea45e-06a8-4e3e-9214-d4128001801f")
-		)
-		(pin "2"
-			(uuid "de6c9c1b-7edf-4c90-8fc7-4d0d5d3f20aa")
-		)
-		(pin "1"
-			(uuid "fa8b817c-cb16-4639-a13a-dc37e1572c6d")
-		)
-		(instances
-			(project ""
-				(path "/bf7761cc-1b32-4d86-809c-5f027005229b/1df302fb-2dab-4194-ae63-c7585125533e"
-					(reference "U8")
 					(unit 1)
 				)
 			)
