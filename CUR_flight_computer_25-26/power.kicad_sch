@@ -5837,7 +5837,7 @@
 				(justify right)
 			)
 		)
-		(property "Value" "XT30PW-M"
+		(property "Value" "XT30U-M"
 			(at 79.248 28.194 90)
 			(effects
 				(font
@@ -7704,7 +7704,7 @@
 				(justify right)
 			)
 		)
-		(property "Value" "XT30PW-M"
+		(property "Value" "XT30U-M"
 			(at 46.228 28.194 90)
 			(effects
 				(font
