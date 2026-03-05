@@ -1380,7 +1380,7 @@
 			(width 0)
 			(type default)
 		)
-		(uuid "440fffd8-8115-4e8c-a431-cf3f9a28f8c7")
+		(uuid "450c9f6f-50b2-48fd-9b08-644caa4408d0")
 	)
 	(wire
 		(pts
@@ -1887,17 +1887,17 @@
 	)
 	(symbol
 		(lib_id "Connector:Conn_01x02_Pin")
-		(at 101.6 55.88 0)
+		(at 116.84 55.88 0)
 		(mirror y)
 		(unit 1)
 		(exclude_from_sim no)
-		(in_bom yes)
-		(on_board yes)
-		(dnp no)
+		(in_bom no)
+		(on_board no)
+		(dnp yes)
 		(fields_autoplaced yes)
 		(uuid "7ae641ac-747e-4e14-8663-0861247cb2af")
 		(property "Reference" "J7"
-			(at 102.87 55.8799 0)
+			(at 118.11 55.8799 0)
 			(effects
 				(font
 					(size 1.27 1.27)
@@ -1906,7 +1906,7 @@
 			)
 		)
 		(property "Value" "Conn_01x02_Pin"
-			(at 102.87 58.4199 0)
+			(at 118.11 58.4199 0)
 			(effects
 				(font
 					(size 1.27 1.27)
@@ -1915,7 +1915,7 @@
 			)
 		)
 		(property "Footprint" "Connector_PinHeader_2.54mm:PinHeader_1x02_P2.54mm_Vertical"
-			(at 101.6 55.88 0)
+			(at 116.84 55.88 0)
 			(effects
 				(font
 					(size 1.27 1.27)
@@ -1924,7 +1924,7 @@
 			)
 		)
 		(property "Datasheet" "~"
-			(at 101.6 55.88 0)
+			(at 116.84 55.88 0)
 			(effects
 				(font
 					(size 1.27 1.27)
@@ -1933,7 +1933,7 @@
 			)
 		)
 		(property "Description" "Generic connector, single row, 01x02, script generated"
-			(at 101.6 55.88 0)
+			(at 116.84 55.88 0)
 			(effects
 				(font
 					(size 1.27 1.27)
@@ -2017,6 +2017,74 @@
 			(project ""
 				(path "/bf7761cc-1b32-4d86-809c-5f027005229b/e838d24c-cb75-4a46-b88f-e4466a269629"
 					(reference "#PWR090")
+					(unit 1)
+				)
+			)
+		)
+	)
+	(symbol
+		(lib_id "Connector:TestPoint_Small")
+		(at 96.52 58.42 0)
+		(unit 1)
+		(exclude_from_sim no)
+		(in_bom yes)
+		(on_board yes)
+		(dnp no)
+		(fields_autoplaced yes)
+		(uuid "8f5ad756-13d6-4dae-b935-4d060cfe3a30")
+		(property "Reference" "TP39"
+			(at 97.79 57.1499 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(justify left)
+			)
+		)
+		(property "Value" "TestPoint_Small"
+			(at 97.79 59.6899 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(justify left)
+				(hide yes)
+			)
+		)
+		(property "Footprint" "TestPoint_KOASpeer:TestPoint_Chip_RCUCTE_0603"
+			(at 101.6 58.42 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
+			)
+		)
+		(property "Datasheet" "~"
+			(at 101.6 58.42 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
+			)
+		)
+		(property "Description" "test point"
+			(at 96.52 58.42 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
+			)
+		)
+		(pin "1"
+			(uuid "d7a228fb-f108-4da8-a5e6-8fa5eab12e21")
+		)
+		(instances
+			(project "CUR_flight_computer_25-26"
+				(path "/bf7761cc-1b32-4d86-809c-5f027005229b/e838d24c-cb75-4a46-b88f-e4466a269629"
+					(reference "TP39")
 					(unit 1)
 				)
 			)
@@ -2554,6 +2622,74 @@
 			(project "CUR_flight_computer_25-26"
 				(path "/bf7761cc-1b32-4d86-809c-5f027005229b/e838d24c-cb75-4a46-b88f-e4466a269629"
 					(reference "TP33")
+					(unit 1)
+				)
+			)
+		)
+	)
+	(symbol
+		(lib_id "Connector:TestPoint_Small")
+		(at 96.52 55.88 0)
+		(unit 1)
+		(exclude_from_sim no)
+		(in_bom yes)
+		(on_board yes)
+		(dnp no)
+		(fields_autoplaced yes)
+		(uuid "faab0c55-79ce-4035-91a9-af0a6c9e5281")
+		(property "Reference" "TP38"
+			(at 97.79 54.6099 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(justify left)
+			)
+		)
+		(property "Value" "TestPoint_Small"
+			(at 97.79 57.1499 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(justify left)
+				(hide yes)
+			)
+		)
+		(property "Footprint" "TestPoint_KOASpeer:TestPoint_Chip_RCUCTE_0603"
+			(at 101.6 55.88 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
+			)
+		)
+		(property "Datasheet" "~"
+			(at 101.6 55.88 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
+			)
+		)
+		(property "Description" "test point"
+			(at 96.52 55.88 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
+			)
+		)
+		(pin "1"
+			(uuid "89fe8868-a031-4111-9e4f-ba24ccd2e332")
+		)
+		(instances
+			(project "CUR_flight_computer_25-26"
+				(path "/bf7761cc-1b32-4d86-809c-5f027005229b/e838d24c-cb75-4a46-b88f-e4466a269629"
+					(reference "TP38")
 					(unit 1)
 				)
 			)
