@@ -1692,6 +1692,46 @@
 		)
 		(uuid "fd8d08cc-bb69-4455-8e8a-e149db8dfcb8")
 	)
+	(label "DRAIN_1"
+		(at 74.93 64.77 180)
+		(effects
+			(font
+				(size 1.27 1.27)
+			)
+			(justify right bottom)
+		)
+		(uuid "3cf82284-257e-4f76-90ba-317c3ffcebd6")
+	)
+	(label "DRAIN_3"
+		(at 74.93 135.89 180)
+		(effects
+			(font
+				(size 1.27 1.27)
+			)
+			(justify right bottom)
+		)
+		(uuid "815b181e-a142-4c0f-a7cc-37932ae59a33")
+	)
+	(label "DRAIN_4"
+		(at 151.13 134.62 180)
+		(effects
+			(font
+				(size 1.27 1.27)
+			)
+			(justify right bottom)
+		)
+		(uuid "cee21e95-00ad-48fd-a127-71a953ed244f")
+	)
+	(label "DRAIN_2"
+		(at 151.13 66.04 180)
+		(effects
+			(font
+				(size 1.27 1.27)
+			)
+			(justify right bottom)
+		)
+		(uuid "f73b571c-1080-40d9-8245-9b62181f1770")
+	)
 	(global_label "BATT_PYRO"
 		(shape input)
 		(at 149.86 44.45 0)
