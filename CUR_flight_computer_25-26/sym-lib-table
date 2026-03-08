@@ -8,4 +8,5 @@
   (lib (name "EBYTE_LoRa")(type "KiCad")(uri "${KIPRJMOD}/kicad-library/symbols/EBYTE_LoRa.kicad_sym")(options "")(descr ""))
   (lib (name "Samtec_FTSH-107-01-X-DV-K-TR")(type "KiCad")(uri "${KIPRJMOD}/kicad-library/symbols/Samtec_FTSH-107-01-X-DV-K-TR.kicad_sym")(options "")(descr ""))
   (lib (name "CMT-7525-03-SMT-TR")(type "KiCad")(uri "/Users/haileymeagher/Desktop/GitHub/kicad-library/symbols/CMT-7525-03-SMT-TR.kicad_sym")(options "")(descr ""))
+  (lib (name "Regulator_Linear_onsemi")(type "KiCad")(uri "${KIPRJMOD}/kicad-library/symbols/Regulator_Linear_onsemi.kicad_sym")(options "")(descr ""))
 )
