@@ -6020,17 +6020,6 @@
 		)
 		(uuid "14dac98f-7501-4b40-9ae5-e122047c5d54")
 	)
-	(hierarchical_label "I_SENSE"
-		(shape input)
-		(at 189.23 124.46 0)
-		(effects
-			(font
-				(size 1.27 1.27)
-			)
-			(justify left)
-		)
-		(uuid "192172d7-6df6-45f6-a445-1b3cd7f3e9c9")
-	)
 	(hierarchical_label "BTN_2"
 		(shape output)
 		(at 119.38 111.76 180)
@@ -6119,17 +6108,6 @@
 		)
 		(uuid "2bdc07d8-9fa6-4a82-be63-35e177813025")
 	)
-	(hierarchical_label "PYRO_BATT_SENSE"
-		(shape input)
-		(at 189.23 121.92 0)
-		(effects
-			(font
-				(size 1.27 1.27)
-			)
-			(justify left)
-		)
-		(uuid "30d70243-7b5d-4924-8717-bc10178b03b0")
-	)
 	(hierarchical_label "USB_D+"
 		(shape bidirectional)
 		(at 186.69 66.04 0)
@@ -6151,6 +6129,17 @@
 			(justify left)
 		)
 		(uuid "3e3826fc-f927-43ce-974f-61ad1f23894f")
+	)
+	(hierarchical_label "PYRO_BATT_SENSE"
+		(shape input)
+		(at 189.23 127 0)
+		(effects
+			(font
+				(size 1.27 1.27)
+			)
+			(justify left)
+		)
+		(uuid "3f371eda-ddca-490b-afd9-7e65079eb1d5")
 	)
 	(hierarchical_label "LM660_ST"
 		(shape input)
@@ -6218,7 +6207,7 @@
 		)
 		(uuid "57c81c69-e554-4f04-8c47-5d94b24a1a5c")
 	)
-	(hierarchical_label "I_SENSE_PYRO"
+	(hierarchical_label "I_SENSE"
 		(shape input)
 		(at 189.23 119.38 0)
 		(effects
@@ -6227,7 +6216,7 @@
 			)
 			(justify left)
 		)
-		(uuid "5bc8489b-c50b-446d-b7db-7d805cf491e8")
+		(uuid "62d71555-2e75-417e-aaee-9d5ae144b7ce")
 	)
 	(hierarchical_label "PYRO_4"
 		(shape output)
@@ -6261,6 +6250,17 @@
 			(justify right)
 		)
 		(uuid "6c8f0bfe-8b89-4185-8134-a64b6794ebef")
+	)
+	(hierarchical_label "BATT_SENSE"
+		(shape input)
+		(at 189.23 121.92 0)
+		(effects
+			(font
+				(size 1.27 1.27)
+			)
+			(justify left)
+		)
+		(uuid "6d49e74d-d522-4072-817a-a3fa2feee6cd")
 	)
 	(hierarchical_label "MAG CLOCK"
 		(shape output)
@@ -6349,17 +6349,6 @@
 			(justify left)
 		)
 		(uuid "8ba67aa0-3ec5-46ec-842d-3d5d99b51284")
-	)
-	(hierarchical_label "BATT_SENSE"
-		(shape input)
-		(at 189.23 127 0)
-		(effects
-			(font
-				(size 1.27 1.27)
-			)
-			(justify left)
-		)
-		(uuid "92a0fb92-8947-4e5e-a219-0e41e69dd632")
 	)
 	(hierarchical_label "FLASH_CLK"
 		(shape output)
@@ -6569,6 +6558,17 @@
 			(justify left)
 		)
 		(uuid "c1a7a54a-056f-4888-bd9a-8b2c48bb4e0d")
+	)
+	(hierarchical_label "I_SENSE_PYRO"
+		(shape input)
+		(at 189.23 124.46 0)
+		(effects
+			(font
+				(size 1.27 1.27)
+			)
+			(justify left)
+		)
+		(uuid "c25bb692-cc70-462d-a098-db1c74bb9bd2")
 	)
 	(hierarchical_label "LED_2_R"
 		(shape output)
