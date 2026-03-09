@@ -59,7 +59,7 @@
         },
         {
           "gap": 0.2,
-          "via_gap": 0.0,
+          "via_gap": 0.2,
           "width": 0.35
         }
       ],
@@ -195,6 +195,7 @@
         0.0,
         0.25,
         0.3,
+        0.35,
         0.5,
         0.6,
         0.8,
@@ -483,9 +484,9 @@
       {
         "bus_width": 12,
         "clearance": 0.2,
-        "diff_pair_gap": 0.25,
+        "diff_pair_gap": 0.2,
         "diff_pair_via_gap": 0.25,
-        "diff_pair_width": 0.2,
+        "diff_pair_width": 0.35,
         "line_style": 0,
         "microvia_diameter": 0.3,
         "microvia_drill": 0.1,
