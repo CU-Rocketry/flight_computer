@@ -2908,7 +2908,7 @@
 		)
 		(uuid "b364818b-1c5c-436e-8a5b-a40b0f12bdca")
 	)
-	(label "LOAD"
+	(label "LDO_IN"
 		(at 88.9 171.45 0)
 		(effects
 			(font
@@ -4756,7 +4756,7 @@
 				(justify right)
 			)
 		)
-		(property "Value" "4.7u"
+		(property "Value" "1u"
 			(at 137.16 177.8062 0)
 			(effects
 				(font
@@ -4765,7 +4765,7 @@
 				(justify right)
 			)
 		)
-		(property "Footprint" ""
+		(property "Footprint" "Capacitor_SMD:C_0603_1608Metric"
 			(at 139.7 176.53 0)
 			(effects
 				(font
@@ -5388,7 +5388,7 @@
 				(justify right)
 			)
 		)
-		(property "Value" "4.7u"
+		(property "Value" "1u"
 			(at 91.44 177.8062 0)
 			(effects
 				(font
@@ -5397,7 +5397,7 @@
 				(justify right)
 			)
 		)
-		(property "Footprint" ""
+		(property "Footprint" "Capacitor_SMD:C_0603_1608Metric"
 			(at 88.9 176.53 0)
 			(effects
 				(font
