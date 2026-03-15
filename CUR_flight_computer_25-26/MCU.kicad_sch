@@ -4136,10 +4136,6 @@
 		(uuid "fd7aa9b9-2933-4cad-9c45-0db210465c82")
 	)
 	(no_connect
-		(at 184.15 73.66)
-		(uuid "734de37f-c8a5-44d5-8ab6-2121e024758a")
-	)
-	(no_connect
 		(at 184.15 88.9)
 		(uuid "b7231cb6-77e8-4b49-a503-d500ad1a7a64")
 	)
@@ -5075,7 +5071,7 @@
 	)
 	(wire
 		(pts
-			(xy 189.23 45.72) (xy 184.15 45.72)
+			(xy 189.23 73.66) (xy 184.15 73.66)
 		)
 		(stroke
 			(width 0)
@@ -6218,7 +6214,7 @@
 	)
 	(hierarchical_label "MAG_CS"
 		(shape output)
-		(at 189.23 45.72 0)
+		(at 189.23 73.66 0)
 		(effects
 			(font
 				(size 1.27 1.27)
