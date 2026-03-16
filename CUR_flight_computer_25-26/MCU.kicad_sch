@@ -5970,17 +5970,6 @@
 		)
 		(uuid "0327fc19-2eb4-4944-b85b-d34bd89b834c")
 	)
-	(hierarchical_label "BTN_1"
-		(shape output)
-		(at 119.38 109.22 180)
-		(effects
-			(font
-				(size 1.27 1.27)
-			)
-			(justify right)
-		)
-		(uuid "06c12f89-e580-4903-ba04-30a890eb774b")
-	)
 	(hierarchical_label "LCD_SDA"
 		(shape bidirectional)
 		(at 189.23 96.52 0)
@@ -6002,6 +5991,17 @@
 			(justify left)
 		)
 		(uuid "11c0f2a7-a97f-41bb-8014-f45e5589eec0")
+	)
+	(hierarchical_label "BTN_1"
+		(shape output)
+		(at 119.38 114.3 180)
+		(effects
+			(font
+				(size 1.27 1.27)
+			)
+			(justify right)
+		)
+		(uuid "12abcba1-904a-4407-ad9a-3237b621f9df")
 	)
 	(hierarchical_label "RF_TXEN"
 		(shape output)
@@ -6278,17 +6278,6 @@
 		)
 		(uuid "7c0fe9b1-2069-4a5b-b54f-839a0d477861")
 	)
-	(hierarchical_label "LED_1_R"
-		(shape output)
-		(at 189.23 55.88 0)
-		(effects
-			(font
-				(size 1.27 1.27)
-			)
-			(justify left)
-		)
-		(uuid "7edc8bee-0f31-49a6-88fc-6587e3ba8f94")
-	)
 	(hierarchical_label "~{GPS_RESET}"
 		(shape output)
 		(at 119.38 139.7 180)
@@ -6346,14 +6335,14 @@
 	)
 	(hierarchical_label "LED_1_B"
 		(shape output)
-		(at 189.23 60.96 0)
+		(at 189.23 55.88 0)
 		(effects
 			(font
 				(size 1.27 1.27)
 			)
 			(justify left)
 		)
-		(uuid "978085f8-267c-4ea1-8fce-46204f9a0546")
+		(uuid "9820a223-a922-4ae9-9f16-164e52af379a")
 	)
 	(hierarchical_label "SD_CLK"
 		(shape output)
@@ -6431,6 +6420,17 @@
 			(justify left)
 		)
 		(uuid "a4d58e6c-41ac-4209-8e03-c0c54fa83204")
+	)
+	(hierarchical_label "LED_1_R"
+		(shape output)
+		(at 189.23 60.96 0)
+		(effects
+			(font
+				(size 1.27 1.27)
+			)
+			(justify left)
+		)
+		(uuid "a6c53bd2-baaf-4e92-9c2f-7866e25e8cba")
 	)
 	(hierarchical_label "SENSE_1"
 		(shape input)
@@ -6674,6 +6674,17 @@
 		)
 		(uuid "e376cda9-2d53-4975-a17e-15361f66cad2")
 	)
+	(hierarchical_label "BTN_3"
+		(shape output)
+		(at 119.38 109.22 180)
+		(effects
+			(font
+				(size 1.27 1.27)
+			)
+			(justify right)
+		)
+		(uuid "e663cebf-0d14-4d64-941a-b578fe8597c7")
+	)
 	(hierarchical_label "GPS_TP"
 		(shape input)
 		(at 119.38 137.16 180)
@@ -6728,17 +6739,6 @@
 			(justify right)
 		)
 		(uuid "fa325b23-6d42-4135-9bf5-f2b4e5816f3c")
-	)
-	(hierarchical_label "BTN_3"
-		(shape output)
-		(at 119.38 114.3 180)
-		(effects
-			(font
-				(size 1.27 1.27)
-			)
-			(justify right)
-		)
-		(uuid "fa82b268-dc3f-4163-b021-178a9d2009d7")
 	)
 	(hierarchical_label "~{RESET}"
 		(shape input)
