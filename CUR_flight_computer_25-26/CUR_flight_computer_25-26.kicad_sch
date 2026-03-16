@@ -487,16 +487,6 @@
 	)
 	(wire
 		(pts
-			(xy 106.68 40.64) (xy 106.68 45.72)
-		)
-		(stroke
-			(width 0)
-			(type default)
-		)
-		(uuid "9bcfa376-1e83-484e-99a8-9b9826c00cb1")
-	)
-	(wire
-		(pts
 			(xy 60.96 81.28) (xy 81.28 81.28)
 		)
 		(stroke
@@ -782,16 +772,6 @@
 		(pin "VCP_TX" input
 			(at 91.44 40.64 270)
 			(uuid "1a9de012-3af1-42e4-8eb5-5c6f3b63681c")
-			(effects
-				(font
-					(size 1.27 1.27)
-				)
-				(justify left)
-			)
-		)
-		(pin "JTDI" output
-			(at 106.68 40.64 270)
-			(uuid "17ca16a4-f838-4c03-8e6b-7891282db78f")
 			(effects
 				(font
 					(size 1.27 1.27)
@@ -1678,16 +1658,6 @@
 		(pin "JCLK{slash}SWCLK" input
 			(at 99.06 45.72 90)
 			(uuid "191e034f-dcc1-4a69-9d3d-be1779288794")
-			(effects
-				(font
-					(size 1.27 1.27)
-				)
-				(justify right)
-			)
-		)
-		(pin "JTDI" input
-			(at 106.68 45.72 90)
-			(uuid "a5b1a0cc-70f8-456e-bff4-f7a2ace73684")
 			(effects
 				(font
 					(size 1.27 1.27)

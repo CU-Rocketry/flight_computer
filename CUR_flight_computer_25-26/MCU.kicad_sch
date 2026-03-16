@@ -3957,6 +3957,16 @@
 		)
 		(uuid "ee06a439-76b0-4a56-9bd2-995239af0093")
 	)
+	(text "from dbg"
+		(exclude_from_sim no)
+		(at 110.744 33.274 0)
+		(effects
+			(font
+				(size 1.27 1.27)
+			)
+		)
+		(uuid "ef60179e-e8bd-46a2-a24b-7384f8cfd9d2")
+	)
 	(junction
 		(at 34.29 27.94)
 		(diameter 0)
@@ -4124,6 +4134,10 @@
 		(diameter 0)
 		(color 0 0 0 0)
 		(uuid "fd7aa9b9-2933-4cad-9c45-0db210465c82")
+	)
+	(no_connect
+		(at 184.15 88.9)
+		(uuid "b7231cb6-77e8-4b49-a503-d500ad1a7a64")
 	)
 	(wire
 		(pts
@@ -5037,16 +5051,6 @@
 	)
 	(wire
 		(pts
-			(xy 189.23 88.9) (xy 184.15 88.9)
-		)
-		(stroke
-			(width 0)
-			(type default)
-		)
-		(uuid "815b1045-c662-48a7-8293-857b5ffeae05")
-	)
-	(wire
-		(pts
 			(xy 153.67 167.64) (xy 153.67 170.18)
 		)
 		(stroke
@@ -5067,7 +5071,7 @@
 	)
 	(wire
 		(pts
-			(xy 189.23 45.72) (xy 184.15 45.72)
+			(xy 189.23 73.66) (xy 184.15 73.66)
 		)
 		(stroke
 			(width 0)
@@ -5827,16 +5831,6 @@
 	)
 	(wire
 		(pts
-			(xy 189.23 73.66) (xy 184.15 73.66)
-		)
-		(stroke
-			(width 0)
-			(type default)
-		)
-		(uuid "f08d3e96-878c-448e-9c7c-73fac08daa7f")
-	)
-	(wire
-		(pts
 			(xy 119.38 106.68) (xy 123.19 106.68)
 		)
 		(stroke
@@ -6174,17 +6168,6 @@
 		)
 		(uuid "4ad56aaa-8fc3-44fe-b862-e006afde15eb")
 	)
-	(hierarchical_label "JTDI"
-		(shape input)
-		(at 189.23 73.66 0)
-		(effects
-			(font
-				(size 1.27 1.27)
-			)
-			(justify left)
-		)
-		(uuid "526e7916-b160-43ea-ab22-d66cad4e0d36")
-	)
 	(hierarchical_label "SENSE_2"
 		(shape input)
 		(at 119.38 63.5 180)
@@ -6231,7 +6214,7 @@
 	)
 	(hierarchical_label "MAG_CS"
 		(shape output)
-		(at 189.23 45.72 0)
+		(at 189.23 73.66 0)
 		(effects
 			(font
 				(size 1.27 1.27)
@@ -6669,17 +6652,6 @@
 		)
 		(uuid "d60301b8-6657-45d5-b394-a310213654d0")
 	)
-	(hierarchical_label "~{RESET}"
-		(shape input)
-		(at 189.23 88.9 0)
-		(effects
-			(font
-				(size 1.27 1.27)
-			)
-			(justify left)
-		)
-		(uuid "dfae50d6-29db-4e08-b00d-614ca6c99464")
-	)
 	(hierarchical_label "FLASH_IO2"
 		(shape bidirectional)
 		(at 186.69 53.34 0)
@@ -6767,6 +6739,17 @@
 			(justify right)
 		)
 		(uuid "fa82b268-dc3f-4163-b021-178a9d2009d7")
+	)
+	(hierarchical_label "~{RESET}"
+		(shape input)
+		(at 116.84 35.56 180)
+		(effects
+			(font
+				(size 1.27 1.27)
+			)
+			(justify right)
+		)
+		(uuid "fa99438f-01c4-4fad-9a6b-0c613983c588")
 	)
 	(hierarchical_label "RF_IO2"
 		(shape bidirectional)
