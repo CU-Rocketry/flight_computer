@@ -4326,7 +4326,7 @@
 				(justify left)
 			)
 		)
-		(property "Footprint" "NTR4003NT1G:SOT96P237X111-3N"
+		(property "Footprint" "Package_TO_SOT_SMD:SOT-23"
 			(at 53.34 58.42 0)
 			(effects
 				(font
@@ -4353,7 +4353,7 @@
 				(hide yes)
 			)
 		)
-		(property "Sim.Library" "kicad-library-sigmondkukla\\spice\\NTR4003N.LIB"
+		(property "Sim.Library" "kicad-library\\spice\\NTR4003N.LIB"
 			(at 48.26 60.96 0)
 			(effects
 				(font
