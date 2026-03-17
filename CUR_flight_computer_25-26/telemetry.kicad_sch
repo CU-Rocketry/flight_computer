@@ -2245,7 +2245,7 @@
 				(justify left)
 			)
 		)
-		(property "Value" "TestPoint_Small"
+		(property "Value" "RCUCTE"
 			(at 63.5679 50.7999 0)
 			(effects
 				(font
@@ -2280,6 +2280,14 @@
 					(size 1.27 1.27)
 				)
 				(hide yes)
+			)
+		)
+		(property "MPN" "RCUCTE"
+			(at 64.8379 49.53 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
 			)
 		)
 		(pin "1"
@@ -2446,7 +2454,7 @@
 				(justify left)
 			)
 		)
-		(property "Value" "TestPoint_Small"
+		(property "Value" "RCUCTE"
 			(at 63.5 59.6899 0)
 			(effects
 				(font
@@ -2483,6 +2491,14 @@
 				(hide yes)
 			)
 		)
+		(property "MPN" "RCUCTE"
+			(at 64.77 58.42 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+			)
+		)
 		(pin "1"
 			(uuid "bb39f8be-fd09-4747-bb4e-0075d287dca2")
 		)
@@ -2515,7 +2531,7 @@
 				(justify left)
 			)
 		)
-		(property "Value" "TestPoint_Small"
+		(property "Value" "RCUCTE"
 			(at 63.5 67.3099 0)
 			(effects
 				(font
@@ -2552,6 +2568,14 @@
 				(hide yes)
 			)
 		)
+		(property "MPN" "RCUCTE"
+			(at 64.77 66.04 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+			)
+		)
 		(pin "1"
 			(uuid "701d85a9-21f0-4904-827b-bac3e2ff0088")
 		)
@@ -2584,7 +2608,7 @@
 				(justify left)
 			)
 		)
-		(property "Value" "TestPoint_Small"
+		(property "Value" "RCUCTE"
 			(at 63.5 72.3899 0)
 			(effects
 				(font
@@ -2619,6 +2643,14 @@
 					(size 1.27 1.27)
 				)
 				(hide yes)
+			)
+		)
+		(property "MPN" "RCUCTE"
+			(at 64.77 71.12 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
 			)
 		)
 		(pin "1"
@@ -2886,6 +2918,14 @@
 				(hide yes)
 			)
 		)
+		(property "MPN" "RC0603JR-070RL"
+			(at 63.5 76.2 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+			)
+		)
 		(pin "1"
 			(uuid "266962db-84c2-4d59-a106-52d9a10154dd")
 		)
@@ -2921,7 +2961,7 @@
 				(justify left)
 			)
 		)
-		(property "Value" "TestPoint_Small"
+		(property "Value" "RCUCTE"
 			(at 63.5 69.8499 0)
 			(effects
 				(font
@@ -2956,6 +2996,14 @@
 					(size 1.27 1.27)
 				)
 				(hide yes)
+			)
+		)
+		(property "MPN" "RCUCTE"
+			(at 64.77 68.58 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
 			)
 		)
 		(pin "1"
@@ -3137,7 +3185,7 @@
 				(justify left)
 			)
 		)
-		(property "Value" "TestPoint_Small"
+		(property "Value" "RCUCTE"
 			(at 104.14 71.1199 0)
 			(effects
 				(font
@@ -3174,6 +3222,14 @@
 				(hide yes)
 			)
 		)
+		(property "MPN" "RCUCTE"
+			(at 102.87 69.85 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+			)
+		)
 		(pin "1"
 			(uuid "d02fb9ce-e353-443e-91ec-473261d7eb11")
 		)
@@ -3204,7 +3260,7 @@
 				(justify left)
 			)
 		)
-		(property "Value" "TestPoint_Small"
+		(property "Value" "RCUCTE"
 			(at 104.14 73.6599 0)
 			(effects
 				(font
@@ -3239,6 +3295,14 @@
 					(size 1.27 1.27)
 				)
 				(hide yes)
+			)
+		)
+		(property "MPN" "RCUCTE"
+			(at 102.87 72.39 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
 			)
 		)
 		(pin "1"
@@ -3376,6 +3440,14 @@
 				(hide yes)
 			)
 		)
+		(property "MPN" "RC0603JR-070RL"
+			(at 113.03 49.53 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+			)
+		)
 		(pin "1"
 			(uuid "14904d0b-0b74-4a69-a23a-c1cada503b73")
 		)
@@ -3444,6 +3516,14 @@
 					(size 1.27 1.27)
 				)
 				(hide yes)
+			)
+		)
+		(property "MPN" "E22-400MM22S"
+			(at 85.09 52.07 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
 			)
 		)
 		(pin "10"
@@ -3523,7 +3603,7 @@
 				(justify left)
 			)
 		)
-		(property "Value" "TestPoint_Small"
+		(property "Value" "RCUCTE"
 			(at 63.5679 54.6099 0)
 			(effects
 				(font
@@ -3560,6 +3640,14 @@
 				(hide yes)
 			)
 		)
+		(property "MPN" "RCUCTE"
+			(at 64.8379 53.34 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+			)
+		)
 		(pin "1"
 			(uuid "cbd705cb-8ede-4851-b30e-8cf246539147")
 		)
@@ -3592,7 +3680,7 @@
 				(justify left)
 			)
 		)
-		(property "Value" "TestPoint_Small"
+		(property "Value" "RCUCTE"
 			(at 63.423 57.1499 0)
 			(effects
 				(font
@@ -3627,6 +3715,14 @@
 					(size 1.27 1.27)
 				)
 				(hide yes)
+			)
+		)
+		(property "MPN" "RCUCTE"
+			(at 64.693 55.88 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
 			)
 		)
 		(pin "1"
@@ -3801,7 +3897,7 @@
 				(justify left)
 			)
 		)
-		(property "Value" "TestPoint_Small"
+		(property "Value" "RCUCTE"
 			(at 104.14 68.5799 0)
 			(effects
 				(font
@@ -3836,6 +3932,14 @@
 					(size 1.27 1.27)
 				)
 				(hide yes)
+			)
+		)
+		(property "MPN" "RCUCTE"
+			(at 102.87 67.31 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
 			)
 		)
 		(pin "1"
@@ -3970,6 +4074,14 @@
 				(hide yes)
 			)
 		)
+		(property "MPN" "RC0603FR-0710KL"
+			(at 40.64 55.88 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+			)
+		)
 		(pin "1"
 			(uuid "6ae2f4d1-1d82-42c7-a8a7-ea6b32e8a503")
 		)
@@ -4005,7 +4117,7 @@
 				(justify left)
 			)
 		)
-		(property "Value" "TestPoint_Small"
+		(property "Value" "RCUCTE"
 			(at 63.5679 62.2299 0)
 			(effects
 				(font
@@ -4040,6 +4152,14 @@
 					(size 1.27 1.27)
 				)
 				(hide yes)
+			)
+		)
+		(property "MPN" "RCUCTE"
+			(at 64.8379 60.96 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
 			)
 		)
 		(pin "1"

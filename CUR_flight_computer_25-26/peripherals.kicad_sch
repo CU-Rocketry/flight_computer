@@ -2805,6 +2805,14 @@
 				(hide yes)
 			)
 		)
+		(property "MPN" "RC0603FR-0722RL"
+			(at 72.39 123.19 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+			)
+		)
 		(pin "1"
 			(uuid "48abd302-0e62-433c-b28d-4ad86174b97c")
 		)
@@ -3007,6 +3015,14 @@
 				(hide yes)
 			)
 		)
+		(property "MPN" "CLV1L-FKB-CJQRNQEFGBB79353"
+			(at 72.39 109.22 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+			)
+		)
 		(pin "2"
 			(uuid "0821bb86-4007-45d5-a4d4-ff1325a3fa61")
 		)
@@ -3100,9 +3116,9 @@
 		(mirror y)
 		(unit 1)
 		(exclude_from_sim no)
-		(in_bom yes)
+		(in_bom no)
 		(on_board yes)
-		(dnp no)
+		(dnp yes)
 		(fields_autoplaced yes)
 		(uuid "3b4f69f0-a675-4d18-baa3-f13b7c68fc53")
 		(property "Reference" "J13"
@@ -3148,6 +3164,14 @@
 					(size 1.27 1.27)
 				)
 				(hide yes)
+			)
+		)
+		(property "MPN" "PinHeader_2.54mm"
+			(at 176.53 38.1 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
 			)
 		)
 		(pin "3"
@@ -3224,6 +3248,14 @@
 					(size 1.27 1.27)
 				)
 				(hide yes)
+			)
+		)
+		(property "MPN" "CLV1L-FKB-CJQRNQEFGBB79353"
+			(at 113.03 109.22 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
 			)
 		)
 		(pin "2"
@@ -3513,6 +3545,14 @@
 				(hide yes)
 			)
 		)
+		(property "MPN" "RC0603FR-07150RL"
+			(at 62.23 123.19 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+			)
+		)
 		(pin "1"
 			(uuid "55c495d2-2582-40c5-8e00-0e614024a627")
 		)
@@ -3580,6 +3620,14 @@
 					(size 1.27 1.27)
 				)
 				(hide yes)
+			)
+		)
+		(property "MPN" "RC0603FR-07150RL"
+			(at 102.87 123.19 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
 			)
 		)
 		(pin "1"
@@ -3715,6 +3763,14 @@
 					(size 1.27 1.27)
 				)
 				(hide yes)
+			)
+		)
+		(property "MPN" "RC0603FR-0722RL"
+			(at 113.03 123.19 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
 			)
 		)
 		(pin "1"
@@ -3853,7 +3909,7 @@
 				(hide yes)
 			)
 		)
-		(property "MPN" "SKRPADE010"
+		(property "MPN" "PTS815SJG250SMTR LFS"
 			(at 134.62 50.8 90)
 			(effects
 				(font
@@ -3930,6 +3986,14 @@
 					(size 1.27 1.27)
 				)
 				(hide yes)
+			)
+		)
+		(property "MPN" "RC0603FR-0722RL"
+			(at 123.19 123.19 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
 			)
 		)
 		(pin "1"
@@ -4133,6 +4197,14 @@
 				(hide yes)
 			)
 		)
+		(property "MPN" "RC0603FR-0722RL"
+			(at 82.55 123.19 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+			)
+		)
 		(pin "1"
 			(uuid "1774c306-16de-4e2e-b6f9-156e037f334e")
 		)
@@ -4203,7 +4275,7 @@
 				(hide yes)
 			)
 		)
-		(property "MPN" "SKRPADE010"
+		(property "MPN" "PTS815SJG250SMTR LFS"
 			(at 115.57 50.8 90)
 			(effects
 				(font
@@ -4282,7 +4354,7 @@
 				(hide yes)
 			)
 		)
-		(property "MPN" "SKRPADE010"
+		(property "MPN" "PTS815SJG250SMTR LFS"
 			(at 96.52 50.8 90)
 			(effects
 				(font
@@ -4479,6 +4551,14 @@
 				(hide yes)
 			)
 		)
+		(property "MPN" "RC0603FR-0710KL"
+			(at 38.1 64.77 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+			)
+		)
 		(pin "2"
 			(uuid "e813fb47-aa21-4bf8-bf18-32227734e72c")
 		)
@@ -4545,6 +4625,14 @@
 					(size 1.27 1.27)
 				)
 				(hide yes)
+			)
+		)
+		(property "MPN" "RC0603FR-07150RL"
+			(at 31.75 60.96 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
 			)
 		)
 		(pin "1"

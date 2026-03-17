@@ -3203,6 +3203,14 @@
 				(hide yes)
 			)
 		)
+		(property "MPN" "RC0603FR-0718KL"
+			(at 133.35 40.64 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+			)
+		)
 		(pin "1"
 			(uuid "ad8d0651-0ba0-487f-8a3f-f4f0ce076edd")
 		)
@@ -3269,6 +3277,14 @@
 					(size 1.27 1.27)
 				)
 				(hide yes)
+			)
+		)
+		(property "MPN" "NCP186AMX330TAG"
+			(at 114.3 168.91 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
 			)
 		)
 		(pin "7"
@@ -3457,7 +3473,7 @@
 				)
 			)
 		)
-		(property "Value" "Screw_Terminal_01x02"
+		(property "Value" "TB0011-350-02GR"
 			(at 40.64 129.54 0)
 			(effects
 				(font
@@ -3490,6 +3506,14 @@
 					(size 1.27 1.27)
 				)
 				(hide yes)
+			)
+		)
+		(property "MPN" "TB0011-350-02GR"
+			(at 40.64 135.89 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
 			)
 		)
 		(pin "2"
@@ -3592,7 +3616,7 @@
 				(hide yes)
 			)
 		)
-		(property "Value" "TestPoint"
+		(property "Value" "RCUCTE"
 			(at 244.348 39.37 90)
 			(effects
 				(font
@@ -3625,6 +3649,14 @@
 					(size 1.27 1.27)
 				)
 				(hide yes)
+			)
+		)
+		(property "MPN" "RCUCTE"
+			(at 247.65 41.91 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
 			)
 		)
 		(pin "1"
@@ -3759,6 +3791,14 @@
 				(hide yes)
 			)
 		)
+		(property "MPN" "CSSH0805FT1L00"
+			(at 185.42 90.17 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+			)
+		)
 		(pin "2"
 			(uuid "74410af8-335d-49a3-8467-677c217daf21")
 		)
@@ -3858,7 +3898,7 @@
 				)
 			)
 		)
-		(property "Value" "TestPoint"
+		(property "Value" "RCUCTE"
 			(at 244.348 30.48 90)
 			(effects
 				(font
@@ -3893,6 +3933,14 @@
 				(hide yes)
 			)
 		)
+		(property "MPN" "RCUCTE"
+			(at 247.65 33.02 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+			)
+		)
 		(pin "1"
 			(uuid "66785017-0e0c-47f0-996e-515e807acfbd")
 		)
@@ -3923,7 +3971,7 @@
 				)
 			)
 		)
-		(property "Value" "Screw_Terminal_01x02"
+		(property "Value" "TB0011-350-02GR"
 			(at 40.64 160.02 0)
 			(effects
 				(font
@@ -3956,6 +4004,14 @@
 					(size 1.27 1.27)
 				)
 				(hide yes)
+			)
+		)
+		(property "MPN" "TB0011-350-02GR"
+			(at 40.64 166.37 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
 			)
 		)
 		(pin "2"
@@ -4357,6 +4413,14 @@
 				(hide yes)
 			)
 		)
+		(property "MPN" "XT30U-M"
+			(at 74.93 31.75 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+			)
+		)
 		(pin "1"
 			(uuid "55921c7b-d6f2-40d3-a9ff-bad48579000a")
 		)
@@ -4557,6 +4621,14 @@
 				(hide yes)
 			)
 		)
+		(property "MPN" "ZXCT180B4W5-7"
+			(at 203.2 86.36 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+			)
+		)
 		(pin "4"
 			(uuid "308c10ca-2c54-40f4-81f8-1f138fabdc3a")
 		)
@@ -4637,6 +4709,14 @@
 				(hide yes)
 			)
 		)
+		(property "MPN" "RC0603FR-0747KL"
+			(at 104.14 50.8 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+			)
+		)
 		(pin "1"
 			(uuid "cbb92576-5c76-4d68-a19a-efd9ce225c6e")
 		)
@@ -4703,6 +4783,14 @@
 					(size 1.27 1.27)
 				)
 				(hide yes)
+			)
+		)
+		(property "MPN" "LM66200DRLR"
+			(at 57.15 93.98 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
 			)
 		)
 		(pin "5"
@@ -4871,6 +4959,14 @@
 				(hide yes)
 			)
 		)
+		(property "MPN" "RC0603FR-0718KL"
+			(at 104.14 40.64 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+			)
+		)
 		(pin "1"
 			(uuid "2a19fe55-960d-43b2-99dd-7628dd3d9019")
 		)
@@ -4940,6 +5036,14 @@
 					(size 1.27 1.27)
 				)
 				(hide yes)
+			)
+		)
+		(property "MPN" "RC0603FR-0710KL"
+			(at 83.82 99.06 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
 			)
 		)
 		(pin "1"
@@ -5079,6 +5183,14 @@
 				(hide yes)
 			)
 		)
+		(property "MPN" "RC0603FR-0710KL"
+			(at 43.18 105.41 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+			)
+		)
 		(pin "1"
 			(uuid "f8339060-a7c6-405f-a5a9-e97a32d2a96d")
 		)
@@ -5146,6 +5258,14 @@
 					(size 1.27 1.27)
 				)
 				(hide yes)
+			)
+		)
+		(property "MPN" "CSSH0805FT1L00"
+			(at 185.42 41.91 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
 			)
 		)
 		(pin "2"
@@ -5285,6 +5405,14 @@
 				(hide yes)
 			)
 		)
+		(property "MPN" "RC0603FR-0747KL"
+			(at 133.35 50.8 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+			)
+		)
 		(pin "1"
 			(uuid "6116075e-251a-46df-aa0f-9c8e226234ed")
 		)
@@ -5351,6 +5479,14 @@
 					(size 1.27 1.27)
 				)
 				(hide yes)
+			)
+		)
+		(property "MPN" "ZXCT180B4W5-7"
+			(at 203.2 38.1 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
 			)
 		)
 		(pin "4"
@@ -5705,6 +5841,14 @@
 					(size 1.27 1.27)
 				)
 				(hide yes)
+			)
+		)
+		(property "MPN" "XT30U-M"
+			(at 41.91 31.75 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
 			)
 		)
 		(pin "1"

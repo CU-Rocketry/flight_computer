@@ -1867,6 +1867,14 @@
 				(hide yes)
 			)
 		)
+		(property "MPN" "FTSH-107-01-L-DV-K"
+			(at 53.34 40.64 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+			)
+		)
 		(pin "05"
 			(uuid "1e253cc9-b2bc-4a1a-ac4a-f150ea31f222")
 		)
@@ -2059,7 +2067,7 @@
 				(hide yes)
 			)
 		)
-		(property "MPN" "RC0603JR-07150RL"
+		(property "MPN" "RC0603FR-07150RL"
 			(at 31.75 45.72 0)
 			(effects
 				(font

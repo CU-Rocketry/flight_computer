@@ -1962,6 +1962,14 @@
 				(hide yes)
 			)
 		)
+		(property "MPN" "BUK9K25-40RAX"
+			(at 151.13 139.7 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+			)
+		)
 		(pin "4"
 			(uuid "8765b795-45fd-4ef1-837d-7b2483adc306")
 		)
@@ -2073,7 +2081,7 @@
 				)
 			)
 		)
-		(property "Value" "10K"
+		(property "Value" "10k"
 			(at 66.04 78.2909 90)
 			(effects
 				(font
@@ -2106,6 +2114,14 @@
 					(size 1.27 1.27)
 				)
 				(hide yes)
+			)
+		)
+		(property "MPN" "RC0603FR-0710KL"
+			(at 66.04 81.28 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
 			)
 		)
 		(pin "1"
@@ -2141,7 +2157,7 @@
 				)
 			)
 		)
-		(property "Value" "PYRO"
+		(property "Value" "TB0011-350-02GR"
 			(at 52.07 116.84 0)
 			(effects
 				(font
@@ -2174,6 +2190,14 @@
 					(size 1.27 1.27)
 				)
 				(hide yes)
+			)
+		)
+		(property "MPN" "TB0011-350-02GR"
+			(at 52.07 110.49 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
 			)
 		)
 		(pin "1"
@@ -2210,7 +2234,7 @@
 				(justify left)
 			)
 		)
-		(property "Value" "10K"
+		(property "Value" "10k"
 			(at 166.37 134.6199 0)
 			(effects
 				(font
@@ -2244,6 +2268,14 @@
 					(size 1.27 1.27)
 				)
 				(hide yes)
+			)
+		)
+		(property "MPN" "RC0603FR-0710KL"
+			(at 163.83 133.35 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
 			)
 		)
 		(pin "1"
@@ -2313,6 +2345,14 @@
 					(size 1.27 1.27)
 				)
 				(hide yes)
+			)
+		)
+		(property "MPN" "BUK9K25-40RAX"
+			(at 74.93 140.97 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
 			)
 		)
 		(pin "4"
@@ -2462,6 +2502,14 @@
 				(hide yes)
 			)
 		)
+		(property "MPN" "BUK9K25-40RAX"
+			(at 74.93 69.85 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+			)
+		)
 		(pin "4"
 			(uuid "8765b795-45fd-4ef1-837d-7b2483adc305")
 		)
@@ -2508,7 +2556,7 @@
 				(justify left)
 			)
 		)
-		(property "Value" "10K"
+		(property "Value" "10k"
 			(at 90.17 64.7699 0)
 			(effects
 				(font
@@ -2542,6 +2590,14 @@
 					(size 1.27 1.27)
 				)
 				(hide yes)
+			)
+		)
+		(property "MPN" "RC0603FR-0710KL"
+			(at 87.63 63.5 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
 			)
 		)
 		(pin "1"
@@ -2578,7 +2634,7 @@
 				(justify left)
 			)
 		)
-		(property "Value" "10K"
+		(property "Value" "10k"
 			(at 90.17 135.8899 0)
 			(effects
 				(font
@@ -2612,6 +2668,14 @@
 					(size 1.27 1.27)
 				)
 				(hide yes)
+			)
+		)
+		(property "MPN" "RC0603FR-0710KL"
+			(at 87.63 134.62 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
 			)
 		)
 		(pin "1"
@@ -2682,6 +2746,14 @@
 					(size 1.27 1.27)
 				)
 				(hide yes)
+			)
+		)
+		(property "MPN" "RC0603FR-073KL"
+			(at 87.63 144.78 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
 			)
 		)
 		(pin "1"
@@ -2884,6 +2956,14 @@
 				(hide yes)
 			)
 		)
+		(property "MPN" "RC0603FR-072K2L"
+			(at 127 139.7 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+			)
+		)
 		(pin "1"
 			(uuid "dd6951f8-2bbd-493f-b7c8-e06ff750f042")
 		)
@@ -2952,6 +3032,14 @@
 					(size 1.27 1.27)
 				)
 				(hide yes)
+			)
+		)
+		(property "MPN" "RC0603FR-073KL"
+			(at 163.83 74.93 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
 			)
 		)
 		(pin "1"
@@ -3053,7 +3141,7 @@
 				)
 			)
 		)
-		(property "Value" "10K"
+		(property "Value" "10k"
 			(at 142.24 148.1409 90)
 			(effects
 				(font
@@ -3086,6 +3174,14 @@
 					(size 1.27 1.27)
 				)
 				(hide yes)
+			)
+		)
+		(property "MPN" "RC0603FR-0710KL"
+			(at 142.24 151.13 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
 			)
 		)
 		(pin "1"
@@ -3156,6 +3252,14 @@
 				(hide yes)
 			)
 		)
+		(property "MPN" "RC0603FR-072K2L"
+			(at 50.8 69.85 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+			)
+		)
 		(pin "1"
 			(uuid "93998ba0-a8ef-44f7-a786-bebd3cc83809")
 		)
@@ -3189,7 +3293,7 @@
 				)
 			)
 		)
-		(property "Value" "10K"
+		(property "Value" "10k"
 			(at 142.24 79.5609 90)
 			(effects
 				(font
@@ -3222,6 +3326,14 @@
 					(size 1.27 1.27)
 				)
 				(hide yes)
+			)
+		)
+		(property "MPN" "RC0603FR-0710KL"
+			(at 142.24 82.55 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
 			)
 		)
 		(pin "1"
@@ -3257,7 +3369,7 @@
 				)
 			)
 		)
-		(property "Value" "PYRO"
+		(property "Value" "TB0011-350-02GR"
 			(at 49.53 49.53 0)
 			(effects
 				(font
@@ -3290,6 +3402,14 @@
 					(size 1.27 1.27)
 				)
 				(hide yes)
+			)
+		)
+		(property "MPN" "TB0011-350-02GR"
+			(at 49.53 43.18 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
 			)
 		)
 		(pin "1"
@@ -3360,6 +3480,14 @@
 				(hide yes)
 			)
 		)
+		(property "MPN" "RC0603FR-072K2L"
+			(at 127 71.12 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+			)
+		)
 		(pin "1"
 			(uuid "ee5f49f7-0c23-4409-9002-abc0796430d7")
 		)
@@ -3393,7 +3521,7 @@
 				)
 			)
 		)
-		(property "Value" "PYRO"
+		(property "Value" "TB0011-350-02GR"
 			(at 127 116.84 0)
 			(effects
 				(font
@@ -3426,6 +3554,14 @@
 					(size 1.27 1.27)
 				)
 				(hide yes)
+			)
+		)
+		(property "MPN" "TB0011-350-02GR"
+			(at 127 110.49 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
 			)
 		)
 		(pin "1"
@@ -3528,7 +3664,7 @@
 				(justify left)
 			)
 		)
-		(property "Value" "10K"
+		(property "Value" "10k"
 			(at 166.37 66.0399 0)
 			(effects
 				(font
@@ -3562,6 +3698,14 @@
 					(size 1.27 1.27)
 				)
 				(hide yes)
+			)
+		)
+		(property "MPN" "RC0603FR-0710KL"
+			(at 163.83 64.77 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
 			)
 		)
 		(pin "1"
@@ -3700,6 +3844,14 @@
 				(hide yes)
 			)
 		)
+		(property "MPN" "RC0603FR-073KL"
+			(at 163.83 143.51 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+			)
+		)
 		(pin "1"
 			(uuid "6f5a67ea-bf18-437d-aa11-8ecd41693394")
 		)
@@ -3799,7 +3951,7 @@
 				)
 			)
 		)
-		(property "Value" "PYRO"
+		(property "Value" "TB0011-350-02GR"
 			(at 125.73 50.8 0)
 			(effects
 				(font
@@ -3832,6 +3984,14 @@
 					(size 1.27 1.27)
 				)
 				(hide yes)
+			)
+		)
+		(property "MPN" "TB0011-350-02GR"
+			(at 125.73 44.45 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
 			)
 		)
 		(pin "1"
@@ -3904,6 +4064,14 @@
 				(hide yes)
 			)
 		)
+		(property "MPN" "RC0603FR-073KL"
+			(at 87.63 73.66 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+			)
+		)
 		(pin "1"
 			(uuid "90c53d30-7e50-49b7-b445-8a1f5802e6ab")
 		)
@@ -3970,6 +4138,14 @@
 					(size 1.27 1.27)
 				)
 				(hide yes)
+			)
+		)
+		(property "MPN" "RC0603FR-072K2L"
+			(at 50.8 140.97 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
 			)
 		)
 		(pin "1"
@@ -4041,6 +4217,14 @@
 				(hide yes)
 			)
 		)
+		(property "MPN" "BUK9K25-40RAX"
+			(at 151.13 71.12 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+			)
+		)
 		(pin "4"
 			(uuid "0a7011fd-8680-4c3a-b302-b988499860a4")
 		)
@@ -4086,7 +4270,7 @@
 				)
 			)
 		)
-		(property "Value" "10K"
+		(property "Value" "10k"
 			(at 66.04 149.4109 90)
 			(effects
 				(font
@@ -4119,6 +4303,14 @@
 					(size 1.27 1.27)
 				)
 				(hide yes)
+			)
+		)
+		(property "MPN" "RC0603FR-0710KL"
+			(at 66.04 152.4 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
 			)
 		)
 		(pin "1"
