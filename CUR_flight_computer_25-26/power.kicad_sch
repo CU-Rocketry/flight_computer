@@ -1143,7 +1143,7 @@
 					)
 				)
 			)
-			(property "Footprint" "Package_DFN_QFN:DFN-6-1EP_1.2x1.2mm_P0.4mm_EP0.3x0.94mm_PullBack"
+			(property "Footprint" "XDFN8_1P6X1P2_onsemi:XDFN8_1P6X1P2_onsemi"
 				(at 0 0 0)
 				(effects
 					(font
@@ -1235,7 +1235,7 @@
 						)
 					)
 				)
-				(pin no_connect line
+				(pin passive line
 					(at 0 -10.16 90)
 					(length 2.54)
 					(hide yes)
@@ -3244,7 +3244,7 @@
 				)
 			)
 		)
-		(property "Footprint" "Package_DFN_QFN:DFN-6-1EP_1.2x1.2mm_P0.4mm_EP0.3x0.94mm_PullBack"
+		(property "Footprint" "XDFN8_1P6X1P2_onsemi:XDFN8_1P6X1P2_onsemi"
 			(at 114.3 168.91 0)
 			(effects
 				(font

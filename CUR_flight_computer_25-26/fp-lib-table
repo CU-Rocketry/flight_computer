@@ -20,4 +20,5 @@
   (lib (name "TestPoint_KOASpeer")(type "KiCad")(uri "${KIPRJMOD}/kicad-library/footprints/TestPoint_KOASpeer.pretty")(options "")(descr ""))
   (lib (name "ESDA7P120")(type "KiCad")(uri "${KIPRJMOD}/kicad-library/footprints/ESDA7P120.pretty")(options "")(descr ""))
   (lib (name "CUR")(type "KiCad")(uri "${KIPRJMOD}/kicad-library/footprints/CUR.pretty")(options "")(descr ""))
+  (lib (name "XDFN8_1P6X1P2_onsemi")(type "KiCad")(uri "${KIPRJMOD}/kicad-library/footprints/XDFN8_1P6X1P2_onsemi.pretty")(options "")(descr ""))
 )
