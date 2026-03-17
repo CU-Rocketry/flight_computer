@@ -3301,6 +3301,14 @@
 				(hide yes)
 			)
 		)
+		(property "MPN" "BAT54-7-F"
+			(at 40.64 48.26 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+			)
+		)
 		(pin "3"
 			(uuid "017eb835-c7e4-41c9-b36b-b938b77c8e67")
 		)
@@ -4714,6 +4722,14 @@
 				)
 				(justify bottom)
 				(hide yes)
+			)
+		)
+		(property "MPN" "CMT-7525-03-SMT-TR"
+			(at 57.15 41.91 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
 			)
 		)
 		(pin "2"

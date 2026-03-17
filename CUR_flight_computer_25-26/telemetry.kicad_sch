@@ -3026,6 +3026,14 @@
 				(hide yes)
 			)
 		)
+		(property "MPN" "C0603C105K4RACTU"
+			(at 63.5 36.83 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+			)
+		)
 		(pin "1"
 			(uuid "344ce95a-befa-445f-addf-b2e457b31db5")
 		)
@@ -3046,9 +3054,9 @@
 		(at 105.41 53.34 0)
 		(unit 1)
 		(exclude_from_sim no)
-		(in_bom yes)
+		(in_bom no)
 		(on_board yes)
-		(dnp no)
+		(dnp yes)
 		(fields_autoplaced yes)
 		(uuid "9de3261f-1535-49c5-9420-28e91ecdeaaa")
 		(property "Reference" "C26"
@@ -3060,7 +3068,7 @@
 				(justify left)
 			)
 		)
-		(property "Value" "C_Small"
+		(property "Value" "DNP"
 			(at 107.95 54.6162 0)
 			(effects
 				(font
@@ -3250,9 +3258,9 @@
 		(at 119.38 53.34 0)
 		(unit 1)
 		(exclude_from_sim no)
-		(in_bom yes)
+		(in_bom no)
 		(on_board yes)
-		(dnp no)
+		(dnp yes)
 		(fields_autoplaced yes)
 		(uuid "b29487cc-0c31-4169-9308-faf966949160")
 		(property "Reference" "C27"
@@ -3264,7 +3272,7 @@
 				(justify left)
 			)
 		)
-		(property "Value" "C_Small"
+		(property "Value" "DNP"
 			(at 121.92 54.6162 0)
 			(effects
 				(font
@@ -3651,7 +3659,7 @@
 				)
 			)
 		)
-		(property "Value" "Conn_Coaxial_Small"
+		(property "Value" "CON-SMA-EDGE-S"
 			(at 130.2904 45.72 0)
 			(effects
 				(font
@@ -3684,6 +3692,14 @@
 					(size 1.27 1.27)
 				)
 				(hide yes)
+			)
+		)
+		(property "MPN" "CON-SMA-EDGE-S"
+			(at 130.81 49.53 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
 			)
 		)
 		(pin "1"

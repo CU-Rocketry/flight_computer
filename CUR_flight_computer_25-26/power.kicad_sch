@@ -4792,6 +4792,14 @@
 				(hide yes)
 			)
 		)
+		(property "MPN" "C0603C105K4RACTU"
+			(at 139.7 176.53 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+			)
+		)
 		(pin "1"
 			(uuid "3a08d01d-e5e0-4f69-a423-9cc5727ef1d7")
 		)
@@ -5422,6 +5430,14 @@
 					(size 1.27 1.27)
 				)
 				(hide yes)
+			)
+		)
+		(property "MPN" "C0603C105K4RACTU"
+			(at 88.9 176.53 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
 			)
 		)
 		(pin "1"
