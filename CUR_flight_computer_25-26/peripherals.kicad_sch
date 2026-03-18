@@ -3489,17 +3489,15 @@
 	)
 	(symbol
 		(lib_id "Connector:Conn_01x04_Pin")
-		(at 176.53 38.1 0)
-		(mirror y)
+		(at 176.53 40.64 180)
 		(unit 1)
 		(exclude_from_sim no)
 		(in_bom no)
 		(on_board yes)
 		(dnp yes)
-		(fields_autoplaced yes)
 		(uuid "3b4f69f0-a675-4d18-baa3-f13b7c68fc53")
 		(property "Reference" "J13"
-			(at 177.8 38.0999 0)
+			(at 177.8 40.6401 0)
 			(effects
 				(font
 					(size 1.27 1.27)
@@ -3508,7 +3506,7 @@
 			)
 		)
 		(property "Value" "Conn_01x04_Pin"
-			(at 177.8 40.6399 0)
+			(at 177.8 38.1001 0)
 			(effects
 				(font
 					(size 1.27 1.27)
@@ -3517,7 +3515,7 @@
 			)
 		)
 		(property "Footprint" "Connector_PinHeader_2.54mm:PinHeader_1x04_P2.54mm_Vertical"
-			(at 176.53 38.1 0)
+			(at 176.53 40.64 0)
 			(effects
 				(font
 					(size 1.27 1.27)
@@ -3526,7 +3524,7 @@
 			)
 		)
 		(property "Datasheet" "~"
-			(at 176.53 38.1 0)
+			(at 176.53 40.64 0)
 			(effects
 				(font
 					(size 1.27 1.27)
@@ -3535,7 +3533,7 @@
 			)
 		)
 		(property "Description" "Generic connector, single row, 01x04, script generated"
-			(at 176.53 38.1 0)
+			(at 176.53 40.64 0)
 			(effects
 				(font
 					(size 1.27 1.27)
@@ -3544,7 +3542,7 @@
 			)
 		)
 		(property "MPN" "PinHeader_2.54mm"
-			(at 176.53 38.1 0)
+			(at 176.53 40.64 0)
 			(effects
 				(font
 					(size 1.27 1.27)
