@@ -4597,6 +4597,16 @@
 	)
 	(wire
 		(pts
+			(xy 119.38 101.6) (xy 123.19 101.6)
+		)
+		(stroke
+			(width 0)
+			(type default)
+		)
+		(uuid "033e8194-a98c-43b5-83e0-e96b9364cfc2")
+	)
+	(wire
+		(pts
 			(xy 189.23 60.96) (xy 184.15 60.96)
 		)
 		(stroke
@@ -5284,6 +5294,16 @@
 			(type default)
 		)
 		(uuid "603624ab-1418-40a8-9954-ed951876e2d2")
+	)
+	(wire
+		(pts
+			(xy 119.38 119.38) (xy 123.19 119.38)
+		)
+		(stroke
+			(width 0)
+			(type default)
+		)
+		(uuid "616ce2eb-c664-465b-9f5a-2ba7706a1aa8")
 	)
 	(wire
 		(pts
@@ -7153,6 +7173,17 @@
 			(justify left)
 		)
 		(uuid "f1ca5dd3-17e2-4405-b38b-161596d2031d")
+	)
+	(hierarchical_label "SD_DET"
+		(shape input)
+		(at 119.38 101.6 180)
+		(effects
+			(font
+				(size 1.27 1.27)
+			)
+			(justify right)
+		)
+		(uuid "f47a00ae-0127-434c-b601-f8aad8a167a5")
 	)
 	(hierarchical_label "SENSORS_MOSI"
 		(shape output)
