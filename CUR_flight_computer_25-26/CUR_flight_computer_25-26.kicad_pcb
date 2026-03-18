@@ -1136,7 +1136,7 @@
 		(at 64.5 67)
 		(descr "Test Point Chip 0603 (1.6mmx0.8mm) RCU RC")
 		(tags "Test Point Chip 0603 (1.6mmx0.8mm) RCU RC")
-		(property "Reference" "TP34"
+		(property "Reference" "RST"
 			(at 0 1.5 0)
 			(unlocked yes)
 			(layer "F.SilkS")
@@ -2399,7 +2399,7 @@
 		(at 61.95 97.100001 -90)
 		(descr "Test Point Chip 0603 (1.6mmx0.8mm) RCU RC")
 		(tags "Test Point Chip 0603 (1.6mmx0.8mm) RCU RC")
-		(property "Reference" "TP11"
+		(property "Reference" "INT2"
 			(at -3.000001 0 270)
 			(unlocked yes)
 			(layer "F.SilkS")
@@ -3416,7 +3416,7 @@
 		(at 58.5 104.25 -90)
 		(descr "Test Point Chip 0603 (1.6mmx0.8mm) RCU RC")
 		(tags "Test Point Chip 0603 (1.6mmx0.8mm) RCU RC")
-		(property "Reference" "TP40"
+		(property "Reference" "GND"
 			(at 3.25 0.2 270)
 			(unlocked yes)
 			(layer "F.SilkS")
@@ -3556,7 +3556,7 @@
 		(at 80.25 75 -90)
 		(descr "Test Point Chip 0603 (1.6mmx0.8mm) RCU RC")
 		(tags "Test Point Chip 0603 (1.6mmx0.8mm) RCU RC")
-		(property "Reference" "TP24"
+		(property "Reference" "MISO"
 			(at 3.1 0 270)
 			(unlocked yes)
 			(layer "F.SilkS")
@@ -4204,7 +4204,7 @@
 		(at 88 63 90)
 		(descr "Test Point Chip 0603 (1.6mmx0.8mm) RCU RC")
 		(tags "Test Point Chip 0603 (1.6mmx0.8mm) RCU RC")
-		(property "Reference" "TP41"
+		(property "Reference" "IO3"
 			(at 0.05 1.35 270)
 			(unlocked yes)
 			(layer "F.SilkS")
@@ -4347,6 +4347,7 @@
 			(at 0 -2 90)
 			(unlocked yes)
 			(layer "F.SilkS")
+			(hide yes)
 			(uuid "27ab01af-888f-49af-b26f-82468c89acf8")
 			(effects
 				(font
@@ -5974,7 +5975,7 @@
 		(at 67.5 67)
 		(descr "Test Point Chip 0603 (1.6mmx0.8mm) RCU RC")
 		(tags "Test Point Chip 0603 (1.6mmx0.8mm) RCU RC")
-		(property "Reference" "TP32"
+		(property "Reference" "INT"
 			(at 0 1.5 0)
 			(unlocked yes)
 			(layer "F.SilkS")
@@ -7165,7 +7166,7 @@
 		(at 63.3 103.65 180)
 		(descr "Test Point Chip 0603 (1.6mmx0.8mm) RCU RC")
 		(tags "Test Point Chip 0603 (1.6mmx0.8mm) RCU RC")
-		(property "Reference" "TP10"
+		(property "Reference" "INT1"
 			(at -2.9 -0.05 0)
 			(unlocked yes)
 			(layer "F.SilkS")
@@ -7305,7 +7306,7 @@
 		(at 65 77.75 180)
 		(descr "Test Point Chip 0603 (1.6mmx0.8mm) RCU RC")
 		(tags "Test Point Chip 0603 (1.6mmx0.8mm) RCU RC")
-		(property "Reference" "TP14"
+		(property "Reference" "CS"
 			(at 0 -1.5 0)
 			(unlocked yes)
 			(layer "F.SilkS")
@@ -8180,7 +8181,7 @@
 		(at 67.5 76.499999 90)
 		(descr "Test Point Chip 0603 (1.6mmx0.8mm) RCU RC")
 		(tags "Test Point Chip 0603 (1.6mmx0.8mm) RCU RC")
-		(property "Reference" "TP13"
+		(property "Reference" "DATA"
 			(at 0 1.5 270)
 			(unlocked yes)
 			(layer "F.SilkS")
@@ -9031,7 +9032,7 @@
 		(at 81.75 75.000001 -90)
 		(descr "Test Point Chip 0603 (1.6mmx0.8mm) RCU RC")
 		(tags "Test Point Chip 0603 (1.6mmx0.8mm) RCU RC")
-		(property "Reference" "TP25"
+		(property "Reference" "MOSI"
 			(at 3.099999 0.05 270)
 			(unlocked yes)
 			(layer "F.SilkS")
@@ -9171,7 +9172,7 @@
 		(at 83.25 75.000001 -90)
 		(descr "Test Point Chip 0603 (1.6mmx0.8mm) RCU RC")
 		(tags "Test Point Chip 0603 (1.6mmx0.8mm) RCU RC")
-		(property "Reference" "TP27"
+		(property "Reference" "CS"
 			(at 2.299999 0 270)
 			(unlocked yes)
 			(layer "F.SilkS")
@@ -10120,7 +10121,7 @@
 		(at 55.95 53.05 -90)
 		(descr "Test Point Chip 0603 (1.6mmx0.8mm) RCU RC")
 		(tags "Test Point Chip 0603 (1.6mmx0.8mm) RCU RC")
-		(property "Reference" "TP38"
+		(property "Reference" "SDA"
 			(at -2.1 0.35 0)
 			(unlocked yes)
 			(layer "F.SilkS")
@@ -10260,7 +10261,7 @@
 		(at 55.95 55.75 -90)
 		(descr "Test Point Chip 0603 (1.6mmx0.8mm) RCU RC")
 		(tags "Test Point Chip 0603 (1.6mmx0.8mm) RCU RC")
-		(property "Reference" "TP39"
+		(property "Reference" "SCL"
 			(at -0.3 1.5 270)
 			(unlocked yes)
 			(layer "F.SilkS")
@@ -11566,7 +11567,7 @@
 		(at 56 58.5 90)
 		(descr "Test Point Chip 0603 (1.6mmx0.8mm) RCU RC")
 		(tags "Test Point Chip 0603 (1.6mmx0.8mm) RCU RC")
-		(property "Reference" "TP36"
+		(property "Reference" "RX"
 			(at 0 -1.55 270)
 			(unlocked yes)
 			(layer "F.SilkS")
@@ -13115,7 +13116,7 @@
 		(at 67.5 70.5 90)
 		(descr "Test Point Chip 0603 (1.6mmx0.8mm) RCU RC")
 		(tags "Test Point Chip 0603 (1.6mmx0.8mm) RCU RC")
-		(property "Reference" "TP15"
+		(property "Reference" "INT"
 			(at -0.4 1.3 270)
 			(unlocked yes)
 			(layer "F.SilkS")
@@ -14409,7 +14410,7 @@
 		(at 58.75 97.1 90)
 		(descr "Test Point Chip 0603 (1.6mmx0.8mm) RCU RC")
 		(tags "Test Point Chip 0603 (1.6mmx0.8mm) RCU RC")
-		(property "Reference" "TP6"
+		(property "Reference" "CS"
 			(at 2.3 -0.1 270)
 			(unlocked yes)
 			(layer "F.SilkS")
@@ -14786,7 +14787,7 @@
 		(at 84.749999 74.999999 -90)
 		(descr "Test Point Chip 0603 (1.6mmx0.8mm) RCU RC")
 		(tags "Test Point Chip 0603 (1.6mmx0.8mm) RCU RC")
-		(property "Reference" "TP26"
+		(property "Reference" "SCK"
 			(at 2.850001 0.049999 270)
 			(unlocked yes)
 			(layer "F.SilkS")
@@ -15509,7 +15510,7 @@
 		(at 75.75 75 -90)
 		(descr "Test Point Chip 0603 (1.6mmx0.8mm) RCU RC")
 		(tags "Test Point Chip 0603 (1.6mmx0.8mm) RCU RC")
-		(property "Reference" "TP29"
+		(property "Reference" "TXEN"
 			(at 3.2 0.3 270)
 			(unlocked yes)
 			(layer "F.SilkS")
@@ -16123,7 +16124,7 @@
 		(at 56 61.5 90)
 		(descr "Test Point Chip 0603 (1.6mmx0.8mm) RCU RC")
 		(tags "Test Point Chip 0603 (1.6mmx0.8mm) RCU RC")
-		(property "Reference" "TP35"
+		(property "Reference" "TX"
 			(at 0.05 -1.55 270)
 			(unlocked yes)
 			(layer "F.SilkS")
@@ -18005,7 +18006,7 @@
 		(at 58.5 67)
 		(descr "Test Point Chip 0603 (1.6mmx0.8mm) RCU RC")
 		(tags "Test Point Chip 0603 (1.6mmx0.8mm) RCU RC")
-		(property "Reference" "TP33"
+		(property "Reference" "TP"
 			(at -2.25 0.05 0)
 			(unlocked yes)
 			(layer "F.SilkS")
@@ -21069,7 +21070,7 @@
 		(at 88.000001 69 90)
 		(descr "Test Point Chip 0603 (1.6mmx0.8mm) RCU RC")
 		(tags "Test Point Chip 0603 (1.6mmx0.8mm) RCU RC")
-		(property "Reference" "TP30"
+		(property "Reference" "IO1"
 			(at 0 1.349999 270)
 			(unlocked yes)
 			(layer "F.SilkS")
@@ -21209,7 +21210,7 @@
 		(at 77.25 74.999998 -90)
 		(descr "Test Point Chip 0603 (1.6mmx0.8mm) RCU RC")
 		(tags "Test Point Chip 0603 (1.6mmx0.8mm) RCU RC")
-		(property "Reference" "TP28"
+		(property "Reference" "RXEN"
 			(at 3.200002 0.1 270)
 			(unlocked yes)
 			(layer "F.SilkS")
@@ -23697,7 +23698,7 @@
 		(at 78.75 75 -90)
 		(descr "Test Point Chip 0603 (1.6mmx0.8mm) RCU RC")
 		(tags "Test Point Chip 0603 (1.6mmx0.8mm) RCU RC")
-		(property "Reference" "TP22"
+		(property "Reference" "BUSY"
 			(at 3.2 0 270)
 			(unlocked yes)
 			(layer "F.SilkS")
@@ -27667,7 +27668,7 @@
 		(at 81.5 60.000001 90)
 		(descr "Test Point Chip 0603 (1.6mmx0.8mm) RCU RC")
 		(tags "Test Point Chip 0603 (1.6mmx0.8mm) RCU RC")
-		(property "Reference" "TP23"
+		(property "Reference" "RST"
 			(at 0.650001 -1.7 0)
 			(unlocked yes)
 			(layer "F.SilkS")
@@ -28518,7 +28519,7 @@
 		(at 60.2 104.25 90)
 		(descr "Test Point Chip 0603 (1.6mmx0.8mm) RCU RC")
 		(tags "Test Point Chip 0603 (1.6mmx0.8mm) RCU RC")
-		(property "Reference" "TP37"
+		(property "Reference" "3V3"
 			(at -3.35 0 270)
 			(unlocked yes)
 			(layer "F.SilkS")
@@ -29571,7 +29572,7 @@
 		(at 88 66 90)
 		(descr "Test Point Chip 0603 (1.6mmx0.8mm) RCU RC")
 		(tags "Test Point Chip 0603 (1.6mmx0.8mm) RCU RC")
-		(property "Reference" "TP31"
+		(property "Reference" "IO2"
 			(at 0.05 1.35 270)
 			(unlocked yes)
 			(layer "F.SilkS")
@@ -29711,7 +29712,7 @@
 		(at 62.699294 76.3 90)
 		(descr "Test Point Chip 0603 (1.6mmx0.8mm) RCU RC")
 		(tags "Test Point Chip 0603 (1.6mmx0.8mm) RCU RC")
-		(property "Reference" "TP12"
+		(property "Reference" "CLK"
 			(at 0 -1.549294 270)
 			(unlocked yes)
 			(layer "F.SilkS")
@@ -33372,7 +33373,7 @@
 		(at 80.4 104.5 -90)
 		(descr "Test Point Chip 0603 (1.6mmx0.8mm) RCU RC")
 		(tags "Test Point Chip 0603 (1.6mmx0.8mm) RCU RC")
-		(property "Reference" "TP16"
+		(property "Reference" "CLK"
 			(at 2 -0.55 0)
 			(unlocked yes)
 			(layer "B.SilkS")
@@ -33518,7 +33519,7 @@
 		(at 78.9 104.5 90)
 		(descr "Test Point Chip 0603 (1.6mmx0.8mm) RCU RC")
 		(tags "Test Point Chip 0603 (1.6mmx0.8mm) RCU RC")
-		(property "Reference" "TP20"
+		(property "Reference" "IO3"
 			(at -2 -0.65 0)
 			(unlocked yes)
 			(layer "B.SilkS")
@@ -33664,7 +33665,7 @@
 		(at 73.749999 105.35 90)
 		(descr "Test Point Chip 0603 (1.6mmx0.8mm) RCU RC")
 		(tags "Test Point Chip 0603 (1.6mmx0.8mm) RCU RC")
-		(property "Reference" "TP5"
+		(property "Reference" "INT"
 			(at -1.9 -0.799999 0)
 			(unlocked yes)
 			(layer "B.SilkS")
@@ -35592,7 +35593,7 @@
 		(at 62.85 98.75 45)
 		(descr "Test Point Chip 0603 (1.6mmx0.8mm) RCU RC")
 		(tags "Test Point Chip 0603 (1.6mmx0.8mm) RCU RC")
-		(property "Reference" "TP3"
+		(property "Reference" "SPC"
 			(at -2.722361 -0.035355 45)
 			(unlocked yes)
 			(layer "B.SilkS")
@@ -36966,7 +36967,7 @@
 		(at 75.3 105.35 90)
 		(descr "Test Point Chip 0603 (1.6mmx0.8mm) RCU RC")
 		(tags "Test Point Chip 0603 (1.6mmx0.8mm) RCU RC")
-		(property "Reference" "TP4"
+		(property "Reference" "CS"
 			(at -1.9 0.05 0)
 			(unlocked yes)
 			(layer "B.SilkS")
@@ -39053,7 +39054,7 @@
 		(at 78.4 92.275 -90)
 		(descr "Test Point Chip 0603 (1.6mmx0.8mm) RCU RC")
 		(tags "Test Point Chip 0603 (1.6mmx0.8mm) RCU RC")
-		(property "Reference" "TP18"
+		(property "Reference" "IO1"
 			(at -2.525001 0 90)
 			(unlocked yes)
 			(layer "B.SilkS")
@@ -40276,7 +40277,7 @@
 		(at 81.9 104.5 -90)
 		(descr "Test Point Chip 0603 (1.6mmx0.8mm) RCU RC")
 		(tags "Test Point Chip 0603 (1.6mmx0.8mm) RCU RC")
-		(property "Reference" "TP17"
+		(property "Reference" "IO0"
 			(at 0 -1.55 90)
 			(unlocked yes)
 			(layer "B.SilkS")
@@ -43200,7 +43201,7 @@
 		(at 80.1 92.274999 90)
 		(descr "Test Point Chip 0603 (1.6mmx0.8mm) RCU RC")
 		(tags "Test Point Chip 0603 (1.6mmx0.8mm) RCU RC")
-		(property "Reference" "TP19"
+		(property "Reference" "IO2"
 			(at 2.524999 0 90)
 			(unlocked yes)
 			(layer "B.SilkS")
@@ -43589,7 +43590,7 @@
 		(at 75.5 94.9 -90)
 		(descr "Test Point Chip 0603 (1.6mmx0.8mm) RCU RC")
 		(tags "Test Point Chip 0603 (1.6mmx0.8mm) RCU RC")
-		(property "Reference" "TP21"
+		(property "Reference" "CS"
 			(at 0.05 1.4 90)
 			(unlocked yes)
 			(layer "B.SilkS")
@@ -44818,7 +44819,7 @@
 		(at 60.6 96.45 45)
 		(descr "Test Point Chip 0603 (1.6mmx0.8mm) RCU RC")
 		(tags "Test Point Chip 0603 (1.6mmx0.8mm) RCU RC")
-		(property "Reference" "TP1"
+		(property "Reference" "MOSI"
 			(at -3.11127 -0.070711 45)
 			(unlocked yes)
 			(layer "B.SilkS")
@@ -45207,7 +45208,7 @@
 		(at 61.7 97.6 45)
 		(descr "Test Point Chip 0603 (1.6mmx0.8mm) RCU RC")
 		(tags "Test Point Chip 0603 (1.6mmx0.8mm) RCU RC")
-		(property "Reference" "TP2"
+		(property "Reference" "MISO"
 			(at -3.075914 0.035355 45)
 			(unlocked yes)
 			(layer "B.SilkS")
@@ -49549,6 +49550,14 @@
 		(uuid "0f723d5c-4279-4916-aaa3-1ec3b908b826")
 	)
 	(segment
+		(start 74.05 99.2)
+		(end 74.064999 99.2)
+		(width 0.5)
+		(layer "F.Cu")
+		(net 1)
+		(uuid "1012efa9-f02f-4255-8399-8e9d5d4084ef")
+	)
+	(segment
 		(start 62.65 109.25)
 		(end 63.26 109.25)
 		(width 0.3)
@@ -49989,6 +49998,14 @@
 		(uuid "6e6df86d-2128-4868-8782-017b51515f7a")
 	)
 	(segment
+		(start 74.329999 99.465)
+		(end 74.975 99.465)
+		(width 0.5)
+		(layer "F.Cu")
+		(net 1)
+		(uuid "73917e3d-cfd9-437f-ad41-0189652edef1")
+	)
+	(segment
 		(start 71.775 93.2)
 		(end 71.175 92.6)
 		(width 0.5)
@@ -50131,14 +50148,6 @@
 		(layer "F.Cu")
 		(net 1)
 		(uuid "9149754b-c10e-4240-8474-f58c6a3f74a7")
-	)
-	(segment
-		(start 74.315 99.465)
-		(end 74.975 99.465)
-		(width 0.5)
-		(layer "F.Cu")
-		(net 1)
-		(uuid "92509638-4fe1-48d3-92bf-23418fa9f949")
 	)
 	(segment
 		(start 64.144288 100.1)
@@ -50315,6 +50324,14 @@
 		(layer "F.Cu")
 		(net 1)
 		(uuid "be7ba2e0-55d2-41ee-8538-d58cc7dba3f0")
+	)
+	(segment
+		(start 74.064999 99.2)
+		(end 74.329999 99.465)
+		(width 0.5)
+		(layer "F.Cu")
+		(net 1)
+		(uuid "bfb4d6b6-bf36-42fd-bc7c-c316ba96b4e0")
 	)
 	(segment
 		(start 74.635 102.135)
@@ -50603,14 +50620,6 @@
 		(layer "F.Cu")
 		(net 1)
 		(uuid "ee4bc5ec-cd25-4be3-9ce8-054ddd334f5b")
-	)
-	(segment
-		(start 74.15 99.3)
-		(end 74.315 99.465)
-		(width 0.5)
-		(layer "F.Cu")
-		(net 1)
-		(uuid "f1146223-d339-4e8e-b691-24c8f0b962e3")
 	)
 	(segment
 		(start 71.9 93.2)
@@ -52324,7 +52333,7 @@
 		(uuid "9072a05a-d435-453a-af93-e259d3f5bb7c")
 	)
 	(via
-		(at 74.15 99.3)
+		(at 74.05 99.2)
 		(size 0.6)
 		(drill 0.3)
 		(layers "F.Cu" "B.Cu")
@@ -77154,46 +77163,6 @@
 		)
 	)
 	(zone
-		(net 1)
-		(net_name "GND")
-		(layer "F.Cu")
-		(uuid "7a259ed2-0bc5-4f85-aa53-0b9bb3930f68")
-		(name "$teardrop_padvia$")
-		(hatch none 0.1)
-		(priority 30238)
-		(attr
-			(teardrop
-				(type padvia)
-			)
-		)
-		(connect_pads yes
-			(clearance 0)
-		)
-		(min_thickness 0.0254)
-		(filled_areas_thickness no)
-		(fill yes
-			(thermal_gap 0.5)
-			(thermal_bridge_width 0.5)
-			(island_removal_mode 1)
-			(island_area_min 10)
-		)
-		(polygon
-			(pts
-				(xy 74.700133 99.215) (xy 74.603096 99.20988) (xy 74.534272 99.194042) (xy 74.446079 99.144166)
-				(xy 74.414554 99.120738) (xy 74.316671 99.050559) (xy 74.149 99.3) (xy 74.091473 99.594236) (xy 74.315253 99.652345)
-				(xy 74.33905 99.660045) (xy 74.484455 99.699488) (xy 74.576561 99.7109) (xy 74.700133 99.715)
-			)
-		)
-		(filled_polygon
-			(layer "F.Cu")
-			(pts
-				(xy 74.414554 99.120738) (xy 74.446079 99.144166) (xy 74.534272 99.194042) (xy 74.603096 99.20988)
-				(xy 74.700133 99.215) (xy 74.700133 99.715) (xy 74.576561 99.7109) (xy 74.484455 99.699488) (xy 74.33905 99.660045)
-				(xy 74.315253 99.652345) (xy 74.091473 99.594236) (xy 74.149 99.3) (xy 74.316671 99.050559)
-			)
-		)
-	)
-	(zone
 		(net 31)
 		(net_name "BATT_PYRO")
 		(layer "F.Cu")
@@ -79531,6 +79500,48 @@
 				(xy 82.149585 86.194456) (xy 82.198555 86.097791) (xy 82.198762 86.097404) (xy 82.213639 86.070703)
 				(xy 82.213638 86.070703) (xy 82.213643 86.070696) (xy 82.257449 85.964859) (xy 82.270307 85.895338)
 				(xy 82.27442 85.816849) (xy 82.278274 85.808769) (xy 82.2861 85.805764) (xy 82.513991 85.805764)
+			)
+		)
+	)
+	(zone
+		(net 1)
+		(net_name "GND")
+		(layer "F.Cu")
+		(uuid "a2d78cf6-8fd9-4dc1-9737-c1a7ec6324d6")
+		(name "$teardrop_padvia$")
+		(hatch none 0.1)
+		(priority 30000)
+		(attr
+			(teardrop
+				(type padvia)
+			)
+		)
+		(connect_pads yes
+			(clearance 0)
+		)
+		(min_thickness 0.0254)
+		(filled_areas_thickness no)
+		(fill yes
+			(thermal_gap 0.5)
+			(thermal_bridge_width 0.5)
+			(island_removal_mode 1)
+			(island_area_min 10)
+		)
+		(polygon
+			(pts
+				(xy 74.538863 99.215) (xy 74.481078 99.210215) (xy 74.437748 99.196724) (xy 74.382952 99.152334)
+				(xy 74.347862 99.098619) (xy 74.298901 99.025204) (xy 74.216671 98.950559) (xy 74.049 99.2) (xy 73.991473 99.494236)
+				(xy 74.069035 99.514364) (xy 74.131005 99.539202) (xy 74.234086 99.604219) (xy 74.247653 99.614528)
+				(xy 74.299995 99.652528) (xy 74.359487 99.684587) (xy 74.435865 99.706735) (xy 74.538863 99.715)
+			)
+		)
+		(filled_polygon
+			(layer "F.Cu")
+			(pts
+				(xy 74.538863 99.215) (xy 74.481078 99.210215) (xy 74.437748 99.196724) (xy 74.382952 99.152334)
+				(xy 74.347862 99.098619) (xy 74.298901 99.025204) (xy 74.216671 98.950559) (xy 74.049 99.2) (xy 73.991473 99.494236)
+				(xy 74.069035 99.514364) (xy 74.131005 99.539202) (xy 74.234086 99.604219) (xy 74.247653 99.614528)
+				(xy 74.299995 99.652528) (xy 74.359487 99.684587) (xy 74.435865 99.706735) (xy 74.538863 99.715)
 			)
 		)
 	)
@@ -112041,10 +112052,6 @@
 				(xy 59.646561 50.5005)
 			)
 		)
-	)
-	(group ""
-		(uuid "8b2da6ff-b953-4737-9120-559c6bd278a3")
-		(members "6c2e1b70-56ed-4f82-9b82-a84ad9a0d520")
 	)
 	(group ""
 		(uuid "283a5f43-0fb1-4510-ba6a-64dd0f47940d")
