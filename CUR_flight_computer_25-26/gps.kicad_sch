@@ -1465,6 +1465,12 @@
 		(uuid "0a1df093-7ee1-469e-8c82-78a67a5232b7")
 	)
 	(junction
+		(at 96.52 58.42)
+		(diameter 0)
+		(color 0 0 0 0)
+		(uuid "2d7a03fe-5f51-4859-8c5d-c7bc6b92a9b3")
+	)
+	(junction
 		(at 54.61 53.34)
 		(diameter 0)
 		(color 0 0 0 0)
@@ -1493,6 +1499,12 @@
 		(diameter 0)
 		(color 0 0 0 0)
 		(uuid "717c3964-616c-4e91-85c1-d8c42b5fa4d6")
+	)
+	(junction
+		(at 96.52 55.88)
+		(diameter 0)
+		(color 0 0 0 0)
+		(uuid "763b7973-31a9-4249-8c29-0d69b4f0ab50")
 	)
 	(junction
 		(at 72.39 30.48)
@@ -1682,6 +1694,16 @@
 	)
 	(wire
 		(pts
+			(xy 96.52 55.88) (xy 109.22 55.88)
+		)
+		(stroke
+			(width 0)
+			(type default)
+		)
+		(uuid "abf6c913-ba7b-4da0-b05d-02a0c2676e0f")
+	)
+	(wire
+		(pts
 			(xy 72.39 36.83) (xy 72.39 40.64)
 		)
 		(stroke
@@ -1750,6 +1772,16 @@
 		)
 		(uuid "fc02ae23-a607-4bf7-9cee-275356af1eb5")
 	)
+	(wire
+		(pts
+			(xy 96.52 58.42) (xy 109.22 58.42)
+		)
+		(stroke
+			(width 0)
+			(type default)
+		)
+		(uuid "fc556a1a-3f9a-433c-9593-0d988e665909")
+	)
 	(hierarchical_label "~{GPS_RESET}"
 		(shape input)
 		(at 45.72 58.42 180)
@@ -1783,6 +1815,17 @@
 		)
 		(uuid "64ca0118-58c9-42af-93d2-563fd74358cf")
 	)
+	(hierarchical_label "GPS_SDA"
+		(shape bidirectional)
+		(at 109.22 55.88 0)
+		(effects
+			(font
+				(size 1.27 1.27)
+			)
+			(justify left)
+		)
+		(uuid "662a84af-ba91-4286-9410-ea9c4d7be983")
+	)
 	(hierarchical_label "GPS_TP"
 		(shape output)
 		(at 45.72 53.34 180)
@@ -1793,6 +1836,17 @@
 			(justify right)
 		)
 		(uuid "8eb68d95-98be-442a-9ba5-44d0fc26abec")
+	)
+	(hierarchical_label "GPS_SCL"
+		(shape input)
+		(at 109.22 58.42 0)
+		(effects
+			(font
+				(size 1.27 1.27)
+			)
+			(justify left)
+		)
+		(uuid "da7b6d31-38d8-4e1f-b0ab-7d6205c73b0f")
 	)
 	(hierarchical_label "GPS_RX"
 		(shape output)
