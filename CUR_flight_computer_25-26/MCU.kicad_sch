@@ -7460,7 +7460,7 @@
 		(exclude_from_sim no)
 		(in_bom no)
 		(on_board yes)
-		(dnp no)
+		(dnp yes)
 		(fields_autoplaced yes)
 		(uuid "0eab04ff-eb09-4aeb-8c2d-23032bc37af8")
 		(property "Reference" "H4"
@@ -7506,6 +7506,14 @@
 					(size 1.27 1.27)
 				)
 				(hide yes)
+			)
+		)
+		(property "MPN" "MountingHole_2.2mm_M2"
+			(at 260.35 34.29 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
 			)
 		)
 		(instances
@@ -8025,7 +8033,7 @@
 		(exclude_from_sim no)
 		(in_bom no)
 		(on_board yes)
-		(dnp no)
+		(dnp yes)
 		(fields_autoplaced yes)
 		(uuid "47874032-3f8c-4fe7-89ad-44950979139f")
 		(property "Reference" "H3"
@@ -8071,6 +8079,14 @@
 					(size 1.27 1.27)
 				)
 				(hide yes)
+			)
+		)
+		(property "MPN" "MountingHole_2.2mm_M2"
+			(at 260.35 22.86 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
 			)
 		)
 		(instances
@@ -8168,7 +8184,7 @@
 		(exclude_from_sim no)
 		(in_bom no)
 		(on_board yes)
-		(dnp no)
+		(dnp yes)
 		(fields_autoplaced yes)
 		(uuid "4a9abc26-98f1-464a-9ff8-9bd6582e94d3")
 		(property "Reference" "H1"
@@ -8214,6 +8230,14 @@
 					(size 1.27 1.27)
 				)
 				(hide yes)
+			)
+		)
+		(property "MPN" "MountingHole_2.2mm_M2"
+			(at 237.49 22.86 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
 			)
 		)
 		(instances
@@ -10550,7 +10574,7 @@
 		(exclude_from_sim no)
 		(in_bom no)
 		(on_board yes)
-		(dnp no)
+		(dnp yes)
 		(fields_autoplaced yes)
 		(uuid "c80134b2-d1e0-4634-8bc4-3aae3c2e9d74")
 		(property "Reference" "H2"
@@ -10598,6 +10622,14 @@
 				(hide yes)
 			)
 		)
+		(property "MPN" "MountingHole_2.2mm_M2"
+			(at 237.49 34.29 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+			)
+		)
 		(instances
 			(project ""
 				(path "/bf7761cc-1b32-4d86-809c-5f027005229b/3b725c3b-9650-41e6-95bf-9087cc38f098"
@@ -10626,7 +10658,7 @@
 				(justify left)
 			)
 		)
-		(property "Value" "4.7u"
+		(property "Value" "10u"
 			(at 26.67 31.7562 0)
 			(effects
 				(font
@@ -10662,7 +10694,7 @@
 				(hide yes)
 			)
 		)
-		(property "MPN" "CL10A475KP8NNNC"
+		(property "MPN" "LMK107BBJ106MALT"
 			(at 24.13 30.48 0)
 			(effects
 				(font

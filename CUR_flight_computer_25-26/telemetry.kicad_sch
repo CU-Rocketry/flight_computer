@@ -3495,7 +3495,7 @@
 				(hide yes)
 			)
 		)
-		(property "MPN" "C0603C105K4RACTU"
+		(property "MPN" "LMK107BBJ106MALT"
 			(at 63.5 36.83 0)
 			(effects
 				(font
@@ -3572,6 +3572,14 @@
 					(size 1.27 1.27)
 				)
 				(hide yes)
+			)
+		)
+		(property "MPN" "DNP"
+			(at 105.41 53.34 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
 			)
 		)
 		(pin "2"
@@ -3794,6 +3802,14 @@
 					(size 1.27 1.27)
 				)
 				(hide yes)
+			)
+		)
+		(property "MPN" "DNP"
+			(at 119.38 53.34 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
 			)
 		)
 		(pin "1"

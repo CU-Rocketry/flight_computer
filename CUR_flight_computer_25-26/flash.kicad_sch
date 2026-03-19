@@ -3389,7 +3389,7 @@
 				(hide yes)
 			)
 		)
-		(property "MPN" "GRM188R61A106ME69D"
+		(property "MPN" "LMK107BBJ106MALT"
 			(at 106.68 111.76 0)
 			(effects
 				(font
@@ -4078,7 +4078,7 @@
 				)
 			)
 		)
-		(property "Value" "Micro_SD_Card_Det1"
+		(property "Value" "MSD-4-A"
 			(at 47.625 105.41 0)
 			(effects
 				(font
@@ -4111,6 +4111,14 @@
 					(size 1.27 1.27)
 				)
 				(hide yes)
+			)
+		)
+		(property "MPN" "MSD-4-A"
+			(at 48.26 124.46 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
 			)
 		)
 		(pin "5"

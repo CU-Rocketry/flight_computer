@@ -5007,7 +5007,7 @@
 				(justify left)
 			)
 		)
-		(property "Value" "4.7u"
+		(property "Value" "10u"
 			(at 49.53 69.8562 0)
 			(effects
 				(font
@@ -5043,7 +5043,7 @@
 				(hide yes)
 			)
 		)
-		(property "MPN" "CL10A475KP8NNNC"
+		(property "MPN" "LMK107BBJ106MALT"
 			(at 46.99 68.58 0)
 			(effects
 				(font
@@ -5776,7 +5776,7 @@
 				(hide yes)
 			)
 		)
-		(property "MPN" "GRM188R61A106ME69D"
+		(property "MPN" "LMK107BBJ106MALT"
 			(at 81.28 128.27 0)
 			(effects
 				(font
