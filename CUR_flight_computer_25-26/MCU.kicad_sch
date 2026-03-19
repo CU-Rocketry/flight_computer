@@ -4351,6 +4351,16 @@
 		)
 		(uuid "35d92280-37fe-4c0c-82cd-7e60560971de")
 	)
+	(text "or BLM18AG601SN1D"
+		(exclude_from_sim no)
+		(at 25.4 102.108 0)
+		(effects
+			(font
+				(size 1.27 1.27)
+			)
+		)
+		(uuid "5d2e922a-c13f-4a99-96df-54d21f684523")
+	)
 	(text "Reset Button"
 		(exclude_from_sim no)
 		(at 26.416 119.126 0)
@@ -8477,7 +8487,7 @@
 				)
 			)
 		)
-		(property "Value" "BLM18AG601SN1D"
+		(property "Value" "0"
 			(at 25.654 97.028 90)
 			(effects
 				(font
@@ -8512,7 +8522,7 @@
 				(hide yes)
 			)
 		)
-		(property "MPN" "BLM18AG601SN1D"
+		(property "MPN" "RC0603JR-070RL"
 			(at 26.67 93.98 0)
 			(effects
 				(font
