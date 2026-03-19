@@ -7610,7 +7610,7 @@
 				(justify left)
 			)
 		)
-		(property "Value" "100n"
+		(property "Value" "220n"
 			(at 49.53 100.3362 0)
 			(effects
 				(font
@@ -7646,7 +7646,7 @@
 				(hide yes)
 			)
 		)
-		(property "MPN" "C0603C104K4RACTU"
+		(property "MPN" "0603B224K250CT"
 			(at 46.99 99.06 0)
 			(effects
 				(font
@@ -7755,7 +7755,7 @@
 				(justify left)
 			)
 		)
-		(property "Value" "100n"
+		(property "Value" "220n"
 			(at 36.83 135.8962 0)
 			(effects
 				(font
@@ -7791,7 +7791,7 @@
 				(hide yes)
 			)
 		)
-		(property "MPN" "C0603C104K4RACTU"
+		(property "MPN" "0603B224K250CT"
 			(at 34.29 134.62 0)
 			(effects
 				(font
@@ -8117,7 +8117,7 @@
 				(justify left)
 			)
 		)
-		(property "Value" "100n"
+		(property "Value" "220n"
 			(at 38.1 66.0462 0)
 			(effects
 				(font
@@ -8153,7 +8153,7 @@
 				(hide yes)
 			)
 		)
-		(property "MPN" "C0603C104K4RACTU"
+		(property "MPN" "0603B224K250CT"
 			(at 35.56 64.77 0)
 			(effects
 				(font
@@ -9272,7 +9272,7 @@
 				(justify left)
 			)
 		)
-		(property "Value" "100n"
+		(property "Value" "220n"
 			(at 46.99 31.7562 0)
 			(effects
 				(font
@@ -9308,7 +9308,7 @@
 				(hide yes)
 			)
 		)
-		(property "MPN" "C0603C104K4RACTU"
+		(property "MPN" "0603B224K250CT"
 			(at 44.45 30.48 0)
 			(effects
 				(font
@@ -9482,7 +9482,7 @@
 				(justify left)
 			)
 		)
-		(property "Value" "100n"
+		(property "Value" "220n"
 			(at 55.88 31.7562 0)
 			(effects
 				(font
@@ -9518,7 +9518,7 @@
 				(hide yes)
 			)
 		)
-		(property "MPN" "C0603C104K4RACTU"
+		(property "MPN" "0603B224K250CT"
 			(at 53.34 30.48 0)
 			(effects
 				(font
@@ -10122,7 +10122,7 @@
 				(justify left)
 			)
 		)
-		(property "Value" "100n"
+		(property "Value" "220n"
 			(at 63.5 66.0462 0)
 			(effects
 				(font
@@ -10158,7 +10158,7 @@
 				(hide yes)
 			)
 		)
-		(property "MPN" "C0603C104K4RACTU"
+		(property "MPN" "0603B224K250CT"
 			(at 60.96 64.77 0)
 			(effects
 				(font
@@ -10428,7 +10428,7 @@
 				(justify left)
 			)
 		)
-		(property "Value" "100n"
+		(property "Value" "220n"
 			(at 96.52 52.0762 0)
 			(effects
 				(font
@@ -10464,7 +10464,7 @@
 				(hide yes)
 			)
 		)
-		(property "MPN" "C0603C104K4RACTU"
+		(property "MPN" "0603B224K250CT"
 			(at 99.06 50.8 0)
 			(effects
 				(font
@@ -10507,7 +10507,7 @@
 				(justify left)
 			)
 		)
-		(property "Value" "100n"
+		(property "Value" "220n"
 			(at 66.04 31.7562 0)
 			(effects
 				(font
@@ -10543,7 +10543,7 @@
 				(hide yes)
 			)
 		)
-		(property "MPN" "C0603C104K4RACTU"
+		(property "MPN" "0603B224K250CT"
 			(at 63.5 30.48 0)
 			(effects
 				(font
@@ -11079,7 +11079,7 @@
 				(justify left)
 			)
 		)
-		(property "Value" "100n"
+		(property "Value" "220n"
 			(at 36.83 31.7562 0)
 			(effects
 				(font
@@ -11115,7 +11115,7 @@
 				(hide yes)
 			)
 		)
-		(property "MPN" "C0603C104K4RACTU"
+		(property "MPN" "0603B224K250CT"
 			(at 34.29 30.48 0)
 			(effects
 				(font
@@ -11157,7 +11157,7 @@
 				(justify left)
 			)
 		)
-		(property "Value" "100n"
+		(property "Value" "220n"
 			(at 76.2 31.7562 0)
 			(effects
 				(font
@@ -11193,7 +11193,7 @@
 				(hide yes)
 			)
 		)
-		(property "MPN" "C0603C104K4RACTU"
+		(property "MPN" "0603B224K250CT"
 			(at 73.66 30.48 0)
 			(effects
 				(font
