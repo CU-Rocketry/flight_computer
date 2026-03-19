@@ -3180,7 +3180,7 @@
 				(hide yes)
 			)
 		)
-		(property "MPN" "RC0603FR-0722RL"
+		(property "MPN" "RC0603FR-0747RL"
 			(at 72.39 123.19 0)
 			(effects
 				(font
@@ -3923,7 +3923,7 @@
 				(hide yes)
 			)
 		)
-		(property "MPN" "RC0603FR-07150RL"
+		(property "MPN" "RC0603JR-07270RL"
 			(at 62.23 123.19 0)
 			(effects
 				(font
@@ -4001,7 +4001,7 @@
 				(hide yes)
 			)
 		)
-		(property "MPN" "RC0603FR-07150RL"
+		(property "MPN" "RC0603JR-07270RL"
 			(at 102.87 123.19 0)
 			(effects
 				(font
@@ -4209,7 +4209,7 @@
 				(hide yes)
 			)
 		)
-		(property "MPN" "RC0603FR-0722RL"
+		(property "MPN" "RC0603FR-0747RL"
 			(at 113.03 123.19 0)
 			(effects
 				(font
@@ -4433,7 +4433,7 @@
 				(hide yes)
 			)
 		)
-		(property "MPN" "RC0603FR-0722RL"
+		(property "MPN" "RC0603FR-0747RL"
 			(at 123.19 123.19 0)
 			(effects
 				(font
@@ -4643,7 +4643,7 @@
 				(hide yes)
 			)
 		)
-		(property "MPN" "RC0603FR-0722RL"
+		(property "MPN" "RC0603FR-0747RL"
 			(at 82.55 123.19 0)
 			(effects
 				(font
@@ -5075,7 +5075,7 @@
 				(hide yes)
 			)
 		)
-		(property "MPN" "RC0603FR-07150RL"
+		(property "MPN" "RC0603JR-07270RL"
 			(at 31.75 60.96 0)
 			(effects
 				(font
