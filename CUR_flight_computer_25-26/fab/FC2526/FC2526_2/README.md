@@ -4,6 +4,8 @@ I'm Sig, reaching out regarding a quote for the Clarkson University Rocketry Tea
 We currently do not have assembly capabilities for two-sided PCBs but are considering it in the near future.
 In the meantime, we are hoping to use our $3000 sponsorship from Sierra Circuits to offset the cost of Turnkey assembly!
 
+As a student team working within the bounds of your generous sponsorship, we are primarily price driven. We are also turnaround time driven though a 2-3 week turnaround time is acceptable for us.
+
 Board details:
 - 1.6 mm thickness.
 - 4 layer stackup. Controlled impedance would be great but we are looking to keep cost down to align with the sponsorship.
@@ -13,6 +15,15 @@ Board details:
 - No blind/buried/micro vias. No via in pad. No edge plating/castellated edges.
 - Tented vias (with soldermask) would be appreciated.
 - IPC6012 Revision F Class 1 is acceptable, Class 2 would be ideal if available at the same price.
+- Not ROHS, a leaded process is acceptable.
+- Flying probe test would be great although not necessary if significant additional cost is generated.
+- Sierra Circuits STD label on the PCB is acceptable and can be placed at your convenience.
+- Fiducial markers may also be placed at your convenience.
+
+Wash and flux:
+- LPS22 is water resistant but has 6x 20um holes for pressure sening
+- Water wash and clean flux is likely acceptable.
+- However, if pricing for no-clean flux and washing everything except the sensor (or with a protective membrane) is not significantly higher, we would like to consider this option.
 
 Through-hole:
 - Most components are SMD.
@@ -32,8 +43,8 @@ SMD:
 
 Component sourcing:
 - Digikey.
-- XT30 connectors and EBYTE LoRa module from LCSC and we can install ourselves if not possible.
-- STMicroelectronics LPS22 barometer out of stock currently at Digikey. Mouser has some remaining. LPS22HH/HB/DF are all acceptable, DF preferred.
+- XT30U-M and E22-400MM22S parts 1 week lead time is acceptable.
+- STMicroelectronics LPS22DFTR barometer substitutions LPS22HBTR or LPS22HHTR are acceptable.
 
 Based on your online fabrication quote tool, pricing seems to be the same for all prototyping quantities (e.g. 1, 3, 5, 10)
 when controlled for lead time. Is it possible to quote a longer lead time to lower cost for both fabrication and assembly?
