@@ -16,7 +16,7 @@ Board details:
 - Tented vias (with soldermask) would be appreciated.
 - IPC6012 Revision F Class 1 is acceptable, Class 2 would be ideal if available at the same price.
 - Not ROHS, a leaded process is acceptable.
-- Flying probe test would be great although not necessary if significant additional cost is generated.
+- Flying probe test is not necessary due to cost.
 - Sierra Circuits STD label on the PCB is acceptable and can be placed at your convenience.
 - Fiducial markers may also be placed at your convenience.
 
