@@ -3264,7 +3264,7 @@
 				(justify left)
 			)
 		)
-		(property "Value" "ESDA6V1SC5"
+		(property "Value" "ESDA5V3SC5"
 			(at 87.63 170.1799 0)
 			(effects
 				(font
@@ -4449,7 +4449,7 @@
 				(justify left)
 			)
 		)
-		(property "Value" "ESDA6V1SC5"
+		(property "Value" "ESDA5V3SC5"
 			(at 116.84 170.1799 0)
 			(effects
 				(font
