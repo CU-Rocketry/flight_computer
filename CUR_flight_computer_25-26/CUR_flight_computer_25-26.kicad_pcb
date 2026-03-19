@@ -138,7 +138,7 @@
 			(mirror no)
 			(drillshape 0)
 			(scaleselection 1)
-			(outputdirectory "fab/sierra/")
+			(outputdirectory "fab/FC2526/FC2526_2/drill/")
 		)
 	)
 	(net 0 "")
