@@ -3301,7 +3301,7 @@
 				(hide yes)
 			)
 		)
-		(property "MPN" "ESDA6V1SC5"
+		(property "MPN" "ESDA5V3SC5"
 			(at 78.74 168.91 0)
 			(effects
 				(font
@@ -4486,7 +4486,7 @@
 				(hide yes)
 			)
 		)
-		(property "MPN" "ESDA6V1SC5"
+		(property "MPN" "ESDA5V3SC5"
 			(at 107.95 168.91 0)
 			(effects
 				(font
