@@ -3257,7 +3257,7 @@
 				)
 			)
 		)
-		(property "Value" "2.2K"
+		(property "Value" "270"
 			(at 127 135.89 90)
 			(effects
 				(font
@@ -3556,7 +3556,7 @@
 				)
 			)
 		)
-		(property "Value" "2.2K"
+		(property "Value" "270"
 			(at 50.8 66.04 90)
 			(effects
 				(font
@@ -3851,7 +3851,7 @@
 				)
 			)
 		)
-		(property "Value" "2.2K"
+		(property "Value" "270"
 			(at 128.27 64.77 90)
 			(effects
 				(font
@@ -4517,7 +4517,7 @@
 				)
 			)
 		)
-		(property "Value" "2.2K"
+		(property "Value" "270"
 			(at 50.8 137.16 90)
 			(effects
 				(font
