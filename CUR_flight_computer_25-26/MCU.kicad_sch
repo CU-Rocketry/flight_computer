@@ -7966,7 +7966,7 @@
 				(justify left)
 			)
 		)
-		(property "Value" "1u"
+		(property "Value" "2.2u"
 			(at 27.94 66.0462 0)
 			(effects
 				(font
@@ -8002,7 +8002,7 @@
 				(hide yes)
 			)
 		)
-		(property "MPN" "C0603C105K4RACTU"
+		(property "MPN" "CL10B225KP8NNNC"
 			(at 25.4 64.77 0)
 			(effects
 				(font
@@ -8399,7 +8399,7 @@
 				(justify left)
 			)
 		)
-		(property "Value" "1u"
+		(property "Value" "2.2u"
 			(at 39.37 100.3362 0)
 			(effects
 				(font
@@ -8435,7 +8435,7 @@
 				(hide yes)
 			)
 		)
-		(property "MPN" "C0603C105K4RACTU"
+		(property "MPN" "CL10B225KP8NNNC"
 			(at 36.83 99.06 0)
 			(effects
 				(font
@@ -9596,7 +9596,7 @@
 				(hide yes)
 			)
 		)
-		(property "MPN" "TMK107ABJ225KA-T"
+		(property "MPN" "CL10B225KP8NNNC"
 			(at 96.52 152.4 0)
 			(effects
 				(font
@@ -10237,7 +10237,7 @@
 				(hide yes)
 			)
 		)
-		(property "MPN" "TMK107ABJ225KA-T"
+		(property "MPN" "CL10B225KP8NNNC"
 			(at 110.49 152.4 0)
 			(effects
 				(font

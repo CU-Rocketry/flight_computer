@@ -5391,7 +5391,7 @@
 				(justify right)
 			)
 		)
-		(property "Value" "1u"
+		(property "Value" "2.2u"
 			(at 149.86 100.3362 0)
 			(effects
 				(font
@@ -5427,7 +5427,7 @@
 				(hide yes)
 			)
 		)
-		(property "MPN" "C0603C105K4RACTU"
+		(property "MPN" "CL10B225KP8NNNC"
 			(at 152.4 99.06 0)
 			(effects
 				(font
@@ -6086,7 +6086,7 @@
 				(justify right)
 			)
 		)
-		(property "Value" "1u"
+		(property "Value" "2.2u"
 			(at 104.14 100.3362 0)
 			(effects
 				(font
@@ -6122,7 +6122,7 @@
 				(hide yes)
 			)
 		)
-		(property "MPN" "C0603C105K4RACTU"
+		(property "MPN" "CL10B225KP8NNNC"
 			(at 101.6 99.06 0)
 			(effects
 				(font

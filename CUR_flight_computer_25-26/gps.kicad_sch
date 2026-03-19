@@ -2525,7 +2525,7 @@
 				(justify left)
 			)
 		)
-		(property "Value" "1u"
+		(property "Value" "2.2u"
 			(at 59.69 35.5662 0)
 			(effects
 				(font
@@ -2561,7 +2561,7 @@
 				(hide yes)
 			)
 		)
-		(property "MPN" "C0603C105K4RACTU"
+		(property "MPN" "CL10B225KP8NNNC"
 			(at 57.15 34.29 0)
 			(effects
 				(font
