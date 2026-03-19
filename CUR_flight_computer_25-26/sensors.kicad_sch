@@ -2146,10 +2146,6 @@
 		(uuid "f179942b-a0b6-408a-88b6-66baf72076c2")
 	)
 	(no_connect
-		(at 180.34 81.28)
-		(uuid "1fe87a6d-625d-4e5e-9438-cb2647844a91")
-	)
-	(no_connect
 		(at 184.15 68.58)
 		(uuid "4abc0210-0de3-42d9-b7b0-f1de7608c751")
 	)
@@ -3570,7 +3566,7 @@
 				(hide yes)
 			)
 		)
-		(property "MPN" "LPS22DFTR"
+		(property "MPN" "LPS22HHTR"
 			(at 68.58 78.74 0)
 			(effects
 				(font
