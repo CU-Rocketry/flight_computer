@@ -657,7 +657,7 @@
       "idf": "",
       "netlist": "",
       "plot": "fab/FC2526/FC2526_2/gerbers/",
-      "pos_files": "fab/FC2526/FC2526_2/gerber/",
+      "pos_files": "fab/FC2526/FC2526_2_Turnkey/",
       "specctra_dsn": "",
       "step": "",
       "svg": "",

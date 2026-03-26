@@ -3790,7 +3790,7 @@
 				)
 			)
 		)
-		(property "Footprint" "XDFN8_1P6X1P2_onsemi:XDFN8_1P6X1P2_onsemi"
+		(property "Footprint" "Regulator_Linear_onsemi:NCP186_XDFN8_1.6x1.2mm_P0.4mm"
 			(at 127 91.44 0)
 			(effects
 				(font
