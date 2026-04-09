@@ -24,9 +24,9 @@ extern SPI_HandleTypeDef hspi3; // Magnetometer
 stmdev_ctx_t lps22hh_ctx;
 
 // setup chip select pins
-void spi_nss(SPI_HandleTypeDef handle, uint8_t level) {
-	if (handle.Instance == hspi2) {
-		HAL_GPIO_WritePin(BARO_CS_GPIO_Port, BARO_CS_Pin, level); //write pin to set level
+void spi_nss(SPI_HandleTypeDef handle, uint8_t level, stmdev_ctx_t device) {
+	if (handle.Instance == hspi2 && device.Instance == ) {
+		HAL_GPIO_WritePin(BARO_NSS_GPIO_Port, BARO_NSS_Pin, level);
 	}
 }
 
@@ -64,10 +64,7 @@ void baro_init() {
 	lps22hh_ctx.mdelay = platform_delay;
 	lps22hh_ctx.handle = &hspi2;
 
-//	lps22hh_pin_int_route_t int_route;
-	lps22hh_id_t id;
-
-
+	uint8_t id;
 
 	lps22hh_device_id_get(&lps22hh_ctx, &id);
 	if (id.whoami != LPS22HH_ID) {

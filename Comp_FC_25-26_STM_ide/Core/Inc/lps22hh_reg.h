@@ -480,12 +480,7 @@ int32_t lps22hh_fifo_pressure_raw_get(const stmdev_ctx_t *ctx,
 int32_t lps22hh_fifo_temperature_raw_get(const stmdev_ctx_t *ctx,
                                          int16_t *buff);
 
-typedef struct
-{
-  uint8_t whoami;
-} lps22hh_id_t;
-
-int32_t lps22hh_device_id_get(const stmdev_ctx_t *ctx, lps22hh_id_t *val);
+int32_t lps22hh_device_id_get(const stmdev_ctx_t *ctx, uint8_t *val);
 
 int32_t lps22hh_reset_set(const stmdev_ctx_t *ctx, uint8_t val);
 int32_t lps22hh_reset_get(const stmdev_ctx_t *ctx, uint8_t *val);
