@@ -14,9 +14,8 @@
 #include <stdio.h>
 
 // SPI handles
-extern SPI_HandleTypeDef hspi1; // Baro
-extern SPI_HandleTypeDef hspi2; // IMU
-extern SPI_HandleTypeDef hspi4; // Magnetometer
+extern SPI_HandleTypeDef hspi2; // IMU and Baro
+extern SPI_HandleTypeDef hspi3; // Magnetometer
 
 // ST drivers
 stmdev_ctx_t lps22hh_ctx;
@@ -64,12 +63,11 @@ void get_pres_hpa(float *out) {
 }
 
 void spi_nss(SPI_HandleTypeDef handle, uint8_t level) {
-	if (handle.Instance == hspi1) {
-		HAL_GPIO_WritePin(BARO_NSS_GPIO_Port, BARO_NSS_Pin, level);
-	} else if (handle.Instance == hspi2) {
-		HAL_GPIO_WritePin(IMU_NSS_GPIO_Port, IMU_NSS_Pin, level);
-	} else if (handle.Instance == hspi4) {
-		HAL_GPIO_WritePin(MAG_NSS_GPIO_Port, MAG_NSS_Pin, level);
+	if (handle.Instance == hspi2) {
+		HAL_GPIO_WritePin(BARO_CS_GPIO_Port, BARO_CS_Pin, level);
+		HAL_GPIO_WritePin(IMU_CS_GPIO_Port, IMU_CS_Pin, level);
+	} else if (handle.Instance == hspi3) {
+		HAL_GPIO_WritePin(MAG_CS_GPIO_Port, MAG_CS_Pin, level);
 	}
 }
 
@@ -151,60 +149,59 @@ void baro_init() {
 	lps22hh_ctx.write_reg = platform_write;
 	lps22hh_ctx.read_reg = platform_read;
 	lps22hh_ctx.mdelay = platform_delay;
-	lps22hh_ctx.handle = &hspi1;
+	lps22hh_ctx.handle = &hspi2;
 
 	lps22hh_pin_int_route_t int_route;
-	lps22hh_status_t status;
+	lps22hh_sim_t md_spi;
+	lps22hh_lpfp_cfg_t md_lpf;
+	lps22hh_odr_t md_odr;
 
-	typedef struct
-	{
-	  uint8_t whoami;
-
-	} lps22hh_id_t ;
-
-	lps22hh_id_t id;
+	uint8_t id;
 
 
 	lps22hh_device_id_get(&lps22hh_ctx, &id);
-	if (id.whoami != LPS22HH_ID) {
-		printf("LPS22HH whoami failed: %u, expected %u\r\n", id.whoami, LPS22HH_ID);
+	if (id != LPS22HH_ID) {
+		printf("LPS22HH whoami failed: %u, expected %u\r\n", id, LPS22HH_ID);
 		while (1);
 	}
 
-//	lps22hh_init_set(&lps22hh_ctx, LPS22HH_RESET);
-//	do {
-//		lps22hh_status_get(&lps22hh_ctx, &status);
-//	} while (status.sw_reset);
-//	printf("LPS22 reset success\r\n");
+	// restore default config
+	    lps22hh_reset_set(&lps22hh_ctx, 0);
+	    uint8_t rst = 0x1;
+	    while (rst)
+	    {
+	      lps22hh_reset_get(&lps22hh_ctx, &rst);
+	    }
+	    printf("LPS22 reset success\r\n");
 
-//	bus_mode.filter = LPS22HH_FILTER_AUTO;
-//	bus_mode.interface = LPS22HH_SPI_4W;
-//	lps22hh_bus_mode_set(&lps22hh_ctx, &bus_mode);
+	md_odr = LPS22HH_100_Hz;
+	md_lpf = LPS22HH_LPF_ODR_DIV_9;
 
-	md.odr = LPS22HH_100_Hz;
-	md.avg = LPS22HH_64_AVG;
-	md.lpf = LPS22HH_LPF_ODR_DIV_9;
-	lps22hh_mode_set(&lps22hh_ctx, &md);
+	lps22hh_spi_mode_set(&lps22hh_ctx, md_spi);
+	lps22hh_lp_bandwidth_set(&lps22hh_ctx, md_lpf);
+	lps22hh_data_rate_set(&lps22hh_ctx, md_odr);
+
+
 
 	// Enable DRDY routed on INT pin
 	lps22hh_pin_int_route_get(&lps22hh_ctx, &int_route);
 	int_route.drdy_pres = PROPERTY_ENABLE;
-	lps22hh_pin_int_route_set(&lps22hh_ctx, &int_route);
+	lps22hh_pin_int_route_set(&lps22hh_ctx, int_route);
 }
 
-//void imu_init() {
-//	// Setup IMU driver device context
-//	lsm6dsv80x_ctx.write_reg = platform_write;
-//	lsm6dsv80x_ctx.read_reg = platform_read;
-//	lsm6dsv80x_ctx.mdelay = platform_delay;
-//	lsm6dsv80x_ctx.handle = &hspi2;
-//}
-//
-//void mag_init() {
-//	// Setup magnetometer device driver context
-//	iis2mdc_ctx.write_reg = platform_write;
-//	iis2mdc_ctx.read_reg = platform_read;
-//	iis2mdc_ctx.mdelay = platform_delay;
-//	iis2mdc_ctx.handle = &hspi4;
-//}
+void imu_init() {
+	// Setup IMU driver device context
+	lsm6dsv80x_ctx.write_reg = platform_write;
+	lsm6dsv80x_ctx.read_reg = platform_read;
+	lsm6dsv80x_ctx.mdelay = platform_delay;
+	lsm6dsv80x_ctx.handle = &hspi2;
+}
+
+void mag_init() {
+	// Setup magnetometer device driver context
+	iis2mdc_ctx.write_reg = platform_write;
+	iis2mdc_ctx.read_reg = platform_read;
+	iis2mdc_ctx.mdelay = platform_delay;
+	iis2mdc_ctx.handle = &hspi3;
+}
 

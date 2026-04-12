@@ -1,4 +1,4 @@
-Core/Src/main.o: ../Core/Src/main.c ../Core/Inc/main.h \
+Core/Src/GNSS.o: ../Core/Src/GNSS.c ../Core/Inc/GNSS.h ../Core/Inc/main.h \
  ../Drivers/STM32H5xx_HAL_Driver/Inc/stm32h5xx_hal.h \
  ../Core/Inc/stm32h5xx_hal_conf.h \
  ../Drivers/STM32H5xx_HAL_Driver/Inc/stm32h5xx_hal_rcc.h \
@@ -41,9 +41,8 @@ Core/Src/main.o: ../Core/Src/main.c ../Core/Inc/main.h \
  ../Drivers/STM32H5xx_HAL_Driver/Inc/stm32h5xx_hal_pcd.h \
  ../Drivers/STM32H5xx_HAL_Driver/Inc/stm32h5xx_ll_usb.h \
  ../Drivers/STM32H5xx_HAL_Driver/Inc/stm32h5xx_hal_pcd_ex.h \
- ../Drivers/STM32H5xx_HAL_Driver/Inc/stm32h5xx_hal_exti.h \
- ../Core/Inc/rgb_led.h ../Core/Inc/buzzer.h ../Core/Inc/sensors.h \
- ../Core/Inc/GNSS.h ../Core/Inc/main.h ../Core/Src/GNSS.c
+ ../Drivers/STM32H5xx_HAL_Driver/Inc/stm32h5xx_hal_exti.h
+../Core/Inc/GNSS.h:
 ../Core/Inc/main.h:
 ../Drivers/STM32H5xx_HAL_Driver/Inc/stm32h5xx_hal.h:
 ../Core/Inc/stm32h5xx_hal_conf.h:
@@ -88,9 +87,3 @@ Core/Src/main.o: ../Core/Src/main.c ../Core/Inc/main.h \
 ../Drivers/STM32H5xx_HAL_Driver/Inc/stm32h5xx_ll_usb.h:
 ../Drivers/STM32H5xx_HAL_Driver/Inc/stm32h5xx_hal_pcd_ex.h:
 ../Drivers/STM32H5xx_HAL_Driver/Inc/stm32h5xx_hal_exti.h:
-../Core/Inc/rgb_led.h:
-../Core/Inc/buzzer.h:
-../Core/Inc/sensors.h:
-../Core/Inc/GNSS.h:
-../Core/Inc/main.h:
-../Core/Src/GNSS.c:

@@ -18,6 +18,14 @@
 /* USER CODE END Header */
 /* Includes ------------------------------------------------------------------*/
 #include "main.h"
+#include "rgb_led.h"
+#include "buzzer.h"
+#include "sensors.h"
+
+#include "GNSS.h"
+#include "GNSS.c"
+
+
 
 /* Private includes ----------------------------------------------------------*/
 /* USER CODE BEGIN Includes */
@@ -62,6 +70,24 @@ UART_HandleTypeDef huart5;
 PCD_HandleTypeDef hpcd_USB_DRD_FS;
 
 /* USER CODE BEGIN PV */
+rgb_led_t led1 = {
+    .handle = &htim1,
+    .channel_r = TIM_CHANNEL_3,
+    .channel_g = TIM_CHANNEL_2,
+    .channel_b = TIM_CHANNEL_1
+};
+rgb_led_t led2 = {
+    .handle = &htim2,
+    .channel_r = TIM_CHANNEL_1,
+    .channel_g = TIM_CHANNEL_2,
+    .channel_b = TIM_CHANNEL_3
+};
+buzzer_t buzzer = {
+    .handle = &htim3
+	.channel_buz = TIM_CHANNEL_2
+};
+// Control system tick
+uint8_t poll = 0;
 
 /* USER CODE END PV */
 
@@ -83,6 +109,12 @@ static void MX_TIM1_Init(void);
 static void MX_TIM2_Init(void);
 static void MX_TIM3_Init(void);
 /* USER CODE BEGIN PFP */
+// printf UART
+#define PUTCHAR_PROTOTYPE int __io_putchar(int ch)
+
+int32_t platform_write(void *handle, uint8_t reg, const uint8_t *bufp, uint16_t len, uint8_t device);
+int32_t platform_read(void *handle, uint8_t reg, uint8_t *bufp, uint16_t len, uint8_t device);
+void platform_delay(uint32_t millisec);
 
 /* USER CODE END PFP */
 
@@ -138,12 +170,64 @@ int main(void)
   MX_TIM3_Init();
   /* USER CODE BEGIN 2 */
 
+  rgb_led_init(&led1);
+  rgb_led_init(&led2);
+  rgb_led_set(&led1, 0x800000);
+  rgb_led_set(&led2, 0x000080);
+
+  buzzer_init(&buzzer);
+
+  printf("Hello, world!\r\n");
+
+  baro_init();
+
+  //GPS initialization
+  GNSS_Init(&GNSS_Handle, &huart4);
+  	HAL_Delay(1000);
+  	GNSS_LoadConfig(&GNSS_Handle);
+  	uint32_t Timer = HAL_GetTick();
+
   /* USER CODE END 2 */
 
   /* Infinite loop */
   /* USER CODE BEGIN WHILE */
   while (1)
   {
+	  if (poll) {
+	  		  poll = 0;
+
+	  //		  uint8_t mode = get_mode_switch();
+	  //		  printf("Mode: %u\r\n", mode);
+
+	  		  float pres;
+	  		  get_pres_hpa(&pres);
+	  		  printf("Pressure: %f\r\n", pres);
+	  }
+
+//implementing gps read example
+		if ((HAL_GetTick() - Timer) > 1000) {
+			GNSS_GetUniqID(&GNSS_Handle);
+			GNSS_ParseBuffer(&GNSS_Handle);
+			HAL_Delay(250);
+			GNSS_GetPVTData(&GNSS_Handle);
+			GNSS_ParseBuffer(&GNSS_Handle);
+         HAL_Delay(250);
+         GNSS_SetMode(&GNSS_Handle, Airbone4G);
+         HAL_Delay(250);
+			printf("Day: %d-%d-%d \r\n", GNSS_Handle.day, GNSS_Handle.month,GNSS_Handle.year);
+			printf("Time: %d:%d:%d \r\n", GNSS_Handle.hour, GNSS_Handle.min,GNSS_Handle.sec);
+			printf("Status of fix: %d \r\n", GNSS_Handle.fixType);
+			printf("Latitude: %d \r\n", GNSS_Handle.fLat);
+			printf("Longitude: %d \r\n", GNSS_Handle.lon / 10000000);
+			printf("Height above ellipsoid: %d \r\n", GNSS_Handle.height);
+			printf("Height above mean sea level: %d \r\n", GNSS_Handle.hMSL);
+			printf("Ground Speed (2-D): %d \r\n", GNSS_Handle.gSpeed);
+			printf("Unique ID: %04X %04X %04X %04X %04X \n\r",
+					GNSS_Handle.uniqueID[0], GNSS_Handle.uniqueID[1],
+					GNSS_Handle.uniqueID[2], GNSS_Handle.uniqueID[3],
+					GNSS_Handle.uniqueID[4], GNSS_Handle.uniqueID[5]);
+			Timer = HAL_GetTick();
+		}
     /* USER CODE END WHILE */
 
     /* USER CODE BEGIN 3 */
@@ -1006,7 +1090,48 @@ static void MX_GPIO_Init(void)
 }
 
 /* USER CODE BEGIN 4 */
+/**
+  * @brief  Retargets the C library printf function to the USART.
+  *   None
+  * @retval None
+  */
+PUTCHAR_PROTOTYPE
+{
+  /* Place your implementation of fputc here */
+  /* e.g. write a character to the USART1 and Loop until the end of transmission */
+  HAL_UART_Transmit(&huart4, (uint8_t *)&ch, 1, 0xFFFF);
 
+  return ch;
+}
+
+
+void HAL_GPIO_EXTI_Callback(uint16_t GPIO_Pin)
+{
+	if (GPIO_Pin == BARO_INT_Pin) {
+		baro_int_drdy_handler();
+	} else if(GPIO_Pin == IMU_INT1_Pin || GPIO_Pin == IMU_INT2_Pin) {
+		imu_int_drdy_handler();
+	} else if(GPIO_Pin == MAG_INT_Pin) {
+		mag_int_drdy_handler();
+	}
+}
+
+void HAL_SPI_TxRxCpltCallback(SPI_HandleTypeDef *hspi)
+{
+	if (hspi->Instance == SPI2) {
+		baro_spi_callback();
+	} else if (hspi->Instance == SPI2) {
+		imu_spi_callback();
+	} else if (hspi->Instance == SPI3) {
+		mag_spi_callback();
+	}
+}
+
+void HAL_TIM_PeriodElapsedCallback(TIM_HandleTypeDef *htim) {
+	if (htim->Instance == TIM7) { // 100 Hz
+		poll = 1;
+	}
+}
 /* USER CODE END 4 */
 
 /**

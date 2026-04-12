@@ -1,0 +1,1 @@
+../Core/Src/LoRa/sx126x_driver_version.c:72:13:sx126x_driver_version_get_version_string	4	static
