@@ -237,6 +237,11 @@ int main(void)
 		  buzzer_set(&buzzer, 0);
 	  }
 
+	  if (HAL_GPIO_ReadPin(BTN_2_GPIO_Port, BTN_2_Pin) == 1){
+		  buzzer_set(&buzzer, 1);
+	  } else { buzzer_set(&buzzer, 0);
+	  }
+
 
 
     /* USER CODE END WHILE */
