@@ -62,11 +62,11 @@ void get_pres_hpa(float *out) {
 	*out = pres_hpa;
 }
 
-void spi_nss(SPI_HandleTypeDef handle, uint8_t level) {
-	if (handle.Instance == hspi2) {
+void spi_nss(SPI_HandleTypeDef *handle, uint8_t level) {
+	if (handle->Instance == SPI2) {
 		HAL_GPIO_WritePin(BARO_CS_GPIO_Port, BARO_CS_Pin, level);
 		HAL_GPIO_WritePin(IMU_CS_GPIO_Port, IMU_CS_Pin, level);
-	} else if (handle.Instance == hspi3) {
+	} else if (handle->Instance == SPI3) {
 		HAL_GPIO_WritePin(MAG_CS_GPIO_Port, MAG_CS_Pin, level);
 	}
 }

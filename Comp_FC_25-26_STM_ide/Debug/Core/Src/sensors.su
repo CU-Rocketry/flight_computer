@@ -1,0 +1,16 @@
+../Core/Src/sensors.c:43:6:get_accel_ms2	16	static
+../Core/Src/sensors.c:49:6:get_omega_rads	16	static
+../Core/Src/sensors.c:55:6:get_mag_mgauss	16	static
+../Core/Src/sensors.c:61:6:get_pres_hpa	16	static
+../Core/Src/sensors.c:65:6:spi_nss	16	static
+../Core/Src/sensors.c:75:9:platform_write	32	static
+../Core/Src/sensors.c:86:9:platform_read	32	static
+../Core/Src/sensors.c:96:6:platform_delay	16	static
+../Core/Src/sensors.c:103:6:baro_int_drdy_handler	8	static
+../Core/Src/sensors.c:125:6:baro_spi_callback	8	static
+../Core/Src/sensors.c:130:6:imu_spi_callback	4	static
+../Core/Src/sensors.c:135:6:mag_spi_callback	4	static
+../Core/Src/sensors.c:139:6:sensors_init	8	static
+../Core/Src/sensors.c:147:6:baro_init	16	static
+../Core/Src/sensors.c:192:6:imu_init	4	static
+../Core/Src/sensors.c:200:6:mag_init	4	static
