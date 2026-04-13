@@ -13,7 +13,7 @@
 #include <string.h>
 #include <stdio.h>
 
-stmdev_ctx_t ebyte;
+const void* ebyte;
 
 void LoRa_init(){
 
@@ -23,6 +23,6 @@ void LoRa_init(){
  sx126x_pkt_type_t pkt;
  pkt = SX126X_PKT_TYPE_LORA;
 
-sx126x_set_pkt_type(ebyte, &pkt);
+sx126x_set_pkt_type(ebyte, pkt);
 
 }
