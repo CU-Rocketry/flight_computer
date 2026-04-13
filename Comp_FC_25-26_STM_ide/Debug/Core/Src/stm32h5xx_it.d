@@ -29,9 +29,6 @@ Core/Src/stm32h5xx_it.o: ../Core/Src/stm32h5xx_it.c ../Core/Inc/main.h \
  ../Drivers/STM32H5xx_HAL_Driver/Inc/stm32h5xx_hal_pwr_ex.h \
  ../Drivers/STM32H5xx_HAL_Driver/Inc/stm32h5xx_hal_xspi.h \
  ../Drivers/STM32H5xx_HAL_Driver/Inc/stm32h5xx_ll_dlyb.h \
- ../Drivers/STM32H5xx_HAL_Driver/Inc/stm32h5xx_hal_sd.h \
- ../Drivers/STM32H5xx_HAL_Driver/Inc/stm32h5xx_ll_sdmmc.h \
- ../Drivers/STM32H5xx_HAL_Driver/Inc/stm32h5xx_hal_sd_ex.h \
  ../Drivers/STM32H5xx_HAL_Driver/Inc/stm32h5xx_hal_spi.h \
  ../Drivers/STM32H5xx_HAL_Driver/Inc/stm32h5xx_hal_spi_ex.h \
  ../Drivers/STM32H5xx_HAL_Driver/Inc/stm32h5xx_hal_tim.h \
@@ -74,9 +71,6 @@ Core/Src/stm32h5xx_it.o: ../Core/Src/stm32h5xx_it.c ../Core/Inc/main.h \
 ../Drivers/STM32H5xx_HAL_Driver/Inc/stm32h5xx_hal_pwr_ex.h:
 ../Drivers/STM32H5xx_HAL_Driver/Inc/stm32h5xx_hal_xspi.h:
 ../Drivers/STM32H5xx_HAL_Driver/Inc/stm32h5xx_ll_dlyb.h:
-../Drivers/STM32H5xx_HAL_Driver/Inc/stm32h5xx_hal_sd.h:
-../Drivers/STM32H5xx_HAL_Driver/Inc/stm32h5xx_ll_sdmmc.h:
-../Drivers/STM32H5xx_HAL_Driver/Inc/stm32h5xx_hal_sd_ex.h:
 ../Drivers/STM32H5xx_HAL_Driver/Inc/stm32h5xx_hal_spi.h:
 ../Drivers/STM32H5xx_HAL_Driver/Inc/stm32h5xx_hal_spi_ex.h:
 ../Drivers/STM32H5xx_HAL_Driver/Inc/stm32h5xx_hal_tim.h:
