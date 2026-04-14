@@ -227,17 +227,17 @@ int main(void)
 //
 		//}
 
+//	  if (HAL_GPIO_ReadPin(BTN_1_GPIO_Port, BTN_1_Pin) == 1){
+//
+//		  buzzer_set(&buzzer, 1);
+//		 HAL_GPIO_WritePin(PYRO_1_GPIO_Port, PYRO_1_Pin, 1);
+//
+//	  } else {
+//		  HAL_GPIO_WritePin(PYRO_1_GPIO_Port, PYRO_1_Pin, 0);
+//		  buzzer_set(&buzzer, 0);
+//	  }
+
 	  if (HAL_GPIO_ReadPin(BTN_1_GPIO_Port, BTN_1_Pin) == 1){
-
-		  buzzer_set(&buzzer, 1);
-		 HAL_GPIO_WritePin(PYRO_1_GPIO_Port, PYRO_1_Pin, 1);
-
-	  } else {
-		  HAL_GPIO_WritePin(PYRO_1_GPIO_Port, PYRO_1_Pin, 0);
-		  buzzer_set(&buzzer, 0);
-	  }
-
-	  if (HAL_GPIO_ReadPin(BTN_2_GPIO_Port, BTN_2_Pin) == 1){
 		  buzzer_set(&buzzer, 1);
 	  } else { buzzer_set(&buzzer, 0);
 	  }
