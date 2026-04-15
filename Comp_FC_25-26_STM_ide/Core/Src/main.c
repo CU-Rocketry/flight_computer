@@ -88,6 +88,10 @@ buzzer_t buzzer = {
 uint8_t poll = 1;
 uint8_t tick_100Hz = 0;
 
+extern uint8_t baro_ready;
+extern uint8_t mag_ready;
+extern uint8_t imu_ready;
+
 /* USER CODE END PV */
 
 /* Private function prototypes -----------------------------------------------*/
