@@ -61,8 +61,8 @@ all: main-build
 main-build: Comp_FC_25-26_STM_ide.elf secondary-outputs
 
 # Tool invocations
-Comp_FC_25-26_STM_ide.elf Comp_FC_25-26_STM_ide.map: $(OBJS) $(USER_OBJS) /Users/haileymeagher/Desktop/GitHub/flight_computer/Comp_FC_25-26_STM_ide/STM32H523VETX_FLASH.ld makefile objects.list $(OPTIONAL_TOOL_DEPS)
-	arm-none-eabi-gcc -o "Comp_FC_25-26_STM_ide.elf" @"objects.list" $(USER_OBJS) $(LIBS) -mcpu=cortex-m33 -T"/Users/haileymeagher/Desktop/GitHub/flight_computer/Comp_FC_25-26_STM_ide/STM32H523VETX_FLASH.ld" --specs=nosys.specs -Wl,-Map="Comp_FC_25-26_STM_ide.map" -Wl,--gc-sections -static --specs=nano.specs -mfpu=fpv5-sp-d16 -mfloat-abi=hard -mthumb -Wl,--start-group -lc -lm -Wl,--end-group
+Comp_FC_25-26_STM_ide.elf Comp_FC_25-26_STM_ide.map: $(OBJS) $(USER_OBJS) D:\Github\flight_computer\Comp_FC_25-26_STM_ide\STM32H523VETX_FLASH.ld makefile objects.list $(OPTIONAL_TOOL_DEPS)
+	arm-none-eabi-gcc -o "Comp_FC_25-26_STM_ide.elf" @"objects.list" $(USER_OBJS) $(LIBS) -mcpu=cortex-m33 -T"D:\Github\flight_computer\Comp_FC_25-26_STM_ide\STM32H523VETX_FLASH.ld" --specs=nosys.specs -Wl,-Map="Comp_FC_25-26_STM_ide.map" -Wl,--gc-sections -static --specs=nano.specs -mfpu=fpv5-sp-d16 -mfloat-abi=hard -mthumb -u _printf_float -Wl,--start-group -lc -lm -Wl,--end-group
 	@echo 'Finished building target: $@'
 	@echo ' '
 

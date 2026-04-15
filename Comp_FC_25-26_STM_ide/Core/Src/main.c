@@ -85,7 +85,8 @@ buzzer_t buzzer = {
 	.channel_buz = TIM_CHANNEL_2
 };
 // Control system tick
-uint8_t poll = 0;
+uint8_t poll = 1;
+uint8_t tick_100Hz = 0;
 
 /* USER CODE END PV */
 
@@ -190,16 +191,6 @@ int main(void)
   /* USER CODE BEGIN WHILE */
   while (1)
   {
-	  if (poll) {
-	  		  poll = 0;
-
-	  //		  uint8_t mode = get_mode_switch();
-	  //		  printf("Mode: %u\r\n", mode);
-
-	  		  float pres;
-	  		  get_pres_hpa(&pres);
-	  		//  printf("Pressure: %f\r\n", pres);
-	  }
 
 //implementing gps read example
 //		if ((HAL_GetTick() - Timer) > 1000) {
@@ -227,23 +218,37 @@ int main(void)
 //
 		//}
 
+
 //	  if (HAL_GPIO_ReadPin(BTN_1_GPIO_Port, BTN_1_Pin) == 1){
-//
 //		  buzzer_set(&buzzer, 1);
-//		 HAL_GPIO_WritePin(PYRO_1_GPIO_Port, PYRO_1_Pin, 1);
-//
-//	  } else {
 //		  HAL_GPIO_WritePin(PYRO_1_GPIO_Port, PYRO_1_Pin, 0);
-//		  buzzer_set(&buzzer, 0);
+//		  HAL_GPIO_WritePin(PYRO_2_GPIO_Port, PYRO_2_Pin, 1);
+//		  HAL_GPIO_WritePin(PYRO_3_GPIO_Port, PYRO_3_Pin, 1);
+//		  HAL_GPIO_WritePin(PYRO_4_GPIO_Port, PYRO_4_Pin, 0);
+//	  } else { buzzer_set(&buzzer, 0);
+//	  HAL_GPIO_WritePin(PYRO_1_GPIO_Port, PYRO_1_Pin, 0);
+//	  HAL_GPIO_WritePin(PYRO_2_GPIO_Port, PYRO_2_Pin, 0);
+//	  HAL_GPIO_WritePin(PYRO_3_GPIO_Port, PYRO_3_Pin, 0);
+//	  HAL_GPIO_WritePin(PYRO_4_GPIO_Port, PYRO_4_Pin, 0);
+//	  }
+
+//	  HAL_GPIO_WritePin(PYRO_2_GPIO_Port, PYRO_2_Pin, 1);
+//
+//	  if (tick_100Hz){
+//		  tick_100Hz = 0;
+//	  printf("Hello World\r\n");
+//
+//	  float pres;
+//	 	  		  get_pres_hpa(&pres);
+//	 	  		printf("Pressure: %f\r\n", pres);
 //	  }
 
 	  if (HAL_GPIO_ReadPin(BTN_1_GPIO_Port, BTN_1_Pin) == 1){
-		  buzzer_set(&buzzer, 1);
-	  } else { buzzer_set(&buzzer, 0);
+	 		  buzzer_set(&buzzer, 1);
+	  printf("Hello World\r\n");
+	  } else if (HAL_GPIO_ReadPin(BTN_1_GPIO_Port, BTN_1_Pin) == 0) {
+		  buzzer_set(&buzzer, 0);
 	  }
-
-
-
     /* USER CODE END WHILE */
 
     /* USER CODE BEGIN 3 */
@@ -1138,7 +1143,7 @@ PUTCHAR_PROTOTYPE
 {
   /* Place your implementation of fputc here */
   /* e.g. write a character to the USART1 and Loop until the end of transmission */
-  HAL_UART_Transmit(&huart4, (uint8_t *)&ch, 1, 0xFFFF);
+  HAL_UART_Transmit(&huart5, (uint8_t *)&ch, 1, 0xFFFF);
 
   return ch;
 }
@@ -1169,8 +1174,8 @@ void HAL_SPI_TxRxCpltCallback(SPI_HandleTypeDef *hspi)
 
 void HAL_TIM_PeriodElapsedCallback(TIM_HandleTypeDef *htim) {
 	if (htim->Instance == TIM7) { // 100 Hz
-		poll = 1;
-	}
+			tick_100Hz = 1;
+		}
 }
 /* USER CODE END 4 */
 

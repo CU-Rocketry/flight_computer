@@ -12,5 +12,5 @@
 ../Core/Src/sensors.c:135:6:mag_spi_callback	1
 ../Core/Src/sensors.c:139:6:sensors_init	1
 ../Core/Src/sensors.c:147:6:baro_init	3
-../Core/Src/sensors.c:192:6:imu_init	1
-../Core/Src/sensors.c:200:6:mag_init	1
+../Core/Src/sensors.c:193:6:imu_init	1
+../Core/Src/sensors.c:201:6:mag_init	1

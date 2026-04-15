@@ -65,7 +65,7 @@ void get_pres_hpa(float *out) {
 void spi_nss(SPI_HandleTypeDef *handle, uint8_t level) {
 	if (handle->Instance == SPI2) {
 		HAL_GPIO_WritePin(BARO_CS_GPIO_Port, BARO_CS_Pin, level);
-		HAL_GPIO_WritePin(IMU_CS_GPIO_Port, IMU_CS_Pin, level);
+//		HAL_GPIO_WritePin(IMU_CS_GPIO_Port, IMU_CS_Pin, level);
 	} else if (handle->Instance == SPI3) {
 		HAL_GPIO_WritePin(MAG_CS_GPIO_Port, MAG_CS_Pin, level);
 	}
@@ -154,7 +154,7 @@ void baro_init() {
 	lps22hh_pin_int_route_t int_route;
 	lps22hh_sim_t md_spi;
 	lps22hh_lpfp_cfg_t md_lpf;
-	lps22hh_odr_t md_odr;
+	 lps22hh_odr_t md_odr;
 
 	uint8_t id;
 
@@ -176,6 +176,7 @@ void baro_init() {
 
 	md_odr = LPS22HH_100_Hz;
 	md_lpf = LPS22HH_LPF_ODR_DIV_9;
+	md_spi = 0;
 
 	lps22hh_spi_mode_set(&lps22hh_ctx, md_spi);
 	lps22hh_lp_bandwidth_set(&lps22hh_ctx, md_lpf);
