@@ -24,6 +24,8 @@ uint8_t baro_ready = 0;
 uint8_t imu_ready = 0;
 uint8_t mag_ready = 0;
 
+uint8_t device;
+
 // ST drivers
 stmdev_ctx_t lps22hh_ctx;
 stmdev_ctx_t lsm6dsv80x_ctx;
@@ -69,26 +71,53 @@ void get_pres_hpa(float *out) {
 	*out = pres_hpa;
 }
 
-void spi_nss(SPI_HandleTypeDef *handle, uint8_t level) {
-	if (handle->Instance == SPI2) {
-		HAL_GPIO_WritePin(BARO_CS_GPIO_Port, BARO_CS_Pin, level);
+//void spi_nss(SPI_HandleTypeDef *handle, uint8_t level, uint8_t device) {
+//	if (handle->Instance == SPI2) {
+//		if (device  == 1){
+//		HAL_GPIO_WritePin(BARO_CS_GPIO_Port, BARO_CS_Pin, level);
+//		} else if (device == 2){
 //		HAL_GPIO_WritePin(IMU_CS_GPIO_Port, IMU_CS_Pin, level);
-	} else if (handle->Instance == SPI3) {
-		HAL_GPIO_WritePin(MAG_CS_GPIO_Port, MAG_CS_Pin, level);
-	}
-}
+//		}
+//	} else if (handle->Instance == SPI3) {
+//
+//	}
+//}
 
 // ST driver platform functions
-int32_t platform_write(void *handle, uint8_t reg, const uint8_t *bufp, uint16_t len)
+int32_t platform_write_baro(void *handle, uint8_t reg, const uint8_t *bufp, uint16_t len)
 {
 	HAL_StatusTypeDef status = HAL_OK;
 
-	spi_nss(handle, 0);
+	HAL_GPIO_WritePin(BARO_CS_GPIO_Port, BARO_CS_Pin, 0);
 	status += HAL_SPI_Transmit(handle, &reg, 1, 1000);
 	status += HAL_SPI_Transmit(handle, bufp, len, 1000);
-	spi_nss(handle, 1);
+	HAL_GPIO_WritePin(BARO_CS_GPIO_Port, BARO_CS_Pin, 1);
 	return status;
 }
+
+int32_t platform_write_imu(void *handle, uint8_t reg, const uint8_t *bufp, uint16_t len)
+{
+	HAL_StatusTypeDef status = HAL_OK;
+
+	HAL_GPIO_WritePin(IMU_CS_GPIO_Port, IMU_CS_Pin, 0);
+	status += HAL_SPI_Transmit(handle, &reg, 1, 1000);
+	status += HAL_SPI_Transmit(handle, bufp, len, 1000);
+	HAL_GPIO_WritePin(IMU_CS_GPIO_Port, IMU_CS_Pin, 1);
+	return status;
+}
+
+int32_t platform_write_mag(void *handle, uint8_t reg, const uint8_t *bufp, uint16_t len)
+{
+	HAL_StatusTypeDef status = HAL_OK;
+
+	HAL_GPIO_WritePin(MAG_CS_GPIO_Port, MAG_CS_Pin, 0);
+	status += HAL_SPI_Transmit(handle, &reg, 1, 1000);
+	status += HAL_SPI_Transmit(handle, bufp, len, 1000);
+	HAL_GPIO_WritePin(MAG_CS_GPIO_Port, MAG_CS_Pin, 1);
+	return status;
+}
+
+
 
 int32_t platform_read(void *handle, uint8_t reg, uint8_t *bufp, uint16_t len)
 {
@@ -113,14 +142,14 @@ void baro_int_drdy_handler()
 	// initialize the SPI transmission
 	memset(baro_tx_buf, 0, 4);
 	baro_tx_buf[0] = LPS22HH_PRESS_OUT_XL | 0x80; // with MSB set for read
-	spi_nss(lps22hh_ctx.handle, 0); // assert baro CS
+	HAL_GPIO_WritePin(BARO_CS_GPIO_Port, BARO_CS_Pin, 0); // assert baro CS
 	HAL_SPI_TransmitReceive_DMA(lps22hh_ctx.handle, baro_tx_buf, baro_rx_buf, 4);
 }
 
 void imu_int_drdy_handler() {
 	memset(imu_tx_buf, 0, 13);
 	imu_tx_buf[0] = LSM6DSV80X_OUTX_L_G | 0x80;
-	spi_nss(lsm6dsv80x_ctx.handle, 0); // assert imu CS
+	HAL_GPIO_WritePin(IMU_CS_GPIO_Port, IMU_CS_Pin, 0); // assert imu CS
 	HAL_SPI_TransmitReceive_DMA(lsm6dsv80x_ctx.handle, imu_tx_buf, imu_rx_buf, 13);
 }
 
@@ -133,14 +162,14 @@ void mag_int_drdy_handler() {
 // SPI DMA done callbacks
 // after data transfer process into units
 void baro_spi_callback() {
-	spi_nss(lps22hh_ctx.handle, 1); // deassert baro CS
+	HAL_GPIO_WritePin(BARO_CS_GPIO_Port, BARO_CS_Pin, 0); // deassert baro CS
 	pres_raw = (uint32_t)(((uint32_t)baro_rx_buf[3] << 24) | ((uint32_t)baro_rx_buf[2] << 16) | ((uint32_t)baro_rx_buf[1] << 8));
 	pres_hpa = lps22hh_from_lsb_to_hpa(pres_raw);
 	baro_ready = 1;
 }
 
 void imu_spi_callback() {
-	spi_nss(lsm6dsv80x_ctx.handle, 1); // deassert imu CS
+	HAL_GPIO_WritePin(IMU_CS_GPIO_Port, IMU_CS_Pin, 0); // deassert imu CS
 	// Pack registers into omega LSBs
 	omega_raw[0] = (int16_t)(((int16_t)imu_rx_buf[2] << 8) | (int16_t)imu_rx_buf[1]);
 	omega_raw[1] = (int16_t)(((int16_t)imu_rx_buf[4] << 8) | (int16_t)imu_rx_buf[3]);
@@ -175,7 +204,8 @@ void sensors_init() {
 
 void baro_init() {
 	// Setup baro driver device context
-	lps22hh_ctx.write_reg = platform_write;
+
+	lps22hh_ctx.write_reg = platform_write_baro;
 	lps22hh_ctx.read_reg = platform_read;
 	lps22hh_ctx.mdelay = platform_delay;
 	lps22hh_ctx.handle = &hspi2;
@@ -183,7 +213,7 @@ void baro_init() {
 	lps22hh_pin_int_route_t int_route;
 	lps22hh_sim_t md_spi;
 	lps22hh_lpfp_cfg_t md_lpf;
-	 lps22hh_odr_t md_odr;
+	lps22hh_odr_t md_odr;
 
 	uint8_t id;
 
@@ -220,8 +250,10 @@ void baro_init() {
 }
 
 void imu_init() {
+
+
 	// Setup IMU driver device context
-		lsm6dsv80x_ctx.write_reg = platform_write;
+		lsm6dsv80x_ctx.write_reg = platform_write_imu;
 		lsm6dsv80x_ctx.read_reg = platform_read;
 		lsm6dsv80x_ctx.mdelay = platform_delay;
 		lsm6dsv80x_ctx.handle = &hspi2;
@@ -275,7 +307,7 @@ void imu_init() {
 
 void mag_init() {
 	// Setup magnetometer device driver context
-	iis2mdc_ctx.write_reg = platform_write;
+	iis2mdc_ctx.write_reg = platform_write_mag;
 	iis2mdc_ctx.read_reg = platform_read;
 	iis2mdc_ctx.mdelay = platform_delay;
 	iis2mdc_ctx.handle = &hspi3;
