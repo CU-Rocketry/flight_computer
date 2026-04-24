@@ -181,7 +181,7 @@ int main(void)
 
  printf("Hello, world!\r\n");
  HAL_Delay(100);
- baro_init();
+ imu_init();
 
   //GPS initialization
 //  GNSS_Init(&GNSS_Handle, &huart4);
