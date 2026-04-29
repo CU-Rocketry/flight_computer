@@ -1262,7 +1262,7 @@
 			(type solid)
 		)
 		(fill
-			(color 0 0 0 0.0000)
+			(color 255 255 194 1.0000)
 		)
 		(uuid "0389a778-0ae1-4921-8e0e-3c33d2286cb8")
 		(property "Sheetname" "Debug"
@@ -1364,7 +1364,7 @@
 			(type solid)
 		)
 		(fill
-			(color 0 0 0 0.0000)
+			(color 255 255 194 1.0000)
 		)
 		(uuid "16b7f3d3-745f-44d9-93a4-41f5bfd830cb")
 		(property "Sheetname" "Telemetry"
@@ -1516,7 +1516,7 @@
 			(type solid)
 		)
 		(fill
-			(color 0 0 0 0.0000)
+			(color 255 255 194 1.0000)
 		)
 		(uuid "1df302fb-2dab-4194-ae63-c7585125533e")
 		(property "Sheetname" "Power"
@@ -1608,7 +1608,7 @@
 			(type solid)
 		)
 		(fill
-			(color 0 0 0 0.0000)
+			(color 255 255 194 1.0000)
 		)
 		(uuid "3b725c3b-9650-41e6-95bf-9087cc38f098")
 		(property "Sheetname" "MCU"
@@ -2390,7 +2390,7 @@
 			(type solid)
 		)
 		(fill
-			(color 0 0 0 0.0000)
+			(color 255 255 194 1.0000)
 		)
 		(uuid "5946e354-b9a7-4a8a-8580-991442920c21")
 		(property "Sheetname" "Peripherals"
@@ -2552,7 +2552,7 @@
 			(type solid)
 		)
 		(fill
-			(color 0 0 0 0.0000)
+			(color 255 255 194 1.0000)
 		)
 		(uuid "6e71e7a3-1bcd-4797-b2e4-88d14bf1f853")
 		(property "Sheetname" "Memory"
@@ -2724,7 +2724,7 @@
 			(type solid)
 		)
 		(fill
-			(color 0 0 0 0.0000)
+			(color 255 255 194 1.0000)
 		)
 		(uuid "9736895c-f0f7-444d-aab7-042381dec39a")
 		(property "Sheetname" "Sensors"
@@ -2886,7 +2886,7 @@
 			(type solid)
 		)
 		(fill
-			(color 0 0 0 0.0000)
+			(color 255 255 194 1.0000)
 		)
 		(uuid "a6095a4d-1542-4c9d-ab0b-9ed076818c96")
 		(property "Sheetname" "Pyro"
@@ -3008,7 +3008,7 @@
 			(type solid)
 		)
 		(fill
-			(color 0 0 0 0.0000)
+			(color 255 255 194 1.0000)
 		)
 		(uuid "cf63387d-37b0-4f5e-affd-1b765436078d")
 		(property "Sheetname" "USB"
@@ -3070,7 +3070,7 @@
 			(type solid)
 		)
 		(fill
-			(color 0 0 0 0.0000)
+			(color 255 255 194 1.0000)
 		)
 		(uuid "e838d24c-cb75-4a46-b88f-e4466a269629")
 		(property "Sheetname" "GPS"
