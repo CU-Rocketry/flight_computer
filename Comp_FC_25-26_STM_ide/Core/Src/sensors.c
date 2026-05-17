@@ -88,7 +88,6 @@ int32_t platform_write_baro(void *handle, uint8_t reg, const uint8_t *bufp, uint
 {
 	HAL_StatusTypeDef status = HAL_OK;
 	HAL_GPIO_WritePin(IMU_CS_GPIO_Port, IMU_CS_Pin, 1);
-	HAL_Delay(5);
 	HAL_GPIO_WritePin(BARO_CS_GPIO_Port, BARO_CS_Pin, 0);
 	status += HAL_SPI_Transmit(handle, &reg, 1, 1000);
 	status += HAL_SPI_Transmit(handle, bufp, len, 1000);
@@ -101,7 +100,6 @@ int32_t platform_write_imu(void *handle, uint8_t reg, const uint8_t *bufp, uint1
 	HAL_StatusTypeDef status = HAL_OK;
 	HAL_GPIO_WritePin(BARO_CS_GPIO_Port, BARO_CS_Pin, 1);
 	HAL_GPIO_WritePin(IMU_CS_GPIO_Port, IMU_CS_Pin, 0);
-	HAL_Delay(5);
 	status += HAL_SPI_Transmit(handle, &reg, 1, 1000);
 	status += HAL_SPI_Transmit(handle, bufp, len, 1000);
 	HAL_GPIO_WritePin(IMU_CS_GPIO_Port, IMU_CS_Pin, 1);
@@ -140,7 +138,6 @@ int32_t platform_read_imu(void *handle, uint8_t reg, uint8_t *bufp, uint16_t len
 	HAL_StatusTypeDef status = HAL_OK;
 	HAL_GPIO_WritePin(BARO_CS_GPIO_Port, BARO_CS_Pin, 1); //ensure baro deasserted
 	HAL_GPIO_WritePin(IMU_CS_GPIO_Port, IMU_CS_Pin, 0);
-	HAL_Delay(5);
 	status += HAL_SPI_Transmit(handle, &reg, 1, 1000);
 	status += HAL_SPI_Receive(handle, bufp, len, 1000);
 	HAL_GPIO_WritePin(IMU_CS_GPIO_Port, IMU_CS_Pin, 1);
@@ -227,7 +224,6 @@ void mag_spi_callback() {
 void sensors_init() {
 	HAL_Delay(100);
 	baro_init();
-	HAL_Delay(100); //chill tf out for a sec
 	imu_init();
 	mag_init();
 }

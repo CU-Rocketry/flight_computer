@@ -1428,16 +1428,6 @@
 		)
 		(uuid "765d8d1d-f28a-4fe5-99c6-1e764bc98b12")
 	)
-	(text "Funky ass RX/TX switcher"
-		(exclude_from_sim no)
-		(at 134.366 49.022 0)
-		(effects
-			(font
-				(size 1.27 1.27)
-			)
-		)
-		(uuid "79446a05-fb79-4958-876b-6e852e9154fd")
-	)
 	(text "reset has internal pull up resistor\n"
 		(exclude_from_sim no)
 		(at 43.688 61.976 0)

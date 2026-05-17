@@ -238,20 +238,14 @@ int main(void)
 
 //	  HAL_GPIO_WritePin(PYRO_2_GPIO_Port, PYRO_2_Pin, 1);
 //
-//	  if (tick_100Hz){
-//		  tick_100Hz = 0;
-//	  printf("Hello World\r\n");
-//
-//	  float pres;
-//	 	  		  get_pres_hpa(&pres);
-//	 	  		printf("Pressure: %f\r\n", pres);
-//	  }
+	  if (tick_100Hz){
+		  tick_100Hz = 0;
 
-	  if (HAL_GPIO_ReadPin(BTN_1_GPIO_Port, BTN_1_Pin) == 1){
-	 		  buzzer_set(&buzzer, 1);
-	  printf("Hello World\r\n");
-	  } else if (HAL_GPIO_ReadPin(BTN_1_GPIO_Port, BTN_1_Pin) == 0) {
-		  buzzer_set(&buzzer, 0);
+	  float pres;
+	 	  		  get_pres_hpa(&pres);
+	 	  		printf("Pressure: %f\r\n", pres);
+	  }
+
 	  }
     /* USER CODE END WHILE */
 
