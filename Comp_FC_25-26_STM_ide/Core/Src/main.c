@@ -191,7 +191,7 @@ int main(void)
  HAL_GPIO_WritePin(IMU_CS_GPIO_Port, IMU_CS_Pin, 1);
  HAL_Delay(100);
 
- baro_init();
+ imu_init();
 
   //GPS initialization
 //  GNSS_Init(&GNSS_Handle, &huart4);
