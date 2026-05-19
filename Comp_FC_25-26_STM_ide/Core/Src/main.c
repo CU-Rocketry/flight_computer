@@ -183,6 +183,8 @@ int main(void)
 //  buzzer_set(&buzzer, 1);
 
  printf("Hello, world!\r\n");
+ HAL_Delay(1000);
+ HAL_GPIO_WritePin(IMU_CS_GPIO_Port, IMU_CS_Pin, 0);
  HAL_Delay(100);
  HAL_GPIO_WritePin(BARO_CS_GPIO_Port, BARO_CS_Pin, 0);
  HAL_GPIO_WritePin(IMU_CS_GPIO_Port, IMU_CS_Pin, 0);
