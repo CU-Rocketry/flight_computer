@@ -9,11 +9,16 @@ C_SRCS += \
 ../Core/Src/iis2mdc_reg.c \
 ../Core/Src/lora_telemetry.c \
 ../Core/Src/lps22hh_reg.c \
+../Core/Src/lr_fhss_mac.c \
 ../Core/Src/lsm6dsv80x_reg.c \
 ../Core/Src/main.c \
 ../Core/Src/sensors.c \
 ../Core/Src/stm32h5xx_hal_msp.c \
 ../Core/Src/stm32h5xx_it.c \
+../Core/Src/sx126x.c \
+../Core/Src/sx126x_bpsk.c \
+../Core/Src/sx126x_driver_version.c \
+../Core/Src/sx126x_lr_fhss.c \
 ../Core/Src/syscalls.c \
 ../Core/Src/sysmem.c \
 ../Core/Src/system_stm32h5xx.c 
@@ -23,11 +28,16 @@ OBJS += \
 ./Core/Src/iis2mdc_reg.o \
 ./Core/Src/lora_telemetry.o \
 ./Core/Src/lps22hh_reg.o \
+./Core/Src/lr_fhss_mac.o \
 ./Core/Src/lsm6dsv80x_reg.o \
 ./Core/Src/main.o \
 ./Core/Src/sensors.o \
 ./Core/Src/stm32h5xx_hal_msp.o \
 ./Core/Src/stm32h5xx_it.o \
+./Core/Src/sx126x.o \
+./Core/Src/sx126x_bpsk.o \
+./Core/Src/sx126x_driver_version.o \
+./Core/Src/sx126x_lr_fhss.o \
 ./Core/Src/syscalls.o \
 ./Core/Src/sysmem.o \
 ./Core/Src/system_stm32h5xx.o 
@@ -37,11 +47,16 @@ C_DEPS += \
 ./Core/Src/iis2mdc_reg.d \
 ./Core/Src/lora_telemetry.d \
 ./Core/Src/lps22hh_reg.d \
+./Core/Src/lr_fhss_mac.d \
 ./Core/Src/lsm6dsv80x_reg.d \
 ./Core/Src/main.d \
 ./Core/Src/sensors.d \
 ./Core/Src/stm32h5xx_hal_msp.d \
 ./Core/Src/stm32h5xx_it.d \
+./Core/Src/sx126x.d \
+./Core/Src/sx126x_bpsk.d \
+./Core/Src/sx126x_driver_version.d \
+./Core/Src/sx126x_lr_fhss.d \
 ./Core/Src/syscalls.d \
 ./Core/Src/sysmem.d \
 ./Core/Src/system_stm32h5xx.d 
@@ -54,7 +69,7 @@ Core/Src/%.o Core/Src/%.su Core/Src/%.cyclo: ../Core/Src/%.c Core/Src/subdir.mk
 clean: clean-Core-2f-Src
 
 clean-Core-2f-Src:
-	-$(RM) ./Core/Src/GNSS.cyclo ./Core/Src/GNSS.d ./Core/Src/GNSS.o ./Core/Src/GNSS.su ./Core/Src/iis2mdc_reg.cyclo ./Core/Src/iis2mdc_reg.d ./Core/Src/iis2mdc_reg.o ./Core/Src/iis2mdc_reg.su ./Core/Src/lora_telemetry.cyclo ./Core/Src/lora_telemetry.d ./Core/Src/lora_telemetry.o ./Core/Src/lora_telemetry.su ./Core/Src/lps22hh_reg.cyclo ./Core/Src/lps22hh_reg.d ./Core/Src/lps22hh_reg.o ./Core/Src/lps22hh_reg.su ./Core/Src/lsm6dsv80x_reg.cyclo ./Core/Src/lsm6dsv80x_reg.d ./Core/Src/lsm6dsv80x_reg.o ./Core/Src/lsm6dsv80x_reg.su ./Core/Src/main.cyclo ./Core/Src/main.d ./Core/Src/main.o ./Core/Src/main.su ./Core/Src/sensors.cyclo ./Core/Src/sensors.d ./Core/Src/sensors.o ./Core/Src/sensors.su ./Core/Src/stm32h5xx_hal_msp.cyclo ./Core/Src/stm32h5xx_hal_msp.d ./Core/Src/stm32h5xx_hal_msp.o ./Core/Src/stm32h5xx_hal_msp.su ./Core/Src/stm32h5xx_it.cyclo ./Core/Src/stm32h5xx_it.d ./Core/Src/stm32h5xx_it.o ./Core/Src/stm32h5xx_it.su ./Core/Src/syscalls.cyclo ./Core/Src/syscalls.d ./Core/Src/syscalls.o ./Core/Src/syscalls.su ./Core/Src/sysmem.cyclo ./Core/Src/sysmem.d ./Core/Src/sysmem.o ./Core/Src/sysmem.su ./Core/Src/system_stm32h5xx.cyclo ./Core/Src/system_stm32h5xx.d ./Core/Src/system_stm32h5xx.o ./Core/Src/system_stm32h5xx.su
+	-$(RM) ./Core/Src/GNSS.cyclo ./Core/Src/GNSS.d ./Core/Src/GNSS.o ./Core/Src/GNSS.su ./Core/Src/iis2mdc_reg.cyclo ./Core/Src/iis2mdc_reg.d ./Core/Src/iis2mdc_reg.o ./Core/Src/iis2mdc_reg.su ./Core/Src/lora_telemetry.cyclo ./Core/Src/lora_telemetry.d ./Core/Src/lora_telemetry.o ./Core/Src/lora_telemetry.su ./Core/Src/lps22hh_reg.cyclo ./Core/Src/lps22hh_reg.d ./Core/Src/lps22hh_reg.o ./Core/Src/lps22hh_reg.su ./Core/Src/lr_fhss_mac.cyclo ./Core/Src/lr_fhss_mac.d ./Core/Src/lr_fhss_mac.o ./Core/Src/lr_fhss_mac.su ./Core/Src/lsm6dsv80x_reg.cyclo ./Core/Src/lsm6dsv80x_reg.d ./Core/Src/lsm6dsv80x_reg.o ./Core/Src/lsm6dsv80x_reg.su ./Core/Src/main.cyclo ./Core/Src/main.d ./Core/Src/main.o ./Core/Src/main.su ./Core/Src/sensors.cyclo ./Core/Src/sensors.d ./Core/Src/sensors.o ./Core/Src/sensors.su ./Core/Src/stm32h5xx_hal_msp.cyclo ./Core/Src/stm32h5xx_hal_msp.d ./Core/Src/stm32h5xx_hal_msp.o ./Core/Src/stm32h5xx_hal_msp.su ./Core/Src/stm32h5xx_it.cyclo ./Core/Src/stm32h5xx_it.d ./Core/Src/stm32h5xx_it.o ./Core/Src/stm32h5xx_it.su ./Core/Src/sx126x.cyclo ./Core/Src/sx126x.d ./Core/Src/sx126x.o ./Core/Src/sx126x.su ./Core/Src/sx126x_bpsk.cyclo ./Core/Src/sx126x_bpsk.d ./Core/Src/sx126x_bpsk.o ./Core/Src/sx126x_bpsk.su ./Core/Src/sx126x_driver_version.cyclo ./Core/Src/sx126x_driver_version.d ./Core/Src/sx126x_driver_version.o ./Core/Src/sx126x_driver_version.su ./Core/Src/sx126x_lr_fhss.cyclo ./Core/Src/sx126x_lr_fhss.d ./Core/Src/sx126x_lr_fhss.o ./Core/Src/sx126x_lr_fhss.su ./Core/Src/syscalls.cyclo ./Core/Src/syscalls.d ./Core/Src/syscalls.o ./Core/Src/syscalls.su ./Core/Src/sysmem.cyclo ./Core/Src/sysmem.d ./Core/Src/sysmem.o ./Core/Src/sysmem.su ./Core/Src/system_stm32h5xx.cyclo ./Core/Src/system_stm32h5xx.d ./Core/Src/system_stm32h5xx.o ./Core/Src/system_stm32h5xx.su
 
 .PHONY: clean-Core-2f-Src
 

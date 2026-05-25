@@ -1,2 +1,0 @@
-../Core/Src/LoRa/sx126x_bpsk.c:97:17:sx126x_set_bpsk_mod_params	40	static
-../Core/Src/LoRa/sx126x_bpsk.c:117:17:sx126x_set_bpsk_pkt_params	40	static

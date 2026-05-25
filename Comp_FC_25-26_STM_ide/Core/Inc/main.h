@@ -103,6 +103,8 @@ void Error_Handler(void);
 #define RF_RXEN_GPIO_Port GPIOE
 #define RF_RESET_Pin GPIO_PIN_10
 #define RF_RESET_GPIO_Port GPIOE
+#define RF_CS_Pin GPIO_PIN_11
+#define RF_CS_GPIO_Port GPIOE
 #define RF_BUSY_Pin GPIO_PIN_15
 #define RF_BUSY_GPIO_Port GPIOE
 #define BARO_CS_Pin GPIO_PIN_12

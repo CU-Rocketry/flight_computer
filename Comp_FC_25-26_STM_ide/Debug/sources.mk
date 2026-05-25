@@ -23,7 +23,7 @@ C_DEPS :=
 # Every subdirectory with source files must be described here
 SUBDIRS := \
 Core/Src \
-Core/Src/LoRa \
 Core/Startup \
 Drivers/STM32H5xx_HAL_Driver/Src \
+Core/Src/LoRa \
 

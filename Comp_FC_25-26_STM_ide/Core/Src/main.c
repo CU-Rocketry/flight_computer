@@ -182,18 +182,16 @@ int main(void)
   buzzer_init(&buzzer);
 //  buzzer_set(&buzzer, 1);
 
+  HAL_Delay(100);
+  HAL_GPIO_WritePin(MAG_CS_GPIO_Port, MAG_CS_Pin, 0);
+  HAL_Delay(100);
+  HAL_GPIO_WritePin(MAG_CS_GPIO_Port, MAG_CS_Pin, 1);
+  HAL_Delay(100);
+
  printf("Hello, world!\r\n");
- HAL_Delay(1000);
- HAL_GPIO_WritePin(IMU_CS_GPIO_Port, IMU_CS_Pin, 0);
- HAL_Delay(100);
- HAL_GPIO_WritePin(BARO_CS_GPIO_Port, BARO_CS_Pin, 0);
- HAL_GPIO_WritePin(IMU_CS_GPIO_Port, IMU_CS_Pin, 0);
- HAL_Delay(100);
- HAL_GPIO_WritePin(BARO_CS_GPIO_Port, BARO_CS_Pin, 1);
- HAL_GPIO_WritePin(IMU_CS_GPIO_Port, IMU_CS_Pin, 1);
  HAL_Delay(100);
 
- imu_init();
+ mag_init();
 
   //GPS initialization
 //  GNSS_Init(&GNSS_Handle, &huart4);
@@ -262,9 +260,9 @@ int main(void)
     /* USER CODE END WHILE */
 
     /* USER CODE BEGIN 3 */
-  }
-  /* USER CODE END 3 */
 
+  /* USER CODE END 3 */
+}
 
 /**
   * @brief System Clock Configuration
@@ -585,8 +583,8 @@ static void MX_SPI3_Init(void)
   hspi3.Init.DataSize = SPI_DATASIZE_8BIT;
   hspi3.Init.CLKPolarity = SPI_POLARITY_HIGH;
   hspi3.Init.CLKPhase = SPI_PHASE_2EDGE;
-  hspi3.Init.NSS = SPI_NSS_HARD_OUTPUT;
-  hspi3.Init.BaudRatePrescaler = SPI_BAUDRATEPRESCALER_4;
+  hspi3.Init.NSS = SPI_NSS_SOFT;
+  hspi3.Init.BaudRatePrescaler = SPI_BAUDRATEPRESCALER_32;
   hspi3.Init.FirstBit = SPI_FIRSTBIT_MSB;
   hspi3.Init.TIMode = SPI_TIMODE_DISABLE;
   hspi3.Init.CRCCalculation = SPI_CRCCALCULATION_DISABLE;
@@ -633,7 +631,7 @@ static void MX_SPI4_Init(void)
   hspi4.Init.DataSize = SPI_DATASIZE_8BIT;
   hspi4.Init.CLKPolarity = SPI_POLARITY_HIGH;
   hspi4.Init.CLKPhase = SPI_PHASE_2EDGE;
-  hspi4.Init.NSS = SPI_NSS_HARD_OUTPUT;
+  hspi4.Init.NSS = SPI_NSS_SOFT;
   hspi4.Init.BaudRatePrescaler = SPI_BAUDRATEPRESCALER_2;
   hspi4.Init.FirstBit = SPI_FIRSTBIT_MSB;
   hspi4.Init.TIMode = SPI_TIMODE_DISABLE;
@@ -1067,7 +1065,7 @@ static void MX_GPIO_Init(void)
 
   /*Configure GPIO pin Output Level */
   HAL_GPIO_WritePin(GPIOE, SENSE_2_Pin|PYRO_1_Pin|SENSE_3_Pin|RF_DIO1_Pin
-                          |RF_TXEN_Pin|RF_RXEN_Pin|RF_RESET_Pin, GPIO_PIN_RESET);
+                          |RF_TXEN_Pin|RF_RXEN_Pin|RF_RESET_Pin|RF_CS_Pin, GPIO_PIN_RESET);
 
   /*Configure GPIO pin Output Level */
   HAL_GPIO_WritePin(GPIOC, PYRO_4_Pin|RF_DIO3_Pin|RF_DIO2_Pin, GPIO_PIN_RESET);
@@ -1078,10 +1076,13 @@ static void MX_GPIO_Init(void)
   /*Configure GPIO pin Output Level */
   HAL_GPIO_WritePin(GPIOD, IMU_CS_Pin|GPS_RESET_Pin, GPIO_PIN_RESET);
 
+  /*Configure GPIO pin Output Level */
+  HAL_GPIO_WritePin(MAG_CS_GPIO_Port, MAG_CS_Pin, GPIO_PIN_RESET);
+
   /*Configure GPIO pins : SENSE_2_Pin PYRO_1_Pin SENSE_3_Pin RF_DIO1_Pin
-                           RF_TXEN_Pin RF_RXEN_Pin RF_RESET_Pin */
+                           RF_TXEN_Pin RF_RXEN_Pin RF_RESET_Pin RF_CS_Pin */
   GPIO_InitStruct.Pin = SENSE_2_Pin|PYRO_1_Pin|SENSE_3_Pin|RF_DIO1_Pin
-                          |RF_TXEN_Pin|RF_RXEN_Pin|RF_RESET_Pin;
+                          |RF_TXEN_Pin|RF_RXEN_Pin|RF_RESET_Pin|RF_CS_Pin;
   GPIO_InitStruct.Mode = GPIO_MODE_OUTPUT_PP;
   GPIO_InitStruct.Pull = GPIO_NOPULL;
   GPIO_InitStruct.Speed = GPIO_SPEED_FREQ_LOW;
@@ -1162,6 +1163,13 @@ static void MX_GPIO_Init(void)
   GPIO_InitStruct.Speed = GPIO_SPEED_FREQ_VERY_HIGH;
   GPIO_InitStruct.Alternate = GPIO_AF12_SDMMC1;
   HAL_GPIO_Init(GPIOC, &GPIO_InitStruct);
+
+  /*Configure GPIO pin : MAG_CS_Pin */
+  GPIO_InitStruct.Pin = MAG_CS_Pin;
+  GPIO_InitStruct.Mode = GPIO_MODE_OUTPUT_PP;
+  GPIO_InitStruct.Pull = GPIO_PULLUP;
+  GPIO_InitStruct.Speed = GPIO_SPEED_FREQ_LOW;
+  HAL_GPIO_Init(MAG_CS_GPIO_Port, &GPIO_InitStruct);
 
   /*Configure GPIO pin : SD_DET_Pin */
   GPIO_InitStruct.Pin = SD_DET_Pin;

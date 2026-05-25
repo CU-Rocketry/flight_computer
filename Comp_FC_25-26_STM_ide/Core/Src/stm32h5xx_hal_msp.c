@@ -384,21 +384,12 @@ void HAL_SPI_MspInit(SPI_HandleTypeDef* hspi)
     /* Peripheral clock enable */
     __HAL_RCC_SPI3_CLK_ENABLE();
 
-    __HAL_RCC_GPIOA_CLK_ENABLE();
     __HAL_RCC_GPIOD_CLK_ENABLE();
     __HAL_RCC_GPIOB_CLK_ENABLE();
     /**SPI3 GPIO Configuration
-    PA15(JTDI)     ------> SPI3_NSS
     PD6     ------> SPI3_MOSI
     PB9     ------> SPI3_SCK
     */
-    GPIO_InitStruct.Pin = MAG_CS_Pin;
-    GPIO_InitStruct.Mode = GPIO_MODE_AF_PP;
-    GPIO_InitStruct.Pull = GPIO_NOPULL;
-    GPIO_InitStruct.Speed = GPIO_SPEED_FREQ_LOW;
-    GPIO_InitStruct.Alternate = GPIO_AF6_SPI3;
-    HAL_GPIO_Init(MAG_CS_GPIO_Port, &GPIO_InitStruct);
-
     GPIO_InitStruct.Pin = GPIO_PIN_6;
     GPIO_InitStruct.Mode = GPIO_MODE_AF_PP;
     GPIO_InitStruct.Pull = GPIO_NOPULL;
@@ -431,12 +422,11 @@ void HAL_SPI_MspInit(SPI_HandleTypeDef* hspi)
 
     __HAL_RCC_GPIOE_CLK_ENABLE();
     /**SPI4 GPIO Configuration
-    PE11     ------> SPI4_NSS
     PE12     ------> SPI4_SCK
     PE13     ------> SPI4_MISO
     PE14     ------> SPI4_MOSI
     */
-    GPIO_InitStruct.Pin = GPIO_PIN_11|GPIO_PIN_12|GPIO_PIN_13|GPIO_PIN_14;
+    GPIO_InitStruct.Pin = GPIO_PIN_12|GPIO_PIN_13|GPIO_PIN_14;
     GPIO_InitStruct.Mode = GPIO_MODE_AF_PP;
     GPIO_InitStruct.Pull = GPIO_NOPULL;
     GPIO_InitStruct.Speed = GPIO_SPEED_FREQ_LOW;
@@ -486,12 +476,9 @@ void HAL_SPI_MspDeInit(SPI_HandleTypeDef* hspi)
     __HAL_RCC_SPI3_CLK_DISABLE();
 
     /**SPI3 GPIO Configuration
-    PA15(JTDI)     ------> SPI3_NSS
     PD6     ------> SPI3_MOSI
     PB9     ------> SPI3_SCK
     */
-    HAL_GPIO_DeInit(MAG_CS_GPIO_Port, MAG_CS_Pin);
-
     HAL_GPIO_DeInit(GPIOD, GPIO_PIN_6);
 
     HAL_GPIO_DeInit(GPIOB, GPIO_PIN_9);
@@ -511,12 +498,11 @@ void HAL_SPI_MspDeInit(SPI_HandleTypeDef* hspi)
     __HAL_RCC_SPI4_CLK_DISABLE();
 
     /**SPI4 GPIO Configuration
-    PE11     ------> SPI4_NSS
     PE12     ------> SPI4_SCK
     PE13     ------> SPI4_MISO
     PE14     ------> SPI4_MOSI
     */
-    HAL_GPIO_DeInit(GPIOE, GPIO_PIN_11|GPIO_PIN_12|GPIO_PIN_13|GPIO_PIN_14);
+    HAL_GPIO_DeInit(GPIOE, GPIO_PIN_12|GPIO_PIN_13|GPIO_PIN_14);
 
     /* USER CODE BEGIN SPI4_MspDeInit 1 */
 

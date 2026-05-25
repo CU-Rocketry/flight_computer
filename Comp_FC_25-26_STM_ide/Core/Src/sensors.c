@@ -19,17 +19,29 @@
 extern SPI_HandleTypeDef hspi2; // IMU and Baro
 extern SPI_HandleTypeDef hspi3; // Magnetometer
 
-//ready flags
-uint8_t baro_ready = 0;
-uint8_t imu_ready = 0;
-uint8_t mag_ready = 0;
-
 uint8_t device;
 
 // ST drivers
 stmdev_ctx_t lps22hh_ctx;
 stmdev_ctx_t lsm6dsv80x_ctx;
 stmdev_ctx_t iis2mdc_ctx;
+
+// Sensor readings in LSBs
+uint32_t pres_raw;
+int16_t accel_raw[3];
+int16_t omega_raw[3];
+int16_t mag_raw[3];
+
+// New data available flags
+uint8_t baro_ready = 0;
+uint8_t imu_ready = 0;
+uint8_t mag_ready = 0;
+
+// SPI DMA buffers
+// Size = 1 for register + N bytes
+uint8_t baro_tx_buf[4], baro_rx_buf[4]; // XL, L, and H
+uint8_t imu_tx_buf[13], imu_rx_buf[13]; // Gyro 2 bytes * 3 axes + Accel 2 bytes * 3 axes
+uint8_t mag_tx_buf, mag_rx_buf[6]; // X, Y, Z where each channel is 16 bits = 2 bytes
 
 // Sensor readings
 uint32_t pres_raw;
@@ -43,11 +55,7 @@ float omega_rads[3];
 int16_t mag_raw[3];
 float mag_mgauss[3];
 
-// SPI DMA buffers
-// Size = 1 for register + N bytes
-uint8_t baro_tx_buf[4], baro_rx_buf[4]; // XL, L, and H
-uint8_t imu_tx_buf[13], imu_rx_buf[13]; // Gyro 2 bytes * 3 axes + Accel 2 bytes * 3 axes
-uint8_t mag_tx_buf[7], mag_rx_buf[7]; // X, Y, Z where each channel is 16 bits = 2 bytes
+
 
 void get_accel_ms2(float *out) {
 	out[0] = accel_ms2[0];
@@ -71,18 +79,6 @@ void get_pres_hpa(float *out) {
 	*out = pres_hpa;
 }
 
-//void spi_nss(SPI_HandleTypeDef *handle, uint8_t level, uint8_t device) {
-//	if (handle->Instance == SPI2) {
-//		if (device  == 1){
-//		HAL_GPIO_WritePin(BARO_CS_GPIO_Port, BARO_CS_Pin, level);
-//		} else if (device == 2){
-//		HAL_GPIO_WritePin(IMU_CS_GPIO_Port, IMU_CS_Pin, level);
-//		}
-//	} else if (handle->Instance == SPI3) {
-//
-//	}
-//}
-
 // ST driver platform functions
 int32_t platform_write_baro(void *handle, uint8_t reg, const uint8_t *bufp, uint16_t len)
 {
@@ -103,16 +99,6 @@ int32_t platform_write_imu(void *handle, uint8_t reg, const uint8_t *bufp, uint1
 	status += HAL_SPI_Transmit(handle, &reg, 1, 1000);
 	status += HAL_SPI_Transmit(handle, bufp, len, 1000);
 	HAL_GPIO_WritePin(IMU_CS_GPIO_Port, IMU_CS_Pin, 1);
-	return status;
-}
-
-int32_t platform_write_mag(void *handle, uint8_t reg, const uint8_t *bufp, uint16_t len)
-{
-	HAL_StatusTypeDef status = HAL_OK;
-	HAL_GPIO_WritePin(MAG_CS_GPIO_Port, MAG_CS_Pin, 0);
-	status += HAL_SPI_Transmit(handle, &reg, 1, 1000);
-	status += HAL_SPI_Transmit(handle, bufp, len, 1000);
-	HAL_GPIO_WritePin(MAG_CS_GPIO_Port, MAG_CS_Pin, 1);
 	return status;
 }
 
@@ -156,6 +142,16 @@ int32_t platform_read_mag(void *handle, uint8_t reg, uint8_t *bufp, uint16_t len
 	return status;
 }
 
+int32_t platform_write_mag(void *handle, uint8_t reg, const uint8_t *bufp, uint16_t len)
+{
+	HAL_StatusTypeDef status = HAL_OK;
+	HAL_GPIO_WritePin(MAG_CS_GPIO_Port, MAG_CS_Pin, 0);
+	status += HAL_SPI_Transmit(handle, &reg, 1, 1000);
+	status += HAL_SPI_Transmit(handle, bufp, len, 1000);
+	HAL_GPIO_WritePin(MAG_CS_GPIO_Port, MAG_CS_Pin, 1);
+	return status;
+}
+
 void platform_delay(uint32_t millisec)
 {
 	HAL_Delay(millisec);
@@ -181,11 +177,13 @@ void imu_int_drdy_handler() {
 }
 
 void mag_int_drdy_handler() {
-	memset(mag_tx_buf, 0, 7);
-	mag_tx_buf[0] = IIS2MDC_OUTX_L_REG | 0x80;
-	HAL_SPI_TransmitReceive_DMA(iis2mdc_ctx.handle, mag_tx_buf, mag_rx_buf, 7);
-}
 
+	mag_tx_buf = IIS2MDC_OUTX_L_REG | 0x80;
+	HAL_GPIO_WritePin(MAG_CS_GPIO_Port, MAG_CS_Pin, 0); // assert mag CS
+	//	HAL_SPI_TransmitReceive_DMA(iis2mdc_ctx.handle, mag_tx_buf, mag_rx_buf, 7); // this doesn't work for half duplex SPI
+		HAL_SPI_Transmit(&hspi3, &mag_tx_buf, 1, 1);
+		HAL_SPI_Receive_DMA(&hspi3, mag_rx_buf, 6);
+}
 // SPI DMA done callbacks
 // after data transfer process into units
 void baro_spi_callback() {
@@ -218,7 +216,14 @@ void imu_spi_callback() {
 
 
 void mag_spi_callback() {
-	mag_ready = 1;
+	HAL_GPIO_WritePin(MAG_CS_GPIO_Port, MAG_CS_Pin, 1); // deassert mag CS
+		mag_raw[0] = (int16_t)(((int16_t)mag_rx_buf[1] << 8) | (int16_t)mag_rx_buf[0]);
+		mag_raw[1] = (int16_t)(((int16_t)mag_rx_buf[3] << 8) | (int16_t)mag_rx_buf[2]);
+		mag_raw[2] = (int16_t)(((int16_t)mag_rx_buf[5] << 8) | (int16_t)mag_rx_buf[4]);
+//		global_state.mag_mgauss[0] = iis2mdc_from_lsb_to_mgauss(mag_raw[0]);//mG
+//		global_state.mag_mgauss[1] = iis2mdc_from_lsb_to_mgauss(mag_raw[1]);
+//		global_state.mag_mgauss[2] = iis2mdc_from_lsb_to_mgauss(mag_raw[2]);
+		mag_ready = 1;
 }
 
 void sensors_init() {
@@ -333,37 +338,39 @@ void imu_init() {
 
 void mag_init() {
 	// Setup magnetometer device driver context
-	iis2mdc_ctx.write_reg = platform_write_mag;
-	iis2mdc_ctx.read_reg = platform_read_mag;
-	iis2mdc_ctx.mdelay = platform_delay;
-	iis2mdc_ctx.handle = &hspi3;
+		iis2mdc_ctx.write_reg = platform_write_mag;
+		iis2mdc_ctx.read_reg = platform_read_mag;
+		iis2mdc_ctx.mdelay = platform_delay;
+		iis2mdc_ctx.handle = &hspi3;
 
-	uint8_t whoami = 0;
-	iis2mdc_device_id_get(&iis2mdc_ctx, &whoami);
-	if (whoami != IIS2MDC_ID) {
-		printf("IIS2MDC whoami failed: %u, expected %u\r\n", whoami, IIS2MDC_ID);
-		while (1);
-	}
+		uint8_t whoami = 0;
+		iis2mdc_device_id_get(&iis2mdc_ctx, &whoami);
+		if (whoami != IIS2MDC_ID) {
+			printf("IIS2MDC whoami failed: %u, expected %u\r\n", whoami, IIS2MDC_ID);
+			while (1);
+		}
 
-	/* Restore default configuration */
-	iis2mdc_reset_set(&iis2mdc_ctx, PROPERTY_ENABLE);
+		/* Restore default configuration */
+		iis2mdc_reset_set(&iis2mdc_ctx, PROPERTY_ENABLE);
 
-	uint8_t rst;
-	do {
-	iis2mdc_reset_get(&iis2mdc_ctx, &rst);
-	} while (rst);
+		uint8_t rst;
+		do {
+		iis2mdc_reset_get(&iis2mdc_ctx, &rst);
+		} while (rst);
 
-	/* Enable Block Data Update */
-	iis2mdc_block_data_update_set(&iis2mdc_ctx, PROPERTY_ENABLE);
-	/* Set Output Data Rate */
-	iis2mdc_data_rate_set(&iis2mdc_ctx, IIS2MDC_ODR_10Hz);
-	/* Set / Reset sensor mode */
-	iis2mdc_set_rst_mode_set(&iis2mdc_ctx, IIS2MDC_SENS_OFF_CANC_EVERY_ODR);
-	/* Enable temperature compensation */
-	iis2mdc_offset_temp_comp_set(&iis2mdc_ctx, PROPERTY_ENABLE);
-	/* Set device in continuous mode */
-	iis2mdc_operating_mode_set(&iis2mdc_ctx, IIS2MDC_CONTINUOUS_MODE);
+		/* Enable Block Data Update */
+		iis2mdc_block_data_update_set(&iis2mdc_ctx, PROPERTY_ENABLE);
+		/* Set Output Data Rate */
+		iis2mdc_data_rate_set(&iis2mdc_ctx, IIS2MDC_ODR_100Hz);
+		/* Set / Reset sensor mode */
+		iis2mdc_set_rst_mode_set(&iis2mdc_ctx, IIS2MDC_SENS_OFF_CANC_EVERY_ODR);
+		/* Enable temperature compensation */
+		iis2mdc_offset_temp_comp_set(&iis2mdc_ctx, PROPERTY_ENABLE);
+		/* Set device in continuous mode */
+		iis2mdc_operating_mode_set(&iis2mdc_ctx, IIS2MDC_CONTINUOUS_MODE);
 
-	printf("IIS2MDC init complete\r\n");
+		iis2mdc_drdy_on_pin_set(&iis2mdc_ctx, 1);
+
+		printf("IIS2MDC init complete\r\n");
 }
 
