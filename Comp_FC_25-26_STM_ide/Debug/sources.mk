@@ -25,5 +25,4 @@ SUBDIRS := \
 Core/Src \
 Core/Startup \
 Drivers/STM32H5xx_HAL_Driver/Src \
-Core/Src/LoRa \
 

@@ -1,0 +1,5 @@
+../Core/Src/lora_telemetry.c:48:6:LoRa_init	2
+../Core/Src/lora_telemetry.c:111:6:sx126x_hal_wait_on_busy	2
+../Core/Src/lora_telemetry.c:124:6:telemetry_tx	1
+../Core/Src/lora_telemetry.c:165:21:sx126x_hal_write	1
+../Core/Src/lora_telemetry.c:195:21:sx126x_hal_read	1

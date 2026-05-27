@@ -26,6 +26,7 @@
 #include "rgb_led.h"
 #include "buzzer.h"
 #include "lps22hh_reg.h"
+#include "lora_telemetry.h"
 
 #include <string.h>
 #include <stdio.h>
@@ -191,7 +192,7 @@ int main(void)
  printf("Hello, world!\r\n");
  HAL_Delay(100);
 
- mag_init();
+ LoRa_init();
 
   //GPS initialization
 //  GNSS_Init(&GNSS_Handle, &huart4);
@@ -629,15 +630,15 @@ static void MX_SPI4_Init(void)
   hspi4.Init.Mode = SPI_MODE_MASTER;
   hspi4.Init.Direction = SPI_DIRECTION_2LINES;
   hspi4.Init.DataSize = SPI_DATASIZE_8BIT;
-  hspi4.Init.CLKPolarity = SPI_POLARITY_HIGH;
-  hspi4.Init.CLKPhase = SPI_PHASE_2EDGE;
+  hspi4.Init.CLKPolarity = SPI_POLARITY_LOW;
+  hspi4.Init.CLKPhase = SPI_PHASE_1EDGE;
   hspi4.Init.NSS = SPI_NSS_SOFT;
-  hspi4.Init.BaudRatePrescaler = SPI_BAUDRATEPRESCALER_2;
+  hspi4.Init.BaudRatePrescaler = SPI_BAUDRATEPRESCALER_32;
   hspi4.Init.FirstBit = SPI_FIRSTBIT_MSB;
   hspi4.Init.TIMode = SPI_TIMODE_DISABLE;
   hspi4.Init.CRCCalculation = SPI_CRCCALCULATION_DISABLE;
   hspi4.Init.CRCPolynomial = 0x7;
-  hspi4.Init.NSSPMode = SPI_NSS_PULSE_DISABLE;
+  hspi4.Init.NSSPMode = SPI_NSS_PULSE_ENABLE;
   hspi4.Init.NSSPolarity = SPI_NSS_POLARITY_LOW;
   hspi4.Init.FifoThreshold = SPI_FIFO_THRESHOLD_01DATA;
   hspi4.Init.MasterSSIdleness = SPI_MASTER_SS_IDLENESS_00CYCLE;
@@ -1065,7 +1066,8 @@ static void MX_GPIO_Init(void)
 
   /*Configure GPIO pin Output Level */
   HAL_GPIO_WritePin(GPIOE, SENSE_2_Pin|PYRO_1_Pin|SENSE_3_Pin|RF_DIO1_Pin
-                          |RF_TXEN_Pin|RF_RXEN_Pin|RF_RESET_Pin|RF_CS_Pin, GPIO_PIN_RESET);
+                          |RF_TXEN_Pin|RF_RXEN_Pin|RF_RESET_Pin|RF_CS_Pin
+                          |RF_BUSY_Pin, GPIO_PIN_RESET);
 
   /*Configure GPIO pin Output Level */
   HAL_GPIO_WritePin(GPIOC, PYRO_4_Pin|RF_DIO3_Pin|RF_DIO2_Pin, GPIO_PIN_RESET);
@@ -1113,11 +1115,12 @@ static void MX_GPIO_Init(void)
   GPIO_InitStruct.Pull = GPIO_NOPULL;
   HAL_GPIO_Init(LM660_ST_GPIO_Port, &GPIO_InitStruct);
 
-  /*Configure GPIO pins : RF_BUSY_Pin MAG_INT_Pin */
-  GPIO_InitStruct.Pin = RF_BUSY_Pin|MAG_INT_Pin;
-  GPIO_InitStruct.Mode = GPIO_MODE_IT_RISING;
-  GPIO_InitStruct.Pull = GPIO_NOPULL;
-  HAL_GPIO_Init(GPIOE, &GPIO_InitStruct);
+  /*Configure GPIO pin : RF_BUSY_Pin */
+  GPIO_InitStruct.Pin = RF_BUSY_Pin;
+  GPIO_InitStruct.Mode = GPIO_MODE_OUTPUT_PP;
+  GPIO_InitStruct.Pull = GPIO_PULLDOWN;
+  GPIO_InitStruct.Speed = GPIO_SPEED_FREQ_LOW;
+  HAL_GPIO_Init(RF_BUSY_GPIO_Port, &GPIO_InitStruct);
 
   /*Configure GPIO pin : BARO_CS_Pin */
   GPIO_InitStruct.Pin = BARO_CS_Pin;
@@ -1190,6 +1193,12 @@ static void MX_GPIO_Init(void)
   GPIO_InitStruct.Mode = GPIO_MODE_IT_RISING;
   GPIO_InitStruct.Pull = GPIO_PULLDOWN;
   HAL_GPIO_Init(BTN_1_GPIO_Port, &GPIO_InitStruct);
+
+  /*Configure GPIO pin : MAG_INT_Pin */
+  GPIO_InitStruct.Pin = MAG_INT_Pin;
+  GPIO_InitStruct.Mode = GPIO_MODE_IT_RISING;
+  GPIO_InitStruct.Pull = GPIO_NOPULL;
+  HAL_GPIO_Init(MAG_INT_GPIO_Port, &GPIO_InitStruct);
 
   /* USER CODE BEGIN MX_GPIO_Init_2 */
 
