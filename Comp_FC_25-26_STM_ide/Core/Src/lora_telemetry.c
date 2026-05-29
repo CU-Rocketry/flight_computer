@@ -104,8 +104,25 @@ void LoRa_init(){
  		 printf("Telemetry mode: %d\r\n", pkt_type);
   }
 
+ //set interrupt parameters
+
+ sx126x_clear_irq_status( radio, SX126X_IRQ_ALL );
+
+ 	 sx126x_set_dio_irq_params(
+ 	         radio, SX126X_IRQ_ALL,
+ 	         SX126X_IRQ_TX_DONE | SX126X_IRQ_RX_DONE | SX126X_IRQ_TIMEOUT | SX126X_IRQ_HEADER_ERROR | SX126X_IRQ_CRC_ERROR,
+ 	         SX126X_IRQ_NONE, SX126X_IRQ_NONE );
+
+ 	 sx126x_clear_irq_status( radio, SX126X_IRQ_ALL ); //clear status of interrupt pin
+
+
  printf("Module configured.\r\n");
  printf("YESSSSSSSSSSSSS :) \r\n");
+ printf("Starting radio in continous rx mode...\r\n");
+
+ int rx_flag = 0;
+ sx126x_set_rx(radio, 0xFFFFFF); //set radio to continous rx mode
+
 }
 
 void sx126x_hal_wait_on_busy( const void* radio ){
@@ -117,11 +134,14 @@ void sx126x_hal_wait_on_busy( const void* radio ){
 // write funtion for recieving/transmitting
 //detect if channel is taken
 
-//void packet_build(){} build packet function
+void packet_build(void){  //build packet function			//TODO
 
+}
 
 
 void telemetry_tx(uint8_t packet){
+
+	sx126x_set_standby(radio, SX126X_STANDBY_CFG_XOSC); //ensure radio in standby mode before changning any settings
 
 	//configuring packet type
 	sx126x_pkt_params_lora_t pkt_params;
@@ -132,19 +152,36 @@ void telemetry_tx(uint8_t packet){
 	pkt_params.crc_is_on = 1; //crc off for now
 	pkt_params.invert_iq_is_on = 0; //standard IQ setup
 
-	sx126x_set_lora_pkt_params(radio, &pkt_params);
+	sx126x_set_lora_pkt_params(radio, &pkt_params); //setup packets
 
-} //basic tx function
+	 //writing buffer for transmission into radio
 
-//steps:
-//-> write buffer for data
-//-> will need to configure packet
-//-> transmit data
-//-> reserve memory for rx
-//-> open up for recieving
+	 //package up packet into buffer
 
+	 static uint8_t buffer_tx[sizeof(packet)];
+	 memcpy( buffer_tx, &packet, sizeof(packet));
+	 sx126x_write_buffer(radio, 0, buffer_tx, sizeof(packet));
 
-//void telemetry_rx(){} basic rx function
+	 sx126x_set_tx(radio, 0 ); //transmit
+
+	 //need to poll interrupt to see if transmit is done
+	 sx126x_irq_mask_t irq_status;
+
+	 	 while( irq_status != SX126X_IRQ_TX_DONE); //tell when done
+			 {
+				 sx126x_get_irq_status(radio, &irq_status);
+			 }
+}
+
+//FOR RX
+//need to poll interrupt pin -> do this by calling function in loop
+//if detect interrupt on RX line -> decode
+//
+
+void telemetry_rx_decode(){ //function to decode rx packets
+
+};
+
 
 //writing a basic write/recieve script
 
@@ -211,5 +248,106 @@ sx126x_hal_status_t sx126x_hal_read( const void* context, const uint8_t* command
 		return SX126X_HAL_STATUS_OK;
 
 }
+
+
+
+void sx126x_irq_process( const void* context )
+{
+
+        sx126x_irq_mask_t irq_regs;
+        sx126x_get_and_clear_irq_status( context, &irq_regs );
+
+        if( ( irq_regs & SX126X_IRQ_TX_DONE ) == SX126X_IRQ_TX_DONE )
+        {
+            printf( "Tx done\n" );
+
+            //after tx done, set radio back to continous polling
+           	sx126x_set_rx(radio, 0xFFFFFF);
+
+
+        }
+
+        if( ( irq_regs & SX126X_IRQ_RX_DONE ) == SX126X_IRQ_RX_DONE )
+        {
+            printf( "Rx done\n" );
+            sx126x_handle_rx_done( context );
+
+
+
+        }
+
+        if( ( irq_regs & SX126X_IRQ_PREAMBLE_DETECTED ) == SX126X_IRQ_PREAMBLE_DETECTED )
+        {
+            printf( "Preamble detected\n" );
+
+        }
+
+        if( ( irq_regs & SX126X_IRQ_SYNC_WORD_VALID ) == SX126X_IRQ_SYNC_WORD_VALID )
+        {
+            printf( "Syncword valid\n" );
+
+        }
+
+        if( ( irq_regs & SX126X_IRQ_HEADER_VALID ) == SX126X_IRQ_HEADER_VALID )
+        {
+            printf( "Header valid\n" );
+
+        }
+
+        if( ( irq_regs & SX126X_IRQ_HEADER_ERROR ) == SX126X_IRQ_HEADER_ERROR )
+        {
+            printf( "Header error\n" );
+
+        }
+
+        if( ( irq_regs & SX126X_IRQ_CRC_ERROR ) == SX126X_IRQ_CRC_ERROR )
+        {
+            printf( "CRC error\n" );
+
+        }
+
+        if( ( irq_regs & SX126X_IRQ_CAD_DONE ) == SX126X_IRQ_CAD_DONE )
+        {
+            printf( "CAD done\n" );
+            if( ( irq_regs & SX126X_IRQ_CAD_DETECTED ) == SX126X_IRQ_CAD_DETECTED )
+            {
+                printf( "Channel activity detected\n" );
+
+            }
+            else
+            {
+                printf( "No channel activity detected\n" );
+
+            }
+        }
+
+        if( ( irq_regs & SX126X_IRQ_TIMEOUT ) == SX126X_IRQ_TIMEOUT )
+        {
+            printf( "Rx timeout\n" );
+
+        }
+
+        if( ( irq_regs & SX126X_IRQ_LR_FHSS_HOP ) == SX126X_IRQ_LR_FHSS_HOP )
+        {
+            printf( "FHSS hop done\n" );
+
+        }
+
+}
+
+//interrupt handler - possibly implement
+
+void rf_int_drdy_handler(){		//TODO
+
+	//run and interperet decoder
+	sx126x_irq_process(radio);
+
+
+	//TODO
+		// write interrupt handler
+			// detect if what the interrupt is
+			// -> code irq handler to behave based on interrupt
+
+};
 
 

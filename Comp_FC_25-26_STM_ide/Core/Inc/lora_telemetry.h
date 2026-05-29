@@ -12,6 +12,8 @@ void LoRa_init(void);
 void telemetry_tx(void);
 void packet_build(void);
 void telemetry_rx(void);
+void rf_int_drdy_handler(void);
+void sx126x_irq_process(void);
 
 
 #endif /* INC_LORA_TELEMETRY_H_ */

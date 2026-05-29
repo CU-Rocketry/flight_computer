@@ -255,6 +255,8 @@ int main(void)
 	  float pres;
 	 	  		  get_pres_hpa(&pres);
 	 	  		printf("Pressure: %f\r\n", pres);
+
+
 	  }
 
 	  }
@@ -1065,9 +1067,8 @@ static void MX_GPIO_Init(void)
   __HAL_RCC_GPIOD_CLK_ENABLE();
 
   /*Configure GPIO pin Output Level */
-  HAL_GPIO_WritePin(GPIOE, SENSE_2_Pin|PYRO_1_Pin|SENSE_3_Pin|RF_DIO1_Pin
-                          |RF_TXEN_Pin|RF_RXEN_Pin|RF_RESET_Pin|RF_CS_Pin
-                          |RF_BUSY_Pin, GPIO_PIN_RESET);
+  HAL_GPIO_WritePin(GPIOE, SENSE_2_Pin|PYRO_1_Pin|SENSE_3_Pin|RF_TXEN_Pin
+                          |RF_RXEN_Pin|RF_RESET_Pin|RF_CS_Pin|RF_BUSY_Pin, GPIO_PIN_RESET);
 
   /*Configure GPIO pin Output Level */
   HAL_GPIO_WritePin(GPIOC, PYRO_4_Pin|RF_DIO3_Pin|RF_DIO2_Pin, GPIO_PIN_RESET);
@@ -1081,10 +1082,10 @@ static void MX_GPIO_Init(void)
   /*Configure GPIO pin Output Level */
   HAL_GPIO_WritePin(MAG_CS_GPIO_Port, MAG_CS_Pin, GPIO_PIN_RESET);
 
-  /*Configure GPIO pins : SENSE_2_Pin PYRO_1_Pin SENSE_3_Pin RF_DIO1_Pin
-                           RF_TXEN_Pin RF_RXEN_Pin RF_RESET_Pin RF_CS_Pin */
-  GPIO_InitStruct.Pin = SENSE_2_Pin|PYRO_1_Pin|SENSE_3_Pin|RF_DIO1_Pin
-                          |RF_TXEN_Pin|RF_RXEN_Pin|RF_RESET_Pin|RF_CS_Pin;
+  /*Configure GPIO pins : SENSE_2_Pin PYRO_1_Pin SENSE_3_Pin RF_TXEN_Pin
+                           RF_RXEN_Pin RF_RESET_Pin RF_CS_Pin */
+  GPIO_InitStruct.Pin = SENSE_2_Pin|PYRO_1_Pin|SENSE_3_Pin|RF_TXEN_Pin
+                          |RF_RXEN_Pin|RF_RESET_Pin|RF_CS_Pin;
   GPIO_InitStruct.Mode = GPIO_MODE_OUTPUT_PP;
   GPIO_InitStruct.Pull = GPIO_NOPULL;
   GPIO_InitStruct.Speed = GPIO_SPEED_FREQ_LOW;
@@ -1114,6 +1115,12 @@ static void MX_GPIO_Init(void)
   GPIO_InitStruct.Mode = GPIO_MODE_INPUT;
   GPIO_InitStruct.Pull = GPIO_NOPULL;
   HAL_GPIO_Init(LM660_ST_GPIO_Port, &GPIO_InitStruct);
+
+  /*Configure GPIO pins : RF_DIO1_Pin MAG_INT_Pin */
+  GPIO_InitStruct.Pin = RF_DIO1_Pin|MAG_INT_Pin;
+  GPIO_InitStruct.Mode = GPIO_MODE_IT_RISING;
+  GPIO_InitStruct.Pull = GPIO_NOPULL;
+  HAL_GPIO_Init(GPIOE, &GPIO_InitStruct);
 
   /*Configure GPIO pin : RF_BUSY_Pin */
   GPIO_InitStruct.Pin = RF_BUSY_Pin;
@@ -1194,12 +1201,6 @@ static void MX_GPIO_Init(void)
   GPIO_InitStruct.Pull = GPIO_PULLDOWN;
   HAL_GPIO_Init(BTN_1_GPIO_Port, &GPIO_InitStruct);
 
-  /*Configure GPIO pin : MAG_INT_Pin */
-  GPIO_InitStruct.Pin = MAG_INT_Pin;
-  GPIO_InitStruct.Mode = GPIO_MODE_IT_RISING;
-  GPIO_InitStruct.Pull = GPIO_NOPULL;
-  HAL_GPIO_Init(MAG_INT_GPIO_Port, &GPIO_InitStruct);
-
   /* USER CODE BEGIN MX_GPIO_Init_2 */
 
   /* USER CODE END MX_GPIO_Init_2 */
@@ -1226,11 +1227,17 @@ void HAL_GPIO_EXTI_Callback(uint16_t GPIO_Pin)
 	if (GPIO_Pin == BARO_INT_Pin) {
 		baro_int_drdy_handler();
 	}
-//	} else if(GPIO_Pin == IMU_INT1_Pin || GPIO_Pin == IMU_INT2_Pin) {
-//		imu_int_drdy_handler();
-//	} else if(GPIO_Pin == MAG_INT_Pin) {
-//		mag_int_drdy_handler();
-//	}
+	 else if(GPIO_Pin == IMU_INT1_Pin || GPIO_Pin == IMU_INT2_Pin) {
+		imu_int_drdy_handler();
+	} else if(GPIO_Pin == MAG_INT_Pin) {
+		mag_int_drdy_handler();
+	}
+		else if(GPIO_Pin == RF_DIO1_Pin){
+
+		sx126x_irq_process();
+
+	}
+
 }
 
 void HAL_SPI_TxRxCpltCallback(SPI_HandleTypeDef *hspi)
