@@ -10,6 +10,7 @@
 #include "sx126x.h"
 
 #include "main.h"
+#include "state.h"
 #include <string.h>
 #include <stdio.h>
 
@@ -134,7 +135,46 @@ void sx126x_hal_wait_on_busy( const void* radio ){
 // write funtion for recieving/transmitting
 //detect if channel is taken
 
-void packet_build(void){  //build packet function			//TODO
+void packet_build(const state_t *current_state, telemetry_packet_t *packet){  //build packet function			//TODO
+
+		packet->pkt_type = PKT_TYPE_TELEMETRY;
+
+		// Time
+		packet->t = current_state->t;
+
+		// Launch detect
+		packet->is_launched = current_state->is_launched;
+
+		// current state of flight
+		packet->state = current_state->state;
+
+		// Power
+		packet->batt_v = current_state->batt_v;
+		packet->batt_i = current_state->batt_i;
+
+		// Sensors
+		packet->pres_pa = current_state->pres_pa;
+
+		// Body frame sensors
+		memcpy(packet->accel_b, current_state->accel_b, sizeof(packet->accel_b));
+		memcpy(packet->omega_b, current_state->omega_b, sizeof(packet->omega_b));
+		memcpy(packet->mag_b, current_state->mag_b, sizeof(packet->mag_b));
+
+		// State estimation
+		memcpy(packet->quat, current_state->quat, sizeof(packet->quat));
+		memcpy(packet->accel_e, current_state->accel_e, sizeof(packet->accel_e));
+
+		packet->p_ground = current_state->p_ground;
+		packet->alt_agl = current_state->alt_agl;
+		packet->vel_z = current_state->vel_z;
+
+		// Control
+		// TODO
+		packet->output = current_state->output;
+
+		// Servo
+		packet->servo_cmd = current_state->servo_cmd;
+		packet->servo_fdbk = current_state->servo_fdbk;
 
 }
 
@@ -167,7 +207,7 @@ void telemetry_tx(uint8_t packet){
 	 //need to poll interrupt to see if transmit is done
 	 sx126x_irq_mask_t irq_status;
 
-	 	 while( irq_status != SX126X_IRQ_TX_DONE); //tell when done
+	 	 while( irq_status != SX126X_IRQ_TX_DONE) //tell when done
 			 {
 				 sx126x_get_irq_status(radio, &irq_status);
 			 }
@@ -176,14 +216,29 @@ void telemetry_tx(uint8_t packet){
 //FOR RX
 //need to poll interrupt pin -> do this by calling function in loop
 //if detect interrupt on RX line -> decode
-//
+//may only need to do this on ground station
 
 void telemetry_rx_decode(){ //function to decode rx packets
 
+	//decoding scheme for each type of packet, for fc this is command only, gs is telemetry data
+
+//	void telemetry_parse_rx(cobs_uart_t *port, state_t *state) {
+//	    uint8_t decoded_buf[256]; // set new length of longest packet
+//	    uint16_t decoded_len = cobs_decode(port->rx_buf, port->rx_idx, decoded_buf); //idk what this command does tbh
+//
+//	    if (decoded_len > 0) {
+//	        uint8_t pkt_type = decoded_buf[0];
+//
+//	        if (pkt_type == PKT_TYPE_CMD && decoded_len == sizeof(command_packet_t)) {
+//				command_packet_t *cmd = (command_packet_t *)decoded_buf;
+//
+//			}
+//	    }
+//	}
+//
 };
 
 
-//writing a basic write/recieve script
 
 
 /**
@@ -270,8 +325,7 @@ void sx126x_irq_process( const void* context )
         if( ( irq_regs & SX126X_IRQ_RX_DONE ) == SX126X_IRQ_RX_DONE )
         {
             printf( "Rx done\n" );
-            sx126x_handle_rx_done( context );
-
+            telemetry_rx_decode();
 
 
         }
@@ -334,20 +388,4 @@ void sx126x_irq_process( const void* context )
         }
 
 }
-
-//interrupt handler - possibly implement
-
-void rf_int_drdy_handler(){		//TODO
-
-	//run and interperet decoder
-	sx126x_irq_process(radio);
-
-
-	//TODO
-		// write interrupt handler
-			// detect if what the interrupt is
-			// -> code irq handler to behave based on interrupt
-
-};
-
 

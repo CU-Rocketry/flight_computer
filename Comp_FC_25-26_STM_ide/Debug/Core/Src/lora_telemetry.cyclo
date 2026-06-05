@@ -1,9 +1,0 @@
-../Core/Src/lora_telemetry.c:48:6:LoRa_init	2
-../Core/Src/lora_telemetry.c:128:6:sx126x_hal_wait_on_busy	2
-../Core/Src/lora_telemetry.c:137:6:packet_build	1
-../Core/Src/lora_telemetry.c:142:6:telemetry_tx	2
-../Core/Src/lora_telemetry.c:181:6:telemetry_rx_decode	1
-../Core/Src/lora_telemetry.c:202:21:sx126x_hal_write	1
-../Core/Src/lora_telemetry.c:232:21:sx126x_hal_read	1
-../Core/Src/lora_telemetry.c:254:6:sx126x_irq_process	12
-../Core/Src/lora_telemetry.c:340:6:rf_int_drdy_handler	1

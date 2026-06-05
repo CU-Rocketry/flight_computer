@@ -27,6 +27,9 @@
 #include "buzzer.h"
 #include "lps22hh_reg.h"
 #include "lora_telemetry.h"
+#include "GNSS.h"
+#include "packets.h"
+#include "flash.h"
 
 #include <string.h>
 #include <stdio.h>
@@ -86,6 +89,14 @@ buzzer_t buzzer = {
     .handle = &htim3,
 	.channel_buz = TIM_CHANNEL_2
 };
+
+flash_t flash = {
+    .hospi = &hospi1,
+    .address = 0,
+    .full = 0,
+    .prescaler_max = 10, // default to 10 hz for waiting on pad
+    .prescaler_cnt = 0
+};
 // Control system tick
 uint8_t poll = 1;
 uint8_t tick_100Hz = 0;
@@ -93,6 +104,12 @@ uint8_t tick_100Hz = 0;
 extern uint8_t baro_ready;
 extern uint8_t mag_ready;
 extern uint8_t imu_ready;
+
+// Global state
+state_t global_state = {0};
+
+
+//GNSS_StateHandle GNSS_Handle;
 
 /* USER CODE END PV */
 
@@ -184,21 +201,48 @@ int main(void)
 //  buzzer_set(&buzzer, 1);
 
   HAL_Delay(100);
-  HAL_GPIO_WritePin(MAG_CS_GPIO_Port, MAG_CS_Pin, 0);
+  HAL_GPIO_WritePin(BARO_CS_GPIO_Port, MAG_CS_Pin, 0);
   HAL_Delay(100);
-  HAL_GPIO_WritePin(MAG_CS_GPIO_Port, MAG_CS_Pin, 1);
+  HAL_GPIO_WritePin(BARO_CS_GPIO_Port, MAG_CS_Pin, 1);
   HAL_Delay(100);
+
+  HAL_Delay(100);
+    HAL_GPIO_WritePin(IMU_CS_GPIO_Port, MAG_CS_Pin, 0);
+    HAL_Delay(100);
+    HAL_GPIO_WritePin(IMU_CS_GPIO_Port, MAG_CS_Pin, 1);
+    HAL_Delay(100);
 
  printf("Hello, world!\r\n");
  HAL_Delay(100);
 
- LoRa_init();
 
-  //GPS initialization
-//  GNSS_Init(&GNSS_Handle, &huart4);
-//  	HAL_Delay(1000);
-//  	GNSS_LoadConfig(&GNSS_Handle);
-//  	uint32_t Timer = HAL_GetTick();
+ LoRa_init();
+ HAL_Delay(100);
+ sensors_init();
+
+
+
+// GNSS_Init(&GNSS_Handle, &huart4);
+// 	HAL_Delay(1000);
+// 	GNSS_LoadConfig(&GNSS_Handle);
+//
+// 	// test gps connection
+// 		  get_GNSS(&GNSS_Handle);
+//
+// 		  HAL_Delay(250);
+// 		 				printf("Day: %d-%d-%d \r\n", GNSS_Handle.day, GNSS_Handle.month,GNSS_Handle.year);
+// 		 				printf("Time: %d:%d:%d \r\n", GNSS_Handle.hour, GNSS_Handle.min,GNSS_Handle.sec);
+// 		 				printf("Status of fix: %d \r\n", GNSS_Handle.fixType);
+// 		 				printf("Latitude: %d \r\n", GNSS_Handle.fLat);
+// 		 				printf("Longitude: %d \r\n", GNSS_Handle.lon / 10000000);
+// 		 				printf("Height above ellipsoid: %d \r\n", GNSS_Handle.height);
+// 		 				printf("Height above mean sea level: %d \r\n", GNSS_Handle.hMSL);
+// 		 				printf("Ground Speed (2-D): %d \r\n", GNSS_Handle.gSpeed);
+// 		 				printf("Unique ID: %04X %04X %04X %04X %04X \n\r",
+//
+// 		 						GNSS_Handle.uniqueID[0], GNSS_Handle.uniqueID[1],
+// 		 						GNSS_Handle.uniqueID[2], GNSS_Handle.uniqueID[3],
+// 		 						GNSS_Handle.uniqueID[4], GNSS_Handle.uniqueID[5]);
 
   /* USER CODE END 2 */
 
@@ -207,29 +251,7 @@ int main(void)
   while (1)
   {
 
-//implementing gps read example
-//		if ((HAL_GetTick() - Timer) > 1000) {
-//			GNSS_GetUniqID(&GNSS_Handle);
-//			GNSS_ParseBuffer(&GNSS_Handle);
-//			HAL_Delay(250);
-//			GNSS_GetPVTData(&GNSS_Handle);
-//			GNSS_ParseBuffer(&GNSS_Handle);
-//         HAL_Delay(250);
-//         GNSS_SetMode(&GNSS_Handle, Airbone4G);
-//         HAL_Delay(250);
-//			printf("Day: %d-%d-%d \r\n", GNSS_Handle.day, GNSS_Handle.month,GNSS_Handle.year);
-//			printf("Time: %d:%d:%d \r\n", GNSS_Handle.hour, GNSS_Handle.min,GNSS_Handle.sec);
-//			printf("Status of fix: %d \r\n", GNSS_Handle.fixType);
-//			printf("Latitude: %d \r\n", GNSS_Handle.fLat);
-//			printf("Longitude: %d \r\n", GNSS_Handle.lon / 10000000);
-//			printf("Height above ellipsoid: %d \r\n", GNSS_Handle.height);
-//			printf("Height above mean sea level: %d \r\n", GNSS_Handle.hMSL);
-//			printf("Ground Speed (2-D): %d \r\n", GNSS_Handle.gSpeed);
-//			printf("Unique ID: %04X %04X %04X %04X %04X \n\r",
-//					GNSS_Handle.uniqueID[0], GNSS_Handle.uniqueID[1],
-//					GNSS_Handle.uniqueID[2], GNSS_Handle.uniqueID[3],
-//					GNSS_Handle.uniqueID[4], GNSS_Handle.uniqueID[5]);
-//			Timer = HAL_GetTick();
+
 //
 		//}
 
@@ -1246,7 +1268,11 @@ void HAL_SPI_TxRxCpltCallback(SPI_HandleTypeDef *hspi)
 		baro_spi_callback();
 	} else if (hspi->Instance == SPI2) {
 		imu_spi_callback();
-	} else if (hspi->Instance == SPI3) {
+	}
+}
+
+void HAL_SPI_RxCpltCallback(SPI_HandleTypeDef *hspi) {
+	if (hspi->Instance == SPI3) {
 		mag_spi_callback();
 	}
 }
@@ -1256,6 +1282,8 @@ void HAL_TIM_PeriodElapsedCallback(TIM_HandleTypeDef *htim) {
 			tick_100Hz = 1;
 		}
 }
+
+
 /* USER CODE END 4 */
 
 /**

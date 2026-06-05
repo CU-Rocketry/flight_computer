@@ -1,4 +1,5 @@
 "./Core/Src/GNSS.o"
+"./Core/Src/flash.o"
 "./Core/Src/iis2mdc_reg.o"
 "./Core/Src/lora_telemetry.o"
 "./Core/Src/lps22hh_reg.o"
