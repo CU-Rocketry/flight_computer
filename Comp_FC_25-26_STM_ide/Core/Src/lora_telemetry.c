@@ -135,48 +135,48 @@ void sx126x_hal_wait_on_busy( const void* radio ){
 // write funtion for recieving/transmitting
 //detect if channel is taken
 
-void packet_build(const state_t *current_state, telemetry_packet_t *packet){  //build packet function			//TODO
-
-		packet->pkt_type = PKT_TYPE_TELEMETRY;
-
-		// Time
-		packet->t = current_state->t;
-
-		// Launch detect
-		packet->is_launched = current_state->is_launched;
-
-		// current state of flight
-		packet->state = current_state->state;
-
-		// Power
-		packet->batt_v = current_state->batt_v;
-		packet->batt_i = current_state->batt_i;
-
-		// Sensors
-		packet->pres_pa = current_state->pres_pa;
-
-		// Body frame sensors
-		memcpy(packet->accel_b, current_state->accel_b, sizeof(packet->accel_b));
-		memcpy(packet->omega_b, current_state->omega_b, sizeof(packet->omega_b));
-		memcpy(packet->mag_b, current_state->mag_b, sizeof(packet->mag_b));
-
-		// State estimation
-		memcpy(packet->quat, current_state->quat, sizeof(packet->quat));
-		memcpy(packet->accel_e, current_state->accel_e, sizeof(packet->accel_e));
-
-		packet->p_ground = current_state->p_ground;
-		packet->alt_agl = current_state->alt_agl;
-		packet->vel_z = current_state->vel_z;
-
-		// Control
-		// TODO
-		packet->output = current_state->output;
-
-		// Servo
-		packet->servo_cmd = current_state->servo_cmd;
-		packet->servo_fdbk = current_state->servo_fdbk;
-
-}
+//void packet_build(const state_t *current_state, telemetry_packet_t *packet){  //build packet function			//TODO
+//
+//		packet->pkt_type = PKT_TYPE_TELEMETRY;
+//
+//		// Time
+//		packet->t = current_state->t;
+//
+//		// Launch detect
+//		packet->is_launched = current_state->is_launched;
+//
+//		// current state of flight
+//		packet->state = current_state->state;
+//
+//		// Power
+//		packet->batt_v = current_state->batt_v;
+//		packet->batt_i = current_state->batt_i;
+//
+//		// Sensors
+//		packet->pres_pa = current_state->pres_pa;
+//
+//		// Body frame sensors
+//		memcpy(packet->accel_b, current_state->accel_b, sizeof(packet->accel_b));
+//		memcpy(packet->omega_b, current_state->omega_b, sizeof(packet->omega_b));
+//		memcpy(packet->mag_b, current_state->mag_b, sizeof(packet->mag_b));
+//
+//		// State estimation
+//		memcpy(packet->quat, current_state->quat, sizeof(packet->quat));
+//		memcpy(packet->accel_e, current_state->accel_e, sizeof(packet->accel_e));
+//
+//		packet->p_ground = current_state->p_ground;
+//		packet->alt_agl = current_state->alt_agl;
+//		packet->vel_z = current_state->vel_z;
+//
+//		// Control
+//		// TODO
+//		packet->output = current_state->output;
+//
+//		// Servo
+//		packet->servo_cmd = current_state->servo_cmd;
+//		packet->servo_fdbk = current_state->servo_fdbk;
+//
+//}
 
 
 void telemetry_tx(uint8_t packet){

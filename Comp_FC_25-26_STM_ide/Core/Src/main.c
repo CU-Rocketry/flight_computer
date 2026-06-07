@@ -90,13 +90,13 @@ buzzer_t buzzer = {
 	.channel_buz = TIM_CHANNEL_2
 };
 
-flash_t flash = {
-    .hospi = &hospi1,
-    .address = 0,
-    .full = 0,
-    .prescaler_max = 10, // default to 10 hz for waiting on pad
-    .prescaler_cnt = 0
-};
+//flash_t flash = {
+//    .hspi = &hspi1,
+//    .address = 0,
+//    .full = 0,
+//    .prescaler_max = 10, // default to 10 hz for waiting on pad
+//    .prescaler_cnt = 0
+//};
 // Control system tick
 uint8_t poll = 1;
 uint8_t tick_100Hz = 0;
@@ -106,7 +106,7 @@ extern uint8_t mag_ready;
 extern uint8_t imu_ready;
 
 // Global state
-state_t global_state = {0};
+//state_t global_state = {0};
 
 
 //GNSS_StateHandle GNSS_Handle;
