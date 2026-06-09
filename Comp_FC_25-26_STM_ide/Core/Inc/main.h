@@ -119,6 +119,7 @@ void Error_Handler(void);
 #define IMU_INT1_EXTI_IRQn EXTI10_IRQn
 #define BARO_INT_Pin GPIO_PIN_13
 #define BARO_INT_GPIO_Port GPIOD
+#define BARO_INT_EXTI_IRQn EXTI13_IRQn
 #define GPS_TP_Pin GPIO_PIN_14
 #define GPS_TP_GPIO_Port GPIOD
 #define GPS_RESET_Pin GPIO_PIN_15

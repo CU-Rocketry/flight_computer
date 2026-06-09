@@ -54,6 +54,8 @@
 /* Private variables ---------------------------------------------------------*/
 ADC_HandleTypeDef hadc1;
 
+DCACHE_HandleTypeDef hdcache1;
+
 I2C_HandleTypeDef hi2c1;
 
 XSPI_HandleTypeDef hospi1;
@@ -92,13 +94,14 @@ buzzer_t buzzer = {
 	.channel_buz = TIM_CHANNEL_2
 };
 
-//flash_t flash = {
-//    .hspi = &hspi1,
-//    .address = 0,
-//    .full = 0,
-//    .prescaler_max = 10, // default to 10 hz for waiting on pad
-//    .prescaler_cnt = 0
-//};
+flash_t flash = {
+    .hxspi = &hospi1,
+    .address = 0,
+    .full = 0,
+    .prescaler_max = 10, // default to 10 hz for waiting on pad
+    .prescaler_cnt = 0
+};
+
 // Control system tick
 uint8_t poll = 1;
 uint8_t tick_100Hz = 0;
@@ -133,6 +136,7 @@ static void MX_TIM1_Init(void);
 static void MX_TIM2_Init(void);
 static void MX_TIM6_Init(void);
 static void MX_TIM3_Init(void);
+static void MX_DCACHE1_Init(void);
 /* USER CODE BEGIN PFP */
 // printf UART
 #define PUTCHAR_PROTOTYPE int __io_putchar(int ch)
@@ -194,6 +198,7 @@ int main(void)
   MX_TIM2_Init();
   MX_TIM6_Init();
   MX_TIM3_Init();
+  MX_DCACHE1_Init();
   /* USER CODE BEGIN 2 */
 
   rgb_led_init(&led1);
@@ -228,6 +233,8 @@ int main(void)
 
 
 
+
+
 // GNSS_Init(&GNSS_Handle, &huart4);
 // 	HAL_Delay(1000);
 // 	GNSS_LoadConfig(&GNSS_Handle);
@@ -257,13 +264,10 @@ int main(void)
   while (1)
   {
 
+
 	  printf("hello from while loop\r\n");
+
 	  HAL_Delay(500);
-
-	  HAL_GPIO_WritePin(BARO_INT_GPIO_Port, BARO_INT_Pin, 0);
-	  HAL_Delay(100);
-	  HAL_GPIO_WritePin(BARO_INT_GPIO_Port, BARO_INT_Pin, 1);
-
 
 
 //	  if (HAL_GPIO_ReadPin(BTN_1_GPIO_Port, BTN_1_Pin) == 1){
@@ -280,7 +284,6 @@ int main(void)
 //	  }
 
 //	  HAL_GPIO_WritePin(PYRO_2_GPIO_Port, PYRO_2_Pin, 1);
-//
 
 
 	  float pres;
@@ -472,6 +475,33 @@ static void MX_ADC1_Init(void)
 }
 
 /**
+  * @brief DCACHE1 Initialization Function
+  * @param None
+  * @retval None
+  */
+static void MX_DCACHE1_Init(void)
+{
+
+  /* USER CODE BEGIN DCACHE1_Init 0 */
+
+  /* USER CODE END DCACHE1_Init 0 */
+
+  /* USER CODE BEGIN DCACHE1_Init 1 */
+
+  /* USER CODE END DCACHE1_Init 1 */
+  hdcache1.Instance = DCACHE1;
+  hdcache1.Init.ReadBurstType = DCACHE_READ_BURST_WRAP;
+  if (HAL_DCACHE_Init(&hdcache1) != HAL_OK)
+  {
+    Error_Handler();
+  }
+  /* USER CODE BEGIN DCACHE1_Init 2 */
+
+  /* USER CODE END DCACHE1_Init 2 */
+
+}
+
+/**
   * @brief GPDMA1 Initialization Function
   * @param None
   * @retval None
@@ -569,12 +599,12 @@ static void MX_OCTOSPI1_Init(void)
   hospi1.Init.FifoThresholdByte = 1;
   hospi1.Init.MemoryMode = HAL_XSPI_SINGLE_MEM;
   hospi1.Init.MemoryType = HAL_XSPI_MEMTYPE_MICRON;
-  hospi1.Init.MemorySize = HAL_XSPI_SIZE_16B;
+  hospi1.Init.MemorySize = HAL_XSPI_SIZE_128MB;
   hospi1.Init.ChipSelectHighTimeCycle = 1;
   hospi1.Init.FreeRunningClock = HAL_XSPI_FREERUNCLK_DISABLE;
-  hospi1.Init.ClockMode = HAL_XSPI_CLOCK_MODE_0;
+  hospi1.Init.ClockMode = HAL_XSPI_CLOCK_MODE_3;
   hospi1.Init.WrapSize = HAL_XSPI_WRAP_NOT_SUPPORTED;
-  hospi1.Init.ClockPrescaler = 0;
+  hospi1.Init.ClockPrescaler = 1;
   hospi1.Init.SampleShifting = HAL_XSPI_SAMPLE_SHIFT_NONE;
   hospi1.Init.DelayHoldQuarterCycle = HAL_XSPI_DHQC_DISABLE;
   hospi1.Init.ChipSelectBoundary = HAL_XSPI_BONDARYOF_NONE;
@@ -968,7 +998,7 @@ static void MX_TIM6_Init(void)
 
   /* USER CODE END TIM6_Init 1 */
   htim6.Instance = TIM6;
-  htim6.Init.Prescaler = 120;
+  htim6.Init.Prescaler = 119;
   htim6.Init.CounterMode = TIM_COUNTERMODE_UP;
   htim6.Init.Period = 9999;
   htim6.Init.AutoReloadPreload = TIM_AUTORELOAD_PRELOAD_DISABLE;
@@ -1129,6 +1159,7 @@ static void MX_GPIO_Init(void)
 {
   GPIO_InitTypeDef GPIO_InitStruct = {0};
   /* USER CODE BEGIN MX_GPIO_Init_1 */
+  __HAL_RCC_SBS_CLK_ENABLE();
 
   /* USER CODE END MX_GPIO_Init_1 */
 
@@ -1151,7 +1182,7 @@ static void MX_GPIO_Init(void)
   HAL_GPIO_WritePin(BARO_CS_GPIO_Port, BARO_CS_Pin, GPIO_PIN_RESET);
 
   /*Configure GPIO pin Output Level */
-  HAL_GPIO_WritePin(GPIOD, IMU_CS_Pin|BARO_INT_Pin|GPS_RESET_Pin, GPIO_PIN_RESET);
+  HAL_GPIO_WritePin(GPIOD, IMU_CS_Pin|GPS_RESET_Pin, GPIO_PIN_RESET);
 
   /*Configure GPIO pin Output Level */
   HAL_GPIO_WritePin(MAG_CS_GPIO_Port, MAG_CS_Pin, GPIO_PIN_RESET);
@@ -1217,17 +1248,10 @@ static void MX_GPIO_Init(void)
   GPIO_InitStruct.Speed = GPIO_SPEED_FREQ_LOW;
   HAL_GPIO_Init(IMU_CS_GPIO_Port, &GPIO_InitStruct);
 
-  /*Configure GPIO pins : IMU_INT2_Pin IMU_INT1_Pin BTN_1_Pin */
-  GPIO_InitStruct.Pin = IMU_INT2_Pin|IMU_INT1_Pin|BTN_1_Pin;
+  /*Configure GPIO pins : IMU_INT2_Pin IMU_INT1_Pin BARO_INT_Pin BTN_1_Pin */
+  GPIO_InitStruct.Pin = IMU_INT2_Pin|IMU_INT1_Pin|BARO_INT_Pin|BTN_1_Pin;
   GPIO_InitStruct.Mode = GPIO_MODE_IT_RISING;
   GPIO_InitStruct.Pull = GPIO_PULLDOWN;
-  HAL_GPIO_Init(GPIOD, &GPIO_InitStruct);
-
-  /*Configure GPIO pins : BARO_INT_Pin GPS_RESET_Pin */
-  GPIO_InitStruct.Pin = BARO_INT_Pin|GPS_RESET_Pin;
-  GPIO_InitStruct.Mode = GPIO_MODE_OUTPUT_PP;
-  GPIO_InitStruct.Pull = GPIO_NOPULL;
-  GPIO_InitStruct.Speed = GPIO_SPEED_FREQ_LOW;
   HAL_GPIO_Init(GPIOD, &GPIO_InitStruct);
 
   /*Configure GPIO pins : GPS_TP_Pin BTN_3_Pin BTN_2_Pin */
@@ -1235,6 +1259,13 @@ static void MX_GPIO_Init(void)
   GPIO_InitStruct.Mode = GPIO_MODE_IT_RISING;
   GPIO_InitStruct.Pull = GPIO_NOPULL;
   HAL_GPIO_Init(GPIOD, &GPIO_InitStruct);
+
+  /*Configure GPIO pin : GPS_RESET_Pin */
+  GPIO_InitStruct.Pin = GPS_RESET_Pin;
+  GPIO_InitStruct.Mode = GPIO_MODE_OUTPUT_PP;
+  GPIO_InitStruct.Pull = GPIO_NOPULL;
+  GPIO_InitStruct.Speed = GPIO_SPEED_FREQ_LOW;
+  HAL_GPIO_Init(GPS_RESET_GPIO_Port, &GPIO_InitStruct);
 
   /*Configure GPIO pin : GPS_EXTI_Pin */
   GPIO_InitStruct.Pin = GPS_EXTI_Pin;
@@ -1280,6 +1311,9 @@ static void MX_GPIO_Init(void)
   HAL_NVIC_SetPriority(EXTI10_IRQn, 0, 0);
   HAL_NVIC_EnableIRQ(EXTI10_IRQn);
 
+  HAL_NVIC_SetPriority(EXTI13_IRQn, 0, 0);
+  HAL_NVIC_EnableIRQ(EXTI13_IRQn);
+
   /* USER CODE BEGIN MX_GPIO_Init_2 */
 
   /* USER CODE END MX_GPIO_Init_2 */
@@ -1300,6 +1334,8 @@ PUTCHAR_PROTOTYPE
   return ch;
 }
 
+int baro_flag;
+int imu_flag;
 
 void HAL_GPIO_EXTI_Callback(uint16_t GPIO_Pin)
 {
@@ -1307,9 +1343,11 @@ void HAL_GPIO_EXTI_Callback(uint16_t GPIO_Pin)
 
 	if (GPIO_Pin == BARO_INT_Pin) {
 		baro_int_drdy_handler();
+		baro_flag = 1;
 	}
 	 else if(GPIO_Pin == IMU_INT1_Pin || GPIO_Pin == IMU_INT2_Pin) {
 		imu_int_drdy_handler();
+		imu_flag = 1;
 	} else if(GPIO_Pin == MAG_INT_Pin) {
 		mag_int_drdy_handler();
 	}
@@ -1324,7 +1362,16 @@ void HAL_GPIO_EXTI_Callback(uint16_t GPIO_Pin)
 void HAL_SPI_TxRxCpltCallback(SPI_HandleTypeDef *hspi)
 {
 	if (hspi->Instance == SPI2) {
+
+		if(baro_flag == 1){
 		baro_spi_callback();
+		baro_flag = 0;
+		} else if (imu_flag == 1) {
+		imu_spi_callback();
+		imu_flag = 0;
+
+		}
+
 // TODO add imu here
 	}
 }

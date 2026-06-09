@@ -1,0 +1,15 @@
+../Core/Src/flash.c:19:10:flash_read_jedec_id	3
+../Core/Src/flash.c:51:9:flash_read_status	1
+../Core/Src/flash.c:74:6:flash_wait_for_ready	2
+../Core/Src/flash.c:81:9:flash_is_ready	1
+../Core/Src/flash.c:85:6:flash_write_enable	1
+../Core/Src/flash.c:103:6:flash_erase_sector	1
+../Core/Src/flash.c:128:6:flash_erase_chip	1
+../Core/Src/flash.c:151:6:flash_write_page	2
+../Core/Src/flash.c:181:6:flash_write_page_dma	2
+../Core/Src/flash.c:210:6:flash_read_data	1
+../Core/Src/flash.c:234:6:flash_packet_build	1
+../Core/Src/flash.c:250:9:flash_check_erased	4
+../Core/Src/flash.c:269:6:flash_packet_write	7
+../Core/Src/flash.c:307:6:flash_counters_reset	1
+../Core/Src/flash.c:314:6:flash_scan_memory_map	9
