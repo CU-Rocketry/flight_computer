@@ -5,9 +5,6 @@
  *      Author: haileymeagher
  */
 
-#define INC_PACKETS_H_
-
-
 #ifndef INC_PACKETS_H_
 #define INC_PACKETS_H_
 
@@ -33,7 +30,7 @@ typedef struct {
 
 	// Launch detect
 	uint32_t is_launched;
-	uint32_t state
+	uint32_t state;
 
 	// Power
 	float sys_batt_v; // [V]

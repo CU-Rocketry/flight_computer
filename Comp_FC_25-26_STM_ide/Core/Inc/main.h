@@ -113,8 +113,10 @@ void Error_Handler(void);
 #define IMU_CS_GPIO_Port GPIOD
 #define IMU_INT2_Pin GPIO_PIN_9
 #define IMU_INT2_GPIO_Port GPIOD
+#define IMU_INT2_EXTI_IRQn EXTI9_IRQn
 #define IMU_INT1_Pin GPIO_PIN_10
 #define IMU_INT1_GPIO_Port GPIOD
+#define IMU_INT1_EXTI_IRQn EXTI10_IRQn
 #define BARO_INT_Pin GPIO_PIN_13
 #define BARO_INT_GPIO_Port GPIOD
 #define GPS_TP_Pin GPIO_PIN_14

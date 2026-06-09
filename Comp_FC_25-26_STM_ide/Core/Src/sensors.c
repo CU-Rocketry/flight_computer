@@ -15,6 +15,15 @@
 #include <string.h>
 #include <stdio.h>
 
+#define MG_TO_MS2 0.009805f
+//1 g=9.805 m/s^2; 1000 mG=1 g
+//(1/1000)G*(9.805 m/s^2/1 G)--> 9.805/1000--> multiply by 0.009805
+//123.0f
+
+#define MILIDEGREE_TO_RADS 0.00001745f
+//1/1000 degree=1 milidegree; pi/180 to convert from deg to rad
+//multiply by pi/180,000
+
 // SPI handles
 extern SPI_HandleTypeDef hspi2; // IMU and Baro
 extern SPI_HandleTypeDef hspi3; // Magnetometer
@@ -32,6 +41,12 @@ int16_t accel_raw[3];
 int16_t omega_raw[3];
 int16_t mag_raw[3];
 
+//output for sensors
+float pres_hpa;
+float accel_ms2[3];
+float omega_rads[3];
+float mag_mgauss[3];
+
 // New data available flags
 uint8_t baro_ready = 0;
 uint8_t imu_ready = 0;
@@ -43,27 +58,16 @@ uint8_t baro_tx_buf[4], baro_rx_buf[4]; // XL, L, and H
 uint8_t imu_tx_buf[13], imu_rx_buf[13]; // Gyro 2 bytes * 3 axes + Accel 2 bytes * 3 axes
 uint8_t mag_tx_buf, mag_rx_buf[6]; // X, Y, Z where each channel is 16 bits = 2 bytes
 
-// Sensor readings
-uint32_t pres_raw;
-float pres_hpa;
-
-int16_t accel_raw[3];
-int16_t omega_raw[3];
-float accel_ms2[3];
-float omega_rads[3];
-
-int16_t mag_raw[3];
-float mag_mgauss[3];
-
-
 
 void get_accel_ms2(float *out) {
+
 	out[0] = accel_ms2[0];
 	out[1] = accel_ms2[1];
 	out[2] = accel_ms2[2];
 }
 
 void get_omega_rads(float *out) {
+
 	out[0] = omega_rads[0];
 	out[1] = omega_rads[1];
 	out[2] = omega_rads[2];
@@ -76,6 +80,7 @@ void get_mag_mgauss(float *out) {
 }
 
 void get_pres_hpa(float *out) {
+
 	*out = pres_hpa;
 }
 
@@ -167,6 +172,7 @@ void baro_int_drdy_handler()
 	baro_tx_buf[0] = LPS22HH_PRESS_OUT_XL | 0x80; // with MSB set for read
 	HAL_GPIO_WritePin(BARO_CS_GPIO_Port, BARO_CS_Pin, 0); // assert baro CS
 	HAL_SPI_TransmitReceive_DMA(lps22hh_ctx.handle, baro_tx_buf, baro_rx_buf, 4);
+
 }
 
 void imu_int_drdy_handler() {
