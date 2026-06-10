@@ -1,0 +1,4 @@
+../Core/Src/MadgwickAHRS.c:41:6:MadgwickQuaternionGet	1
+../Core/Src/MadgwickAHRS.c:52:6:MadgwickAHRSupdate	7
+../Core/Src/MadgwickAHRS.c:151:6:MadgwickAHRSupdateIMU	4
+../Core/Src/MadgwickAHRS.c:223:7:invSqrt	1

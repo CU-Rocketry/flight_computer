@@ -1,0 +1,4 @@
+../Core/Src/MadgwickAHRS.c:41:6:MadgwickQuaternionGet	16	static
+../Core/Src/MadgwickAHRS.c:52:6:MadgwickAHRSupdate	192	static
+../Core/Src/MadgwickAHRS.c:151:6:MadgwickAHRSupdateIMU	128	static
+../Core/Src/MadgwickAHRS.c:223:7:invSqrt	32	static

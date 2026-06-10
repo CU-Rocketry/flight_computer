@@ -1,4 +1,5 @@
 "./Core/Src/GNSS.o"
+"./Core/Src/MadgwickAHRS.o"
 "./Core/Src/flash.o"
 "./Core/Src/iis2mdc_reg.o"
 "./Core/Src/lora_telemetry.o"
@@ -7,6 +8,7 @@
 "./Core/Src/lsm6dsv80x_reg.o"
 "./Core/Src/main.o"
 "./Core/Src/sensors.o"
+"./Core/Src/state_estimation.o"
 "./Core/Src/stm32h5xx_hal_msp.o"
 "./Core/Src/stm32h5xx_it.o"
 "./Core/Src/sx126x.o"

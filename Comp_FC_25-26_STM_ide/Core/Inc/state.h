@@ -1,8 +1,8 @@
 /*
  * state.h
  *
- *  Created on: Jun 4, 2026
- *      Author: haileymeagher (special thanks to sig)
+ *  Created on: Apr 14, 2026
+ *      Author: Sigmond
  */
 
 #ifndef INC_STATE_H_
@@ -13,14 +13,13 @@
 #define GRAVITY 9.80665f
 
 typedef struct {
-// Time
+	// Time
 	uint32_t t; // [ms] since boot
 	uint32_t launch_t; // [ms] launch detect
 	uint32_t elapsed_t; // [ms] since launch detected
 
 	// Launch detect
 	uint32_t is_launched;
-	uint32_t state;
 
 	// Power
 	float sys_batt_v; // [V]
@@ -46,6 +45,21 @@ typedef struct {
     float alt_agl; // [m] AGL with + up
     float vel_z; // [m] with + up
 
+    // Control
+    // TODO
+    float output; // 0 to 1 mapping to air brakes deployment range
+
+    // Servo
+    float servo_cmd; // [deg]
+    float servo_fdbk; // [deg]
+
+    uint8_t use_hil_data;
+
+	uint8_t mode_override_en;
+	uint8_t mode_override;
+
+	uint8_t servo_cmd_en;
+	float servo_cmd_override; // [deg]
 } state_t;
 
 extern state_t global_state; // global instance

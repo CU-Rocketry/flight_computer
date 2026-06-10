@@ -21,9 +21,9 @@
 ../Core/Src/main.c:1074:13:MX_UART5_Init	5
 ../Core/Src/main.c:1122:13:MX_USB_PCD_Init	2
 ../Core/Src/main.c:1158:13:MX_GPIO_Init	1
-../Core/Src/main.c:1328:1:__io_putchar	1
-../Core/Src/main.c:1340:6:HAL_GPIO_EXTI_Callback	6
-../Core/Src/main.c:1362:6:HAL_SPI_TxRxCpltCallback	4
-../Core/Src/main.c:1379:6:HAL_SPI_RxCpltCallback	2
-../Core/Src/main.c:1385:6:HAL_TIM_PeriodElapsedCallback	2
-../Core/Src/main.c:1398:6:Error_Handler	1
+../Core/Src/main.c:1327:1:__io_putchar	1
+../Core/Src/main.c:1339:6:HAL_GPIO_EXTI_Callback	6
+../Core/Src/main.c:1361:6:HAL_SPI_TxRxCpltCallback	4
+../Core/Src/main.c:1378:6:HAL_SPI_RxCpltCallback	2
+../Core/Src/main.c:1384:6:HAL_TIM_PeriodElapsedCallback	2
+../Core/Src/main.c:1397:6:Error_Handler	1
