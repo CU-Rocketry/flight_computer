@@ -1173,7 +1173,7 @@ static void MX_GPIO_Init(void)
 
   /*Configure GPIO pin Output Level */
   HAL_GPIO_WritePin(GPIOE, SENSE_2_Pin|PYRO_1_Pin|SENSE_3_Pin|RF_TXEN_Pin
-                          |RF_RXEN_Pin|RF_RESET_Pin|RF_CS_Pin|RF_BUSY_Pin, GPIO_PIN_RESET);
+                          |RF_RXEN_Pin|RF_RESET_Pin|RF_CS_Pin, GPIO_PIN_RESET);
 
   /*Configure GPIO pin Output Level */
   HAL_GPIO_WritePin(GPIOC, PYRO_4_Pin|RF_DIO3_Pin|RF_DIO2_Pin, GPIO_PIN_RESET);
@@ -1229,9 +1229,8 @@ static void MX_GPIO_Init(void)
 
   /*Configure GPIO pin : RF_BUSY_Pin */
   GPIO_InitStruct.Pin = RF_BUSY_Pin;
-  GPIO_InitStruct.Mode = GPIO_MODE_OUTPUT_PP;
+  GPIO_InitStruct.Mode = GPIO_MODE_INPUT;
   GPIO_InitStruct.Pull = GPIO_PULLDOWN;
-  GPIO_InitStruct.Speed = GPIO_SPEED_FREQ_LOW;
   HAL_GPIO_Init(RF_BUSY_GPIO_Port, &GPIO_InitStruct);
 
   /*Configure GPIO pin : BARO_CS_Pin */
