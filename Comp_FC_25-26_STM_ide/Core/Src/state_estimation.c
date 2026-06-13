@@ -5,7 +5,7 @@
  *      Author: Sigmond
  */
 
-#include "arm_math.h"
+
 #include "sensors.h"
 #include "state_estimation.h"
 #include "MadgwickAHRS.h"
@@ -193,6 +193,8 @@ void launch_detect(float accel_b_x) {
 	}
 }
 
+
+
 void launch_detect_override(uint8_t is_launched) {
 	global_state.is_launched = (is_launched > 0) ? 1 : 0; // force launch detect to 1 or 0
 }
@@ -271,6 +273,59 @@ void kalman_update(float pressure) {
     kalman_state.P[1][1] = kalman_state.P[1][1] - K1 * P01;
 }
 
+void apogee_detect(float vel_z){
+
+	if (global_state.apogee_detect) { // if already launched don't keep checking bc we only reach apogee once
+				return;
+			}
+
+	static uint8_t trig_cnt = 0; // how many samples greater than threshold, static so it stays between function calls
+
+		const float APOGEE_THRESH_MAX_MS = 1;
+		const float APOGEE_THRESH_MIN_MS = -1;
+		const uint8_t MIN_TRIG_CNT = 20; // 10 samples at 500Hz = 250ms
+
+		if (vel_z >= APOGEE_THRESH_MIN_MS && vel_z <= APOGEE_THRESH_MAX_MS) { // check if body velocity is within the bounds
+
+			if (trig_cnt >= MIN_TRIG_CNT) { // if acceleration above threshold for consecutive samples
+				global_state.apogee_detect = 1;
+				global_state.apogee_t = HAL_GetTick();
+			}
+
+		} else { // vel not in thresh so counter reset
+			trig_cnt = 0;
+		}
+
+}
+
+void land_detect(float vel_z, float accel_b_x){
+
+	if (global_state.land_detect) { // if already launched don't keep checking bc we only take off once
+			return;
+		}
+
+	static uint8_t trig_cnt = 0; // how many samples greater than threshold, static so it stays between function calls
+
+		const float LAND_THRESH_MAX_MS = 0.5;
+		const float LAND_THRESH_MIN_MS = -0.5;
+		const float LAND_THRESH_MAX_MS2 = 0.5;
+		const float LAND_THRESH_MIN_MS2 = -0.5;
+		const uint8_t MIN_TRIG_CNT = 5000; // 5000 samples at 500Hz = 10 seconds
+
+		if (vel_z >= LAND_THRESH_MIN_MS && vel_z <= LAND_THRESH_MAX_MS) { // check if body velocity is within the bounds
+
+			if(accel_b_x >= LAND_THRESH_MIN_MS2 && accel_b_x <= LAND_THRESH_MAX_MS2 )
+
+			if (trig_cnt >= MIN_TRIG_CNT) { // if acceleration above threshold for consecutive samples
+				global_state.apogee_detect = 1;
+				global_state.apogee_t = HAL_GetTick();
+			}
+
+		} else { //  not in thresh so counter reset
+			trig_cnt = 0;
+		}
+
+}
 //HAL_GetTick is uint32_t data type
 
 //if (accel>=launch_accel_ms2)

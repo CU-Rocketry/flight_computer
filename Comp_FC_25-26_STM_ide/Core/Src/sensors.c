@@ -81,6 +81,18 @@ void get_mag_mgauss(float *out) {
 
 void get_pres_hpa(float *out) {
 
+//	printf("get pres");
+//	// initialize the SPI transmission
+//		memset(baro_tx_buf, 0, 4);
+//		baro_tx_buf[0] = LPS22HH_PRESS_OUT_XL | 0x80; // with MSB set for read
+//		HAL_GPIO_WritePin(BARO_CS_GPIO_Port, BARO_CS_Pin, 0); // assert baro CS
+//		HAL_SPI_TransmitReceive(lps22hh_ctx.handle, baro_tx_buf, baro_rx_buf, 4, 1000);
+//
+//		HAL_GPIO_WritePin(BARO_CS_GPIO_Port, BARO_CS_Pin, 1); // deassert baro CS
+//		pres_raw = (uint32_t)(((uint32_t)baro_rx_buf[3] << 24) | ((uint32_t)baro_rx_buf[2] << 16) | ((uint32_t)baro_rx_buf[1] << 8));
+//		pres_hpa = lps22hh_from_lsb_to_hpa(pres_raw);
+//		baro_ready = 1;
+
 	*out = pres_hpa;
 }
 
@@ -285,6 +297,14 @@ void baro_init() {
 	lps22hh_pin_int_route_get(&lps22hh_ctx, &int_route);
 	int_route.drdy_pres = PROPERTY_ENABLE;
 	lps22hh_pin_int_route_set(&lps22hh_ctx, int_route);
+
+	lps22hh_int_notification_set(&lps22hh_ctx, LPS22HH_INT_LATCHED);
+
+	lps22hh_all_sources_t all_source;
+
+	 // Official driver API handles the bus abstraction for you
+	lps22hh_all_sources_get(&lps22hh_ctx, &all_source); //hopefully clears interrupt registers
+
 }
 
 void imu_init() {

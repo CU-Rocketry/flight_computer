@@ -5,10 +5,12 @@
  *      Author: Sigmond
  */
 
+#include <stdint.h>
+
 #ifndef INC_STATE_ESTIMATION_H_
 #define INC_STATE_ESTIMATION_H_
 
-#include "arm_math.h"
+
 
 void state_estimation(float dt);
 //arm_status get_imu_b(arm_matrix_instance_f32 *out_accel, arm_matrix_instance_f32 *out_omega);

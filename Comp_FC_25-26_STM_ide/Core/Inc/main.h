@@ -140,10 +140,13 @@ void Error_Handler(void);
 #define SD_DET_GPIO_Port GPIOD
 #define BTN_3_Pin GPIO_PIN_3
 #define BTN_3_GPIO_Port GPIOD
+#define BTN_3_EXTI_IRQn EXTI3_IRQn
 #define BTN_2_Pin GPIO_PIN_4
 #define BTN_2_GPIO_Port GPIOD
+#define BTN_2_EXTI_IRQn EXTI4_IRQn
 #define BTN_1_Pin GPIO_PIN_5
 #define BTN_1_GPIO_Port GPIOD
+#define BTN_1_EXTI_IRQn EXTI5_IRQn
 #define MAG_INT_Pin GPIO_PIN_0
 #define MAG_INT_GPIO_Port GPIOE
 

@@ -1,6 +1,5 @@
 Core/Src/state_estimation.o: ../Core/Src/state_estimation.c \
- ../Core/Inc/arm_math.h ../Core/Inc/sensors.h \
- ../Core/Inc/state_estimation.h ../Core/Inc/arm_math.h \
+ ../Core/Inc/sensors.h ../Core/Inc/state_estimation.h \
  ../Core/Inc/MadgwickAHRS.h ../Core/Inc/state.h \
  ../Drivers/STM32H5xx_HAL_Driver/Inc/stm32h5xx_hal.h \
  ../Core/Inc/stm32h5xx_hal_conf.h \
@@ -44,10 +43,8 @@ Core/Src/state_estimation.o: ../Core/Src/state_estimation.c \
  ../Drivers/STM32H5xx_HAL_Driver/Inc/stm32h5xx_ll_usb.h \
  ../Drivers/STM32H5xx_HAL_Driver/Inc/stm32h5xx_hal_pcd_ex.h \
  ../Drivers/STM32H5xx_HAL_Driver/Inc/stm32h5xx_hal_exti.h
-../Core/Inc/arm_math.h:
 ../Core/Inc/sensors.h:
 ../Core/Inc/state_estimation.h:
-../Core/Inc/arm_math.h:
 ../Core/Inc/MadgwickAHRS.h:
 ../Core/Inc/state.h:
 ../Drivers/STM32H5xx_HAL_Driver/Inc/stm32h5xx_hal.h:

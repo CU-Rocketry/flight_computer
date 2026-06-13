@@ -30,6 +30,7 @@
 #include "GNSS.h"
 #include "packets.h"
 #include "flash.h"
+#include "btn.h"
 
 #include <string.h>
 #include <stdio.h>
@@ -102,6 +103,8 @@ flash_t flash = {
     .prescaler_cnt = 0
 };
 
+btn_t btns[3];
+
 // Control system tick
 uint8_t poll = 1;
 uint8_t tick_100Hz = 0;
@@ -166,7 +169,7 @@ int main(void)
   /* MCU Configuration--------------------------------------------------------*/
 
   /* Reset of all peripherals, Initializes the Flash interface and the Systick. */
-  HAL_Init();
+	HAL_Init();
 
   /* USER CODE BEGIN Init */
 
@@ -206,6 +209,8 @@ int main(void)
   rgb_led_set(&led1, 0x800000);
   rgb_led_set(&led2, 0x000080);
 
+  HAL_TIM_Base_Start_IT(&htim6); // start 100 Hz
+
   buzzer_init(&buzzer);
 //  buzzer_set(&buzzer, 1);
 
@@ -230,6 +235,11 @@ int main(void)
  //imu_init();
  HAL_Delay(100);
  baro_init();
+
+
+ 	 btn_init(&btns[0], BTN_1_GPIO_Port, BTN_1_Pin);
+ 	btn_init(&btns[1], BTN_2_GPIO_Port, BTN_2_Pin);
+ 	btn_init(&btns[2], BTN_3_GPIO_Port, BTN_3_Pin);
 
 
 
@@ -264,12 +274,6 @@ int main(void)
   while (1)
   {
 
-
-	  printf("hello from while loop\r\n");
-
-	  HAL_Delay(500);
-
-
 //	  if (HAL_GPIO_ReadPin(BTN_1_GPIO_Port, BTN_1_Pin) == 1){
 //		  buzzer_set(&buzzer, 1);
 //		  HAL_GPIO_WritePin(PYRO_1_GPIO_Port, PYRO_1_Pin, 0);
@@ -286,27 +290,72 @@ int main(void)
 //	  HAL_GPIO_WritePin(PYRO_2_GPIO_Port, PYRO_2_Pin, 1);
 
 
+	  if (tick_100Hz) {
+	  		  tick_100Hz = 0;
+
+
+	  		  	  	  btn_update(&btns[0]);
+	  				  btn_update(&btns[1]);
+	  				  btn_update(&btns[2]);
+
+
+	  				if (btn_get_edge(&btns[0]) == 1)
+	  							{
+	  								printf("btn 1 pressed\r\n");
+
+	  							};
+
+	  				 if (btn_get_edge(&btns[1]) == 1)
+	  					  							{
+	  					  								printf("btn 2 pressed\r\n");
+
+	  					  							};
+
+	  			if (btn_get_edge(&btns[2]) == 1)
+	  					  							{
+	  					  								printf("btn 3 pressed\r\n");
+
+	  					  							};
+
+	  			if (btn_get_edge(&btns[1]) == -1)
+	  							{
+	  					printf("btn 2 released\r\n");
+	  							};
 	  float pres;
+
+//	  float accel;
+//	 	 	  		get_accel_ms2(&accel);
+//	 	 	  		printf("Acceleration:, %f\r\n", accel);
+//
+//
+//	 	 float omega;
+//	 	 	 	 	 get_omega_rads(&omega);
+//	 	 	  		printf("Omega:, %f\r\n", omega);
+
 
 
 	 	  		get_pres_hpa(&pres);
 	 	  		printf("Pressure: %f\r\n", pres);
 
-
-
-//	 float accel;
-//	 	  		get_accel_ms2(&accel);
-//	 	  		printf("Acceleration:, %f\r\n", accel);
-//
-//
-//	 float omega;
-//	 	 	 	 get_omega_rads(&omega);
-//	 	  		printf("Omega:, %f\r\n", omega);
+	  };
 
 
 
+	 	  		//detect launch (LAUNCH_DETECT)
+	 	  		// if launch detect == 1 and apogee detect == 0, then ascent
 
-	  }
+
+	 	  		//if launch is detected, then start polling for apogee after motor burnout (APOGEE_DETECT)
+	 	  		// if launch detect == 1 and apogee detect == 1, then descent
+
+	 	  		//landing detect
+	 	  		// if launch detect == 1, apogee detect = 1, start polling for landing
+
+
+
+
+
+	  };
     /* USER CODE END WHILE */
 
     /* USER CODE BEGIN 3 */
@@ -998,7 +1047,7 @@ static void MX_TIM6_Init(void)
 
   /* USER CODE END TIM6_Init 1 */
   htim6.Instance = TIM6;
-  htim6.Init.Prescaler = 119;
+  htim6.Init.Prescaler = 1199;
   htim6.Init.CounterMode = TIM_COUNTERMODE_UP;
   htim6.Init.Period = 9999;
   htim6.Init.AutoReloadPreload = TIM_AUTORELOAD_PRELOAD_DISABLE;
@@ -1247,14 +1296,16 @@ static void MX_GPIO_Init(void)
   GPIO_InitStruct.Speed = GPIO_SPEED_FREQ_LOW;
   HAL_GPIO_Init(IMU_CS_GPIO_Port, &GPIO_InitStruct);
 
-  /*Configure GPIO pins : IMU_INT2_Pin IMU_INT1_Pin BARO_INT_Pin BTN_1_Pin */
-  GPIO_InitStruct.Pin = IMU_INT2_Pin|IMU_INT1_Pin|BARO_INT_Pin|BTN_1_Pin;
+  /*Configure GPIO pins : IMU_INT2_Pin IMU_INT1_Pin BTN_3_Pin BTN_2_Pin
+                           BTN_1_Pin */
+  GPIO_InitStruct.Pin = IMU_INT2_Pin|IMU_INT1_Pin|BTN_3_Pin|BTN_2_Pin
+                          |BTN_1_Pin;
   GPIO_InitStruct.Mode = GPIO_MODE_IT_RISING;
   GPIO_InitStruct.Pull = GPIO_PULLDOWN;
   HAL_GPIO_Init(GPIOD, &GPIO_InitStruct);
 
-  /*Configure GPIO pins : GPS_TP_Pin BTN_3_Pin BTN_2_Pin */
-  GPIO_InitStruct.Pin = GPS_TP_Pin|BTN_3_Pin|BTN_2_Pin;
+  /*Configure GPIO pins : BARO_INT_Pin GPS_TP_Pin */
+  GPIO_InitStruct.Pin = BARO_INT_Pin|GPS_TP_Pin;
   GPIO_InitStruct.Mode = GPIO_MODE_IT_RISING;
   GPIO_InitStruct.Pull = GPIO_NOPULL;
   HAL_GPIO_Init(GPIOD, &GPIO_InitStruct);
@@ -1304,12 +1355,23 @@ static void MX_GPIO_Init(void)
   HAL_GPIO_Init(GPIOD, &GPIO_InitStruct);
 
   /* EXTI interrupt init*/
+
+  HAL_NVIC_SetPriority(EXTI3_IRQn, 0, 0);
+  HAL_NVIC_EnableIRQ(EXTI3_IRQn);
+
+  HAL_NVIC_SetPriority(EXTI4_IRQn, 0, 0);
+  HAL_NVIC_EnableIRQ(EXTI4_IRQn);
+
+  HAL_NVIC_SetPriority(EXTI5_IRQn, 0, 0);
+  HAL_NVIC_EnableIRQ(EXTI5_IRQn);
+
   HAL_NVIC_SetPriority(EXTI9_IRQn, 0, 0);
   HAL_NVIC_EnableIRQ(EXTI9_IRQn);
 
   HAL_NVIC_SetPriority(EXTI10_IRQn, 0, 0);
   HAL_NVIC_EnableIRQ(EXTI10_IRQn);
 
+  __HAL_GPIO_EXTI_CLEAR_IT(BARO_INT_Pin);
   HAL_NVIC_SetPriority(EXTI13_IRQn, 0, 0);
   HAL_NVIC_EnableIRQ(EXTI13_IRQn);
 
@@ -1338,10 +1400,11 @@ int imu_flag;
 
 void HAL_GPIO_EXTI_Callback(uint16_t GPIO_Pin)
 {
-	printf("EXTI:%u\r\n", GPIO_Pin);
+
 
 	if (GPIO_Pin == BARO_INT_Pin) {
 		baro_int_drdy_handler();
+		printf("bing\r\n");
 		baro_flag = 1;
 	}
 	 else if(GPIO_Pin == IMU_INT1_Pin || GPIO_Pin == IMU_INT2_Pin) {
@@ -1362,14 +1425,12 @@ void HAL_SPI_TxRxCpltCallback(SPI_HandleTypeDef *hspi)
 {
 	if (hspi->Instance == SPI2) {
 
-		if(baro_flag == 1){
-		baro_spi_callback();
-		baro_flag = 0;
-		} else if (imu_flag == 1) {
+//		baro_spi_callback();
+//		baro_flag = 0;
+//		} else if (imu_flag == 1) {
 		imu_spi_callback();
-		imu_flag = 0;
+//		imu_flag = 0;
 
-		}
 
 // TODO add imu here
 	}
