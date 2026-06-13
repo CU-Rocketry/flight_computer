@@ -351,7 +351,10 @@ int main(void)
 	 	  		//landing detect
 	 	  		// if launch detect == 1, apogee detect = 1, start polling for landing
 
-
+	  //TODO
+	  //modes
+	  //telemetry
+	  //check lora packet status
 
 
 

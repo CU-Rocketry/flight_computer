@@ -15,7 +15,8 @@
 // Telemetry packet types
 typedef enum {
 	PKT_TYPE_TELEMETRY = 0x01, // telemetry data stream
-	PKT_TYPE_CMD = 0x02, // manual/override commands from control panel software
+	PKT_TYPE_CMD = 0x03, // manual/override commands from control panel software
+	PKT_TYPE_RADIO_CONFIG = 0x04,
 
 } packet_type_t;
 
@@ -55,7 +56,6 @@ typedef struct {
     //gps location
     float gps_loc[3]; // lat, long, height
 
-
 } telemetry_packet_t;
 
 
@@ -63,6 +63,8 @@ typedef struct {
 // Flash
 // for 2 packets per 256 byte page we have max 128 bytes = 32 floats
 typedef struct {
+
+	uint8_t pkt_type; //flash 0x02 for flash
 	uint32_t t; // [ms] since boot 4 bytes
 	float sys_batt_v; // [V] 8
 	float sys_batt_i; // [A] 12
@@ -81,18 +83,42 @@ typedef struct {
 // Command
 typedef struct {
 
-	//TODO will need to adjust for command of FC
+		uint8_t pkt_type; // always 0x03 for cmd
 
-//	uint8_t pkt_type; // always 0x03 for cmd
-//
-//    uint8_t mode_en; // requests mode change (substitute for rotating selector)
-//    uint8_t mode; // mode to change to
-//
-//    uint8_t launch_detect_en; // set to 1 to trigger launch detect
+	    uint8_t mode_en; // requests mode change (substitute for rotating selector)
+	    uint8_t mode; // mode to change to
 
-//types of commands
+	    uint8_t launch_detect_en; // set to 1 to trigger launch detect
 
 
 } command_packet_t;
+
+
+// TODO make function to enable radio config switch in idle mode if radio config is enabled
+
+typedef struct {
+
+	uint8_t pkt_type; //0x04 for radio packet
+
+	uint8_t reconfig;
+
+	uint8_t pkt_change_en;
+	uint8_t rf_pkt_type;
+
+	// lora params for the mod params struct	//TODO if want to configure right, will need to check what type of packet we are trying to config... later
+	uint8_t lora_params_en;
+
+	uint8_t sf;
+	uint8_t bw;
+	uint8_t cr;
+
+	uint8_t tx_params_en;
+	uint8_t pwr;
+
+    uint8_t freq_en;
+	uint32_t freq;
+
+
+} radio_config_packet_t; //this can be more fleshed out but is it for now
 
 #endif /* INC_PACKETS_H_ */

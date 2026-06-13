@@ -49,6 +49,11 @@ typedef struct {
     float alt_agl; // [m] AGL with + up
     float vel_z; // [m] with + up
 
+    uint8_t mode_override_en; // requests mode change (substitute for rotating selector)
+    uint8_t mode_override; // mode to change to
+
+    uint8_t launch_detect_en; // set to 1 to trigger launch detect
+
 } state_t;
 
 extern state_t global_state; // global instance

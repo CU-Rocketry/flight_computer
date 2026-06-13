@@ -15,6 +15,7 @@
 #include <stdio.h>
 
 #include "sx126x_hal.h"
+#include "packets.h"
 
 
 //const void* ebyte; //need to declare this context for function use
@@ -23,6 +24,7 @@ extern SPI_HandleTypeDef hspi4; //RF spi
 
 //setting up a read/write context for the sx126x radio
 //unsure if this is actually needed or if I am tweaking
+
 
 typedef struct {
     SPI_HandleTypeDef* hspi;       // Pointer to the STM32 SPI handle
@@ -42,6 +44,7 @@ typedef struct {
 } sx126x_ctx_t;
 
 sx126x_ctx_t lora_radio;
+
 
 static sx126x_ctx_t* radio;
 //this will allow avoiding hardcoding into r/w functions, etc.
@@ -131,52 +134,6 @@ void sx126x_hal_wait_on_busy( const void* radio ){
 	while(HAL_GPIO_ReadPin(RF_BUSY_GPIO_Port, RF_BUSY_Pin) == 1); //write while loop for while the pin is high (busy)
 }
 
-//TO DO
-// write funtion for recieving/transmitting
-//detect if channel is taken
-
-//void packet_build(const state_t *current_state, telemetry_packet_t *packet){  //build packet function			//TODO
-//
-//		packet->pkt_type = PKT_TYPE_TELEMETRY;
-//
-//		// Time
-//		packet->t = current_state->t;
-//
-//		// Launch detect
-//		packet->is_launched = current_state->is_launched;
-//
-//		// current state of flight
-//		packet->state = current_state->state;
-//
-//		// Power
-//		packet->batt_v = current_state->batt_v;
-//		packet->batt_i = current_state->batt_i;
-//
-//		// Sensors
-//		packet->pres_pa = current_state->pres_pa;
-//
-//		// Body frame sensors
-//		memcpy(packet->accel_b, current_state->accel_b, sizeof(packet->accel_b));
-//		memcpy(packet->omega_b, current_state->omega_b, sizeof(packet->omega_b));
-//		memcpy(packet->mag_b, current_state->mag_b, sizeof(packet->mag_b));
-//
-//		// State estimation
-//		memcpy(packet->quat, current_state->quat, sizeof(packet->quat));
-//		memcpy(packet->accel_e, current_state->accel_e, sizeof(packet->accel_e));
-//
-//		packet->p_ground = current_state->p_ground;
-//		packet->alt_agl = current_state->alt_agl;
-//		packet->vel_z = current_state->vel_z;
-//
-//		// Control
-//		// TODO
-//		packet->output = current_state->output;
-//
-//		// Servo
-//		packet->servo_cmd = current_state->servo_cmd;
-//		packet->servo_fdbk = current_state->servo_fdbk;
-//
-//}
 
 
 void telemetry_tx(uint8_t packet){
@@ -218,6 +175,46 @@ void telemetry_tx(uint8_t packet){
 //if detect interrupt on RX line -> decode
 //may only need to do this on ground station
 
+//typedef struct {
+//
+//	uint8_t pkt_type; // always 0x03 for cmd
+//
+//	    uint8_t mode_en; // requests mode change (substitute for rotating selector)
+//	    uint8_t mode; // mode to change to
+//
+//	    uint8_t launch_detect_en; // set to 1 to trigger launch detect
+//
+//
+//} command_packet_t;
+//
+//
+//// TODO make function to enable radio config switch in idle mode if radio config is enabled
+//
+//typedef struct {
+//
+//	uint8_t pkt_type; //0x04 for radio packet
+//
+//	uint8_t reconfig;
+//
+//	uint8_t pkt_change_en;
+//	sx126x_pkt_type_t rf_pkt_type;
+//
+//	// lora params for the mod params struct	//TODO if want to configure right, will need to check what type of packet we are trying to config... later
+//	uint8_t lora_params_en;
+//
+//	sx126x_lora_sf_t sf;
+//	sx126x_lora_bw_t bw;
+//	sx126x_lora_cr_t cr;
+//
+//	uint8_t tx_params_en;
+//	uint8_t pwr;
+//
+//    uint8_t set_rf_freq_en;
+//	uint32_t freq;
+//
+//
+//} radio_config; //this can be more fleshed out but is it for now
+
 void telemetry_rx_decode(){ //function to decode rx packets
 
 	//decoding scheme for each type of packet, for fc this is command only, gs is telemetry data
@@ -235,7 +232,62 @@ void telemetry_rx_decode(){ //function to decode rx packets
 //			}
 //	    }
 //	}
-//
+
+
+	sx126x_rx_buffer_status_t *rx_buf_status;
+	sx126x_get_rx_buffer_status(radio, rx_buf_status); //get buf status, pos and length
+
+	uint8_t rx_len = rx_buf_status->pld_len_in_bytes;
+	uint8_t buf_start = rx_buf_status->buffer_start_pointer;
+
+	uint8_t rx_buf[rx_len];
+	uint8_t pkt_type;
+
+	if (rx_len > 0){
+		pkt_type = rx_buf[0];
+	};
+
+	//rx for flight computer just needs to recieve command and radio configs
+	if (pkt_type == PKT_TYPE_CMD && rx_len == sizeof(command_packet_t)){
+		command_packet_t *cmd = (command_packet_t *)rx_buf;
+
+		global_state.mode_override_en = cmd->mode_en; 					//detect change in mode in main loop
+		global_state.mode_override = cmd->mode;
+
+		if (cmd->launch_detect_en) {
+						launch_detect_override(1);
+		}																// detect change in launch
+	} else if (pkt_type == PKT_TYPE_RADIO_CONFIG){
+		radio_config_packet_t *radio_config = (radio_config_packet_t *)rx_buf;
+
+		if(radio_config->reconfig){
+			sx126x_set_standby(radio, SX126X_STANDBY_CFG_XOSC);
+		}
+
+		if (radio_config->lora_params_en){
+
+
+	 	    sx126x_mod_params_lora_t reconfig_lora_params;
+
+	 	   reconfig_lora_params.sf = radio_config->sf;
+	 	   reconfig_lora_params.bw = radio_config->bw;
+	 	   reconfig_lora_params.cr = radio_config->cr;
+	 	   reconfig_lora_params.ldro = 0;
+
+	 	    sx126x_set_lora_mod_params(radio, &reconfig_lora_params);
+
+		}
+
+		if (radio_config->tx_params_en){
+
+			sx126x_set_tx_params(radio, radio_config->pwr, SX126X_RAMP_200_US);
+		}
+
+		if (radio_config->freq_en){
+			sx126x_set_rf_freq(radio, radio_config->freq);
+		}
+	}
+ //
 };
 
 

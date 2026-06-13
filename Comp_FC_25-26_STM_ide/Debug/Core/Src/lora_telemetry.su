@@ -1,7 +1,0 @@
-../Core/Src/lora_telemetry.c:49:6:LoRa_init	40	static
-../Core/Src/lora_telemetry.c:129:6:sx126x_hal_wait_on_busy	16	static
-../Core/Src/lora_telemetry.c:182:6:telemetry_tx	32	static
-../Core/Src/lora_telemetry.c:221:6:telemetry_rx_decode	4	static
-../Core/Src/lora_telemetry.c:257:21:sx126x_hal_write	32	static
-../Core/Src/lora_telemetry.c:287:21:sx126x_hal_read	32	static
-../Core/Src/lora_telemetry.c:309:6:sx126x_irq_process	24	static
