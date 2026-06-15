@@ -29,7 +29,7 @@ uint32_t flash_read_jedec_id(flash_t *flash) {
     sCommand.AddressMode        = HAL_XSPI_ADDRESS_NONE; // Read ID doesn't need an address
     sCommand.AlternateBytesMode = HAL_XSPI_ALT_BYTES_NONE;
     sCommand.DataMode           = HAL_XSPI_DATA_1_LINE;  // Receive data on 1 line
-    sCommand.DataLength             = 3;                     // We expect 3 bytes back
+    sCommand.DataLength         = 3;                     // We expect 3 bytes back
     sCommand.DummyCycles        = 0;
     sCommand.DQSMode            = HAL_XSPI_DQS_DISABLE;
     sCommand.SIOOMode           = HAL_XSPI_SIOO_INST_EVERY_CMD;

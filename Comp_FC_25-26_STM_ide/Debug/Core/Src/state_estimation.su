@@ -8,4 +8,4 @@
 ../Core/Src/state_estimation.c:202:6:kalman_predict	48	static
 ../Core/Src/state_estimation.c:239:6:kalman_update	56	static
 ../Core/Src/state_estimation.c:276:6:apogee_detect	32	static
-../Core/Src/state_estimation.c:301:6:land_detect	40	static
+../Core/Src/state_estimation.c:300:6:land_detect	40	static

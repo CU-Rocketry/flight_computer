@@ -56,5 +56,5 @@
 ../Drivers/STM32H5xx_HAL_Driver/Src/stm32h5xx_hal.c:1127:6:HAL_SBS_LockDebugConfig	4	static
 ../Drivers/STM32H5xx_HAL_Driver/Src/stm32h5xx_hal.c:1141:6:HAL_SBS_ConfigDebugSecurity	16	static
 ../Drivers/STM32H5xx_HAL_Driver/Src/stm32h5xx_hal.c:1153:10:HAL_SBS_GetDebugSecurity	4	static
-../Drivers/STM32H5xx_HAL_Driver/Src/stm32h5xx_hal.c:1183:6:HAL_SBS_Lock	16	static
-../Drivers/STM32H5xx_HAL_Driver/Src/stm32h5xx_hal.c:1204:19:HAL_SBS_GetLock	24	static
+../Drivers/STM32H5xx_HAL_Driver/Src/stm32h5xx_hal.c:1277:6:HAL_SBS_Lock	16	static
+../Drivers/STM32H5xx_HAL_Driver/Src/stm32h5xx_hal.c:1298:19:HAL_SBS_GetLock	24	static

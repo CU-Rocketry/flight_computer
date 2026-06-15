@@ -25,6 +25,8 @@ typedef struct {
 	uint32_t apogee_detect;
 	uint32_t land_detect;
 
+	uint8_t state;
+
 	// Power
 	float sys_batt_v; // [V]
 	float sys_batt_i; // [A]
@@ -53,6 +55,10 @@ typedef struct {
     uint8_t mode_override; // mode to change to
 
     uint8_t launch_detect_en; // set to 1 to trigger launch detect
+
+    //gps location
+    uint32_t gps_lat; // lat
+    uint32_t gps_long; //long
 
 } state_t;
 

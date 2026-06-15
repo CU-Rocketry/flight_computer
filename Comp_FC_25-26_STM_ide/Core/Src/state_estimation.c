@@ -281,24 +281,23 @@ void apogee_detect(float vel_z){
 
 	static uint8_t trig_cnt = 0; // how many samples greater than threshold, static so it stays between function calls
 
-		const float APOGEE_THRESH_MAX_MS = 1;
-		const float APOGEE_THRESH_MIN_MS = -1;
+		const float APOGEE_THRESH_MAX_MS = 1; // [m/s]
+		const float APOGEE_THRESH_MIN_MS = -5;
 		const uint8_t MIN_TRIG_CNT = 20; // 10 samples at 500Hz = 250ms
 
 		if (vel_z >= APOGEE_THRESH_MIN_MS && vel_z <= APOGEE_THRESH_MAX_MS) { // check if body velocity is within the bounds
-
+			trig_cnt++;
 			if (trig_cnt >= MIN_TRIG_CNT) { // if acceleration above threshold for consecutive samples
 				global_state.apogee_detect = 1;
 				global_state.apogee_t = HAL_GetTick();
 			}
-
 		} else { // vel not in thresh so counter reset
 			trig_cnt = 0;
 		}
 
 }
 
-void land_detect(float vel_z, float accel_b_x){
+void land_detect(float vel_z, float accel_e_z){
 
 	if (global_state.land_detect) { // if already launched don't keep checking bc we only take off once
 			return;
@@ -314,11 +313,12 @@ void land_detect(float vel_z, float accel_b_x){
 
 		if (vel_z >= LAND_THRESH_MIN_MS && vel_z <= LAND_THRESH_MAX_MS) { // check if body velocity is within the bounds
 
-			if(accel_b_x >= LAND_THRESH_MIN_MS2 && accel_b_x <= LAND_THRESH_MAX_MS2 )
-
-			if (trig_cnt >= MIN_TRIG_CNT) { // if acceleration above threshold for consecutive samples
-				global_state.apogee_detect = 1;
-				global_state.apogee_t = HAL_GetTick();
+			if(accel_e_z >= LAND_THRESH_MIN_MS2 && accel_e_z <= LAND_THRESH_MAX_MS2 ) {
+				trig_cnt++;
+				if (trig_cnt >= MIN_TRIG_CNT) { // if acceleration above threshold for consecutive samples
+					global_state.apogee_detect = 1;
+					global_state.apogee_t = HAL_GetTick();
+				}
 			}
 
 		} else { //  not in thresh so counter reset

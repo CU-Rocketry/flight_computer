@@ -11,11 +11,14 @@
 
 #include "main.h"
 #include "state.h"
+#include "state_estimation.h"
 #include <string.h>
 #include <stdio.h>
 
 #include "sx126x_hal.h"
 #include "packets.h"
+
+#include "lora_telemetry.h"
 
 
 //const void* ebyte; //need to declare this context for function use
@@ -25,31 +28,13 @@ extern SPI_HandleTypeDef hspi4; //RF spi
 //setting up a read/write context for the sx126x radio
 //unsure if this is actually needed or if I am tweaking
 
-
-typedef struct {
-    SPI_HandleTypeDef* hspi;       // Pointer to the STM32 SPI handle
-
-    // GPIO Ports and Pins
-    GPIO_TypeDef* cs_port;   // Chip Select (NSS) Port
-    uint16_t      cs_pin;    // Chip Select Pin
-
-    GPIO_TypeDef* busy_port;  // BUSY Port
-    uint16_t           busy_pin;   // BUSY Pin
-
-    GPIO_TypeDef* reset_port; // Reset Port
-    uint16_t           reset_pin;  // Reset Pin
-
-    GPIO_TypeDef* dio1_port;  // DIO1 Interrupt Port
-    uint16_t           dio1_pin;   // DIO1 Interrupt Pin
-} sx126x_ctx_t;
-
 sx126x_ctx_t lora_radio;
 
 
 static sx126x_ctx_t* radio;
 //this will allow avoiding hardcoding into r/w functions, etc.
 
-void LoRa_init(){
+void LoRa_init(sx126x_ctx_t* context){
 
 	//allow module to boot up by pulling rst pin low
 	HAL_GPIO_WritePin(RF_RESET_GPIO_Port, RF_RESET_Pin, 0);
@@ -136,38 +121,39 @@ void sx126x_hal_wait_on_busy( const void* radio ){
 
 
 
-void telemetry_tx(uint8_t packet){
+void telemetry_tx(const void *packet, sx126x_ctx_t *context)
+{
 
-	sx126x_set_standby(radio, SX126X_STANDBY_CFG_XOSC); //ensure radio in standby mode before changning any settings
+	sx126x_set_standby(context, SX126X_STANDBY_CFG_XOSC); // ensure radio in standby mode before changning any settings
 
-	//configuring packet type
+	// configuring packet type
 	sx126x_pkt_params_lora_t pkt_params;
 
-	pkt_params.preamble_len_in_symb = 12; //reccomended for lower spreading factors
-	pkt_params.header_type = 0; //include header in transmission
+	pkt_params.preamble_len_in_symb = 12;			   // reccomended for lower spreading factors
+	pkt_params.header_type = SX126X_LORA_PKT_EXPLICIT; // include header in transmission
 	pkt_params.pld_len_in_bytes = sizeof(packet);
-	pkt_params.crc_is_on = 1; //crc off for now
-	pkt_params.invert_iq_is_on = 0; //standard IQ setup
+	pkt_params.crc_is_on = 1;		// crc off for now
+	pkt_params.invert_iq_is_on = 0; // standard IQ setup
 
-	sx126x_set_lora_pkt_params(radio, &pkt_params); //setup packets
+	sx126x_set_lora_pkt_params(context, &pkt_params); // setup packets
 
-	 //writing buffer for transmission into radio
+	// writing buffer for transmission into radio
 
-	 //package up packet into buffer
+	// package up packet into buffer
 
-	 static uint8_t buffer_tx[sizeof(packet)];
-	 memcpy( buffer_tx, &packet, sizeof(packet));
-	 sx126x_write_buffer(radio, 0, buffer_tx, sizeof(packet));
+	static uint8_t buffer_tx[sizeof(packet)];
+	memcpy(buffer_tx, &packet, sizeof(packet));
+	sx126x_write_buffer(context, 0, buffer_tx, sizeof(packet));
 
-	 sx126x_set_tx(radio, 0 ); //transmit
+	sx126x_set_tx(context, 0); // transmit
 
-	 //need to poll interrupt to see if transmit is done
-	 sx126x_irq_mask_t irq_status;
+	// need to poll interrupt to see if transmit is done
+	sx126x_irq_mask_t irq_status;
 
-	 	 while( irq_status != SX126X_IRQ_TX_DONE) //tell when done
-			 {
-				 sx126x_get_irq_status(radio, &irq_status);
-			 }
+	while (irq_status != SX126X_IRQ_TX_DONE) // tell when done
+	{
+		sx126x_get_irq_status(context, &irq_status);
+	}
 }
 
 //FOR RX
@@ -215,7 +201,7 @@ void telemetry_tx(uint8_t packet){
 //
 //} radio_config; //this can be more fleshed out but is it for now
 
-void telemetry_rx_decode(){ //function to decode rx packets
+void telemetry_rx_decode(void *context){ //function to decode rx packets
 
 	//decoding scheme for each type of packet, for fc this is command only, gs is telemetry data
 
@@ -233,7 +219,6 @@ void telemetry_rx_decode(){ //function to decode rx packets
 //	    }
 //	}
 
-
 	sx126x_rx_buffer_status_t *rx_buf_status;
 	sx126x_get_rx_buffer_status(radio, rx_buf_status); //get buf status, pos and length
 
@@ -246,6 +231,14 @@ void telemetry_rx_decode(){ //function to decode rx packets
 	if (rx_len > 0){
 		pkt_type = rx_buf[0];
 	};
+
+	sx126x_read_buffer( &context, buf_start, rx_buf, rx_len );
+
+	sx126x_pkt_status_lora_t pkt_status;
+	sx126x_get_lora_pkt_status(&radio, &pkt_status);
+
+	int8_t rssi_last_packet;
+	rssi_last_packet = pkt_status.rssi_pkt_in_dbm;
 
 	//rx for flight computer just needs to recieve command and radio configs
 	if (pkt_type == PKT_TYPE_CMD && rx_len == sizeof(command_packet_t)){
@@ -289,6 +282,61 @@ void telemetry_rx_decode(){ //function to decode rx packets
 	}
  //
 };
+
+void radio_reconfig(radio_config_packet_t *reconfig, sx126x_ctx_t *context)
+{ // reconfig here is just the current_rf global state variable
+	// check for reconfig flag just to double check
+	if (radio_reconfig_flag == 1)
+	{
+
+		if (reconfig->device == context->device)
+		{ // checks if reconfig device is the same as the current device
+			// apply reconfigs to current radio
+			sx126x_set_standby(&context, SX126X_STANDBY_CFG_XOSC);
+
+			if (reconfig->lora_params_en == 1)
+			{
+				sx126x_mod_params_lora_t lora_params;
+
+				lora_params.sf = SX126X_LORA_SF6;
+				lora_params.bw = SX126X_LORA_BW_125;
+				lora_params.cr = SX126X_LORA_CR_4_5;
+				lora_params.ldro = 0;
+
+				sx126x_set_lora_mod_params(context, &lora_params);
+			}
+
+			if (reconfig->freq_en == 1)
+			{
+
+				uint32_t freq;
+				freq = reconfig->freq;
+
+				sx126x_set_rf_freq(context, freq);
+			}
+
+			if (reconfig->tx_params_en == 1)
+			{
+
+				uint32_t pwr;
+				pwr = reconfig->pwr;
+
+				sx126x_set_tx_params(context, pwr, SX126X_RAMP_200_US);
+			}
+		}
+		else if (reconfig->device != context->device)
+		{ // if not equal to current device
+			// send rf config telemetry packet to the needed radio
+			telemetry_tx(reconfig, context); // send telemetry
+		}
+
+		radio_reconfig_flag = 0; // set flag to zero to demonstrated that the reconfig is done
+	}
+	else if (radio_reconfig_flag == 0)
+	{ // do not reconfig, just skip
+		return;
+	}
+}
 
 
 
@@ -358,7 +406,7 @@ sx126x_hal_status_t sx126x_hal_read( const void* context, const uint8_t* command
 
 
 
-void sx126x_irq_process( const void* context )
+void sx126x_irq_process( const void* context)
 {
 
         sx126x_irq_mask_t irq_regs;
@@ -377,7 +425,7 @@ void sx126x_irq_process( const void* context )
         if( ( irq_regs & SX126X_IRQ_RX_DONE ) == SX126X_IRQ_RX_DONE )
         {
             printf( "Rx done\n" );
-            telemetry_rx_decode();
+            telemetry_rx_decode(&context);
 
 
         }

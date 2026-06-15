@@ -55,11 +55,17 @@
 /* USER CODE END 0 */
 
 /* External variables --------------------------------------------------------*/
+extern DMA_HandleTypeDef handle_GPDMA1_Channel5;
+extern DMA_HandleTypeDef handle_GPDMA1_Channel4;
 extern DMA_HandleTypeDef handle_GPDMA1_Channel1;
 extern DMA_HandleTypeDef handle_GPDMA1_Channel0;
 extern SPI_HandleTypeDef hspi2;
 extern SPI_HandleTypeDef hspi3;
 extern TIM_HandleTypeDef htim6;
+extern DMA_NodeTypeDef Node_GPDMA2_Channel5;
+extern DMA_QListTypeDef List_GPDMA2_Channel5;
+extern DMA_HandleTypeDef handle_GPDMA2_Channel5;
+extern DMA_HandleTypeDef handle_GPDMA2_Channel4;
 /* USER CODE BEGIN EV */
 
 /* USER CODE END EV */
@@ -315,6 +321,34 @@ void GPDMA1_Channel1_IRQHandler(void)
 }
 
 /**
+  * @brief This function handles GPDMA1 Channel 4 global interrupt.
+  */
+void GPDMA1_Channel4_IRQHandler(void)
+{
+  /* USER CODE BEGIN GPDMA1_Channel4_IRQn 0 */
+
+  /* USER CODE END GPDMA1_Channel4_IRQn 0 */
+  HAL_DMA_IRQHandler(&handle_GPDMA1_Channel4);
+  /* USER CODE BEGIN GPDMA1_Channel4_IRQn 1 */
+
+  /* USER CODE END GPDMA1_Channel4_IRQn 1 */
+}
+
+/**
+  * @brief This function handles GPDMA1 Channel 5 global interrupt.
+  */
+void GPDMA1_Channel5_IRQHandler(void)
+{
+  /* USER CODE BEGIN GPDMA1_Channel5_IRQn 0 */
+
+  /* USER CODE END GPDMA1_Channel5_IRQn 0 */
+  HAL_DMA_IRQHandler(&handle_GPDMA1_Channel5);
+  /* USER CODE BEGIN GPDMA1_Channel5_IRQn 1 */
+
+  /* USER CODE END GPDMA1_Channel5_IRQn 1 */
+}
+
+/**
   * @brief This function handles TIM6 global interrupt.
   */
 void TIM6_IRQHandler(void)
@@ -354,6 +388,34 @@ void SPI3_IRQHandler(void)
   /* USER CODE BEGIN SPI3_IRQn 1 */
 
   /* USER CODE END SPI3_IRQn 1 */
+}
+
+/**
+  * @brief This function handles GPDMA2 Channel 4 global interrupt.
+  */
+void GPDMA2_Channel4_IRQHandler(void)
+{
+  /* USER CODE BEGIN GPDMA2_Channel4_IRQn 0 */
+
+  /* USER CODE END GPDMA2_Channel4_IRQn 0 */
+  HAL_DMA_IRQHandler(&handle_GPDMA2_Channel4);
+  /* USER CODE BEGIN GPDMA2_Channel4_IRQn 1 */
+
+  /* USER CODE END GPDMA2_Channel4_IRQn 1 */
+}
+
+/**
+  * @brief This function handles GPDMA2 Channel 5 global interrupt.
+  */
+void GPDMA2_Channel5_IRQHandler(void)
+{
+  /* USER CODE BEGIN GPDMA2_Channel5_IRQn 0 */
+
+  /* USER CODE END GPDMA2_Channel5_IRQn 0 */
+  HAL_DMA_IRQHandler(&handle_GPDMA2_Channel5);
+  /* USER CODE BEGIN GPDMA2_Channel5_IRQn 1 */
+
+  /* USER CODE END GPDMA2_Channel5_IRQn 1 */
 }
 
 /* USER CODE BEGIN 1 */

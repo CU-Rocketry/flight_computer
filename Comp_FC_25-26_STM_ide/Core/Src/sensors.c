@@ -248,7 +248,7 @@ void sensors_init() {
 	HAL_Delay(100);
 	baro_init();
 	imu_init();
-	mag_init();
+	//mag_init();
 }
 
 

@@ -25,12 +25,12 @@
 #include "sensors.h"
 #include "rgb_led.h"
 #include "buzzer.h"
-#include "lps22hh_reg.h"
 #include "lora_telemetry.h"
-#include "GNSS.h"
+#include <GNSS.h>
 #include "packets.h"
 #include "flash.h"
 #include "btn.h"
+#include "mode_handler.h"
 
 #include <string.h>
 #include <stdio.h>
@@ -59,7 +59,9 @@ DCACHE_HandleTypeDef hdcache1;
 
 I2C_HandleTypeDef hi2c1;
 
-XSPI_HandleTypeDef hospi1;
+XSPI_HandleTypeDef hxspi1;
+DMA_HandleTypeDef handle_GPDMA1_Channel5;
+DMA_HandleTypeDef handle_GPDMA1_Channel4;
 
 SPI_HandleTypeDef hspi2;
 SPI_HandleTypeDef hspi3;
@@ -74,6 +76,10 @@ TIM_HandleTypeDef htim6;
 
 UART_HandleTypeDef huart4;
 UART_HandleTypeDef huart5;
+DMA_NodeTypeDef Node_GPDMA2_Channel5;
+DMA_QListTypeDef List_GPDMA2_Channel5;
+DMA_HandleTypeDef handle_GPDMA2_Channel5;
+DMA_HandleTypeDef handle_GPDMA2_Channel4;
 
 PCD_HandleTypeDef hpcd_USB_DRD_FS;
 
@@ -96,11 +102,18 @@ buzzer_t buzzer = {
 };
 
 flash_t flash = {
-    .hxspi = &hospi1,
+    .hxspi = &hxspi1,
     .address = 0,
     .full = 0,
     .prescaler_max = 10, // default to 10 hz for waiting on pad
     .prescaler_cnt = 0
+};
+
+sx126x_ctx_t radio = {
+    // GPIO Ports and Pins
+      //pointer to spi class
+	.hspi = &hspi4,
+    .device = FLIGHT_COMPUTER,
 };
 
 btn_t btns[3];
@@ -114,10 +127,7 @@ extern uint8_t mag_ready;
 extern uint8_t imu_ready;
 
 // Global state
-//state_t global_state = {0};
-
-
-//GNSS_StateHandle GNSS_Handle;
+state_t global_state = {0};
 
 /* USER CODE END PV */
 
@@ -126,6 +136,7 @@ void SystemClock_Config(void);
 void PeriphCommonClock_Config(void);
 static void MX_GPIO_Init(void);
 static void MX_GPDMA1_Init(void);
+static void MX_GPDMA2_Init(void);
 static void MX_OCTOSPI1_Init(void);
 static void MX_SPI3_Init(void);
 static void MX_UART4_Init(void);
@@ -169,7 +180,7 @@ int main(void)
   /* MCU Configuration--------------------------------------------------------*/
 
   /* Reset of all peripherals, Initializes the Flash interface and the Systick. */
-	HAL_Init();
+  HAL_Init();
 
   /* USER CODE BEGIN Init */
 
@@ -188,6 +199,7 @@ int main(void)
   /* Initialize all configured peripherals */
   MX_GPIO_Init();
   MX_GPDMA1_Init();
+  MX_GPDMA2_Init();
   MX_OCTOSPI1_Init();
   MX_SPI3_Init();
   MX_UART4_Init();
@@ -212,8 +224,9 @@ int main(void)
   HAL_TIM_Base_Start_IT(&htim6); // start 100 Hz
 
   buzzer_init(&buzzer);
-//  buzzer_set(&buzzer, 1);
 
+
+  //toggle cs_pins
   HAL_Delay(100);
   HAL_GPIO_WritePin(BARO_CS_GPIO_Port, BARO_CS_Pin, 0);
   HAL_Delay(100);
@@ -221,51 +234,52 @@ int main(void)
   HAL_Delay(100);
 
   HAL_Delay(100);
-    HAL_GPIO_WritePin(IMU_CS_GPIO_Port, IMU_CS_Pin, 0);
-    HAL_Delay(100);
-    HAL_GPIO_WritePin(IMU_CS_GPIO_Port, IMU_CS_Pin, 1);
-    HAL_Delay(100);
+  HAL_GPIO_WritePin(IMU_CS_GPIO_Port, IMU_CS_Pin, 0);
+  HAL_Delay(100);
+  HAL_GPIO_WritePin(IMU_CS_GPIO_Port, IMU_CS_Pin, 1);
+  HAL_Delay(100);
 
- printf("Hello, world!\r\n");
- HAL_Delay(100);
-
-
- LoRa_init();
- HAL_Delay(100);
- //imu_init();
- HAL_Delay(100);
- baro_init();
+printf("Hello, world!\r\n");
+HAL_Delay(100);
 
 
- 	 btn_init(&btns[0], BTN_1_GPIO_Port, BTN_1_Pin);
- 	btn_init(&btns[1], BTN_2_GPIO_Port, BTN_2_Pin);
- 	btn_init(&btns[2], BTN_3_GPIO_Port, BTN_3_Pin);
+LoRa_init(&radio);
+sensors_init();
+HAL_Delay(100);
+
+btn_init(&btns[0], BTN_1_GPIO_Port, BTN_1_Pin);
+btn_init(&btns[1], BTN_2_GPIO_Port, BTN_2_Pin);
+btn_init(&btns[2], BTN_3_GPIO_Port, BTN_3_Pin);
+
+GNSS_Init(&GNSS_Handle, &huart4);
+HAL_Delay(1000);
+GNSS_LoadConfig(&GNSS_Handle);
+
+			GNSS_GetUniqID(&GNSS_Handle);
+			GNSS_ParseBuffer(&GNSS_Handle);
+			HAL_Delay(250);
+			GNSS_GetPVTData(&GNSS_Handle);
+			GNSS_ParseBuffer(&GNSS_Handle);
+
+ 		  HAL_Delay(250);
+ 		 				printf("Day: %d-%d-%d \r\n", GNSS_Handle.day, GNSS_Handle.month,GNSS_Handle.year);
+ 		 				printf("Time: %d:%d:%d \r\n", GNSS_Handle.hour, GNSS_Handle.min,GNSS_Handle.sec);
+ 		 				printf("Status of fix: %d \r\n", GNSS_Handle.fixType);
+ 		 				printf("Latitude: %d \r\n", GNSS_Handle.fLat);
+ 		 				printf("Longitude: %d \r\n", GNSS_Handle.lon / 10000000);
+ 		 				printf("Height above ellipsoid: %d \r\n", GNSS_Handle.height);
+ 		 				printf("Height above mean sea level: %d \r\n", GNSS_Handle.hMSL);
+ 		 				printf("Ground Speed (2-D): %d \r\n", GNSS_Handle.gSpeed);
+ 		 				printf("Unique ID: %04X %04X %04X %04X %04X \n\r",
+
+ 		 						GNSS_Handle.uniqueID[0], GNSS_Handle.uniqueID[1],
+ 		 						GNSS_Handle.uniqueID[2], GNSS_Handle.uniqueID[3],
+ 		 						GNSS_Handle.uniqueID[4], GNSS_Handle.uniqueID[5]);
+
+ 		 				global_state.gps_lat = GNSS_Handle.fLat;
+ 		 				global_state.gps_long = GNSS_Handle.lon;
 
 
-
-
-
-// GNSS_Init(&GNSS_Handle, &huart4);
-// 	HAL_Delay(1000);
-// 	GNSS_LoadConfig(&GNSS_Handle);
-//
-// 	// test gps connection
-// 		  get_GNSS(&GNSS_Handle);
-//
-// 		  HAL_Delay(250);
-// 		 				printf("Day: %d-%d-%d \r\n", GNSS_Handle.day, GNSS_Handle.month,GNSS_Handle.year);
-// 		 				printf("Time: %d:%d:%d \r\n", GNSS_Handle.hour, GNSS_Handle.min,GNSS_Handle.sec);
-// 		 				printf("Status of fix: %d \r\n", GNSS_Handle.fixType);
-// 		 				printf("Latitude: %d \r\n", GNSS_Handle.fLat);
-// 		 				printf("Longitude: %d \r\n", GNSS_Handle.lon / 10000000);
-// 		 				printf("Height above ellipsoid: %d \r\n", GNSS_Handle.height);
-// 		 				printf("Height above mean sea level: %d \r\n", GNSS_Handle.hMSL);
-// 		 				printf("Ground Speed (2-D): %d \r\n", GNSS_Handle.gSpeed);
-// 		 				printf("Unique ID: %04X %04X %04X %04X %04X \n\r",
-//
-// 		 						GNSS_Handle.uniqueID[0], GNSS_Handle.uniqueID[1],
-// 		 						GNSS_Handle.uniqueID[2], GNSS_Handle.uniqueID[3],
-// 		 						GNSS_Handle.uniqueID[4], GNSS_Handle.uniqueID[5]);
 
   /* USER CODE END 2 */
 
@@ -573,6 +587,10 @@ static void MX_GPDMA1_Init(void)
     HAL_NVIC_EnableIRQ(GPDMA1_Channel0_IRQn);
     HAL_NVIC_SetPriority(GPDMA1_Channel1_IRQn, 0, 0);
     HAL_NVIC_EnableIRQ(GPDMA1_Channel1_IRQn);
+    HAL_NVIC_SetPriority(GPDMA1_Channel4_IRQn, 0, 0);
+    HAL_NVIC_EnableIRQ(GPDMA1_Channel4_IRQn);
+    HAL_NVIC_SetPriority(GPDMA1_Channel5_IRQn, 0, 0);
+    HAL_NVIC_EnableIRQ(GPDMA1_Channel5_IRQn);
 
   /* USER CODE BEGIN GPDMA1_Init 1 */
 
@@ -580,6 +598,36 @@ static void MX_GPDMA1_Init(void)
   /* USER CODE BEGIN GPDMA1_Init 2 */
 
   /* USER CODE END GPDMA1_Init 2 */
+
+}
+
+/**
+  * @brief GPDMA2 Initialization Function
+  * @param None
+  * @retval None
+  */
+static void MX_GPDMA2_Init(void)
+{
+
+  /* USER CODE BEGIN GPDMA2_Init 0 */
+
+  /* USER CODE END GPDMA2_Init 0 */
+
+  /* Peripheral clock enable */
+  __HAL_RCC_GPDMA2_CLK_ENABLE();
+
+  /* GPDMA2 interrupt Init */
+    HAL_NVIC_SetPriority(GPDMA2_Channel4_IRQn, 0, 0);
+    HAL_NVIC_EnableIRQ(GPDMA2_Channel4_IRQn);
+    HAL_NVIC_SetPriority(GPDMA2_Channel5_IRQn, 0, 0);
+    HAL_NVIC_EnableIRQ(GPDMA2_Channel5_IRQn);
+
+  /* USER CODE BEGIN GPDMA2_Init 1 */
+
+  /* USER CODE END GPDMA2_Init 1 */
+  /* USER CODE BEGIN GPDMA2_Init 2 */
+
+  /* USER CODE END GPDMA2_Init 2 */
 
 }
 
@@ -647,22 +695,22 @@ static void MX_OCTOSPI1_Init(void)
 
   /* USER CODE END OCTOSPI1_Init 1 */
   /* OCTOSPI1 parameter configuration*/
-  hospi1.Instance = OCTOSPI1;
-  hospi1.Init.FifoThresholdByte = 1;
-  hospi1.Init.MemoryMode = HAL_XSPI_SINGLE_MEM;
-  hospi1.Init.MemoryType = HAL_XSPI_MEMTYPE_MICRON;
-  hospi1.Init.MemorySize = HAL_XSPI_SIZE_128MB;
-  hospi1.Init.ChipSelectHighTimeCycle = 1;
-  hospi1.Init.FreeRunningClock = HAL_XSPI_FREERUNCLK_DISABLE;
-  hospi1.Init.ClockMode = HAL_XSPI_CLOCK_MODE_3;
-  hospi1.Init.WrapSize = HAL_XSPI_WRAP_NOT_SUPPORTED;
-  hospi1.Init.ClockPrescaler = 1;
-  hospi1.Init.SampleShifting = HAL_XSPI_SAMPLE_SHIFT_NONE;
-  hospi1.Init.DelayHoldQuarterCycle = HAL_XSPI_DHQC_DISABLE;
-  hospi1.Init.ChipSelectBoundary = HAL_XSPI_BONDARYOF_NONE;
-  hospi1.Init.DelayBlockBypass = HAL_XSPI_DELAY_BLOCK_BYPASS;
-  hospi1.Init.Refresh = 0;
-  if (HAL_XSPI_Init(&hospi1) != HAL_OK)
+  hxspi1.Instance = OCTOSPI1;
+  hxspi1.Init.FifoThresholdByte = 1;
+  hxspi1.Init.MemoryMode = HAL_XSPI_SINGLE_MEM;
+  hxspi1.Init.MemoryType = HAL_XSPI_MEMTYPE_MICRON;
+  hxspi1.Init.MemorySize = HAL_XSPI_SIZE_128MB;
+  hxspi1.Init.ChipSelectHighTimeCycle = 1;
+  hxspi1.Init.FreeRunningClock = HAL_XSPI_FREERUNCLK_DISABLE;
+  hxspi1.Init.ClockMode = HAL_XSPI_CLOCK_MODE_3;
+  hxspi1.Init.WrapSize = HAL_XSPI_WRAP_NOT_SUPPORTED;
+  hxspi1.Init.ClockPrescaler = 1;
+  hxspi1.Init.SampleShifting = HAL_XSPI_SAMPLE_SHIFT_NONE;
+  hxspi1.Init.DelayHoldQuarterCycle = HAL_XSPI_DHQC_DISABLE;
+  hxspi1.Init.ChipSelectBoundary = HAL_XSPI_BONDARYOF_NONE;
+  hxspi1.Init.DelayBlockBypass = HAL_XSPI_DELAY_BLOCK_BYPASS;
+  hxspi1.Init.Refresh = 0;
+  if (HAL_XSPI_Init(&hxspi1) != HAL_OK)
   {
     Error_Handler();
   }
@@ -1358,7 +1406,6 @@ static void MX_GPIO_Init(void)
   HAL_GPIO_Init(GPIOD, &GPIO_InitStruct);
 
   /* EXTI interrupt init*/
-
   HAL_NVIC_SetPriority(EXTI3_IRQn, 0, 0);
   HAL_NVIC_EnableIRQ(EXTI3_IRQn);
 
@@ -1374,7 +1421,6 @@ static void MX_GPIO_Init(void)
   HAL_NVIC_SetPriority(EXTI10_IRQn, 0, 0);
   HAL_NVIC_EnableIRQ(EXTI10_IRQn);
 
-  __HAL_GPIO_EXTI_CLEAR_IT(BARO_INT_Pin);
   HAL_NVIC_SetPriority(EXTI13_IRQn, 0, 0);
   HAL_NVIC_EnableIRQ(EXTI13_IRQn);
 
@@ -1418,8 +1464,78 @@ void HAL_GPIO_EXTI_Callback(uint16_t GPIO_Pin)
 	}
 		else if(GPIO_Pin == RF_DIO1_Pin){
 
-	sx126x_irq_process();
+	sx126x_irq_process(&radio);
 
+	}
+
+}
+
+void mode_current_handler(uint8_t mode){
+
+	//define mode handling functions
+	void mode_current_handler(uint8_t mode)
+	{ //define all the modes
+
+	    if (mode == STARTUP){
+
+
+	    } else if (mode == IDLE){
+
+
+
+	    } else if (mode == LAUNCH_DETECT){
+
+
+	    } else if (mode == ASCENT){
+
+
+	    } else if (mode == DESCENT){
+
+
+	    }else if (mode == LANDED){
+
+
+	    }else if (mode == TEST_SENSORS){
+
+
+	    }else if (mode == TEST_LORA){
+
+
+	    }else if (mode == TEST_TELEMETRY){
+
+
+	    }else if (mode == TEST_UI){
+
+
+	    }else if (mode == TEST_FLASH){
+
+
+	    } else if (mode == TEST_GPS){
+
+	    }
+
+
+	}
+
+}
+
+
+
+void mode_transition_handler(uint8_t mode_prev, uint8_t mode_current){
+
+
+
+}
+
+void determine_rocket_state(state_t current_state){
+
+	//need to make ascent, decsent, landed
+	if ((current_state.is_launched == 0) && (current_state.apogee_detect == 0) && (current_state.land_detect == 0)){
+		current_state.state = ASCENT;
+	} else if ((current_state.is_launched == 1) && (current_state.apogee_detect == 1) && (current_state.land_detect == 0)){
+		current_state.state = DESCENT;
+	} else if ((current_state.is_launched == 1) && (current_state.apogee_detect == 1) && (current_state.land_detect == 0)){
+		current_state.state = LANDED;
 	}
 
 }

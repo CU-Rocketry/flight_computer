@@ -1,5 +1,6 @@
 Core/Src/flash.o: ../Core/Src/flash.c ../Core/Inc/flash.h \
- ../Core/Inc/state.h ../Core/Inc/packets.h \
+ ../Core/Inc/state.h ../Core/Inc/packets.h ../Core/Inc/sx126x.h \
+ ../Core/Inc/sx126x_status.h \
  ../Drivers/STM32H5xx_HAL_Driver/Inc/stm32h5xx_hal.h \
  ../Core/Inc/stm32h5xx_hal_conf.h \
  ../Drivers/STM32H5xx_HAL_Driver/Inc/stm32h5xx_hal_rcc.h \
@@ -46,6 +47,8 @@ Core/Src/flash.o: ../Core/Src/flash.c ../Core/Inc/flash.h \
 ../Core/Inc/flash.h:
 ../Core/Inc/state.h:
 ../Core/Inc/packets.h:
+../Core/Inc/sx126x.h:
+../Core/Inc/sx126x_status.h:
 ../Drivers/STM32H5xx_HAL_Driver/Inc/stm32h5xx_hal.h:
 ../Core/Inc/stm32h5xx_hal_conf.h:
 ../Drivers/STM32H5xx_HAL_Driver/Inc/stm32h5xx_hal_rcc.h:
