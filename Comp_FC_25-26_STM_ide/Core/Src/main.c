@@ -55,8 +55,6 @@
 /* Private variables ---------------------------------------------------------*/
 ADC_HandleTypeDef hadc1;
 
-DCACHE_HandleTypeDef hdcache1;
-
 I2C_HandleTypeDef hi2c1;
 
 XSPI_HandleTypeDef hxspi1;
@@ -150,7 +148,6 @@ static void MX_TIM1_Init(void);
 static void MX_TIM2_Init(void);
 static void MX_TIM6_Init(void);
 static void MX_TIM3_Init(void);
-static void MX_DCACHE1_Init(void);
 /* USER CODE BEGIN PFP */
 // printf UART
 #define PUTCHAR_PROTOTYPE int __io_putchar(int ch)
@@ -213,7 +210,6 @@ int main(void)
   MX_TIM2_Init();
   MX_TIM6_Init();
   MX_TIM3_Init();
-  MX_DCACHE1_Init();
   /* USER CODE BEGIN 2 */
 
   rgb_led_init(&led1);
@@ -321,13 +317,13 @@ GNSS_LoadConfig(&GNSS_Handle);
 
 	  				 if (btn_get_edge(&btns[1]) == 1)
 	  					  							{
-	  					  								printf("btn 2 pressed\r\n");
+	  					  			printf("btn 2 pressed\r\n");
 
 	  					  							};
 
 	  			if (btn_get_edge(&btns[2]) == 1)
 	  					  							{
-	  					  								printf("btn 3 pressed\r\n");
+	  					  			printf("btn 3 pressed\r\n");
 
 	  					  							};
 
@@ -337,21 +333,31 @@ GNSS_LoadConfig(&GNSS_Handle);
 	  							};
 	  float pres;
 
-//	  float accel;
+	  float accel;
 //	 	 	  		get_accel_ms2(&accel);
 //	 	 	  		printf("Acceleration:, %f\r\n", accel);
 //
 //
-//	 	 float omega;
+//	 float omega;
 //	 	 	 	 	 get_omega_rads(&omega);
 //	 	 	  		printf("Omega:, %f\r\n", omega);
+//
+//
+//	 	 	 	 	 get_pres_hpa(&pres);
+//	 	 	 	  		printf("Pressure:, %f\r\n", pres);
+
+
+	 	 	 	  	static uint8_t counter = 0 ;
+	 	 	 	  				 if (counter%100 == 0){
+	 	 	 	  					 telemetry_tx_string("Hello World", &radio);
+	 	 	 	  					 counter = 0 ;
+	 	 	 	  				 }
+	 	 	 	  		 	 counter++;
+
+	  }
 
 
 
-	 	  		get_pres_hpa(&pres);
-	 	  		printf("Pressure: %f\r\n", pres);
-
-	  };
 
 
 
@@ -537,33 +543,6 @@ static void MX_ADC1_Init(void)
   /* USER CODE BEGIN ADC1_Init 2 */
 
   /* USER CODE END ADC1_Init 2 */
-
-}
-
-/**
-  * @brief DCACHE1 Initialization Function
-  * @param None
-  * @retval None
-  */
-static void MX_DCACHE1_Init(void)
-{
-
-  /* USER CODE BEGIN DCACHE1_Init 0 */
-
-  /* USER CODE END DCACHE1_Init 0 */
-
-  /* USER CODE BEGIN DCACHE1_Init 1 */
-
-  /* USER CODE END DCACHE1_Init 1 */
-  hdcache1.Instance = DCACHE1;
-  hdcache1.Init.ReadBurstType = DCACHE_READ_BURST_WRAP;
-  if (HAL_DCACHE_Init(&hdcache1) != HAL_OK)
-  {
-    Error_Handler();
-  }
-  /* USER CODE BEGIN DCACHE1_Init 2 */
-
-  /* USER CODE END DCACHE1_Init 2 */
 
 }
 
@@ -1288,9 +1267,9 @@ static void MX_GPIO_Init(void)
   HAL_GPIO_WritePin(MAG_CS_GPIO_Port, MAG_CS_Pin, GPIO_PIN_RESET);
 
   /*Configure GPIO pins : SENSE_2_Pin PYRO_1_Pin SENSE_3_Pin RF_TXEN_Pin
-                           RF_RXEN_Pin RF_RESET_Pin RF_CS_Pin */
+                           RF_RXEN_Pin RF_RESET_Pin */
   GPIO_InitStruct.Pin = SENSE_2_Pin|PYRO_1_Pin|SENSE_3_Pin|RF_TXEN_Pin
-                          |RF_RXEN_Pin|RF_RESET_Pin|RF_CS_Pin;
+                          |RF_RXEN_Pin|RF_RESET_Pin;
   GPIO_InitStruct.Mode = GPIO_MODE_OUTPUT_PP;
   GPIO_InitStruct.Pull = GPIO_NOPULL;
   GPIO_InitStruct.Speed = GPIO_SPEED_FREQ_LOW;
@@ -1326,6 +1305,13 @@ static void MX_GPIO_Init(void)
   GPIO_InitStruct.Mode = GPIO_MODE_IT_RISING;
   GPIO_InitStruct.Pull = GPIO_NOPULL;
   HAL_GPIO_Init(GPIOE, &GPIO_InitStruct);
+
+  /*Configure GPIO pin : RF_CS_Pin */
+  GPIO_InitStruct.Pin = RF_CS_Pin;
+  GPIO_InitStruct.Mode = GPIO_MODE_OUTPUT_PP;
+  GPIO_InitStruct.Pull = GPIO_PULLUP;
+  GPIO_InitStruct.Speed = GPIO_SPEED_FREQ_LOW;
+  HAL_GPIO_Init(RF_CS_GPIO_Port, &GPIO_InitStruct);
 
   /*Configure GPIO pin : RF_BUSY_Pin */
   GPIO_InitStruct.Pin = RF_BUSY_Pin;
@@ -1415,6 +1401,9 @@ static void MX_GPIO_Init(void)
   HAL_NVIC_SetPriority(EXTI5_IRQn, 0, 0);
   HAL_NVIC_EnableIRQ(EXTI5_IRQn);
 
+  HAL_NVIC_SetPriority(EXTI7_IRQn, 0, 0);
+  HAL_NVIC_EnableIRQ(EXTI7_IRQn);
+
   HAL_NVIC_SetPriority(EXTI9_IRQn, 0, 0);
   HAL_NVIC_EnableIRQ(EXTI9_IRQn);
 
@@ -1453,7 +1442,6 @@ void HAL_GPIO_EXTI_Callback(uint16_t GPIO_Pin)
 
 	if (GPIO_Pin == BARO_INT_Pin) {
 		baro_int_drdy_handler();
-		printf("bing\r\n");
 		baro_flag = 1;
 	}
 	 else if(GPIO_Pin == IMU_INT1_Pin || GPIO_Pin == IMU_INT2_Pin) {

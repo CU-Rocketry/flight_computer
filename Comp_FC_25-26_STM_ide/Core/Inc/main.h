@@ -97,6 +97,7 @@ void Error_Handler(void);
 #define RF_DIO2_GPIO_Port GPIOC
 #define RF_DIO1_Pin GPIO_PIN_7
 #define RF_DIO1_GPIO_Port GPIOE
+#define RF_DIO1_EXTI_IRQn EXTI7_IRQn
 #define RF_TXEN_Pin GPIO_PIN_8
 #define RF_TXEN_GPIO_Port GPIOE
 #define RF_RXEN_Pin GPIO_PIN_9

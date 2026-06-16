@@ -15,8 +15,6 @@ Core/Src/main.o: ../Core/Src/main.c ../Core/Inc/main.h \
  ../Drivers/STM32H5xx_HAL_Driver/Inc/stm32h5xx_hal_rcc_ex.h \
  ../Drivers/STM32H5xx_HAL_Driver/Inc/stm32h5xx_hal_gpio.h \
  ../Drivers/STM32H5xx_HAL_Driver/Inc/stm32h5xx_hal_gpio_ex.h \
- ../Core/Inc/stm32h5xx_hal_dcache.h \
- ../Drivers/STM32H5xx_HAL_Driver/Inc/stm32h5xx_hal_def.h \
  ../Drivers/STM32H5xx_HAL_Driver/Inc/stm32h5xx_hal_dma.h \
  ../Drivers/STM32H5xx_HAL_Driver/Inc/stm32h5xx_hal_dma_ex.h \
  ../Drivers/STM32H5xx_HAL_Driver/Inc/stm32h5xx_hal_cortex.h \
@@ -45,7 +43,9 @@ Core/Src/main.o: ../Core/Src/main.c ../Core/Inc/main.h \
  ../Core/Inc/lora_telemetry.h ../Core/Inc/sx126x.h \
  ../Core/Inc/sx126x_status.h ../Core/Inc/packets.h ../Core/Inc/state.h \
  ../Core/Inc/GNSS.h ../Core/Inc/main.h ../Core/Inc/packets.h \
- ../Core/Inc/flash.h ../Core/Inc/btn.h ../Core/Inc/mode_handler.h
+ ../Core/Inc/flash.h ../Core/Inc/stm32h5xx_hal_dcache.h \
+ ../Drivers/STM32H5xx_HAL_Driver/Inc/stm32h5xx_hal_def.h \
+ ../Core/Inc/btn.h ../Core/Inc/mode_handler.h
 ../Core/Inc/main.h:
 ../Drivers/STM32H5xx_HAL_Driver/Inc/stm32h5xx_hal.h:
 ../Core/Inc/stm32h5xx_hal_conf.h:
@@ -63,8 +63,6 @@ Core/Src/main.o: ../Core/Src/main.c ../Core/Inc/main.h \
 ../Drivers/STM32H5xx_HAL_Driver/Inc/stm32h5xx_hal_rcc_ex.h:
 ../Drivers/STM32H5xx_HAL_Driver/Inc/stm32h5xx_hal_gpio.h:
 ../Drivers/STM32H5xx_HAL_Driver/Inc/stm32h5xx_hal_gpio_ex.h:
-../Core/Inc/stm32h5xx_hal_dcache.h:
-../Drivers/STM32H5xx_HAL_Driver/Inc/stm32h5xx_hal_def.h:
 ../Drivers/STM32H5xx_HAL_Driver/Inc/stm32h5xx_hal_dma.h:
 ../Drivers/STM32H5xx_HAL_Driver/Inc/stm32h5xx_hal_dma_ex.h:
 ../Drivers/STM32H5xx_HAL_Driver/Inc/stm32h5xx_hal_cortex.h:
@@ -101,5 +99,7 @@ Core/Src/main.o: ../Core/Src/main.c ../Core/Inc/main.h \
 ../Core/Inc/main.h:
 ../Core/Inc/packets.h:
 ../Core/Inc/flash.h:
+../Core/Inc/stm32h5xx_hal_dcache.h:
+../Drivers/STM32H5xx_HAL_Driver/Inc/stm32h5xx_hal_def.h:
 ../Core/Inc/btn.h:
 ../Core/Inc/mode_handler.h:

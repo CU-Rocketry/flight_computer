@@ -22,7 +22,7 @@ typedef struct {
 } sx126x_ctx_t;
 
 
-
+void telemetry_tx_string(const char *message, sx126x_ctx_t *context);
 void LoRa_init(sx126x_ctx_t* context);
 void telemetry_rx_decode(void *context);
 void telemetry_tx(const void *packet, sx126x_ctx_t *context);

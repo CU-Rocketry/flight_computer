@@ -68,15 +68,23 @@ void LoRa_init(sx126x_ctx_t* context){
  	 printf("Continuing initialization...\r\n");
 
  	//to initialize
- 	const uint32_t freq = 434000000;
+ 	const uint32_t freq = 426940000;
  	sx126x_set_rf_freq(radio, freq);
+
+ 	// 1. Configure the Power Amplifier Topology (Crucial for SX1262)
+ 	sx126x_pa_cfg_params_t pa_config;
+ 	pa_config.pa_duty_cycle = 0x04; // Values vary depending on your specific chip (SX1261 vs SX1262)
+ 	pa_config.hp_max        = 0x07;
+ 	pa_config.device_sel    = 0x00; // 0x00 for SX1262, 0x01 for SX1261
+ 	pa_config.pa_lut        = 0x01;
+ 	sx126x_set_pa_cfg(context, &pa_config);
 
  	int8_t pwr = 15; //power in dbm
  	sx126x_set_tx_params(radio, pwr, SX126X_RAMP_200_US);
 
  	    sx126x_mod_params_lora_t lora_params;
 
- 	    lora_params.sf = SX126X_LORA_SF6;
+ 	    lora_params.sf = SX126X_LORA_SF7;
  	    lora_params.bw = SX126X_LORA_BW_125;
  	    lora_params.cr = SX126X_LORA_CR_4_5;
  	    lora_params.ldro = 0;
@@ -109,6 +117,9 @@ void LoRa_init(sx126x_ctx_t* context){
  printf("YESSSSSSSSSSSSS :) \r\n");
  printf("Starting radio in continous rx mode...\r\n");
 
+ HAL_GPIO_WritePin(RF_TXEN_GPIO_Port, RF_TXEN_Pin, 0);
+ HAL_GPIO_WritePin(RF_RXEN_GPIO_Port, RF_RXEN_Pin, 1);
+
  int rx_flag = 0;
  sx126x_set_rx(radio, 0xFFFFFF); //set radio to continous rx mode
 
@@ -129,7 +140,7 @@ void telemetry_tx(const void *packet, sx126x_ctx_t *context)
 	// configuring packet type
 	sx126x_pkt_params_lora_t pkt_params;
 
-	pkt_params.preamble_len_in_symb = 12;			   // reccomended for lower spreading factors
+	pkt_params.preamble_len_in_symb = 8;			   // reccomended for lower spreading factors
 	pkt_params.header_type = SX126X_LORA_PKT_EXPLICIT; // include header in transmission
 	pkt_params.pld_len_in_bytes = sizeof(packet);
 	pkt_params.crc_is_on = 1;		// crc off for now
@@ -155,6 +166,75 @@ void telemetry_tx(const void *packet, sx126x_ctx_t *context)
 		sx126x_get_irq_status(context, &irq_status);
 	}
 }
+
+void telemetry_tx_string(const char *message, sx126x_ctx_t *context)
+{
+	size_t packet_size = strlen(message);
+	    if (packet_size == 0 || packet_size > 255) return;
+
+	    printf("\n--- Starting TX Diagnostic ---\r\n");
+
+	    sx126x_set_standby(context, SX126X_STANDBY_CFG_XOSC);
+
+	    // Explicitly set the buffer base addresses (highly recommended to prevent FIFO lockups)
+	    sx126x_set_buffer_base_address(context, 0x00, 0x00);
+
+	    sx126x_pkt_params_lora_t pkt_params;
+	    pkt_params.preamble_len_in_symb = 8;
+	    pkt_params.header_type          = SX126X_LORA_PKT_EXPLICIT;
+	    pkt_params.pld_len_in_bytes     = (uint8_t)packet_size;
+	    pkt_params.crc_is_on            = 1;
+	    pkt_params.invert_iq_is_on      = 0;
+	    sx126x_set_lora_pkt_params(context, &pkt_params);
+
+	    sx126x_write_buffer(context, 0, (const uint8_t *)message, packet_size);
+	    sx126x_clear_irq_status(context, SX126X_IRQ_ALL);
+
+	    // Re-assert IRQ mapping just in case it got wiped
+	    sx126x_set_dio_irq_params(context, SX126X_IRQ_ALL, SX126X_IRQ_TX_DONE | SX126X_IRQ_TIMEOUT, SX126X_IRQ_NONE, SX126X_IRQ_NONE);
+
+	    // Physically route the antenna
+	    HAL_GPIO_WritePin(RF_RXEN_GPIO_Port, RF_RXEN_Pin, 0);
+	    HAL_GPIO_WritePin(RF_TXEN_GPIO_Port, RF_TXEN_Pin, 1);
+
+	    printf("Firing TX engine...\r\n");
+
+	    // Force a 2-second timeout instead of infinite (0).
+	    // The timeout parameter is in units of 15.625 us. (2000ms / 0.015625 = 128000)
+	    sx126x_set_tx(context, 128000);
+
+	    // POLL THE INTERNAL REGISTER DIRECTLY VIA SPI
+	    sx126x_irq_mask_t irq_status = 0;
+	    int polling_cycles = 0;
+
+	    while (1) {
+	        sx126x_get_irq_status(context, &irq_status);
+
+	        if (polling_cycles % 10 == 0) {
+	            printf("Internal IRQ Register: 0x%04X\r\n", irq_status);
+	        }
+	        polling_cycles++;
+
+	        if ((irq_status & SX126X_IRQ_TX_DONE) == SX126X_IRQ_TX_DONE) {
+	            printf("SUCCESS! Internal register says TX DONE.\r\n");
+	            break;
+	        }
+
+	        if ((irq_status & SX126X_IRQ_TIMEOUT) == SX126X_IRQ_TIMEOUT) {
+	            printf("FAIL: Internal register says TX TIMEOUT.\r\n");
+	            break;
+	        }
+
+	        HAL_Delay(100); // Check every 100ms
+	    }
+
+	    // Clean up
+	    HAL_GPIO_WritePin(RF_TXEN_GPIO_Port, RF_TXEN_Pin, 0);
+	    HAL_GPIO_WritePin(RF_RXEN_GPIO_Port, RF_RXEN_Pin, 1);
+	    sx126x_clear_irq_status(context, SX126X_IRQ_ALL);
+	    sx126x_set_rx(context, 0xFFFFFF);
+}
+
 
 //FOR RX
 //need to poll interrupt pin -> do this by calling function in loop
@@ -425,6 +505,10 @@ void sx126x_irq_process( const void* context)
         if( ( irq_regs & SX126X_IRQ_RX_DONE ) == SX126X_IRQ_RX_DONE )
         {
             printf( "Rx done\n" );
+
+            HAL_GPIO_WritePin(RF_TXEN_GPIO_Port, RF_TXEN_Pin, 0);
+            HAL_GPIO_WritePin(RF_RXEN_GPIO_Port, RF_RXEN_Pin, 1);
+
             telemetry_rx_decode(&context);
 
 

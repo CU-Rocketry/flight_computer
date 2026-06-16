@@ -159,51 +159,6 @@ void HAL_ADC_MspDeInit(ADC_HandleTypeDef* hadc)
 }
 
 /**
-  * @brief DCACHE MSP Initialization
-  * This function configures the hardware resources used in this example
-  * @param hdcache: DCACHE handle pointer
-  * @retval None
-  */
-void HAL_DCACHE_MspInit(DCACHE_HandleTypeDef* hdcache)
-{
-  if(hdcache->Instance==DCACHE1)
-  {
-    /* USER CODE BEGIN DCACHE1_MspInit 0 */
-
-    /* USER CODE END DCACHE1_MspInit 0 */
-    /* Peripheral clock enable */
-    __HAL_RCC_DCACHE1_CLK_ENABLE();
-    /* USER CODE BEGIN DCACHE1_MspInit 1 */
-
-    /* USER CODE END DCACHE1_MspInit 1 */
-
-  }
-
-}
-
-/**
-  * @brief DCACHE MSP De-Initialization
-  * This function freeze the hardware resources used in this example
-  * @param hdcache: DCACHE handle pointer
-  * @retval None
-  */
-void HAL_DCACHE_MspDeInit(DCACHE_HandleTypeDef* hdcache)
-{
-  if(hdcache->Instance==DCACHE1)
-  {
-    /* USER CODE BEGIN DCACHE1_MspDeInit 0 */
-
-    /* USER CODE END DCACHE1_MspDeInit 0 */
-    /* Peripheral clock disable */
-    __HAL_RCC_DCACHE1_CLK_DISABLE();
-    /* USER CODE BEGIN DCACHE1_MspDeInit 1 */
-
-    /* USER CODE END DCACHE1_MspDeInit 1 */
-  }
-
-}
-
-/**
   * @brief I2C MSP Initialization
   * This function configures the hardware resources used in this example
   * @param hi2c: I2C handle pointer
@@ -608,6 +563,9 @@ void HAL_SPI_MspInit(SPI_HandleTypeDef* hspi)
     GPIO_InitStruct.Alternate = GPIO_AF5_SPI4;
     HAL_GPIO_Init(GPIOE, &GPIO_InitStruct);
 
+    /* SPI4 interrupt Init */
+    HAL_NVIC_SetPriority(SPI4_IRQn, 0, 0);
+    HAL_NVIC_EnableIRQ(SPI4_IRQn);
     /* USER CODE BEGIN SPI4_MspInit 1 */
 
     /* USER CODE END SPI4_MspInit 1 */
@@ -685,6 +643,8 @@ void HAL_SPI_MspDeInit(SPI_HandleTypeDef* hspi)
     */
     HAL_GPIO_DeInit(GPIOE, GPIO_PIN_12|GPIO_PIN_13|GPIO_PIN_14);
 
+    /* SPI4 interrupt DeInit */
+    HAL_NVIC_DisableIRQ(SPI4_IRQn);
     /* USER CODE BEGIN SPI4_MspDeInit 1 */
 
     /* USER CODE END SPI4_MspDeInit 1 */

@@ -1,8 +1,9 @@
-../Core/Src/lora_telemetry.c:37:6:LoRa_init	48	static
-../Core/Src/lora_telemetry.c:117:6:sx126x_hal_wait_on_busy	16	static
-../Core/Src/lora_telemetry.c:124:6:telemetry_tx	32	static
-../Core/Src/lora_telemetry.c:204:6:telemetry_rx_decode	80	dynamic
-../Core/Src/lora_telemetry.c:286:6:radio_reconfig	32	static
-../Core/Src/lora_telemetry.c:357:21:sx126x_hal_write	32	static
-../Core/Src/lora_telemetry.c:387:21:sx126x_hal_read	32	static
-../Core/Src/lora_telemetry.c:409:6:sx126x_irq_process	24	static
+../Core/Src/lora_telemetry.c:37:6:LoRa_init	56	static
+../Core/Src/lora_telemetry.c:128:6:sx126x_hal_wait_on_busy	16	static
+../Core/Src/lora_telemetry.c:135:6:telemetry_tx	32	static
+../Core/Src/lora_telemetry.c:170:6:telemetry_tx_string	48	static
+../Core/Src/lora_telemetry.c:284:6:telemetry_rx_decode	80	dynamic
+../Core/Src/lora_telemetry.c:366:6:radio_reconfig	32	static
+../Core/Src/lora_telemetry.c:437:21:sx126x_hal_write	32	static
+../Core/Src/lora_telemetry.c:467:21:sx126x_hal_read	32	static
+../Core/Src/lora_telemetry.c:489:6:sx126x_irq_process	24	static
